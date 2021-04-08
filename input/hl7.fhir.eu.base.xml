@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+	<id value="hl7.fhir.eu.base"/>
+	<!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
+    <valueString value="resources-spreadsheet.xml"/>
+  </extension>-->
+	<url value="http://hl7.eu/fhir/ig/base/ImplementationGuide/hl7.fhir.eu.base"/>
+	<!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
+	<version value="0.1.1"/>
+	<name value="Hl7EuBaseIg"/>
+	<title value="HL7 Europe Base Profiles"/>
+	<status value="draft"/>
+	<experimental value="false"/>
+	<publisher value="HL7 Europe"/>
+	<contact>
+		<telecom>
+			<!-- Or whatever URL and/or email address(es) are appropriate -->
+			<system value="url"/>
+			<value value="http://hl7.eu"/>
+		</telecom>
+	</contact>
+	<description value="HL7 Europe base profiles and common artefacts"/>
+	<jurisdiction>
+		<!-- This will drive SNOMED release used -->
+		<coding>
+			<system value="urn:iso:std:iso:3166"/>
+			<code value="EU"/>
+		</coding>
+	</jurisdiction>
+	<packageId value="hl7.fhir.eu.base"/>
+	<!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
+	<license value="CC-BY-SA-4.0"/>
+	<!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
+	<fhirVersion value="4.0.1"/>
+	<definition>
+			
+		<!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
+      inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
+		<page>
+			<!-- The root will always be toc.html - the template will force it if you don't do it -->
+			<nameUrl value="toc.html"/>
+			<title value="Table of Contents"/>
+			<generation value="html"/>
+			<page>
+				<nameUrl value="index.html"/>
+				<title value="IG Home Page"/>
+				<generation value="markdown"/>
+			</page>
+			<page>
+				<nameUrl value="background.html"/>
+				<title value="Background"/>
+				<generation value="html"/>
+			</page>
+			<!-- <page>
+				<nameUrl value="design.html"/>
+				<title value="Principi e disegno"/>
+				<generation value="markdown"/>
+			</page>
+			<page>
+				<nameUrl value="methodology.html"/>
+				<title value="Metodologia"/>
+				<generation value="markdown"/>
+			</page>
+			<page>
+				<nameUrl value="spec.html"/>
+				<title value="Detailed Specification"/>
+				<generation value="markdown"/>
+			</page> -->
+			<page>
+				<nameUrl value="downloads.html"/>
+				<title value="Useful Downloads"/>
+				<generation value="html"/>
+			</page>
+			<page>
+				<nameUrl value="copyright.html"/>
+				<title value="Copyright"/>
+				<generation value="markdown"/>
+			</page>
+			<page>
+				<nameUrl value="changes.html"/>
+				<title value="IG Change History"/>
+				<generation value="html"/>
+			</page>
+		</page>
+		<!-- copyright year is a mandatory parameter -->
+		<parameter>
+			<code value="copyrightyear"/>
+			<value value="2021+"/>
+		</parameter>
+		<!-- releaselabel should be the ballot status for HL7-published IGs. -->
+		<parameter>
+			<code value="releaselabel"/>
+			<!-- <value value="PC Ballot"/> -->
+				<value value="CI Build"/>
+		</parameter>
+		<parameter>
+			<code value="find-other-resources"/>
+			<value value="true"/>
+		</parameter>
+<!-- 		<parameter>
+			<code value="special-url"/>
+			<value value="http://terminology.hl7.it/CodeSystem/mef-ae-regioni"/>
+		</parameter>
+	 -->
+		<parameter>
+			<code value="apply-jurisdiction"/>
+			<value value="true"/>
+		</parameter>
+		<!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
+    <parameter>
+      <code value="excludexml"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludejson"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludettl"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="excludemap"/>
+      <value value="true"/>
+    </parameter>-->
+
+	</definition>
+</ImplementationGuide>

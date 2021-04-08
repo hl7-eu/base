@@ -1,0 +1,11 @@
+== Suppressed Messages ==      
+# No schematrons available for Logical Models
+The link 'StructureDefinition-AziendaSanitaria.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-ContattoPersona.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-DocumentoIdentificazione.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-EHIC.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-Esenzione.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-Indirizzo.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-MedicoCurante.sch' for "Schematron" cannot be resolved
+The link 'StructureDefinition-Paziente.sch' for "Schematron" cannot be resolved
+

@@ -1,0 +1,26 @@
+<div xmlns="http://www.w3.org/1999/xhtml"
+   	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<h3>Caratterizzazione degli indirizzi</h3>
+	<a> </a>
+	<p>La capacità di individuare il tipo di indirizzo (e.g. indirizzo di residenza, di domicilio) è un requisito oggettivo di diversi contesti di uso.</p>
+	<p>Se per alcuni tipi, come quelli citati, esiste una condivisione del loro significato; per molti altri, non è sempre possible trovare una accezione comune.</p>
+	<p>Per questo motivo, in questa fase, è stato scelto di non sovra-specificare le diverse categorie; lasciando ad eventuali estensioni e vocabolari locali la capacità di descrivere queste ulteriori classi di indirizzi.</p>
+	<p>In generale le tipologie di indirizzo sono descritte attraverso un insieme di diversi elementi come:
+		<ul>
+			<li>address.use</li>
+			<li>address.type</li>
+			<li>address.extension['address-official']</li>
+		</ul>
+		una estensione locale opzionale di tipo CodeableConcept potrà inoltre essere utilizzata per caratterizzare più dettagliatamente gli indirizzi.</p>
+	<br/>
+	<p>In particolare:
+		<ul>
+			<li>
+				<b>address.use='home'</b> indica il <b>domicilio</b>
+			</li>
+			<li>
+				<b>address.extension['address-official']='true'</b> indica la <b>residenza</b>
+			</li>
+		</ul>
+		l'assenza di extension['address-official'] non permette di desumere alcuna informazione riguardo alla residenza; considerazioni simili possono essere fatte riguardo l'assenza di address.use e domicilio.</p>
+</div>

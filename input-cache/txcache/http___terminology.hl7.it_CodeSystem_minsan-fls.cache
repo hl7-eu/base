@@ -1,0 +1,2589 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "010201"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"010201\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#010201) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "010202"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"010202\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#010202) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "010203"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"010203\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#010203) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "010204"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"010204\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#010204) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "010205"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"010205\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#010205) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "010206"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"010206\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#010206) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "010207"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"010207\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#010207) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "010208"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"010208\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#010208) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "010209"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"010209\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#010209) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "010210"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"010210\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#010210) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "010211"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"010211\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#010211) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "010212"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"010212\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#010212) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "010213"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"010213\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#010213) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "010301"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"010301\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#010301) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "020101"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"020101\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#020101) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030301"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030301\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030301) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030302"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030302\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030302) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030303"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030303\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030303) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030304"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030304\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030304) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030305"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030305\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030305) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030306"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030306\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030306) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030307"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030307\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030307) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030308"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030308\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030308) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030309"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030309\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030309) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030310"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030310\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030310) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030311"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030311\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030311) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030312"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030312\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030312) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030313"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030313\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030313) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030314"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030314\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030314) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030315"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030315\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030315) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030321"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030321\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030321) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030322"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030322\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030322) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030323"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030323\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030323) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030324"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030324\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030324) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030325"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030325\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030325) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030326"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030326\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030326) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030327"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030327\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030327) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "030328"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"030328\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#030328) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "041201"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"041201\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#041201) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "042101"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"042101\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#042101) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050101"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050101\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050101) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050102"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050102\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050103"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050103\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050104"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050104\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050104) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050105"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050105\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050105) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050106"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050106\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050106) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050107"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050107\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050107) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050108"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050108\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050108) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050109"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050109\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050109) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050110"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050110\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050110) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050112"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050112\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050112) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050113"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050113\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050113) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050114"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050114\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050114) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050115"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050115\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050115) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050116"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050116\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050116) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050117"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050117\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050117) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050118"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050118\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050118) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050119"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050119\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050119) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050120"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050120\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050120) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050121"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050121\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050121) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050122"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050122\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050122) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050501"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050501\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050501) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050502"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050502\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050502) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050503"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050503\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050503) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050504"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050504\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050504) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050505"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050505\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050505) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050506"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050506\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050506) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050507"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050507\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050507) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050508"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050508\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050508) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "050509"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"050509\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#050509) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "060101"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"060101\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#060101) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "060102"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"060102\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#060102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "060103"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"060103\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#060103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "060104"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"060104\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#060104) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "060105"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"060105\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#060105) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "060106"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"060106\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#060106) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "060201"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"060201\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#060201) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "060202"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"060202\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#060202) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "060203"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"060203\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#060203) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "060204"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"060204\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#060204) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "060205"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"060205\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#060205) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "060206"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"060206\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#060206) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "060207"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"060207\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#060207) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "070101"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"070101\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#070101) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "070102"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"070102\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#070102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "070103"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"070103\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#070103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "070104"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"070104\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#070104) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "070105"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"070105\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#070105) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "080101"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"080101\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#080101) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "080102"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"080102\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#080102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "080103"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"080103\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#080103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "080104"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"080104\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#080104) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "080105"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"080105\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#080105) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "080106"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"080106\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#080106) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "080109"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"080109\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#080109) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "080110"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"080110\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#080110) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "080111"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"080111\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#080111) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "080112"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"080112\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#080112) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "080113"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"080113\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#080113) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "080114"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"080114\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#080114) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "090101"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"090101\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#090101) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "090102"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"090102\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#090102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "090103"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"090103\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#090103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "090104"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"090104\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#090104) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "090105"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"090105\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#090105) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "090106"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"090106\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#090106) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "090107"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"090107\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#090107) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "090108"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"090108\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#090108) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "090109"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"090109\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#090109) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "090110"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"090110\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#090110) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "090111"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"090111\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#090111) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "090112"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"090112\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#090112) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "090201"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"090201\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#090201) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "090202"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"090202\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#090202) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "090203"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"090203\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#090203) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "100101"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"100101\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#100101) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "100102"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"100102\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#100102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "100103"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"100103\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#100103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "100201"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"100201\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#100201) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "100202"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"100202\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#100202) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "100204"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"100204\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#100204) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "110201"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"110201\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#110201) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120101"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120101\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120101) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120102"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120102\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120103"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120103\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120104"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120104\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120104) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120105"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120105\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120105) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120106"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120106\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120106) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120107"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120107\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120107) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120108"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120108\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120108) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120109"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120109\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120109) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120110"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120110\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120110) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120111"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120111\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120111) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120112"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120112\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120112) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120201"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120201\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120201) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120202"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120202\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120202) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120203"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120203\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120203) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120204"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120204\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120204) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120205"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120205\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120205) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "120206"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"120206\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#120206) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "130201"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"130201\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#130201) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "130202"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"130202\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#130202) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "130203"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"130203\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#130203) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "130204"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"130204\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#130204) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "140201"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"140201\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#140201) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "150201"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"150201\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#150201) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "150202"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"150202\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#150202) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "150203"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"150203\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#150203) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "150204"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"150204\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#150204) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "150205"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"150205\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#150205) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "150206"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"150206\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#150206) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "150207"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"150207\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#150207) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "160106"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"160106\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#160106) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "160112"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"160112\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#160112) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "160113"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"160113\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#160113) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "160114"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"160114\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#160114) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "160115"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"160115\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#160115) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "160116"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"160116\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#160116) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "170201"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"170201\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#170201) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "170202"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"170202\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#170202) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "180109"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"180109\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#180109) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "180201"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"180201\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#180201) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "180202"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"180202\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#180202) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "180203"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"180203\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#180203) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "180204"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"180204\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#180204) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "180205"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"180205\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#180205) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "190201"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"190201\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#190201) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "190202"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"190202\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#190202) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "190203"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"190203\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#190203) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "190204"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"190204\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#190204) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "190205"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"190205\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#190205) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "190206"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"190206\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#190206) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "190207"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"190207\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#190207) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "190208"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"190208\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#190208) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "190209"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"190209\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#190209) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "200101"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"200101\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#200101) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "200102"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"200102\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#200102) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "200103"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"200103\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#200103) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "200104"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"200104\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#200104) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "200105"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"200105\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#200105) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "200106"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"200106\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#200106) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "200107"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"200107\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#200107) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "200108"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"200108\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#200108) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+  "code" : "200201"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://terminology.hl7.it/CodeSystem/minsan-fls\" is not known (encountered paired with code = \"200201\"); The code provided (http://terminology.hl7.it/CodeSystem/minsan-fls#200201) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.it/CodeSystem/minsan-fls",
+      "concept" : [{
+        "code" : "010201",
+        "display" : "TO1"
+      },
+      {
+        "code" : "010202",
+        "display" : "TO2"
+      },
+      {
+        "code" : "010203",
+        "display" : "TO3"
+      },
+      {
+        "code" : "010204",
+        "display" : "TO4"
+      },
+      {
+        "code" : "010205",
+        "display" : "TO5"
+      },
+      {
+        "code" : "010206",
+        "display" : "VC"
+      },
+      {
+        "code" : "010207",
+        "display" : "BI"
+      },
+      {
+        "code" : "010208",
+        "display" : "NO"
+      },
+      {
+        "code" : "010209",
+        "display" : "VCO"
+      },
+      {
+        "code" : "010210",
+        "display" : "CN1"
+      },
+      {
+        "code" : "010211",
+        "display" : "CN2"
+      },
+      {
+        "code" : "010212",
+        "display" : "AT"
+      },
+      {
+        "code" : "010213",
+        "display" : "AL"
+      },
+      {
+        "code" : "010301",
+        "display" : "ASL CITTA' DI TORINO"
+      },
+      {
+        "code" : "020101",
+        "display" : "AZIENDA U.S.L. VALLE D'AOSTA"
+      },
+      {
+        "code" : "030301",
+        "display" : "A.S.L. DELLA PROVINCIA DI BERGAMO"
+      },
+      {
+        "code" : "030302",
+        "display" : "A.S.L. DELLA PROVINCIA DI BRESCIA"
+      },
+      {
+        "code" : "030303",
+        "display" : "A.S.L. DELLA PROVINCIA DI COMO"
+      },
+      {
+        "code" : "030304",
+        "display" : "A.S.L. DELLA PROVINCIA DI CREMONA"
+      },
+      {
+        "code" : "030305",
+        "display" : "A.S.L. DELLA PROVINCIA DI LECCO"
+      },
+      {
+        "code" : "030306",
+        "display" : "A.S.L. DELLA PROVINCIA DI LODI"
+      },
+      {
+        "code" : "030307",
+        "display" : "A.S.L. DELLA PROVINCIA DI MANTOVA"
+      },
+      {
+        "code" : "030308",
+        "display" : "A.S.L. DI MILANO"
+      },
+      {
+        "code" : "030309",
+        "display" : "A.S.L. DELLA PROVINCIA DI MILANO 1"
+      },
+      {
+        "code" : "030310",
+        "display" : "A.S.L. DELLA PROVINCIA DI MILANO 2"
+      },
+      {
+        "code" : "030311",
+        "display" : "A.S.L. PROVINCIA DI MONZA E BRIANZA"
+      },
+      {
+        "code" : "030312",
+        "display" : "A.S.L. DELLA PROVINCIA DI PAVIA"
+      },
+      {
+        "code" : "030313",
+        "display" : "A.S.L. DELLA PROVINCIA DI SONDRIO"
+      },
+      {
+        "code" : "030314",
+        "display" : "A.S.L. DELLA PROVINCIA DI VARESE"
+      },
+      {
+        "code" : "030315",
+        "display" : "A.S.L. DI VALLECAMONICA-SEBINO"
+      },
+      {
+        "code" : "030321",
+        "display" : "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+      },
+      {
+        "code" : "030322",
+        "display" : "ATS DELL'INSUBRIA"
+      },
+      {
+        "code" : "030323",
+        "display" : "ATS DELLA MONTAGNA"
+      },
+      {
+        "code" : "030324",
+        "display" : "ATS DELLA BRIANZA"
+      },
+      {
+        "code" : "030325",
+        "display" : "ATS DI BERGAMO"
+      },
+      {
+        "code" : "030326",
+        "display" : "ATS DI BRESCIA"
+      },
+      {
+        "code" : "030327",
+        "display" : "ATS DELLA VAL PADANA"
+      },
+      {
+        "code" : "030328",
+        "display" : "ATS DI PAVIA"
+      },
+      {
+        "code" : "041201",
+        "display" : "AZIENDA SANITARIA DELLA P.A. DI BOLZANO"
+      },
+      {
+        "code" : "042101",
+        "display" : "TRENTO"
+      },
+      {
+        "code" : "050101",
+        "display" : "BELLUNO"
+      },
+      {
+        "code" : "050102",
+        "display" : "FELTRE"
+      },
+      {
+        "code" : "050103",
+        "display" : "BASSANO DEL GRAPPA"
+      },
+      {
+        "code" : "050104",
+        "display" : "THIENE"
+      },
+      {
+        "code" : "050105",
+        "display" : "ARZIGNANO"
+      },
+      {
+        "code" : "050106",
+        "display" : "VICENZA"
+      },
+      {
+        "code" : "050107",
+        "display" : "PIEVE DI SOLIGO"
+      },
+      {
+        "code" : "050108",
+        "display" : "ASOLO"
+      },
+      {
+        "code" : "050109",
+        "display" : "TREVISO"
+      },
+      {
+        "code" : "050110",
+        "display" : "S. DONA' DI PIAVE"
+      },
+      {
+        "code" : "050112",
+        "display" : "VENEZIANA"
+      },
+      {
+        "code" : "050113",
+        "display" : "MIRANO"
+      },
+      {
+        "code" : "050114",
+        "display" : "CHIOGGIA"
+      },
+      {
+        "code" : "050115",
+        "display" : "CITTADELLA"
+      },
+      {
+        "code" : "050116",
+        "display" : "PADOVA"
+      },
+      {
+        "code" : "050117",
+        "display" : "MONSELICE"
+      },
+      {
+        "code" : "050118",
+        "display" : "ROVIGO"
+      },
+      {
+        "code" : "050119",
+        "display" : "ADRIA"
+      },
+      {
+        "code" : "050120",
+        "display" : "VERONA"
+      },
+      {
+        "code" : "050121",
+        "display" : "LEGNAGO"
+      },
+      {
+        "code" : "050122",
+        "display" : "BUSSOLENGO"
+      },
+      {
+        "code" : "050501",
+        "display" : "AZIENDA ULSS N. 1 DOLOMITI"
+      },
+      {
+        "code" : "050502",
+        "display" : "AZIENDA ULSS N. 2 MARCA TREVIGIANA"
+      },
+      {
+        "code" : "050503",
+        "display" : "AZIENDA ULSS N. 3 SERENISSIMA"
+      },
+      {
+        "code" : "050504",
+        "display" : "AZIENDA ULSS N. 4 VENETO ORIENTALE"
+      },
+      {
+        "code" : "050505",
+        "display" : "AZIENDA ULSS N. 5 POLESANA"
+      },
+      {
+        "code" : "050506",
+        "display" : "AZIENDA ULSS N. 6 EUGANEA"
+      },
+      {
+        "code" : "050507",
+        "display" : "AZIENDA ULSS N. 7 PEDEMONTANA"
+      },
+      {
+        "code" : "050508",
+        "display" : "AZIENDA ULSS N. 8 BERICA"
+      },
+      {
+        "code" : "050509",
+        "display" : "AZIENDA ULSS N. 9 SCALIGERA"
+      },
+      {
+        "code" : "060101",
+        "display" : "TRIESTINA"
+      },
+      {
+        "code" : "060102",
+        "display" : "ISONTINA"
+      },
+      {
+        "code" : "060103",
+        "display" : "ALTO FRIULI"
+      },
+      {
+        "code" : "060104",
+        "display" : "MEDIO FRIULI"
+      },
+      {
+        "code" : "060105",
+        "display" : "BASSA FRIULANA"
+      },
+      {
+        "code" : "060106",
+        "display" : "FRIULI OCCIDENTALE"
+      },
+      {
+        "code" : "060201",
+        "display" : "ASUI DI TRIESTE"
+      },
+      {
+        "code" : "060202",
+        "display" : "BASSA FRIULANA - ISONTINA"
+      },
+      {
+        "code" : "060203",
+        "display" : "ALTO FRIULI - COLLINARE - MEDIO FRIULI"
+      },
+      {
+        "code" : "060204",
+        "display" : "ASUI DI UDINE"
+      },
+      {
+        "code" : "060205",
+        "display" : "AS FRIULI OCCIDENTALE"
+      },
+      {
+        "code" : "060206",
+        "display" : "ASU FRIULI CENTRALE"
+      },
+      {
+        "code" : "060207",
+        "display" : "ASU GIULIANO ISONTINA"
+      },
+      {
+        "code" : "070101",
+        "display" : "IMPERIESE"
+      },
+      {
+        "code" : "070102",
+        "display" : "SAVONESE"
+      },
+      {
+        "code" : "070103",
+        "display" : "GENOVESE"
+      },
+      {
+        "code" : "070104",
+        "display" : "CHIAVARESE"
+      },
+      {
+        "code" : "070105",
+        "display" : "SPEZZINO"
+      },
+      {
+        "code" : "080101",
+        "display" : "AZIENDA USL PIACENZA"
+      },
+      {
+        "code" : "080102",
+        "display" : "AZIENDA USL PARMA"
+      },
+      {
+        "code" : "080103",
+        "display" : "AZIENDA USL REGGIO EMILIA"
+      },
+      {
+        "code" : "080104",
+        "display" : "AZIENDA USL MODENA"
+      },
+      {
+        "code" : "080105",
+        "display" : "AZIENDA USL BOLOGNA"
+      },
+      {
+        "code" : "080106",
+        "display" : "AZIENDA USL IMOLA"
+      },
+      {
+        "code" : "080109",
+        "display" : "AZIENDA USL FERRARA"
+      },
+      {
+        "code" : "080110",
+        "display" : "AZIENDA USL RAVENNA"
+      },
+      {
+        "code" : "080111",
+        "display" : "AZIENDA USL FORLI'"
+      },
+      {
+        "code" : "080112",
+        "display" : "AZIENDA USL CESENA"
+      },
+      {
+        "code" : "080113",
+        "display" : "AZIENDA USL RIMINI"
+      },
+      {
+        "code" : "080114",
+        "display" : "AZIENDA USL DELLA ROMAGNA"
+      },
+      {
+        "code" : "090101",
+        "display" : "MASSA CARRARA"
+      },
+      {
+        "code" : "090102",
+        "display" : "LUCCA"
+      },
+      {
+        "code" : "090103",
+        "display" : "PISTOIA"
+      },
+      {
+        "code" : "090104",
+        "display" : "PRATO"
+      },
+      {
+        "code" : "090105",
+        "display" : "PISA"
+      },
+      {
+        "code" : "090106",
+        "display" : "LIVORNO"
+      },
+      {
+        "code" : "090107",
+        "display" : "SIENA"
+      },
+      {
+        "code" : "090108",
+        "display" : "AREZZO"
+      },
+      {
+        "code" : "090109",
+        "display" : "GROSSETO"
+      },
+      {
+        "code" : "090110",
+        "display" : "FIRENZE"
+      },
+      {
+        "code" : "090111",
+        "display" : "EMPOLI"
+      },
+      {
+        "code" : "090112",
+        "display" : "VERSILIA"
+      },
+      {
+        "code" : "090201",
+        "display" : "AZIENDA USL TOSCANA CENTRO"
+      },
+      {
+        "code" : "090202",
+        "display" : "AZIENDA USL TOSCANA NORD-OVEST"
+      },
+      {
+        "code" : "090203",
+        "display" : "AZIENDA USL TOSCANA SUD-EST"
+      },
+      {
+        "code" : "100101",
+        "display" : "ASL 1 - CITTA' DI CASTELLO"
+      },
+      {
+        "code" : "100102",
+        "display" : "USL 2 - PERUGIA"
+      },
+      {
+        "code" : "100103",
+        "display" : "ASL 3 - FOLIGNO"
+      },
+      {
+        "code" : "100201",
+        "display" : "AUSL UMBRIA N. 1"
+      },
+      {
+        "code" : "100202",
+        "display" : "AUSL UMBRIA N. 2"
+      },
+      {
+        "code" : "100204",
+        "display" : "ASL 4 - TERNI"
+      },
+      {
+        "code" : "110201",
+        "display" : "ASUR"
+      },
+      {
+        "code" : "120101",
+        "display" : "RM/A"
+      },
+      {
+        "code" : "120102",
+        "display" : "RM/B"
+      },
+      {
+        "code" : "120103",
+        "display" : "RM/C"
+      },
+      {
+        "code" : "120104",
+        "display" : "RM/D"
+      },
+      {
+        "code" : "120105",
+        "display" : "RM/E"
+      },
+      {
+        "code" : "120106",
+        "display" : "RM/F"
+      },
+      {
+        "code" : "120107",
+        "display" : "RM/G"
+      },
+      {
+        "code" : "120108",
+        "display" : "RM/H"
+      },
+      {
+        "code" : "120109",
+        "display" : "VITERBO"
+      },
+      {
+        "code" : "120110",
+        "display" : "RIETI"
+      },
+      {
+        "code" : "120111",
+        "display" : "LATINA"
+      },
+      {
+        "code" : "120112",
+        "display" : "FROSINONE"
+      },
+      {
+        "code" : "120201",
+        "display" : "ROMA 1"
+      },
+      {
+        "code" : "120202",
+        "display" : "ROMA 2"
+      },
+      {
+        "code" : "120203",
+        "display" : "ROMA 3"
+      },
+      {
+        "code" : "120204",
+        "display" : "ROMA 4"
+      },
+      {
+        "code" : "120205",
+        "display" : "ROMA 5"
+      },
+      {
+        "code" : "120206",
+        "display" : "ROMA 6"
+      },
+      {
+        "code" : "130201",
+        "display" : "AVEZZANO-SULMONA-L'AQUILA"
+      },
+      {
+        "code" : "130202",
+        "display" : "LANCIANO-VASTO-CHIETI"
+      },
+      {
+        "code" : "130203",
+        "display" : "PESCARA"
+      },
+      {
+        "code" : "130204",
+        "display" : "TERAMO"
+      },
+      {
+        "code" : "140201",
+        "display" : "ASREM"
+      },
+      {
+        "code" : "150201",
+        "display" : "A.S.L. AVELLINO"
+      },
+      {
+        "code" : "150202",
+        "display" : "A.S.L. BENEVENTO"
+      },
+      {
+        "code" : "150203",
+        "display" : "A.S.L. CASERTA"
+      },
+      {
+        "code" : "150204",
+        "display" : "A.S.L. NAPOLI 1 CENTRO"
+      },
+      {
+        "code" : "150205",
+        "display" : "A.S.L. NAPOLI 2 NORD"
+      },
+      {
+        "code" : "150206",
+        "display" : "A.S.L. NAPOLI 3 SUD"
+      },
+      {
+        "code" : "150207",
+        "display" : "A.S.L. SALERNO"
+      },
+      {
+        "code" : "160106",
+        "display" : "ASL BR"
+      },
+      {
+        "code" : "160112",
+        "display" : "ASL TA"
+      },
+      {
+        "code" : "160113",
+        "display" : "ASL BT"
+      },
+      {
+        "code" : "160114",
+        "display" : "ASL BA"
+      },
+      {
+        "code" : "160115",
+        "display" : "ASL FG"
+      },
+      {
+        "code" : "160116",
+        "display" : "ASL LE"
+      },
+      {
+        "code" : "170201",
+        "display" : "AZIENDA SANITARIA LOCALE DI POTENZA ASP"
+      },
+      {
+        "code" : "170202",
+        "display" : "AZIENDA SANITARIA LOCALE DI MATERA  ASM"
+      },
+      {
+        "code" : "180109",
+        "display" : "LOCRI"
+      },
+      {
+        "code" : "180201",
+        "display" : "A.S.P. COSENZA"
+      },
+      {
+        "code" : "180202",
+        "display" : "A.S.P. CROTONE"
+      },
+      {
+        "code" : "180203",
+        "display" : "A.S.P. CATANZARO"
+      },
+      {
+        "code" : "180204",
+        "display" : "A.S.P. VIBO VALENTIA"
+      },
+      {
+        "code" : "180205",
+        "display" : "A.S.P. REGGIO CALABRIA"
+      },
+      {
+        "code" : "190201",
+        "display" : "ASP AGRIGENTO"
+      },
+      {
+        "code" : "190202",
+        "display" : "ASP CALTANISSETTA"
+      },
+      {
+        "code" : "190203",
+        "display" : "ASP CATANIA"
+      },
+      {
+        "code" : "190204",
+        "display" : "ASP ENNA"
+      },
+      {
+        "code" : "190205",
+        "display" : "ASP MESSINA"
+      },
+      {
+        "code" : "190206",
+        "display" : "ASP PALERMO"
+      },
+      {
+        "code" : "190207",
+        "display" : "ASP RAGUSA"
+      },
+      {
+        "code" : "190208",
+        "display" : "ASP SIRACUSA"
+      },
+      {
+        "code" : "190209",
+        "display" : "ASP DI TRAPANI"
+      },
+      {
+        "code" : "200101",
+        "display" : "SASSARI"
+      },
+      {
+        "code" : "200102",
+        "display" : "OLBIA"
+      },
+      {
+        "code" : "200103",
+        "display" : "NUORO"
+      },
+      {
+        "code" : "200104",
+        "display" : "LANUSEI"
+      },
+      {
+        "code" : "200105",
+        "display" : "ORISTANO"
+      },
+      {
+        "code" : "200106",
+        "display" : "SANLURI"
+      },
+      {
+        "code" : "200107",
+        "display" : "CARBONIA"
+      },
+      {
+        "code" : "200108",
+        "display" : "CAGLIARI"
+      },
+      {
+        "code" : "200201",
+        "display" : "AZIENDA PER LA TUTELA DELLA SALUTE"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://terminology.hl7.it/CodeSystem/minsan-fls"
+}
+-------------------------------------------------------------------------------------
