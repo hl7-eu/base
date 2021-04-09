@@ -6,7 +6,7 @@
 	"description": "HL7 Europe FHIR Template",
 	"base": "fhir.base.template",
 	"dependencies": {
-		"fhir.base.template ": "current"
+		"fhir.base.template": "current"
 	}
 }
 
