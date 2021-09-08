@@ -23,7 +23,9 @@ Id: uri-ehicPersonalId
 Title: "EHIC Personal ID (system IDs - uri) "
 Description: "System identifiers (uri) used for the EHIC#6 Personal Identification Number"
 //-------------------------------------------------------------------------------------------
-* URI#http://hl7.it/sid/codiceFiscale "Italian Fiscal Code"
+* URI#http://fhir.nl/fhir/NamingSystem/bsn "Burgerservicenummer"
+* URI#http://hl7.it/sid/codiceFiscale "Codice Fiscale"
+
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -32,7 +34,9 @@ Id: oid-ehicPersonalId
 Title: "EHIC Personal ID (system IDs - oid) "
 Description: "System identifiers (oid) used for the EHIC#6 Personal Identification Number"
 //-------------------------------------------------------------------------------------------
+* OID#2.16.840.1.113883.2.4.6.3 "Burgerservicenummer"
 * OID#2.16.840.1.113883.2.9.4.3.2 "Italian Fiscal Code"
+
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

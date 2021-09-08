@@ -1,10 +1,24 @@
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "urn:ietf:rfc:1155",
+  "code" : "2.16.840.1.113883.2.4.6.3"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "code" : "",
+  "system" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:ietf:rfc:1155\" is not known (encountered paired with code = \"2.16.840.1.113883.2.4.6.3\"); The code provided (urn:ietf:rfc:1155#2.16.840.1.113883.2.4.6.3) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:ietf:rfc:1155",
   "code" : "2.16.840.1.113883.2.9.4.3.2"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "",
+  "code" : "",
+  "system" : "",
   "severity" : "error",
   "error" : "The code system \"urn:ietf:rfc:1155\" is not known (encountered paired with code = \"2.16.840.1.113883.2.9.4.3.2\"); The code provided (urn:ietf:rfc:1155#2.16.840.1.113883.2.9.4.3.2) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
 }
@@ -15,6 +29,10 @@ v: {
     "include" : [{
       "system" : "urn:ietf:rfc:1155",
       "concept" : [{
+        "code" : "2.16.840.1.113883.2.4.6.3",
+        "display" : "Burgerservicenummer"
+      },
+      {
         "code" : "2.16.840.1.113883.2.9.4.3.2",
         "display" : "Italian Fiscal Code"
       }]
