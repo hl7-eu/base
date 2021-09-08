@@ -5,6 +5,16 @@ Alias: CS_NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: V3ActStatus = http://terminology.hl7.org/CodeSystem/v3-ActStatus
 Alias: V3RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: CS_ISO3166 = urn:iso:std:iso:3166
+Alias: EuV3ActCode = http://terminology.hl7.eu/CodeSystem/v3-ActCode
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+CodeSystem: CsEuV3ActCode
+Id: v3-ActCode-EU
+Title: "HL7 V3 ActCode - EU extensions"
+Description: "European extensions to the V3 ActCode code system"
+//-------------------------------------------------------------------------------------------
+* #EHIC "European Health Insurance Card"
+
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

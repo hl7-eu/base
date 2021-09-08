@@ -9,6 +9,8 @@ Description: "Coverage profile for the European Health Insurance Card"
 * identifier ^short = "EHIC#8 - Identification number of the card"
 * identifier ^definition = "Logical number of the card"
 * status 1..1 MS // 
+* type 1.. MS
+* type = EuV3ActCode#EHIC "European Health Insurance Card"  // to be added
 * beneficiary 1..1 MS // #3, 4 ,5, 6
 * beneficiary ^short = "EHIC fields #3 to #6 (Name, Id, birthDate)"
 * beneficiary only Reference(PatientEhic)
