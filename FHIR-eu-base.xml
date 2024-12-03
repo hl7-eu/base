@@ -4,14 +4,34 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/Address-eu" key="StructureDefinition-Address-eu" name="Address (EU)"/>
+<artifact id="StructureDefinition/allergyIntolerance-eu-eps" key="StructureDefinition-allergyIntolerance-eu-eps" name="Allergy Intolerance (EU PS)"/>
 <artifact id="StructureDefinition/Coverage-eu-ehic" key="StructureDefinition-Coverage-eu-ehic" name="Coverage: EHIC"/>
 <artifact id="ValueSet/oid-ehicPersonalId" key="ValueSet-oid-ehicPersonalId" name="EHIC Personal ID (system IDs - oid)"/>
 <artifact id="ValueSet/uri-ehicPersonalId" key="ValueSet-uri-ehicPersonalId" name="EHIC Personal ID (system IDs - uri)"/>
 <artifact id="Coverage/EhicExampleIt" key="Coverage-EhicExampleIt" name="EhicExampleIt"/>
 <artifact id="StructureDefinition/EHIC" key="StructureDefinition-EHIC" name="European Health Insurance Card"/>
+<artifact id="StructureDefinition/flag-eu-eps" key="StructureDefinition-flag-eu-eps" name="Flag (EU PS)"/>
 <artifact id="CodeSystem/v3-ActCode-EU" key="CodeSystem-v3-ActCode-EU" name="HL7 V3 ActCode - EU extensions"/>
+<artifact id="StructureDefinition/HumanName-eu" key="StructureDefinition-HumanName-eu" name="HumanName (Eu)"/>
 <artifact id="ValueSet/iso-ehicCountryCode" key="ValueSet-iso-ehicCountryCode" name="ISO 3166 - EHIC Country Codes"/>
+<artifact id="StructureDefinition/organization-eu-eps" key="StructureDefinition-organization-eu-eps" name="Organization (EU PS)"/>
+<artifact id="StructureDefinition/organization-eu" key="StructureDefinition-organization-eu" name="Organization (EU)"/>
+<artifact id="StructureDefinition/organization-eu-hdr" key="StructureDefinition-organization-eu-hdr" name="Organization (HDR)"/>
 <artifact id="StructureDefinition/Patient-eu-ehic" key="StructureDefinition-Patient-eu-ehic" name="Patient (EHIC)"/>
+<artifact id="StructureDefinition/patient-eu-eps" key="StructureDefinition-patient-eu-eps" name="Patient (EU PS)"/>
+<artifact id="StructureDefinition/patient-eu" key="StructureDefinition-patient-eu" name="Patient (EU)"/>
+<artifact id="StructureDefinition/patient-eu-hdr" key="StructureDefinition-patient-eu-hdr" name="Patient (HDR)"/>
+<artifact id="StructureDefinition/Patient-eu-mpd" key="StructureDefinition-Patient-eu-mpd" name="Patient: MPD"/>
+<artifact id="StructureDefinition/Patient-eu-lab" key="StructureDefinition-Patient-eu-lab" name="Patient: Person"/>
+<artifact id="StructureDefinition/practitioner-eu-eps" key="StructureDefinition-practitioner-eu-eps" name="Practitioner (EU PS)"/>
+<artifact id="StructureDefinition/practitioner-eu" key="StructureDefinition-practitioner-eu" name="Practitioner (EU)"/>
+<artifact id="StructureDefinition/practitioner-eu-hdr" key="StructureDefinition-practitioner-eu-hdr" name="Practitioner (HDR)"/>
+<artifact id="StructureDefinition/Practitioner-eu-lab" key="StructureDefinition-Practitioner-eu-lab" name="Practitioner: Laboratory Report"/>
+<artifact id="StructureDefinition/practitionerRole-eu" key="StructureDefinition-practitionerRole-eu" name="PractitionerRole (EU)"/>
+<artifact id="StructureDefinition/practitionerRole-eu-eps" key="StructureDefinition-practitionerRole-eu-eps" name="PractitionerRole: (EU PS)"/>
+<artifact id="StructureDefinition/practitionerRole-eu-hdr" key="StructureDefinition-practitionerRole-eu-hdr" name="PractitionerRole: (HDR)"/>
+<artifact id="StructureDefinition/PractitionerRole-eu-lab" key="StructureDefinition-PractitionerRole-eu-lab" name="PractitionerRole: Laboratory Report"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
