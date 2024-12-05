@@ -1,12 +1,26 @@
 # id: hl7.fhir.eu.eu-laboratory
+[r4-init]
 id: hl7.fhir.eu.base.r4
+[r4-end]
+[r5-init]
+id: hl7.fhir.eu.base.r5
+[r5-end]
+
+
 canonical: http://hl7.eu/fhir/base
 name:  Hl7EuBaseIg
 title: HL7 Europe Base Profiles
 description: This guide describes base profiles and common artefacts the European REALM.
 status: draft # draft | active | retired | unknown
 version: 0.0.1-ci #
+
+[r4-init]
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
+[r4-end]
+[r5-init]
+fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
+[r5-end]
+
 copyrightYear: 2024+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
@@ -18,6 +32,7 @@ publisher:
   # email: test@example.org
 copyright: >-
   Used by permission of HL7 Europe, all rights reserved Creative Commons License
+
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
@@ -28,6 +43,7 @@ dependencies:
   hl7.fhir.extensions.r5: 4.0.1
   hl7.fhir.eu.extensions: 0.1.x
   # eu.terminology.ehdsi: 0.1.0
+
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
@@ -56,6 +72,8 @@ pages:
     title: Copyright
   changes.xml:
     title: Change History
+
+
  #  recommendations.md:
 #    title: Recommendations
 #
@@ -73,6 +91,8 @@ parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Pa
 #    - http://hl7.eu/fhir/StructureDefinition/information-recipient
 #    - http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition
 #    - http://example.org/lab-codes
+
+
 # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
 # path-resource:
 #    - input/resources
@@ -105,6 +125,7 @@ parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Pa
  # version-comparison:
  #    - 5.0.1
  #    - 4.0.0
+
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
@@ -122,6 +143,8 @@ menu:
   Artifacts: artifacts.html
   About:
     Downloads: downloads.html
+
+
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │
@@ -171,28 +194,39 @@ menu:
 #     better option (see below).
 # The following are simple examples to demonstrate what this might
 # look like:
+
 # resources:
+
 #------------ Concept Maps  -------------
 #  ConceptMap/ConceptMap-eu-diagRptStatus2CompStatus:
 #    name: DiagnosticReport to Composition status
 #    description: Proposed relationship between the statuses used in the DiagnosticReport resource and that used for the Composition.
+
+
 #------------ Logical Models -------------
+
 #  StructureDefinition/Subject:
 #    name: A.1.1, A.1.2 - Subject of care
 #    description: Patient or Subject of care. Sections A.1.1 and A.1.2 of the eHN guideline.
+
 #----------- Examples -------------
 #  Specimen/Specimen-animal-example:
 #    name: "Specimen: animal example"
 #    description: Example of Specimen collected from an animal.
+
 # -------------  Obligations
 # StructureDefinition/Patient-obl-eu-lab:
 #   name: Patient Obligations
 #   description: Specify the functional capabilities that the defined actors may, should or shall applied to the Patient EU Lab profile elements.
+
+
 #  Patient/my-example-patient:
 #    name: My Example Patient
 #    description: An example Patient
 #    exampleBoolean: true
 #  Patient/bad-example: omit
+
+
 #
 # Groups can control certain aspects of the IG generation.  The IG
 # documentation recommends that authors use the default groups that
@@ -222,6 +256,9 @@ menu:
 #      description: Actors and Obligations used to describe the Patient Summary functional requirements for the specified data elements. Informative for this version of the guide.
 #      resources:
 #        - ActorDefinition/actor-consumer-eu-lab
+
+
+
 #
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
@@ -258,6 +295,7 @@ menu:
 #
 # The instanceOptions property is used to configure certain aspects of how SUSHI processes instances.
 # See the individual option definitions below for more detail.
+
 instanceOptions:
   manualSliceOrdering: true
 #

@@ -1,0 +1,107 @@
+"""
+Script to process files in a directory, filter content based on a specified flag, and copy transformed files 
+to a target directory while preserving the directory structure.
+
+Usage:
+    python script.py <flag>
+
+    <flag> - The flag to identify the sections to retain in the format [<flag>-init] and [<flag>-end].
+
+Example:
+    python script.py r4
+
+    This will process all files in the root directory and its subdirectories, retaining only lines 
+    inside [r4-init] ... [r4-end] sections and lines outside any flagged sections.
+
+Configuration:
+    The script reads `root_directory` and `target_directory` from a `config.json` file in the script's directory.
+"""
+
+import os
+import sys
+import re
+import json
+
+def load_config():
+    """Load configuration from a JSON file in the script's directory."""
+    script_dir = os.path.dirname(os.path.abspath(__file__))  # Get the script's directory
+    config_file = os.path.join(script_dir, "config.json")  # Path to config.json
+    if not os.path.exists(config_file):
+        print(f"Configuration file not found: {config_file}")
+        sys.exit(1)
+    with open(config_file, "r") as file:
+        return json.load(file)
+
+def transform_file(source_file, target_file, flag):
+    # Define the separators
+    start_sep = f"[{flag}-init]"
+    end_sep = f"[{flag}-end]"
+    
+    # Ensure the target directory exists
+    os.makedirs(os.path.dirname(target_file), exist_ok=True)
+
+    with open(source_file, 'r') as infile, open(target_file, 'w') as outfile:
+        in_section = False  # Track if we are inside the desired section
+        ignore_section = False  # Track if we are inside an unrelated section
+
+        for line in infile:
+            stripped_line = line.strip()
+
+            # Handle multiple starts in one line
+            if start_sep in stripped_line:
+                in_section = True
+                ignore_section = False
+                continue  # Skip the separator itself
+
+            # Handle multiple ends in one line
+            if end_sep in stripped_line:
+                in_section = False
+                continue  # Skip the separator itself
+
+            # Handle unrelated sections
+            if re.search(r"\[.*-init\]", stripped_line) and start_sep not in stripped_line:
+                ignore_section = True
+                continue  # Skip unrelated separators
+            if re.search(r"\[.*-end\]", stripped_line) and end_sep not in stripped_line:
+                ignore_section = False
+                continue  # Skip unrelated separators
+
+            # Write lines only from the desired section or completely outside any section
+            if in_section or (not ignore_section and stripped_line):
+                outfile.write(line)
+
+    print(f"Transformed and saved: {target_file}")
+
+
+def process_directory(root_dir, target_dir, flag):
+    # Walk through all files and directories in root_dir
+    for dirpath, dirnames, filenames in os.walk(root_dir):
+        for file in filenames:
+            source_file = os.path.join(dirpath, file)
+            # Construct the corresponding target file path
+            relative_path = os.path.relpath(source_file, root_dir)
+            target_file = os.path.join(target_dir, relative_path)
+            # Transform the file
+            transform_file(source_file, target_file, flag)
+
+
+if __name__ == "__main__":
+    # Check for required flag parameter
+    if len(sys.argv) < 2:
+        print("Usage: python script.py <flag>")
+        print("Example: python script.py r4")
+        sys.exit(1)
+    
+    flag_to_use = sys.argv[1]  # Get the flag from command-line arguments
+
+    # Load directories from config file
+    config = load_config()
+    root_directory = config.get("root_directory")
+    target_directory = config.get("target_directory")
+
+    if not root_directory or not target_directory:
+        print("Error: `root_directory` or `target_directory` is missing in the configuration file.")
+        sys.exit(1)
+
+    # Process files
+    process_directory(root_directory, target_directory, flag_to_use)

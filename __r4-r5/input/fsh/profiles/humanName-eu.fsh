@@ -6,6 +6,7 @@ Description: """This profile extends the HumanName data type for supporting mult
 /* * ^publisher = "HL7 Europe" */
 * ^purpose = "This profile of the HumanName allows for expressing multiple family names, as requested by some jurisdictions."
 * insert SetFmmandStatusRule ( 2, trial-use)
+
 * family ^example.label = "spanish name"
 * family ^example.valueString = "Valero Iglesias"
   * extension contains $humanname-fathers-family named fathersFamily 0..*
@@ -18,3 +19,4 @@ Description: """This profile extends the HumanName data type for supporting mult
   * extension[mothersFamily] ^example.valueString = "Iglesias"
 * given ^example.label = "spanish name" 
 * given ^example.valueString = "Borja"
+
