@@ -9,8 +9,14 @@ Description: "This profile sets minimum expectations for the Organization resour
 * type ^short = "Organization type"
 // should name be 1.. as in the IPS ?
 * name ^short = "Name of the organization"
+[r4-init]
 * telecom ^short = "Organization telecom"
 * address only AddressEu
+[r4-end]
+[r5-init]
+* contact.telecom ^short = "Organization telecom"
+* contact.address only AddressEu
+[r5-end]
 * partOf ^short = "The organization of which this organization is part of: e.g. an ERN"
 * partOf only Reference (OrganizationEu or Organization)
 * contact ^short = "Organization contact infos"
