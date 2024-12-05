@@ -40,7 +40,9 @@ copyright: >-
 dependencies:
   # hl7.fhir.uv.ips: current
   hl7.fhir.uv.ips: current
+  [r4-init]
   hl7.fhir.extensions.r5: 4.0.1
+  [r4-end]
   hl7.fhir.eu.extensions: 0.1.x
   # eu.terminology.ehdsi: 0.1.0
 
