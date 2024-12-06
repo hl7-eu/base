@@ -9,6 +9,7 @@ Title:    "Practitioner (EU)"
 Description: "This profile defines how to represent Practitioners in FHIR for the purpose of the  HL7 Europe project."
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (1, draft)
+* . obeys name-or-identier
 * identifier ^short = "Practitioner identifier"
 * address only AddressEu
 * name only HumanNameEu

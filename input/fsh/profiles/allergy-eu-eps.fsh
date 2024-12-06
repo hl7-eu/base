@@ -35,7 +35,7 @@ Description: """This profile constrains the AllergyIntolerance resource for the 
 * criticality ^short = "Criticality"
 
 * patient.reference 1..
-* patient only Reference(PatientEuHdr)
+* patient only Reference(PatientEu)
 
 // * onset[x] only dateTime // is this needed ?
 * onsetDateTime ^short = "Onset date"
