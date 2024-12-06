@@ -18,11 +18,11 @@ Description: "Coverage profile for the European Health Insurance Card"
 * period.end 1..1 // #9 - Expiry date
 * period.end ^short = "EHIC#9 - Expiry date"
 * period.end ^definition = "Expiry date of the card"
-* insurer 1..1
-* insurer only Reference(Organization)
-* insurer.display 1..1 // #7
-* insurer.display ^short = "EHIC#7 - Identification number of the institution"
-* insurer.display ^definition = "Identification number and acronym of the competent institution"
+* payor	1..1
+* payor only Reference(Organization)
+* payor.display 1..1 // #7
+* payor.display ^short = "EHIC#7 - Identification number of the institution"
+* payor.display ^definition = "Identification number and acronym of the competent institution"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: PatientEhic
 Parent: Patient
