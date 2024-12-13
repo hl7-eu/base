@@ -14,18 +14,15 @@ Description: "This profile defines how to represent Practitioners in FHIR for th
 //-------------------------------------------------------------------------------------------
 
 
-/* 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  PractitionerRoleEu
-Parent:   PractitionerRole // http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips
-Id:       practitionerRole-eu
+Profile:  PractitionerRoleEuCore
+Parent:   PractitionerRoleEu // http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips
+Id:       practitionerRole-eu-core
 Title:    "PractitionerRole (EU)"
 Description: "This profile defines how to represent Practitioners (with their roles) in FHIR for the purpose of the  HL7 Europe project."
 //-------------------------------------------------------------------------------------------
-
 * insert SetFmmandStatusRule (1, draft)
-* identifier ^short = "Business identifier"
-* organization only Reference (OrganizationEu)
-* practitioner only Reference (PractitionerEu)
+* insert ImposeProfile($PractitionerRole-uv-ips, 0)
+* organization only Reference (OrganizationEuCore)
+* practitioner only Reference (PractitionerEuCore)
 //-------------------------------------------------------------------------------------------
- */
