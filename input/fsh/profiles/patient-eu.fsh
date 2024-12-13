@@ -44,7 +44,7 @@ When the ips-pat-1 invariant is satisfied \(Patient.name.given, Patient.name.fam
   * name only HumanNameEu
     * ^short = "Contact name"
 * generalPractitioner ^short = "Patient's nominated primary care provider."
-* generalPractitioner only Reference(Organization or PractitionerRole) // Add profiles
+* generalPractitioner only Reference(OrganizationEu or PractitionerRoleEu or PractitionerEu) 
 * communication.language ^short = "Communication language"
 Invariant: eu-pat-1
 Description: "given, family, text or a data-absent-reason extension SHALL be present"

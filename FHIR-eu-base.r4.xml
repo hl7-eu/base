@@ -18,6 +18,8 @@
 <artifact id="StructureDefinition/organization-eu" key="StructureDefinition-organization-eu" name="Organization (EU)"/>
 <artifact id="StructureDefinition/Patient-eu-ehic" key="StructureDefinition-Patient-eu-ehic" name="Patient (EHIC)"/>
 <artifact id="StructureDefinition/patient-eu" key="StructureDefinition-patient-eu" name="Patient (EU)"/>
+<artifact id="StructureDefinition/patient-eu-core" key="StructureDefinition-patient-eu-core" name="Patient (EU)"/>
+<artifact id="StructureDefinition/practitioner-eu-core" key="StructureDefinition-practitioner-eu-core" name="Practitioner (EU Core)"/>
 <artifact id="StructureDefinition/practitioner-eu" key="StructureDefinition-practitioner-eu" name="Practitioner (EU)"/>
 <artifact id="StructureDefinition/practitionerRole-eu" key="StructureDefinition-practitionerRole-eu" name="PractitionerRole (EU)"/>
 <page key="NA" name="(NA)"/>
