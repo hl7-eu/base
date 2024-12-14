@@ -24,4 +24,8 @@ The pre-processing script is recorded in the scripts folder.
 
 Any change on the source files that may include R4/R5 specific instructions MUST BE DONE on the files recorded in the __r4-r5 dir.
 
-Changes have to be done on the master branch (currently R4)
+Changes have to be done on the master branch (currently the R4 guide) following [this process](change-mgmt.drawio)
+
+![Alt](change-mgmt.png)
+
+
