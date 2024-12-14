@@ -52,7 +52,7 @@ When the ips-pat-1 invariant is satisfied \(Patient.name.given, Patient.name.fam
     * ^short = "Contact name"
 
 * generalPractitioner ^short = "Patient's nominated primary care provider."
-* generalPractitioner only Reference(Organization or PractitionerRole) // Add profiles
+* generalPractitioner only Reference(OrganizationEu or PractitionerRoleEu or PractitionerEu) 
 * communication.language ^short = "Communication language"
 
 

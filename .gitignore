@@ -4,3 +4,7 @@
 /temp
 /template
 /scripts/config.json
+.vscode/settings.json
+.gitignore
+r4_preprocess.log
+_preprocess-r4.bat
