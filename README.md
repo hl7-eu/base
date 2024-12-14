@@ -1,10 +1,10 @@
 # HL7 Europe Base Profiles and Common Artefacts
+
 This guide collects HL7 Europe base and other common profiles and artefacts.
 
-Base profiles aim to specify how concepts commonly used in Europe are represented in HL7 FHIR. These profiles, loosly constrained, are intended to be used as basis for any European derived profile.
+Base profiles specifies how concepts commonly used in Europe are represented in HL7 FHIR. These profiles, loosly constrained, are intended to be used as basis for any European derived profile.
 
-This version of the guide includes also more constrained profiles, called core profiles, that constitutes a sort of buldingblocks to be reused in the arge majority of the EU REALM HL7 FHIR IGs.
-
+This version of the guide includes also more constrained profiles, called core profiles, that constitutes a sort of building blocks to be reused for the large majority of the EU REALM HL7 FHIR IGs.
 
 Two versions of the guide are publised the 
 * HL7 FHIR R4 Base IG (hl7.fhir.eu.base.r4)
@@ -16,19 +16,20 @@ Two versions of the guide are publised the
 
 ## How to Contribute
 
-Both versions of the guide are managed by the same source code, to do this a special directory ( __r4-r5 ) has been created.
+The goal is to use the same GitHub repos for both HL7 FHIR versions (R4, R5) of the guide.
 
-This directory should have the usual IG structure used for the HL7 FHIR IGs, where __r4-r5 corresponds to the root directory.
+To support this a special directory, called __r4-r5, has been created.
 
-The __r4-r5 directory includes all the source files containing R4 / R5 specific instructions, files that are  supposed to be preproccesed and copied under the root directory.
+This directory has the same structure used for the HL7 FHIR IGs (where __r4-r5 corresponds to the root directory), and includes all the source files containing R4 / R5 specific instructions.
 
-The pre-processing script is recorded in the scripts folder.
+These "special" source files are pre proccesed by the python script in the 'scripts' folder and copied in the root directory. 
+The script generates the apporpriate source file for the HL7 FHIR version choosen. 
 
-Any change on the source files that may include R4/R5 specific instructions MUST BE DONE on the files recorded in the __r4-r5 dir.
+Any change in the source files that are present in both the root and in the '__r4-r5' folders MUST BE DONE updating the files in the '__r4-r5' folder.
+(Otherwise your changes will be overwritten)
 
-Changes have to be done on the master branch (currently the R4 guide) following this process.
+Moreover any change applied to the source files have to be done on the master branch (currently the R4 guide), rebuilding the R5 version following this process.
 
 DO NOT apply changes on the sources directly on the master-r5 branch.
-
 
 ![this process](change-mgmt.drawio.svg)
