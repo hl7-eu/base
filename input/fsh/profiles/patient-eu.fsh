@@ -1,9 +1,8 @@
 Profile: PatientEu
 Parent: Patient
 Id: patient-eu
-Title:    "Patient (EU)"
-Description: """This profile defines how to represent a human Patient in HL7 FHIR in the european context.
-When the ips-pat-1 invariant is satisfied \(Patient.name.given, Patient.name.family or Patient.name.text SHALL be present\) then this profile complies with the IPS patient profile."""
+Title:    "Patient (EU base)"
+Description: """This profile specifies how the HL7 FHIR Patient resource should be used for conveying commonly used concepts in the European context."""
 * insert SetFmmandStatusRule (1, draft)
 * extension contains
     $patient-birthPlace named birthPlace 0..1 and

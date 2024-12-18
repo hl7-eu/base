@@ -1,8 +1,8 @@
 Profile: OrganizationEu
 Parent: Organization
 Id: organization-eu
-Title: "Organization (EU)"
-Description: "This profile sets minimum expectations for the Organization resource to searching for and fetching an Organization associated with a patient or provider for the purpose of this guide."
+Title: "Organization (EU base)"
+Description: "This profile specifies how the HL7 FHIR Organization resource should be used for conveying commonly used concepts in the European context."
 
 * insert SetFmmandStatusRule (1, draft)
 * . obeys name-or-identier

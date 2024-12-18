@@ -1,8 +1,8 @@
 Profile: PatientEuCore
 Parent: PatientEu
 Id: patient-eu-core
-Title:    "Patient (EU)"
-Description: """This profile defines how to represent a human Patient in HL7 FHIR in the european context.
+Title:    "Patient (EU core)"
+Description: """This profile sets minimum expectations for the Patient resource common to most of the use cases.
 When the ips-pat-1 invariant is satisfied \(Patient.name.given, Patient.name.family or Patient.name.text SHALL be present\) then this profile complies with the IPS patient profile."""
 
 * insert SetFmmandStatusRule (1, draft)

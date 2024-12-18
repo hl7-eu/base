@@ -3,8 +3,8 @@
 Profile:  PractitionerEu
 Parent:   Practitioner // http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips
 Id:       practitioner-eu
-Title:    "Practitioner (EU)"
-Description: "This profile defines how to represent Practitioners in FHIR for the purpose of the  HL7 Europe project."
+Title:    "Practitioner (EU base)"
+Description: """This profile specifies how the HL7 FHIR Practitioner resource should be used for conveying commonly used concepts in the European context."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (1, draft)
 * . obeys name-or-identier
@@ -16,8 +16,8 @@ Description: "This profile defines how to represent Practitioners in FHIR for th
 Profile:  PractitionerRoleEu
 Parent:   PractitionerRole // http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips
 Id:       practitionerRole-eu
-Title:    "PractitionerRole (EU)"
-Description: "This profile defines how to represent Practitioners (with their roles) in FHIR for the purpose of the  HL7 Europe project."
+Title:    "PractitionerRole (EU base)"
+Description: """This profile specifies how the HL7 FHIR PractitionerRole resource should be used for conveying commonly used concepts in the European context."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (1, draft)
 * identifier ^short = "Business identifier"
