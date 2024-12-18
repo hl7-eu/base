@@ -16,7 +16,7 @@ This version of the guide gathers various kinds of profiles and artefacts intend
 It includes:
 
 - **Base profiles** aim to specify how concepts commonly used in Europe are represented in HL7 FHIR. These profiles, loosely constrained, are intended to serve as the foundation for any European-derived profiles.
-- **Core profiles**, a set of more constrained profiles, are intended to be reused in the majority of EU REALM HL7 FHIR IGs.
+- **Core profiles**, a set of more constrained profiles, are intended to be reused in the majority of EU REALM HL7 FHIR IGs. When reasoneable and applicable, the alignment with IPS profiles is pursued.
 
 <div>
   <p></p>
