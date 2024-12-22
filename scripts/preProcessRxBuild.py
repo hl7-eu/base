@@ -40,6 +40,8 @@ def transform_file(source_file, target_file, flag):
     # Ensure the target directory exists
     os.makedirs(os.path.dirname(target_file), exist_ok=True)
 
+    is_md_file = source_file.endswith('.md')
+
     with open(source_file, 'r') as infile, open(target_file, 'w') as outfile:
         in_section = False  # Track if we are inside the desired section
         ignore_section = False  # Track if we are inside an unrelated section
@@ -67,7 +69,7 @@ def transform_file(source_file, target_file, flag):
                 continue  # Skip unrelated separators
 
             # Write lines only from the desired section or completely outside any section
-            if in_section or (not ignore_section and stripped_line):
+            if in_section or (not ignore_section and (stripped_line or is_md_file)):
                 outfile.write(line)
 
     print(f"Transformed and saved: {target_file}")

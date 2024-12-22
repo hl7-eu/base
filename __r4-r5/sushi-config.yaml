@@ -6,11 +6,10 @@ id: hl7.fhir.eu.base.r4
 id: hl7.fhir.eu.base.r5
 [r5-end]
 
-
+title: HL7 Europe Base and Core FHIR IG
 canonical: http://hl7.eu/fhir/base
 name:  Hl7EuBaseIg
-title: HL7 Europe Base Profiles
-description: This guide describes base profiles and common artefacts the European REALM.
+description: This guide collects base and core profiles to be used in the European context. It also includes common artifacts, such as the profiles describing the European Health Insurance Card.
 status: draft # draft | active | retired | unknown
 version: 0.0.1-ci #
 
