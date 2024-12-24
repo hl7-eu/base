@@ -2,9 +2,11 @@
 Profile:  CoverageEhic
 Parent:   Coverage
 Id:       Coverage-eu-ehic
-Title:    "Coverage: EHIC "
+Title:    "Coverage: EHIC"
 Description: "Coverage profile for the European Health Insurance Card"
 //-------------------------------------------------------------------------------------------
+
+* insert SetFmmandStatusRule ( 1, draft)
 * identifier 1..1 // #8 card number
 * identifier ^short = "EHIC#8 - Identification number of the card"
 * identifier ^definition = "Logical number of the card"
@@ -43,20 +45,12 @@ Id: Patient-eu-ehic
 Title: "Patient (EHIC)"
 Description: "This profile represents the constraints applied to the Patient resource when sed with the EHIC coverage profile."
 
+* insert SetFmmandStatusRule ( 1, draft)
 * identifier 1.. 
-* identifier ^slicing.discriminator[0].type = #pattern
-* identifier ^slicing.discriminator[0].path = "system"
-* identifier ^slicing.ordered = false
-* identifier ^slicing.rules = #open
-* identifier ^short = "Identifiers used for this patient"
-* identifier ^definition = "Identifiers used for this patient"
-* identifier contains ehic 1..1
-
-* identifier[ehic] ^short = "EHIC#6 - Personal identification number"
-* identifier[ehic] ^definition = "Personal identification number of the card holder or, when no such number exists, the number of the insured person from whom the rights of the card holder derive"
-* identifier[ehic].system 1..1 
-* identifier[ehic].system from VsEHICPersonalIdUri (extensible)
-* identifier[ehic].value 1..1
+* identifier
+  * system from VsEHICPersonalIdUri (extensible)
+  * system 1..1
+  * value 1..1
 
 * name 1..*
 * name.family 1..1 // #3

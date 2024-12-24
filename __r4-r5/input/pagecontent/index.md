@@ -1,10 +1,3 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <blockquote class="stu-note">  
-    <p>Obligations have been added to this version of the guide only as <strong>informative</strong> material to collect feedback about their usage.</p>  
-    <p>For more details about obligations, please refer to the <a href="obligations.html">Obligations page</a>.</p>
-  </blockquote>
-</div>
-
 ### Scope
 
 This guide collects base and core profiles to be used in the European context. It also includes common artifacts, such as the profiles describing the European Health Insurance Card.
@@ -58,7 +51,3 @@ This guide is published for two versions of HL7 FHIR:
 ### IP Statements
 
 {% include ip-statements.xhtml %}
-
-### Authors and Contributors
-
-Please refer to the [Authors and Contributors](contributors.html) page.

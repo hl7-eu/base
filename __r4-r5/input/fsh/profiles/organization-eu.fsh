@@ -3,7 +3,6 @@ Parent: Organization
 Id: organization-eu
 Title: "Organization (EU base)"
 Description: "This profile specifies how the HL7 FHIR Organization resource should be used for conveying commonly used concepts in the European context."
-
 * insert SetFmmandStatusRule (1, draft)
 * . obeys name-or-identier
 * type ^short = "Organization type"
@@ -24,4 +23,4 @@ Description: "This profile specifies how the HL7 FHIR Organization resource shou
 Invariant: name-or-identier
 Description: "identifier or name SHALL be present"
 Severity: #error
-Expression: ".identifier.exists() or name.exists()"
+Expression: "identifier.exists() or name.exists()"

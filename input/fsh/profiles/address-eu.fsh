@@ -5,9 +5,6 @@ Id:         Address-eu
 Title:      "Address (EU)"
 Description: """This profile extends the Address data type for supporting streetname, housenumber and postal box."""
 //-------------------------------------------------------------------------------------------
-/* * ^publisher = "HL7 EU"
-* ^version = "1.0.0" */
-* ^experimental = false
 * insert SetFmmandStatusRule ( 2, trial-use)
 * line.extension ^slicing.discriminator.type = #value
 * line.extension ^slicing.discriminator.path = "url"
