@@ -1,15 +1,17 @@
 ### Scope
 
-This guide collects base and core profiles to be used in the European context. It also includes common artifacts, such as the profiles describing the European Health Insurance Card.
+This guide collects various types of artefacts (e.g., base and core profiles) designed for use in the European context and intended for reuse by HL7 Europe or derived guides.
 
 ### Introduction
 
-This version of the guide gathers various kinds of profiles and artefacts intended for reuse across HL7 Europe or derived guides.
+This version of the guide includes European base and core profiles, as well as other artefacts, such as profiles describing the European Health Insurance Card, which are candidates for reuse by HL7 Europe or HL7 EU-derived guides.
 
-It includes:
 
-- **Base profiles** aim to specify how concepts commonly used in Europe are represented in HL7 FHIR. These profiles, loosely constrained, are intended to serve as the foundation for any European-derived profiles.
-- **Core profiles**, a set of more constrained profiles, are intended to be reused in the majority of EU REALM HL7 FHIR IGs. When reasoneable and applicable, the alignment with IPS profiles is pursued.
+Definitions:
+
+- **Base profiles.** A set of profiles designed to specify how commonly used concepts in Europe are represented in HL7 FHIR. These profiles are loosely constrained and serve as the foundation for any European-derived profiles.
+- **Core profiles.** A more constrained set of profiles intended for reuse in the majority of EU REALM HL7 FHIR IGs. When reasonable and applicable, alignment with IPS profiles is pursued.
+
 
 <div>
   <p></p>
@@ -20,7 +22,8 @@ It includes:
   <p></p>
 </div>
 
-Distinct HL7 FHIR Implementation Guides may be created in the future to document these types of profiles.
+Distinct HL7 FHIR Implementation Guides may be developed in the future to document these types of profiles.
+
 
 ### Guide Publication
 
