@@ -14,9 +14,7 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * extension[patient-citizenship] ^short = "Citizenship"
 * extension[patient-nationality] ^short = "Nationality"
 * identifier ^short = "Patient identifiers" // MS according to IPS
-* name 1..*
 * name only HumanNameEu
-* name obeys eu-pat-1
 * name ^requirements = "Need to be able to track the patient by multiple names. Examples are your official name and a partner name.\r\nThe Alphabetic representation of the name SHALL be always provided"
 * name ^requirements = "Need to be able to track the patient by multiple names. Examples are your official name and a partner name.\r\nThe Alphabetic representation of the name SHALL be always provided"
 * name.text ^definition = "Text representation of the full name. Due to the cultural variance around the world a consuming system may not know how to present the name correctly; moreover not all the parts of the name go in given or family. Creators are therefore strongly encouraged to provide through this element a presented version of the name. Future versions of this guide may require this element."
@@ -45,8 +43,3 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * generalPractitioner ^short = "Patient's nominated primary care provider."
 * generalPractitioner only Reference(OrganizationEu or PractitionerRoleEu or PractitionerEu) 
 * communication.language ^short = "Communication language"
-Invariant: eu-pat-1
-Description: "given, family, text or a data-absent-reason extension SHALL be present"
-Severity: #error
-Expression: "family.exists() or given.exists() or text.exists() or extension('http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()"
-/* XPath: "f:given or f:family or f:text" */
