@@ -5,11 +5,15 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/Address-eu" key="StructureDefinition-Address-eu" name="Address (EU)"/>
+<artifact id="ValueSet/siteLaterality-eu" key="ValueSet-siteLaterality-eu" name="Body Structure Laterality"/>
+<artifact id="ValueSet/siteQualifier-eu" key="ValueSet-siteQualifier-eu" name="Body Structure Qualifier"/>
+<artifact id="StructureDefinition/BodyStructure-eu" key="StructureDefinition-BodyStructure-eu" name="Body structure (EU base)"/>
 <artifact id="StructureDefinition/Coverage-eu-ehic" key="StructureDefinition-Coverage-eu-ehic" name="Coverage: EHIC"/>
 <artifact id="ValueSet/oid-ehicPersonalId" key="ValueSet-oid-ehicPersonalId" name="EHIC Personal ID (system IDs - oid)"/>
 <artifact id="ValueSet/uri-ehicPersonalId" key="ValueSet-uri-ehicPersonalId" name="EHIC Personal ID (system IDs - uri)"/>
 <artifact id="Coverage/EhicExampleIt" key="Coverage-EhicExampleIt" name="EhicExampleIt"/>
 <artifact id="StructureDefinition/EHIC" key="StructureDefinition-EHIC" name="European Health Insurance Card"/>
+<artifact id="BodyStructure/example-body-structure-eu" key="BodyStructure-example-body-structure-eu" name="Example Body Structure"/>
 <artifact id="Organization/example-organization" key="Organization-example-organization" name="Example Organization"/>
 <artifact id="Patient/example-patient" key="Patient-example-patient" name="Example Patient"/>
 <artifact id="Practitioner/practitioner-eu-core-example" key="Practitioner-practitioner-eu-core-example" name="Example Practitioner (EU core)"/>

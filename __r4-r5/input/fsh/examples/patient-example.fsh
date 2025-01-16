@@ -2,6 +2,7 @@ Instance: PatientExample
 InstanceOf: PatientEuCore
 Title: "Example Patient"
 Description: "An example of a patient resource"
+
 * id = "example-patient"
 * name.family = "Doe"
 * name.given = "John"
