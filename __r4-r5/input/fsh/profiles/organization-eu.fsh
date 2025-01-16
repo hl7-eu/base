@@ -13,8 +13,9 @@ Description: "This profile specifies how the HL7 FHIR Organization resource shou
 * address only AddressEu
 [r4-end]
 [r5-init]
-* contact.telecom ^short = "Organization telecom"
-* contact.address only AddressEu
+* contact
+  * telecom ^short = "Organization telecom"
+  * address only AddressEu
 [r5-end]
 * partOf ^short = "The organization of which this organization is part of: e.g. an ERN"
 * partOf only Reference (OrganizationEu)
