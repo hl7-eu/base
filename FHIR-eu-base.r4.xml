@@ -33,9 +33,13 @@
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
-<page key="changes" name="Change History"/>
+<page key="authors" name="Authors and Contributors"/>
 <page key="copyright" name="Copyright"/>
+<page key="crossversionanalysis" name="Cross-version Analysis"/>
+<page key="dependencies" name="Dependencies"/>
+<page key="downloads" name="Downloads"/>
 <page key="index" name="Home"/>
+<page key="introduction" name="Introduction"/>
+<page key="knownissues" name="Known Issues"/>
 <page key="toc" name="Table of Contents"/>
-<page key="downloads" name="Useful Downloads"/>
 </specification>

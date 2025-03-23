@@ -62,17 +62,26 @@ dependencies:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
+
+
 pages:
   index.md:
     title: Home
-  downloads.xml:
-    title: Useful Downloads
+  authors.md: 
+    title: Authors and Contributors
   copyright.md:
     title: Copyright
-  changes.xml:
-    title: Change History
-
-
+  crossversionanalysis.md:
+    title: Cross-version Analysis
+  downloads.md:
+    title: Downloads
+  dependencies.md:
+    title: Dependencies
+  knownissues.md:
+    title: Known Issues
+  introduction.md:
+    title: Introduction
+    
  #  recommendations.md:
 #    title: Recommendations
 #
@@ -138,10 +147,33 @@ parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Pa
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Table of Contents: toc.html
-  Artifacts: artifacts.html
+  Introduction: introduction.html
+#    Scope and Content: scope.html
+#    Background: background.html
+#    Challenges: challenges.html
+#    References: references.html
+#  Functional:
+#    Use cases: usecases.html
+#    Logical Models: logicalmodels.html
+#   Workflow 
+#  Implementation:
+#    Mapping to Profiles: profiles.html
+#    Examples: examples.html
+#    Implementation Notes: implementationnotes.html  
   About:
-    Downloads: downloads.html
+    Authors and Contributors: authors.html
+    Known Issues: knownissues.html
+    Download: downloads.html
+    Dependencies: dependencies.html
+    Copyright: copyright.html
+    Cross-version Analysis: crossversionanalysis.html
+  Artifacts: artifacts.html
+  [r4-init]
+  R5 IG: https://build.fhir.org/ig/hl7-eu/base-r5
+  [r4-end]
+  [r5-init]
+  R4 IG: https://build.fhir.org/ig/hl7-eu/base
+  [r5-end]
 
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

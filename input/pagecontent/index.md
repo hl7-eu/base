@@ -30,21 +30,6 @@ Distinct HL7 FHIR Implementation Guides may be developed in the future to docume
 This guide is published for two versions of HL7 FHIR:
 
 - **HL7 FHIR R4 Base IG** (hl7.fhir.eu.base.r4). This Guide.
-- **HL7 FHIR R5 Base IG** (hl7.fhir.eu.base.r5). Published at [this link](https://build.fhir.org/ig/hl7-eu/base/branches/r5-master/).
+- **HL7 FHIR R5 Base IG** (hl7.fhir.eu.base.r5). Published at [this link](https://build.fhir.org/ig/hl7-eu/base-r5).
 
 
-### Dependencies
-
-{% include dependency-table.xhtml %}
-
-### Cross Version Analysis
-
-{% include cross-version-analysis.xhtml %}
-
-### Global Profiles
-
-{% include globals-table.xhtml %}
-
-### IP Statements
-
-{% include ip-statements.xhtml %}
