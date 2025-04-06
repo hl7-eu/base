@@ -4,7 +4,7 @@ Id: patient-eu
 Title:    "Patient (EU base)"
 Description: """This profile specifies how the HL7 FHIR Patient resource should be used for conveying commonly used concepts in the European context."""
 
-* insert SetFmmandStatusRule (1, draft)
+* insert SetFmmandStatusRule (2, trial-use)
 
 * extension contains
     $patient-birthPlace named birthPlace 0..1 and

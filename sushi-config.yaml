@@ -4,11 +4,11 @@ title: HL7 Europe Base and Core FHIR IG
 canonical: http://hl7.eu/fhir/base
 name:  Hl7EuBaseIg
 description: This guide collects base and core profiles to be used in the European context. It also includes common artifacts, such as the profiles describing the European Health Insurance Card.
-status: draft # draft | active | retired | unknown
-version: 0.0.1-ci #
+status: active # draft | active | retired | unknown
+version: 0.0.1 #
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # https://www.hl7.org/fhir/valueset-jurisdiction.html
 jurisdiction: 	http://unstats.un.org/unsd/methods/m49/m49.htm#150 "Europe" # urn:iso:std:iso:3166#EU
@@ -24,7 +24,7 @@ copyright: >-
 #
 dependencies:
   # hl7.fhir.uv.ips: current
-  hl7.fhir.uv.ips: current
+  hl7.fhir.uv.ips: 1.1.0
   hl7.fhir.extensions.r5: 4.0.1
   hl7.fhir.eu.extensions: 0.1.x
   # eu.terminology.ehdsi: 0.1.0
@@ -75,8 +75,8 @@ pages:
 #
 parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
 #  produce-jekyll-data: true
-#  special-url:
-#    - http://hl7.eu/fhir/StructureDefinition/information-recipient
+  special-url:
+    - http://terminology.hl7.eu/CodeSystem/v3-ActCode
 #    - http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition
 #    - http://example.org/lab-codes
 # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
@@ -195,12 +195,20 @@ menu:
 #     better option (see below).
 # The following are simple examples to demonstrate what this might
 # look like:
-# resources:
+resources:
 #------------ Concept Maps  -------------
 #  ConceptMap/ConceptMap-eu-diagRptStatus2CompStatus:
 #    name: DiagnosticReport to Composition status
 #    description: Proposed relationship between the statuses used in the DiagnosticReport resource and that used for the Composition.
 #------------ Logical Models -------------
+  Patient/patient-eu-core-example:
+    exampleCanonical: http://hl7.eu/fhir/base/StructureDefinition/patient-eu
+  Practitioner/practitioner-eu-core-example:
+    exampleCanonical: http://hl7.eu/fhir/base/StructureDefinition/practitioner-eu
+  PractitionerRole/practitionerRole-eu-core-example :
+    exampleCanonical: http://hl7.eu/fhir/base/StructureDefinition/practitionerRole-eu
+  Organization/organization-eu-core-example :
+    exampleCanonical: http://hl7.eu/fhir/base/StructureDefinition/organization-eu
 #  StructureDefinition/Subject:
 #    name: A.1.1, A.1.2 - Subject of care
 #    description: Patient or Subject of care. Sections A.1.1 and A.1.2 of the eHN guideline.

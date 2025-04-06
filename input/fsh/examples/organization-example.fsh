@@ -2,7 +2,7 @@ Instance: OrganizationExample
 InstanceOf: OrganizationEuCore
 Title: "Example Organization"
 Description: "An example of an organization resource"
-* id = "example-organization"
+* id = "organization-eu-core-example"
 * name = "Example Health Organization"
 * type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
 * address.line = "123 Example Street"

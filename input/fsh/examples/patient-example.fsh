@@ -2,7 +2,7 @@ Instance: PatientExample
 InstanceOf: PatientEuCore
 Title: "Example Patient"
 Description: "An example of a patient resource"
-* id = "example-patient"
+* id = "patient-eu-core-example"
 * name.family = "Doe"
 * name.given = "John"
 * gender = #male

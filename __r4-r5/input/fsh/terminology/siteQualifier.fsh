@@ -2,11 +2,15 @@ ValueSet:      SiteQualifierEuVs
 Id:	       siteQualifier-eu
 Title:	       "Body Structure Qualifier"
 Description:   "Body Structure site qualifier. It indicates - for example - the body site qualifier from which a laboratory specimen is collected. (based on SNOMED CT)"
+
+
 // * ^experimental = false
 // * ^publisher = "HL7 Europe"
 // * ^copyright = "HL7 Europe"
+
 * insert SNOMEDCopyrightForVS
 * insert SetFmmandStatusRule ( 2, trial-use)
+
 //* include codes from valueset $BodystructureLocationQualifierR5
 //* exclude codes from valueset LabLateralityEuVs
 * $sct#7771000 "Left"
@@ -24,6 +28,7 @@ Description:   "Body Structure site qualifier. It indicates - for example - the 
 * $sct#255551008 "Posterior"
 * $sct#351726001 "Below"
 * $sct#352730000 "Above"
+
 * $sct#40415009 "Proximal (qualifier value)"
 * $sct#255549009 "Anterior (qualifier value)"
 * $sct#26283006 "Superficial (qualifier value)"

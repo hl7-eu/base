@@ -3,7 +3,7 @@ Parent: Organization
 Id: organization-eu
 Title: "Organization (EU base)"
 Description: "This profile specifies how the HL7 FHIR Organization resource should be used for conveying commonly used concepts in the European context."
-* insert SetFmmandStatusRule (1, draft)
+* insert SetFmmandStatusRule (2, trial-use)
 * . obeys name-or-identier
 * type ^short = "Organization type"
 // should name be 1.. as in the IPS ?

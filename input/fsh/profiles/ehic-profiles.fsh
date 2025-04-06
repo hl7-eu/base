@@ -5,13 +5,13 @@ Id:       Coverage-eu-ehic
 Title:    "Coverage: EHIC"
 Description: "Coverage profile for the European Health Insurance Card"
 //-------------------------------------------------------------------------------------------
-* insert SetFmmandStatusRule ( 1, draft)
+* insert SetFmmandStatusRule ( 2, trial-use)
 * identifier 1..1 // #8 card number
 * identifier ^short = "EHIC#8 - Identification number of the card"
 * identifier ^definition = "Logical number of the card"
 * status 1..1 // 
 * type 1..
-* type = EuV3ActCode#EHIC "European Health Insurance Card"  // to be added
+* type = EuV3ActCode#ehic "European Health Insurance Card"  // to be added
 * beneficiary 1..1 // #3, 4 ,5, 6
 * beneficiary ^short = "EHIC fields #3 to #6 (Name, Id, birthDate)"
 * beneficiary only Reference(PatientEhic)
@@ -30,7 +30,7 @@ Parent: Patient
 Id: Patient-eu-ehic
 Title: "Patient (EHIC)"
 Description: "This profile represents the constraints applied to the Patient resource when sed with the EHIC coverage profile."
-* insert SetFmmandStatusRule ( 1, draft)
+* insert SetFmmandStatusRule ( 2, trial-use)
 * identifier 1.. 
 * identifier
   * system from VsEHICPersonalIdUri (extensible)

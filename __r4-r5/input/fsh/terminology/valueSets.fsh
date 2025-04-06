@@ -1,3 +1,4 @@
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 CodeSystem: EuV3ActCode
 Id: v3-ActCode-EU
@@ -8,6 +9,9 @@ Description: "European extensions to the V3 ActCode code system"
 * ^caseSensitive = true
 * ^url = "http://terminology.hl7.eu/CodeSystem/v3-ActCode"
 * #ehic "European Health Insurance Card" "European Health Insurance Card"
+
+
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: VsEHICPersonalIdUri
 Id: uri-ehicPersonalId
@@ -17,6 +21,9 @@ Description: "System identifiers (uri) used for the EHIC#6 Personal Identificati
 * ^experimental = false
 * $uri#http://fhir.nl/fhir/NamingSystem/bsn "Burgerservicenummer"
 * $uri#http://hl7.it/sid/codiceFiscale "Codice Fiscale"
+
+
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: VsEHICPersonalIdOid
 Id: oid-ehicPersonalId
@@ -26,6 +33,9 @@ Description: "System identifiers (oid) used for the EHIC#6 Personal Identificati
 * ^experimental = false
 * $oid#2.16.840.1.113883.2.4.6.3 "Burgerservicenummer"
 * $oid#2.16.840.1.113883.2.9.4.3.2 "Italian Fiscal Code"
+
+
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: VsEHICCountryCodes
 Id: iso-ehicCountryCode

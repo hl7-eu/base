@@ -2,8 +2,12 @@ ValueSet:      SpeciesTypesEuVs
 Id:	       speciesType-eu
 Title:	       "Types of species"
 Description:   """Types of animal species for non-human subjects"""
+
+
 * insert SNOMEDCopyrightForVS
 * insert SetFmmandStatusRule (2, trial-use)
+
+
 * $sct#125097000 "Domestic goat"
 * $sct#125099002 "Sheep"
 * $sct#34618005 "Cow"
