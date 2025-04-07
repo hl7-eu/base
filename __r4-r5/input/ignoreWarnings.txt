@@ -38,7 +38,8 @@ A definition for CodeSystem 'http://terminology.hl7.eu/CodeSystem/v3-ActCode' co
 # Not recognized system
 %URL value 'urn:ietf:rfc:1155' does not resolve%
 %Unknown System 'urn:ietf:rfc:1155' specified, so Concepts and Filters can't be checked%
-%Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:ietf:rfc:1155%
+%Unable to provide support for code system urn:ietf:rfc:1155%
+
 
 # Not resolvable URL
 URL value 'http://hl7.it/sid/codiceFiscale' does not resolve
@@ -54,3 +55,16 @@ The html source has duplicate anchor Ids: 1
 
 # The EHIC patient example is contained in the EHIC Coverage example
 The Implementation Guide contains no explicitly linked examples for this profile
+
+# Reference to deprecated ValueSet
+Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+# experimental value set
+The definition for the element 'Coverage.status' binds to the value set 'http://hl7.org/fhir/ValueSet/fm-status|5.0.0' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Coverage.insurer.type' binds to the value set 'http://hl7.org/fhir/ValueSet/resource-types' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'BodyStructure.morphology' binds to the value set 'http://hl7.org/fhir/ValueSet/bodystructure-code' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'BodyStructure.includedStructure.structure' binds to the value set 'http://hl7.org/fhir/ValueSet/body-site' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'BodyStructure.morphology' binds to the value set 'http://hl7.org/fhir/ValueSet/bodystructure-code' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'BodyStructure.includedStructure.structure' binds to the value set 'http://hl7.org/fhir/ValueSet/body-site' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'BodyStructure.includedStructure.bodyLandmarkOrientation.surfaceOrientation' binds to the value set 'http://hl7.org/fhir/ValueSet/bodystructure-relative-location' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PractitionerRole.specialty' binds to the value set 'http://hl7.org/fhir/ValueSet/c80-practice-codes' which is experimental, but this structure is not labeled as experimental

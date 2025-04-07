@@ -32,10 +32,25 @@ A definition for CodeSystem 'http://terminology.hl7.eu/CodeSystem/v3-ActCode' co
 # Not recognized system
 %URL value 'urn:ietf:rfc:1155' does not resolve%
 %Unknown System 'urn:ietf:rfc:1155' specified, so Concepts and Filters can't be checked%
-%Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:ietf:rfc:1155%
+%Unable to provide support for code system urn:ietf:rfc:1155%
 # Not resolvable URL
 URL value 'http://hl7.it/sid/codiceFiscale' does not resolve
 # UK is a reserved code in iso:3166 see https://www.iso.org/obp/ui/#iso:code:3166:UK (Reserved codes – codes that do not represent a country name in the standard but that have been reserved for a certain use.). In tis case UK is used to identify the United Kingdom for the EHIC.
 The code 'UK' is not valid in the system urn:iso:std:iso:3166 (Unknown code 'UK' in the CodeSystem 'urn:iso:std:iso:3166' version '2018')
 # Known issue with BodyStructure extensions (see https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Issue.20with.20the.20bodySite.20extension)
 The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality from FHIR version 5.0 is not allowed to be used at this point (allowed = e:BodyStructure.includedStructure; this element is [[BodyStructure]; this is a warning since contexts may be renamed between FHIR versions)
+# duplicate anchor Ids
+The html source has duplicate anchor Ids: 1
+# The EHIC patient example is contained in the EHIC Coverage example
+The Implementation Guide contains no explicitly linked examples for this profile
+# Reference to deprecated ValueSet
+Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+# experimental value set
+The definition for the element 'Coverage.status' binds to the value set 'http://hl7.org/fhir/ValueSet/fm-status|5.0.0' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Coverage.insurer.type' binds to the value set 'http://hl7.org/fhir/ValueSet/resource-types' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'BodyStructure.morphology' binds to the value set 'http://hl7.org/fhir/ValueSet/bodystructure-code' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'BodyStructure.includedStructure.structure' binds to the value set 'http://hl7.org/fhir/ValueSet/body-site' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'BodyStructure.morphology' binds to the value set 'http://hl7.org/fhir/ValueSet/bodystructure-code' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'BodyStructure.includedStructure.structure' binds to the value set 'http://hl7.org/fhir/ValueSet/body-site' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'BodyStructure.includedStructure.bodyLandmarkOrientation.surfaceOrientation' binds to the value set 'http://hl7.org/fhir/ValueSet/bodystructure-relative-location' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PractitionerRole.specialty' binds to the value set 'http://hl7.org/fhir/ValueSet/c80-practice-codes' which is experimental, but this structure is not labeled as experimental

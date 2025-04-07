@@ -38,15 +38,16 @@ copyright: >-
 #
 dependencies:
   # hl7.fhir.uv.ips: current
-  hl7.fhir.uv.ips: 1.1.0
+  
   [r4-init]
+  hl7.fhir.uv.ips: 1.1.0
   hl7.fhir.extensions.r5: 4.0.1
   [r4-end]
   [r4-init]
   hl7.fhir.eu.extensions: 0.1.x
   [r4-end]
   [r5-init]
-  hl7.fhir.eu.extensions.r5: 0.1.x
+  hl7.fhir.eu.extensions.r5: current
   [r5-end]
   # eu.terminology.ehdsi: 0.1.0
 

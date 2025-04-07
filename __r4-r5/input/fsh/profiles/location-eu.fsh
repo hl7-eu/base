@@ -6,7 +6,14 @@ Description: "This profile sets minimum expectations for the Location resource t
 
 * insert SetFmmandStatusRule (2, trial-use)
 
+[r4-init]
 * physicalType ^short = "Location type"
-* name ^short = "Location name"
 * telecom ^short = "Location telecom"
+[r4-end]
+[r5-init]
+* type ^short = "Location type"
+* contact.telecom ^short = "Location telecom"
+[r5-end]
+* name ^short = "Location name"
+
 * address only AddressEu
