@@ -78,7 +78,11 @@ def transform_file(source_file, target_file, flag):
 def process_directory(root_dir, target_dir, flag):
     # Walk through all files and directories in root_dir
     for dirpath, dirnames, filenames in os.walk(root_dir):
+        # Modify dirnames in-place to skip directories starting with '.'
+        dirnames[:] = [d for d in dirnames if not d.startswith('.')]
         for file in filenames:
+            if file.startswith('.'):
+                continue  # Skip hidden files
             source_file = os.path.join(dirpath, file)
             # Construct the corresponding target file path
             relative_path = os.path.relpath(source_file, root_dir)
