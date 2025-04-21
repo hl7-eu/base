@@ -42,33 +42,30 @@ def transform_file(source_file, target_file, flag):
 
     is_md_file = source_file.endswith('.md')
 
-    with open(source_file, 'r') as infile, open(target_file, 'w') as outfile:
+    with open(source_file, 'r', encoding='utf-8', errors='replace') as infile, \
+         open(target_file, 'w', encoding='utf-8') as outfile:
         in_section = False  # Track if we are inside the desired section
         ignore_section = False  # Track if we are inside an unrelated section
 
         for line in infile:
             stripped_line = line.strip()
 
-            # Handle multiple starts in one line
             if start_sep in stripped_line:
                 in_section = True
                 ignore_section = False
-                continue  # Skip the separator itself
+                continue
 
-            # Handle multiple ends in one line
             if end_sep in stripped_line:
                 in_section = False
-                continue  # Skip the separator itself
+                continue
 
-            # Handle unrelated sections
             if re.search(r"\[.*-init\]", stripped_line) and start_sep not in stripped_line:
                 ignore_section = True
-                continue  # Skip unrelated separators
+                continue
             if re.search(r"\[.*-end\]", stripped_line) and end_sep not in stripped_line:
                 ignore_section = False
-                continue  # Skip unrelated separators
+                continue
 
-            # Write lines only from the desired section or completely outside any section
             if in_section or (not ignore_section and (stripped_line or is_md_file)):
                 outfile.write(line)
 
@@ -78,7 +75,11 @@ def transform_file(source_file, target_file, flag):
 def process_directory(root_dir, target_dir, flag):
     # Walk through all files and directories in root_dir
     for dirpath, dirnames, filenames in os.walk(root_dir):
+        # Modify dirnames in-place to skip directories starting with '.'
+        dirnames[:] = [d for d in dirnames if not d.startswith('.')]
         for file in filenames:
+            if file.startswith('.'):
+                continue  # Skip hidden files
             source_file = os.path.join(dirpath, file)
             # Construct the corresponding target file path
             relative_path = os.path.relpath(source_file, root_dir)

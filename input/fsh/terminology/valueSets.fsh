@@ -64,4 +64,4 @@ Description: "ISO 3166 - Country Codes used by the European Healthcare Insurance
 * $iso-3166#LI "Liechtenstein"
 * $iso-3166#NO "Norway"
 * $iso-3166#CH "Switzerland"
-* $iso-3166#UK "United Kingdom"
+// * $iso-3166#UK "United Kingdom"
