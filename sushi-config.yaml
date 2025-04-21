@@ -1,5 +1,5 @@
 # Check the link to the r4 and r5 versions
-id: hl7.fhir.eu.r4.base
+id: hl7.fhir.eu.base
 canonical: http://hl7.eu/fhir/base
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 title: HL7 Europe Base and Core FHIR IG
