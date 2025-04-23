@@ -55,4 +55,7 @@ The definition for the element 'BodyStructure.includedStructure.structure' binds
 The definition for the element 'BodyStructure.includedStructure.bodyLandmarkOrientation.surfaceOrientation' binds to the value set 'http://hl7.org/fhir/ValueSet/bodystructure-relative-location' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'PractitionerRole.specialty' binds to the value set 'http://hl7.org/fhir/ValueSet/c80-practice-codes' which is experimental, but this structure is not labeled as experimental
 #   experimental CodeSystem
-Reference to experimental CodeSystem http://terminology.hl7.eu/CodeSystem/v3-ActCode|0.0.1
+%Reference to experimental CodeSystem http://terminology.hl7.eu/CodeSystem/v3-ActCode%
+# See https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Issue.20using.20version-specific.20packages
+The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+The URL should refer directly to the ImplementationGuide resource (e.g. include '/ImplementationGuide/')
