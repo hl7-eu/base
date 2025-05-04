@@ -14,7 +14,7 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * extension[patient-citizenship] ^short = "Citizenship"
 * extension[patient-nationality] ^short = "Nationality"
 * identifier ^short = "Patient identifiers" // MS according to IPS
-* name only HumanNameEu
+* name // only HumanNameEu
 * name ^requirements = "Need to be able to track the patient by multiple names. Examples are your official name and a partner name.\r\nThe Alphabetic representation of the name SHALL be always provided"
 * name ^requirements = "Need to be able to track the patient by multiple names. Examples are your official name and a partner name.\r\nThe Alphabetic representation of the name SHALL be always provided"
 * name.text ^definition = "Text representation of the full name. Due to the cultural variance around the world a consuming system may not know how to present the name correctly; moreover not all the parts of the name go in given or family. Creators are therefore strongly encouraged to provide through this element a presented version of the name. Future versions of this guide may require this element."
@@ -38,7 +38,7 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
   * address ^short = "Contact person address"
   * address only AddressEu
   * telecom ^short = "Contact details for the person"
-  * name only HumanNameEu
+  * name // only HumanNameEu
     * ^short = "Contact name"
 * generalPractitioner ^short = "Patient's nominated primary care provider."
 * generalPractitioner only Reference(OrganizationEu or PractitionerRoleEu or PractitionerEu) 

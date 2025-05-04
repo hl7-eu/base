@@ -1,6 +1,6 @@
 # PreProcessRxBuild Script
 
-This script processes files in a directory, filters content based on a specified flag, and copies transformed files to a target directory while preserving the directory structure.
+This script processes files in a directory, filters content based on a specified flag, and copies transformed files to a target directory while preserving the directory structure. It also copies image files directly without transformation.
 
 ## Usage
 
@@ -8,15 +8,6 @@ This script processes files in a directory, filters content based on a specified
 python script.py <flag>
 ```
 
-- `<flag>`: The flag to identify the sections to retain in the format `[<flag>-init]` and `[<flag>-end]`.
-
-### Example
-
-```sh
-python script.py r4
-```
-
-This will process all files in the root directory and its subdirectories, retaining only lines inside `[r4-init] ... [r4-end]` sections and lines outside any flagged sections.
 
 ## Configuration
 
@@ -37,13 +28,14 @@ The script reads `root_directory` and `target_directory` from a `config.json` fi
 
 2. **Process Directory**: It walks through all files and directories in the `root_directory`.
 
-3. **Transform File**: For each file, it:
-    - Reads the file content.
-    - Retains lines inside the specified flag sections `[<flag>-init] ... [<flag>-end]`.
-    - Retains lines outside any flagged sections.
-    - If the file is a Markdown file (`.md`), it does not remove empty lines.
+3. **Handle Files**:
+    - **Image Files** (`.png`, `.jpg`, `.jpeg`, `.gif`, `.bmp`): copied directly to the `target_directory`.
+    - **Other Files**:
+        - Reads the file content.
+        - Retains lines outside any flagged sections.
+        - If the file is a Markdown file (`.md`), it does not remove empty lines.
 
-4. **Save Transformed File**: The transformed content is saved to the corresponding path in the `target_directory`.
+4. **Save Output**: The content is saved to the corresponding path in the `target_directory`, preserving the original structure.
 
 ## Notes
 
@@ -58,6 +50,7 @@ The script reads `root_directory` and `target_directory` from a `config.json` fi
 root_directory/
 ├── file1.txt
 ├── file2.md
+├── image.png
 └── subdir/
     └── file3.txt
 ```
@@ -68,6 +61,7 @@ root_directory/
 target_directory/
 ├── file1.txt
 ├── file2.md
+├── image.png
 └── subdir/
     └── file3.txt
 ```

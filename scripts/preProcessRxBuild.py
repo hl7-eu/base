@@ -21,6 +21,7 @@ import os
 import sys
 import re
 import json
+import shutil
 
 def load_config():
     """Load configuration from a JSON file in the script's directory."""
@@ -32,11 +33,15 @@ def load_config():
     with open(config_file, "r") as file:
         return json.load(file)
 
+def is_image_or_script_file(filename):
+    allowed_extensions = ['.png', '.jpg', '.jpeg', '.gif', '.bmp', '.py']
+    return os.path.splitext(filename)[1].lower() in allowed_extensions
+
 def transform_file(source_file, target_file, flag):
     # Define the separators
     start_sep = f"[{flag}-init]"
     end_sep = f"[{flag}-end]"
-    
+
     # Ensure the target directory exists
     os.makedirs(os.path.dirname(target_file), exist_ok=True)
 
@@ -69,8 +74,7 @@ def transform_file(source_file, target_file, flag):
             if in_section or (not ignore_section and (stripped_line or is_md_file)):
                 outfile.write(line)
 
-    print(f"Transformed and saved: {target_file}")
-
+    print(f"Transformed: {source_file} -> {target_file}")
 
 def process_directory(root_dir, target_dir, flag):
     # Walk through all files and directories in root_dir
@@ -84,9 +88,15 @@ def process_directory(root_dir, target_dir, flag):
             # Construct the corresponding target file path
             relative_path = os.path.relpath(source_file, root_dir)
             target_file = os.path.join(target_dir, relative_path)
-            # Transform the file
-            transform_file(source_file, target_file, flag)
 
+            # Copy image or script files directly
+            if is_image_or_script_file(file):
+                os.makedirs(os.path.dirname(target_file), exist_ok=True)
+                shutil.copy2(source_file, target_file)
+                print(f"Copied: {source_file} -> {target_file}")
+            else:
+                # Transform the file
+                transform_file(source_file, target_file, flag)
 
 if __name__ == "__main__":
     # Check for required flag parameter
@@ -94,7 +104,7 @@ if __name__ == "__main__":
         print("Usage: python script.py <flag>")
         print("Example: python script.py r4")
         sys.exit(1)
-    
+
     flag_to_use = sys.argv[1]  # Get the flag from command-line arguments
 
     # Load directories from config file
