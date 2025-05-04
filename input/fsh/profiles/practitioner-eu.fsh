@@ -10,7 +10,7 @@ Description: """This profile specifies how the HL7 FHIR Practitioner resource sh
 * . obeys name-or-identier
 * identifier ^short = "Practitioner identifier"
 * address only AddressEu
-* name only HumanNameEu
+* name ^short = "Practitioner Name" // only HumanNameEu
 //-------------------------------------------------------------------------------------------
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  PractitionerRoleEu
