@@ -14,3 +14,4 @@ This is used to identify the species when a specimen is collected from an animal
   * ^short = "Use contact.telecom"
   * ^comment = "Animals do not have phones, their contacts do. Contact.telecom should be used."
 * maritalStatus ..0
+* communication ..0
