@@ -41,3 +41,4 @@ Thumbs.db
 ################
 __r4-r5
 .gitmodules
+/r4_preprocess.log
