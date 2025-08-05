@@ -26,7 +26,7 @@ Description: "Coverage profile for the European Health Insurance Card"
 * payor.display ^definition = "Identification number and acronym of the competent institution"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: PatientEhic
-Parent: Patient
+Parent: PatientEuCore
 Id: Patient-eu-ehic
 Title: "Patient (EHIC)"
 Description: "This profile represents the constraints applied to the Patient resource when sed with the EHIC coverage profile."
