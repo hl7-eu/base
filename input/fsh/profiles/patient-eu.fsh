@@ -8,8 +8,10 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
     $patient-birthPlace named birthPlace 0..1 and
     $sexForClinicalUse named sex-for-clinical-use 0..* and // from Lab Report
     $patient-citizenship named patient-citizenship 0..* and
-    $patient-nationality named patient-nationality 0..*
+    $patient-nationality named patient-nationality 0..* add
+    $patient-birthTime named birthTime 0..1
 * extension[birthPlace].valueAddress only AddressEu
+* extension[birthTime] ^short = "Birth time"
 * extension[sex-for-clinical-use] ^short = "Sex for clinical use"
 * extension[patient-citizenship] ^short = "Citizenship"
 * extension[patient-nationality] ^short = "Nationality"

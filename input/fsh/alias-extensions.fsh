@@ -29,6 +29,7 @@ Alias: $observation-triggeredBy-r5 = http://hl7.org/fhir/5.0/StructureDefinition
 Alias: $observation-value-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.value[x]
 Alias: $patient-animal = http://hl7.org/fhir/StructureDefinition/patient-animal
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
+Alias: $patient-birthTime = http://hl7.org/fhir/StructureDefinition/patient-birthTime
 Alias: $patient-citizenship = http://hl7.org/fhir/StructureDefinition/patient-citizenship
 Alias: $patient-mothersMaidenName = http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName
 Alias: $patient-nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
