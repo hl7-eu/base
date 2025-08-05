@@ -7,7 +7,6 @@ Important – the European Health Insurance Card:
 * does not cover your costs if you are travelling for the express purpose of obtaining medical treatment,
 * does not guarantee free services. As each country’s healthcare system is different services that cost nothing at home might not be free in another country."
 Title: "European Health Insurance Card"
-
 * country 1..1 code "Country Code" "Code of the Member State issuing the card"
 * name 1..1 string  "3 - Name" "Forename of the card holder"
 * givenName 1..1 string  "4 - Given names" "Surname of the card holder"
