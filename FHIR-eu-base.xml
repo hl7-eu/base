@@ -9,7 +9,7 @@
 <artifact id="StructureDefinition/Address-eu" key="StructureDefinition-Address-eu" name="Address (EU)"/>
 <artifact id="ValueSet/siteLaterality-eu" key="ValueSet-siteLaterality-eu" name="Body Structure Laterality"/>
 <artifact id="ValueSet/siteQualifier-eu" key="ValueSet-siteQualifier-eu" name="Body Structure Qualifier"/>
-<artifact id="StructureDefinition/BodyStructure-eu" key="StructureDefinition-BodyStructure-eu" name="Body structure (EU base)"/>
+<artifact id="StructureDefinition/BodyStructure-eu" key="StructureDefinition-BodyStructure-eu" name="BodyStructure (EU base)"/>
 <artifact id="StructureDefinition/Coverage-eu-ehic" key="StructureDefinition-Coverage-eu-ehic" name="Coverage: EHIC"/>
 <artifact id="ValueSet/oid-ehicPersonalId" key="ValueSet-oid-ehicPersonalId" name="EHIC Personal ID (system IDs - oid)"/>
 <artifact id="ValueSet/uri-ehicPersonalId" key="ValueSet-uri-ehicPersonalId" name="EHIC Personal ID (system IDs - uri)"/>
