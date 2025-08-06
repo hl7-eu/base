@@ -1,7 +1,7 @@
 Instance: PatientExample
 InstanceOf: PatientEuCore
-Title: "Example Patient"
-Description: "An example of a Patient resource"
+Title: "Patient Example"
+Description: "Example of a Patient resource conforming to the Patient (EU Core) profile."
 * id = "patient-eu-core-example"
 * name.family = "Doe"
 * name.given = "John"

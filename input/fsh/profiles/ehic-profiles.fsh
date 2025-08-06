@@ -1,7 +1,7 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  CoverageEhic
 Parent:   Coverage
-Id:       Coverage-eu-ehic
+Id:       coverage-eu-ehic
 Title:    "Coverage (EHIC)"
 Description: "Coverage profile for the European Health Insurance Card"
 //-------------------------------------------------------------------------------------------
@@ -27,7 +27,7 @@ Description: "Coverage profile for the European Health Insurance Card"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: PatientEhic
 Parent: PatientEuCore
-Id: Patient-eu-ehic
+Id: patient-eu-ehic
 Title: "Patient (EHIC)"
 Description: "This profile represents the constraints applied to the Patient resource when used with the EHIC coverage profile."
 * insert SetFmmandStatusRule ( 2, draft)

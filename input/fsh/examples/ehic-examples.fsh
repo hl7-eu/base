@@ -1,7 +1,8 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: EhicExampleIt
 InstanceOf: CoverageEhic
-Description: "Example of Italian EHIC (Tessera TEAM)"
+Title: "EHIC – Italy"
+Description: "Example of an Italian European Health Insurance Card (Tessera TEAM)."
 * contained = PatientEhicInline
 * identifier.system = "http://example.org/ehic"
 * identifier.value = "80380000900090510553"
