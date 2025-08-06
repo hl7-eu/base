@@ -1,7 +1,7 @@
 Instance: LocationExample
 InstanceOf: LocationEu
 Title: "Location: example"
-Description: "Example of Location resource conformant with the core profile"
+Description: "Example of a Location resource conforming with the core profile"
 * id = "example-location"
 // to be added => * physicalType ^short = "Location type"
 * name = "Best Location"

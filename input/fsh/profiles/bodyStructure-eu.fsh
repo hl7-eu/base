@@ -1,7 +1,7 @@
 Profile: BodyStructureEu
 Parent: BodyStructure
 Id: BodyStructure-eu
-Title: "Body structure (EU base)"
+Title: "BodyStructure (EU base)"
 Description: "This profile specifies how the HL7 FHIR BodyStructure resource should be used for conveying commonly used concepts in the European context."
 * insert SetFmmandStatusRule ( 2, draft)
 * extension contains $bodyStructure-laterality-r5 named laterality 0..1
