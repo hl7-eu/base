@@ -2,7 +2,7 @@
 Profile:  CoverageEhic
 Parent:   Coverage
 Id:       Coverage-eu-ehic
-Title:    "Coverage: EHIC"
+Title:    "Coverage (EHIC)"
 Description: "Coverage profile for the European Health Insurance Card"
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule ( 2, draft)

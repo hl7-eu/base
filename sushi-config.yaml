@@ -235,13 +235,7 @@ resources:
 # is specified by id or name, SUSHI will replace it with the correct
 # URL when generating the IG JSON.
 #
-#  groups:
-#    eHNGuidelines:
-#      name:  eHN Laboratory Guidelines (Informative)
-#      description: Logical models representing the eHN Laboratory Guidelines. This is informative material.
-#      resources:
-#        - StructureDefinition/LabReport
-#  
+  groups:
 #  
 #    logicalModelsMaps:
 #      name:  eHN Logical Model mappings (Informative)
@@ -254,6 +248,35 @@ resources:
 #      description: Actors and Obligations used to describe the Patient Summary functional requirements for the specified data elements. Informative for this version of the guide.
 #      resources:
 #        - ActorDefinition/actor-consumer-eu-lab
+    EuBaseProfiles:
+      name:  HL7 Europe Base Profiles
+      description: Base profiles for the European context.
+      resources:
+        - StructureDefinition/BodyStructure-eu
+        - StructureDefinition/Patient-eu
+        - StructureDefinition/Practitioner-eu
+        - StructureDefinition/PractitionerRole-eu
+        - StructureDefinition/Organization-eu
+        - StructureDefinition/Location-eu
+    EuCoreProfiles:
+      name:  HL7 Europe Core Profiles
+      description: Core profiles for the European context.
+      resources:
+        - StructureDefinition/Patient-eu-core
+        - StructureDefinition/Practitioner-eu-core
+        - StructureDefinition/PractitionerRole-eu-core
+        - StructureDefinition/Organization-eu-core
+    EHICLogicalModels:
+      name:  European Health Insurance Card Model (Informative)
+      description: Logical models representing the European Health Insurance Card. This is informative material.
+      resources:
+        - StructureDefinition/EHIC
+    EHICProfiles:
+      name:  European Health Insurance Card Profiles
+      description: Profiles representing the European Health Insurance Card.
+      resources:
+        - StructureDefinition/Coverage-eu-ehic
+        - StructureDefinition/Patient-eu-ehic
 #
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
