@@ -7,12 +7,16 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * extension contains
     $patient-birthPlace named birthPlace 0..1 and
     $sexForClinicalUse named sex-for-clinical-use 0..* and // from Lab Report
+    $individual-genderIdentity named gender-identity 0..* and
+    $individual-pronouns named pronouns 0..* and
     $patient-citizenship named patient-citizenship 0..* and
     $patient-nationality named patient-nationality 0..* and
     $patient-birthTime named birthTime 0..1
 * extension[birthPlace].valueAddress only AddressEu
 * extension[birthTime] ^short = "Birth time"
 * extension[sex-for-clinical-use] ^short = "Sex for clinical use"
+* extension[gender-identity] ^short = "Gender identity"
+* extension[pronouns] ^short = "Pronouns"
 * extension[patient-citizenship] ^short = "Citizenship"
 * extension[patient-nationality] ^short = "Nationality"
 * identifier ^short = "Patient identifiers" // MS according to IPS
