@@ -7,6 +7,7 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/Address-eu" key="StructureDefinition-Address-eu" name="Address (EU)"/>
+<artifact id="StructureDefinition/EHDSAddress" key="StructureDefinition-EHDSAddress" name="Address model"/>
 <artifact id="Patient/Patient-animal-example" key="Patient-Patient-animal-example" name="Animal Patient Example"/>
 <artifact id="ValueSet/siteLaterality-eu" key="ValueSet-siteLaterality-eu" name="Body Structure Laterality"/>
 <artifact id="ValueSet/siteQualifier-eu" key="ValueSet-siteQualifier-eu" name="Body Structure Qualifier"/>
@@ -21,24 +22,31 @@
 <artifact id="Coverage/EhicExampleIt" key="Coverage-EhicExampleIt" name="EHIC – Italy"/>
 <artifact id="StructureDefinition/EHIC" key="StructureDefinition-EHIC" name="European Health Insurance Card"/>
 <artifact id="CodeSystem/v3-ActCode-EU" key="CodeSystem-v3-ActCode-EU" name="HL7 V3 ActCode - EU extensions"/>
+<artifact id="StructureDefinition/EHDSHealthProfessional" key="StructureDefinition-EHDSHealthProfessional" name="Health professional model"/>
+<artifact id="StructureDefinition/EHDSHumanName" key="StructureDefinition-EHDSHumanName" name="Human name model"/>
 <artifact deprecated="true" id="StructureDefinition/HumanName-eu" key="StructureDefinition-HumanName-eu" name="HumanName (Eu)"/>
 <artifact id="ValueSet/iso-ehicCountryCode" key="ValueSet-iso-ehicCountryCode" name="ISO 3166 - EHIC Country Codes"/>
 <artifact id="StructureDefinition/location-eu" key="StructureDefinition-location-eu" name="Location (EU base)"/>
 <artifact id="Location/example-location" key="Location-example-location" name="Location Example"/>
+<artifact id="StructureDefinition/EHDSLocation" key="StructureDefinition-EHDSLocation" name="Location model"/>
+<artifact id="StructureDefinition/EHDSOrganisation" key="StructureDefinition-EHDSOrganisation" name="Organisation model"/>
 <artifact id="StructureDefinition/organization-eu" key="StructureDefinition-organization-eu" name="Organization (EU base)"/>
 <artifact id="StructureDefinition/organization-eu-core" key="StructureDefinition-organization-eu-core" name="Organization (EU core)"/>
 <artifact id="Organization/organization-eu-core-example" key="Organization-organization-eu-core-example" name="Organization Example"/>
 <artifact id="StructureDefinition/patient-eu-ehic" key="StructureDefinition-Patient-eu-ehic" name="Patient (EHIC)"/>
 <artifact id="StructureDefinition/patient-eu" key="StructureDefinition-patient-eu" name="Patient (EU base)"/>
 <artifact id="StructureDefinition/patient-eu-core" key="StructureDefinition-patient-eu-core" name="Patient (EU core)"/>
+<artifact id="StructureDefinition/EHDSPatientAnimal" key="StructureDefinition-EHDSPatientAnimal" name="Patient Animal model"/>
 <artifact id="Patient/patient-eu-core-example" key="Patient-patient-eu-core-example" name="Patient Example"/>
-<artifact id="StructureDefinition/Patient-animal-eu" key="StructureDefinition-Patient-animal-eu" name="Patient: Animal"/>
+<artifact id="StructureDefinition/EHDSPatient" key="StructureDefinition-EHDSPatient" name="Patient model"/>
+<artifact id="StructureDefinition/patient-animal-eu" key="StructureDefinition-Patient-animal-eu" name="Patient: Animal"/>
 <artifact id="StructureDefinition/practitioner-eu" key="StructureDefinition-practitioner-eu" name="Practitioner (EU base)"/>
 <artifact id="StructureDefinition/practitioner-eu-core" key="StructureDefinition-practitioner-eu-core" name="Practitioner (EU core)"/>
 <artifact id="Practitioner/practitioner-eu-core-example" key="Practitioner-practitioner-eu-core-example" name="Practitioner Example"/>
 <artifact id="StructureDefinition/practitionerRole-eu" key="StructureDefinition-practitionerRole-eu" name="PractitionerRole (EU base)"/>
 <artifact id="StructureDefinition/practitionerRole-eu-core" key="StructureDefinition-practitionerRole-eu-core" name="PractitionerRole (EU core)"/>
 <artifact id="PractitionerRole/practitionerRole-eu-core-example" key="PractitionerRole-practitionerRole-eu-core-example" name="PractitionerRole Example"/>
+<artifact id="StructureDefinition/EHDSTelecom" key="StructureDefinition-EHDSTelecom" name="Telecom model"/>
 <artifact id="ValueSet/speciesType-eu" key="ValueSet-speciesType-eu" name="Types of species"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
@@ -51,5 +59,7 @@
 <page key="index" name="Home"/>
 <page key="introduction" name="Introduction"/>
 <page key="knownissues" name="Known Issues"/>
+<page key="logicalmodels" name="Logical Models"/>
+<page key="modelmap" name="Model Map"/>
 <page key="toc" name="Table of Contents"/>
 </specification>

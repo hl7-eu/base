@@ -62,6 +62,10 @@ pages:
     title: Known Issues
   introduction.md:
     title: Introduction
+  modelmap.html:
+    title: Model Map
+  logicalmodels.md:
+    title: Logical Models
  #  recommendations.md:
 #    title: Recommendations
 #
@@ -129,12 +133,12 @@ menu:
 #    Background: background.html
 #    Challenges: challenges.html
 #    References: references.html
-#  Functional:
+  Functional:
 #    Use cases: usecases.html
-#    Logical Models: logicalmodels.html
+    Logical Models: logicalmodels.html
 #   Workflow 
-#  Implementation:
-#    Mapping to Profiles: profiles.html
+  Implementation:
+    Mapping to Profiles: modelmap.html
 #    Examples: examples.html
 #    Implementation Notes: implementationnotes.html  
   About:
@@ -254,6 +258,7 @@ groups:
         - StructureDefinition/practitioner-eu-core
         - StructureDefinition/practitionerRole-eu-core
         - StructureDefinition/organization-eu-core
+        - StructureDefinition/patient-animal-eu
    EHICLogicalModels:
       name:  European Health Insurance Card Model (Informative)
       description: Logical models representing the European Health Insurance Card. This is informative material.
