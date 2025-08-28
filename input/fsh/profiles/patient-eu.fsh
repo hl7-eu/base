@@ -36,7 +36,7 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
   * ^short = "The date of birth for the patient"
 * address only AddressEu // MS according to IPS
 * contact
-  * relationship only $CodeableConcept-uv-ips
+  *  relationship ^short = "Contact relationship"
   // include additonal value sets when they are defined
   * address ^short = "Contact person address"
   * address only AddressEu
