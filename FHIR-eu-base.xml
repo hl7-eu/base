@@ -12,6 +12,7 @@
 <artifact id="ValueSet/siteLaterality-eu" key="ValueSet-siteLaterality-eu" name="Body Structure Laterality"/>
 <artifact id="ValueSet/siteQualifier-eu" key="ValueSet-siteQualifier-eu" name="Body Structure Qualifier"/>
 <artifact deprecated="true" id="StructureDefinition/BodyStructure-eu" key="StructureDefinition-BodyStructure-eu" name="Body structure (EU base)"/>
+<artifact id="StructureDefinition/EHDSBodyStructure" key="StructureDefinition-EHDSBodyStructure" name="Body structure model"/>
 <artifact id="StructureDefinition/bodyStructure-eu" key="StructureDefinition-bodyStructure-eu" name="BodyStructure (EU base)"/>
 <artifact id="BodyStructure/example-body-structure-eu" key="BodyStructure-example-body-structure-eu" name="BodyStructure Example"/>
 <artifact id="StructureDefinition/coverage-eu-ehic" key="StructureDefinition-coverage-eu-ehic" name="Coverage (EHIC)"/>

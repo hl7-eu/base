@@ -22,24 +22,25 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
         <body>
                 <div class="toc">
                         <strong>Maps:</strong>
-                        <a href="#humanName">humanName</a>
-                        <a href="#location">location</a>
+                        <a href="#EHDSHealthProfessional">EHDSHealthProfessional</a>
+                        <a href="#EHDSLocation">EHDSLocation</a>
                         <a href="#organisation">organisation</a>
-                        <a href="#patient">patient</a>
-                        <a href="#patientAnimal">patientAnimal</a>
-                        <a href="#telecom">telecom</a>
-                        <a href="#address">address</a>
-                        <a href="#healthProfessional" shape="rect">healthProfessional</a>
+                        <a href="#EHDSPatient">EHDSPatient</a>
+                        <a href="#EHDSPatientAnimal">EHDSPatientAnimal</a>
+                        <a href="#EHDSTelecom">EHDSTelecom</a>
+                        <a href="#EHDSAddress">EHDSAddress</a>
+                        <a href="#EHDSHealthProfessional" shape="rect">EHDSHealthProfessional</a>
+                        <a href="#EHDSBodyStructure" shape="rect">EHDSBodyStructure</a>
                 </div>
-                <h3 id="humanName">humanName</h3>
-                <a> </a>
+                <h3 id="EHDSHealthProfessional">EHDSHealthProfessional</h3>
+                <a></a>
                 <div class="table-wrap">
-                        <table summary="humanName">
+                        <table summary="EHDSHealthProfessional">
                                 <thead>
                                         <tr>
                                                 <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Logical Model</th>
                                                 <th colspan="3" style="background-color: #be072f; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">HumanName</th>
-                                        </tr>   
+                                        </tr>
                                         <tr>
                                                 <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Element</th>
                                                 <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Description</th>
@@ -94,10 +95,10 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                 </tbody>
                         </table>
                 </div>
-                <h3 id="location">location</h3>
-                <a> </a>
+                <h3 id="EHDSLocation">EHDSLocation</h3>
+                <a></a>
                 <div class="table-wrap">
-                        <table summary="location">
+                        <table summary="EHDSLocation">
                                 <thead>
                                         <tr>
                                                 <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Logical Model</th>
@@ -165,7 +166,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                         </table>
                 </div>
                 <h3 id="organisation">organisation</h3>
-                <a> </a>
+                <a></a>
                 <div class="table-wrap">
                         <table summary="organisation">
                                 <thead>
@@ -234,10 +235,10 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                 </tbody>
                         </table>
                 </div>
-                <h3 id="patient">patient</h3>
-                <a> </a>
+                <h3 id="EHDSPatient">EHDSPatient</h3>
+                <a></a>
                 <div class="table-wrap">
-                        <table summary="patient">
+                        <table summary="EHDSPatient">
                                 <thead>
                                         <tr>
                                                 <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Logical Model</th>
@@ -311,10 +312,10 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                 </tbody>
                         </table>
                 </div>
-                <h3 id="patientAnimal">patientAnimal</h3>
-                <a> </a>
+                <h3 id="EHDSPatientAnimal">EHDSPatientAnimal</h3>
+                <a></a>
                 <div class="table-wrap">
-                        <table summary="patientAnimal">
+                        <table summary="EHDSPatientAnimal">
                                 <thead>
                                         <tr>
                                                 <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Logical Model</th>
@@ -395,10 +396,10 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                 </tbody>
                         </table>
                 </div>
-                <h3 id="telecom">telecom</h3>
-                <a> </a>
+                <h3 id="EHDSTelecom">EHDSTelecom</h3>
+                <a></a>
                 <div class="table-wrap">
-                        <table summary="telecom">
+                        <table summary="EHDSTelecom">
                                 <thead>
                                         <tr>
                                                 <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Logical Model</th>
@@ -437,10 +438,10 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                 </tbody>
                         </table>
                 </div>
-                <h3 id="address">address</h3>
-                <a> </a>
+                <h3 id="EHDSAddress">EHDSAddress</h3>
+                <a></a>
                 <div class="table-wrap">
-                        <table summary="address">
+                        <table summary="EHDSAddress">
                                 <thead>
                                         <tr>
                                                 <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Logical Model</th>
@@ -534,12 +535,12 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                 </tbody>
                         </table>
                 </div>
-                <h3 id="healthProfessional">healthProfessional</h3>
-                <a shape="rect"></a>
-                <h4 id="healthProfessional-1">PractitionerRoleEuCore</h4>
-                <a shape="rect"></a>
+                <h3 id="EHDSHealthProfessional">EHDSHealthProfessional</h3>
+                <a shape="rect">  </a>
+                <h4 id="EHDSHealthProfessional-1">PractitionerRoleEuCore</h4>
+                <a shape="rect"> </a>
                 <div class="table-wrap">
-                        <table summary="healthProfessional-1">
+                        <table summary="EHDSHealthProfessional-1">
                                 <thead>
                                         <tr>
                                                 <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">Logical Model</th>
@@ -627,14 +628,14 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                 </tbody>
                         </table>
                 </div>
-                <h4 id="healthProfessional-2">PractitionerRoleEuCore</h4>
-                <a shape="rect"></a>
+                <h4 id="EHDSHealthProfessional-2">PractitionerRoleEuCore</h4>
+                <a shape="rect">  </a>
                 <div class="table-wrap">
-                        <table summary="healthProfessional-2">
+                        <table summary="EHDSHealthProfessional-2">
                                 <thead>
                                         <tr>
-                                                <th colspan="2" style="font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">Logical Model</th>
-                                                <th colspan="3" style="font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">PractitionerEuCore</th>
+                                                <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">Logical Model</th>
+                                                <th colspan="3" style="background-color: #be072f; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">PractitionerEuCore</th>
                                         </tr>
                                         <tr>
                                                 <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Element</th>
@@ -706,6 +707,69 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                                 <td ></td>
                                                 <td ></td>
                                                 <td >unmatched </td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                </div>
+                <h3 id="EHDSBodyStructure">EHDSBodyStructure</h3>
+                <a>  </a>
+                <div class="table-wrap">
+                        <table summary="EHDSBodyStructure">
+                                <thead>
+                                        <tr>
+                                                <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">Logical Model</th>
+                                                <th colspan="3" style="background-color: #be072f; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">EHDSBodyStructure</th>
+                                        </tr>
+                                        <tr>
+                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Element</th>
+                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Description</th>
+                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Element</th>
+                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Description</th>
+                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Notes</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                        <tr style="height:15.5pt">
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">identifier</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Identifier for this instance of the anatomical structure.</td>
+                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">identifier</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Bodystructure identifier</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">equal</td>
+                                        </tr>
+                                        <tr style="height:45.0pt">
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">morphology</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">The kind of structure being represented by the body structure at BodyStructure.location. This can define both normal and abnormal morphologies.</td>
+                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">morphology</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Kind of Structure</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">equal</td>
+                                        </tr>
+                                        <tr style="height:15.5pt">
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">location</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Body site</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">location</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Body site</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">equal</td>
+                                        </tr>
+                                        <tr style="height:30.25pt">
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">locationQualifier</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Additional qualifier of the body structure (e.g. upper, lower, left side).</td>                                                
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">locationQualifier</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Body site modifier</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">equal</td>
+                                        </tr>
+                                        <tr style="height:15.5pt">
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">laterality</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Body structure laterality (e.g. left, right)</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">extension[laterality]</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Body Structure Laterality</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">equal</td>
+                                        </tr>
+                                        <tr style="height:29.5pt">
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">description</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Textual description of the body structure</td>
+                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">text</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Text summary of the resource, for human interpretation</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">equal</td>
                                         </tr>
                                 </tbody>
                         </table>
