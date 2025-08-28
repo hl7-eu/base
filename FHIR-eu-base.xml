@@ -40,7 +40,8 @@
 <artifact id="StructureDefinition/EHDSPatientAnimal" key="StructureDefinition-EHDSPatientAnimal" name="Patient Animal model"/>
 <artifact id="Patient/patient-eu-core-example" key="Patient-patient-eu-core-example" name="Patient Example"/>
 <artifact id="StructureDefinition/EHDSPatient" key="StructureDefinition-EHDSPatient" name="Patient model"/>
-<artifact id="StructureDefinition/patient-animal-eu" key="StructureDefinition-Patient-animal-eu" name="Patient: Animal"/>
+<artifact deprecated="true" id="StructureDefinition/Patient-animal-eu" key="StructureDefinition-Patient-animal-eu" name="Patient: Animal"/>
+<artifact id="StructureDefinition/patient-animal-eu-core" key="StructureDefinition-patient-animal-eu-core" name="Patient: Animal (EU core)"/>
 <artifact id="StructureDefinition/practitioner-eu" key="StructureDefinition-practitioner-eu" name="Practitioner (EU base)"/>
 <artifact id="StructureDefinition/practitioner-eu-core" key="StructureDefinition-practitioner-eu-core" name="Practitioner (EU core)"/>
 <artifact id="Practitioner/practitioner-eu-core-example" key="Practitioner-practitioner-eu-core-example" name="Practitioner Example"/>
