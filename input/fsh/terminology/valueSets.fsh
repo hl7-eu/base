@@ -25,7 +25,7 @@ Description: "System identifiers (uri) used for the EHIC#8 Card Identification N
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
 * $uri#http://hl7.it/sid/team "Numero Identificativo TEAM"
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/* //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: VsEHICPersonalIdOid
 Id: oid-ehicPersonalId
 Title: "EHIC Personal ID (system IDs - oid)"
@@ -33,8 +33,8 @@ Description: "System identifiers (oid) used for the EHIC#6 Personal Identificati
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
 * $oid#2.16.840.1.113883.2.4.6.3 "Burgerservicenummer"
-* $oid#2.16.840.1.113883.2.9.4.3.2 "Italian Fiscal Code"
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+* $oid#2.16.840.1.113883.2.9.4.3.2 "Italian Fiscal Code" */
+/* //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: VsEHICCountryCodes
 Id: iso-ehicCountryCode
 Title: "ISO 3166 - EHIC Country Codes"
@@ -72,4 +72,4 @@ Description: "ISO 3166 - Country Codes used by the European Healthcare Insurance
 * $iso-3166#LI "Liechtenstein"
 * $iso-3166#NO "Norway"
 * $iso-3166#CH "Switzerland"
-// * $iso-3166#UK "United Kingdom"
+// * $iso-3166#UK "United Kingdom" */
