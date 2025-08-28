@@ -1,5 +1,5 @@
 Instance: Patient-animal-example
-InstanceOf: PatientAnimalEu
+InstanceOf: PatientAnimalEuCore
 Title: "Animal Patient Example"
 Description: "Example of a Patient resource conforming to the Patient Animal (EU Core) profile."
 Usage: #example
