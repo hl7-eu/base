@@ -258,7 +258,7 @@ groups:
         - StructureDefinition/practitioner-eu-core
         - StructureDefinition/practitionerRole-eu-core
         - StructureDefinition/organization-eu-core
-        - StructureDefinition/patient-animal-eu
+        - StructureDefinition/patient-animal-eu-core
    EHICLogicalModels:
       name:  European Health Insurance Card Model (Informative)
       description: Logical models representing the European Health Insurance Card. This is informative material.
