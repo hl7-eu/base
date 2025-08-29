@@ -573,11 +573,11 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:59.0pt">
                                                 <td >telecom</td>
                                                 <td >Telecommunication contact information (addresses) associated with a person, such as phone number, email, or messaging service. Multiple telecommunication addresses might be provided.</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">telecom</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">telecom</td>                                                
                                                 <td >Contact details that are specific to the role/location/service</td>
-                                                <td >narrower - the mapping depends on the type of telecom</td>
+                                                <td >relatedto</td>
                                         </tr>
-                                        <tr style="height:73.75pt">
+                                        <tr style="height:73.75pt">                                               
                                                 <td >professionalRole</td>
                                                 <td >Professional role that the health professional is practicing at a given organisation. This is a generalisation of the FHIR PractitionerRole resource, which is used to represent the role of a practitioner in a specific context, such as a specific organisation or location.</td>
                                                 <td >.</td>
