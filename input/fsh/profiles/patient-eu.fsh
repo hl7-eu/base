@@ -35,6 +35,7 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * birthDate 0.. // MS according to IPS
   * ^short = "The date of birth for the patient"
 * address only AddressEu // MS according to IPS
+* maritalStatus ^short = "Marital status"
 * contact
   *  relationship ^short = "Contact relationship"
   // include additonal value sets when they are defined

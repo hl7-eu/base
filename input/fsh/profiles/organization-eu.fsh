@@ -8,6 +8,7 @@ Description: "This profile specifies how the HL7 FHIR Organization resource shou
 * type ^short = "Organization type"
 // should name be 1.. as in the IPS ?
 * name ^short = "Name of the organization"
+* identifier ^short = "Organization business identifier"
 * telecom ^short = "Organization telecom"
 * address only AddressEu
 * partOf ^short = "The organization of which this organization is part of: e.g. an ERN"

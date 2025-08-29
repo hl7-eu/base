@@ -4,6 +4,8 @@ Id: bodyStructure-eu
 Title: "BodyStructure (EU base)"
 Description: "This profile specifies how the HL7 FHIR BodyStructure resource should be used for conveying commonly used concepts in the European context."
 * insert SetFmmandStatusRule ( 2, draft)
+* identifier ^short = "Body structure identifier"
+* text ^short = "Textual description of the body structure"
 * extension contains $bodyStructure-laterality-r5 named laterality 0..1
 * extension[laterality].valueCodeableConcept from SiteLateralityEuVs (preferred)
 * location from http://hl7.org/fhir/ValueSet/body-site (preferred)

@@ -22,7 +22,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
         <body>
                 <div class="toc">
                         <strong>Maps:</strong>
-                        <a href="#EHDSHealthProfessional">EHDSHealthProfessional</a>
+                        <a href="#EHDSHumanName">EHDSHumanName</a>
                         <a href="#EHDSLocation">EHDSLocation</a>
                         <a href="#organisation">organisation</a>
                         <a href="#EHDSPatient">EHDSPatient</a>
@@ -32,10 +32,10 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                         <a href="#EHDSHealthProfessional" shape="rect">EHDSHealthProfessional</a>
                         <a href="#EHDSBodyStructure" shape="rect">EHDSBodyStructure</a>
                 </div>
-                <h3 id="EHDSHealthProfessional">EHDSHealthProfessional</h3>
-                <a></a>
+                <h3 id="EHDSHumanName">EHDSHumanName</h3>
+                <a>   </a>
                 <div class="table-wrap">
-                        <table summary="EHDSHealthProfessional">
+                        <table summary="EHDSHumanName">
                                 <thead>
                                         <tr>
                                                 <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Logical Model</th>
@@ -96,7 +96,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                         </table>
                 </div>
                 <h3 id="EHDSLocation">EHDSLocation</h3>
-                <a></a>
+                <a>   </a>
                 <div class="table-wrap">
                         <table summary="EHDSLocation">
                                 <thead>
@@ -116,7 +116,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:29.5pt">
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">identifier</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">Identifier</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:nowrap">identifier</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">identifier</td>
                                                 <td >Unique code or number identifying the location to its users</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">equal</td>
                                         </tr>
@@ -158,7 +158,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:29.5pt">
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">partOf</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">Part of</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:nowrap">partOf</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">partOf</td>
                                                 <td >Another Location this one is physically a part of</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">equal</td>
                                         </tr>
@@ -166,7 +166,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                         </table>
                 </div>
                 <h3 id="organisation">organisation</h3>
-                <a></a>
+                <a>   </a>
                 <div class="table-wrap">
                         <table summary="organisation">
                                 <thead>
@@ -186,7 +186,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:29.5pt">
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">identifier</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">Identifier</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:nowrap">identifier</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">identifier</td>
                                                 <td >Identifies this organization across multiple systems</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">equal</td>
                                         </tr>
@@ -225,18 +225,11 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                                 <td >The organization of which this organization is part of: e.g. an ERN</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">equal</td>
                                         </tr>
-                                        <tr>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:nowrap"></td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:nowrap"></td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">contact</td>
-                                                <td >Organization contact infos</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:nowrap">Missing in the model</td>
-                                        </tr>
                                 </tbody>
                         </table>
                 </div>
                 <h3 id="EHDSPatient">EHDSPatient</h3>
-                <a></a>
+                <a>   </a>
                 <div class="table-wrap">
                         <table summary="EHDSPatient">
                                 <thead>
@@ -298,7 +291,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">maritalStatus</td>
                                                 <td >Marital (civil) status of a patient</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:nowrap">maritalStatus</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">maritalStatus</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">Marital (civil) status of a patient</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">equal</td>
                                         </tr>
@@ -313,7 +306,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                         </table>
                 </div>
                 <h3 id="EHDSPatientAnimal">EHDSPatientAnimal</h3>
-                <a></a>
+                <a>   </a>
                 <div class="table-wrap">
                         <table summary="EHDSPatientAnimal">
                                 <thead>
@@ -333,7 +326,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">animalIdentifier</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">Animal identifier</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">identifier</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">identifier</td>
                                                 <td >An identifier for this patient</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">equal</td>
                                         </tr>
@@ -375,9 +368,9 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:29.5pt">
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">gender</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">Gender</td>
-                                                <td >extension:recordedSexOrGender</td>
+                                                <td >gender</td>
                                                 <td >A recorded sex or gender property for the individual</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">to be checked</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">relatedto. Depending on the context, this may refer to other gender/sex related information for which specific extensions exist.</td>
                                         </tr>
                                         <tr>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">address</td>
@@ -389,7 +382,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:30.25pt">
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">deceased[x]</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">Deceased</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">deceased[x]</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">deceased[x]</td>
                                                 <td >Indicates if the individual is deceased or not</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">equal</td>
                                         </tr>
@@ -397,7 +390,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                         </table>
                 </div>
                 <h3 id="EHDSTelecom">EHDSTelecom</h3>
-                <a></a>
+                <a>   </a>
                 <div class="table-wrap">
                         <table summary="EHDSTelecom">
                                 <thead>
@@ -439,7 +432,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                         </table>
                 </div>
                 <h3 id="EHDSAddress">EHDSAddress</h3>
-                <a></a>
+                <a>   </a>
                 <div class="table-wrap">
                         <table summary="EHDSAddress">
                                 <thead>
@@ -477,12 +470,6 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                                 <td >Text representation of the address</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">equal</td>
                                         </tr>
-                                        <tr style="height:29.5pt">
-                                                <td ></td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">line</td>
-                                                <td >Street name, number, direction &amp; P.O. Box etc.</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">address line is missing in the model</td>
-                                        </tr>
                                         <tr>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">street</td>
                                                 <td >Name of the street</td>
@@ -507,15 +494,15 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">city</td>
                                                 <td >City</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:nowrap">city</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">Name of city, town etc.</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">city</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Name of city, town etc.</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">equal</td>
                                         </tr>
                                         <tr>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">postalCode</td>
                                                 <td >Postal code</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:nowrap">postalCode</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">Postal code for area</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">postalCode</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Postal code for area</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:nowrap">equal</td>
                                         </tr>
                                         <tr>
@@ -579,14 +566,14 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:89.25pt">
                                                 <td >address</td>
                                                 <td >Mailing and office or home addresses. The addresses are always sequences of address parts (e.g. street address line, country, postcode, city) even if postal address formats may vary depending on the country. An address may or may not include a specific use code; if this attribute is not present it is assumed to be the default address useful for any purpose.</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">location</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">location</td>
                                                 <td >The location(s) at which this practitioner provides care</td>
                                                 <td >relatedto - the mapping depends on the type of address</td>
                                         </tr>
                                         <tr style="height:59.0pt">
                                                 <td >telecom</td>
                                                 <td >Telecommunication contact information (addresses) associated with a person, such as phone number, email, or messaging service. Multiple telecommunication addresses might be provided.</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">telecom</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">telecom</td>
                                                 <td >Contact details that are specific to the role/location/service</td>
                                                 <td >narrower - the mapping depends on the type of telecom</td>
                                         </tr>
@@ -600,7 +587,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:29.5pt">
                                                 <td >professionalRole.role</td>
                                                 <td >Health professional role. Multiple roles could be provided.</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">code</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">code</td>
                                                 <td >Roles which this practitioner may perform</td>
                                                 <td >equal</td>
                                         </tr>
@@ -614,7 +601,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:30.25pt">
                                                 <td >professionalRole.specialty</td>
                                                 <td >The specialty of a practitioner that describes the functional role they are practicing at a given organisation</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">specialty</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">specialty</td>
                                                 <td >Specific specialty of the practitioner</td>
                                                 <td >equal</td>
                                         </tr>
@@ -676,7 +663,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:59.75pt">
                                                 <td >telecom</td>
                                                 <td >Telecommunication contact information (addresses) associated with a person, such as phone number, email, or messaging service. Multiple telecommunication addresses might be provided.</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">telecom</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">telecom</td>
                                                 <td >A contact detail for the practitioner (that apply to all roles)</td>
                                                 <td >narrower - the mapping depends on the type of telecom</td>
                                         </tr>
@@ -732,14 +719,14 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:15.5pt">
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">identifier</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Identifier for this instance of the anatomical structure.</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">identifier</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">identifier</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Bodystructure identifier</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">equal</td>
                                         </tr>
                                         <tr style="height:45.0pt">
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">morphology</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">The kind of structure being represented by the body structure at BodyStructure.location. This can define both normal and abnormal morphologies.</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">morphology</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">morphology</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Kind of Structure</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">equal</td>
                                         </tr>
@@ -767,7 +754,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:29.5pt">
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">description</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Textual description of the body structure</td>
-                                                <td style="background-color:#FFFF00;font-size:11.0pt;font-family:'Calibri';white-space:normal">text</td>
+                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">text</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Text summary of the resource, for human interpretation</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">equal</td>
                                         </tr>
