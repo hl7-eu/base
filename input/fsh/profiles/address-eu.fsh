@@ -24,3 +24,9 @@ Description: """This profile extends the Address data type for supporting street
 * city ^short = "City"
 * use ^short = "Purpose of this address"
 * type ^short = "Address type (postal | physical)"
+// apply it to each Address.line element
+* line obeys inv-line-ext-has-value
+Invariant: inv-line-ext-has-value
+Description: "If an Address.line has extensions, it SHALL also have a value."
+Severity: #error
+Expression: "extension.exists() implies hasValue()"
