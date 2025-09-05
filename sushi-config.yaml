@@ -66,6 +66,8 @@ pages:
     title: Model Map
   logicalmodels.md:
     title: Logical Models
+  missing-data.md:
+    title: Handling Missing Data
  #  recommendations.md:
 #    title: Recommendations
 #
@@ -128,7 +130,9 @@ parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Pa
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Introduction: introduction.html
+  Introduction: 
+    Base and Core: Profilesintroduction.html
+    Handling Missing Data: missing-data.html
 #    Scope and Content: scope.html
 #    Background: background.html
 #    Challenges: challenges.html
