@@ -6,6 +6,7 @@ Title:      "Address (EU)"
 Description: """This profile extends the Address data type for supporting streetname, housenumber and postal box."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule ( 2, draft)
+* line ^comment = "When extensions are used for providing structured information the line element SHOULD be populated with a human readable representation of the line."
 * line.extension ^slicing.discriminator.type = #value
 * line.extension ^slicing.discriminator.path = "url"
 * line.extension ^slicing.rules = #open
@@ -24,9 +25,3 @@ Description: """This profile extends the Address data type for supporting street
 * city ^short = "City"
 * use ^short = "Purpose of this address"
 * type ^short = "Address type (postal | physical)"
-// apply it to each Address.line element
-* line obeys inv-line-ext-has-value
-Invariant: inv-line-ext-has-value
-Description: "If an Address.line has extensions, it SHALL also have a value."
-Severity: #error
-Expression: "extension.exists() implies hasValue()"
