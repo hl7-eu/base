@@ -131,7 +131,7 @@ parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Pa
 menu:
   Home: index.html
   Introduction: 
-    Base and Core: Profilesintroduction.html
+    Base and Core: introduction.html
     Handling Missing Data: missing-data.html
 #    Scope and Content: scope.html
 #    Background: background.html
