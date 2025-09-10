@@ -6,9 +6,9 @@ title: HL7 Europe Base and Core FHIR IG
 name:  Hl7EuBaseIg
 description: This guide collects base and core profiles to be used in the European context. It also includes common artifacts, such as the profiles describing the European Health Insurance Card.
 status: draft # draft | active | retired | unknown
-version: 0.1.0-ballot #
+version: 0.1.0-snapshot #
 copyrightYear: 2024+
-releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # https://www.hl7.org/fhir/valueset-jurisdiction.html
 jurisdiction: 	http://unstats.un.org/unsd/methods/m49/m49.htm#150 "Europe" # urn:iso:std:iso:3166#EU
@@ -17,7 +17,7 @@ publisher:
   url: http://hl7.eu
   # email: test@example.org
 copyright: >-
-  Used by permission of HL7 Europe, all rights reserved Creative Commons License
+  Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0).
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
@@ -26,7 +26,7 @@ dependencies:
   # hl7.fhir.uv.ips: current
   hl7.fhir.uv.ips: 1.1.0
   hl7.fhir.extensions.r5: 4.0.1
-  hl7.fhir.eu.extensions.r4: 0.1.1-ballot
+  hl7.fhir.eu.extensions.r4: 0.1.1-snapshot
   # eu.terminology.ehdsi: 0.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -62,6 +62,14 @@ pages:
     title: Known Issues
   introduction.md:
     title: Introduction
+  modelmap.html:
+    title: Model Map
+  logicalmodels.md:
+    title: Logical Models
+  missing-data.md:
+    title: Handling Missing Data
+  changes.md:
+    title: Change Log
  #  recommendations.md:
 #    title: Recommendations
 #
@@ -124,17 +132,19 @@ parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Pa
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Introduction: introduction.html
+  Introduction: 
+    Base and Core: introduction.html
+    Handling Missing Data: missing-data.html
 #    Scope and Content: scope.html
 #    Background: background.html
 #    Challenges: challenges.html
 #    References: references.html
-#  Functional:
+  Functional:
 #    Use cases: usecases.html
-#    Logical Models: logicalmodels.html
+    Logical Models: logicalmodels.html
 #   Workflow 
-#  Implementation:
-#    Mapping to Profiles: profiles.html
+  Implementation:
+    Mapping to Profiles: modelmap.html
 #    Examples: examples.html
 #    Implementation Notes: implementationnotes.html  
   About:
@@ -142,6 +152,7 @@ menu:
     Known Issues: knownissues.html
     Download: downloads.html
     Dependencies: dependencies.html
+    Change Log: changes.html
     Copyright: copyright.html
     Cross-version Analysis: crossversionanalysis.html
   Artifacts: artifacts.html
@@ -235,25 +246,26 @@ resources:
 # is specified by id or name, SUSHI will replace it with the correct
 # URL when generating the IG JSON.
 #
-#  groups:
-#    eHNGuidelines:
-#      name:  eHN Laboratory Guidelines (Informative)
-#      description: Logical models representing the eHN Laboratory Guidelines. This is informative material.
-#      resources:
-#        - StructureDefinition/LabReport
-#  
-#  
-#    logicalModelsMaps:
-#      name:  eHN Logical Model mappings (Informative)
-#      description: Concept Maps describing how the data set specified by the eHN Laboratory Guidelines is supposed to be implemented by using this guide. Informative for this version of the guide.
-#      resources:
-#        - ConceptMap/labRpt2FHIR-eu-lab
-#  
-#    obligations:
-#      name:  Actors and Obligations (Informative)
-#      description: Actors and Obligations used to describe the Patient Summary functional requirements for the specified data elements. Informative for this version of the guide.
-#      resources:
-#        - ActorDefinition/actor-consumer-eu-lab
+groups:
+   EuBaseProfiles:
+     name:  HL7 Europe Base Profiles
+     description: Base profiles for the European context.
+     resources:
+       - StructureDefinition/bodyStructure-eu
+       - StructureDefinition/patient-eu
+       - StructureDefinition/practitioner-eu
+       - StructureDefinition/practitionerRole-eu
+       - StructureDefinition/organization-eu
+       - StructureDefinition/location-eu
+   EuCoreProfiles:
+      name:  HL7 Europe Core Profiles
+      description: Core profiles for the European context.
+      resources:
+        - StructureDefinition/patient-eu-core
+        - StructureDefinition/practitioner-eu-core
+        - StructureDefinition/practitionerRole-eu-core
+        - StructureDefinition/organization-eu-core
+        - StructureDefinition/patient-animal-eu-core
 #
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and

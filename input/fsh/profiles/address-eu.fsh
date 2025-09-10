@@ -6,6 +6,7 @@ Title:      "Address (EU)"
 Description: """This profile extends the Address data type for supporting streetname, housenumber and postal box."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule ( 2, draft)
+* line ^comment = "When extensions are used for providing structured information the line element SHOULD be populated with a human readable representation of the line."
 * line.extension ^slicing.discriminator.type = #value
 * line.extension ^slicing.discriminator.path = "url"
 * line.extension ^slicing.rules = #open
@@ -20,3 +21,7 @@ Description: """This profile extends the Address data type for supporting street
 * country // ^definition = "Country, the FHIR specification defines its country field as a string and suggests using a ISO 3166 2 or 3 letter codes. Use of 2-letter code to express country is RECOMMENDED."
   * extension contains $iso21090-SC-coding named countryCode 0..1
   * extension[countryCode].valueCoding from $iso3166-1-2 (preferred)
+* postalCode ^short = "Postal code"
+* city ^short = "City"
+* use ^short = "Purpose of this address"
+* type ^short = "Address type (postal | physical)"

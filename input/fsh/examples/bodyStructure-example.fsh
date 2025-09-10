@@ -1,7 +1,7 @@
 Instance: BodyStructureExample
 InstanceOf: BodyStructureEu
-Title: "Example Body Structure"
-Description: "An example instance of the BodyStructureEu profile."
+Title: "BodyStructure Example"
+Description: "Example of a BodyStructure resource conforming to the BodyStructure (EU) profile."
 * id = "example-body-structure-eu"
 * extension[laterality].valueCodeableConcept = $sct#7771000	"Left"
 * location = $sct#8205005 "Wrist"

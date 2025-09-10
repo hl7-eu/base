@@ -6,11 +6,14 @@ Description: """This profile sets minimum expectations for the Patient resource 
 When the ips-pat-1 invariant is satisfied \(Patient.name.given, Patient.name.family or Patient.name.text SHALL be present\) then this profile complies with the IPS patient profile."""
 * insert SetFmmandStatusRule (2, draft)
 * name 1..*
+/* * name.extension contains $data-absent-reason named name-absent-reason 0..1
+* name.extension[name-absent-reason] ^short = "Reason for not providing the name."
+* name.extension[name-absent-reason] ^definition = "Reason for not providing the name." */
 * name obeys eu-pat-1
 * birthDate 1.. // MS according to IPS
-* birthDate.extension contains $data-absent-reason named dob-absent-reason 0..1
+/* * birthDate.extension contains $data-absent-reason named dob-absent-reason 0..1
 * birthDate.extension[dob-absent-reason] ^short = "Reason for not providing the Date of Birth."
-* birthDate.extension[dob-absent-reason] ^definition = "Reason for not providing the Date of Birth."
+* birthDate.extension[dob-absent-reason] ^definition = "Reason for not providing the Date of Birth." */
 Invariant: eu-pat-1
 Description: "given, family, text or a data-absent-reason extension SHALL be present"
 Severity: #error

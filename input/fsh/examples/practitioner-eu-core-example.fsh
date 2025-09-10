@@ -1,7 +1,7 @@
 Instance: PractitionerEuCoreExample
 InstanceOf: PractitionerEuCore
-Title: "Example Practitioner (EU core)"
-Description: "An example of a Practitioner resource conforming to the Practitioner (EU core) profile."
+Title: "Practitioner Example"
+Description: "Example of a Practitioner resource conforming to the Practitioner (EU Core) profile."
 * id = "practitioner-eu-core-example"
 * name.family = "Doe"
 * name.given = "John"

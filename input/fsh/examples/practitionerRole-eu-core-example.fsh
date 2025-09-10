@@ -1,7 +1,7 @@
 Instance: PractitionerRoleEuCoreExample
 InstanceOf: PractitionerRoleEuCore
-Title: "Example PractitionerRole (EU core)"
-Description: "An example of a PractitionerRole resource conforming to the PractitionerRole (EU core) profile."
+Title: "PractitionerRole Example"
+Description: "Example of a PractitionerRole resource conforming to the PractitionerRole (EU Core) profile."
 * id = "practitionerRole-eu-core-example"
 * practitioner = Reference(PractitionerEuCoreExample)
 * organization = Reference(OrganizationExample)
