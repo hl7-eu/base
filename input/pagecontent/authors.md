@@ -1,4 +1,3 @@
-This implementation guide is authored by HL7 Europe, namely the working group for Hospital Discharge Report, European Patient Summary and Base Implementation Guide. 
-
+This implementation guide is produced by HL7 Europe, specifically the working group for Hospital Discharge Report, European Patient Summary, and Base Implementation Guide.
 
 

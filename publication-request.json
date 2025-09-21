@@ -1,8 +1,8 @@
 {
   "package-id" : "hl7.fhir.eu.base",
-  "version" : "0.1.0-snapshot",
   "path" : "http://hl7.eu/fhir/base/0.1.0-snapshot",
-  "desc" : "This is the first STU version released",
+  "version" : "0.1.0-snapshot",
+  "desc" : "This is a snapshot of the STU 1 version created for supporting the Xt-EHR stakeholder consultation. It is provided for review use only, and is not intended for production use. The official version will be published as part of the STU release.",
   "status" : "preview",
   "sequence" : "Release",
   "mode": "working"  

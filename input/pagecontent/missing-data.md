@@ -2,7 +2,7 @@
 
 This page provide general rules to deal with missing data, not all these rules may apply to this version of this guide. 
 
-The content of this page is adapted from the [HL7 International Patient Summary Implementation Guide](https://hl7.org/fhir/uv/ips/)
+The content of this page is adapted from the [HL7 International Patient Summary Implementation Guide (IPS)](https://hl7.org/fhir/uv/ips/)
 
 
 #### Optional Data Elements (cardinality of 0..1 or 0..\*)

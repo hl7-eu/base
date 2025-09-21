@@ -37,9 +37,9 @@ Transformed: /zFHIR-publication/hl7-eu/base/__r4-r5\input\fsh\rulesSet\rulesSet-
 Transformed: /zFHIR-publication/hl7-eu/base/__r4-r5\input\fsh\terminology\lab-species.fsh -> /zFHIR-publication/hl7-eu/base\input\fsh\terminology\lab-species.fsh
 Transformed: /zFHIR-publication/hl7-eu/base/__r4-r5\input\fsh\terminology\siteLaterality.fsh -> /zFHIR-publication/hl7-eu/base\input\fsh\terminology\siteLaterality.fsh
 Transformed: /zFHIR-publication/hl7-eu/base/__r4-r5\input\fsh\terminology\siteQualifier.fsh -> /zFHIR-publication/hl7-eu/base\input\fsh\terminology\siteQualifier.fsh
-Copied: /zFHIR-publication/hl7-eu/base/__r4-r5\input\images\home-1-old.png -> /zFHIR-publication/hl7-eu/base\input\images\home-1-old.png
 Copied: /zFHIR-publication/hl7-eu/base/__r4-r5\input\images\home-1.png -> /zFHIR-publication/hl7-eu/base\input\images\home-1.png
 Copied: /zFHIR-publication/hl7-eu/base/__r4-r5\input\images\home-2.png -> /zFHIR-publication/hl7-eu/base\input\images\home-2.png
+Copied: /zFHIR-publication/hl7-eu/base/__r4-r5\input\images\xtehr-logo.png -> /zFHIR-publication/hl7-eu/base\input\images\xtehr-logo.png
 Transformed: /zFHIR-publication/hl7-eu/base/__r4-r5\input\images-source\base-core-imgs.pptx -> /zFHIR-publication/hl7-eu/base\input\images-source\base-core-imgs.pptx
 Transformed: /zFHIR-publication/hl7-eu/base/__r4-r5\input\pagecontent\authors.md -> /zFHIR-publication/hl7-eu/base\input\pagecontent\authors.md
 Transformed: /zFHIR-publication/hl7-eu/base/__r4-r5\input\pagecontent\changes.md -> /zFHIR-publication/hl7-eu/base\input\pagecontent\changes.md

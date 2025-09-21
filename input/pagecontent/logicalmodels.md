@@ -16,9 +16,9 @@ These models are refined and enhanced versions of the [eHN Guidelines](https://h
 
 This IG aims to conform to EHDS logical models, and provide the HL7 FHIR profiles based on these models.
 
-The currently available EHDS draft logical models used for this version of the guide, are reported for convenience in this Implementation Guide, and listed below.
+The currently available EHDS draft logical models used for this version of the guide are reported for convenience in this Implementation Guide and listed below.
 
-The most recent - on development version of the models can be seen in the  [Xt-EHR EHDS Logical Information Models](https://build.fhir.org/ig/Xt-EHR/xt-ehr-common) IG.
+The most recent, in-development version of the models can be seen in the [Xt-EHR EHDS Logical Information Models](https://build.fhir.org/ig/Xt-EHR/xt-ehr-common) IG.
 
 ### Model lists
 
