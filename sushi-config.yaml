@@ -6,9 +6,9 @@ title: HL7 Europe Base and Core FHIR IG
 name:  Hl7EuBaseIg
 description: This guide collects base and core profiles to be used in the European context. It also includes common artifacts, such as the profiles describing the European Health Insurance Card.
 status: draft # draft | active | retired | unknown
-version: 0.1.0-snapshot #
+version: 0.1.0-ci-build
 copyrightYear: 2024+
-releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # https://www.hl7.org/fhir/valueset-jurisdiction.html
 jurisdiction: 	http://unstats.un.org/unsd/methods/m49/m49.htm#150 "Europe" # urn:iso:std:iso:3166#EU
@@ -26,7 +26,7 @@ dependencies:
   # hl7.fhir.uv.ips: current
   hl7.fhir.uv.ips: 1.1.0
   hl7.fhir.extensions.r5: 4.0.1
-  hl7.fhir.eu.extensions.r4: 0.1.1-snapshot
+  hl7.fhir.eu.extensions.r4: current
   # eu.terminology.ehdsi: 0.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
