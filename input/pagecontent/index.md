@@ -1,3 +1,21 @@
+  <!-- Horizontal banner -->
+<div style="border: 2px solid #003366; border-radius: 8px; padding: 1em; margin: 1.5em 0; background-color: #f9f9ff; display: flex; flex-direction: column; align-items: flex-start;">
+  
+  <!-- Logo -->
+  <div style="margin-bottom: 1em;">
+    <img src="xtehr-logo.png" alt="XTEHR Logo" style="max-width: 100%; height: 40px;" />
+  </div>
+
+  <!-- Acknowledgment text -->
+  <div style="text-align: left; width: 100%;">
+    <strong>Acknowledgment</strong><br/>
+    The development of this Implementation Guide version has been supported by the 
+    <strong>Xt-EHR Joint Action</strong>.  
+    Xt-EHR provided expertise, alignment with European health policy priorities, 
+    and validation of specifications to enable consistency with EHDS requirements.
+  </div>
+</div>
+
 ### Scope
 
 

@@ -4,7 +4,7 @@
 	<a> </a>
 	<h4>Sex Parameters for Clinical Use</h4>
 	<a> </a>
-	<p>Sex Parameters for Clinical Use (SPCU) may be used in specific clinical contexts. However, there are cases where having a context-free categorization of a patient can be useful. When using SPCU at a patient level, consider if any information is available suggesting that the patient is NOT male-typical or female-typical across all clinical contexts, then using specified as the patient-level SPCU is most appropriate.</p>
+	<p>Sex Parameters for Clinical Use (SPCU) may be used in specific clinical contexts. However, there are cases where having a context-free categorisation of a patient can be useful. When using SPCU at a patient level, consider if any information is available suggesting that the patient is NOT male-typical or female-typical across all clinical contexts, then using specified as the patient-level SPCU is most appropriate.</p>
 <h4>Gender Identity</h4>
 <a> </a>	
 <p>This represents an individual’s identity, ascertained by asking them what that identity is. The standard extension supports multiple gender identities, with relevant periods to account for a patient’s gender identity changing over time.</p>

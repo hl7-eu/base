@@ -12,7 +12,7 @@ Description: "This profile specifies how the HL7 FHIR Organization resource shou
 * telecom ^short = "Organization telecom"
 * address only AddressEu
 * partOf ^short = "The organization of which this organization is part of: e.g. an ERN"
-* partOf only Reference (OrganizationEu)
+// * partOf only Reference (OrganizationEu)
 * contact ^short = "Organization contact infos"
 Invariant: name-or-identifier
 Description: "identifier or name SHALL be present"

@@ -1,11 +1,13 @@
 <div class="alert alert-info" style="font-size: 95%; margin-top:1em;">
-  <strong>At a Glance – HL7 Europe Base and Core IG</strong>
-  <ul>
-    <li><strong>Layered approach:</strong> Base profiles (flexible foundation) → Core profiles (essential constraints) → Scoped IGs (domain-specific use).</li>
-    <li><strong>Alignment:</strong> Supports the European Health Data Space (EHDS) and maintains consistency with international standards such as IPS.</li>
-    <li><strong>Reuse:</strong>Core profiles serve as the main reference point for most HL7 Europe Implementation Guides.</li>
-    <li><strong>Goal:</strong> Enable cross-border <em>consistency</em>, <em>interoperability</em>, and <em>reuse</em> across national and EU-level initiatives.</li>
-  </ul>
+  <div>
+    <strong>At a Glance – HL7 Europe Base and Core IG</strong>
+    <ul>
+      <li><strong>Layered approach:</strong> Base profiles (flexible foundation) → Core profiles (essential constraints) → Scoped IGs (domain-specific use).</li>
+      <li><strong>Alignment:</strong> Supports the European Health Data Space (EHDS) and maintains consistency with international standards such as IPS.</li>
+      <li><strong>Reuse:</strong> Core profiles serve as the main reference point for most HL7 Europe Implementation Guides.</li>
+      <li><strong>Goal:</strong> Enable cross-border <em>consistency</em>, <em>interoperability</em>, and <em>reuse</em> across national and EU-level initiatives.</li>
+    </ul>
+  </div>
 </div>
 
 

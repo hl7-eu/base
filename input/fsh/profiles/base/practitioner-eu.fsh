@@ -22,9 +22,12 @@ Description: """This profile specifies how the HL7 FHIR PractitionerRole resourc
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (2, draft)
 * identifier ^short = "Business identifier"
-* organization only Reference (OrganizationEu)
-* practitioner only Reference (PractitionerEu)
-* location only Reference (LocationEu)
+* organization ^short = "The organization where the practitioner performs the role"
+* practitioner ^short = "The practitioner providing services for the organization"
+* location ^short = "The location(s) at which this practitioner provides care"
+// * organization only Reference (OrganizationEu)
+// * practitioner only Reference (PractitionerEu)
+// * location only Reference (LocationEu)
 * telecom ^short = "Contact details that are specific to the role, location, or service"
 * code ^short = "Roles which this practitioner may perform."
 * specialty ^short = "Specialty of the practitioner"
