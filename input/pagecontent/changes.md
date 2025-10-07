@@ -2,16 +2,19 @@ This page summarizes the main changes applied to this version of the guide.
 
 ### 0.1.0-ballot to 0.1.0
 
+
+* FHIR-51370 Changed IPS dependency to 2.0.0
+* FHIR-51879, FHIR-51321, FHIR-51318 Removed scoped references from base profiles
 * FHIR-51374 Added page for missing data; removed data-absent-reason extensions
 * FHIR-51267 Removed EHIC from this version
-* FHIR-50782, * FHIR-51880 added explanations about line extensions usage
+* FHIR-50782, FHIR-51880 added explanations about address line extensions usage
 * FHIR-51199 Revised index and introduction pages extending explanations about core and base profiles
 * FHIR-51664 Substituted the iso21090-SC-coding extension with iso21090-codedString (R4)
 * FHIR-50969 Added minimal guidance for sex/gender related extensions
 * FHIR-50968 Fixed the HL7 Europe Copyright statement
 * FHIR-51269 Added intro text about extensions for the AddressEu profile
 * FHIR-51272 Removed from the base profiles all the references to IPS datatypes
-* FHIR-51402 and * FHIR-51569 Patient Animal as core profile derived from the Pateint Base
+* FHIR-51402 and FHIR-51569 Patient Animal as core profile derived from the Pateint Base
 * FHIR-51989 Removed not used VSs
 * FHIR-51222 Added EHDS models and maps to profiles
 * FHIR-51222 (first commit)Merge pull request #11 from /masterauthored
