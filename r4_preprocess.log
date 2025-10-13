@@ -23,11 +23,11 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\models\xtehr\patient.fsh ->
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\models\xtehr\patientAnimal.fsh -> /workspace/hl7eu-base\input\fsh\models\xtehr\patientAnimal.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\models\xtehr\telecom.fsh -> /workspace/hl7eu-base\input\fsh\models\xtehr\telecom.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\address-eu.fsh -> /workspace/hl7eu-base\input\fsh\profiles\address-eu.fsh
-Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\base\bodyStructure-eu.fsh -> /workspace/hl7eu-base\input\fsh\profiles\base\bodyStructure-eu.fsh
-Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\base\location-eu.fsh -> /workspace/hl7eu-base\input\fsh\profiles\base\location-eu.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\base\organization-eu.fsh -> /workspace/hl7eu-base\input\fsh\profiles\base\organization-eu.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\base\patient-eu.fsh -> /workspace/hl7eu-base\input\fsh\profiles\base\patient-eu.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\base\practitioner-eu.fsh -> /workspace/hl7eu-base\input\fsh\profiles\base\practitioner-eu.fsh
+Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\bodyStructure-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\bodyStructure-eu-core.fsh
+Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\location-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\location-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\organization-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\organization-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\patient-animal-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\patient-animal-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\patient-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\patient-eu-core.fsh

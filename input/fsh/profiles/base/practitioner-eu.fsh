@@ -27,7 +27,7 @@ Description: """This profile specifies how the HL7 FHIR PractitionerRole resourc
 * location ^short = "The location(s) at which this practitioner provides care"
 // * organization only Reference (OrganizationEu)
 // * practitioner only Reference (PractitionerEu)
-// * location only Reference (LocationEu)
+// * location only Reference (LocationEuCore)
 * telecom ^short = "Contact details that are specific to the role, location, or service"
 * code ^short = "Roles which this practitioner may perform."
 * specialty ^short = "Specialty of the practitioner"

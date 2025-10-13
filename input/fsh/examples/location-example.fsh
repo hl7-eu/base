@@ -1,5 +1,5 @@
 Instance: LocationExample
-InstanceOf: LocationEu
+InstanceOf: LocationEuCore
 Title: "Location Example"
 Description: "Example of a Location resource conforming to the Location (EU) profile."
 * id = "example-location"

@@ -102,7 +102,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                 <thead>
                                         <tr>
                                                 <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Logical Model</th>
-                                                <th colspan="3" style="background-color: #be072f; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">LocationEu</th>
+                                                <th colspan="3" style="background-color: #be072f; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">LocationEuCore</th>
                                         </tr>
                                         <tr>
                                                 <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Element</th>

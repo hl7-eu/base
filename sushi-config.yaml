@@ -251,12 +251,10 @@ groups:
      name:  HL7 Europe Base Profiles
      description: Base profiles for the European context.
      resources:
-       - StructureDefinition/bodyStructure-eu
        - StructureDefinition/patient-eu
        - StructureDefinition/practitioner-eu
        - StructureDefinition/practitionerRole-eu
        - StructureDefinition/organization-eu
-       - StructureDefinition/location-eu
    EuCoreProfiles:
       name:  HL7 Europe Core Profiles
       description: Core profiles for the European context.
@@ -266,6 +264,8 @@ groups:
         - StructureDefinition/practitionerRole-eu-core
         - StructureDefinition/organization-eu-core
         - StructureDefinition/patient-animal-eu-core
+        - StructureDefinition/bodyStructure-eu-core
+        - StructureDefinition/location-eu-core
 #
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and

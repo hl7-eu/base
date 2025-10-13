@@ -1,5 +1,5 @@
 Instance: BodyStructureExample
-InstanceOf: BodyStructureEu
+InstanceOf: BodyStructureEuCore
 Title: "BodyStructure Example"
 Description: "Example of a BodyStructure resource conforming to the BodyStructure (EU) profile."
 * id = "example-body-structure-eu"
