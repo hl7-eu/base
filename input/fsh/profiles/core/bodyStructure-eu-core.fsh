@@ -1,7 +1,7 @@
 Profile: BodyStructureEuCore
 Parent: BodyStructure
 Id: bodyStructure-eu-core
-Title: "BodyStructure (EU base)"
+Title: "BodyStructure (EU core)"
 Description: "This profile specifies how the HL7 FHIR BodyStructure resource should be used for conveying commonly used concepts in the European context."
 * insert SetFmmandStatusRule ( 2, draft)
 * identifier ^short = "Body structure identifier"

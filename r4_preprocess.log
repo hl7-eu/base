@@ -13,15 +13,6 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\examples\patient-animal.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\examples\patient-example.fsh -> /workspace/hl7eu-base\input\fsh\examples\patient-example.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\examples\practitioner-eu-core-example.fsh -> /workspace/hl7eu-base\input\fsh\examples\practitioner-eu-core-example.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\examples\practitionerRole-eu-core-example.fsh -> /workspace/hl7eu-base\input\fsh\examples\practitionerRole-eu-core-example.fsh
-Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\models\xtehr\address.fsh -> /workspace/hl7eu-base\input\fsh\models\xtehr\address.fsh
-Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\models\xtehr\bodyStructure.fsh -> /workspace/hl7eu-base\input\fsh\models\xtehr\bodyStructure.fsh
-Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\models\xtehr\healthProfessional.fsh -> /workspace/hl7eu-base\input\fsh\models\xtehr\healthProfessional.fsh
-Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\models\xtehr\humanName.fsh -> /workspace/hl7eu-base\input\fsh\models\xtehr\humanName.fsh
-Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\models\xtehr\location.fsh -> /workspace/hl7eu-base\input\fsh\models\xtehr\location.fsh
-Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\models\xtehr\organisation.fsh -> /workspace/hl7eu-base\input\fsh\models\xtehr\organisation.fsh
-Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\models\xtehr\patient.fsh -> /workspace/hl7eu-base\input\fsh\models\xtehr\patient.fsh
-Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\models\xtehr\patientAnimal.fsh -> /workspace/hl7eu-base\input\fsh\models\xtehr\patientAnimal.fsh
-Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\models\xtehr\telecom.fsh -> /workspace/hl7eu-base\input\fsh\models\xtehr\telecom.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\address-eu.fsh -> /workspace/hl7eu-base\input\fsh\profiles\address-eu.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\base\organization-eu.fsh -> /workspace/hl7eu-base\input\fsh\profiles\base\organization-eu.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\base\patient-eu.fsh -> /workspace/hl7eu-base\input\fsh\profiles\base\patient-eu.fsh

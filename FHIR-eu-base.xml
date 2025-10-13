@@ -13,7 +13,7 @@
 <artifact id="ValueSet/siteQualifier-eu" key="ValueSet-siteQualifier-eu" name="Body Structure Qualifier"/>
 <artifact deprecated="true" id="StructureDefinition/BodyStructure-eu" key="StructureDefinition-BodyStructure-eu" name="Body structure (EU base)"/>
 <artifact id="StructureDefinition/EHDSBodyStructure" key="StructureDefinition-EHDSBodyStructure" name="Body structure model"/>
-<artifact id="StructureDefinition/bodyStructure-eu-core" key="StructureDefinition-bodyStructure-eu-core" name="BodyStructure (EU base)"/>
+<artifact id="StructureDefinition/bodyStructure-eu-core" key="StructureDefinition-bodyStructure-eu-core" name="BodyStructure (EU core)"/>
 <artifact id="BodyStructure/example-body-structure-eu" key="BodyStructure-example-body-structure-eu" name="BodyStructure Example"/>
 <artifact deprecated="true" id="StructureDefinition/Coverage-eu-ehic" key="StructureDefinition-Coverage-eu-ehic" name="Coverage: EHIC"/>
 <artifact deprecated="true" id="ValueSet/oid-ehicPersonalId" key="ValueSet-oid-ehicPersonalId" name="EHIC Personal ID (system IDs - oid)"/>
@@ -25,7 +25,8 @@
 <artifact id="StructureDefinition/EHDSHumanName" key="StructureDefinition-EHDSHumanName" name="Human name model"/>
 <artifact deprecated="true" id="StructureDefinition/HumanName-eu" key="StructureDefinition-HumanName-eu" name="HumanName (Eu)"/>
 <artifact deprecated="true" id="ValueSet/iso-ehicCountryCode" key="ValueSet-iso-ehicCountryCode" name="ISO 3166 - EHIC Country Codes"/>
-<artifact id="StructureDefinition/location-eu-core" key="StructureDefinition-location-eu" name="Location (EU base)"/>
+<artifact deprecated="true" id="StructureDefinition/location-eu" key="StructureDefinition-location-eu" name="Location (EU base)"/>
+<artifact id="StructureDefinition/location-eu-core" key="StructureDefinition-location-eu-core" name="Location (EU core)"/>
 <artifact id="Location/example-location" key="Location-example-location" name="Location Example"/>
 <artifact id="StructureDefinition/EHDSLocation" key="StructureDefinition-EHDSLocation" name="Location model"/>
 <artifact id="StructureDefinition/EHDSOrganisation" key="StructureDefinition-EHDSOrganisation" name="Organisation model"/>
