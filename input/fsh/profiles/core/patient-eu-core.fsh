@@ -4,7 +4,7 @@ Id: patient-eu-core
 Title:    "Patient (EU core)"
 Description: """This profile sets minimum expectations for the Patient resource common to most of the use cases.
 When the ips-pat-1 invariant is satisfied \(Patient.name.given, Patient.name.family or Patient.name.text SHALL be present\) then this profile complies with the IPS patient profile."""
-* insert SetFmmandStatusRule (2, draft)
+* insert SetFmmandStatusRule (2, trial-use)
 * name 1..*
 /* * name.extension contains $data-absent-reason named name-absent-reason 0..1
 * name.extension[name-absent-reason] ^short = "Reason for not providing the name."

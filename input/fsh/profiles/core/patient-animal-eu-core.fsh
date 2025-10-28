@@ -4,7 +4,7 @@ Id: patient-animal-eu-core
 Title:    "Patient: Animal (EU core)"
 Description: """This profile defines how to represent an Animal as subject of care in FHIR for the purpose of this guide.
 This is used to identify the species when a specimen is collected from an animal"""
-* insert SetFmmandStatusRule ( 2, draft)
+* insert SetFmmandStatusRule ( 2, trial-use)
 * . ^short = "Information about an animal receiving health care services"
 * extension contains $patient-animal named patient-animal 1..1
 * extension[patient-animal].extension[species].valueCodeableConcept from SpeciesTypesEuVs (example)

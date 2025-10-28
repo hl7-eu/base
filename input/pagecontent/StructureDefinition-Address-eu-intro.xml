@@ -3,7 +3,7 @@
 	<h3>Address extensions</h3>
 	<a> </a>
 	<p>The Address extensions provide additional information about a patient's address, as the fact that it is an official address, or more structured information about the address itself.</p>
-	<p>This profile doesn't explicitly list all of them, but only those that are <strong>explicitly listed in the <a href="StructureDefinition-EHDSAddress.html">EHDS Address model</a></strong>.</p>
+	<p>This profile doesn't explicitly list all of them, but only those that are <strong>explicitly listed in the <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAddress.html">EHDS Address model</a></strong>.</p>
 	<p>Examples of extensions not included, but used in several jurisdictions are:</p>
 	<ul>
 		<li><a href="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix">ADXPBuildingNumberSuffix</a></li>

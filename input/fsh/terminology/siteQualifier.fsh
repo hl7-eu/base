@@ -6,7 +6,7 @@ Description:   "Body Structure site qualifier. It indicates - for example - the 
 // * ^publisher = "HL7 Europe"
 // * ^copyright = "HL7 Europe"
 * insert SNOMEDCopyrightForVS
-* insert SetFmmandStatusRule (2, draft)
+* insert SetFmmandStatusRule (2, trial-use)
 //* include codes from valueset $BodystructureLocationQualifierR5
 //* exclude codes from valueset LabLateralityEuVs
 // following codes are associated with aterality, so not mentioned here, see https://jira.hl7.org/browse/FHIR-51391

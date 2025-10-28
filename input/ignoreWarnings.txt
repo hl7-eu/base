@@ -20,6 +20,7 @@
 %There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse'.%
 %There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-citizenship%
 %There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-nationality%
+%There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-birthTime%
 # SNOMED CT related warnings
 %This SNOMED-CT based include has some concepts with semantic tags (FSN terms) and some without (preferred terms)%
 %The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters%
@@ -27,6 +28,8 @@
 %The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated%
 %The extension http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber|5.2.0 is deprecated%
 %The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated%
+# Context will be fixed
+The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality from FHIR version 5.0 is not allowed to be used at this point (this element is [BodyStructure]; allowed for this version = e:BodyStructure.includedStructure; this is a warning since contexts may be renamed between FHIR versions)
 # Not found Code System
 A definition for CodeSystem 'http://terminology.hl7.eu/CodeSystem/v3-ActCode' could not be found, so the code cannot be validated 
 # Not recognized system
@@ -59,3 +62,7 @@ The definition for the element 'PractitionerRole.specialty' binds to the value s
 # See https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Issue.20using.20version-specific.20packages
 The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 The URL should refer directly to the ImplementationGuide resource (e.g. include '/ImplementationGuide/')
+# Reference to experimental
+Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+The definition for the element 'BodyStructure.includedStructure.bodyLandmarkOrientation.surfaceOrientation' binds to the value set 'http://hl7.org/fhir/ValueSet/bodystructure-relative-location|5.0.0' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PractitionerRole.specialty' binds to the value set 'http://hl7.org/fhir/ValueSet/c80-practice-codes|5.0.0' which is experimental, but this structure is not labeled as experimental
