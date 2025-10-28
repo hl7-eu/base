@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+        <title>EHDS Logical Models → FHIR Profiles</title>
+        <style type="text/css">
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        margin: 1rem;
+        background:#f5f7fb;
+        color:#1a1a1a;
+        line-height:1.4;
+      }
+      h1 { margin-bottom: 0.5rem; }
+      p.lead { max-width: 70ch; }
+      .note-block {
+        background:#fff8d6;
+        border:1px solid #e0d29c;
+        border-radius:10px;
+        padding:12px 16px;
+        max-width:70ch;
+        margin: 1rem 0;
+        font-size:0.9rem;
+      }
+      .version-block {
+        background:#fff;
+        border:1px solid #d0d7de;
+        border-radius:10px;
+        padding:12px 16px;
+        max-width:70ch;
+        margin: 1rem 0;
+        font-size:0.85rem;
+        color:#444;
+      }
+      table.model-index {
+        border-collapse:collapse;
+        width:100%;
+        max-width:1100px;
+        table-layout:auto;
+        background:#fff;
+        border:1px solid #d0d7de;
+        border-radius:10px;
+        box-shadow:0 1px 2px rgba(0,0,0,0.04);
+        overflow:hidden;
+        font-size:0.9rem;
+      }
+      .model-index th {
+        background:#f6f8fa;
+        font-weight:600;
+        text-align:left;
+        border-bottom:1px solid #d0d7de;
+        padding:8px;
+        white-space:nowrap;
+      }
+      .model-index td {
+        border-top:1px solid #d0d7de;
+        padding:8px;
+        vertical-align:top;
+      }
+      .model-index td a {
+        text-decoration:none;
+      }
+      /* pill link style */
+      a.pill {
+        display:inline-block;
+        background:#fff;
+        border:1px solid #d0d7de;
+        border-radius:999px;
+        padding:3px 8px;
+        font-size:0.8rem;
+        line-height:1.2;
+        text-decoration:none;
+        white-space:nowrap;
+      }
+      /* footer note */
+      .future-block {
+        font-size:0.8rem;
+        color:#555;
+        max-width:70ch;
+        margin-top:2rem;
+      }
+        </style>
+    </head>
+    <body>
+        <h3>EHDS Logical Models → FHIR Profiles</h3>
+        <p class="lead">
+      The Xt-EHR Joint Action defines EHDS logical data models for core clinical and administrative concepts.
+      This Implementation Guide provides HL7 FHIR profiles that realise those models.
+        </p>
+        <div class="note-block">
+            <strong>Ongoing alignment:</strong>
+            <br/>
+      The Xt-EHR logical models are under active revision and continuous refinement. Updates from Xt-EHR will be
+      progressively incorporated into this Implementation Guide to maintain alignment with the evolving EHDS
+      specifications.
+        </div>
+        <div class="version-block">
+            <strong>Version alignment</strong>
+            <br/>
+      Xt-EHR baseline model version:             <!-- e.g. 0.2.x / September 2025 -->
+            <br/>
+      This IG release:             <!-- e.g. v0.x.y -->
+        </div>
+        <p class="lead">
+      The table below lists each EHDS logical model and the corresponding FHIR profile(s) or datatype(s) used in this IG.
+      Each row links to a dedicated mapping page with element-by-element traceability.
+        </p>
+        <table class="model-index">
+            <thead>
+                <tr>
+                    <th>EHDS Logical Model</th>
+                    <th>FHIR Profile / Type in this IG</th>
+                    <th>Mapping Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>EHDSHumanName</td>
+                    <td>FHIR <code>HumanName</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdshumanname.html">EHDSHumanName Mapping</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EHDSAddress</td>
+                    <td>
+                        <code>AddressEu</code> profile</td>
+                    <td>
+                        <a class="pill" href="map-ehdsaddress.html">EHDSAddress Mapping</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EHDSTelecom</td>
+                    <td>FHIR <code>ContactPoint</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdstelecom.html">EHDSTelecom Mapping</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EHDSPatient</td>
+                    <td>
+                        <code>PatientEuCore</code> profile</td>
+                    <td>
+                        <a class="pill" href="map-ehdspatient.html">EHDSPatient Mapping</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EHDSPatientAnimal</td>
+                    <td>
+                        <code>PatientAnimalEuCore</code> profile</td>
+                    <td>
+                        <a class="pill" href="map-ehdspatientanimal.html">EHDSPatientAnimal Mapping</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EHDSOrganisation</td>
+                    <td>
+                        <code>OrganizationEuCore</code> profile</td>
+                    <td>
+                        <a class="pill" href="map-ehdsorganisation.html">EHDSOrganisation Mapping</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EHDSLocation</td>
+                    <td>
+                        <code>LocationEuCore</code> profile</td>
+                    <td>
+                        <a class="pill" href="map-ehdslocation.html">EHDSLocation Mapping</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EHDSHealthProfessional</td>
+                    <td>
+                        <code>PractitionerRoleEuCore</code>,                        <code>PractitionerEuCore</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdshealthprofessional.html">EHDSHealthProfessional Mapping</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EHDSBodyStructure</td>
+                    <td>
+                        <code>BodyStructureEuCore</code> profile</td>
+                    <td>
+                        <a class="pill" href="map-ehdsbodystructure.html">EHDSBodyStructure Mapping</a>
+                    </td>
+                </tr>
+                <!-- future clinical/medication additions -->
+                <tr>
+                    <td>EHDSCondition</td>
+                    <td>                        <!-- e.g. ConditionEuCore --> Condition profile in this IG</td>
+                    <td>
+                        <a class="pill" href="map-ehdscondition.html">EHDSCondition Mapping</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EHDSProcedure</td>
+                    <td>                        <!-- e.g. ProcedureEuCore --> Procedure profile in this IG</td>
+                    <td>
+                        <a class="pill" href="map-ehdsprocedure.html">EHDSProcedure Mapping</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EHDSAllergyIntolerance</td>
+                    <td>                        <!-- e.g. AllergyIntoleranceEuCore --> AllergyIntolerance profile in this IG</td>
+                    <td>
+                        <a class="pill" href="map-ehdsallergyintolerance.html">EHDSAllergyIntolerance Mapping</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EHDSImmunisation</td>
+                    <td>                        <!-- e.g. ImmunizationEuCore --> Immunization profile in this IG</td>
+                    <td>
+                        <a class="pill" href="map-ehdsimmunisation.html">EHDSImmunisation Mapping</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EHDSMedication</td>
+                    <td>Medication profile(s)</td>
+                    <td>
+                        <a class="pill" href="map-ehdsmedication.html">EHDSMedication Mapping</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EHDSMedicationStatement</td>
+                    <td>MedicationStatement profile(s)</td>
+                    <td>
+                        <a class="pill" href="map-ehdsmedicationstatement.html">EHDSMedicationStatement Mapping</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EHDSAlert</td>
+                    <td>                        <!-- e.g. Flag / Alert profile --> Alert profile in this IG</td>
+                    <td>
+                        <a class="pill" href="map-ehdsalert.html">EHDSAlert Mapping</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="future-block">
+      Additional EHDS logical models (e.g. Alert, Condition, Procedure, Immunisation, Medication) are being actively
+      integrated. Mapping pages will be extended as they become available.
+        </p>
+    </body>
+</html>

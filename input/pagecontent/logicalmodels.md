@@ -1,38 +1,66 @@
+### EHDS Logical Data Models
 
-<!-- 
-extensions
+Logical data models (or information models) for the **European Health Data Space (EHDS)** are developed by the [**Xt-EHR Joint Action**](https://www.xt-ehr.eu/).
 
-{% for sd_hash in site.data.structuredefinitions -%}
-  {%- assign sd = sd_hash[1] -%}
-  {%- if sd.kind  == "complex-type" and sd.type != "Extension" -%}
-   <li> <a href="{{sd.path}}">{{sd.name}}</a>{{sd.title}}. {{sd.description}} </li>
-  {%- endif -%}
-{%- endfor -%} -->
+These models are **refined and enhanced versions** of the data sets defined in the [**eHealth Network (eHN) Guidelines**](https://health.ec.europa.eu/ehealth-digital-health-and-care/digital-health-and-care/eu-cooperation/ehealth-network_en#ehealth-network-guidelines).
 
+This Implementation Guide (IG) aims to **align with the EHDS logical models** and to **provide HL7 FHIR profiles** derived from these models.
 
-Logical data models or information models for EHDS are created by the [Xt-EHR project](https://www.xt-ehr.eu/).
+> **Note:**
+> The Xt-EHR logical models are **under active revision and continuous refinement**.
+> Updates and improvements made by the Xt-EHR project will be **progressively incorporated** into this Implementation Guide to maintain alignment with the evolving EHDS specifications.
 
-These models are refined and enhanced versions of the [eHN Guidelines](https://health.ec.europa.eu/ehealth-digital-health-and-care/digital-health-and-care/eu-cooperation/ehealth-network_en#ehealth-network-guidelines) data sets.
+The EHDS logical models currently supported in this version of the guide are listed below.
+For the most recent and in-progress versions, please refer to the [**Xt-EHR EHDS Logical Information Models**](https://build.fhir.org/ig/Xt-EHR/xt-ehr-common) Implementation Guide.
 
-This IG aims to conform to EHDS logical models, and provide the HL7 FHIR profiles based on these models.
+---
 
-The currently available EHDS logical models as proposed by the Xt-ERH Joint Action and used for this version of the guide are listed below.
+### Xt-EHR Logical Models
 
-The most recent, in-development version of the models can be seen in the [Xt-EHR EHDS Logical Information Models](https://build.fhir.org/ig/Xt-EHR/xt-ehr-common) IG.
+#### 🧩 Foundational Models
 
-### Xt-EHR Models
+| **Model**                                                                                               | **Description**                                                    |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [EHDSAddress](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAddress.html)                   | EHDS refined base model for Address structure                      |
+| [EHDSHumanName](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSHumanName/)                   | EHDS refined base model for Human Name                             |
+| [EHDSTelecom](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSTelecom.html)                   | EHDS refined base model for telecommunications and contact details |
+| [EHDSBodyStructure](https://www.xt-ehr.eu/fhir/models/0.2.1/StructureDefinition-EHDSBodyStructure.html) | EHDS refined base model for Body structure                         |
 
-| **Model**                                                                                                       | **Description**                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
-| [EHDSAddress](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAddress.html)                       | EHDS refined base model for Address structure                                                |
-| [EHDSBodyStructure](https://www.xt-ehr.eu/fhir/models/0.2.1/StructureDefinition-EHDSBodyStructure.html)                  | EHDS refined base model for Body structure                                                   |
-| [EHDSHealthProfessional](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSHealthProfessional.html) | EHDS refined base model for Health professional (HP)                            |
-| [EHDSHumanName](https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHumanName/)                                    | EHDS refined base model for Human name                                                       |
-| [EHDSLocation](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSLocation.html)                     | EHDS refined base model for place / position / details where services/resources are provided |
-| [EHDSOrganisation](https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation/)                              | EHDS refined base model for health provider or any organisation                              |
-| [EHDSPatient](https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient/)                                        | EHDS refined base model for patient (subject of care) information                            |
-| [EHDSPatientAnimal](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSPatientAnimal.html)           | EHDS refined base model for Patient:Animal                                   |
-| [EHDSTelecom](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSTelecom.html)                       | EHDS refined base model for telecommunication contact information              |
+---
 
+#### 🧑‍⚕️ Entity Models
 
+| **Model**                                                                                                   | **Description**                                                       |
+| ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| [EHDSPatient](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSPatient/)                           | EHDS refined base model for Patient (subject of care)                 |
+| [EHDSPatientAnimal](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSPatientAnimal.html)           | EHDS refined base model for Animal Patient                            |
+| [EHDSHealthProfessional](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSHealthProfessional.html) | EHDS refined base model for Health Professional                       |
+| [EHDSOrganisation](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSOrganisation/)                 | EHDS refined base model for healthcare organisations and providers    |
+| [EHDSLocation](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSLocation.html)                     | EHDS refined base model for location, site, or service delivery place |
+
+---
+
+#### 🩺 Clinical Information Models
+
+| **Model**                                                                                                   | **Description**                                                                                                                                                  |
+| ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [EHDSAlert](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAlert.html)                           | EHDS refined base model for clinical alerts                                                                                                                      |
+| [EHDSAllergyIntolerance](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAllergyIntolerance.html) | EHDS refined base model for allergy or intolerance information                                                                                                   |
+| [EHDSCondition](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSCondition.html)                   | EHDS refined base model for a clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern |
+| [EHDSProcedure](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSProcedure.html)                   | EHDS refined base model for an action that is or was performed on or for a patient                                                                               |
+| [EHDSImmunisation](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSImmunisation.html)             | EHDS refined base model for Immunisation                                                                                                                         |
+
+---
+
+#### 💊 Medication Models
+
+| **Model**                                                                                                     | **Description**                                                                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [EHDSMedication](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedication.html)                   | Logical model for prescribed/dispensed medication. Shared by statements, requests, dispensations, and treatment lines. Supports both generic (virtual) and branded (real) products. |
+| [EHDSMedicationStatement](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedicationStatement.html) | Statement about a single medication as part of a medication summary                                                                                                                 |
+
+---
+
+**Future updates:**
+Additional EHDS logical models will be added as they become available through the [Xt-EHR project](https://www.xt-ehr.eu/).
 

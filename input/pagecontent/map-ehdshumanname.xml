@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+        <title>EHDSHumanName → HumanName Mapping</title>
+        <style type="text/css">
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 1rem; background:#f5f7fb; color:#1a1a1a; line-height:1.4; }
+      h1 { margin-bottom:0.5rem; }
+      p.lead { max-width:70ch; }
+      .legend {
+        font-size:0.8rem;
+        background:#fff;
+        border:1px solid #d0d7de;
+        border-radius:10px;
+        padding:10px 12px;
+        max-width:70ch;
+        margin:1rem 0;
+      }
+      .legend dt { font-weight:600; float:left; width:6rem; }
+      .legend dd { margin-left:6rem; margin-bottom:0.5rem; }
+      .table-wrap { overflow:auto; border:1px solid #d0d7de; border-radius:10px; padding:8px; background:#fff; box-shadow:0 1px 2px rgba(0,0,0,0.04); }
+      table { border-collapse:collapse; width:100%; table-layout:fixed; font-size:0.9rem; }
+      thead th { background:#f6f8fa; font-weight:600; text-align:center; }
+      th, td { border:1px solid #d0d7de; padding:4px 6px; vertical-align:top; overflow:hidden; text-overflow:ellipsis; }
+      caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
+      .relhead { background-color:#6F2E80 !important; color:#ffffff !important; }
+      .relsub  { background-color:#E6D7EC !important; font-weight:bold; }
+      .src-head { background-color:#1f54d1; color:#ffffff; }
+      .tgt-head { background-color:#be072f; color:#ffffff; }
+      .src-sub  { background-color:#adc3f6; font-weight:bold; }
+      .tgt-sub  { background-color:#d78496; font-weight:bold; }
+        </style>
+    </head>
+    <body>
+        <h3>EHDSHumanName → HumanName</h3>
+        <p class="lead">
+      This page describes the element-by-element mapping from the
+            <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHumanName">
+                <strong>EHDSHumanName</strong>
+            </a>
+      logical model to the HL7 FHIR
+            <a href="https://hl7.org/fhir/datatypes.html#HumanName">
+                <strong>HumanName</strong>
+            </a>
+      datatype, as used in this Implementation Guide.
+        </p>
+        <div class="legend">
+            <strong>Relationship legend</strong>
+            <dl>
+                <dt>equal</dt>
+                <dd>Semantically equivalent: the meaning of the EHDS element matches the FHIR element directly.</dd>
+                <dt>narrower</dt>
+                <dd>The FHIR element is more specific / more constrained than the EHDS element.</dd>
+                <dt>relatedto</dt>
+                <dd>The EHDS element maps to the target concept but not 1:1 (e.g. requires context or transformation).</dd>
+                <dt>unmatched</dt>
+                <dd>No corresponding element in this FHIR profile/datatype.</dd>
+            </dl>
+        </div>
+        <div class="table-wrap">
+            <table summary="EHDSHumanName">
+                <caption>EHDSHumanName → HumanName</caption>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="src-head">EHDSHumanName (Logical Model)</th>
+                        <th class="relhead">Relationship</th>
+                        <th colspan="3" class="tgt-head">HumanName</th>
+                    </tr>
+                    <tr>
+                        <th class="src-sub">Element</th>
+                        <th class="src-sub">Description</th>
+                        <th class="relsub">Relation</th>
+                        <th class="tgt-sub">Element</th>
+                        <th class="tgt-sub">Description</th>
+                        <th class="tgt-sub">Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>use</td>
+                        <td>Use</td>
+                        <td>equal</td>
+                        <td>use</td>
+                        <td>Name Use</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>text</td>
+                        <td>Text</td>
+                        <td>equal</td>
+                        <td>text</td>
+                        <td>Text representation of the full name</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>family</td>
+                        <td>Family</td>
+                        <td>equal</td>
+                        <td>family</td>
+                        <td>Family name (often called 'Surname')</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>given</td>
+                        <td>Given</td>
+                        <td>equal</td>
+                        <td>given</td>
+                        <td>Given names (may include middle names)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>prefix</td>
+                        <td>Prefix</td>
+                        <td>equal</td>
+                        <td>prefix</td>
+                        <td>Parts that come before the name</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>suffix</td>
+                        <td>Suffix</td>
+                        <td>equal</td>
+                        <td>suffix</td>
+                        <td>Parts that come after the name</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p style="margin-top:2rem;font-size:0.8rem;color:#555;">
+      Return to overview: <a href="model-map.html">EHDS Logical Models → FHIR Profiles</a>
+        </p>
+    </body>
+</html>

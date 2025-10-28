@@ -43,8 +43,12 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\index.md -> /worksp
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\introduction.md -> /workspace/hl7eu-base\input\pagecontent\introduction.md
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\knownissues.md -> /workspace/hl7eu-base\input\pagecontent\knownissues.md
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\logicalmodels.md -> /workspace/hl7eu-base\input\pagecontent\logicalmodels.md
+Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdshumanname.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdshumanname.xml
+Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdslocation.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdslocation.xml
+Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdspatient.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdspatient.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\missing-data.md -> /workspace/hl7eu-base\input\pagecontent\missing-data.md
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\modelmap.xml -> /workspace/hl7eu-base\input\pagecontent\modelmap.xml
+Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\modelmap2.xml -> /workspace/hl7eu-base\input\pagecontent\modelmap2.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\profiles.md -> /workspace/hl7eu-base\input\pagecontent\profiles.md
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\StructureDefinition-Address-eu-intro.xml -> /workspace/hl7eu-base\input\pagecontent\StructureDefinition-Address-eu-intro.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\StructureDefinition-patient-eu-intro.xml -> /workspace/hl7eu-base\input\pagecontent\StructureDefinition-patient-eu-intro.xml

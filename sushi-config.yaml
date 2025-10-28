@@ -6,7 +6,7 @@ title: HL7 Europe Base and Core FHIR IG
 name:  Hl7EuBaseIg
 description: This guide collects base and core profiles to be used in the European context. It also includes common artifacts, such as the profiles describing the European Health Insurance Card.
 status: draft # draft | active | retired | unknown
-version: 0.1.0-ci-build
+version: 0.2.0-ci-build
 copyrightYear: 2024+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
@@ -24,7 +24,7 @@ copyright: >-
 #
 dependencies:
   # hl7.fhir.uv.ips: current
-  hl7.fhir.uv.ips: 2.0.0
+  hl7.fhir.uv.ips: current
   hl7.fhir.extensions.r5: 4.0.1
   hl7.fhir.eu.extensions.r4: current
   # eu.terminology.ehdsi: 0.1.0
@@ -64,12 +64,21 @@ pages:
     title: Introduction
   modelmap.html:
     title: Model Map
+  modelmap2.html:
+    title: Model Map 2
   logicalmodels.md:
     title: Logical Models
   missing-data.md:
     title: Handling Missing Data
   changes.md:
     title: Change Log
+  # Model Mapping
+  map-ehdshumanname.html:
+     title: EHDShumanname to FHIR HumanName Mapping
+  map-ehdslocation.html:
+     title: EHDSlocation to FHIR Location Mapping
+  map-ehdspatient.html:
+     title: EHDSpatient to FHIR Patient Mapping
  #  recommendations.md:
 #    title: Recommendations
 #
@@ -91,7 +100,7 @@ parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Pa
 # path-resource:
 #    - input/resources
 #    - fsh-generated/resources
-#  path-pages:
+# path-pages:
 #    - input/pagecontent
 #    - input/intro-notes
 #  active-tables: false
@@ -145,6 +154,7 @@ menu:
 #   Workflow 
   Implementation:
     Mapping to Profiles: modelmap.html
+    Mapping to Profiles 2: modelmap2.html
 #    Examples: examples.html
 #    Implementation Notes: implementationnotes.html  
   About:
