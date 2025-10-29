@@ -68,9 +68,23 @@
 <page key="crossversionanalysis" name="Cross-version Analysis"/>
 <page key="dependencies" name="Dependencies"/>
 <page key="downloads" name="Downloads"/>
-<page key="map-ehdshumanname" name="EHDShumanname to FHIR HumanName Mapping"/>
-<page key="map-ehdslocation" name="EHDSlocation to FHIR Location Mapping"/>
-<page key="map-ehdspatient" name="EHDSpatient to FHIR Patient Mapping"/>
+<page key="map-ehdsaddress" name="EHDSAddress to FHIR Address Mapping"/>
+<page key="map-ehdsalert" name="EHDSAlert to FHIR Flag / Alert Mapping"/>
+<page key="map-ehdsallergyintolerance" name="EHDSAllergyIntolerance to FHIR AllergyIntolerance Mapping"/>
+<page key="map-ehdsbodystructure" name="EHDSBodyStructure to FHIR BodyStructure Mapping"/>
+<page key="map-ehdscondition" name="EHDSCondition to FHIR Condition Mapping"/>
+<page key="map-ehdshealthprofessional-practitioner" name="EHDSHealthProfessional to FHIR Practitioner Mapping"/>
+<page key="map-ehdshealthprofessional-role" name="EHDSHealthProfessional to FHIR PractitionerRole Mapping"/>
+<page key="map-ehdshumanname" name="EHDSHumanName to FHIR HumanName Mapping"/>
+<page key="map-ehdsimmunisation" name="EHDSImmunisation to FHIR Immunization Mapping"/>
+<page key="map-ehdslocation" name="EHDSLocation to FHIR Location Mapping"/>
+<page key="map-ehdsmedication" name="EHDSMedication to FHIR Medication Mapping"/>
+<page key="map-ehdsmedicationstatement" name="EHDSMedicationStatement to FHIR MedicationStatement Mapping"/>
+<page key="map-ehdsorganisation" name="EHDSOrganisation to FHIR Organization Mapping"/>
+<page key="map-ehdspatient" name="EHDSPatient to FHIR Patient Mapping"/>
+<page key="map-ehdspatientanimal" name="EHDSPatientAnimal to FHIR Patient (Animal) Mapping"/>
+<page key="map-ehdsprocedure" name="EHDSProcedure to FHIR Procedure Mapping"/>
+<page key="map-ehdstelecom" name="EHDSTelecom to FHIR ContactPoint Mapping"/>
 <page key="missing-data" name="Handling Missing Data"/>
 <page key="index" name="Home"/>
 <page key="introduction" name="Introduction"/>

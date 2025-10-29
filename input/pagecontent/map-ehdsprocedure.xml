@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>EHDSHumanName → HumanName</title>
+    <title>EHDSProcedure → Procedure</title>
 <style type="text/css">
   body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -45,18 +45,18 @@
   .tgt-sub  { background-color: #d78496; font-weight: bold; }
 </style></head>
   <body>
-    <h3>EHDSHumanName → HumanName</h3>
+    <h3>EHDSProcedure → Procedure</h3>
     <p>
-      This page describes the element-by-element mapping from the <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHumanName"><strong>EHDSHumanName</strong></a> logical model to the HL7 FHIR <a href="https://hl7.org/fhir/datatypes.html#HumanName"><strong>HumanName</strong></a> datatype, as used in this Implementation Guide.
+      This page describes the element-by-element mapping from the <strong>EHDSProcedure</strong> logical model to the FHIR <code>Procedure</code> profile in this Implementation Guide.
     </p>
     <div class="table-wrap">
-      <table summary="EHDSHumanName → HumanName">
-        <caption>EHDSHumanName → HumanName</caption>
+      <table summary="EHDSProcedure → Procedure">
+        <caption>EHDSProcedure → Procedure</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSHumanName (Logical Model)</th>
+            <th colspan="2" class="src-head">EHDSProcedure (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">HumanName</th>
+            <th colspan="3" class="tgt-head">Procedure</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
@@ -69,52 +69,76 @@
         </thead>
         <tbody>
           <tr>
-            <td>use</td>
-            <td>Intended use of the name (official, alias, etc.).</td>
+            <td>identifier</td>
+            <td>Identifier for the procedure record or act.</td>
             <td>equal</td>
-            <td>use</td>
-            <td>Name use code.</td>
-            <td>e.g. official, usual, nickname.</td>
-          </tr>
-          <tr>
-            <td>text</td>
-            <td>Full name as rendered for display.</td>
-            <td>equal</td>
-            <td>text</td>
-            <td>Text representation of the full name.</td>
-            <td>Typically a single string.</td>
-          </tr>
-          <tr>
-            <td>family</td>
-            <td>Family name / surname.</td>
-            <td>equal</td>
-            <td>family</td>
-            <td>Family name (often called "surname").</td>
+            <td>identifier</td>
+            <td>Business identifier for the procedure.</td>
             <td></td>
           </tr>
           <tr>
-            <td>given</td>
-            <td>Given (first / middle) names.</td>
+            <td>status</td>
+            <td>Status of the procedure (completed, in-progress).</td>
             <td>equal</td>
-            <td>given</td>
-            <td>Given names (may include middle names).</td>
-            <td>Array in FHIR.</td>
+            <td>status</td>
+            <td>Procedure status.</td>
+            <td>Important for workflows and billing.</td>
           </tr>
           <tr>
-            <td>prefix</td>
-            <td>Honorifics or titles preceding the name.</td>
+            <td>code</td>
+            <td>Coded description of the procedure performed.</td>
             <td>equal</td>
-            <td>prefix</td>
-            <td>Parts that come before the name.</td>
-            <td>e.g. Dr, Prof, Sir.</td>
+            <td>code</td>
+            <td>Procedure code.</td>
+            <td>May use national coding schemes or SNOMED CT.</td>
           </tr>
           <tr>
-            <td>suffix</td>
-            <td>Post-nominal letters, generational markers, etc.</td>
+            <td>subject</td>
+            <td>Who the procedure was performed on.</td>
             <td>equal</td>
-            <td>suffix</td>
-            <td>Parts that come after the name.</td>
-            <td>e.g. Jr, MD, PhD.</td>
+            <td>subject</td>
+            <td>Patient / Animal Patient.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>performed[x]</td>
+            <td>Date/time or period when performed.</td>
+            <td>equal</td>
+            <td>performed[x]</td>
+            <td>When the procedure was performed.</td>
+            <td>FHIR supports multiple data types.</td>
+          </tr>
+          <tr>
+            <td>performer</td>
+            <td>Who was involved in performing the procedure.</td>
+            <td>equal</td>
+            <td>performer</td>
+            <td>Performer(s) of the procedure, and their function/role.</td>
+            <td>References PractitionerRole / Practitioner / Organization.</td>
+          </tr>
+          <tr>
+            <td>location</td>
+            <td>Where the procedure was carried out.</td>
+            <td>equal</td>
+            <td>location</td>
+            <td>Location where the procedure occurred.</td>
+            <td>Reference to LocationEuCore.</td>
+          </tr>
+          <tr>
+            <td>bodySite</td>
+            <td>Body site targeted/affected.</td>
+            <td>equal</td>
+            <td>bodySite</td>
+            <td>Target body site.</td>
+            <td>Can align with BodyStructure details.</td>
+          </tr>
+          <tr>
+            <td>reason</td>
+            <td>Clinical reason / indication for performing the procedure.</td>
+            <td>equal</td>
+            <td>reason</td>
+            <td>Reason the procedure was performed.</td>
+            <td>In R4 often reasonCode / reasonReference; in R5 unified as reason.</td>
           </tr>
         </tbody>
       </table>

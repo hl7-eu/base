@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>EHDSHumanName → HumanName</title>
+    <title>EHDSMedicationStatement → MedicationStatement</title>
 <style type="text/css">
   body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -45,18 +45,18 @@
   .tgt-sub  { background-color: #d78496; font-weight: bold; }
 </style></head>
   <body>
-    <h3>EHDSHumanName → HumanName</h3>
+    <h3>EHDSMedicationStatement → MedicationStatement</h3>
     <p>
-      This page describes the element-by-element mapping from the <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHumanName"><strong>EHDSHumanName</strong></a> logical model to the HL7 FHIR <a href="https://hl7.org/fhir/datatypes.html#HumanName"><strong>HumanName</strong></a> datatype, as used in this Implementation Guide.
+      This page describes the element-by-element mapping from the <strong>EHDSMedicationStatement</strong> logical model to the FHIR <code>MedicationStatement</code> profile(s) used in this Implementation Guide.
     </p>
     <div class="table-wrap">
-      <table summary="EHDSHumanName → HumanName">
-        <caption>EHDSHumanName → HumanName</caption>
+      <table summary="EHDSMedicationStatement → MedicationStatement">
+        <caption>EHDSMedicationStatement → MedicationStatement</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSHumanName (Logical Model)</th>
+            <th colspan="2" class="src-head">EHDSMedicationStatement (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">HumanName</th>
+            <th colspan="3" class="tgt-head">MedicationStatement</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
@@ -69,52 +69,68 @@
         </thead>
         <tbody>
           <tr>
-            <td>use</td>
-            <td>Intended use of the name (official, alias, etc.).</td>
+            <td>identifier</td>
+            <td>Identifier for this medication statement entry.</td>
             <td>equal</td>
-            <td>use</td>
-            <td>Name use code.</td>
-            <td>e.g. official, usual, nickname.</td>
-          </tr>
-          <tr>
-            <td>text</td>
-            <td>Full name as rendered for display.</td>
-            <td>equal</td>
-            <td>text</td>
-            <td>Text representation of the full name.</td>
-            <td>Typically a single string.</td>
-          </tr>
-          <tr>
-            <td>family</td>
-            <td>Family name / surname.</td>
-            <td>equal</td>
-            <td>family</td>
-            <td>Family name (often called "surname").</td>
+            <td>identifier</td>
+            <td>Business identifier.</td>
             <td></td>
           </tr>
           <tr>
-            <td>given</td>
-            <td>Given (first / middle) names.</td>
+            <td>status</td>
+            <td>Current status of the assertion (active, completed, etc.).</td>
             <td>equal</td>
-            <td>given</td>
-            <td>Given names (may include middle names).</td>
-            <td>Array in FHIR.</td>
+            <td>status</td>
+            <td>Medication status within the statement.</td>
+            <td>e.g. active, completed.</td>
           </tr>
           <tr>
-            <td>prefix</td>
-            <td>Honorifics or titles preceding the name.</td>
+            <td>medication</td>
+            <td>The medication being taken or reported.</td>
             <td>equal</td>
-            <td>prefix</td>
-            <td>Parts that come before the name.</td>
-            <td>e.g. Dr, Prof, Sir.</td>
+            <td>medication[x]</td>
+            <td>Identifies the medication.</td>
+            <td>Can reference a Medication resource or be a CodeableConcept.</td>
           </tr>
           <tr>
-            <td>suffix</td>
-            <td>Post-nominal letters, generational markers, etc.</td>
+            <td>subject</td>
+            <td>The person/animal this statement is about.</td>
             <td>equal</td>
-            <td>suffix</td>
-            <td>Parts that come after the name.</td>
-            <td>e.g. Jr, MD, PhD.</td>
+            <td>subject</td>
+            <td>Who is/was taking the medication.</td>
+            <td>Reference to Patient/Animal Patient.</td>
+          </tr>
+          <tr>
+            <td>effective[x]</td>
+            <td>Period/dateTime when the medication was taken.</td>
+            <td>equal</td>
+            <td>effective[x]</td>
+            <td>When the medication was being consumed.</td>
+            <td>Can be Period or dateTime.</td>
+          </tr>
+          <tr>
+            <td>dosage</td>
+            <td>How the medication is/was taken (dose, route, timing).</td>
+            <td>equal</td>
+            <td>dosage</td>
+            <td>Details of dose, timing, route.</td>
+            <td>Repeats for complex regimens.</td>
+          </tr>
+          <tr>
+            <td>informationSource</td>
+            <td>Who reported this medication use.</td>
+            <td>equal</td>
+            <td>informationSource</td>
+            <td>Source of the information in the statement.</td>
+            <td>Important for reconciliation / accuracy.</td>
+          </tr>
+          <tr>
+            <td>reason</td>
+            <td>Why the medication is/was taken.</td>
+            <td>relatedto</td>
+            <td>reason</td>
+            <td>Indication / therapy rationale.</td>
+            <td>R4 often reasonCode / reasonReference; R5 unifies as reason.</td>
           </tr>
         </tbody>
       </table>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>EHDSHumanName → HumanName</title>
+    <title>EHDSBodyStructure → BodyStructureEuCore</title>
 <style type="text/css">
   body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -45,18 +45,18 @@
   .tgt-sub  { background-color: #d78496; font-weight: bold; }
 </style></head>
   <body>
-    <h3>EHDSHumanName → HumanName</h3>
+    <h3>EHDSBodyStructure → BodyStructureEuCore</h3>
     <p>
-      This page describes the element-by-element mapping from the <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHumanName"><strong>EHDSHumanName</strong></a> logical model to the HL7 FHIR <a href="https://hl7.org/fhir/datatypes.html#HumanName"><strong>HumanName</strong></a> datatype, as used in this Implementation Guide.
+      This page describes the element-by-element mapping from the <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSBodyStructure"><strong>EHDSBodyStructure</strong></a> logical model to the <a href="StructureDefinition-bodyStructure-eu-core.html"><strong>BodyStructureEuCore</strong></a> FHIR profile.
     </p>
     <div class="table-wrap">
-      <table summary="EHDSHumanName → HumanName">
-        <caption>EHDSHumanName → HumanName</caption>
+      <table summary="EHDSBodyStructure → BodyStructureEuCore">
+        <caption>EHDSBodyStructure → BodyStructureEuCore</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSHumanName (Logical Model)</th>
+            <th colspan="2" class="src-head">EHDSBodyStructure (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">HumanName</th>
+            <th colspan="3" class="tgt-head">BodyStructureEuCore</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
@@ -69,52 +69,52 @@
         </thead>
         <tbody>
           <tr>
-            <td>use</td>
-            <td>Intended use of the name (official, alias, etc.).</td>
+            <td>identifier</td>
+            <td>Identifier for this instance of the anatomical structure.</td>
             <td>equal</td>
-            <td>use</td>
-            <td>Name use code.</td>
-            <td>e.g. official, usual, nickname.</td>
-          </tr>
-          <tr>
-            <td>text</td>
-            <td>Full name as rendered for display.</td>
-            <td>equal</td>
-            <td>text</td>
-            <td>Text representation of the full name.</td>
-            <td>Typically a single string.</td>
-          </tr>
-          <tr>
-            <td>family</td>
-            <td>Family name / surname.</td>
-            <td>equal</td>
-            <td>family</td>
-            <td>Family name (often called "surname").</td>
+            <td>identifier</td>
+            <td>BodyStructure identifier.</td>
             <td></td>
           </tr>
           <tr>
-            <td>given</td>
-            <td>Given (first / middle) names.</td>
+            <td>morphology</td>
+            <td>Kind of structure represented (normal/abnormal morphology).</td>
             <td>equal</td>
-            <td>given</td>
-            <td>Given names (may include middle names).</td>
-            <td>Array in FHIR.</td>
+            <td>morphology</td>
+            <td>Kind of structure.</td>
+            <td></td>
           </tr>
           <tr>
-            <td>prefix</td>
-            <td>Honorifics or titles preceding the name.</td>
+            <td>location</td>
+            <td>Body site.</td>
             <td>equal</td>
-            <td>prefix</td>
-            <td>Parts that come before the name.</td>
-            <td>e.g. Dr, Prof, Sir.</td>
+            <td>location / includedStructure.structure</td>
+            <td>Body site.</td>
+            <td>R4 commonly uses location; R5 often uses includedStructure.structure.</td>
           </tr>
           <tr>
-            <td>suffix</td>
-            <td>Post-nominal letters, generational markers, etc.</td>
+            <td>locationQualifier</td>
+            <td>Qualifier for the body site (upper, lower, etc.).</td>
             <td>equal</td>
-            <td>suffix</td>
-            <td>Parts that come after the name.</td>
-            <td>e.g. Jr, MD, PhD.</td>
+            <td>locationQualifier / includedStructure.qualifier</td>
+            <td>Body site modifier.</td>
+            <td>R4: locationQualifier; R5: includedStructure.qualifier.</td>
+          </tr>
+          <tr>
+            <td>laterality</td>
+            <td>Laterality (e.g. left, right).</td>
+            <td>equal</td>
+            <td>extension[laterality] / includedStructure.laterality</td>
+            <td>Body structure laterality.</td>
+            <td>R4 often uses an extension; R5 includes laterality directly.</td>
+          </tr>
+          <tr>
+            <td>description</td>
+            <td>Textual description of the body structure.</td>
+            <td>equal</td>
+            <td>text</td>
+            <td>Text summary of the resource, for human interpretation.</td>
+            <td></td>
           </tr>
         </tbody>
       </table>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>EHDSHumanName → HumanName</title>
+    <title>EHDSMedication → Medication</title>
 <style type="text/css">
   body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -45,18 +45,18 @@
   .tgt-sub  { background-color: #d78496; font-weight: bold; }
 </style></head>
   <body>
-    <h3>EHDSHumanName → HumanName</h3>
+    <h3>EHDSMedication → Medication</h3>
     <p>
-      This page describes the element-by-element mapping from the <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHumanName"><strong>EHDSHumanName</strong></a> logical model to the HL7 FHIR <a href="https://hl7.org/fhir/datatypes.html#HumanName"><strong>HumanName</strong></a> datatype, as used in this Implementation Guide.
+      This page describes the element-by-element mapping from the <strong>EHDSMedication</strong> logical model to the FHIR <code>Medication</code> profile(s) used in this Implementation Guide. The model supports prescribed/dispensed medication, and can represent both generic (virtual) products and branded (real) products.
     </p>
     <div class="table-wrap">
-      <table summary="EHDSHumanName → HumanName">
-        <caption>EHDSHumanName → HumanName</caption>
+      <table summary="EHDSMedication → Medication">
+        <caption>EHDSMedication → Medication</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSHumanName (Logical Model)</th>
+            <th colspan="2" class="src-head">EHDSMedication (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">HumanName</th>
+            <th colspan="3" class="tgt-head">Medication</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
@@ -69,52 +69,52 @@
         </thead>
         <tbody>
           <tr>
-            <td>use</td>
-            <td>Intended use of the name (official, alias, etc.).</td>
+            <td>identifier</td>
+            <td>Identifier for this medication concept / product.</td>
             <td>equal</td>
-            <td>use</td>
-            <td>Name use code.</td>
-            <td>e.g. official, usual, nickname.</td>
+            <td>identifier</td>
+            <td>Business identifier for the medication entry.</td>
+            <td>Can reflect regulatory or catalogue codes.</td>
           </tr>
           <tr>
-            <td>text</td>
-            <td>Full name as rendered for display.</td>
+            <td>code</td>
+            <td>Identifies the medication (generic or branded).</td>
             <td>equal</td>
-            <td>text</td>
-            <td>Text representation of the full name.</td>
-            <td>Typically a single string.</td>
+            <td>code</td>
+            <td>Code that identifies this medication.</td>
+            <td>Can represent abstract ingredient-based products or specific trade products.</td>
           </tr>
           <tr>
-            <td>family</td>
-            <td>Family name / surname.</td>
+            <td>form</td>
+            <td>Pharmaceutical dose form (tablet, injection, etc.).</td>
             <td>equal</td>
-            <td>family</td>
-            <td>Family name (often called "surname").</td>
-            <td></td>
+            <td>form</td>
+            <td>Dose form of the medication.</td>
+            <td>Usually a CodeableConcept.</td>
           </tr>
           <tr>
-            <td>given</td>
-            <td>Given (first / middle) names.</td>
+            <td>ingredient</td>
+            <td>Active (and possibly inactive) ingredients and strengths.</td>
             <td>equal</td>
-            <td>given</td>
-            <td>Given names (may include middle names).</td>
-            <td>Array in FHIR.</td>
+            <td>ingredient</td>
+            <td>Medication ingredients.</td>
+            <td>FHIR supports per-ingredient strength.</td>
           </tr>
           <tr>
-            <td>prefix</td>
-            <td>Honorifics or titles preceding the name.</td>
+            <td>batch.lotNumber</td>
+            <td>Batch / lot number (for manufactured products).</td>
             <td>equal</td>
-            <td>prefix</td>
-            <td>Parts that come before the name.</td>
-            <td>e.g. Dr, Prof, Sir.</td>
+            <td>batch.lotNumber</td>
+            <td>Lot number of a particular batch.</td>
+            <td>Often only known at dispense/admin time.</td>
           </tr>
           <tr>
-            <td>suffix</td>
-            <td>Post-nominal letters, generational markers, etc.</td>
+            <td>batch.expirationDate</td>
+            <td>Expiry date of this lot/batch.</td>
             <td>equal</td>
-            <td>suffix</td>
-            <td>Parts that come after the name.</td>
-            <td>e.g. Jr, MD, PhD.</td>
+            <td>batch.expirationDate</td>
+            <td>When the lot expires.</td>
+            <td>Traceability / pharmacovigilance.</td>
           </tr>
         </tbody>
       </table>

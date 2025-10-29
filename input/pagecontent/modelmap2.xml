@@ -131,14 +131,14 @@
                 <tr>
                     <td>EHDSAddress</td>
                     <td>
-                        <code>AddressEu</code> profile</td>
+                        <code>AddressEu</code></td>
                     <td>
                         <a class="pill" href="map-ehdsaddress.html">EHDSAddress Mapping</a>
                     </td>
                 </tr>
                 <tr>
                     <td>EHDSHumanName</td>
-                    <td>FHIR <code>HumanName</code>
+                    <td><code>HumanName</code>
                     </td>
                     <td>
                         <a class="pill" href="map-ehdshumanname.html">EHDSHumanName Mapping</a>
@@ -146,7 +146,7 @@
                 </tr>
                 <tr>
                     <td>EHDSTelecom</td>
-                    <td>FHIR <code>ContactPoint</code>
+                    <td><code>ContactPoint</code>
                     </td>
                     <td>
                         <a class="pill" href="map-ehdstelecom.html">EHDSTelecom Mapping</a>
@@ -155,7 +155,7 @@
                 <tr>
                     <td>EHDSBodyStructure</td>
                     <td>
-                        <code>BodyStructureEuCore</code> profile</td>
+                        <code>BodyStructureEuCore</code></td>
                     <td>
                         <a class="pill" href="map-ehdsbodystructure.html">EHDSBodyStructure Mapping</a>
                     </td>
@@ -179,7 +179,7 @@
                 <tr>
                     <td>EHDSPatient</td>
                     <td>
-                        <code>PatientEuCore</code> profile</td>
+                        <code>PatientEuCore</code></td>
                     <td>
                         <a class="pill" href="map-ehdspatient.html">EHDSPatient Mapping</a>
                     </td>
@@ -187,7 +187,7 @@
                 <tr>
                     <td>EHDSPatientAnimal</td>
                     <td>
-                        <code>PatientAnimalEuCore</code> profile</td>
+                        <code>PatientAnimalEuCore</code></td>
                     <td>
                         <a class="pill" href="map-ehdspatientanimal.html">EHDSPatientAnimal Mapping</a>
                     </td>
@@ -195,7 +195,7 @@
                 <tr>
                     <td>EHDSHealthProfessional</td>
                     <td>
-                        <code>PractitionerRoleEuCore</code>,                        <code>PractitionerEuCore</code>
+                        <code>PractitionerRoleEuCore</code>,   <code>PractitionerEuCore</code>
                     </td>
                     <td>
                         <a class="pill" href="map-ehdshealthprofessional.html">EHDSHealthProfessional Mapping</a>
@@ -204,7 +204,7 @@
                 <tr>
                     <td>EHDSOrganisation</td>
                     <td>
-                        <code>OrganizationEuCore</code> profile</td>
+                        <code>OrganizationEuCore</code></td>
                     <td>
                         <a class="pill" href="map-ehdsorganisation.html">EHDSOrganisation Mapping</a>
                     </td>
@@ -212,7 +212,7 @@
                 <tr>
                     <td>EHDSLocation</td>
                     <td>
-                        <code>LocationEuCore</code> profile</td>
+                        <code>LocationEuCore</code></td>
                     <td>
                         <a class="pill" href="map-ehdslocation.html">EHDSLocation Mapping</a>
                     </td>

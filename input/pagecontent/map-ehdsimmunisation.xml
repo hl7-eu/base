@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>EHDSPatient → PatientEuCore</title>
+    <title>EHDSImmunisation → Immunization</title>
 <style type="text/css">
   body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -45,18 +45,18 @@
   .tgt-sub  { background-color: #d78496; font-weight: bold; }
 </style></head>
   <body>
-    <h3>EHDSPatient → PatientEuCore</h3>
+    <h3>EHDSImmunisation → Immunization</h3>
     <p>
-      This page describes the element-by-element mapping from the <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient"><strong>EHDSPatient</strong></a> logical model to the <a href="StructureDefinition-patient-eu-core.html"><strong>PatientEuCore</strong></a> FHIR profile.
+      This page describes the element-by-element mapping from the <strong>EHDSImmunisation</strong> logical model to the FHIR <code>Immunization</code> profile in this Implementation Guide.
     </p>
     <div class="table-wrap">
-      <table summary="EHDSPatient → PatientEuCore">
-        <caption>EHDSPatient → PatientEuCore</caption>
+      <table summary="EHDSImmunisation → Immunization">
+        <caption>EHDSImmunisation → Immunization</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSPatient (Logical Model)</th>
+            <th colspan="2" class="src-head">EHDSImmunisation (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">PatientEuCore</th>
+            <th colspan="3" class="tgt-head">Immunization</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
@@ -69,68 +69,84 @@
         </thead>
         <tbody>
           <tr>
-            <td>personalIdentifier</td>
-            <td>An identifier of the patient that is unique within a defined scope.</td>
+            <td>identifier</td>
+            <td>Identifier for the vaccination record.</td>
             <td>equal</td>
             <td>identifier</td>
-            <td>Patient identifiers.</td>
+            <td>External identifier(s) for this Immunization event.</td>
             <td></td>
           </tr>
           <tr>
-            <td>name</td>
-            <td>Name associated with the patient/subject.</td>
+            <td>status</td>
+            <td>Completion status (completed, not-done).</td>
             <td>equal</td>
-            <td>name</td>
-            <td>A name associated with the patient.</td>
+            <td>status</td>
+            <td>Indicates if the vaccination was given.</td>
+            <td>FHIR also has statusReason for "not done".</td>
+          </tr>
+          <tr>
+            <td>vaccineCode</td>
+            <td>Vaccine product or antigen administered.</td>
+            <td>equal</td>
+            <td>vaccineCode</td>
+            <td>Vaccine that was administered.</td>
+            <td>Can be CVX or national code systems.</td>
+          </tr>
+          <tr>
+            <td>patient</td>
+            <td>The vaccine recipient.</td>
+            <td>equal</td>
+            <td>patient</td>
+            <td>Who received the vaccine.</td>
+            <td>Reference to Patient/Animal Patient.</td>
+          </tr>
+          <tr>
+            <td>occurrence[x]</td>
+            <td>Date/time administered.</td>
+            <td>equal</td>
+            <td>occurrence[x]</td>
+            <td>When the vaccine was administered.</td>
+            <td>Usually occurrenceDateTime.</td>
+          </tr>
+          <tr>
+            <td>primarySource</td>
+            <td>Whether this is from a primary clinical source.</td>
+            <td>equal</td>
+            <td>primarySource</td>
+            <td>Indicates origin of information.</td>
             <td></td>
           </tr>
           <tr>
-            <td>dateOfBirth</td>
-            <td>Date of birth.</td>
+            <td>location</td>
+            <td>Where the immunisation was given.</td>
             <td>equal</td>
-            <td>birthDate</td>
-            <td>The date of birth for the patient.</td>
-            <td></td>
+            <td>location</td>
+            <td>Location where vaccine was administered.</td>
+            <td>Reference to LocationEuCore.</td>
           </tr>
           <tr>
-            <td>administrativeGender</td>
-            <td>Administrative gender.</td>
+            <td>performer</td>
+            <td>Who administered the vaccine.</td>
             <td>equal</td>
-            <td>gender</td>
-            <td>Administrative gender.</td>
-            <td></td>
+            <td>performer</td>
+            <td>Who performed the immunization.</td>
+            <td>Usually PractitionerRole / Practitioner.</td>
           </tr>
           <tr>
-            <td>address</td>
-            <td>Mailing and home or office addresses.</td>
+            <td>lotNumber</td>
+            <td>Vaccine lot / batch number.</td>
             <td>equal</td>
-            <td>address</td>
-            <td>An address for the individual.</td>
-            <td></td>
+            <td>lotNumber</td>
+            <td>Vaccine lot number.</td>
+            <td>Traceability / pharmacovigilance.</td>
           </tr>
           <tr>
-            <td>telecom</td>
-            <td>Telecommunication contact information.</td>
+            <td>route</td>
+            <td>Administration route (IM, SC, etc.).</td>
             <td>equal</td>
-            <td>telecom</td>
-            <td>A contact detail for the patient.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>maritalStatus</td>
-            <td>Marital (civil) status of a patient.</td>
-            <td>equal</td>
-            <td>maritalStatus</td>
-            <td>Marital (civil) status of a patient.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>communicationLanguage</td>
-            <td>Language that can be used to communicate with the patient about their health.</td>
-            <td>equal</td>
-            <td>communication.language</td>
-            <td>Communication language.</td>
-            <td></td>
+            <td>route</td>
+            <td>Administration route.</td>
+            <td>CodeableConcept.</td>
           </tr>
         </tbody>
       </table>

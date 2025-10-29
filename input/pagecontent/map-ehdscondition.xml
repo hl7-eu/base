@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>EHDSPatient → PatientEuCore</title>
+    <title>EHDSCondition → Condition</title>
 <style type="text/css">
   body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -45,18 +45,18 @@
   .tgt-sub  { background-color: #d78496; font-weight: bold; }
 </style></head>
   <body>
-    <h3>EHDSPatient → PatientEuCore</h3>
+    <h3>EHDSCondition → Condition</h3>
     <p>
-      This page describes the element-by-element mapping from the <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient"><strong>EHDSPatient</strong></a> logical model to the <a href="StructureDefinition-patient-eu-core.html"><strong>PatientEuCore</strong></a> FHIR profile.
+      This page describes the element-by-element mapping from the <strong>EHDSCondition</strong> logical model to the FHIR <code>Condition</code> profile in this Implementation Guide.
     </p>
     <div class="table-wrap">
-      <table summary="EHDSPatient → PatientEuCore">
-        <caption>EHDSPatient → PatientEuCore</caption>
+      <table summary="EHDSCondition → Condition">
+        <caption>EHDSCondition → Condition</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSPatient (Logical Model)</th>
+            <th colspan="2" class="src-head">EHDSCondition (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">PatientEuCore</th>
+            <th colspan="3" class="tgt-head">Condition</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
@@ -69,68 +69,84 @@
         </thead>
         <tbody>
           <tr>
-            <td>personalIdentifier</td>
-            <td>An identifier of the patient that is unique within a defined scope.</td>
+            <td>identifier</td>
+            <td>Identifier for the condition/problem record.</td>
             <td>equal</td>
             <td>identifier</td>
-            <td>Patient identifiers.</td>
+            <td>Business identifier for this condition entry.</td>
             <td></td>
           </tr>
           <tr>
-            <td>name</td>
-            <td>Name associated with the patient/subject.</td>
+            <td>clinicalStatus</td>
+            <td>Clinical status (active, inactive, resolved).</td>
             <td>equal</td>
-            <td>name</td>
-            <td>A name associated with the patient.</td>
+            <td>clinicalStatus</td>
+            <td>Current clinical state of the condition.</td>
             <td></td>
           </tr>
           <tr>
-            <td>dateOfBirth</td>
-            <td>Date of birth.</td>
+            <td>verificationStatus</td>
+            <td>Certainty/confirmation level.</td>
             <td>equal</td>
-            <td>birthDate</td>
-            <td>The date of birth for the patient.</td>
-            <td></td>
+            <td>verificationStatus</td>
+            <td>Whether the condition is unconfirmed, confirmed, refuted, etc.</td>
+            <td>Supports quality/safety use cases.</td>
           </tr>
           <tr>
-            <td>administrativeGender</td>
-            <td>Administrative gender.</td>
+            <td>code</td>
+            <td>Coded identification of the condition/problem.</td>
             <td>equal</td>
-            <td>gender</td>
-            <td>Administrative gender.</td>
-            <td></td>
+            <td>code</td>
+            <td>Identification of the condition, problem, or diagnosis.</td>
+            <td>Usually ICD/SNOMED/etc.</td>
           </tr>
           <tr>
-            <td>address</td>
-            <td>Mailing and home or office addresses.</td>
+            <td>subject</td>
+            <td>The individual with the condition.</td>
             <td>equal</td>
-            <td>address</td>
-            <td>An address for the individual.</td>
-            <td></td>
+            <td>subject</td>
+            <td>Who the condition applies to.</td>
+            <td>Reference to Patient/Animal.</td>
           </tr>
           <tr>
-            <td>telecom</td>
-            <td>Telecommunication contact information.</td>
+            <td>onset[x]</td>
+            <td>When the condition began.</td>
             <td>equal</td>
-            <td>telecom</td>
-            <td>A contact detail for the patient.</td>
-            <td></td>
+            <td>onset[x]</td>
+            <td>Estimated or known onset.</td>
+            <td>Multiple data types supported.</td>
           </tr>
           <tr>
-            <td>maritalStatus</td>
-            <td>Marital (civil) status of a patient.</td>
+            <td>abatement[x]</td>
+            <td>When/if the condition resolved.</td>
             <td>equal</td>
-            <td>maritalStatus</td>
-            <td>Marital (civil) status of a patient.</td>
-            <td></td>
+            <td>abatement[x]</td>
+            <td>When the condition abated.</td>
+            <td>Optional; may indicate recovery/remission.</td>
           </tr>
           <tr>
-            <td>communicationLanguage</td>
-            <td>Language that can be used to communicate with the patient about their health.</td>
+            <td>bodySite</td>
+            <td>Anatomical site(s) involved.</td>
             <td>equal</td>
-            <td>communication.language</td>
-            <td>Communication language.</td>
-            <td></td>
+            <td>bodySite</td>
+            <td>Body site(s) affected.</td>
+            <td>Can reference BodyStructure for detailed modelling.</td>
+          </tr>
+          <tr>
+            <td>recordedDate</td>
+            <td>Date the condition entry was recorded.</td>
+            <td>equal</td>
+            <td>recordedDate</td>
+            <td>Date this record was first captured.</td>
+            <td>Administrative traceability.</td>
+          </tr>
+          <tr>
+            <td>recorder</td>
+            <td>Who entered / asserted the condition record.</td>
+            <td>equal</td>
+            <td>recorder</td>
+            <td>Individual who recorded the condition.</td>
+            <td>Can be Practitioner, PractitionerRole, etc.</td>
           </tr>
         </tbody>
       </table>

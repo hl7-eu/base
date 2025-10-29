@@ -9,23 +9,28 @@
   background-color: #f9f9ff;
   box-sizing: border-box;
 
-  /* optional: pull the banner up a bit to align with the ToC’s top */
-  /* margin-top: -0.75rem;  uncomment/tweak if you want tighter vertical alignment */
+  /*optional: pull the banner up a bit to align with the ToC’s top */
+  /* margin-top: -0.75rem;  uncomment/tweak if you want tighter vertical alignment*/
 ">
   <div style="margin-bottom: 1em;">
     <img src="xtehr-logo.png" alt="XTEHR Logo" style="max-width: 100%; height: 40px;" />
   </div>
   <div style="text-align: left;">
     <strong>Acknowledgment</strong><br/>
-    The development of this Implementation Guide version has been supported by the 
+    The development of this Implementation Guide version has been supported by the
     <strong>Xt-EHR Joint Action</strong>.  
-    Xt-EHR provided expertise, alignment with European health policy priorities, 
+    Xt-EHR provided expertise, alignment with European health policy priorities,
     and validation of specifications to enable consistency with EHDS requirements.
   </div>
 </div>
 
 ### Scope
 
+  <blockquote class="dragon">
+    <p>Some artefacts of this Implementation Guide are at an early stage of development</p>.
+<p>The related content is incomplete and subject to significant change.</p>
+<p>Please use these materials with caution and avoid relying on them for implementation purposes.</p>
+  </blockquote>
 
 This Implementation Guide (IG) brings together **base** and **core** HL7® FHIR® artifacts designed specifically for the European context.
 
@@ -41,16 +46,15 @@ The guide supports:
 
 ### Introduction
 
-The HL7 Europe Base and Core Implementation Guide provides a **layered approach to FHIR interoperability** in the European context; and it aims to support a coherent and reusable set of FHIR specifications across Europe. 
+The HL7 Europe Base and Core Implementation Guide provides a **layered approach to FHIR interoperability** in the European context; and it aims to support a coherent and reusable set of FHIR specifications across Europe.
 
 It includes:
 
-- **Base profiles.**  Loosely constrained baseline definitions of common European concepts (e.g., Patient, Practitioner). They provide flexibility and serve as the foundation for Core and derived profiles.
+* **Base profiles.**  Loosely constrained baseline definitions of common European concepts (e.g., Patient, Practitioner). They provide flexibility and serve as the foundation for Core and derived profiles.
 
-- **Core profiles.**  More constrained profiles designed for reuse across most European IGs. They introduce essential constraints, can often be used directly, and pursue alignment with IPS.
+* **Core profiles.**  More constrained profiles designed for reuse across most European IGs. They introduce essential constraints, can often be used directly, and pursue alignment with IPS.
 
 See the [**Introduction** page](introduction.html) for detailed explanations of Base and Core profiles, their relationship with Extensions and scoped IGs, and their alignment with EHDS and IPS.
-
 
 <div>
   <p></p>
@@ -61,14 +65,12 @@ See the [**Introduction** page](introduction.html) for detailed explanations of 
   <p></p>
 </div>
 
-
-
 ### Guide Publication
 
 This guide is published for two HL7 FHIR versions:
 
-- **HL7 FHIR R4 Base IG** (hl7.fhir.eu.base). This Guide.
-- **HL7 FHIR R5 Base IG** (hl7.fhir.eu.base-r5). Published at [this link](https://hl7.eu/fhir/base-r5).
+* **HL7 FHIR R4 Base IG** (hl7.fhir.eu.base). This Guide.
+* **HL7 FHIR R5 Base IG** (hl7.fhir.eu.base-r5). Published at [this link](https://hl7.eu/fhir/base-r5).
 
 
 Both versions are maintained by HL7 Europe and evolve based on community feedback and EHDS requirements.

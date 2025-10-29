@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>EHDSMedicationStatement → MedicationStatement</title>
+    <style type="text/css">
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 1rem; background:#f5f7fb; color:#1a1a1a; line-height:1.4; }
+      h3 { margin-bottom:0.5rem; }
+      p.lead { max-width:70ch; }
+      .legend { font-size:0.8rem; background:#fff; border:1px solid #d0d7de; border-radius:10px; padding:10px 12px; max-width:70ch; margin:1rem 0; }
+      .legend dt { font-weight:600; float:left; width:6rem; }
+      .legend dd { margin-left:6rem; margin-bottom:0.5rem; }
+      .table-wrap { overflow:auto; border:1px solid #d0d7de; border-radius:10px; padding:8px; background:#fff; box-shadow:0 1px 2px rgba(0,0,0,0.04); }
+      table { border-collapse:collapse; width:100%; table-layout:fixed; font-size:0.9rem; }
+      thead th { background:#f6f8fa; font-weight:600; text-align:center; }
+      th, td { border:1px solid #d0d7de; padding:4px 6px; vertical-align:top; overflow:hidden; text-overflow:ellipsis; }
+      caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
+      .relhead { background-color:#6F2E80 !important; color:#ffffff !important; }
+      .relsub  { background-color:#E6D7EC !important; font-weight:bold; }
+      .src-head { background-color:#1f54d1; color:#ffffff; }
+      .tgt-head { background-color:#be072f; color:#ffffff; }
+      .src-sub  { background-color:#adc3f6; font-weight:bold; }
+      .tgt-sub  { background-color:#d78496; font-weight:bold; }
+    </style>
+  </head>
+  <body>
+    <h3>EHDSMedicationStatement → MedicationStatement</h3>
+    <p class="lead">
+      This page describes the element-by-element mapping from the <strong>EHDSMedicationStatement</strong> logical model to the FHIR <code>MedicationStatement</code> profile(s) used in this Implementation Guide.
+    </p>
+    <div class="legend">
+      <strong>Relationship legend</strong>
+      <dl>
+        <dt>equal</dt><dd>Semantically equivalent.</dd>
+        <dt>narrower</dt><dd>FHIR is more specific / more constrained.</dd>
+        <dt>relatedto</dt><dd>Conceptually aligned but requires interpretation or depends on context.</dd>
+        <dt>unmatched</dt><dd>No direct equivalent in this FHIR profile/datatype.</dd>
+      </dl>
+    </div>
+    <div class="table-wrap">
+      <table summary="EHDSMedicationStatement → MedicationStatement">
+        <caption>EHDSMedicationStatement → MedicationStatement</caption>
+        <thead>
+          <tr>
+            <th colspan="2" class="src-head">EHDSMedicationStatement (Logical Model)</th>
+            <th class="relhead">Relationship</th>
+            <th colspan="3" class="tgt-head">MedicationStatement</th>
+          </tr>
+          <tr>
+            <th class="src-sub">Element</th>
+            <th class="src-sub">Description</th>
+            <th class="relsub">Relation</th>
+            <th class="tgt-sub">Element</th>
+            <th class="tgt-sub">Description</th>
+            <th class="tgt-sub">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>identifier</td>
+            <td>Identifier for this medication statement entry.</td>
+            <td>equal</td>
+            <td>identifier</td>
+            <td>Business identifier.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>status</td>
+            <td>Current status of the assertion (active, completed, etc.).</td>
+            <td>equal</td>
+            <td>status</td>
+            <td>Medication status within the statement.</td>
+            <td>e.g. active, completed.</td>
+          </tr>
+          <tr>
+            <td>medication</td>
+            <td>The medication being taken or reported.</td>
+            <td>equal</td>
+            <td>medication[x]</td>
+            <td>Identifies the medication.</td>
+            <td>Can reference a Medication resource or be a CodeableConcept.</td>
+          </tr>
+          <tr>
+            <td>subject</td>
+            <td>The person/animal this statement is about.</td>
+            <td>equal</td>
+            <td>subject</td>
+            <td>Who is/was taking the medication.</td>
+            <td>Reference to Patient/Animal Patient.</td>
+          </tr>
+          <tr>
+            <td>effective[x]</td>
+            <td>Period/dateTime when the medication was taken.</td>
+            <td>equal</td>
+            <td>effective[x]</td>
+            <td>When the medication was being consumed.</td>
+            <td>Can be Period or dateTime.</td>
+          </tr>
+          <tr>
+            <td>dosage</td>
+            <td>How the medication is/was taken (dose, route, timing).</td>
+            <td>equal</td>
+            <td>dosage</td>
+            <td>Details of dose, timing, route.</td>
+            <td>Repeats for complex regimens.</td>
+          </tr>
+          <tr>
+            <td>informationSource</td>
+            <td>Who reported this medication use.</td>
+            <td>equal</td>
+            <td>informationSource</td>
+            <td>Source of the information in the statement.</td>
+            <td>Important for reconciliation / accuracy.</td>
+          </tr>
+          <tr>
+            <td>reason</td>
+            <td>Why the medication is/was taken.</td>
+            <td>relatedto</td>
+            <td>reason</td>
+            <td>Indication / therapy rationale.</td>
+            <td>R4 often reasonCode / reasonReference; R5 unifies as reason.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:2rem;font-size:0.8rem;color:#555;">
+      Return to overview: <a href="model-map.html">EHDS Logical Models → FHIR Profiles</a>
+    </p>
+  </body>
+</html>

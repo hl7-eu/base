@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>EHDSHumanName → HumanName</title>
+    <title>EHDSOrganisation → Organization</title>
 <style type="text/css">
   body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -45,18 +45,18 @@
   .tgt-sub  { background-color: #d78496; font-weight: bold; }
 </style></head>
   <body>
-    <h3>EHDSHumanName → HumanName</h3>
+    <h3>EHDSOrganisation → Organization</h3>
     <p>
-      This page describes the element-by-element mapping from the <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHumanName"><strong>EHDSHumanName</strong></a> logical model to the HL7 FHIR <a href="https://hl7.org/fhir/datatypes.html#HumanName"><strong>HumanName</strong></a> datatype, as used in this Implementation Guide.
+      This page describes the element-by-element mapping from the <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"><strong>EHDSOrganisation</strong></a> logical model to the <a href="StructureDefinition-organization-eu-core.html"><strong>OrganizationEuCore</strong></a> FHIR profile.
     </p>
     <div class="table-wrap">
-      <table summary="EHDSHumanName → HumanName">
-        <caption>EHDSHumanName → HumanName</caption>
+      <table summary="EHDSOrganisation → OrganizationEuCore">
+        <caption>EHDSOrganisation → OrganizationEuCore</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSHumanName (Logical Model)</th>
+            <th colspan="2" class="src-head">EHDSOrganisation (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">HumanName</th>
+            <th colspan="3" class="tgt-head">OrganizationEuCore</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
@@ -69,52 +69,52 @@
         </thead>
         <tbody>
           <tr>
-            <td>use</td>
-            <td>Intended use of the name (official, alias, etc.).</td>
+            <td>identifier</td>
+            <td>Identifier for the organisation.</td>
             <td>equal</td>
-            <td>use</td>
-            <td>Name use code.</td>
-            <td>e.g. official, usual, nickname.</td>
-          </tr>
-          <tr>
-            <td>text</td>
-            <td>Full name as rendered for display.</td>
-            <td>equal</td>
-            <td>text</td>
-            <td>Text representation of the full name.</td>
-            <td>Typically a single string.</td>
-          </tr>
-          <tr>
-            <td>family</td>
-            <td>Family name / surname.</td>
-            <td>equal</td>
-            <td>family</td>
-            <td>Family name (often called "surname").</td>
+            <td>identifier</td>
+            <td>Identifies this organization across multiple systems.</td>
             <td></td>
           </tr>
           <tr>
-            <td>given</td>
-            <td>Given (first / middle) names.</td>
+            <td>type</td>
+            <td>Kind of organisation (e.g. hospital, lab, payer).</td>
             <td>equal</td>
-            <td>given</td>
-            <td>Given names (may include middle names).</td>
-            <td>Array in FHIR.</td>
+            <td>type</td>
+            <td>Organization type.</td>
+            <td></td>
           </tr>
           <tr>
-            <td>prefix</td>
-            <td>Honorifics or titles preceding the name.</td>
+            <td>name</td>
+            <td>Official or common name of the organisation.</td>
             <td>equal</td>
-            <td>prefix</td>
-            <td>Parts that come before the name.</td>
-            <td>e.g. Dr, Prof, Sir.</td>
+            <td>name</td>
+            <td>Name of the organization.</td>
+            <td></td>
           </tr>
           <tr>
-            <td>suffix</td>
-            <td>Post-nominal letters, generational markers, etc.</td>
+            <td>address</td>
+            <td>Postal / visit address for the organisation.</td>
             <td>equal</td>
-            <td>suffix</td>
-            <td>Parts that come after the name.</td>
-            <td>e.g. Jr, MD, PhD.</td>
+            <td>address / contact.address</td>
+            <td>An address for the organization.</td>
+            <td>In R4 typically address; in R5 often contact.address.</td>
+          </tr>
+          <tr>
+            <td>telecom</td>
+            <td>General contact details (phone, fax, email).</td>
+            <td>equal</td>
+            <td>telecom / contact.telecom</td>
+            <td>Organization telecom.</td>
+            <td>In R4 telecom; in R5 contact.telecom.</td>
+          </tr>
+          <tr>
+            <td>partOf</td>
+            <td>Owning / parent organisation.</td>
+            <td>equal</td>
+            <td>partOf</td>
+            <td>The organization of which this organization is part.</td>
+            <td></td>
           </tr>
         </tbody>
       </table>

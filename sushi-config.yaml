@@ -73,12 +73,40 @@ pages:
   changes.md:
     title: Change Log
   # Model Mapping
-  map-ehdshumanname.html:
-     title: EHDShumanname to FHIR HumanName Mapping
+  map-ehdsaddress.html:
+     title: EHDSAddress to FHIR Address Mapping
+  map-ehdsbodystructure.html:
+     title: EHDSBodyStructure to FHIR BodyStructure Mapping
+  map-ehdshealthprofessional-role.html:
+     title: EHDSHealthProfessional to FHIR PractitionerRole Mapping
+  map-ehdshealthprofessional-practitioner.html:
+     title: EHDSHealthProfessional to FHIR Practitioner Mapping
+  map-ehdsorganisation.html:
+     title: EHDSOrganisation to FHIR Organization Mapping
   map-ehdslocation.html:
-     title: EHDSlocation to FHIR Location Mapping
+     title: EHDSLocation to FHIR Location Mapping
+  map-ehdshumanname.html:
+     title: EHDSHumanName to FHIR HumanName Mapping
   map-ehdspatient.html:
-     title: EHDSpatient to FHIR Patient Mapping
+     title: EHDSPatient to FHIR Patient Mapping
+  map-ehdspatientanimal.html:
+     title: EHDSPatientAnimal to FHIR Patient (Animal) Mapping
+  map-ehdstelecom.html:
+     title: EHDSTelecom to FHIR ContactPoint Mapping
+  map-ehdsalert.html:
+     title: EHDSAlert to FHIR Flag / Alert Mapping
+  map-ehdsallergyintolerance.html:
+     title: EHDSAllergyIntolerance to FHIR AllergyIntolerance Mapping
+  map-ehdscondition.html:
+     title: EHDSCondition to FHIR Condition Mapping
+  map-ehdsprocedure.html:
+     title: EHDSProcedure to FHIR Procedure Mapping
+  map-ehdsimmunisation.html:
+     title: EHDSImmunisation to FHIR Immunization Mapping
+  map-ehdsmedication.html:
+     title: EHDSMedication to FHIR Medication Mapping
+  map-ehdsmedicationstatement.html:
+     title: EHDSMedicationStatement to FHIR MedicationStatement Mapping
  #  recommendations.md:
 #    title: Recommendations
 #
@@ -100,8 +128,9 @@ parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Pa
 # path-resource:
 #    - input/resources
 #    - fsh-generated/resources
-# path-pages:
-#    - input/pagecontent
+  path-pages:
+    - input/pagecontent
+    - input/pagecontent/model-maps
 #    - input/intro-notes
 #  active-tables: false
   apply-contact: true
@@ -265,7 +294,7 @@ groups:
        - StructureDefinition/practitioner-eu
        - StructureDefinition/practitionerRole-eu
        - StructureDefinition/organization-eu
-   EuCoreProfiles:
+   EuCoreProfiles (STU 1):
       name:  HL7 Europe Core Profiles
       description: Core profiles for the European context.
       resources:
@@ -276,6 +305,17 @@ groups:
         - StructureDefinition/patient-animal-eu-core
         - StructureDefinition/bodyStructure-eu-core
         - StructureDefinition/location-eu-core
+   EuCoreProfiles (STU 2 - WIP):
+      name:  HL7 Europe Core Profiles (STU 2 - WIP)
+      description: Core profiles for the European context.
+      resources:
+        - StructureDefinition/allergyIntolerance-eu-core
+        - StructureDefinition/condition-eu-core
+        - StructureDefinition/flag-eu-core
+        - StructureDefinition/immunization-eu-core
+        - StructureDefinition/medication-eu-core
+        - StructureDefinition/medicationRequest-eu-core
+        - StructureDefinition/medicationStatement-eu-core
 #
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and

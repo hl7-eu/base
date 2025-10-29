@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>EHDSHealthProfessional → PractitionerRoleEuCore</title>
+<style type="text/css">
+  body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    margin: 1rem;
+    background: #f5f7fb;
+    color: #1a1a1a;
+    line-height: 1.4;
+  }
+  h3 { margin-bottom: 0.5rem; }
+  p.lead { max-width: 70ch; }
+  /* Legend box full width */
+  .legend {
+    background: #fff;
+    border: 1px solid #d0d7de;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin: 1rem 0;
+    width: 100%;           /* make it span the full content area */
+    box-sizing: border-box;
+  }
+  .legend dt { font-weight: 600; float: left; width: 6rem; }
+  .legend dd { margin-left: 6rem; margin-bottom: 0.5rem; }
+  .table-wrap {
+    overflow: auto;
+    border: 1px solid #d0d7de;
+    border-radius: 10px;
+    padding: 8px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  table { border-collapse: collapse; width: 100%; table-layout: fixed; }
+  thead th { background: #f6f8fa; font-weight: 600; text-align: center; }
+  th, td { border: 1px solid #d0d7de; padding: 4px 6px; vertical-align: top; overflow: hidden; text-overflow: ellipsis; }
+  caption { text-align: left; font-weight: 600; margin-bottom: 0.5rem; }
+  .relhead { background-color: #6F2E80 !important; color: #ffffff !important; }
+  .relsub  { background-color: #E6D7EC !important; font-weight: bold; }
+  .src-head { background-color: #1f54d1; color: #ffffff; }
+  .tgt-head { background-color: #be072f; color: #ffffff; }
+  .src-sub  { background-color: #adc3f6; font-weight: bold; }
+  .tgt-sub  { background-color: #d78496; font-weight: bold; }
+</style></head>
+  <body>
+    <h3>EHDSHealthProfessional → PractitionerRoleEuCore</h3>
+    <p>
+      This page describes the element-by-element mapping from the <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"><strong>EHDSHealthProfessional</strong></a> logical model to the <a href="StructureDefinition-practitionerRole-eu-core.html"><strong>PractitionerRoleEuCore</strong></a> FHIR profile.
+    </p>
+    <div class="table-wrap">
+      <table summary="EHDSHealthProfessional → PractitionerRoleEuCore">
+        <caption>EHDSHealthProfessional → PractitionerRoleEuCore</caption>
+        <thead>
+          <tr>
+            <th colspan="2" class="src-head">EHDSHealthProfessional (Logical Model)</th>
+            <th class="relhead">Relationship</th>
+            <th colspan="3" class="tgt-head">PractitionerRoleEuCore</th>
+          </tr>
+          <tr>
+            <th class="src-sub">Element</th>
+            <th class="src-sub">Description</th>
+            <th class="relsub">Relation</th>
+            <th class="tgt-sub">Element</th>
+            <th class="tgt-sub">Description</th>
+            <th class="tgt-sub">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>identifier</td>
+            <td>Identifier of the health professional (e.g. national professional ID).</td>
+            <td>narrower</td>
+            <td>identifier</td>
+            <td>Business identifier.</td>
+            <td>Mapping depends on identifier type.</td>
+          </tr>
+          <tr>
+            <td>name</td>
+            <td>Name of the health professional responsible for the patient.</td>
+            <td>relatedto</td>
+            <td>practitioner</td>
+            <td>Practitioner that can provide the defined services for the organization.</td>
+            <td>Name carried on referenced Practitioner.</td>
+          </tr>
+          <tr>
+            <td>address</td>
+            <td>Addresses (office / practice / service location).</td>
+            <td>relatedto</td>
+            <td>practitioner / location</td>
+            <td>Practitioner info and the location(s) at which this practitioner provides care.</td>
+            <td>Depends on address type (personal vs practice vs service site).</td>
+          </tr>
+          <tr>
+            <td>telecom</td>
+            <td>Telecom contact info for the role / service point.</td>
+            <td>relatedto</td>
+            <td>telecom / contact</td>
+            <td>Contact details specific to this role/location/service.</td>
+            <td>R4 commonly telecom; R5 may surface contact.telecom.</td>
+          </tr>
+          <tr>
+            <td>professionalRole</td>
+            <td>Role practiced at an organisation (generalised PractitionerRole).</td>
+            <td>relatedto</td>
+            <td>.</td>
+            <td>Role context, including organisation and specialty.</td>
+            <td>Maps across multiple PractitionerRole elements.</td>
+          </tr>
+          <tr>
+            <td>professionalRole.role</td>
+            <td>Health professional role(s).</td>
+            <td>equal</td>
+            <td>code</td>
+            <td>Roles this practitioner may perform.</td>
+            <td>May repeat.</td>
+          </tr>
+          <tr>
+            <td>professionalRole.organisation</td>
+            <td>Organisation where this role is available.</td>
+            <td>equal</td>
+            <td>organization</td>
+            <td>The organisation where this role is available.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>professionalRole.specialty</td>
+            <td>Specialty practiced in that organisation.</td>
+            <td>equal</td>
+            <td>specialty</td>
+            <td>Specific specialty of the practitioner.</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:2rem;color:#555;">
+      Return to overview: <a href="modelmap2.html">EHDS Logical Models → FHIR Profiles</a>
+    </p>
+  </body>
+</html>
