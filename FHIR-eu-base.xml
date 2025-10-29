@@ -9,6 +9,7 @@
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/Address-eu" key="StructureDefinition-Address-eu" name="Address (EU)"/>
 <artifact id="StructureDefinition/EHDSAddress" key="StructureDefinition-EHDSAddress" name="Address model"/>
+<artifact id="StructureDefinition/allergyIntolerance-eu-core" key="StructureDefinition-allergyIntolerance-eu-core" name="Allergy Intolerance (EU core) [WIP]"/>
 <artifact id="Patient/Patient-animal-example" key="Patient-Patient-animal-example" name="Animal Patient Example"/>
 <artifact id="ValueSet/siteLaterality-eu" key="ValueSet-siteLaterality-eu" name="Body Structure Laterality"/>
 <artifact id="ValueSet/siteQualifier-eu" key="ValueSet-siteQualifier-eu" name="Body Structure Qualifier"/>
@@ -16,20 +17,28 @@
 <artifact id="StructureDefinition/EHDSBodyStructure" key="StructureDefinition-EHDSBodyStructure" name="Body structure model"/>
 <artifact id="StructureDefinition/bodyStructure-eu-core" key="StructureDefinition-bodyStructure-eu-core" name="BodyStructure (EU core)"/>
 <artifact id="BodyStructure/example-body-structure-eu" key="BodyStructure-example-body-structure-eu" name="BodyStructure Example"/>
+<artifact id="StructureDefinition/condition-eu-core" key="StructureDefinition-condition-eu-core" name="Condition (EU core) [WIP]"/>
 <artifact deprecated="true" id="StructureDefinition/Coverage-eu-ehic" key="StructureDefinition-Coverage-eu-ehic" name="Coverage: EHIC"/>
 <artifact deprecated="true" id="ValueSet/oid-ehicPersonalId" key="ValueSet-oid-ehicPersonalId" name="EHIC Personal ID (system IDs - oid)"/>
 <artifact deprecated="true" id="ValueSet/uri-ehicPersonalId" key="ValueSet-uri-ehicPersonalId" name="EHIC Personal ID (system IDs - uri)"/>
 <artifact deprecated="true" id="Coverage/EhicExampleIt" key="Coverage-EhicExampleIt" name="EhicExampleIt"/>
 <artifact deprecated="true" id="StructureDefinition/EHIC" key="StructureDefinition-EHIC" name="European Health Insurance Card"/>
+<artifact id="StructureDefinition/flag-eu-core" key="StructureDefinition-flag-eu-core" name="Flag (EU core) [WIP]"/>
 <artifact deprecated="true" id="CodeSystem/v3-ActCode-EU" key="CodeSystem-v3-ActCode-EU" name="HL7 V3 ActCode - EU extensions"/>
 <artifact id="StructureDefinition/EHDSHealthProfessional" key="StructureDefinition-EHDSHealthProfessional" name="Health professional model"/>
 <artifact id="StructureDefinition/EHDSHumanName" key="StructureDefinition-EHDSHumanName" name="Human name model"/>
 <artifact deprecated="true" id="StructureDefinition/HumanName-eu" key="StructureDefinition-HumanName-eu" name="HumanName (Eu)"/>
 <artifact deprecated="true" id="ValueSet/iso-ehicCountryCode" key="ValueSet-iso-ehicCountryCode" name="ISO 3166 - EHIC Country Codes"/>
+<artifact id="StructureDefinition/immunization-eu-core" key="StructureDefinition-immunization-eu-core" name="Immunization (EU core) [WIP]"/>
+<artifact id="StructureDefinition/immunization-administeredProduct" key="StructureDefinition-immunization-administeredProduct" name="Immunization AdministeredProduct"/>
+<artifact id="StructureDefinition/immunizationRecommendation-eu-core" key="StructureDefinition-immunizationRecommendation-eu-core" name="ImmunizationRecommendation (EU core)"/>
 <artifact deprecated="true" id="StructureDefinition/location-eu" key="StructureDefinition-location-eu" name="Location (EU base)"/>
 <artifact id="StructureDefinition/location-eu-core" key="StructureDefinition-location-eu-core" name="Location (EU core)"/>
 <artifact id="Location/example-location" key="Location-example-location" name="Location Example"/>
 <artifact id="StructureDefinition/EHDSLocation" key="StructureDefinition-EHDSLocation" name="Location model"/>
+<artifact id="StructureDefinition/medication-eu-core" key="StructureDefinition-medication-eu-core" name="Medication (EU core) [WIP]"/>
+<artifact id="StructureDefinition/medicationRequest-eu-core" key="StructureDefinition-medicationRequest-eu-core" name="MedicationRequest (EU core) [WIP]"/>
+<artifact id="StructureDefinition/medicationStatement-eu-core" key="StructureDefinition-medicationStatement-eu-core" name="MedicationStatement (EU core) [WIP]"/>
 <artifact id="StructureDefinition/EHDSOrganisation" key="StructureDefinition-EHDSOrganisation" name="Organisation model"/>
 <artifact id="StructureDefinition/organization-eu" key="StructureDefinition-organization-eu" name="Organization (EU base)"/>
 <artifact id="StructureDefinition/organization-eu-core" key="StructureDefinition-organization-eu-core" name="Organization (EU core)"/>
@@ -48,6 +57,7 @@
 <artifact id="StructureDefinition/practitionerRole-eu" key="StructureDefinition-practitionerRole-eu" name="PractitionerRole (EU base)"/>
 <artifact id="StructureDefinition/practitionerRole-eu-core" key="StructureDefinition-practitionerRole-eu-core" name="PractitionerRole (EU core)"/>
 <artifact id="PractitionerRole/practitionerRole-eu-core-example" key="PractitionerRole-practitionerRole-eu-core-example" name="PractitionerRole Example"/>
+<artifact id="StructureDefinition/procedure-eu-core" key="StructureDefinition-procedure-eu-core" name="Procedure (EU core) [WIP]"/>
 <artifact id="StructureDefinition/EHDSTelecom" key="StructureDefinition-EHDSTelecom" name="Telecom model"/>
 <artifact id="ValueSet/speciesType-eu" key="ValueSet-speciesType-eu" name="Types of species"/>
 <page key="NA" name="(NA)"/>
