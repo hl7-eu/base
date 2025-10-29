@@ -12,6 +12,7 @@ Description: """This profile sets minimum expectations for the Immunization reso
 * extension[basedOn].valueReference only Reference ( ImmunizationRecommendation )
 // check preadoption of R5 element
 // Check if the R5 now works...
+// extension only for the R5 version
 * extension contains ImmunizationAdministeredProduct named administeredProduct 0..1
 * extension[administeredProduct].extension[concept]
 * extension[administeredProduct].extension[reference].valueReference only Reference ( MedicationEuCore )
@@ -73,6 +74,7 @@ Description: """This profile sets minimum expectations for the Immunization reso
 * protocolApplied.targetDisease from $eHDSIIllnessandDisorder (preferred) // Check Value Set
 * protocolApplied.doseNumberPositiveInt ^short = "Dose Number"
 * protocolApplied.seriesDosesPositiveInt ^short = "Number of doses"
+/* 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ImmunizationRecommendationEuCore
 Parent:   ImmunizationRecommendation
@@ -106,4 +108,5 @@ Description: """This profile defines how to represent Immunization Recommandatio
 * recommendation.dateCriterion[nextDose].value 1..1
 * recommendation.doseNumberPositiveInt ^short = "Dose Number"
 * recommendation.seriesDosesPositiveInt ^short = "Number of doses"
+ */
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

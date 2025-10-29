@@ -14,6 +14,7 @@ Alias: $allergy-intolerance-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/allergy
 Alias: $allergy-reaction-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-uv-ips
 Alias: $v3-ActClassExposure = http://terminology.hl7.org/ValueSet/v3-ActClassExposure
 Alias: $procedures-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips
+Alias: $medicine-active-substances-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips
 // ---- MyHealth#EU MVC
 Alias: $eHDSIBodySite = http://terminology.ehdsi.eu/ValueSet/eHDSIBodySite
 Alias: $eHDSICountry = http://terminology.ehdsi.eu/ValueSet/eHDSICountry
@@ -37,6 +38,7 @@ Alias: $eHDSIMicroorganism = http://terminology.ehdsi.eu/ValueSet/eHDSIMicroorga
 Alias: $eHDSIMorphologicAbnormality = http://terminology.ehdsi.eu/ValueSet/eHDSIMorphologicAbnormality
 Alias: $eHDSIObservationCategory = http://terminology.ehdsi.eu/ValueSet/eHDSIObservationCategory
 Alias: $eHDSIObservationInterpretation = http://terminology.ehdsi.eu/ValueSet/eHDSIObservationInterpretation
+Alias: $eHDSIPackage = http://terminology.ehdsi.eu/ValueSet/eHDSIPackage
 Alias: $eHDSIPerformerFunction = http://terminology.ehdsi.eu/ValueSet/eHDSIPerformerFunction
 Alias: $eHDSIPresenceAbsence = http://terminology.ehdsi.eu/ValueSet/eHDSIPresenceAbsence
 Alias: $eHDSIReferenceRangeAppliesTo = http://terminology.ehdsi.eu/ValueSet/eHDSIReferenceRangeAppliesTo

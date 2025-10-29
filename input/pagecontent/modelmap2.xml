@@ -1,5 +1,5 @@
-<!-- BEGIN: EHDS Logical Models → FHIR Profiles block -->
-<div class="model-map-block">
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" class="model-map-block">
     <style type="text/css">
     /****************************
      * SCOPED STYLES
@@ -56,7 +56,6 @@
       border-collapse: collapse;
       width: 100%;
       table-layout: auto;
-              <!-- font-size: 0.9rem; -->
       background: #fff;
     }
     .model-map-block .model-index thead th {
@@ -77,7 +76,6 @@
       border: 1px solid #c7d2fe;
       border-radius: 4px;
       padding: 0 2px;
-              <!-- font-size: 0.8rem; -->
     }
     .model-map-block a.pill {
       display: inline-block;
@@ -85,7 +83,6 @@
       border: 1px solid #d0d7de;
       border-radius: 999px;
       padding: 3px 8px;
-              <!-- font-size: 0.8rem; -->
       line-height: 1.2;
       text-decoration: none;
       white-space: nowrap;
@@ -99,29 +96,28 @@
       line-height: 1;
     }
     </style>
-    <!-- Section heading for the fragment -->
     <h3>EHDS Logical Models → FHIR Profiles</h3>
     <p>
-    The Xt-EHR Joint Action defines EHDS logical data models for core clinical and
-    administrative concepts. This Implementation Guide provides HL7 FHIR profiles
-    that realise those models.
+      The Xt-EHR Joint Action defines EHDS logical data models for core clinical and
+      administrative concepts. This Implementation Guide provides HL7 FHIR profiles
+      that realise those models.
     </p>
     <div class="callout-wrapper">
         <div class="callout-box">
             <strong>Ongoing alignment:</strong>
-      The Xt-EHR logical models are under active revision and continuous refinement.
-      Updates from Xt-EHR will be progressively incorporated into this Implementation
-      Guide to maintain alignment with the evolving EHDS specifications.
+            The Xt-EHR logical models are under active revision and continuous refinement.
+            Updates from Xt-EHR will be progressively incorporated into this Implementation
+            Guide to maintain alignment with the evolving EHDS specifications.
         </div>
     </div>
     <p>
-    The sections below group the EHDS logical models into categories. Each table shows:
-    (1) the logical model, (2) the FHIR datatype or profile(s) used in this IG,
-    and (3) a link to the detailed element-by-element mapping.
+      The sections below group the EHDS logical models into categories. Each table shows:
+      (1) the logical model, (2) the FHIR datatype or profile(s) used in this IG,
+      and (3) a link to the detailed element-by-element mapping.
     </p>
-    <!-- 🧩 Foundational Models -->
     <h4>
-        <span class="group-emoji">🧩</span> Foundational Models</h4>
+        <span class="group-emoji">🧩</span> Foundational Models
+    </h4>
     <div class="table-wrapper">
         <table class="model-index">
             <thead>
@@ -167,9 +163,9 @@
             </tbody>
         </table>
     </div>
-    <!-- 🧑‍⚕️ Entity Models -->
     <h4>
-        <span class="group-emoji">🧑‍⚕️</span> Entity Models</h4>
+        <span class="group-emoji">🧑‍⚕️</span> Entity Models
+    </h4>
     <div class="table-wrapper">
         <table class="model-index">
             <thead>
@@ -199,8 +195,7 @@
                 <tr>
                     <td>EHDSHealthProfessional</td>
                     <td>
-                        <code>PractitionerRoleEuCore</code>,
-                        <code>PractitionerEuCore</code>
+                        <code>PractitionerRoleEuCore</code>,                        <code>PractitionerEuCore</code>
                     </td>
                     <td>
                         <a class="pill" href="map-ehdshealthprofessional.html">EHDSHealthProfessional Mapping</a>
@@ -225,9 +220,9 @@
             </tbody>
         </table>
     </div>
-    <!-- 🩺 Clinical Information Models -->
     <h4>
-        <span class="group-emoji">🩺</span> Clinical Information Models</h4>
+        <span class="group-emoji">🩺</span> Clinical Information Models
+    </h4>
     <div class="table-wrapper">
         <table class="model-index">
             <thead>
@@ -276,9 +271,9 @@
             </tbody>
         </table>
     </div>
-    <!-- 💊 Medication Models -->
     <h4>
-        <span class="group-emoji">💊</span> Medication Models</h4>
+        <span class="group-emoji">💊</span> Medication Models
+    </h4>
     <div class="table-wrapper">
         <table class="model-index">
             <thead>
@@ -307,4 +302,3 @@
         </table>
     </div>
 </div>
-<!-- END: EHDS Logical Models → FHIR Profiles block -->

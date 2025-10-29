@@ -7,7 +7,7 @@ Description: """This profile sets minimum expectations for the Condition resourc
 // follow the same apporach of lab for collection or add laterality to the bodySite ?
 * extension contains $bodySite-reference named bodySite 0..1
 * extension[bodySite].valueReference only Reference(BodyStructureEuCore)
-* category only CodeableConceptIPS
+* category only $CodeableConcept-uv-ips
 * severity only $CodeableConcept-uv-ips
 * severity from $condition-severity (preferred)
 * code 1..1 
