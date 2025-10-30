@@ -20,7 +20,7 @@
     </style>
   </head>
       <body>
-      <h3>EHDSAllergyIntolerance → AllergyIntolerance</h3>
+      <h3>EHDSAllergyIntolerance → AllergyIntolerance</h3><a>  </a>
       <p>
       This page describes the element-by-element mapping from the <strong>EHDSAllergyIntolerance</strong> logical model to the FHIR <code>AllergyIntolerance</code> profile in this Implementation Guide.
       </p>

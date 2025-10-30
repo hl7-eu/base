@@ -44,8 +44,12 @@
   .src-sub  { background-color: #adc3f6; font-weight: bold; }
   .tgt-sub  { background-color: #d78496; font-weight: bold; }
 </style></head>
+  <blockquote class="dragon">
+    <p>The content of this page is automatically generated and doesn't document the actual mapping.</p>    
+    <p>Please don't use this material for implementation purposes !</p>
+  </blockquote>
   <body>
-    <h3>EHDSImmunisation → Immunization</h3>
+    <h3>EHDSImmunisation → Immunization</h3><a>  </a>
     <p>
       This page describes the element-by-element mapping from the <strong>EHDSImmunisation</strong> logical model to the FHIR <code>Immunization</code> profile in this Implementation Guide.
     </p>

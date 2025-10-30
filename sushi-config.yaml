@@ -77,10 +77,8 @@ pages:
      title: EHDSAddress to FHIR Address Mapping
   map-ehdsbodystructure.html:
      title: EHDSBodyStructure to FHIR BodyStructure Mapping
-  map-ehdshealthprofessional-role.html:
-     title: EHDSHealthProfessional to FHIR PractitionerRole Mapping
-  map-ehdshealthprofessional-practitioner.html:
-     title: EHDSHealthProfessional to FHIR Practitioner Mapping
+  map-ehdshealthprofessional.html:
+     title: EHDSHealthProfessional to FHIR PractitionerRole, Practitioner Mapping
   map-ehdsorganisation.html:
      title: EHDSOrganisation to FHIR Organization Mapping
   map-ehdslocation.html:

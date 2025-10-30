@@ -73,8 +73,7 @@
 <page key="map-ehdsallergyintolerance" name="EHDSAllergyIntolerance to FHIR AllergyIntolerance Mapping"/>
 <page key="map-ehdsbodystructure" name="EHDSBodyStructure to FHIR BodyStructure Mapping"/>
 <page key="map-ehdscondition" name="EHDSCondition to FHIR Condition Mapping"/>
-<page key="map-ehdshealthprofessional-practitioner" name="EHDSHealthProfessional to FHIR Practitioner Mapping"/>
-<page key="map-ehdshealthprofessional-role" name="EHDSHealthProfessional to FHIR PractitionerRole Mapping"/>
+<page key="map-ehdshealthprofessional" name="EHDSHealthProfessional to FHIR PractitionerRole, Practitioner Mapping"/>
 <page key="map-ehdshumanname" name="EHDSHumanName to FHIR HumanName Mapping"/>
 <page key="map-ehdsimmunisation" name="EHDSImmunisation to FHIR Immunization Mapping"/>
 <page key="map-ehdslocation" name="EHDSLocation to FHIR Location Mapping"/>
