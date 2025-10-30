@@ -97,6 +97,7 @@
     }
     </style>
     <h3>EHDS Logical Models → FHIR Profiles</h3>
+    <a></a>
     <p>
       The Xt-EHR Joint Action defines EHDS logical data models for core clinical and
       administrative concepts. This Implementation Guide provides HL7 FHIR profiles
@@ -129,33 +130,45 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>EHDSAddress</td>
                     <td>
-                        <code>AddressEu</code></td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAddress.html" target="_blank" rel="noopener noreferrer">EHDSAddress</a>
+                    </td>
+                    <td>
+                        <code>AddressEu</code>
+                    </td>
                     <td>
                         <a class="pill" href="map-ehdsaddress.html">EHDSAddress Mapping</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>EHDSHumanName</td>
-                    <td><code>HumanName</code>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSHumanName.html" target="_blank" rel="noopener noreferrer">EHDSHumanName</a>
+                    </td>
+                    <td>
+                        <code>HumanName</code>
                     </td>
                     <td>
                         <a class="pill" href="map-ehdshumanname.html">EHDSHumanName Mapping</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>EHDSTelecom</td>
-                    <td><code>ContactPoint</code>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSTelecom.html" target="_blank" rel="noopener noreferrer">EHDSTelecom</a>
+                    </td>
+                    <td>
+                        <code>ContactPoint</code>
                     </td>
                     <td>
                         <a class="pill" href="map-ehdstelecom.html">EHDSTelecom Mapping</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>EHDSBodyStructure</td>
                     <td>
-                        <code>BodyStructureEuCore</code></td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSBodyStructure.html" target="_blank" rel="noopener noreferrer">EHDSBodyStructure</a>
+                    </td>
+                    <td>
+                        <code>BodyStructureEuCore</code>
+                    </td>
                     <td>
                         <a class="pill" href="map-ehdsbodystructure.html">EHDSBodyStructure Mapping</a>
                     </td>
@@ -177,42 +190,56 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>EHDSPatient</td>
                     <td>
-                        <code>PatientEuCore</code></td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSPatient.html" target="_blank" rel="noopener noreferrer">EHDSPatient</a>
+                    </td>
+                    <td>
+                        <code>PatientEuCore</code>
+                    </td>
                     <td>
                         <a class="pill" href="map-ehdspatient.html">EHDSPatient Mapping</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>EHDSPatientAnimal</td>
                     <td>
-                        <code>PatientAnimalEuCore</code></td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSPatientAnimal.html" target="_blank" rel="noopener noreferrer">EHDSPatientAnimal</a>
+                    </td>
+                    <td>
+                        <code>PatientAnimalEuCore</code>
+                    </td>
                     <td>
                         <a class="pill" href="map-ehdspatientanimal.html">EHDSPatientAnimal Mapping</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>EHDSHealthProfessional</td>
                     <td>
-                        <code>PractitionerRoleEuCore</code>,   <code>PractitionerEuCore</code>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSHealthProfessional.html" target="_blank" rel="noopener noreferrer">EHDSHealthProfessional</a>
+                    </td>
+                    <td>
+                        <code>PractitionerRoleEuCore</code>,                        <code>PractitionerEuCore</code>
                     </td>
                     <td>
                         <a class="pill" href="map-ehdshealthprofessional.html">EHDSHealthProfessional Mapping</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>EHDSOrganisation</td>
                     <td>
-                        <code>OrganizationEuCore</code></td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSOrganisation.html" target="_blank" rel="noopener noreferrer">EHDSOrganisation</a>
+                    </td>
+                    <td>
+                        <code>OrganizationEuCore</code>
+                    </td>
                     <td>
                         <a class="pill" href="map-ehdsorganisation.html">EHDSOrganisation Mapping</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>EHDSLocation</td>
                     <td>
-                        <code>LocationEuCore</code></td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSLocation.html" target="_blank" rel="noopener noreferrer">EHDSLocation</a>
+                    </td>
+                    <td>
+                        <code>LocationEuCore</code>
+                    </td>
                     <td>
                         <a class="pill" href="map-ehdslocation.html">EHDSLocation Mapping</a>
                     </td>
@@ -234,36 +261,56 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>EHDSAlert</td>
-                    <td>Alert / Flag profile in this IG</td>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAlert.html" target="_blank" rel="noopener noreferrer">EHDSAlert</a>
+                    </td>
+                    <td>
+                        <code>FlagEuCore</code>
+                    </td>
                     <td>
                         <a class="pill" href="map-ehdsalert.html">EHDSAlert Mapping</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>EHDSAllergyIntolerance</td>
-                    <td>AllergyIntolerance profile in this IG</td>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAllergyIntolerance.html" target="_blank" rel="noopener noreferrer">EHDSAllergyIntolerance</a>
+                    </td>
+                    <td>
+                        <code>AllergyIntoleranceEuCore</code>
+                    </td>
                     <td>
                         <a class="pill" href="map-ehdsallergyintolerance.html">EHDSAllergyIntolerance Mapping</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>EHDSCondition</td>
-                    <td>Condition profile in this IG</td>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSCondition.html" target="_blank" rel="noopener noreferrer">EHDSCondition</a>
+                    </td>
+                    <td>
+                        <code>ConditionEuCore</code>
+                    </td>
                     <td>
                         <a class="pill" href="map-ehdscondition.html">EHDSCondition Mapping</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>EHDSProcedure</td>
-                    <td>Procedure profile in this IG</td>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSProcedure.html" target="_blank" rel="noopener noreferrer">EHDSProcedure</a>
+                    </td>
+                    <td>
+                        <code>ProcedureEuCore</code>
+                    </td>
                     <td>
                         <a class="pill" href="map-ehdsprocedure.html">EHDSProcedure Mapping</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>EHDSImmunisation</td>
-                    <td>Immunization profile in this IG</td>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSImmunisation.html" target="_blank" rel="noopener noreferrer">EHDSImmunisation</a>
+                    </td>
+                    <td>
+                        <code>ImmunizationEuCore</code>
+                    </td>
                     <td>
                         <a class="pill" href="map-ehdsimmunisation.html">EHDSImmunisation Mapping</a>
                     </td>
@@ -285,15 +332,23 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>EHDSMedication</td>
-                    <td>Medication profile(s)</td>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedication.html" target="_blank" rel="noopener noreferrer">EHDSMedication</a>
+                    </td>
+                    <td>
+                        <code>MedicationEuCore</code>
+                    </td>
                     <td>
                         <a class="pill" href="map-ehdsmedication.html">EHDSMedication Mapping</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>EHDSMedicationStatement</td>
-                    <td>MedicationStatement profile(s)</td>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedicationStatement.html" target="_blank" rel="noopener noreferrer">EHDSMedicationStatement</a>
+                    </td>
+                    <td>
+                        <code>MedicationStatementEuCore</code>
+                    </td>
                     <td>
                         <a class="pill" href="map-ehdsmedicationstatement.html">EHDSMedicationStatement Mapping</a>
                     </td>

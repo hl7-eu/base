@@ -3,55 +3,19 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
     <title>EHDSAlert → Flag</title>
-<style type="text/css">
-  body {
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    margin: 1rem;
-    background: #f5f7fb;
-    color: #1a1a1a;
-    line-height: 1.4;
-  }
-  h3 { margin-bottom: 0.5rem; }
-  p.lead { max-width: 70ch; }
-  /* Legend box full width */
-  .legend {
-    background: #fff;
-    border: 1px solid #d0d7de;
-    border-radius: 10px;
-    padding: 10px 12px;
-    margin: 1rem 0;
-    width: 100%;           /* make it span the full content area */
-    box-sizing: border-box;
-  }
-  .legend dt { font-weight: 600; float: left; width: 6rem; }
-  .legend dd { margin-left: 6rem; margin-bottom: 0.5rem; }
-  .table-wrap {
-    overflow: auto;
-    border: 1px solid #d0d7de;
-    border-radius: 10px;
-    padding: 8px;
-    background: #fff;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
-  }
-  table { border-collapse: collapse; width: 100%; table-layout: fixed; }
-  thead th { background: #f6f8fa; font-weight: 600; text-align: center; }
-  th, td { border: 1px solid #d0d7de; padding: 4px 6px; vertical-align: top; overflow: hidden; text-overflow: ellipsis; }
-  caption { text-align: left; font-weight: 600; margin-bottom: 0.5rem; }
-  .relhead { background-color: #6F2E80 !important; color: #ffffff !important; }
-  .relsub  { background-color: #E6D7EC !important; font-weight: bold; }
-  .src-head { background-color: #1f54d1; color: #ffffff; }
-  .tgt-head { background-color: #be072f; color: #ffffff; }
-  .src-sub  { background-color: #adc3f6; font-weight: bold; }
-  .tgt-sub  { background-color: #d78496; font-weight: bold; }
-</style></head>
-  <blockquote class="dragon">
-    <p>The content of this page is automatically generated and doesn't document the actual mapping.</p>    
-    <p>Please don't use this material for implementation purposes !</p>
-  </blockquote>
+    <link rel="stylesheet" type="text/css" href="map-pages.css" />
+  </head>
   <body>
-    <h3>EHDSAlert → Flag</h3><a>  </a>
+    <blockquote class="dragon">
+      <p>The content of this page is automatically generated and doesn't document the actual mapping.</p>
+      <p>Please don't use this material for implementation purposes !</p>
+    </blockquote>
+    <h3>EHDSAlert → Flag</h3>
+    <a>  </a>
     <p>
-      This page describes the element-by-element mapping from the <strong>EHDSAlert</strong> logical model to the FHIR <code>Flag</code> (or equivalent alert/clinical warning profile) used in this Implementation Guide. Alerts convey critical safety or clinical information that should be surfaced whenever the patient record is accessed.
+      This page describes the element-by-element mapping from the <strong>EHDSAlert</strong> logical model to the
+      FHIR <code>Flag</code> (or equivalent alert/clinical warning profile) used in this Implementation Guide.
+      Alerts convey critical safety or clinical information that should be surfaced whenever the patient record is accessed.
     </p>
     <div class="table-wrap">
       <table summary="EHDSAlert → Flag">
@@ -72,61 +36,127 @@
           </tr>
         </thead>
         <tbody>
+          <!-- HEADER BLOCK (common dataset header) -->
           <tr>
-            <td>identifier</td>
-            <td>Identifier for the alert entry.</td>
-            <td>equal</td>
-            <td>identifier</td>
-            <td>Business identifier for the flag.</td>
-            <td></td>
+            <td>header</td>
+            <td>Common header for all patient-related data.</td>
+            <td>relatedto</td>
+            <td>Flag</td>
+            <td>General metadata.</td>
+            <td>Dataset-level; not usually carried in Flag as-is.</td>
           </tr>
           <tr>
-            <td>status</td>
-            <td>Lifecycle status of the alert (active, entered-in-error, etc.).</td>
-            <td>equal</td>
-            <td>status</td>
-            <td>Indicates if the flag is active, inactive, etc.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>category</td>
-            <td>High-level classification of the alert (clinical safety, admin).</td>
-            <td>equal</td>
-            <td>category</td>
-            <td>Clinical / administrative category.</td>
-            <td>CodeableConcept.</td>
-          </tr>
-          <tr>
-            <td>code</td>
-            <td>Specific coded meaning of the alert.</td>
-            <td>equal</td>
-            <td>code</td>
-            <td>Issue being highlighted.</td>
-            <td>Often includes human-readable display.</td>
-          </tr>
-          <tr>
-            <td>subject</td>
-            <td>Subject (typically the patient) this alert refers to.</td>
+            <td>header.subject</td>
+            <td>Patient/subject this alert is about.</td>
             <td>equal</td>
             <td>subject</td>
             <td>Who/what the flag is about.</td>
-            <td>Reference to Patient / Animal Patient.</td>
+            <td>Reference to Patient (or other subject).</td>
           </tr>
           <tr>
-            <td>period</td>
-            <td>Period of alert relevance.</td>
+            <td>header.identifier</td>
+            <td>Business identifier for the alert object.</td>
             <td>equal</td>
-            <td>period</td>
-            <td>Time period when the flag is active.</td>
-            <td></td>
+            <td>identifier</td>
+            <td>Business identifier for the flag.</td>
+            <td>Copy over all identifiers if multiple.</td>
           </tr>
           <tr>
+            <td>header.authorship</td>
+            <td>Resource authoring details</td>
+            <td>relatedto</td>
             <td>author</td>
+            <td>Creator of the flag.</td>
+            <td>Can reference Practitioner, PractitionerRole, or Organization.</td>
+          </tr>
+          <tr>
+            <td>header.authorship.author[x]</td>
             <td>Who created/issued the alert.</td>
             <td>equal</td>
             <td>author</td>
             <td>Creator of the flag.</td>
-            <td>Could reference PractitionerRole, Practitioner, or Organization.</td>
+            <td>Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.authorship.datetime</td>
+            <td>Date/time the resource was issued.</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.lastUpdate</td>
+            <td>Last technical correction/update.</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.status</td>
+            <td>Status of the dataset/resource.</td>
+            <td>XXXX</td>
+            <td>XXXX</td>
+            <td>Flag status is mapped from EHDSAlert.status (see below).</td>
+            <td>Header status ≠ clinical alert status. Clarify the difference</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.statusReason[x]</td>
+            <td>Reason for current dataset status.</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+          </tr>
+          <tr>
+            <td>header.language</td>
+            <td>Language of the resource (IETF tag).</td>
+            <td>equivalent →</td>
+            <td>language</td>
+            <td>Language used in the flag text.</td>
+            <td></td>
+          </tr>
+          <!-- ROOT EHDSAlert elements -->
+          <tr class="highlight-yellow">
+            <td>text</td>
+            <td>Free text explanation of the alert.</td>
+            <td>equal</td>
+            <td>code.text <em>or</em> text</td>
+            <td>Human-readable meaning.</td>
+            <td>Prefer putting the core meaning in Flag.code; extra narrative in Flag.note.</td>
+          </tr>
+          <tr>
+            <td>priority</td>
+            <td>Priority of the alert.</td>
+            <td>equal</td>
+            <td>extension:flagPriorityExt	</td>
+            <td>A code that identifies the priority of the alert</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>status</td>
+            <td>Status of the alert (active, inactive, entered-in-error…).</td>
+            <td>equal</td>
+            <td>status</td>
+            <td>Indicates if the flag is active, inactive, etc.</td>
+            <td>Use the EHDS → HL7 Flag-status value set mapping.</td>
+          </tr>
+          <tr>
+            <td>code</td>
+            <td>Coded alert/issue being highlighted.</td>
+            <td>equal</td>
+            <td>code</td>
+            <td>Issue being highlighted.</td>
+            <td>Often SNOMED CT or local code. Should have display.</td>
+          </tr>
+          <tr>
+            <td>period</td>
+            <td>Time period when the alert is relevant.</td>
+            <td>equal</td>
+            <td>period</td>
+            <td>Time period when the flag is active.</td>
+            <td>Map start/end 1:1.</td>
           </tr>
         </tbody>
       </table>
