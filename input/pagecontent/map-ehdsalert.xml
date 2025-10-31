@@ -5,11 +5,13 @@
     <title>EHDSAlert → Flag</title>
     <link rel="stylesheet" type="text/css" href="map-pages.css" />
   </head>
-  <body>
-    <blockquote class="dragon">
-      <p>The content of this page is <strong>work in progress.</strong></p>
-      <p>Please don't use this material for implementation purposes !</p>
-    </blockquote>
+<body>
+  <blockquote class="dragon">
+    <p>
+      <strong>Note:</strong> The content of this page is <strong>work in progress</strong> and may change based on ongoing discussions within the working group.</p>
+    <p>The technical solutions listed are <strong>possible candidates</strong> under consideration and are <strong>not yet approved</strong> or ready for implementation.</p>
+  </blockquote>
+</body>
     <h3>EHDSAlert → Flag</h3>
     <a>  </a>
     <p>
