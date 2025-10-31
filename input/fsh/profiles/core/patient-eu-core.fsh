@@ -8,6 +8,11 @@ When the ips-pat-1 invariant is satisfied \(Patient.name.given, Patient.name.fam
 * name 1..*
 * name obeys eu-pat-1
 * birthDate 1.. // MS according to IPS
+// ==============================================================
+// Invariants
+// ips-pat-1 doesn't allow for data-absent-reason on name, 
+// but we need it to be allowed for EU core compliance
+// ==============================================================
 Invariant: eu-pat-1
 Description: "given, family, text or a data-absent-reason extension SHALL be present"
 Severity: #error

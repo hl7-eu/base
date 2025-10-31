@@ -5,14 +5,18 @@
     <title>EHDSCondition → Condition</title>
     <link rel="stylesheet" type="text/css" href="map-pages.css" />
   </head>
-  <blockquote class="dragon">
-    <p>The content of this page is automatically generated and doesn't document the actual mapping.</p>    
-    <p>Please don't use this material for implementation purposes !</p>
-  </blockquote>
   <body>
-    <h3>EHDSCondition → Condition</h3><a>  </a>
+  <blockquote class="dragon">
     <p>
-      This page describes the element-by-element mapping from the <strong>EHDSCondition</strong> logical model to the FHIR <code>Condition</code> profile in this Implementation Guide.
+      <strong>Note:</strong> The content of this page is <strong>work in progress</strong> and may change based on ongoing discussions within the working group.</p>
+    <p>The technical solutions listed are <strong>possible candidates</strong> under consideration and are <strong>not yet approved</strong> or ready for implementation.</p>
+  </blockquote>
+    <h3>EHDSCondition → Condition</h3>
+    <a>  </a>
+    <p>
+      This page describes the element-by-element mapping from the
+      <strong>EHDSCondition</strong> logical model to the FHIR
+      <code>Condition</code> profile in this Implementation Guide.
     </p>
     <div class="table-wrap">
       <table summary="EHDSCondition → Condition">
@@ -33,85 +37,212 @@
           </tr>
         </thead>
         <tbody>
+          <!-- HEADER BLOCK (common dataset header) -->
           <tr>
-            <td>identifier</td>
-            <td>Identifier for the condition/problem record.</td>
+            <td>header</td>
+            <td>Common header for all patient-related data.</td>
+            <td>relatedto</td>
+            <td>.</td>
+            <td>General metadata.</td>
+            <td>Dataset-level; not usually carried in Condition as-is.</td>
+          </tr>
+          <tr>
+            <td>header.subject</td>
+            <td>Patient/subject this condition is about.</td>
+            <td>equal</td>
+            <td>subject</td>
+            <td>Reference to the patient or subject of the condition.</td>
+            <td>Reference to Patient (or other subject).</td>
+          </tr>
+          <tr>
+            <td>header.identifier</td>
+            <td>Business identifier for the object.</td>
             <td>equal</td>
             <td>identifier</td>
-            <td>Business identifier for this condition entry.</td>
+            <td>Business identifier for this condition.</td>
+            <td>Copy over all identifiers if multiple.</td>
+          </tr>
+          <tr>
+            <td>header.authorship</td>
+            <td>Resource authoring details.</td>
+            <td>relatedto</td>
+            <td>recorder</td>
+            <td>Who recorded the condition.</td>
+            <td>Condition has no generic "author"; use <code>recorder</code></td>
+          </tr>
+          <tr>
+            <td>header.authorship.author[x]</td>
+            <td>Who created/issued the condition record.</td>
+            <td>equivalent</td>
+            <td>recorder</td>
+            <td>Who recorded the condition.</td>
+            <td>Can reference Practitioner, PractitionerRole, Patient, RelatedPerson (per profile).</td>
+          </tr>
+          <tr>
+            <td>header.authorship.datetime</td>
+            <td>Date/time the resource was issued.</td>
+            <td>equivalent</td>
+            <td>recordedDate</td>
+            <td>When the condition was recorded.</td>
             <td></td>
           </tr>
+          <tr class="highlight-yellow">
+            <td>header.lastUpdate</td>
+            <td>Last technical correction/update.</td>
+            <td>source-is-broader-than-target</td>
+            <td>meta.lastUpdated</td>
+            <td>When the resource version was last changed.</td>
+            <td>FHIR <code>meta.lastUpdated</code> is system-level; EHDS header may carry richer audit info.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.status</td>
+            <td>Status of the dataset/resource (technical/administrative).</td>
+            <td>no-direct-equivalent</td>
+            <td>extension[datasetStatus]</td>
+            <td>Administrative/technical status.</td>
+            <td>Do not confuse with <code>Condition.clinicalStatus</code> or <code>verificationStatus</code> below.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.statusReason[x]</td>
+            <td>Reason for current dataset status.</td>
+            <td>no-direct-equivalent</td>
+            <td>extension[datasetStatusReason]</td>
+            <td>Reason for admin/technical status.</td>
+            <td>Needs IG-specific extension.</td>
+          </tr>
           <tr>
-            <td>clinicalStatus</td>
-            <td>Clinical status (active, inactive, resolved).</td>
-            <td>equal</td>
-            <td>clinicalStatus</td>
-            <td>Current clinical state of the condition.</td>
+            <td>header.language</td>
+            <td>Language of the resource (IETF tag).</td>
+            <td>equivalent</td>
+            <td>language</td>
+            <td>Language used in narrative/notes.</td>
             <td></td>
           </tr>
+          <!-- problem -->
           <tr>
-            <td>verificationStatus</td>
-            <td>Certainty/confirmation level.</td>
-            <td>equal</td>
-            <td>verificationStatus</td>
-            <td>Whether the condition is unconfirmed, confirmed, refuted, etc.</td>
-            <td>Supports quality/safety use cases.</td>
-          </tr>
-          <tr>
-            <td>code</td>
-            <td>Coded identification of the condition/problem.</td>
+            <td>problem</td>
+            <td>Code identifying the condition, problem or diagnosis.</td>
             <td>equal</td>
             <td>code</td>
             <td>Identification of the condition, problem, or diagnosis.</td>
-            <td>Usually ICD/SNOMED/etc.</td>
+            <td>CodeableConcept. EHDS binds to ICD-10, SNOMED CT, ICD-O, Orphacode.</td>
           </tr>
+          <!-- onsetDate -->
           <tr>
-            <td>subject</td>
-            <td>The individual with the condition.</td>
+            <td>onsetDate</td>
+            <td>Onset date of a problem/condition.</td>
             <td>equal</td>
-            <td>subject</td>
-            <td>Who the condition applies to.</td>
-            <td>Reference to Patient/Animal.</td>
+            <td>onsetDateTime</td>
+            <td>Estimated or actual date/time the condition started.</td>
+            <td>Map to <code>onsetDateTime</code> in FHIR.</td>
           </tr>
+          <!-- endDate -->
           <tr>
-            <td>onset[x]</td>
-            <td>When the condition began.</td>
+            <td>endDate</td>
+            <td>The date or estimated date that the condition resolved or went into remission.</td>
             <td>equal</td>
-            <td>onset[x]</td>
-            <td>Estimated or known onset.</td>
-            <td>Multiple data types supported.</td>
+            <td>abatementDateTime</td>
+            <td>When the condition abated or went into remission.</td>
+            <td>Use <code>abatementDateTime</code>; abatement may also be represented by clinicalStatus = resolved.</td>
           </tr>
+          <!-- category -->
           <tr>
-            <td>abatement[x]</td>
-            <td>When/if the condition resolved.</td>
+            <td>category</td>
+            <td>Category or categories of the problem (e.g. POA, HAC, other categorisations).</td>
             <td>equal</td>
-            <td>abatement[x]</td>
-            <td>When the condition abated.</td>
-            <td>Optional; may indicate recovery/remission.</td>
+            <td>category</td>
+            <td>Problem category (e.g. problem-list-item, encounter-diagnosis).</td>
+            <td>0..* in both models; EHDS may use additional national/organisational codes.</td>
           </tr>
+          <!-- problemStatus -->
           <tr>
+            <td>problemStatus</td>
+            <td>Status of the condition/problem (active, resolved, inactive, ...).</td>
+            <td>equal</td>
+            <td>clinicalStatus</td>
+            <td>Current clinical status of the condition.</td>
+            <td>FHIR has a required VS for clinicalStatus; EHDS references HL7 Condition Clinical Status Codes.</td>
+          </tr>
+          <!-- resolutionCircumstances -->
+          <tr class="highlight-yellow">
+            <td>resolutionCircumstances</td>
+            <td>Reason for which the status changed from current to inactive (free text if not represented elsewhere).</td>
+            <td>source-is-broader-than-target</td>
+            <td>note.text</td>
+            <td>Additional text about the condition.</td>
+            <td>FHIR Condition has no direct "resolution reason"; use <code>Condition.note</code> (0..*). If your profile defines an extension, point here instead.</td>
+          </tr>
+          <!-- severity -->
+          <tr>
+            <td>severity</td>
+            <td>Subjective assessment of the severity of the condition.</td>
+            <td>equal</td>
+            <td>severity</td>
+            <td>Clinical severity of the condition.</td>
+            <td>CodeableConcept; HL7 / SNOMED CT value sets.</td>
+          </tr>
+          <!-- anatomicLocation -->
+          <tr>
+            <td>anatomicLocation</td>
+            <td>The anatomical location including laterality where this condition manifests itself.</td>
+            <td>equal</td>
             <td>bodySite</td>
-            <td>Anatomical site(s) involved.</td>
-            <td>equal</td>
-            <td>bodySite</td>
-            <td>Body site(s) affected.</td>
-            <td>Can reference BodyStructure for detailed modelling.</td>
+            <td>Anatomical location(s) affected by the condition.</td>
+            <td>EHDS uses EHDSBodyStructure; map to one or more <code>Condition.bodySite</code>. Use referenced BodyStructure if profiling for more detail.</td>
           </tr>
+          <!-- stage -->
           <tr>
-            <td>recordedDate</td>
-            <td>Date the condition entry was recorded.</td>
-            <td>equal</td>
-            <td>recordedDate</td>
-            <td>Date this record was first captured.</td>
-            <td>Administrative traceability.</td>
+            <td>stage</td>
+            <td>Stage/grade usually assessed formally using a specific staging/grading system. Multiple assessment systems could be used.</td>
+            <td>source-is-broader-than-target</td>
+            <td>stage.summary</td>
+            <td>Simple summary of condition stage.</td>
+            <td>FHIR also has <code>stage.assessment</code> (Reference). For multiple staging systems, create multiple <code>Condition.stage</code> repetitions.</td>
           </tr>
+          <!-- diagnosisAssertionStatus -->
           <tr>
-            <td>recorder</td>
-            <td>Who entered / asserted the condition record.</td>
+            <td>diagnosisAssertionStatus</td>
+            <td>Assertion about the certainty associated with a diagnosis.</td>
             <td>equal</td>
-            <td>recorder</td>
-            <td>Individual who recorded the condition.</td>
-            <td>Can be Practitioner, PractitionerRole, etc.</td>
+            <td>verificationStatus</td>
+            <td>Whether the condition is unconfirmed, provisional, confirmed, refuted, etc.</td>
+            <td>Both EHDS and FHIR refer to HL7 Condition Verification Status.</td>
+          </tr>
+          <!-- asserter -->
+          <tr>
+            <td>asserter</td>
+            <td>The asserter of the condition.</td>
+            <td>equal</td>
+            <td>asserter</td>
+            <td>Individual who asserted the condition.</td>
+            <td>Reference to Practitioner / PractitionerRole / Patient / RelatedPerson, depending on profile.</td>
+          </tr>
+          <!-- assertedDate -->
+          <tr>
+            <td>assertedDate</td>
+            <td>Date and time of the diagnosis assertion.</td>
+            <td>equal</td>
+            <td>extension:assertedDate</td>
+            <td>Date the condition record was first recorded.</td>
+            <td></td>
+          </tr>
+          <!-- specialistContact -->
+          <tr class="highlight-yellow">
+            <td>specialistContact</td>
+            <td>Health Professional specifically related to the problem, as a preferred contact.</td>
+            <td>XXXXXXXXX</td>
+            <td>XXXXXXXXX</td>
+            <td>XXXXXXXXX</td>
+            <td>FHIR R4 Condition has no native participant element; model via an IG-defined extension or via CareTeam.</td>
+          </tr>
+          <!-- externalResource -->
+          <tr class="highlight-yellow">
+            <td>externalResource</td>
+            <td>External resource related to the problem (e.g. guidelines for a rare disease).</td>
+            <td>XXXXXXXXX</td>
+            <td>XXXXXXXXX</td>
+            <td>XXXXXXXXX</td>
+            <td>Condition.evidence.detail could be used if the IG permits URIs there; otherwise use an extension or evaluate other alternatives</td>
           </tr>
         </tbody>
       </table>

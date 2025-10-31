@@ -2,6 +2,7 @@
 // ---- Extensions
 Alias: $allergyintolerance-abatement = http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement
 Alias: $artifact-relatedArtifact = http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact
+Alias: $condition-assertedDate = http://hl7.org/fhir/StructureDefinition/condition-assertedDate
 Alias: $bodySite-reference = http://hl7.org/fhir/StructureDefinition/bodySite
 Alias: $bodyStructure-laterality-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality
 Alias: $composition.version-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version
