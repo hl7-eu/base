@@ -97,7 +97,7 @@
     }
     </style>
     <h3>EHDS Logical Models → FHIR Profiles</h3>
-    <a></a>
+    <a>  </a>
     <p>
       The Xt-EHR Joint Action defines EHDS logical data models for core clinical and
       administrative concepts. This Implementation Guide provides HL7 FHIR profiles
@@ -118,7 +118,7 @@
     </p>
     <h4>
         <span class="group-emoji">🧩</span> Foundational Models
-    </h4>
+    </h4> <a>   </a>
     <div class="table-wrapper">
         <table class="model-index">
             <thead>
@@ -178,7 +178,7 @@
     </div>
     <h4>
         <span class="group-emoji">🧑‍⚕️</span> Entity Models
-    </h4>
+    </h4> <a>   </a>
     <div class="table-wrapper">
         <table class="model-index">
             <thead>
@@ -249,7 +249,7 @@
     </div>
     <h4>
         <span class="group-emoji">🩺</span> Clinical Information Models
-    </h4>
+    </h4> <a>   </a>
     <div class="table-wrapper">
         <table class="model-index">
             <thead>
@@ -320,7 +320,7 @@
     </div>
     <h4>
         <span class="group-emoji">💊</span> Medication Models
-    </h4>
+    </h4> <a>   </a>
     <div class="table-wrapper">
         <table class="model-index">
             <thead>

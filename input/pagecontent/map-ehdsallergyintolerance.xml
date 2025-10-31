@@ -3,131 +3,162 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
     <title>EHDSAllergyIntolerance → AllergyIntolerance</title>
-    <style type="text/css">
-      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 1rem; background:#f5f7fb; color:#1a1a1a; line-height:1.4; }
-      h3 { margin-bottom:0.5rem; }
-      .table-wrap { overflow:auto; border:1px solid #d0d7de; border-radius:10px; padding:8px; background:#fff; box-shadow:0 1px 2px rgba(0,0,0,0.04); }
-      table { border-collapse:collapse; width:100%; table-layout:fixed; }
-      thead th { background:#f6f8fa; font-weight:600; text-align:center; }
-      th, td { border:1px solid #d0d7de; padding:4px 6px; vertical-align:top; overflow:hidden; text-overflow:ellipsis; }
-      caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
-      .relhead { background-color:#6F2E80; color:#ffffff; }
-      .relsub { background-color:#E6D7EC; font-weight:bold; }
-      .src-head { background-color:#1f54d1; color:#ffffff; }
-      .tgt-head { background-color:#be072f; color:#ffffff; }
-      .src-sub { background-color:#adc3f6; font-weight:bold; }
-      .tgt-sub { background-color:#d78496; font-weight:bold; }
-    </style>
+    <link rel="stylesheet" type="text/css" href="map-pages.css" />
   </head>
-      <body>
-      <h3>EHDSAllergyIntolerance → AllergyIntolerance</h3><a>  </a>
-      <p>
-      This page describes the element-by-element mapping from the <strong>EHDSAllergyIntolerance</strong> logical model to the FHIR <code>AllergyIntolerance</code> profile in this Implementation Guide.
-      </p>
-      <div class="table-wrap">
-        <table summary="EHDSAllergyIntolerance → AllergyIntolerance">
-          <caption>EHDSAllergyIntolerance → AllergyIntolerance</caption>
-          <thead>
-            <tr>
-              <th colspan="2" class="src-head">EHDSAllergyIntolerance (Logical Model)</th>
-              <th class="relhead">Relationship</th>
-              <th colspan="3" class="tgt-head">AllergyIntolerance</th>
-            </tr>
-            <tr>
-              <th class="src-sub">Element</th>
-              <th class="src-sub">Description</th>
-              <th class="relsub">Relation</th>
-              <th class="tgt-sub">Element</th>
-              <th class="tgt-sub">Description</th>
-              <th class="tgt-sub">Notes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>identifier</td>
-              <td>Identifier for the allergy/intolerance record.</td>
-              <td>equal</td>
-              <td>identifier</td>
-              <td>Business identifier for this record.</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>clinicalStatus</td>
-              <td>Whether the allergy is active, inactive, resolved, etc.</td>
-              <td>equal</td>
-              <td>clinicalStatus</td>
-              <td>Clinical status of the allergy/intolerance.</td>
-              <td>CodeableConcept.</td>
-            </tr>
-            <tr>
-              <td>verificationStatus</td>
-              <td>Confidence in the allergy being real (confirmed, refuted).</td>
-              <td>equal</td>
-              <td>verificationStatus</td>
-              <td>Verification status.</td>
-              <td>Important for data quality/safety.</td>
-            </tr>
-            <tr>
-              <td>type</td>
-              <td>Distinction between allergy vs intolerance.</td>
-              <td>equal</td>
-              <td>type</td>
-              <td>Allergy | intolerance.</td>
-              <td>FHIR explicit discriminator.</td>
-            </tr>
-            <tr>
-              <td>category</td>
-              <td>Food / medication / environment / biologic.</td>
-              <td>equal</td>
-              <td>category</td>
-              <td>Allergy category.</td>
-              <td>Repeats in FHIR.</td>
-            </tr>
-            <tr>
-              <td>criticality</td>
-              <td>Estimated clinical criticality of future exposure.</td>
-              <td>equal</td>
-              <td>criticality</td>
-              <td>Criticality of the risk.</td>
-              <td>High / low / unable-to-assess.</td>
-            </tr>
-            <tr>
-              <td>code</td>
-              <td>Substance or agent that triggers reaction.</td>
-              <td>equal</td>
-              <td>code</td>
-              <td>Allergen / agent.</td>
-              <td>CodeableConcept (e.g. drug, food protein).</td>
-            </tr>
-            <tr>
-              <td>patient</td>
-              <td>Patient who has this allergy/intolerance.</td>
-              <td>equal</td>
-              <td>patient</td>
-              <td>Who the record concerns.</td>
-              <td>Reference to Patient/Animal Patient.</td>
-            </tr>
-            <tr>
-              <td>onset[x]</td>
-              <td>When first identified.</td>
-              <td>equal</td>
-              <td>onset[x]</td>
-              <td>Approximate or exact onset.</td>
-              <td>FHIR supports multiple data types.</td>
-            </tr>
-            <tr>
-              <td>reaction</td>
-              <td>Observed reactions, symptoms, adverse events.</td>
-              <td>equal</td>
-              <td>reaction</td>
-              <td>Details of each adverse reaction event.</td>
-              <td>Repeating; includes manifestation, severity, etc.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p style="margin-top:2rem;color:#555;">
+  <body>
+    <blockquote class="dragon">
+      <p>The content of this page is automatically generated and doesn't document the actual mapping.</p>
+      <p>Please don't use this material for implementation purposes !</p>
+    </blockquote>
+    <h3>EHDSAllergyIntolerance → AllergyIntolerance</h3>
+    <a> </a>
+    <p>
+      This page describes the element-by-element mapping from the
+      <strong>EHDSAllergyIntolerance</strong> logical model to the FHIR
+      <code>AllergyIntolerance</code> profile in this Implementation Guide.
+    </p>
+    <div class="table-wrap">
+      <table summary="EHDSAllergyIntolerance → AllergyIntolerance">
+        <caption>EHDSAllergyIntolerance → AllergyIntolerance</caption>
+        <thead>
+          <tr>
+            <th colspan="2" class="src-head">EHDSAllergyIntolerance (Logical Model)</th>
+            <th class="relhead">Relationship</th>
+            <th colspan="3" class="tgt-head">AllergyIntolerance</th>
+          </tr>
+          <tr>
+            <th class="src-sub">Element</th>
+            <th class="src-sub">Description</th>
+            <th class="relsub">Relation</th>
+            <th class="tgt-sub">Element</th>
+            <th class="tgt-sub">Description</th>
+            <th class="tgt-sub">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- agentOrAllergen -->
+          <tr>
+            <td>agentOrAllergen</td>
+            <td>A specific allergen or other agent/substance (drug, food, chemical agent, etc.) to which the patient has an adverse reaction propensity.</td>
+            <td>equal</td>
+            <td>code</td>
+            <td>Concept that identifies the substance, product, or agent responsible.</td>
+            <td>CodeableConcept. Bound in EHDS to eHDSI value sets; in FHIR usually VS: AllergyIntolerance Substance/Product.</td>
+          </tr>
+          <!-- typeOfPropensity -->
+          <tr>
+            <td>typeOfPropensity</td>
+            <td>Describes whether the condition refers to an allergy, intolerance, or unknown class.</td>
+            <td>equal</td>
+            <td>type</td>
+            <td>Allergy vs intolerance.</td>
+            <td>Maps to <code>AllergyIntolerance.type</code> (allergy | intolerance | ...). Value sets: eHDSIAdverseEventType / HL7.</td>
+          </tr>
+          <!-- description -->
+          <tr>
+            <td>description</td>
+            <td>Textual description of the allergy or intolerance.</td>
+            <td>source-is-broader-than-target</td>
+            <td>note.text</td>
+            <td>Additional narrative about the allergy/intolerance.</td>
+            <td>FHIR doesn't have a single free-text "description" element; use <code>AllergyIntolerance.note</code> (0..*). Could also populate <code>text.div</code> if profiling.</td>
+          </tr>
+          <!-- criticality -->
+          <tr>
+            <td>criticality</td>
+            <td>Estimate of the potential clinical harm, or seriousness, of a reaction.</td>
+            <td>equal</td>
+            <td>criticality</td>
+            <td>Estimate of potential clinical harm.</td>
+            <td>ValueSets in EHDS reference eHDSICriticality; FHIR has its own required VS.</td>
+          </tr>
+          <!-- certainty -->
+          <tr>
+            <td>certainty</td>
+            <td>Assertion about the certainty associated with the propensity (diagnostic/clinical evidence).</td>
+            <td>equal</td>
+            <td>verificationStatus</td>
+            <td>Clinical verification status of the allergy/intolerance.</td>
+            <td>EHDS name "certainty" ≈ FHIR "verificationStatus" (confirmed / refuted / unconfirmed).</td>
+          </tr>
+          <!-- status -->
+          <tr>
+            <td>status</td>
+            <td>Current status of the allergy or intolerance (active, in remission, resolved, etc.).</td>
+            <td>equal</td>
+            <td>clinicalStatus</td>
+            <td>Clinical status of the allergy/intolerance.</td>
+            <td>EHDS "status" → FHIR "clinicalStatus". Both point to the clinical/temporal lifecycle.</td>
+          </tr>
+          <!-- onsetDate -->
+          <tr>
+            <td>onsetDate</td>
+            <td>When the allergy or intolerance was identified.</td>
+            <td>equal</td>
+            <td>onset[x]</td>
+            <td>When the allergy/intolerance was identified or first became relevant.</td>
+            <td>FHIR supports multiple datatypes; here you have dateTime → map to <code>onsetDateTime</code>.
+            </td>
+          </tr>
+          <!-- endDate -->
+          <tr>
+            <td>endDate</td>
+            <td>Date of resolution of the allergy (when it was deemed no longer necessary to track).</td>
+            <td>target-narrower-than-source</td>
+            <td>lastOccurrence</td>
+            <td>Date and/or time of the last known occurrence of a reaction.</td>
+            <td>FHIR has no explicit "resolution date". Closest is <code>lastOccurrence</code>. Alternatively, resolution can be implied from <code>clinicalStatus</code> = resolved.</td>
+          </tr>
+          <!-- reaction (container) -->
+          <tr>
+            <td>reaction</td>
+            <td>Adverse Reaction Events linked to exposure to substance.</td>
+            <td>equal</td>
+            <td>reaction</td>
+            <td>Details about each adverse reaction event.</td>
+            <td>0..* in both models.</td>
+          </tr>
+          <!-- reaction.manifestation -->
+          <tr>
+            <td>reaction.manifestation</td>
+            <td>Description of the clinical manifestation of the allergic reaction (e.g. anaphylactic shock, angioedema).</td>
+            <td>equal</td>
+            <td>reaction.manifestation</td>
+            <td>Clinical symptoms and/or signs that are observed during the reaction.</td>
+            <td>CodeableConcept; EHDS allows multiple; FHIR reaction.manifestation is 1..* CodeableConcept.</td>
+          </tr>
+          <!-- reaction.date -->
+          <tr>
+            <td>reaction.date</td>
+            <td>Date and time of allergy manifestation.</td>
+            <td>equal</td>
+            <td>reaction.onset</td>
+            <td>When the reaction occurred.</td>
+            <td>Both are date/time points.</td>
+          </tr>
+          <!-- reaction.severity -->
+          <tr>
+            <td>reaction.severity</td>
+            <td>Severity of the clinical manifestation.</td>
+            <td>equal</td>
+            <td>reaction.severity</td>
+            <td>Mild / moderate / severe.</td>
+            <td>FHIR has required VS; EHDS references eHDSISeverity.</td>
+          </tr>
+          <!-- reaction.onsetDate (EHDS subelement) -->
+          <tr>
+            <td>reaction.onsetDate</td>
+            <td>Date of the observation of the reaction.</td>
+            <td>equal</td>
+            <td>reaction.onset</td>
+            <td>When the reaction occurred.</td>
+            <td>EHDS distinguishes "date of observation"; FHIR has one <code>reaction.onset</code> → use that.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:2rem;color:#555;">
       Return to overview: <a href="modelmap2.html">EHDS Logical Models → FHIR Profiles</a>
-      </p>
-    </body>
-  </html>
+    </p>
+  </body>
+</html>
