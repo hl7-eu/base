@@ -41,7 +41,7 @@
             <td>header</td>
             <td>Common header for all patient-related data.</td>
             <td>relatedto</td>
-            <td>Flag</td>
+            <td>.</td>
             <td>General metadata.</td>
             <td>Dataset-level; not usually carried in Flag as-is.</td>
           </tr>

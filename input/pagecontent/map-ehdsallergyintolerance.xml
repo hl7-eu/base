@@ -36,6 +36,87 @@
           </tr>
         </thead>
         <tbody>
+          <!-- HEADER BLOCK (common dataset header) -->
+          <tr>
+            <td>header</td>
+            <td>Common header for all patient-related data.</td>
+            <td>relatedto</td>
+            <td>.</td>
+            <td>General metadata.</td>
+            <td>Dataset-level; not usually carried in AllergyIntolerance as-is.</td>
+          </tr>
+          <tr>
+            <td>header.subject</td>
+            <td>Patient/subject this alert is about.</td>
+            <td>equal</td>
+            <td>subject</td>
+            <td>Reference to the patient or subject of the allergy/intolerance.</td>
+            <td>Reference to Patient (or other subject).</td>
+          </tr>
+          <tr>
+            <td>header.identifier</td>
+            <td>Business identifier for the object.</td>
+            <td>equal</td>
+            <td>identifier</td>
+            <td>Business identifier for this allergy.</td>
+            <td>Copy over all identifiers if multiple.</td>
+          </tr>
+          <tr>
+            <td>header.authorship</td>
+            <td>Resource authoring details</td>
+            <td>relatedto</td>
+            <td>author</td>
+            <td>Author of the allergy/intolerance record.</td>
+            <td>Can reference Practitioner, PractitionerRole, or Organization.</td>
+          </tr>
+          <tr>
+            <td>header.authorship.author[x]</td>
+            <td>Who created/issued the alert.</td>
+            <td>equivalent</td>
+            <td>recorder</td>
+            <td>Who recorded the sensitivity.</td>
+            <td>Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.</td>
+          </tr>
+          <tr>
+            <td>header.authorship.datetime</td>
+            <td>Date/time the resource was issued.</td>
+            <td>equivalent</td>
+            <td>recordedDate</td>
+            <td>When the allergy/intolerance was recorded.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.lastUpdate</td>
+            <td>Last technical correction/update.</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.status</td>
+            <td>Status of the dataset/resource.</td>
+            <td>XXXX</td>
+            <td>XXXX</td>
+            <td>AllergyIntolerance status is mapped from EHDSAlert.status (see below).</td>
+            <td>Header status ≠ clinical alert status. Clarify the difference</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.statusReason[x]</td>
+            <td>Reason for current dataset status.</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+          </tr>
+          <tr>
+            <td>header.language</td>
+            <td>Language of the resource (IETF tag).</td>
+            <td>equivalent</td>
+            <td>language</td>
+            <td>Language used in the flag text.</td>
+            <td></td>
+          </tr>
           <!-- agentOrAllergen -->
           <tr>
             <td>agentOrAllergen</td>
@@ -55,11 +136,11 @@
             <td>Maps to <code>AllergyIntolerance.type</code> (allergy | intolerance | ...). Value sets: eHDSIAdverseEventType / HL7.</td>
           </tr>
           <!-- description -->
-          <tr>
+          <tr class="highlight-yellow">
             <td>description</td>
             <td>Textual description of the allergy or intolerance.</td>
             <td>source-is-broader-than-target</td>
-            <td>note.text</td>
+            <td>text or note.text</td>
             <td>Additional narrative about the allergy/intolerance.</td>
             <td>FHIR doesn't have a single free-text "description" element; use <code>AllergyIntolerance.note</code> (0..*). Could also populate <code>text.div</code> if profiling.</td>
           </tr>
@@ -104,10 +185,10 @@
           <tr>
             <td>endDate</td>
             <td>Date of resolution of the allergy (when it was deemed no longer necessary to track).</td>
-            <td>target-narrower-than-source</td>
-            <td>lastOccurrence</td>
+            <td>equal</td>
+            <td>extension:abatement</td>
             <td>Date and/or time of the last known occurrence of a reaction.</td>
-            <td>FHIR has no explicit "resolution date". Closest is <code>lastOccurrence</code>. Alternatively, resolution can be implied from <code>clinicalStatus</code> = resolved.</td>
+            <td></td>
           </tr>
           <!-- reaction (container) -->
           <tr>
@@ -132,8 +213,8 @@
             <td>reaction.date</td>
             <td>Date and time of allergy manifestation.</td>
             <td>equal</td>
-            <td>reaction.onset</td>
-            <td>When the reaction occurred.</td>
+            <td>reaction.date</td>
+            <td>Date and time of allergy manifestation.</td>
             <td>Both are date/time points.</td>
           </tr>
           <!-- reaction.severity -->
