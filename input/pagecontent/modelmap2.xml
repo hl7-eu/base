@@ -32,7 +32,8 @@
     </ul>
    <h4>
         <span class="group-emoji">🧩</span> Foundational Models
-    </h4>
+    </h4><a>   </a>
+    <p> </p>
     <div class="table-wrapper">
         <table class="model-index">
             <thead>
@@ -54,7 +55,7 @@
                     <td>
                         <a class="pill" href="map-ehdsaddress.html">EHDSAddress Mapping</a>
                     </td>
-                    <td>❌ Do not use</td>
+                    <td>🟡 Ready for first review</td>
                 </tr>
                 <tr>
                     <td>
@@ -78,7 +79,7 @@
                     <td>
                         <a class="pill" href="map-ehdstelecom.html">EHDSTelecom Mapping</a>
                     </td>
-                    <td>❌ Do not use</td>
+                    <td>🟡 Ready for first review</td>
                 </tr>
                 <tr>
                     <td>
@@ -90,14 +91,14 @@
                     <td>
                         <a class="pill" href="map-ehdsbodystructure.html">EHDSBodyStructure Mapping</a>
                     </td>
-                    <td>❌ Do not use</td>
+                    <td>🟡 Ready for first review</td>
                 </tr>
             </tbody>
         </table>
     </div>
     <h4>
         <span class="group-emoji">🧑‍⚕️</span> Entity Models
-    </h4>
+    </h4><a>   </a>
     <div class="table-wrapper">
         <table class="model-index">
             <thead>
@@ -119,7 +120,7 @@
                     <td>
                         <a class="pill" href="map-ehdspatient.html">EHDSPatient Mapping</a>
                     </td>
-                    <td>❌ Do not use</td>
+                    <td>🟡 Ready for first review</td>
                 </tr>
                 <tr>
                     <td>
@@ -131,7 +132,7 @@
                     <td>
                         <a class="pill" href="map-ehdspatientanimal.html">EHDSPatientAnimal Mapping</a>
                     </td>
-                    <td>❌ Do not use</td>
+                    <td>🟡 Ready for first review</td>
                 </tr>
                 <tr>
                     <td>
@@ -174,7 +175,7 @@
     </div>
     <h4>
         <span class="group-emoji">🩺</span> Clinical Information Models
-    </h4>
+    </h4><a>   </a>
     <div class="table-wrapper">
         <table class="model-index">
             <thead>
@@ -251,7 +252,7 @@
     </div>
     <h4>
         <span class="group-emoji">💊</span> Medication Models
-    </h4>
+    </h4><a>   </a>
     <div class="table-wrapper">
         <table class="model-index">
             <thead>
