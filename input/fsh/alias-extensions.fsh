@@ -41,6 +41,7 @@ Alias: $patient-mothersMaidenName = http://hl7.org/fhir/StructureDefinition/pati
 Alias: $patient-nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
 Alias: $procedure-method = http://hl7.org/fhir/StructureDefinition/procedure-method
 Alias: $procedure-targetBodyStructure = http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure
+Alias: $procedure-recorded-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Procedure.recorded
 Alias: $recordedSexOrGender = http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender
 Alias: $sexForClinicalUse = http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse
 Alias: $specimen-collection-body-site-reference-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite.reference

@@ -5,14 +5,18 @@
     <title>EHDSProcedure → Procedure</title>
     <link rel="stylesheet" type="text/css" href="map-pages.css" />
   </head>
-  <blockquote class="dragon">
-    <p>The content of this page is automatically generated and doesn't document the actual mapping.</p>    
-    <p>Please don't use this material for implementation purposes !</p>
-  </blockquote>
   <body>
-    <h3>EHDSProcedure → Procedure</h3><a>  </a>
+    <blockquote class="dragon">
+      <p>
+        <strong>Note:</strong> The content of this page is <strong>work in progress</strong> and may change based on ongoing discussions within the working group.</p>
+      <p>The technical solutions listed are <strong>possible candidates</strong> under consideration and are <strong>not yet approved</strong> or ready for implementation.</p>
+    </blockquote>
+    <h3>EHDSProcedure → Procedure</h3>
+    <a></a>
     <p>
-      This page describes the element-by-element mapping from the <strong>EHDSProcedure</strong> logical model to the FHIR <code>Procedure</code> profile in this Implementation Guide.
+      This page describes the element-by-element mapping from the
+      <strong>EHDSProcedure</strong> logical model to the FHIR
+      <code>Procedure</code> profile in this Implementation Guide.
     </p>
     <div class="table-wrap">
       <table summary="EHDSProcedure → Procedure">
@@ -33,77 +37,177 @@
           </tr>
         </thead>
         <tbody>
+          <!-- HEADER BLOCK (from EHDSDataSet) -->
           <tr>
-            <td>identifier</td>
-            <td>Identifier for the procedure record or act.</td>
+            <td>header</td>
+            <td>Common header for all patient-related data.</td>
+            <td>relatedto</td>
+            <td>.</td>
+            <td>General metadata.</td>
+            <td>Dataset-level; not usually carried in Procedure as-is.</td>
+          </tr>
+          <tr>
+            <td>header.subject</td>
+            <td>Patient/subject the procedure is about.</td>
+            <td>equal</td>
+            <td>subject</td>
+            <td>Who the procedure was performed on.</td>
+            <td>Reference to Patient (or other subject) as in FHIR Procedure.subject.</td>
+          </tr>
+          <tr>
+            <td>header.identifier</td>
+            <td>Business identifier for the object.</td>
             <td>equal</td>
             <td>identifier</td>
-            <td>Business identifier for the procedure.</td>
+            <td>Business identifier for this procedure.</td>
+            <td>Copy all identifiers if multiple exist.</td>
+          </tr>
+          <tr>
+            <td>header.authorship</td>
+            <td>Resource authoring / provenance details.</td>
+            <td>relatedto</td>
+            <td>recorder</td>
+            <td>Who recorded the procedure.</td>
+            <td>Procedure has <code>recorder</code> and <code>asserter</code>, not a generic "author".</td>
+          </tr>
+          <tr>
+            <td>header.authorship.author[x]</td>
+            <td>Who created/issued the record.</td>
+            <td>equivalent</td>
+            <td>recorder</td>
+            <td>Who recorded the procedure.</td>
+            <td>Reference to Practitioner / PractitionerRole / Patient / RelatedPerson per profile.</td>
+          </tr>
+          <tr>
+            <td>header.authorship.datetime</td>
+            <td>Date/time the resource was issued.</td>
+            <td>equivalent</td>
+            <td>recorded or extension:recorded</td>
+            <td>Date when the procedure was recorded</td>
+            <td>FHIR R5 Procedure supports <code>recorded</code>; pre-adopted this element in R4.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.lastUpdate</td>
+            <td>Last technical correction/update.</td>
+            <td>source-is-broader-than-target</td>
+            <td>meta.lastUpdated</td>
+            <td>Last system update timestamp.</td>
+            <td>EHDS header may have richer audit than FHIR <code>meta</code>.
+            </td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.status</td>
+            <td>Technical/administrative dataset status.</td>
+            <td>no-direct-equivalent</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+            <td>Do **not** confuse with <code>Procedure.status</code> (completed, in-progress, …).</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.statusReason[x]</td>
+            <td>Reason for current dataset status.</td>
+            <td>no-direct-equivalent</td>
+            <td>XXXXXXXX</td>
+            <td>XXXXXXXX</td>
+            <td>Requires IG-specific extension.</td>
+          </tr>
+          <tr>
+            <td>header.language</td>
+            <td>Language of the resource (IETF tag).</td>
+            <td>equivalent</td>
+            <td>language</td>
+            <td>Language used in text/narrative.</td>
             <td></td>
           </tr>
-          <tr>
-            <td>status</td>
-            <td>Status of the procedure (completed, in-progress).</td>
-            <td>equal</td>
-            <td>status</td>
-            <td>Procedure status.</td>
-            <td>Important for workflows and billing.</td>
-          </tr>
+          <!-- code -->
           <tr>
             <td>code</td>
-            <td>Coded description of the procedure performed.</td>
+            <td>Code identifying the procedure.</td>
             <td>equal</td>
             <td>code</td>
             <td>Procedure code.</td>
-            <td>May use national coding schemes or SNOMED CT.</td>
+            <td>EHDS prefers SNOMED CT; FHIR allows national classifications.</td>
           </tr>
+          <!-- date[x] -->
           <tr>
-            <td>subject</td>
-            <td>Who the procedure was performed on.</td>
+            <td>date[x]</td>
+            <td>Date and time of the procedure or interval of its performance.</td>
             <td>equal</td>
-            <td>subject</td>
-            <td>Patient / Animal Patient.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>performed[x]</td>
-            <td>Date/time or period when performed.</td>
-            <td>equal</td>
-            <td>performed[x]</td>
+            <td>performed[x] or occurrence[x]</td>
             <td>When the procedure was performed.</td>
-            <td>FHIR supports multiple data types.</td>
+            <td>Use <code>performedDateTime</code> or <code>performedPeriod</code> according to actual data type. <code>performed[x]</code> used in R4, <code>occurrence[x]</code> used in R5</td>
           </tr>
+          <!-- performer -->
           <tr>
             <td>performer</td>
-            <td>Who was involved in performing the procedure.</td>
+            <td>An actor who performed the procedure.</td>
             <td>equal</td>
             <td>performer</td>
-            <td>Performer(s) of the procedure, and their function/role.</td>
-            <td>References PractitionerRole / Practitioner / Organization.</td>
+            <td>Who performed the procedure and in what role.</td>
+            <td>FHIR Procedure.performer.actor → Practitioner / PractitionerRole / Organization; add role if available.</td>
           </tr>
-          <tr>
-            <td>location</td>
-            <td>Where the procedure was carried out.</td>
-            <td>equal</td>
-            <td>location</td>
-            <td>Location where the procedure occurred.</td>
-            <td>Reference to LocationEuCore.</td>
-          </tr>
+          <!-- bodySite -->
           <tr>
             <td>bodySite</td>
-            <td>Body site targeted/affected.</td>
+            <td>Procedure target body site; may include laterality.</td>
             <td>equal</td>
             <td>bodySite</td>
             <td>Target body site.</td>
-            <td>Can align with BodyStructure details.</td>
+            <td>Map EHDSBodyStructure → one or more <code>Procedure.bodySite</code>; laterality as qualifier.</td>
           </tr>
+          <!-- reason[x] -->
           <tr>
-            <td>reason</td>
-            <td>Clinical reason / indication for performing the procedure.</td>
+            <td>reason[x]</td>
+            <td>The reason why the procedure was performed (code or reference).</td>
             <td>equal</td>
-            <td>reason</td>
-            <td>Reason the procedure was performed.</td>
-            <td>In R4 often reasonCode / reasonReference; in R5 unified as reason.</td>
+            <td>reason or reasonCode / reasonReference</td>
+            <td>Indication/justification for the procedure.</td>
+            <td>In R4, codes go to <code>reasonCode</code>; references (Condition / Observation / Procedure) go to <code>reasonReference</code>; in R5 use the CodeableReference <code>reason</code>.</td>
+          </tr>
+          <!-- outcome -->
+          <tr>
+            <td>outcome</td>
+            <td>The outcome of the procedure – did it resolve the reasons?</td>
+            <td>equal</td>
+            <td>outcome</td>
+            <td>The result of the procedure.</td>
+            <td>CodeableConcept; EHDS prefers SNOMED CT.</td>
+          </tr>
+          <!-- complication -->
+          <tr>
+            <td>complication</td>
+            <td>Any complications during or immediately after the procedure.</td>
+            <td>equal</td>
+            <td>complication or complication/complicationDetail</td>
+            <td>Complication(s) following the procedure.</td>
+            <td>In R4 codes go to <code>complication</code>; reference (Condition) in <code>complicationDetail</code>. In R5 use the CodeableReference <code>complication</code>.</td>
+          </tr>
+          <!-- deviceUsed -->
+          <tr>
+            <td>deviceUsed</td>
+            <td>Device used to perform the procedure.</td>
+            <td>equal</td>
+            <td>used or usedCode / usedReference</td>
+            <td>Device that was used during the procedure.</td>
+            <td>In R4 <code>usedCode</code> only if you have no Device instance, <code>usedReference</code> if you refer a Device. In R5 use the CodeableReference <code>used</code>.</td>
+          </tr>
+          <!-- focalDevice -->
+          <tr>
+            <td>focalDevice</td>
+            <td>Device that is the focus of the procedure (implanted, removed, calibrated, etc.).</td>
+            <td>equal</td>
+            <td>focalDevice.manipulated</td>
+            <td>Manipulated/targeted device during the procedure.</td>
+            <td>Matches FHIR Procedure.focalDevice exactly.</td>
+          </tr>
+          <!-- note -->
+          <tr>
+            <td>note</td>
+            <td>Additional information about the procedure.</td>
+            <td>equal</td>
+            <td>note</td>
+            <td>Comments about the procedure.</td>
+            <td>EHDS has 0..1 string; FHIR allows 0..* Annotation → map to one Annotation entry.</td>
           </tr>
         </tbody>
       </table>
