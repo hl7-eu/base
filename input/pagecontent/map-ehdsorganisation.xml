@@ -61,7 +61,16 @@
             <td>address</td>
             <td>Postal / visit address for the organisation.</td>
             <td>equal</td>
-            <td>address / contact.address</td>
+            <td>address<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>An address for the organization.</td>
+            <td>In R4 typically address; in R5 often contact.address.</td>
+          </tr>
+          <tr>
+            <td>address</td>
+            <td>Postal / visit address for the organisation.</td>
+            <td>equal</td>
+            <td>contact.address<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            </td>
             <td>An address for the organization.</td>
             <td>In R4 typically address; in R5 often contact.address.</td>
           </tr>
@@ -69,7 +78,16 @@
             <td>telecom</td>
             <td>General contact details (phone, fax, email).</td>
             <td>equal</td>
-            <td>telecom / contact.telecom</td>
+            <td>telecom<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Organization telecom.</td>
+            <td>In R4 telecom; in R5 contact.telecom.</td>
+          </tr>
+          <tr>
+          <td>telecom</td>
+            <td>General contact details (phone, fax, email).</td>
+            <td>equal</td>
+            <td>contact.telecom<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            </td>
             <td>Organization telecom.</td>
             <td>In R4 telecom; in R5 contact.telecom.</td>
           </tr>
@@ -85,7 +103,7 @@
       </table>
     </div>
     <p style="margin-top:2rem;color:#555;">
-      Return to overview: <a href="modelmap2.html">EHDS Logical Models → FHIR Profiles</a>
+      Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
     </p>
   </body>
 </html>

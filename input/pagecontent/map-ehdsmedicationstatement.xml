@@ -93,15 +93,26 @@
             <td>reason</td>
             <td>Why the medication is/was taken.</td>
             <td>relatedto</td>
-            <td>reason</td>
+            <td>reasonCode / reasonReference<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Indication / therapy rationale.</td>
-            <td>R4 often reasonCode / reasonReference; R5 unifies as reason.</td>
+            <td>In R4, codes go to <code>reasonCode</code>; references (Condition / Observation / Procedure) go to <code>reasonReference</code>.
+            </td>     
+          </tr>
+          <tr>
+            <td>reason</td>
+            <td>Why the medication is/was taken.</td>
+            <td>relatedto</td>
+            <td>reason<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            </td>
+            <td>Indication / therapy rationale.</td>        
+            <td>In R5 use the CodeableReference <code>reason</code>.
+            </td>        
           </tr>
         </tbody>
       </table>
     </div>
     <p style="margin-top:2rem;color:#555;">
-      Return to overview: <a href="modelmap2.html">EHDS Logical Models → FHIR Profiles</a>
+      Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
     </p>
   </body>
 </html>

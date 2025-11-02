@@ -117,7 +117,7 @@
       </table>
     </div>
     <p style="margin-top:2rem;color:#555;">
-      Return to overview: <a href="modelmap2.html">EHDS Logical Models → FHIR Profiles</a>
+      Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
     </p>
   </body>
 </html>

@@ -64,8 +64,8 @@ pages:
     title: Introduction
   modelmap.html:
     title: Model Map
-  modelmap2.html:
-    title: Model Map 2
+  modelmap-old.html:
+    title: Model Map (old)
   logicalmodels.md:
     title: Logical Models
   missing-data.md:
@@ -181,7 +181,7 @@ menu:
 #   Workflow 
   Implementation:
     Mapping to Profiles: modelmap.html
-    Mapping to Profiles 2: modelmap2.html
+    Mapping to Profiles (old): modelmap-old.html
 #    Examples: examples.html
 #    Implementation Notes: implementationnotes.html  
   About:
@@ -292,7 +292,7 @@ groups:
        - StructureDefinition/practitioner-eu
        - StructureDefinition/practitionerRole-eu
        - StructureDefinition/organization-eu
-   EuCoreProfiles (STU 1):
+   EuCoreProfilesSTU1:
       name:  HL7 Europe Core Profiles
       description: Core profiles for the European context.
       resources:
@@ -303,7 +303,7 @@ groups:
         - StructureDefinition/patient-animal-eu-core
         - StructureDefinition/bodyStructure-eu-core
         - StructureDefinition/location-eu-core
-   EuCoreProfiles (STU 2 - WIP):
+   EuCoreProfilesSTU2:
       name:  HL7 Europe Core Profiles (STU 2 - WIP)
       description: Core profiles for the European context.
       resources:

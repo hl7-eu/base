@@ -1,932 +1,294 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml">
-        <head>
-                <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-                <title>Model Map</title>
-                <style type="text/css">
-body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 1rem; background:#f5f7fb; }
-h1 { margin-bottom: 1rem; }
-.toc { background:#fff; border:1px solid #d0d7de; border-radius:10px; padding:10px 12px; margin-bottom: 1rem; }
-.toc a { text-decoration:none; display:inline-block; margin:4px 8px 4px 0; padding:4px 8px; border:1px solid #e1e4e8; border-radius:999px; }
-h2 { margin-top: 2rem; }
-.table-wrap { overflow:auto; border:1px solid #d0d7de; border-radius:10px; padding:8px; background:#fff; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
-table { border-collapse:collapse; width:100%; table-layout:fixed; }
-thead th { background:#f6f8fa; font-weight:600; }
-th, td { border:1px solid #d0d7de; padding:4px 6px; vertical-align:top; overflow:hidden; text-overflow:ellipsis; }
-col { border-right:0; }
-caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
-.sheet-meta { font-size:12px; color:#666; margin: 0 0 8px 0; display:none;}
-.grouphead { text-align:center; }
-.relhead { background-color:#6F2E80 !important; color:#ffffff !important; }
-.relsub  { background-color:#E6D7EC !important; }
-                </style>
-        </head>
-        <body>
-                <div class="toc">
-                        <strong>Maps:</strong>
-                        <a href="#EHDSHumanName">EHDSHumanName</a>
-                        <a href="#EHDSLocation">EHDSLocation</a>
-                        <a href="#EHDSOrganisation">EHDSOrganisation</a>
-                        <a href="#EHDSPatient">EHDSPatient</a>
-                        <a href="#EHDSPatientAnimal">EHDSPatientAnimal</a>
-                        <a href="#EHDSTelecom">EHDSTelecom</a>
-                        <a href="#EHDSAddress">EHDSAddress</a>
-                        <a href="#EHDSHealthProfessional" shape="rect">EHDSHealthProfessional</a>
-                        <a href="#EHDSBodyStructure" shape="rect">EHDSBodyStructure</a>
-                </div>
-                <h3 id="EHDSHumanName">EHDSHumanName</h3>
-                <a>   </a>
-                <p> </p>
-                <p><a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHumanName"><strong>EHDSHumanName</strong></a> to <a href="https://hl7.org/fhir/datatypes.html#HumanName">
-                <strong>HumanName</strong>                               
-        </a> Model Map</p>
-                <p> </p>
-                <div class="table-wrap">
-                        <table summary="EHDSHumanName">
-                                <thead>
-                                        <tr>
-                                                <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Logical Model</th>
-                                                <th class="relhead" style="font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Relationship</th>
-                                                <th colspan="3" style="background-color: #be072f; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">HumanName</th>
-                                        </tr>
-                                        <tr>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Element</th>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Description</th>
-                                                <th class="relsub" style="font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Relationship</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Element</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Description</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Notes</th>
-                                        </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                                <td>use</td>
-                                                <td>Use</td>
-                                                <td>equal</td>
-                                                <td>use</td>
-                                                <td>Name Use</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>text</td>
-                                                <td>Text</td>
-                                                <td>equal</td>
-                                                <td>text</td>
-                                                <td>Text representation of the full name</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>family</td>
-                                                <td>Family</td>
-                                                <td>equal</td>
-                                                <td>family</td>
-                                                <td>Family name (often called &#x27;Surname&#x27;)</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>given</td>
-                                                <td>Given</td>
-                                                <td>equal</td>
-                                                <td>given</td>
-                                                <td>Given names (not always &#x27;first&#x27;). Includes middle names</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>prefix</td>
-                                                <td>Prefix</td>
-                                                <td>equal</td>
-                                                <td>prefix</td>
-                                                <td>Parts that come before the name</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>suffix</td>
-                                                <td>Suffix</td>
-                                                <td>equal</td>
-                                                <td>suffix</td>
-                                                <td>Parts that come after the name</td>
-                                                <td></td>
-                                        </tr>
-                                </tbody>
-                        </table>
-                </div>
-                <h3 id="EHDSLocation">EHDSLocation</h3>
-                <a>   </a>
-                <p> </p>
-                <p>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSLocation">
-                                <strong>EHDSLocation</strong>
-                        </a> to <a href="StructureDefinition-location-eu-core.html">
-                        <strong>LocationEuCore</strong>
-                </a> Model Map</p>
-        <p></p>
-                <div class="table-wrap">
-                        <table summary="EHDSLocation">
-                                <thead>
-                                        <tr>
-                                                <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Logical Model</th>
-                                                <th class="relhead" style="font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Relationship</th>
-                                                <th colspan="3" style="background-color: #be072f; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">LocationEuCore</th>
-                                        </tr>
-                                        <tr>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Element</th>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Description</th>
-                                                <th class="relsub" style="font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Relationship</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Element</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Description</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Notes</th>
-                                        </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                                <td>identifier</td>
-                                                <td>Identifier</td>
-                                                <td>equal</td>
-                                                <td>identifier</td>
-                                                <td>Unique code or number identifying the location to its users</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>name</td>
-                                                <td>Name</td>
-                                                <td>equal</td>
-                                                <td>name</td>
-                                                <td>Location name</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>description</td>
-                                                <td>Description</td>
-                                                <td>equal</td>
-                                                <td>telecom</td>
-                                                <td>Location telecom</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>type</td>
-                                                <td>Type</td>
-                                                <td>equal</td>
-                                                <td>physicalType</td>
-                                                <td>Location type</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>address</td>
-                                                <td>Address</td>
-                                                <td>equal</td>
-                                                <td>address</td>
-                                                <td>Physical location</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>managingOrganisation</td>
-                                                <td>Managing organisation</td>
-                                                <td>equal</td>
-                                                <td>managingOrganization</td>
-                                                <td>Managing organization</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>partOf</td>
-                                                <td>Part of</td>
-                                                <td>equal</td>
-                                                <td>partOf</td>
-                                                <td>Another Location this one is physically a part of</td>
-                                                <td></td>
-                                        </tr>
-                                </tbody>
-                        </table>
-                </div>
-                <h3 id="EHDSOrganisation">EHDSOrganisation</h3>
-                <a>   </a>
-                <p> </p>
-                <p>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation">
-                                <strong>EHDSOrganisation</strong>
-                        </a> to <a href="StructureDefinition-organization-eu-core.html">
-                        <strong>OrganizationEuCore</strong>
-                </a> Model Map</p>
-        <p></p>
-                <div class="table-wrap">
-                        <table summary="EHDSOrganisation">
-                                <thead>
-                                        <tr>
-                                                <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Logical Model</th>
-                                                <th class="relhead" style="font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Relationship</th>
-                                                <th colspan="3" style="background-color: #be072f; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">OrganizationEuCore</th>
-                                        </tr>
-                                        <tr>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Element</th>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Description</th>
-                                                <th class="relsub" style="font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Relationship</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Element</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Description</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Notes</th>
-                                        </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                                <td>identifier</td>
-                                                <td>Identifier</td>
-                                                <td>equal</td>
-                                                <td>identifier</td>
-                                                <td>Identifies this organization across multiple systems</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>type</td>
-                                                <td>Type</td>
-                                                <td>equal</td>
-                                                <td>type</td>
-                                                <td>Organization type</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>name</td>
-                                                <td>Name</td>
-                                                <td>equal</td>
-                                                <td>name</td>
-                                                <td>Name of the organization</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>address</td>
-                                                <td>Address</td>
-                                                <td>equal</td>
-                                                <td>address</td>
-                                                <td>An address for the organization</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>telecom</td>
-                                                <td>Telecom</td>
-                                                <td>equal</td>
-                                                <td>telecom</td>
-                                                <td>Organization telecom</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr style="height:44.25pt">
-                                                <td>partOf</td>
-                                                <td>Part of</td>
-                                                <td>equal</td>
-                                                <td>partOf</td>
-                                                <td>The organization of which this organization is part of: e.g. an ERN</td>
-                                                <td></td>
-                                        </tr>
-                                </tbody>
-                        </table>
-                </div>
-                <h3 id="EHDSPatient">EHDSPatient</h3>
-                <a>   </a>
-                <p> </p>
-                <p>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient">
-                                <strong>EHDSPatient</strong>
-                        </a> to <a href="StructureDefinition-patient-eu-core.html">
-                        <strong>PatientEuCore</strong>
-                </a> Model Map</p>
-        <p></p>
-                <div class="table-wrap">
-                        <table summary="EHDSPatient">
-                                <thead>
-                                        <tr>
-                                                <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Logical Model</th>
-                                                <th class="relhead" style="font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Relationship</th>
-                                                <th colspan="3" style="background-color: #be072f; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">PatientEuCore</th>
-                                        </tr>
-                                        <tr>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Element</th>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Description</th>
-                                                <th class="relsub" style="font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Relationship</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Element</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Description</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Notes</th>
-                                        </tr>
-                                </thead>
-                                <tbody>
-                                        <tr style="height:59.0pt">
-                                                <td>personalIdentifier</td>
-                                                <td>An identifier of the patient that is unique within a defined scope (typically a national patient identifier, but it can also be a temporary identifier issued by the EHR).</td>
-                                                <td>equal</td>
-                                                <td>identifier</td>
-                                                <td>Patient identifiers</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>name</td>
-                                                <td>Name associated with the patient/subject.</td>
-                                                <td>equal</td>
-                                                <td>name</td>
-                                                <td>A name associated with the patient</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>dateOfBirth</td>
-                                                <td>Date of birth</td>
-                                                <td>equal</td>
-                                                <td>birthDate</td>
-                                                <td>The date of birth for the patient</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>administrativeGender</td>
-                                                <td>Administrative gender</td>
-                                                <td>equal</td>
-                                                <td>gender</td>
-                                                <td>Administrative Gender</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>address</td>
-                                                <td>Mailing and home or office addresses.</td>
-                                                <td>equal</td>
-                                                <td>address</td>
-                                                <td>An address for the individual</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>telecom</td>
-                                                <td>Telecommunication contact information (addresses) associated to a person.</td>
-                                                <td>equal</td>
-                                                <td>telecom</td>
-                                                <td>A contact detail for the patient</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>maritalStatus</td>
-                                                <td>Marital (civil) status of a patient</td>
-                                                <td>equal</td>
-                                                <td>maritalStatus</td>
-                                                <td>Marital (civil) status of a patient</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr style="height:30.25pt">
-                                                <td>communicationLanguage</td>
-                                                <td>The language which can be used to communicate with the patient about his or her health.</td>
-                                                <td>equal</td>
-                                                <td>communication.language</td>
-                                                <td>Communication language</td>
-                                                <td></td>
-                                        </tr>
-                                </tbody>
-                        </table>
-                </div>
-                <h3 id="EHDSPatientAnimal">EHDSPatientAnimal</h3>
-                <a>   </a>
-                <p> </p>
-                <p>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatientAnimal">
-                                <strong>EHDSPatientAnimal</strong>
-                        </a> to <a href="StructureDefinition-patient-animal-eu-core.html">
-                        <strong>PatientAnimalEuCore</strong>
-                </a> Model Map</p>
-        <p></p>
-                <div class="table-wrap">
-                        <table summary="EHDSPatientAnimal">
-                                <thead>
-                                        <tr>
-                                                <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">Logical Model</th>
-                                                <th class="relhead" style="font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Relationship</th>
-                                                <th colspan="3" style="background-color: #be072f; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">PatientAnimalEu</th>
-                                        </tr>
-                                        <tr>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Element</th>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Description</th>
-                                                <th class="relsub" style="font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Relationship</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Element</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Description</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Notes</th>
-                                        </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                                <td>animalIdentifier</td>
-                                                <td>Animal identifier</td>
-                                                <td>equal</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">identifier</td>
-                                                <td>An identifier for this patient</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>species</td>
-                                                <td>Species</td>
-                                                <td>equal</td>
-                                                <td>extension:patient-animal.extension:species</td>
-                                                <td>The animal species. E.g. Dog, Cow.</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>breed</td>
-                                                <td>Breed</td>
-                                                <td>equal</td>
-                                                <td>extension:patient-animal.extension:breed</td>
-                                                <td>The breed of an animal.</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>genderStatus</td>
-                                                <td>Gender status</td>
-                                                <td>equal</td>
-                                                <td>extension:patient-animal.extension:genderStatus</td>
-                                                <td>The state of the animal&#x27;s reproductive organs.</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>name</td>
-                                                <td>Name</td>
-                                                <td>equal</td>
-                                                <td>name</td>
-                                                <td>A name associated with the patient</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr style="height:15.5pt">
-                                                <td>dateOfBirth</td>
-                                                <td>Date of birth</td>
-                                                <td>equal</td>
-                                                <td>birthDate</td>
-                                                <td>The date of birth for the patient</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>gender</td>
-                                                <td>Gender</td>
-                                                <td>relatedto</td>
-                                                <td>gender</td>
-                                                <td>A recorded sex or gender property for the individual</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal"></td>
-                                        </tr>
-                                        <tr>
-                                                <td>address</td>
-                                                <td>Address</td>
-                                                <td>equal</td>
-                                                <td>address</td>
-                                                <td>An address for the individual</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr style="height:30.25pt">
-                                                <td>deceased[x]</td>
-                                                <td>Deceased</td>
-                                                <td>equal</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">deceased[x]</td>
-                                                <td>Indicates if the individual is deceased or not</td>
-                                                <td></td>
-                                        </tr>
-                                </tbody>
-                        </table>
-                </div>
-                <h3 id="EHDSTelecom">EHDSTelecom</h3>
-                <a>   </a>
-                <p> </p>
-                <p>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSTelecom">
-                                <strong>EHDSTelecom</strong>
-                        </a> to <a href="https://hl7.org/fhir/datatypes.html#ContactPoint">
-                        <strong>ContactPoint</strong>
-                </a> Model Map</p>
-        <p></p>
-                <div class="table-wrap">
-                        <table summary="EHDSTelecom">
-                                <thead>
-                                        <tr>
-                                                <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">Logical Model</th>
-                                                <th class="relhead" style="font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Relationship</th>
-                                                <th colspan="3" style="background-color: #be072f; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">ContactPoint</th>
-                                        </tr>
-                                        <tr>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Element</th>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Description</th>
-                                                <th class="relsub" style="font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Relationship</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Element</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Description</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Notes</th>
-                                        </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                                <td>use</td>
-                                                <td>Use</td>
-                                                <td>equal</td>
-                                                <td>use</td>
-                                                <td>Purpose of this contact point</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>type</td>
-                                                <td>Type</td>
-                                                <td>equal</td>
-                                                <td>system</td>
-                                                <td>Telecommunications form for contact point</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>value</td>
-                                                <td>Value</td>
-                                                <td>equal</td>
-                                                <td>value</td>
-                                                <td>The actual contact point details</td>
-                                                <td></td>
-                                        </tr>
-                                </tbody>
-                        </table>
-                </div>
-                <h3 id="EHDSAddress">EHDSAddress</h3>
-                <a>   </a>
-                <p> </p>
-                <p>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAddress">
-                                <strong>EHDSAddress</strong>
-                        </a> to <a href="StructureDefinition-Address-eu.html">
-                        <strong>AddressEu</strong>
-                </a> Model Map</p>
-        <p></p>
-                <div class="table-wrap">
-                        <table summary="EHDSAddress">
-                                <thead>
-                                        <tr>
-                                                <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Logical Model</th>
-                                                <th class="relhead" style="font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Relationship</th>
-                                                <th colspan="3" style="background-color: #be072f; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">AddressEu</th>
-                                        </tr>
-                                        <tr>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Element</th>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Description</th>
-                                                <th class="relsub" style="font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Relationship</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Element</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Description</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Notes</th>
-                                        </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                                <td>use</td>
-                                                <td>Purpose of the address</td>
-                                                <td>equal</td>
-                                                <td>use</td>
-                                                <td>purpose of this address</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr style="height:59.0pt">
-                                                <td>type</td>
-                                                <td>Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.</td>
-                                                <td>equal</td>
-                                                <td>type</td>
-                                                <td>The type of an address (physical / postal).</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>text</td>
-                                                <td>Text representation of the address</td>
-                                                <td>equal</td>
-                                                <td>text</td>
-                                                <td>Text representation of the address</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>street</td>
-                                                <td>Name of the street</td>
-                                                <td>equal</td>
-                                                <td>line.extension:streetName</td>
-                                                <td>streetName</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>houseNumber</td>
-                                                <td>House number</td>
-                                                <td>equal</td>
-                                                <td>line.extension:houseNumber</td>
-                                                <td>houseNumber</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>postBox</td>
-                                                <td>Post box</td>
-                                                <td>equal</td>
-                                                <td>line.extension:postBox</td>
-                                                <td>postBox</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>city</td>
-                                                <td>City</td>
-                                                <td>equal</td>
-                                                <td>city</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Name of city, town etc.</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>postalCode</td>
-                                                <td>Postal code</td>
-                                                <td>equal</td>
-                                                <td>postalCode</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Postal code for area</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>country</td>
-                                                <td>Country name and country code</td>
-                                                <td>equivalent</td>
-                                                <td>country</td>
-                                                <td>Country </td>
-                                                <td>for the country name</td>
-                                        </tr>
-                                        <tr>
-                                                <td>""</td>
-                                                <td>Country name and country code</td>
-                                                <td>equivalent</td>
-                                                <td>extension:countryCode</td>
-                                                <td>code for string</td>
-                                                <td>for the country name</td>                                                
-                                        </tr>
-                                </tbody>
-                        </table>
-                </div>
-                <h3 id="EHDSHealthProfessional">EHDSHealthProfessional</h3>
-                <a>   </a>
-                <p> </p>
-                <h4 id="EHDSHealthProfessional-1">PractitionerRoleEuCore</h4>
-                <a>   </a>
-                <p> </p>
-                <p>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional">
-                                <strong>EHDSHealthProfessional</strong>
-                        </a> to <a href="StructureDefinition-practitionerRole-eu-core.html">
-                        <strong>PractitionerRoleEuCore</strong>
-                </a> Model Map</p>
-        <p></p>
-                <div class="table-wrap">
-                        <table summary="EHDSHealthProfessional-1">
-                                <thead>
-                                        <tr>
-                                                <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">Logical Model</th>
-                                                <th class="relhead" style="font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Relationship</th>
-                                                <th colspan="3" style="background-color: #be072f; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">PractitionerRoleEuCore</th>
-                                        </tr>
-                                        <tr>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Element</th>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Description</th>
-                                                <th class="relsub" style="font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Relationship</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Element</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Description</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Notes</th>
-                                        </tr>
-                                </thead>
-                                <tbody>
-                                        <tr style="height:44.25pt">
-                                                <td>identifier</td>
-                                                <td>An identifier of the health professional that is unique within a defined scope. Example: National health professional ID. Multiple identifiers could be provided.</td>
-                                                <td>narrower</td>
-                                                <td>identifier</td>
-                                                <td>Business identifier</td>
-                                                <td>The mapping depends on the type of identifier</td>
-                                        </tr>
-                                        <tr style="height:45.0pt">
-                                                <td>name</td>
-                                                <td>Name of the health professional that has been treating or taking responsibility for the patient.</td>
-                                                <td>relatedto </td>
-                                                <td>practitioner</td>
-                                                <td>Practitioner that is able to provide the defined services for the organization</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr style="height:89.25pt">
-                                                <td>address</td>
-                                                <td>Mailing and office or home addresses. The addresses are always sequences of address parts (e.g. street address line, country, postcode, city) even if postal address formats may vary depending on the country. An address may or may not include a specific use code; if this attribute is not present it is assumed to be the default address useful for any purpose.</td>
-                                                <td>relatedto</td>
-                                                <td>practitioner</td>
-                                                <td>Practitioner that is able to provide the defined services for the organization</td>
-                                                <td>The mapping depends on the type of address</td>
-                                        </tr>
-                                        <tr style="height:89.25pt">
-                                                <td>""</td>
-                                                <td>Mailing and office or home addresses. The addresses are always sequences of address parts (e.g. street address line, country, postcode, city) even if postal address formats may vary depending on the country. An address may or may not include a specific use code; if this attribute is not present it is assumed to be the default address useful for any purpose.</td>
-                                                <td>relatedto</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">location</td>
-                                                <td>The location(s) at which this practitioner provides care</td>
-                                                <td>The mapping depends on the type of address</td>
-                                        </tr>
-                                        <tr style="height:59.0pt">
-                                                <td>telecom</td>
-                                                <td>Telecommunication contact information (addresses) associated with a person, such as phone number, email, or messaging service. Multiple telecommunication addresses might be provided.</td>
-                                                <td>relatedto</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">telecom</td>
-                                                <td>Contact details that are specific to the role/location/service</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr style="height:73.75pt">
-                                                <td>professionalRole</td>
-                                                <td>Professional role that the health professional is practicing at a given organisation. This is a generalisation of the FHIR PractitionerRole resource, which is used to represent the role of a practitioner in a specific context, such as a specific organisation or location.</td>
-                                                <td>relatedto</td>
-                                                <td>.</td>
-                                                <td></td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>professionalRole.role</td>
-                                                <td>Health professional role. Multiple roles could be provided.</td>
-                                                <td>equal</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">code</td>
-                                                <td>Roles which this practitioner may perform</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td>professionalRole.organisation</td>
-                                                <td>The organisation where this role is available</td>
-                                                <td>equal</td>
-                                                <td>organisation</td>
-                                                <td>The organisation where this role is available</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr style="height:30.25pt">
-                                                <td>professionalRole.specialty</td>
-                                                <td>The specialty of a practitioner that describes the functional role they are practicing at a given organisation</td>
-                                                <td>equal</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">specialty</td>
-                                                <td>Specific specialty of the practitioner</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                        </tr>
-                                </tbody>
-                        </table>
-                </div>
-                <h4 id="EHDSHealthProfessional-2">PractitionerRoleEuCore</h4>
-                <a>   </a>
-                <p> </p>
-                <p>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional">
-                                <strong>EHDSHealthProfessional</strong>
-                        </a> to <a href="StructureDefinition-practitioner-eu-core.html">
-                        <strong>PractitionerEuCore</strong>
-                </a> Model Map</p>
-        <p></p>
-                <div class="table-wrap">
-                        <table summary="EHDSHealthProfessional-2">
-                                <thead>
-                                        <tr>
-                                                <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">Logical Model</th>
-                                                <th class="relhead" style="font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Relationship</th>
-                                                <th colspan="3" style="background-color: #be072f; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">PractitionerEuCore</th>
-                                        </tr>
-                                        <tr>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Element</th>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Description</th>
-                                                <th class="relsub" style="font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Relationship</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Element</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Description</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Notes</th>
-                                        </tr>
-                                </thead>
-                                <tbody>
-                                        <tr style="height:44.25pt">
-                                                <td>identifier</td>
-                                                <td>An identifier of the health professional that is unique within a defined scope. Example: National health professional ID. Multiple identifiers could be provided.</td>
-                                                <td>narrower</td>
-                                                <td>identifier</td>
-                                                <td>Practitioner identifier</td>
-                                                <td>The mapping depends on the type of identifier</td>
-                                        </tr>
-                                        <tr style="height:30.25pt">
-                                                <td>name</td>
-                                                <td>Name of the health professional that has been treating or taking responsibility for the patient.</td>
-                                                <td>equal</td>
-                                                <td>name</td>
-                                                <td>Practitioner Name</td>
-                                                <td></td>
-                                        </tr>
-                                        <tr style="height:88.5pt">
-                                                <td>address</td>
-                                                <td>Mailing and office or home addresses. The addresses are always sequences of address parts (e.g. street address line, country, postcode, city) even if postal address formats may vary depending on the country. An address may or may not include a specific use code; if this attribute is not present it is assumed to be the default address useful for any purpose.</td>
-                                                <td>narrower</td>
-                                                <td>address</td>
-                                                <td>Address(es) of the practitioner that are not role specific (typically home address)</td>
-                                                <td>The mapping depends on the type of address</td>
-                                        </tr>
-                                        <tr style="height:59.75pt">
-                                                <td>telecom</td>
-                                                <td>Telecommunication contact information (addresses) associated with a person, such as phone number, email, or messaging service. Multiple telecommunication addresses might be provided.</td>
-                                                <td>narrower</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">telecom</td>
-                                                <td>A contact detail for the practitioner (that apply to all roles)</td>
-                                                <td>The mapping depends on the type of telecom</td>
-                                        </tr>
-                                        <tr style="height:74.5pt">
-                                                <td>professionalRole</td>
-                                                <td>Professional role that the health professional is practicing at a given organisation. This is a generalisation of the FHIR PractitionerRole resource, which is used to represent the role of a practitioner in a specific context, such as a specific organisation or location.</td>
-                                                <td>unmatched </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                        </tr>
-                                        <tr style="height:15.5pt">
-                                                <td>professionalRole.role</td>
-                                                <td>Health professional role. Multiple roles could be provided.</td>
-                                                <td>unmatched </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                        </tr>
-                                        <tr style="height:15.5pt">
-                                                <td>professionalRole.organisation</td>
-                                                <td>The organisation where this role is available</td>
-                                                <td>unmatched </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                        </tr>
-                                        <tr style="height:30.25pt">
-                                                <td>professionalRole.specialty</td>
-                                                <td>The specialty of a practitioner that describes the functional role they are practicing at a given organisation</td>
-                                                <td>unmatched </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                        </tr>
-                                </tbody>
-                        </table>
-                </div>
-                <h3 id="EHDSBodyStructure">EHDSBodyStructure</h3>
-                <a>   </a>
-                <p> </p>
-                <p>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSBodyStructure">
-                                <strong>EHDSBodyStructure</strong>
-                        </a> to <a href="StructureDefinition-bodyStructure-eu-core.html">
-                        <strong>BodyStructureEuCore</strong>
-                </a> Model Map</p>
-        <p></p>
-                <div class="table-wrap">
-                        <table summary="EHDSBodyStructure">
-                                <thead>
-                                        <tr>
-                                                <th colspan="2" style="background-color: #1f54d1; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">Logical Model</th>
-                                                <th class="relhead" style="font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:nowrap">Relationship</th>
-                                                <th colspan="3" style="background-color: #be072f; color: #ffffff; font-size:11.0pt;font-family:'Calibri';text-align:center;white-space:normal">BodyStructureEuCore</th>
-                                        </tr>
-                                        <tr>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Element</th>
-                                                <th style="background-color: #adc3f6; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Description</th>
-                                                <th class="relsub" style="font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:nowrap">Relationship</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Element</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Description</th>
-                                                <th style="background-color: #d78496; font-weight:bold;font-size:11.0pt;font-family:'Calibri';text-align:center;vertical-align:top;white-space:normal">Notes</th>
-                                        </tr>
-                                </thead>
-                                <tbody>
-                                        <tr style="height:15.5pt">
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">identifier</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Identifier for this instance of the anatomical structure.</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">equal</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">identifier</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Bodystructure identifier</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal"></td>
-                                        </tr>
-                                        <tr style="height:45.0pt">
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">morphology</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">The kind of structure being represented by the body structure at BodyStructure.location. This can define both normal and abnormal morphologies.</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">equal</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">morphology</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Kind of Structure</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal"></td>
-                                        </tr>
-                                        <tr style="height:15.5pt">
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">location</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Body site</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">equal</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">location</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Body site</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal"></td>
-                                        </tr>
-                                        <tr style="height:30.25pt">
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">locationQualifier</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Additional qualifier of the body structure (e.g. upper, lower, left side).</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">equal</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">locationQualifier</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Body site modifier</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal"></td>
-                                        </tr>
-                                        <tr style="height:15.5pt">
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">laterality</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Body structure laterality (e.g. left, right)</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">equal</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">extension[laterality]</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Body Structure Laterality</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal"></td>
-                                        </tr>
-                                        <tr>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">description</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Textual description of the body structure</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">equal</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">text</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Text summary of the resource, for human interpretation</td>
-                                                <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal"></td>
-                                        </tr>
-                                </tbody>
-                        </table>
-                </div>
-        </body>
-</html>
+<div xmlns="http://www.w3.org/1999/xhtml" class="model-map-block">
+    <head>
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+        <title>EHDS Logical Models to FHIR Profiles Mapping</title>    
+    <link rel="stylesheet" type="text/css" href="map-pages.css" />
+</head>
+    <!-- <td>✅ Ready for review</td> -->
+    <h3>EHDS Logical Models → FHIR Profiles</h3>
+    <a>  </a>
+    <p>
+      The Xt-EHR Joint Action defines EHDS logical data models for core clinical and
+      administrative concepts. This Implementation Guide provides HL7 FHIR profiles
+      that realise those models.
+    </p>
+    <div class="callout-wrapper">
+        <div class="callout-box">
+            <strong>Ongoing alignment:</strong>
+            The Xt-EHR logical models are under active revision and continuous refinement.
+            Updates from Xt-EHR will be progressively incorporated into this Implementation
+            Guide to maintain alignment with the evolving EHDS specifications.
+        </div>
+    </div>
+    <p>
+      The sections below group the EHDS logical models into categories.
+    </p>
+    <p>Each table shows:</p>
+    <ul>
+      <li>the logical model</li>
+      <li>the FHIR datatype or profile(s) used in this IG</li>
+      <li>a link to the detailed element-by-element mapping</li>
+    </ul>
+   <h4>
+        <span class="group-emoji">🧩</span> Foundational Models
+    </h4><a>   </a>
+    <p> </p>
+    <div class="table-wrapper">
+        <table class="model-index">
+            <thead>
+                <tr>
+                    <th>EHDS Logical Model</th>
+                    <th>FHIR Profile / Type in this IG</th>
+                    <th>Mapping Details</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAddress.html" target="_blank">EHDSAddress</a>
+                    </td>
+                    <td>
+                        <code>AddressEu</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdsaddress.html">EHDSAddress Mapping</a>
+                    </td>
+                    <td>🟡 Ready for first review</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSHumanName.html" target="_blank">EHDSHumanName</a>
+                    </td>
+                    <td>
+                        <code>HumanName</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdshumanname.html">EHDSHumanName Mapping</a>
+                    </td>
+                    <td>🟡 Ready for first review</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSTelecom.html" target="_blank">EHDSTelecom</a>
+                    </td>
+                    <td>
+                        <code>ContactPoint</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdstelecom.html">EHDSTelecom Mapping</a>
+                    </td>
+                    <td>🟡 Ready for first review</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSBodyStructure.html" target="_blank">EHDSBodyStructure</a>
+                    </td>
+                    <td>
+                        <code>BodyStructureEuCore</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdsbodystructure.html">EHDSBodyStructure Mapping</a>
+                    </td>
+                    <td>🟡 Ready for first review</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h4>
+        <span class="group-emoji">🧑‍⚕️</span> Entity Models
+    </h4><a>   </a>
+    <div class="table-wrapper">
+        <table class="model-index">
+            <thead>
+                <tr>
+                    <th>EHDS Logical Model</th>
+                    <th>FHIR Profile / Type in this IG</th>
+                    <th>Mapping Details</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSPatient.html" target="_blank">EHDSPatient</a>
+                    </td>
+                    <td>
+                        <code>PatientEuCore</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdspatient.html">EHDSPatient Mapping</a>
+                    </td>
+                    <td>🟡 Ready for first review</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSPatientAnimal.html" target="_blank">EHDSPatientAnimal</a>
+                    </td>
+                    <td>
+                        <code>PatientAnimalEuCore</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdspatientanimal.html">EHDSPatientAnimal Mapping</a>
+                    </td>
+                    <td>🟡 Ready for first review</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSHealthProfessional.html" target="_blank">EHDSHealthProfessional</a>
+                    </td>
+                    <td>
+                        <code>PractitionerRoleEuCore</code>,                        <code>PractitionerEuCore</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdshealthprofessional.html">EHDSHealthProfessional Mapping</a>
+                    </td>
+                    <td>❌ Do not use</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSOrganisation.html" target="_blank">EHDSOrganisation</a>
+                    </td>
+                    <td>
+                        <code>OrganizationEuCore</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdsorganisation.html">EHDSOrganisation Mapping</a>
+                    </td>
+                    <td>❌ Do not use</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSLocation.html" target="_blank">EHDSLocation</a>
+                    </td>
+                    <td>
+                        <code>LocationEuCore</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdslocation.html">EHDSLocation Mapping</a>
+                    </td>
+                    <td>❌ Do not use</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h4>
+        <span class="group-emoji">🩺</span> Clinical Information Models
+    </h4><a>   </a>
+    <div class="table-wrapper">
+        <table class="model-index">
+            <thead>
+                <tr>
+                    <th>EHDS Logical Model</th>
+                    <th>FHIR Profile / Type in this IG</th>
+                    <th>Mapping Details</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAlert.html" target="_blank">EHDSAlert</a>
+                    </td>
+                    <td>
+                        <code>FlagEuCore</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdsalert.html">EHDSAlert Mapping</a>
+                    </td>
+                    <td>🟡 Ready for first review</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAllergyIntolerance.html" target="_blank">EHDSAllergyIntolerance</a>
+                    </td>
+                    <td>
+                        <code>AllergyIntoleranceEuCore</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdsallergyintolerance.html">EHDSAllergyIntolerance Mapping</a>
+                    </td>
+                    <td>🟡 Ready for first review</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSCondition.html" target="_blank">EHDSCondition</a>
+                    </td>
+                    <td>
+                        <code>ConditionEuCore</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdscondition.html">EHDSCondition Mapping</a>
+                    </td>
+                    <td>🟡 Ready for first review</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSProcedure.html" target="_blank">EHDSProcedure</a>
+                    </td>
+                    <td>
+                        <code>ProcedureEuCore</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdsprocedure.html">EHDSProcedure Mapping</a>
+                    </td>
+                    <td>🟡 Ready for first review</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSImmunisation.html" target="_blank">EHDSImmunisation</a>
+                    </td>
+                    <td>
+                        <code>ImmunizationEuCore</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdsimmunisation.html">EHDSImmunisation Mapping</a>
+                    </td>
+                    <td>❌ Do not use</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h4>
+        <span class="group-emoji">💊</span> Medication Models
+    </h4><a>   </a>
+    <div class="table-wrapper">
+        <table class="model-index">
+            <thead>
+                <tr>
+                    <th>EHDS Logical Model</th>
+                    <th>FHIR Profile / Type in this IG</th>
+                    <th>Mapping Details</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedication.html" target="_blank">EHDSMedication</a>
+                    </td>
+                    <td>
+                        <code>MedicationEuCore</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdsmedication.html">EHDSMedication Mapping</a>
+                    </td>
+                    <td>❌ Do not use</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedicationStatement.html" target="_blank">EHDSMedicationStatement</a>
+                    </td>
+                    <td>
+                        <code>MedicationStatementEuCore</code>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdsmedicationstatement.html">EHDSMedicationStatement Mapping</a>
+                    </td>
+                    <td>❌ Do not use</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

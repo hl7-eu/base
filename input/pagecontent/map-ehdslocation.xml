@@ -61,7 +61,16 @@
             <td>telecom</td>
             <td>Contact channels for the location (phone, fax, email, etc.).</td>
             <td>equal</td>
-            <td>telecom / contact.telecom</td>
+            <td>telecom<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Location telecom / official contact details.</td>
+            <td>In R4 this is usually telecom; in R5, contact info may live under contact.telecom.</td>
+          </tr>
+          <tr>
+            <td>telecom</td>
+            <td>Contact channels for the location (phone, fax, email, etc.).</td>
+            <td>equal</td>
+            <td>contact.telecom<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            </td>
             <td>Location telecom / official contact details.</td>
             <td>In R4 this is usually telecom; in R5, contact info may live under contact.telecom.</td>
           </tr>
@@ -69,7 +78,16 @@
             <td>type</td>
             <td>Type/category of the location (e.g. ward, lab, pharmacy counter).</td>
             <td>equal</td>
-            <td>physicalType / type</td>
+            <td>physicalType<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Type of location.</td>
+            <td>In R4, physicalType is common; R5 shifts emphasis to type.</td>
+          </tr>
+          <tr>
+            <td>type</td>
+            <td>Type/category of the location (e.g. ward, lab, pharmacy counter).</td>
+            <td>equal</td>
+            <td>type<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            </td>
             <td>Type of location.</td>
             <td>In R4, physicalType is common; R5 shifts emphasis to type.</td>
           </tr>
@@ -101,7 +119,7 @@
       </table>
     </div>
     <p style="margin-top:2rem;color:#555;">
-      Return to overview: <a href="modelmap2.html">EHDS Logical Models → FHIR Profiles</a>
+      Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
     </p>
   </body>
 </html>

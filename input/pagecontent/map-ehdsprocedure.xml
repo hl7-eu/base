@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <!--ReleaseHeader-->
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>EHDSProcedure → Procedure</title>
+    <!-- <title>EHDSProcedure → Procedure</title> -->
     <link rel="stylesheet" type="text/css" href="map-pages.css" />
   </head>
   <body>
@@ -12,7 +13,7 @@
       <p>The technical solutions listed are <strong>possible candidates</strong> under consideration and are <strong>not yet approved</strong> or ready for implementation.</p>
     </blockquote>
     <h3>EHDSProcedure → Procedure</h3>
-    <a></a>
+    <a>  </a>
     <p>
       This page describes the element-by-element mapping from the
       <strong>EHDSProcedure</strong> logical model to the FHIR
@@ -133,9 +134,18 @@
             <td>date[x]</td>
             <td>Date and time of the procedure or interval of its performance.</td>
             <td>equal</td>
-            <td>performed[x] or occurrence[x]</td>
+            <td>performed[x]<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>When the procedure was performed.</td>
             <td>Use <code>performedDateTime</code> or <code>performedPeriod</code> according to actual data type. <code>performed[x]</code> used in R4, <code>occurrence[x]</code> used in R5</td>
+          </tr>
+          <!-- date[x] -->
+          <tr>
+            <td>date[x]</td>
+            <td>Date and time of the procedure or interval of its performance.</td>
+            <td>equal</td>
+            <td>occurrence[x]<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>When the procedure was performed.</td>
+            <td>Use <code>occurrenceDateTime</code> or <code>occurrencePeriod</code> according to actual data type. <code>performed[x]</code> used in R4, <code>occurrence[x]</code> used in R5</td>
           </tr>
           <!-- performer -->
           <tr>
@@ -160,9 +170,18 @@
             <td>reason[x]</td>
             <td>The reason why the procedure was performed (code or reference).</td>
             <td>equal</td>
-            <td>reason or reasonCode / reasonReference</td>
+            <td>reasonCode / reasonReference<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Indication/justification for the procedure.</td>
-            <td>In R4, codes go to <code>reasonCode</code>; references (Condition / Observation / Procedure) go to <code>reasonReference</code>; in R5 use the CodeableReference <code>reason</code>.</td>
+            <td>In R4, codes go to <code>reasonCode</code>; references (Condition / Observation / Procedure) go to <code>reasonReference</code>.</td>
+          </tr>
+          <tr>
+            <td>reason[x]</td>
+            <td>The reason why the procedure was performed (code or reference).</td>
+            <td>equal</td>
+            <td>reason <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Indication/justification for the procedure.</td>
+            <td>In R5 use the CodeableReference <code>reason</code>.
+            </td>
           </tr>
           <!-- outcome -->
           <tr>
@@ -178,18 +197,36 @@
             <td>complication</td>
             <td>Any complications during or immediately after the procedure.</td>
             <td>equal</td>
-            <td>complication or complication/complicationDetail</td>
+            <td>complication / complicationDetail <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Complication(s) following the procedure.</td>
-            <td>In R4 codes go to <code>complication</code>; reference (Condition) in <code>complicationDetail</code>. In R5 use the CodeableReference <code>complication</code>.</td>
+            <td>In R4 codes go to <code>complication</code>; reference (Condition) in <code>complicationDetail</code>.</td>
+          </tr>
+          <tr>
+            <td>complication</td>
+            <td>Any complications during or immediately after the procedure.</td>
+            <td>equal</td>
+            <td>complication<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Complication(s) following the procedure.</td>
+            <td>In R5 use the CodeableReference <code>complication</code>.
+            </td>
           </tr>
           <!-- deviceUsed -->
           <tr>
             <td>deviceUsed</td>
             <td>Device used to perform the procedure.</td>
             <td>equal</td>
-            <td>used or usedCode / usedReference</td>
+            <td>usedCode / usedReference<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Device that was used during the procedure.</td>
-            <td>In R4 <code>usedCode</code> only if you have no Device instance, <code>usedReference</code> if you refer a Device. In R5 use the CodeableReference <code>used</code>.</td>
+            <td>In R4 <code>usedCode</code> only if you have no Device instance, <code>usedReference</code> if you refer a Device.</td>
+          </tr>
+          <tr>
+            <td>deviceUsed</td>
+            <td>Device used to perform the procedure.</td>
+            <td>equal</td>
+            <td>used<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Device that was used during the procedure.</td>
+            <td>In R5 use the CodeableReference <code>used</code>.
+            </td>
           </tr>
           <!-- focalDevice -->
           <tr>
@@ -213,7 +250,7 @@
       </table>
     </div>
     <p style="margin-top:2rem;color:#555;">
-      Return to overview: <a href="modelmap2.html">EHDS Logical Models → FHIR Profiles</a>
+      Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
     </p>
   </body>
 </html>

@@ -54,7 +54,15 @@
             <td>location</td>
             <td>Body site.</td>
             <td>equal</td>
-            <td>location / includedStructure.structure</td>
+            <td>location <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Body site.</td>
+            <td>R4 commonly uses location; R5 often uses includedStructure.structure.</td>
+          </tr>
+          <tr>
+            <td>location</td>
+            <td>Body site.</td>
+            <td>equal</td>
+            <td>includedStructure.structure<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Body site.</td>
             <td>R4 commonly uses location; R5 often uses includedStructure.structure.</td>
           </tr>
@@ -62,7 +70,16 @@
             <td>locationQualifier</td>
             <td>Qualifier for the body site (upper, lower, etc.).</td>
             <td>equal</td>
-            <td>locationQualifier / includedStructure.qualifier</td>
+            <td>locationQualifier<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Body site modifier.</td>
+            <td>R4: locationQualifier; R5: includedStructure.qualifier.</td>
+          </tr>
+          <tr>
+            <td>locationQualifier</td>
+            <td>Qualifier for the body site (upper, lower, etc.).</td>
+            <td>equal</td>
+            <td>includedStructure.qualifier<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            </td>
             <td>Body site modifier.</td>
             <td>R4: locationQualifier; R5: includedStructure.qualifier.</td>
           </tr>
@@ -70,10 +87,18 @@
             <td>laterality</td>
             <td>Laterality (e.g. left, right).</td>
             <td>equal</td>
-            <td>extension[laterality] / includedStructure.laterality</td>
+            <td>extension[laterality]<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Body structure laterality.</td>
             <td>R4 often uses an extension; R5 includes laterality directly.</td>
           </tr>
+            <tr>
+              <td>laterality</td>
+              <td>Laterality (e.g. left, right).</td>
+              <td>equal</td>
+              <td>includedStructure.laterality<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+                <td>Body structure laterality.</td>
+                <td>R4 often uses an extension; R5 includes laterality directly.</td>
+              </tr>
           <tr>
             <td>description</td>
             <td>Textual description of the body structure.</td>
@@ -86,7 +111,7 @@
       </table>
     </div>
     <p style="margin-top:2rem;color:#555;">
-      Return to overview: <a href="modelmap2.html">EHDS Logical Models → FHIR Profiles</a>
+      Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
     </p>
   </body>
 </html>

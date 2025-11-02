@@ -61,7 +61,16 @@
             <td>telecom</td>
             <td>Telecom contact info for the role / service point.</td>
             <td>relatedto</td>
-            <td>telecom / contact</td>
+            <td>telecom<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Contact details specific to this role/location/service.</td>
+            <td>R4 commonly telecom; R5 may surface contact.telecom.</td>
+          </tr>
+          <tr>
+            <td>telecom</td>
+            <td>Telecom contact info for the role / service point.</td>
+            <td>relatedto</td>
+            <td>contact<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            </td>
             <td>Contact details specific to this role/location/service.</td>
             <td>R4 commonly telecom; R5 may surface contact.telecom.</td>
           </tr>
@@ -101,7 +110,7 @@
       </table>
     </div>
     <p style="margin-top:2rem;color:#555;">
-      Return to overview: <a href="modelmap2.html">EHDS Logical Models → FHIR Profiles</a>
+      Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
     </p>
   </body>
 </html>
