@@ -17,13 +17,12 @@ Description: """This profile sets minimum expectations for the Immunization reso
 // extension only for the R5 version
 
 * extension contains $immunization-administeredProduct-r5 named administeredProduct 0..1
-// * extension[administeredProduct].valueCodeableConcept only CodeableReference ( MedicationEuCore )
+* extension[administeredProduct].extension[concept]
+* extension[administeredProduct].extension[reference].valueReference only Reference ( MedicationEuCore ) 
 
 /* * extension contains ImmunizationAdministeredProduct named administeredProduct 0..1
 * extension[administeredProduct].extension[concept]
 * extension[administeredProduct].extension[reference].valueReference only Reference ( MedicationEuCore ) */
-
-
 /* FIX THE ISSUE WITH CODEABLE REFERENCE
 * extension contains $immunization-administeredProduct-r5 named administeredProduct 0..1
 * extension[administeredProduct].extension[concept]
