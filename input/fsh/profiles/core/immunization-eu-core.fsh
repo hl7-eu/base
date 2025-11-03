@@ -10,12 +10,21 @@ Description: """This profile sets minimum expectations for the Immunization reso
 // * insert ImposeProfile($Immunization-uv-ips, 0)
 * extension contains $immunization-basedOn-r5 named basedOn 0..1
 * extension[basedOn].valueReference only Reference ( ImmunizationRecommendation )
-// check preadoption of R5 element
+
+
+/ check preadoption of R5 element
 // Check if the R5 now works...
 // extension only for the R5 version
-* extension contains ImmunizationAdministeredProduct named administeredProduct 0..1
+
+* extension contains $immunization-administeredProduct-r5 named administeredProduct 0..1
+// * extension[administeredProduct].valueCodeableConcept only CodeableReference ( MedicationEuCore )
+
+/* * extension contains ImmunizationAdministeredProduct named administeredProduct 0..1
 * extension[administeredProduct].extension[concept]
-* extension[administeredProduct].extension[reference].valueReference only Reference ( MedicationEuCore )
+* extension[administeredProduct].extension[reference].valueReference only Reference ( MedicationEuCore ) */
+
+
+/
 /* FIX THE ISSUE WITH CODEABLE REFERENCE
 * extension contains $immunization-administeredProduct-r5 named administeredProduct 0..1
 * extension[administeredProduct].extension[concept]
