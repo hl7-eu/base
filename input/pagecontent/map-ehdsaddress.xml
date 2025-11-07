@@ -46,7 +46,7 @@
           <tr>
             <td>use</td>
             <td>Purpose of the address.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>use</td>
             <td>Purpose of this address.</td>
             <td></td>
@@ -54,7 +54,7 @@
           <tr>
             <td>type</td>
             <td>Type of address (physical / postal).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>type</td>
             <td>The type of an address (physical / postal).</td>
             <td></td>
@@ -62,7 +62,7 @@
           <tr>
             <td>text</td>
             <td>Text representation of the full address.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>text</td>
             <td>Text representation of the address.</td>
             <td></td>
@@ -70,7 +70,7 @@
           <tr>
             <td>street</td>
             <td>Name of the street.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>line.extension:streetName</td>
             <td>Street name.</td>
             <td></td>
@@ -78,7 +78,7 @@
           <tr>
             <td>houseNumber</td>
             <td>House number.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>line.extension:houseNumber</td>
             <td>House number.</td>
             <td></td>
@@ -86,7 +86,7 @@
           <tr>
             <td>postBox</td>
             <td>Post box.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>line.extension:postBox</td>
             <td>Post box.</td>
             <td></td>
@@ -94,7 +94,7 @@
           <tr>
             <td>city</td>
             <td>City / town name.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>city</td>
             <td>Name of city, town, etc.</td>
             <td></td>
@@ -102,7 +102,7 @@
           <tr>
             <td>postalCode</td>
             <td>Postal code.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>postalCode</td>
             <td>Postal code for area.</td>
             <td></td>

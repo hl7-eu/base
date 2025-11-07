@@ -36,7 +36,7 @@
           <tr>
             <td>identifier</td>
             <td>Identifier for this medication concept / product.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>identifier</td>
             <td>Business identifier for the medication entry.</td>
             <td>Can reflect regulatory or catalogue codes.</td>
@@ -44,7 +44,7 @@
           <tr>
             <td>code</td>
             <td>Identifies the medication (generic or branded).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>code</td>
             <td>Code that identifies this medication.</td>
             <td>Can represent abstract ingredient-based products or specific trade products.</td>
@@ -52,7 +52,7 @@
           <tr>
             <td>form</td>
             <td>Pharmaceutical dose form (tablet, injection, etc.).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>form</td>
             <td>Dose form of the medication.</td>
             <td>Usually a CodeableConcept.</td>
@@ -60,7 +60,7 @@
           <tr>
             <td>ingredient</td>
             <td>Active (and possibly inactive) ingredients and strengths.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>ingredient</td>
             <td>Medication ingredients.</td>
             <td>FHIR supports per-ingredient strength.</td>
@@ -68,7 +68,7 @@
           <tr>
             <td>batch.lotNumber</td>
             <td>Batch / lot number (for manufactured products).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>batch.lotNumber</td>
             <td>Lot number of a particular batch.</td>
             <td>Often only known at dispense/admin time.</td>
@@ -76,7 +76,7 @@
           <tr>
             <td>batch.expirationDate</td>
             <td>Expiry date of this lot/batch.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>batch.expirationDate</td>
             <td>When the lot expires.</td>
             <td>Traceability / pharmacovigilance.</td>

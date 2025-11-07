@@ -120,7 +120,7 @@
                     <td>
                         <a class="pill" href="map-ehdspatient.html">EHDSPatient Mapping</a>
                     </td>
-                    <td>🟡 Ready for first review</td>
+                    <td>🔵 Ready for final review</td>
                 </tr>
                 <tr>
                     <td>
@@ -132,7 +132,7 @@
                     <td>
                         <a class="pill" href="map-ehdspatientanimal.html">EHDSPatientAnimal Mapping</a>
                     </td>
-                    <td>🟡 Ready for first review</td>
+                    <td>🔵 Ready for final review</td>
                 </tr>
                 <tr>
                     <td>
@@ -144,7 +144,7 @@
                     <td>
                         <a class="pill" href="map-ehdshealthprofessional.html">EHDSHealthProfessional Mapping</a>
                     </td>
-                    <td>❌ Do not use</td>
+                    <td>🔵 Ready for final review</td>
                 </tr>
                 <tr>
                     <td>
@@ -156,7 +156,7 @@
                     <td>
                         <a class="pill" href="map-ehdsorganisation.html">EHDSOrganisation Mapping</a>
                     </td>
-                    <td>❌ Do not use</td>
+                   <td>🔵 Ready for final review</td>
                 </tr>
                 <tr>
                     <td>
@@ -168,7 +168,7 @@
                     <td>
                         <a class="pill" href="map-ehdslocation.html">EHDSLocation Mapping</a>
                     </td>
-                    <td>❌ Do not use</td>
+                    <td>🔵 Ready for final review</td>
                 </tr>
             </tbody>
         </table>
@@ -197,7 +197,7 @@
                     <td>
                         <a class="pill" href="map-ehdsalert.html">EHDSAlert Mapping</a>
                     </td>
-                    <td>🟡 Ready for first review</td>
+                    <td>🟠 Reviewed – updates required</td>
                 </tr>
                 <tr>
                     <td>
@@ -209,7 +209,7 @@
                     <td>
                         <a class="pill" href="map-ehdsallergyintolerance.html">EHDSAllergyIntolerance Mapping</a>
                     </td>
-                    <td>🟡 Ready for first review</td>
+                    <td>🟠 Reviewed – updates required</td>
                 </tr>
                 <tr>
                     <td>
@@ -245,7 +245,7 @@
                     <td>
                         <a class="pill" href="map-ehdsimmunisation.html">EHDSImmunisation Mapping</a>
                     </td>
-                    <td>❌ Do not use</td>
+                    <td>🟡 Ready for first review</td>
                 </tr>
             </tbody>
         </table>

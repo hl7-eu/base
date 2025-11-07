@@ -36,7 +36,7 @@
           <tr>
             <td>identifier</td>
             <td>Identifier for the vaccination record.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>identifier</td>
             <td>External identifier(s) for this Immunization event.</td>
             <td></td>
@@ -44,7 +44,7 @@
           <tr>
             <td>status</td>
             <td>Completion status (completed, not-done).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>status</td>
             <td>Indicates if the vaccination was given.</td>
             <td>FHIR also has statusReason for "not done".</td>
@@ -52,7 +52,7 @@
           <tr>
             <td>vaccineCode</td>
             <td>Vaccine product or antigen administered.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>vaccineCode</td>
             <td>Vaccine that was administered.</td>
             <td>Can be CVX or national code systems.</td>
@@ -60,7 +60,7 @@
           <tr>
             <td>patient</td>
             <td>The vaccine recipient.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>patient</td>
             <td>Who received the vaccine.</td>
             <td>Reference to Patient/Animal Patient.</td>
@@ -68,7 +68,7 @@
           <tr>
             <td>occurrence[x]</td>
             <td>Date/time administered.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>occurrence[x]</td>
             <td>When the vaccine was administered.</td>
             <td>Usually occurrenceDateTime.</td>
@@ -76,7 +76,7 @@
           <tr>
             <td>primarySource</td>
             <td>Whether this is from a primary clinical source.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>primarySource</td>
             <td>Indicates origin of information.</td>
             <td></td>
@@ -84,7 +84,7 @@
           <tr>
             <td>location</td>
             <td>Where the immunisation was given.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>location</td>
             <td>Location where vaccine was administered.</td>
             <td>Reference to LocationEuCore.</td>
@@ -92,7 +92,7 @@
           <tr>
             <td>performer</td>
             <td>Who administered the vaccine.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>performer</td>
             <td>Who performed the immunization.</td>
             <td>Usually PractitionerRole / Practitioner.</td>
@@ -100,7 +100,7 @@
           <tr>
             <td>lotNumber</td>
             <td>Vaccine lot / batch number.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>lotNumber</td>
             <td>Vaccine lot number.</td>
             <td>Traceability / pharmacovigilance.</td>
@@ -108,7 +108,7 @@
           <tr>
             <td>route</td>
             <td>Administration route (IM, SC, etc.).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>route</td>
             <td>Administration route.</td>
             <td>CodeableConcept.</td>

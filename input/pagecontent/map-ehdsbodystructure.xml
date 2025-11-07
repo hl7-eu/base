@@ -37,7 +37,7 @@
           <tr>
             <td>identifier</td>
             <td>Identifier for this instance of the anatomical structure.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>identifier</td>
             <td>BodyStructure identifier.</td>
             <td></td>
@@ -45,7 +45,7 @@
           <tr>
             <td>morphology</td>
             <td>Kind of structure represented (normal/abnormal morphology).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>morphology</td>
             <td>Kind of structure.</td>
             <td></td>
@@ -53,7 +53,7 @@
           <tr>
             <td>location</td>
             <td>Body site.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>location <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Body site.</td>
             <td>R4 commonly uses location; R5 often uses includedStructure.structure.</td>
@@ -61,7 +61,7 @@
           <tr>
             <td>location</td>
             <td>Body site.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>includedStructure.structure<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Body site.</td>
             <td>R4 commonly uses location; R5 often uses includedStructure.structure.</td>
@@ -69,7 +69,7 @@
           <tr>
             <td>locationQualifier</td>
             <td>Qualifier for the body site (upper, lower, etc.).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>locationQualifier<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Body site modifier.</td>
             <td>R4: locationQualifier; R5: includedStructure.qualifier.</td>
@@ -77,7 +77,7 @@
           <tr>
             <td>locationQualifier</td>
             <td>Qualifier for the body site (upper, lower, etc.).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>includedStructure.qualifier<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
             <td>Body site modifier.</td>
@@ -86,7 +86,7 @@
           <tr>
             <td>laterality</td>
             <td>Laterality (e.g. left, right).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>extension[laterality]<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Body structure laterality.</td>
             <td>R4 often uses an extension; R5 includes laterality directly.</td>
@@ -94,7 +94,7 @@
             <tr>
               <td>laterality</td>
               <td>Laterality (e.g. left, right).</td>
-              <td>equal</td>
+              <td>equivalent</td>
               <td>includedStructure.laterality<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
                 <td>Body structure laterality.</td>
                 <td>R4 often uses an extension; R5 includes laterality directly.</td>
@@ -102,7 +102,7 @@
           <tr>
             <td>description</td>
             <td>Textual description of the body structure.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>text</td>
             <td>Text summary of the resource, for human interpretation.</td>
             <td></td>

@@ -9,8 +9,10 @@ Description: """This profile defines the core constraints and extensions for a F
 * identifier ^short = "Alert bussiness Identifier"
 * extension contains $flag-detail named flagDetailExt 0..*
 * extension contains $flag-priority named flagPriorityExt 0..1
+* extension contains $note named note 0..*
 * extension[flagDetailExt]
 * extension[flagPriorityExt]
+* extension[note]
 * status ^short = "Alert status"
 * code ^short = "Coded or textual message to display to user."
 * subject only Reference(PatientEuCore)

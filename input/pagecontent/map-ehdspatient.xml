@@ -37,7 +37,7 @@
           <tr>
             <td>personalIdentifier</td>
             <td>An identifier of the patient that is unique within a defined scope.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>identifier</td>
             <td>Patient identifiers.</td>
             <td></td>
@@ -45,7 +45,7 @@
           <tr>
             <td>name</td>
             <td>Name associated with the patient/subject.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>name</td>
             <td>A name associated with the patient.</td>
             <td></td>
@@ -53,7 +53,7 @@
           <tr>
             <td>dateOfBirth</td>
             <td>Date of birth.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>birthDate</td>
             <td>The date of birth for the patient.</td>
             <td></td>
@@ -61,7 +61,7 @@
           <tr>
             <td>administrativeGender</td>
             <td>Administrative gender.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>gender</td>
             <td>Administrative gender.</td>
             <td></td>
@@ -69,7 +69,7 @@
           <tr>
             <td>address</td>
             <td>Mailing and home or office addresses.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>address</td>
             <td>An address for the individual.</td>
             <td></td>
@@ -77,7 +77,7 @@
           <tr>
             <td>telecom</td>
             <td>Telecommunication contact information.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>telecom</td>
             <td>A contact detail for the patient.</td>
             <td></td>
@@ -85,7 +85,7 @@
           <tr>
             <td>maritalStatus</td>
             <td>Marital (civil) status of a patient.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>maritalStatus</td>
             <td>Marital (civil) status of a patient.</td>
             <td></td>
@@ -93,7 +93,7 @@
           <tr>
             <td>communicationLanguage</td>
             <td>Language that can be used to communicate with the patient about their health.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>communication.language</td>
             <td>Communication language.</td>
             <td></td>

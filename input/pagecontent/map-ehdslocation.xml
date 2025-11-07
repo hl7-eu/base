@@ -36,7 +36,7 @@
           <tr>
             <td>identifier</td>
             <td>Identifier for the location.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>identifier</td>
             <td>Unique code or number identifying the location.</td>
             <td></td>
@@ -44,7 +44,7 @@
           <tr>
             <td>name</td>
             <td>Human-readable name of the location.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>name</td>
             <td>Location name.</td>
             <td></td>
@@ -52,7 +52,7 @@
           <tr>
             <td>description</td>
             <td>Textual description of the location and its purpose.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>description</td>
             <td>Description of the location.</td>
             <td></td>
@@ -60,7 +60,7 @@
           <tr>
             <td>telecom</td>
             <td>Contact channels for the location (phone, fax, email, etc.).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>telecom<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Location telecom / official contact details.</td>
             <td>In R4 this is usually telecom; in R5, contact info may live under contact.telecom.</td>
@@ -68,7 +68,7 @@
           <tr>
             <td>telecom</td>
             <td>Contact channels for the location (phone, fax, email, etc.).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>contact.telecom<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
             <td>Location telecom / official contact details.</td>
@@ -77,7 +77,7 @@
           <tr>
             <td>type</td>
             <td>Type/category of the location (e.g. ward, lab, pharmacy counter).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>physicalType<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Type of location.</td>
             <td>In R4, physicalType is common; R5 shifts emphasis to type.</td>
@@ -85,7 +85,7 @@
           <tr>
             <td>type</td>
             <td>Type/category of the location (e.g. ward, lab, pharmacy counter).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>type<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
             <td>Type of location.</td>
@@ -94,7 +94,7 @@
           <tr>
             <td>address</td>
             <td>Physical postal address of the location.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>address</td>
             <td>Address of the location.</td>
             <td>Uses Address/AddressEu.</td>
@@ -102,7 +102,7 @@
           <tr>
             <td>managingOrganisation</td>
             <td>Organisation responsible for the services provided at this location.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>managingOrganization</td>
             <td>Managing organization.</td>
             <td>Reference to OrganizationEuCore.</td>
@@ -110,7 +110,7 @@
           <tr>
             <td>partOf</td>
             <td>Parent/host location of which this one is a physical part.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>partOf</td>
             <td>Another Location that contains this one.</td>
             <td>Supports hierarchical location trees.</td>

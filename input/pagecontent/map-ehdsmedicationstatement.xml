@@ -36,7 +36,7 @@
           <tr>
             <td>identifier</td>
             <td>Identifier for this medication statement entry.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>identifier</td>
             <td>Business identifier.</td>
             <td></td>
@@ -44,7 +44,7 @@
           <tr>
             <td>status</td>
             <td>Current status of the assertion (active, completed, etc.).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>status</td>
             <td>Medication status within the statement.</td>
             <td>e.g. active, completed.</td>
@@ -52,7 +52,7 @@
           <tr>
             <td>medication</td>
             <td>The medication being taken or reported.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>medication[x]</td>
             <td>Identifies the medication.</td>
             <td>Can reference a Medication resource or be a CodeableConcept.</td>
@@ -60,7 +60,7 @@
           <tr>
             <td>subject</td>
             <td>The person/animal this statement is about.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>subject</td>
             <td>Who is/was taking the medication.</td>
             <td>Reference to Patient/Animal Patient.</td>
@@ -68,7 +68,7 @@
           <tr>
             <td>effective[x]</td>
             <td>Period/dateTime when the medication was taken.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>effective[x]</td>
             <td>When the medication was being consumed.</td>
             <td>Can be Period or dateTime.</td>
@@ -76,7 +76,7 @@
           <tr>
             <td>dosage</td>
             <td>How the medication is/was taken (dose, route, timing).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>dosage</td>
             <td>Details of dose, timing, route.</td>
             <td>Repeats for complex regimens.</td>
@@ -84,7 +84,7 @@
           <tr>
             <td>informationSource</td>
             <td>Who reported this medication use.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>informationSource</td>
             <td>Source of the information in the statement.</td>
             <td>Important for reconciliation / accuracy.</td>

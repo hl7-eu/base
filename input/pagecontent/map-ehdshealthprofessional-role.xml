@@ -85,7 +85,7 @@
           <tr>
             <td>professionalRole.role</td>
             <td>Health professional role(s).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>code</td>
             <td>Roles this practitioner may perform.</td>
             <td>May repeat.</td>
@@ -93,7 +93,7 @@
           <tr>
             <td>professionalRole.organisation</td>
             <td>Organisation where this role is available.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>organization</td>
             <td>The organisation where this role is available.</td>
             <td></td>
@@ -101,7 +101,7 @@
           <tr>
             <td>professionalRole.specialty</td>
             <td>Specialty practiced in that organisation.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>specialty</td>
             <td>Specific specialty of the practitioner.</td>
             <td></td>

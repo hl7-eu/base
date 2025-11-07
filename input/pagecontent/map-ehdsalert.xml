@@ -5,12 +5,7 @@
     <title>EHDSAlert → Flag</title>
     <link rel="stylesheet" type="text/css" href="map-pages.css" />
   </head>
-<body>
-  <blockquote class="dragon">
-    <p>
-      <strong>Note:</strong> The content of this page is <strong>work in progress</strong> and may change based on ongoing discussions within the working group.</p>
-    <p>The technical solutions listed are <strong>possible candidates</strong> under consideration and are <strong>not yet approved</strong> or ready for implementation.</p>
-  </blockquote>
+  <body>
     <h3>EHDSAlert → Flag</h3>
     <a>  </a>
     <p>
@@ -49,7 +44,7 @@
           <tr>
             <td>header.subject</td>
             <td>Patient/subject this alert is about.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>subject</td>
             <td>Who/what the flag is about.</td>
             <td>Reference to Patient (or other subject).</td>
@@ -57,7 +52,7 @@
           <tr>
             <td>header.identifier</td>
             <td>Business identifier for the alert object.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>identifier</td>
             <td>Business identifier for the flag.</td>
             <td>Copy over all identifiers if multiple.</td>
@@ -68,47 +63,49 @@
             <td>relatedto</td>
             <td>author</td>
             <td>Creator of the flag.</td>
-            <td>Can reference Practitioner, PractitionerRole, or Organization.</td>
+            <td class="highlight-yellow">Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.<strong>1.. in the model 0.. in the profile</strong>
+            </td>      
           </tr>
           <tr>
             <td>header.authorship.author[x]</td>
             <td>Who created/issued the alert.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>author</td>
             <td>Creator of the flag.</td>
-            <td>Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.</td>
+            <td class="highlight-yellow">Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.<strong>1.. in the model 0.. in the profile</strong></td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.authorship.datetime</td>
             <td>Date/time the resource was issued.</td>
-            <td>XXXXXXXX</td>
-            <td>XXXXXXXX</td>
-            <td>XXXXXXXX</td>
-            <td>XXXXXXXX</td>
+            <td>no map</td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.lastUpdate</td>
             <td>Last technical correction/update.</td>
-            <td>XXXXXXXX</td>
-            <td>XXXXXXXX</td>
-            <td>XXXXXXXX</td>
-            <td>XXXXXXXX</td>
+            <td>relatedto</td>
+            <td>lastUpdated</td>
+            <td>When the resource version last changed</td>
+            <td>The map applies only in case it represents when the resource was last updated. It is an Instant (i.e. YYYY-MM-DDThh:mm:ss.sss+zz:zz )</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.status</td>
             <td>Status of the dataset/resource.</td>
-            <td>XXXX</td>
-            <td>XXXX</td>
-            <td>Flag status is mapped from EHDSAlert.status (see below).</td>
-            <td>Header status ≠ clinical alert status. Clarify the difference</td>
+            <td>no map</td>
+            <td></td>
+            <td></td>
+            <td>Not clear suggested to be removed see <a href="https://github.com/Xt-EHR/xt-ehr-common/issues/363">Review and Align Use of header.status and header.statusReason[x]</a></td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.statusReason[x]</td>
             <td>Reason for current dataset status.</td>
-            <td>XXXXXXXX</td>
-            <td>XXXXXXXX</td>
-            <td>XXXXXXXX</td>
-            <td>XXXXXXXX</td>
+            <td>no map</td>
+            <td></td>
+            <td></td>
+            <td>Not clear suggested to be removed see <a href="https://github.com/Xt-EHR/xt-ehr-common/issues/363">Review and Align Use of header.status and header.statusReason[x]</a>
+            </td>
           </tr>
           <tr>
             <td>header.language</td>
@@ -122,15 +119,15 @@
           <tr class="highlight-yellow">
             <td>text</td>
             <td>Free text explanation of the alert.</td>
-            <td>equal</td>
-            <td>code.text <em>or</em> text</td>
-            <td>Human-readable meaning.</td>
-            <td>Prefer putting the core meaning in Flag.code; extra narrative in Flag.note.</td>
+            <td>source-is-broader-than-target</td>
+            <td>extensions:note.text</td>
+            <td>Additional notes that apply to this resource or element.</td>
+            <td>The mapping applies if the text represents additional information collected about the alert. <code>code.text</code> can be used for a textual description of the coded alert.<code>text</code>for a textual description of the overall alert.</td>
           </tr>
           <tr>
             <td>priority</td>
             <td>Priority of the alert.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>extension:flagPriorityExt	</td>
             <td>A code that identifies the priority of the alert</td>
             <td></td>
@@ -138,7 +135,7 @@
           <tr>
             <td>status</td>
             <td>Status of the alert (active, inactive, entered-in-error…).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>status</td>
             <td>Indicates if the flag is active, inactive, etc.</td>
             <td>Use the EHDS → HL7 Flag-status value set mapping.</td>
@@ -146,7 +143,7 @@
           <tr>
             <td>code</td>
             <td>Coded alert/issue being highlighted.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>code</td>
             <td>Issue being highlighted.</td>
             <td>Often SNOMED CT or local code. Should have display.</td>
@@ -154,7 +151,7 @@
           <tr>
             <td>period</td>
             <td>Time period when the alert is relevant.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>period</td>
             <td>Time period when the flag is active.</td>
             <td>Map start/end 1:1.</td>

@@ -49,7 +49,7 @@
           <tr>
             <td>header.subject</td>
             <td>Patient/subject this condition is about.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>subject</td>
             <td>Reference to the patient or subject of the condition.</td>
             <td>Reference to Patient (or other subject).</td>
@@ -57,7 +57,7 @@
           <tr>
             <td>header.identifier</td>
             <td>Business identifier for the object.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>identifier</td>
             <td>Business identifier for this condition.</td>
             <td>Copy over all identifiers if multiple.</td>
@@ -122,7 +122,7 @@
           <tr>
             <td>problem</td>
             <td>Code identifying the condition, problem or diagnosis.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>code</td>
             <td>Identification of the condition, problem, or diagnosis.</td>
             <td>CodeableConcept. EHDS binds to ICD-10, SNOMED CT, ICD-O, Orphacode.</td>
@@ -131,7 +131,7 @@
           <tr>
             <td>onsetDate</td>
             <td>Onset date of a problem/condition.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>onsetDateTime</td>
             <td>Estimated or actual date/time the condition started.</td>
             <td>Map to <code>onsetDateTime</code> in FHIR.</td>
@@ -140,7 +140,7 @@
           <tr>
             <td>endDate</td>
             <td>The date or estimated date that the condition resolved or went into remission.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>abatementDateTime</td>
             <td>When the condition abated or went into remission.</td>
             <td>Use <code>abatementDateTime</code>; abatement may also be represented by clinicalStatus = resolved.</td>
@@ -149,7 +149,7 @@
           <tr>
             <td>category</td>
             <td>Category or categories of the problem (e.g. POA, HAC, other categorisations).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>category</td>
             <td>Problem category (e.g. problem-list-item, encounter-diagnosis).</td>
             <td>0..* in both models; EHDS may use additional national/organisational codes.</td>
@@ -158,7 +158,7 @@
           <tr>
             <td>problemStatus</td>
             <td>Status of the condition/problem (active, resolved, inactive, ...).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>clinicalStatus</td>
             <td>Current clinical status of the condition.</td>
             <td>FHIR has a required VS for clinicalStatus; EHDS references HL7 Condition Clinical Status Codes.</td>
@@ -176,7 +176,7 @@
           <tr>
             <td>severity</td>
             <td>Subjective assessment of the severity of the condition.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>severity</td>
             <td>Clinical severity of the condition.</td>
             <td>CodeableConcept; HL7 / SNOMED CT value sets.</td>
@@ -185,7 +185,7 @@
           <tr>
             <td>anatomicLocation</td>
             <td>The anatomical location including laterality where this condition manifests itself.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>bodySite</td>
             <td>Anatomical location(s) affected by the condition.</td>
             <td>EHDS uses EHDSBodyStructure; map to one or more <code>Condition.bodySite</code>. Use referenced BodyStructure if profiling for more detail.</td>
@@ -203,7 +203,7 @@
           <tr>
             <td>diagnosisAssertionStatus</td>
             <td>Assertion about the certainty associated with a diagnosis.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>verificationStatus</td>
             <td>Whether the condition is unconfirmed, provisional, confirmed, refuted, etc.</td>
             <td>Both EHDS and FHIR refer to HL7 Condition Verification Status.</td>
@@ -212,7 +212,7 @@
           <tr>
             <td>asserter</td>
             <td>The asserter of the condition.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>asserter</td>
             <td>Individual who asserted the condition.</td>
             <td>Reference to Practitioner / PractitionerRole / Patient / RelatedPerson, depending on profile.</td>
@@ -221,7 +221,7 @@
           <tr>
             <td>assertedDate</td>
             <td>Date and time of the diagnosis assertion.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>extension:assertedDate</td>
             <td>Date the condition record was first recorded.</td>
             <td></td>

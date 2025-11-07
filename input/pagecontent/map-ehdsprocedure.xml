@@ -50,7 +50,7 @@
           <tr>
             <td>header.subject</td>
             <td>Patient/subject the procedure is about.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>subject</td>
             <td>Who the procedure was performed on.</td>
             <td>Reference to Patient (or other subject) as in FHIR Procedure.subject.</td>
@@ -58,7 +58,7 @@
           <tr>
             <td>header.identifier</td>
             <td>Business identifier for the object.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>identifier</td>
             <td>Business identifier for this procedure.</td>
             <td>Copy all identifiers if multiple exist.</td>
@@ -124,7 +124,7 @@
           <tr>
             <td>code</td>
             <td>Code identifying the procedure.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>code</td>
             <td>Procedure code.</td>
             <td>EHDS prefers SNOMED CT; FHIR allows national classifications.</td>
@@ -133,7 +133,7 @@
           <tr>
             <td>date[x]</td>
             <td>Date and time of the procedure or interval of its performance.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>performed[x]<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>When the procedure was performed.</td>
             <td>Use <code>performedDateTime</code> or <code>performedPeriod</code> according to actual data type. <code>performed[x]</code> used in R4, <code>occurrence[x]</code> used in R5</td>
@@ -142,7 +142,7 @@
           <tr>
             <td>date[x]</td>
             <td>Date and time of the procedure or interval of its performance.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>occurrence[x]<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>When the procedure was performed.</td>
             <td>Use <code>occurrenceDateTime</code> or <code>occurrencePeriod</code> according to actual data type. <code>performed[x]</code> used in R4, <code>occurrence[x]</code> used in R5</td>
@@ -151,7 +151,7 @@
           <tr>
             <td>performer</td>
             <td>An actor who performed the procedure.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>performer</td>
             <td>Who performed the procedure and in what role.</td>
             <td>FHIR Procedure.performer.actor → Practitioner / PractitionerRole / Organization; add role if available.</td>
@@ -160,7 +160,7 @@
           <tr>
             <td>bodySite</td>
             <td>Procedure target body site; may include laterality.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>bodySite</td>
             <td>Target body site.</td>
             <td>Map EHDSBodyStructure → one or more <code>Procedure.bodySite</code>; laterality as qualifier.</td>
@@ -169,7 +169,7 @@
           <tr>
             <td>reason[x]</td>
             <td>The reason why the procedure was performed (code or reference).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>reasonCode / reasonReference<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Indication/justification for the procedure.</td>
             <td>In R4, codes go to <code>reasonCode</code>; references (Condition / Observation / Procedure) go to <code>reasonReference</code>.</td>
@@ -177,7 +177,7 @@
           <tr>
             <td>reason[x]</td>
             <td>The reason why the procedure was performed (code or reference).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>reason <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Indication/justification for the procedure.</td>
             <td>In R5 use the CodeableReference <code>reason</code>.
@@ -187,7 +187,7 @@
           <tr>
             <td>outcome</td>
             <td>The outcome of the procedure – did it resolve the reasons?</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>outcome</td>
             <td>The result of the procedure.</td>
             <td>CodeableConcept; EHDS prefers SNOMED CT.</td>
@@ -196,7 +196,7 @@
           <tr>
             <td>complication</td>
             <td>Any complications during or immediately after the procedure.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>complication / complicationDetail <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Complication(s) following the procedure.</td>
             <td>In R4 codes go to <code>complication</code>; reference (Condition) in <code>complicationDetail</code>.</td>
@@ -204,7 +204,7 @@
           <tr>
             <td>complication</td>
             <td>Any complications during or immediately after the procedure.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>complication<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Complication(s) following the procedure.</td>
             <td>In R5 use the CodeableReference <code>complication</code>.
@@ -214,7 +214,7 @@
           <tr>
             <td>deviceUsed</td>
             <td>Device used to perform the procedure.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>usedCode / usedReference<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Device that was used during the procedure.</td>
             <td>In R4 <code>usedCode</code> only if you have no Device instance, <code>usedReference</code> if you refer a Device.</td>
@@ -222,7 +222,7 @@
           <tr>
             <td>deviceUsed</td>
             <td>Device used to perform the procedure.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>used<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Device that was used during the procedure.</td>
             <td>In R5 use the CodeableReference <code>used</code>.
@@ -232,7 +232,7 @@
           <tr>
             <td>focalDevice</td>
             <td>Device that is the focus of the procedure (implanted, removed, calibrated, etc.).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>focalDevice.manipulated</td>
             <td>Manipulated/targeted device during the procedure.</td>
             <td>Matches FHIR Procedure.focalDevice exactly.</td>
@@ -241,7 +241,7 @@
           <tr>
             <td>note</td>
             <td>Additional information about the procedure.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>note</td>
             <td>Comments about the procedure.</td>
             <td>EHDS has 0..1 string; FHIR allows 0..* Annotation → map to one Annotation entry.</td>

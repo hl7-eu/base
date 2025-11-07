@@ -62,7 +62,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>use</td>
                                                 <td>Use</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>use</td>
                                                 <td>Name Use</td>
                                                 <td></td>
@@ -70,7 +70,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>text</td>
                                                 <td>Text</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>text</td>
                                                 <td>Text representation of the full name</td>
                                                 <td></td>
@@ -78,7 +78,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>family</td>
                                                 <td>Family</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>family</td>
                                                 <td>Family name (often called &#x27;Surname&#x27;)</td>
                                                 <td></td>
@@ -86,7 +86,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>given</td>
                                                 <td>Given</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>given</td>
                                                 <td>Given names (not always &#x27;first&#x27;). Includes middle names</td>
                                                 <td></td>
@@ -94,7 +94,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>prefix</td>
                                                 <td>Prefix</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>prefix</td>
                                                 <td>Parts that come before the name</td>
                                                 <td></td>
@@ -102,7 +102,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>suffix</td>
                                                 <td>Suffix</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>suffix</td>
                                                 <td>Parts that come after the name</td>
                                                 <td></td>
@@ -141,7 +141,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>identifier</td>
                                                 <td>Identifier</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>identifier</td>
                                                 <td>Unique code or number identifying the location to its users</td>
                                                 <td></td>
@@ -149,7 +149,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>name</td>
                                                 <td>Name</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>name</td>
                                                 <td>Location name</td>
                                                 <td></td>
@@ -157,7 +157,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>description</td>
                                                 <td>Description</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>telecom</td>
                                                 <td>Location telecom</td>
                                                 <td></td>
@@ -165,7 +165,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>type</td>
                                                 <td>Type</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>physicalType</td>
                                                 <td>Location type</td>
                                                 <td></td>
@@ -173,7 +173,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>address</td>
                                                 <td>Address</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>address</td>
                                                 <td>Physical location</td>
                                                 <td></td>
@@ -181,7 +181,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>managingOrganisation</td>
                                                 <td>Managing organisation</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>managingOrganization</td>
                                                 <td>Managing organization</td>
                                                 <td></td>
@@ -189,7 +189,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>partOf</td>
                                                 <td>Part of</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>partOf</td>
                                                 <td>Another Location this one is physically a part of</td>
                                                 <td></td>
@@ -228,7 +228,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>identifier</td>
                                                 <td>Identifier</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>identifier</td>
                                                 <td>Identifies this organization across multiple systems</td>
                                                 <td></td>
@@ -236,7 +236,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>type</td>
                                                 <td>Type</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>type</td>
                                                 <td>Organization type</td>
                                                 <td></td>
@@ -244,7 +244,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>name</td>
                                                 <td>Name</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>name</td>
                                                 <td>Name of the organization</td>
                                                 <td></td>
@@ -252,7 +252,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>address</td>
                                                 <td>Address</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>address</td>
                                                 <td>An address for the organization</td>
                                                 <td></td>
@@ -260,7 +260,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>telecom</td>
                                                 <td>Telecom</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>telecom</td>
                                                 <td>Organization telecom</td>
                                                 <td></td>
@@ -268,7 +268,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:44.25pt">
                                                 <td>partOf</td>
                                                 <td>Part of</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>partOf</td>
                                                 <td>The organization of which this organization is part of: e.g. an ERN</td>
                                                 <td></td>
@@ -307,7 +307,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:59.0pt">
                                                 <td>personalIdentifier</td>
                                                 <td>An identifier of the patient that is unique within a defined scope (typically a national patient identifier, but it can also be a temporary identifier issued by the EHR).</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>identifier</td>
                                                 <td>Patient identifiers</td>
                                                 <td></td>
@@ -315,7 +315,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>name</td>
                                                 <td>Name associated with the patient/subject.</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>name</td>
                                                 <td>A name associated with the patient</td>
                                                 <td></td>
@@ -323,7 +323,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>dateOfBirth</td>
                                                 <td>Date of birth</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>birthDate</td>
                                                 <td>The date of birth for the patient</td>
                                                 <td></td>
@@ -331,7 +331,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>administrativeGender</td>
                                                 <td>Administrative gender</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>gender</td>
                                                 <td>Administrative Gender</td>
                                                 <td></td>
@@ -339,7 +339,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>address</td>
                                                 <td>Mailing and home or office addresses.</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>address</td>
                                                 <td>An address for the individual</td>
                                                 <td></td>
@@ -347,7 +347,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>telecom</td>
                                                 <td>Telecommunication contact information (addresses) associated to a person.</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>telecom</td>
                                                 <td>A contact detail for the patient</td>
                                                 <td></td>
@@ -355,7 +355,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>maritalStatus</td>
                                                 <td>Marital (civil) status of a patient</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>maritalStatus</td>
                                                 <td>Marital (civil) status of a patient</td>
                                                 <td></td>
@@ -363,7 +363,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:30.25pt">
                                                 <td>communicationLanguage</td>
                                                 <td>The language which can be used to communicate with the patient about his or her health.</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>communication.language</td>
                                                 <td>Communication language</td>
                                                 <td></td>
@@ -402,7 +402,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>animalIdentifier</td>
                                                 <td>Animal identifier</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">identifier</td>
                                                 <td>An identifier for this patient</td>
                                                 <td></td>
@@ -410,7 +410,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>species</td>
                                                 <td>Species</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>extension:patient-animal.extension:species</td>
                                                 <td>The animal species. E.g. Dog, Cow.</td>
                                                 <td></td>
@@ -418,7 +418,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>breed</td>
                                                 <td>Breed</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>extension:patient-animal.extension:breed</td>
                                                 <td>The breed of an animal.</td>
                                                 <td></td>
@@ -426,7 +426,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>genderStatus</td>
                                                 <td>Gender status</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>extension:patient-animal.extension:genderStatus</td>
                                                 <td>The state of the animal&#x27;s reproductive organs.</td>
                                                 <td></td>
@@ -434,7 +434,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>name</td>
                                                 <td>Name</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>name</td>
                                                 <td>A name associated with the patient</td>
                                                 <td></td>
@@ -442,7 +442,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:15.5pt">
                                                 <td>dateOfBirth</td>
                                                 <td>Date of birth</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>birthDate</td>
                                                 <td>The date of birth for the patient</td>
                                                 <td></td>
@@ -458,7 +458,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>address</td>
                                                 <td>Address</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>address</td>
                                                 <td>An address for the individual</td>
                                                 <td></td>
@@ -466,7 +466,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:30.25pt">
                                                 <td>deceased[x]</td>
                                                 <td>Deceased</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">deceased[x]</td>
                                                 <td>Indicates if the individual is deceased or not</td>
                                                 <td></td>
@@ -505,7 +505,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>use</td>
                                                 <td>Use</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>use</td>
                                                 <td>Purpose of this contact point</td>
                                                 <td></td>
@@ -513,7 +513,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>type</td>
                                                 <td>Type</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>system</td>
                                                 <td>Telecommunications form for contact point</td>
                                                 <td></td>
@@ -521,7 +521,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>value</td>
                                                 <td>Value</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>value</td>
                                                 <td>The actual contact point details</td>
                                                 <td></td>
@@ -560,7 +560,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>use</td>
                                                 <td>Purpose of the address</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>use</td>
                                                 <td>purpose of this address</td>
                                                 <td></td>
@@ -568,7 +568,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:59.0pt">
                                                 <td>type</td>
                                                 <td>Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>type</td>
                                                 <td>The type of an address (physical / postal).</td>
                                                 <td></td>
@@ -576,7 +576,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>text</td>
                                                 <td>Text representation of the address</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>text</td>
                                                 <td>Text representation of the address</td>
                                                 <td></td>
@@ -584,7 +584,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>street</td>
                                                 <td>Name of the street</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>line.extension:streetName</td>
                                                 <td>streetName</td>
                                                 <td></td>
@@ -592,7 +592,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>houseNumber</td>
                                                 <td>House number</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>line.extension:houseNumber</td>
                                                 <td>houseNumber</td>
                                                 <td></td>
@@ -600,7 +600,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>postBox</td>
                                                 <td>Post box</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>line.extension:postBox</td>
                                                 <td>postBox</td>
                                                 <td></td>
@@ -608,7 +608,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>city</td>
                                                 <td>City</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>city</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Name of city, town etc.</td>
                                                 <td></td>
@@ -616,7 +616,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>postalCode</td>
                                                 <td>Postal code</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>postalCode</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">Postal code for area</td>
                                                 <td></td>
@@ -722,7 +722,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>professionalRole.role</td>
                                                 <td>Health professional role. Multiple roles could be provided.</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">code</td>
                                                 <td>Roles which this practitioner may perform</td>
                                                 <td></td>
@@ -730,7 +730,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr>
                                                 <td>professionalRole.organisation</td>
                                                 <td>The organisation where this role is available</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>organisation</td>
                                                 <td>The organisation where this role is available</td>
                                                 <td></td>
@@ -738,7 +738,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:30.25pt">
                                                 <td>professionalRole.specialty</td>
                                                 <td>The specialty of a practitioner that describes the functional role they are practicing at a given organisation</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td style="font-size:11.0pt;font-family:'Calibri';white-space:normal">specialty</td>
                                                 <td>Specific specialty of the practitioner</td>
                                                 <td></td>
@@ -793,7 +793,7 @@ caption { text-align:left; font-weight:600; margin-bottom:0.5rem; }
                                         <tr style="height:30.25pt">
                                                 <td>name</td>
                                                 <td>Name of the health professional that has been treating or taking responsibility for the patient.</td>
-                                                <td>equal</td>
+                                                <td>equivalent</td>
                                                 <td>name</td>
                                                 <td>Practitioner Name</td>
                                                 <td></td>

@@ -36,7 +36,7 @@
           <tr>
             <td>identifier</td>
             <td>Identifier for the organisation.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>identifier</td>
             <td>Identifies this organization across multiple systems.</td>
             <td></td>
@@ -44,7 +44,7 @@
           <tr>
             <td>type</td>
             <td>Kind of organisation (e.g. hospital, lab, payer).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>type</td>
             <td>Organization type.</td>
             <td></td>
@@ -52,7 +52,7 @@
           <tr>
             <td>name</td>
             <td>Official or common name of the organisation.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>name</td>
             <td>Name of the organization.</td>
             <td></td>
@@ -60,7 +60,7 @@
           <tr>
             <td>address</td>
             <td>Postal / visit address for the organisation.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>address<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>An address for the organization.</td>
             <td>In R4 typically address; in R5 often contact.address.</td>
@@ -68,7 +68,7 @@
           <tr>
             <td>address</td>
             <td>Postal / visit address for the organisation.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>contact.address<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
             <td>An address for the organization.</td>
@@ -77,7 +77,7 @@
           <tr>
             <td>telecom</td>
             <td>General contact details (phone, fax, email).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>telecom<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Organization telecom.</td>
             <td>In R4 telecom; in R5 contact.telecom.</td>
@@ -85,7 +85,7 @@
           <tr>
           <td>telecom</td>
             <td>General contact details (phone, fax, email).</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>contact.telecom<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
             <td>Organization telecom.</td>
@@ -94,7 +94,7 @@
           <tr>
             <td>partOf</td>
             <td>Owning / parent organisation.</td>
-            <td>equal</td>
+            <td>equivalent</td>
             <td>partOf</td>
             <td>The organization of which this organization is part.</td>
             <td></td>
