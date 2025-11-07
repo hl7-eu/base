@@ -68,7 +68,7 @@
             <td>header.authorship</td>
             <td>Resource authoring details</td>
             <td>relatedto</td>
-            <td>author</td>
+            <td>recorder</td>
             <td>Author of the allergy/intolerance record.</td>
             <td>Can reference Practitioner, PractitionerRole, or Organization.</td>
           </tr>
@@ -212,13 +212,13 @@
             <td>CodeableConcept; EHDS allows multiple; FHIR reaction.manifestation is 1..* CodeableConcept.</td>
           </tr>
           <!-- reaction.date -->
-          <tr>
+          <tr class="highlight-yellow">
             <td>reaction.date</td>
             <td>Date and time of allergy manifestation.</td>
             <td>equal</td>
-            <td>reaction.date</td>
+            <td>reaction.onset ?</td>
             <td>Date and time of allergy manifestation.</td>
-            <td>Both are date/time points.</td>
+            <td>EHDS distinguishes "date of observation"; FHIR has one <code>reaction.onset</code> use that.</td>
           </tr>
           <!-- reaction.severity -->
           <tr>
@@ -230,13 +230,13 @@
             <td>FHIR has required VS; EHDS references eHDSISeverity.</td>
           </tr>
           <!-- reaction.onsetDate (EHDS subelement) -->
-          <tr>
+          <tr class="highlight-yellow">
             <td>reaction.onsetDate</td>
             <td>Date of the observation of the reaction.</td>
             <td>equal</td>
             <td>reaction.onset</td>
             <td>When the reaction occurred.</td>
-            <td>EHDS distinguishes "date of observation"; FHIR has one <code>reaction.onset</code> → use that.</td>
+            <td>EHDS distinguishes "date of observation"; FHIR has one <code>reaction.onset</code> use that.</td>
           </tr>
         </tbody>
       </table>
