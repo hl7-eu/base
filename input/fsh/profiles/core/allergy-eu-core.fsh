@@ -1,20 +1,17 @@
 Profile: AllergyIntoleranceEuCore
 Parent: AllergyIntolerance
 Id: allergyIntolerance-eu-core
-Title:    "Allergy Intolerance (EU core) [WIP]"
+Title:    "Allergy Intolerance (EU core)"
 Description: """This profile sets minimum expectations for the AllergyIntolerance resource common to most of the use cases."""
 * ^purpose = "This profile constrains the AllergyIntolerance resource for the purpose of project."
 * insert SetFmmandStatusRule (1, draft)
 // * insert ImposeProfile($AllergyIntolerance-uv-ips, 0)
 * extension contains $allergyintolerance-abatement named abatement 0..1
 * extension[abatement].valueDateTime ^short = "End date"
-// * clinicalStatus only $CodeableConcept-uv-ips
-// * verificationStatus only $CodeableConcept-uv-ips
 * verificationStatus ^short = "Certainty"
 * clinicalStatus ^short = "Current allergy or Intolerance status"
 * type ^short = "Type of propensity"
 * code 1..1
-// * code only $CodeableConcept-uv-ips
 * code from $allergy-intolerance-uv-ips (preferred)
 /* * code from EHDSIAllergyCode (preferred) */
 * code ^binding.extension[+].extension[+].url = "purpose"

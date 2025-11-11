@@ -21,12 +21,13 @@
           <tr>
             <th colspan="2" class="src-head">EHDSLocation (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">LocationEuCore</th>
+            <th colspan="4" class="tgt-head">LocationEuCore</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
             <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
+            <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
             <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
@@ -37,7 +38,7 @@
             <td>identifier</td>
             <td>Identifier for the location.</td>
             <td>equivalent</td>
-            <td>identifier</td>
+            <td>Location</td><td>identifier</td>
             <td>Unique code or number identifying the location.</td>
             <td></td>
           </tr>
@@ -45,7 +46,7 @@
             <td>name</td>
             <td>Human-readable name of the location.</td>
             <td>equivalent</td>
-            <td>name</td>
+            <td>Location</td><td>name</td>
             <td>Location name.</td>
             <td></td>
           </tr>
@@ -53,7 +54,7 @@
             <td>description</td>
             <td>Textual description of the location and its purpose.</td>
             <td>equivalent</td>
-            <td>description</td>
+            <td>Location</td><td>description</td>
             <td>Description of the location.</td>
             <td></td>
           </tr>
@@ -61,7 +62,7 @@
             <td>telecom</td>
             <td>Contact channels for the location (phone, fax, email, etc.).</td>
             <td>equivalent</td>
-            <td>telecom<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Location</td><td>telecom<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Location telecom / official contact details.</td>
             <td>In R4 this is usually telecom; in R5, contact info may live under contact.telecom.</td>
           </tr>
@@ -69,7 +70,7 @@
             <td>telecom</td>
             <td>Contact channels for the location (phone, fax, email, etc.).</td>
             <td>equivalent</td>
-            <td>contact.telecom<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            <td>Location</td><td>contact.telecom<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
             <td>Location telecom / official contact details.</td>
             <td>In R4 this is usually telecom; in R5, contact info may live under contact.telecom.</td>
@@ -78,7 +79,7 @@
             <td>type</td>
             <td>Type/category of the location (e.g. ward, lab, pharmacy counter).</td>
             <td>equivalent</td>
-            <td>physicalType<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Location</td><td>physicalType<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Type of location.</td>
             <td>In R4, physicalType is common; R5 shifts emphasis to type.</td>
           </tr>
@@ -86,7 +87,7 @@
             <td>type</td>
             <td>Type/category of the location (e.g. ward, lab, pharmacy counter).</td>
             <td>equivalent</td>
-            <td>type<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            <td>Location</td><td>type<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
             <td>Type of location.</td>
             <td>In R4, physicalType is common; R5 shifts emphasis to type.</td>
@@ -95,7 +96,7 @@
             <td>address</td>
             <td>Physical postal address of the location.</td>
             <td>equivalent</td>
-            <td>address</td>
+            <td>Location</td><td>address</td>
             <td>Address of the location.</td>
             <td>Uses Address/AddressEu.</td>
           </tr>
@@ -103,7 +104,7 @@
             <td>managingOrganisation</td>
             <td>Organisation responsible for the services provided at this location.</td>
             <td>equivalent</td>
-            <td>managingOrganization</td>
+            <td>Location</td><td>managingOrganization</td>
             <td>Managing organization.</td>
             <td>Reference to OrganizationEuCore.</td>
           </tr>
@@ -111,7 +112,7 @@
             <td>partOf</td>
             <td>Parent/host location of which this one is a physical part.</td>
             <td>equivalent</td>
-            <td>partOf</td>
+            <td>Location</td><td>partOf</td>
             <td>Another Location that contains this one.</td>
             <td>Supports hierarchical location trees.</td>
           </tr>

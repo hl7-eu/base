@@ -26,12 +26,13 @@
           <tr>
             <th colspan="2" class="src-head">EHDSHumanName (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">HumanName</th>
+            <th colspan="4" class="tgt-head">HumanName</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
             <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
+            <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
             <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
@@ -42,7 +43,7 @@
             <td>use</td>
             <td>Intended use of the name (official, alias, etc.).</td>
             <td>equivalent</td>
-            <td>use</td>
+            <td>HumanName</td><td>use</td>
             <td>Name use code.</td>
             <td>e.g. official, usual, nickname.</td>
           </tr>
@@ -50,7 +51,7 @@
             <td>text</td>
             <td>Full name as rendered for display.</td>
             <td>equivalent</td>
-            <td>text</td>
+            <td>HumanName</td><td>text</td>
             <td>Text representation of the full name.</td>
             <td>Typically a single string.</td>
           </tr>
@@ -58,7 +59,7 @@
             <td>family</td>
             <td>Family name / surname.</td>
             <td>equivalent</td>
-            <td>family</td>
+            <td>HumanName</td><td>family</td>
             <td>Family name (often called "surname").</td>
             <td></td>
           </tr>
@@ -66,7 +67,7 @@
             <td>given</td>
             <td>Given (first / middle) names.</td>
             <td>equivalent</td>
-            <td>given</td>
+            <td>HumanName</td><td>given</td>
             <td>Given names (may include middle names).</td>
             <td>Array in FHIR.</td>
           </tr>
@@ -74,7 +75,7 @@
             <td>prefix</td>
             <td>Honorifics or titles preceding the name.</td>
             <td>equivalent</td>
-            <td>prefix</td>
+            <td>HumanName</td><td>prefix</td>
             <td>Parts that come before the name.</td>
             <td>e.g. Dr, Prof, Sir.</td>
           </tr>
@@ -82,7 +83,7 @@
             <td>suffix</td>
             <td>Post-nominal letters, generational markers, etc.</td>
             <td>equivalent</td>
-            <td>suffix</td>
+            <td>HumanName</td><td>suffix</td>
             <td>Parts that come after the name.</td>
             <td>e.g. Jr, MD, PhD.</td>
           </tr>

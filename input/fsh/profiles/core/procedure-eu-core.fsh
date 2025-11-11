@@ -13,7 +13,6 @@ Description: "This profile represents the constraints applied to the Procedure r
 * text ^short = "Textual representation of the procedur"
  // textual representation of the procedure should be provided according to the EHN data set
 * status
-* code only $CodeableConcept-uv-ips
 * code 1.. 
   * ^binding.description = "Codes describing the type of  Procedure"
   * ^definition = "Identification of the procedure or recording of \"absence of relevant procedures\" or of \"procedures unknown\"."
@@ -38,7 +37,6 @@ Description: "This profile represents the constraints applied to the Procedure r
 * usedReference only Reference( Device or MedicationEuCore or Substance) // Specialize if needed
 * focalDevice ^short = "Device implanted, removed or otherwise manipulated"
 * focalDevice.manipulated only Reference ( Device ) // DeviceEuCore
-* bodySite only $CodeableConcept-uv-ips
 * bodySite from SNOMEDCTBodyStructures (preferred)
 * bodySite
   * ^definition = "Anatomical location which is the focus of the problem."

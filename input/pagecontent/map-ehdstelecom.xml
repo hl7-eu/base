@@ -24,12 +24,13 @@
           <tr>
             <th colspan="2" class="src-head">EHDSTelecom (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">ContactPoint</th>
+            <th colspan="4" class="tgt-head">ContactPoint</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
             <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
+            <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
             <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
@@ -40,7 +41,7 @@
             <td>use</td>
             <td>Intended use (home, work, temp, etc.).</td>
             <td>equivalent</td>
-            <td>use</td>
+            <td>ContactPoint</td><td>use</td>
             <td>Purpose of this contact point.</td>
             <td></td>
           </tr>
@@ -48,7 +49,7 @@
             <td>type</td>
             <td>Type of channel (phone, email, etc.).</td>
             <td>equivalent</td>
-            <td>system</td>
+            <td>ContactPoint</td><td>system</td>
             <td>Telecommunications form for contact point.</td>
             <td></td>
           </tr>
@@ -56,7 +57,7 @@
             <td>value</td>
             <td>Actual contact detail string.</td>
             <td>equivalent</td>
-            <td>value</td>
+            <td>ContactPoint</td><td>value</td>
             <td>The actual contact point details.</td>
             <td></td>
           </tr>

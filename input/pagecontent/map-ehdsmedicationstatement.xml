@@ -21,12 +21,13 @@
           <tr>
             <th colspan="2" class="src-head">EHDSMedicationStatement (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">MedicationStatement</th>
+            <th colspan="4" class="tgt-head">MedicationStatement</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
             <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
+            <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
             <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
@@ -37,7 +38,7 @@
             <td>identifier</td>
             <td>Identifier for this medication statement entry.</td>
             <td>equivalent</td>
-            <td>identifier</td>
+            <td>MedicationStatement</td><td>identifier</td>
             <td>Business identifier.</td>
             <td></td>
           </tr>
@@ -45,7 +46,7 @@
             <td>status</td>
             <td>Current status of the assertion (active, completed, etc.).</td>
             <td>equivalent</td>
-            <td>status</td>
+            <td>MedicationStatement</td><td>status</td>
             <td>Medication status within the statement.</td>
             <td>e.g. active, completed.</td>
           </tr>
@@ -53,7 +54,7 @@
             <td>medication</td>
             <td>The medication being taken or reported.</td>
             <td>equivalent</td>
-            <td>medication[x]</td>
+            <td>MedicationStatement</td><td>medication[x]</td>
             <td>Identifies the medication.</td>
             <td>Can reference a Medication resource or be a CodeableConcept.</td>
           </tr>
@@ -61,7 +62,7 @@
             <td>subject</td>
             <td>The person/animal this statement is about.</td>
             <td>equivalent</td>
-            <td>subject</td>
+            <td>MedicationStatement</td><td>subject</td>
             <td>Who is/was taking the medication.</td>
             <td>Reference to Patient/Animal Patient.</td>
           </tr>
@@ -69,7 +70,7 @@
             <td>effective[x]</td>
             <td>Period/dateTime when the medication was taken.</td>
             <td>equivalent</td>
-            <td>effective[x]</td>
+            <td>MedicationStatement</td><td>effective[x]</td>
             <td>When the medication was being consumed.</td>
             <td>Can be Period or dateTime.</td>
           </tr>
@@ -77,7 +78,7 @@
             <td>dosage</td>
             <td>How the medication is/was taken (dose, route, timing).</td>
             <td>equivalent</td>
-            <td>dosage</td>
+            <td>MedicationStatement</td><td>dosage</td>
             <td>Details of dose, timing, route.</td>
             <td>Repeats for complex regimens.</td>
           </tr>
@@ -85,7 +86,7 @@
             <td>informationSource</td>
             <td>Who reported this medication use.</td>
             <td>equivalent</td>
-            <td>informationSource</td>
+            <td>MedicationStatement</td><td>informationSource</td>
             <td>Source of the information in the statement.</td>
             <td>Important for reconciliation / accuracy.</td>
           </tr>
@@ -93,7 +94,7 @@
             <td>reason</td>
             <td>Why the medication is/was taken.</td>
             <td>relatedto</td>
-            <td>reasonCode / reasonReference<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>MedicationStatement</td><td>reasonCode / reasonReference<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Indication / therapy rationale.</td>
             <td>In R4, codes go to <code>reasonCode</code>; references (Condition / Observation / Procedure) go to <code>reasonReference</code>.
             </td>     
@@ -102,7 +103,7 @@
             <td>reason</td>
             <td>Why the medication is/was taken.</td>
             <td>relatedto</td>
-            <td>reason<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            <td>MedicationStatement</td><td>reason<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
             <td>Indication / therapy rationale.</td>        
             <td>In R5 use the CodeableReference <code>reason</code>.

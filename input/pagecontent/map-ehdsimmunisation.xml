@@ -5,14 +5,13 @@
     <title>EHDSImmunisation → Immunization</title>
     <link rel="stylesheet" type="text/css" href="map-pages.css" />
   </head>
-  <blockquote class="dragon">
-    <p>The content of this page is automatically generated and doesn't document the actual mapping.</p>    
-    <p>Please don't use this material for implementation purposes !</p>
-  </blockquote>
   <body>
-    <h3>EHDSImmunisation → Immunization</h3><a>  </a>
+    <h3>EHDSImmunisation → Immunization</h3>
+    <a> </a>
     <p>
-      This page describes the element-by-element mapping from the <strong>EHDSImmunisation</strong> logical model to the FHIR <code>Immunization</code> profile in this Implementation Guide.
+      This page describes the element-by-element mapping from the
+      <strong>EHDSImmunisation</strong> logical model to the FHIR
+      <code>Immunization</code> profile in this Implementation Guide.
     </p>
     <div class="table-wrap">
       <table summary="EHDSImmunisation → Immunization">
@@ -21,97 +20,202 @@
           <tr>
             <th colspan="2" class="src-head">EHDSImmunisation (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">Immunization</th>
+            <th colspan="4" class="tgt-head">Immunization</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
             <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
+            <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
             <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
         <tbody>
+          <!-- HEADER BLOCK (common dataset header) -->
           <tr>
-            <td>identifier</td>
-            <td>Identifier for the vaccination record.</td>
+            <td>header</td>
+            <td>Common header for all patient-related data.</td>
+            <td>relatedto</td>
+            <td>Immunization</td><td>.</td>
+            <td>General metadata.</td>
+            <td>Dataset-level; not usually carried in Immunization as-is.</td>
+          </tr>
+          <tr>
+            <td>header.subject</td>
+            <td>Patient/subject this immunisation is about.</td>
             <td>equivalent</td>
-            <td>identifier</td>
+            <td>Immunization</td><td>patient</td>
+            <td>Who received the vaccine.</td>
+            <td>Reference to Patient.</td>
+          </tr>
+          <tr>
+            <td>header.identifier</td>
+            <td>Business identifier for the object.</td>
+            <td>equivalent</td>
+            <td>Immunization</td><td>identifier</td>
             <td>External identifier(s) for this Immunization event.</td>
+            <td>Copy over all identifiers if multiple.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.authorship</td>
+            <td>Resource authoring details.</td>
+            <td>no-map</td>
+            <td>Immunization</td><td>XXXXXXX</td>
+            <td>XXXXXXXX</td>
+            <td>there is a performer and a source of information not the author...</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.authorship.author[x]</td>
+            <td>Who authored/recorded this immunisation.</td>
+            <td>no-map</td>
+            <td>Immunization</td>
+            <td>XXXXXXX</td>
+            <td>XXXXXXXX</td>
             <td></td>
           </tr>
-          <tr>
-            <td>status</td>
-            <td>Completion status (completed, not-done).</td>
-            <td>equivalent</td>
-            <td>status</td>
-            <td>Indicates if the vaccination was given.</td>
-            <td>FHIR also has statusReason for "not done".</td>
+            <tr class="highlight-yellow">
+     <td>header.authorship.datetime</td>
+      <td>Date/time the record was issued/recorded.</td>
+  <td>no-map</td>
+  <td>Immunization</td>
+  <td>XXXXXXX</td>
+  <td>XXXXXXXX</td>
+  <td></td>
+          </tr>
+           <tr class="highlight-yellow">
+            <td>header.lastUpdate</td>
+            <td>Last technical correction/update.</td>
+            <td>relatedto</td>
+            <td>Immunization</td><td>meta.lastUpdated</td>
+            <td>When the resource version last changed.</td>
+            <td>The map applies only if it represents the technical update timestamp (Instant).</td>
           </tr>
           <tr>
-            <td>vaccineCode</td>
-            <td>Vaccine product or antigen administered.</td>
+            <td>header.status</td>
+            <td>Indicates the current status of the immunisation event.</td>
             <td>equivalent</td>
-            <td>vaccineCode</td>
-            <td>Vaccine that was administered.</td>
-            <td>Can be CVX or national code systems.</td>
+            <td>Immunization</td><td>status</td>
+            <td>Indicates if the vaccination was given (completed, not-done).</td>
+            <td>Use <code>statusReason</code> in FHIR for "not done" reason when applicable.</td>
           </tr>
           <tr>
-            <td>patient</td>
-            <td>The vaccine recipient.</td>
+            <td>header.statusReason[x]</td>
+            <td>Reason for the current status of the resource.</td>
             <td>equivalent</td>
-            <td>patient</td>
-            <td>Who received the vaccine.</td>
-            <td>Reference to Patient/Animal Patient.</td>
+            <td>Immunization</td>
+            <td>statusReason[x]<span>[R4]</span></td>
+            <td>Reason for current status</td>
+            <td></td>
           </tr>
+            <tr>
+              <td>header.statusReason[x]</td>
+              <td>Reason for the current status of the resource.</td>
+              <td>equivalent</td>
+              <td>Immunization</td>
+              <td>statusReason<span>[R5]</span></td>
+                <td>Reason for current status</td>
+                <td></td>
+              </tr>
           <tr>
-            <td>occurrence[x]</td>
+            <td>header.language</td>
+            <td>Language of the resource (IETF tag).</td>
+            <td>equivalent</td>
+            <td>Immunization</td><td>language</td>
+            <td>Language used in the resource.</td>
+            <td></td>
+          </tr>
+          <!-- IMMUNISATION-SPECIFIC ELEMENTS -->
+          <tr>
+            <td>dateTimeOfVaccination</td>
             <td>Date/time administered.</td>
             <td>equivalent</td>
-            <td>occurrence[x]</td>
+            <td>Immunization</td><td>occurrence[x]</td>
             <td>When the vaccine was administered.</td>
-            <td>Usually occurrenceDateTime.</td>
+            <td>Usually <code>occurrenceDateTime</code>.</td>
           </tr>
           <tr>
-            <td>primarySource</td>
-            <td>Whether this is from a primary clinical source.</td>
+            <td>vaccine</td>
+            <td>Vaccine (antigen) administered.</td>
             <td>equivalent</td>
-            <td>primarySource</td>
-            <td>Indicates origin of information.</td>
+            <td>Immunization</td><td>vaccineCode</td>
+            <td>Vaccine that was administered.</td>
+            <td>CodeableConcept bound to the relevant vaccine/antigen value set.</td>
+          </tr>
+          <tr>
+            <td>administeredProduct</td>
+            <td>Vaccine product administered.</td>
+            <td>equivalent</td>
+            <td>Immunization</td><td>extension:administeredProduct <span>[R4]</span></td>
+            <td>Product that was administered.</td>
+            <td>Use the standard extension in R4.</td>
+          </tr>
+          <tr>
+            <td>administeredProduct</td>
+            <td>Vaccine product administered.</td>
+            <td>equivalent</td>
+            <td>Immunization</td><td>administeredProduct <span>[R5]</span></td>
+            <td>Product that was administered.</td>
+            <td>Reference to <code>Medication</code>.</td>
+          </tr>
+          <tr>
+            <td>diseaseOrAgentTargeted</td>
+            <td>Disease or agent targeted by the vaccination.</td>
+            <td>equivalent</td>
+            <td>Immunization</td><td>protocolApplied.targetDisease</td>
+            <td>Disease that the vaccination targets.</td>
             <td></td>
           </tr>
           <tr>
-            <td>location</td>
-            <td>Where the immunisation was given.</td>
+            <td>doseNumber</td>
+            <td>Dose number within the series.</td>
             <td>equivalent</td>
-            <td>location</td>
-            <td>Location where vaccine was administered.</td>
-            <td>Reference to LocationEuCore.</td>
+            <td>Immunization</td><td>protocolApplied.doseNumberString <span>[R4]</span></td>
+            <td>Dose number within the series.</td>
+            <td style="highlight-yellow">Use <code>doseNumberString</code> to align with R5.<strong>integer in the model</strong></td>
           </tr>
           <tr>
-            <td>performer</td>
+            <td>doseNumber</td>
+            <td>Dose number within the series.</td>
+            <td>equivalent</td>
+            <td>Immunization</td>
+            <td>protocolApplied.doseNumber <span>[R5]</span></td>
+            <td>Dose number within the series.</td>
+            <td style="highlight-yellow"><strong>integer in the model</strong></td>
+          </tr>
+          <tr>
+            <td>vaccineAdministrator</td>
             <td>Who administered the vaccine.</td>
             <td>equivalent</td>
-            <td>performer</td>
+            <td>Immunization</td><td>performer.actor</td>
             <td>Who performed the immunization.</td>
             <td>Usually PractitionerRole / Practitioner.</td>
           </tr>
-          <tr>
-            <td>lotNumber</td>
-            <td>Vaccine lot / batch number.</td>
-            <td>equivalent</td>
-            <td>lotNumber</td>
-            <td>Vaccine lot number.</td>
-            <td>Traceability / pharmacovigilance.</td>
+          <tr style="highlight-yellow">
+            <td>administeringCentre</td>
+            <td>Centre/organisation administering the vaccine.</td>
+            <td>source-broader-than-target</td>
+            <td>Immunization</td><td>performer.actor</td>
+            <td>Organization involved in administering the vaccine.</td>
+            <td>Reference to Organization when the centre is an organisation.</td>
           </tr>
-          <tr>
-            <td>route</td>
-            <td>Administration route (IM, SC, etc.).</td>
-            <td>equivalent</td>
-            <td>route</td>
-            <td>Administration route.</td>
-            <td>CodeableConcept.</td>
+          <tr style="highlight-yellow">
+            <td>administeringCentre</td>
+            <td>Centre/organisation administering the vaccine.</td>
+            <td>source-broader-than-target</td>
+            <td>Immunization</td><td>location</td>
+            <td>Location where vaccine was administered.</td>
+            <td>Reference to Location when the centre refers to a place.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>nextVaccinationDate</td>
+            <td>Next scheduled vaccination date.</td>
+            <td>source-is-narrower-than-target</td>
+            <td>ImmunizationRecommendation</td>
+            <td>recommendation.dateCriterion.value</td>
+            <td>The date whose meaning is specified by dateCriterion.code.</td>
+            <td>No direct element in Immunization; use ImmunizationRecommendation for scheduling.</td>
           </tr>
         </tbody>
       </table>

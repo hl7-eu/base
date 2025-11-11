@@ -22,12 +22,13 @@
           <tr>
             <th colspan="2" class="src-head">EHDSPatientAnimal (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">PatientAnimalEuCore</th>
+            <th colspan="4" class="tgt-head">PatientAnimalEuCore</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
             <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
+            <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
             <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
@@ -38,7 +39,7 @@
             <td>animalIdentifier</td>
             <td>Animal identifier.</td>
             <td>equivalent</td>
-            <td>identifier</td>
+            <td>Patient</td><td>identifier</td>
             <td>An identifier for this patient.</td>
             <td></td>
           </tr>
@@ -46,7 +47,7 @@
             <td>species</td>
             <td>Animal species.</td>
             <td>equivalent</td>
-            <td>extension:patient-animal.extension:species</td>
+            <td>Patient</td><td>extension:patient-animal.extension:species</td>
             <td>The animal species.</td>
             <td></td>
           </tr>
@@ -54,7 +55,7 @@
             <td>breed</td>
             <td>Breed of the animal.</td>
             <td>equivalent</td>
-            <td>extension:patient-animal.extension:breed</td>
+            <td>Patient</td><td>extension:patient-animal.extension:breed</td>
             <td>The breed of an animal.</td>
             <td></td>
           </tr>
@@ -62,7 +63,7 @@
             <td>genderStatus</td>
             <td>Reproductive status.</td>
             <td>equivalent</td>
-            <td>extension:patient-animal.extension:genderStatus</td>
+            <td>Patient</td><td>extension:patient-animal.extension:genderStatus</td>
             <td>The state of the animal's reproductive organs.</td>
             <td></td>
           </tr>
@@ -70,7 +71,7 @@
             <td>name</td>
             <td>Name of the animal patient.</td>
             <td>equivalent</td>
-            <td>name</td>
+            <td>Patient</td><td>name</td>
             <td>A name associated with the patient.</td>
             <td></td>
           </tr>
@@ -78,7 +79,7 @@
             <td>dateOfBirth</td>
             <td>Date of birth.</td>
             <td>equivalent</td>
-            <td>birthDate</td>
+            <td>Patient</td><td>birthDate</td>
             <td>The date of birth for the patient.</td>
             <td></td>
           </tr>
@@ -86,7 +87,7 @@
             <td>gender</td>
             <td>Recorded sex / gender property.</td>
             <td>relatedto</td>
-            <td>gender</td>
+            <td>Patient</td><td>gender</td>
             <td>A recorded sex or gender property for the individual.</td>
             <td>May differ from reproductive status.</td>
           </tr>
@@ -94,7 +95,7 @@
             <td>address</td>
             <td>Address of the owner / holding location.</td>
             <td>equivalent</td>
-            <td>address</td>
+            <td>Patient</td><td>address</td>
             <td>An address for the individual.</td>
             <td></td>
           </tr>
@@ -102,7 +103,7 @@
             <td>deceased[x]</td>
             <td>Whether the animal is deceased (and when).</td>
             <td>equivalent</td>
-            <td>deceased[x]</td>
+            <td>Patient</td><td>deceased[x]</td>
             <td>Indicates if the individual is deceased or not.</td>
             <td></td>
           </tr>

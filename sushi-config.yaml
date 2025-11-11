@@ -65,8 +65,6 @@ pages:
     title: Introduction
   modelmap.html:
     title: Model Map
-  modelmap-old.html:
-    title: Model Map (old)
   logicalmodels.md:
     title: Logical Models
   missing-data.md:
@@ -182,7 +180,6 @@ menu:
 #   Workflow 
   Implementation:
     Mapping to Profiles: modelmap.html
-    Mapping to Profiles (old): modelmap-old.html
 #    Examples: examples.html
 #    Implementation Notes: implementationnotes.html  
   About:
@@ -315,6 +312,7 @@ groups:
         - StructureDefinition/medication-eu-core
         - StructureDefinition/medicationRequest-eu-core
         - StructureDefinition/medicationStatement-eu-core
+        - StructureDefinition/procedure-eu-core
 #
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
