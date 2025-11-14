@@ -107,8 +107,8 @@
             <td>Status of the dataset/resource (technical/administrative).</td>
             <td>no-direct-equivalent</td>
             <td>Condition</td>
-            <td>extension[datasetStatus]</td>
-            <td>Administrative/technical status.</td>
+            <td>-</td>
+            <td>-</td>
             <td>Do not confuse with <code>Condition.clinicalStatus</code> or <code>verificationStatus</code> below.</td>
           </tr>
           <tr class="highlight-yellow">
@@ -116,9 +116,9 @@
             <td>Reason for current dataset status.</td>
             <td>no-direct-equivalent</td>
             <td>Condition</td>
-            <td>extension[datasetStatusReason]</td>
-            <td>Reason for admin/technical status.</td>
-            <td>Needs IG-specific extension.</td>
+            <td>-</td>
+            <td>-</td>
+            <td></td>
           </tr>
           <tr>
             <td>header.language</td>
