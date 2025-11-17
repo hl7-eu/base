@@ -10,8 +10,9 @@
     <a> </a>
     <p>
       This page describes the element-by-element mapping from the
-      <strong>EHDSImmunisation</strong> logical model to the FHIR
-      <code>Immunization</code> profile in this Implementation Guide.
+      <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSImmunisation.html" target="_blank">
+      <strong>EHDSImmunisation</strong></a> logical model to the FHIR
+      <a href="StructureDefinition-immunization-eu-core.html"><code>ImmunizationEuCore</code></a> profile in this Implementation Guide.
     </p>
     <div class="table-wrap">
       <table summary="EHDSImmunisation → Immunization">

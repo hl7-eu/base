@@ -10,8 +10,8 @@
     <a> </a>
     <p>
       This page describes the element-by-element mapping from the
-      <strong>EHDSAllergyIntolerance</strong> logical model to the FHIR
-      <code>AllergyIntolerance</code> profile in this Implementation Guide.
+      <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAllergyIntolerance.html" target="_blank"><strong>EHDSAllergyIntolerance</strong></a> logical model to the FHIR
+      <a href="StructureDefinition-allergyIntolerance-eu-core.html"><code>AllergyIntoleranceEuCore</code></a>profile in this Implementation Guide.
     </p>
     <div class="table-wrap">
       <table summary="EHDSAllergyIntolerance → AllergyIntolerance">

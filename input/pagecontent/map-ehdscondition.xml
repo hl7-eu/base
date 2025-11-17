@@ -14,9 +14,10 @@
     <h3>EHDSCondition → Condition</h3>
     <a>  </a>
     <p>
-      This page describes the element-by-element mapping from the
-      <strong>EHDSCondition</strong> logical model to the FHIR
-      <code>Condition</code> profile in this Implementation Guide.
+      This page describes the element-by-element mapping from the<a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSCondition.html" target="_blank">EHDSCondition
+      <strong>EHDSCondition</strong></a> logical model to the FHIR
+      <a href="StructureDefinition-condition-eu-core.html">
+      <code>Condition</code></a> profile in this Implementation Guide.
     </p>
     <div class="table-wrap">
       <table summary="EHDSCondition → Condition">
@@ -187,7 +188,7 @@
             <td>Condition</td>
             <td>note.text</td>
             <td>Additional text about the condition.</td>
-            <td>FHIR Condition has no direct "resolution reason"; use <code>Condition.note</code> (0..*). If your profile defines an extension, point here instead.</td>
+            <td>FHIR Condition has no direct "resolution reason"; use <code>Condition.note</code></td>
           </tr>
           <!-- severity -->
           <tr>
@@ -259,14 +260,14 @@
             <td></td>
           </tr>
           <!-- specialistContact -->
-          <tr class="highlight-yellow">
+          <tr>
             <td>specialistContact</td>
             <td>Health Professional specifically related to the problem, as a preferred contact.</td>
             <td>source-is-narrower-than-target</td>
             <td>CareTeam</td>
-            <td>participant.member</td>
+            <td>note.text</td>
             <td>Who is involved</td>
-            <td>FHIR R4 Condition has no native participant element. <code>CareTeam</code> can be used for indicating who is involved for the care of this Condition (referred in <code>CareTeam.reason</code>).</td>
+            <td>FHIR Condition has no native participant element. Suggest to use <code>Condition.note</code> to record in a textual form who should be contacted. When used, this information can also be derived from the <code>CareTeam</code> involved for the care of this Condition (referred in <code>CareTeam.reason</code>).</td>
           </tr>
           <!-- externalResource -->
           <tr class="highlight-yellow">

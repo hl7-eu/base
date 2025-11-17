@@ -15,9 +15,9 @@
     <h3>EHDSProcedure → Procedure</h3>
     <a>  </a>
     <p>
-      This page describes the element-by-element mapping from the
-      <strong>EHDSProcedure</strong> logical model to the FHIR
-      <code>Procedure</code> profile in this Implementation Guide.
+      This page describes the element-by-element mapping from the <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSProcedure.html" target="_blank"><strong>EHDSProcedure</strong></a> logical model to the FHIR 
+      <a href="StructureDefinition-procedure-eu-core.html">
+      <code>ProcedureEuCore</code></a> profile in this Implementation Guide.
     </p>
     <div class="table-wrap">
       <table summary="EHDSProcedure → Procedure">
@@ -103,24 +103,23 @@
             <td>source-is-broader-than-target</td>
             <td>Procedure</td><td>meta.lastUpdated</td>
             <td>Last system update timestamp.</td>
-            <td>EHDS header may have richer audit than FHIR <code>meta</code>.
-            </td>
+            <td>Waiting for Xt-EHR feedback</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.status</td>
             <td>Technical/administrative dataset status.</td>
             <td>no-direct-equivalent</td>
-            <td>Procedure</td><td>XXXXXXXX</td>
-            <td>XXXXXXXX</td>
-            <td>Do **not** confuse with <code>Procedure.status</code> (completed, in-progress, …).</td>
+            <td>Procedure</td><td>-</td>
+            <td>-</td>
+            <td>Waiting for Xt-EHR feedback</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.statusReason[x]</td>
             <td>Reason for current dataset status.</td>
             <td>no-direct-equivalent</td>
-            <td>Procedure</td><td>XXXXXXXX</td>
-            <td>XXXXXXXX</td>
-            <td>Requires IG-specific extension.</td>
+            <td>Procedure</td><td>-</td>
+            <td>-</td>
+            <td>Waiting for Xt-EHR feedback</td>
           </tr>
           <tr>
             <td>header.language</td>
@@ -137,7 +136,7 @@
             <td>equivalent</td>
             <td>Procedure</td><td>code</td>
             <td>Procedure code.</td>
-            <td>EHDS prefers SNOMED CT; FHIR allows national classifications.</td>
+            <td></td>
           </tr>
           <!-- date[x] -->
           <tr>

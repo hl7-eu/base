@@ -5,14 +5,14 @@
     <title>EHDSMedication → Medication</title>
     <link rel="stylesheet" type="text/css" href="map-pages.css" />
   </head>
-  <blockquote class="dragon">
-    <p>The content of this page is automatically generated and doesn't document the actual mapping.</p>    
-    <p>Please don't use this material for implementation purposes !</p>
-  </blockquote>
   <body>
-    <h3>EHDSMedication → Medication</h3><a>  </a>
+    <h3>EHDSMedication → Medication</h3>
+    <a> </a>
     <p>
-      This page describes the element-by-element mapping from the <strong>EHDSMedication</strong> logical model to the FHIR <code>Medication</code> profile(s) used in this Implementation Guide. The model supports prescribed/dispensed medication, and can represent both generic (virtual) products and branded (real) products.
+      This page describes the element-by-element mapping from the
+      <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedication.html" target="_blank"><strong>EHDSMedication</strong></a>
+      logical model to the FHIR <a href="StructureDefinition-medication-eu-core.html"><code>MedicationEuCore</code></a> profile used in this Implementation Guide.
+      The model supports prescribed/dispensed medication and can represent both generic (virtual) products and branded (real) products.
     </p>
     <div class="table-wrap">
       <table summary="EHDSMedication → Medication">
@@ -35,52 +35,252 @@
         </thead>
         <tbody>
           <tr>
-            <td>identifier</td>
-            <td>Identifier for this medication concept / product.</td>
-            <td>equivalent</td>
-            <td>Medication</td><td>identifier</td>
-            <td>Business identifier for the medication entry.</td>
-            <td>Can reflect regulatory or catalogue codes.</td>
-          </tr>
-          <tr>
-            <td>code</td>
-            <td>Identifies the medication (generic or branded).</td>
+            <td>identifyingCodeCodeableConcept</td>
+            <td>Identifier or code for the product (virtual/branded/package).</td>
             <td>equivalent</td>
             <td>Medication</td><td>code</td>
             <td>Code that identifies this medication.</td>
-            <td>Can represent abstract ingredient-based products or specific trade products.</td>
+            <td>Include ATC/other product codes as codings.</td>
           </tr>
           <tr>
-            <td>form</td>
-            <td>Pharmaceutical dose form (tablet, injection, etc.).</td>
+            <td>identifyingCodeIdentifier</td>
+            <td>Identifier for the product (virtual/branded/package).</td>
+            <td>equivalent</td>
+            <td>Medication</td><td>identifier</td>
+            <td>Business identifiers for the medication entry.</td>
+            <td>Use multiple identifiers if needed; avoid conflicting meanings.</td>
+          </tr>
+          <tr>
+            <td>classification</td>
+            <td>Classification (e.g. ATC; narcotic/psychotropic; orphan drug).</td>
+            <td>equivalent</td>
+            <td>Medication</td><td>extension:classification</td>
+            <td>Classifications of the product, e.g ATC, narcotic/psychotropic, orphan drug, etc</td>
+            <td>No dedicated classification element in Medication.</td>
+          </tr>
+          <tr>
+            <td>productName</td>
+            <td>Name of the product (full/invented/other).</td>
+            <td>relatedto</td>
+            <td>Medication</td><td>extension:productName</td>
+            <td>Text representation of the medication name.</td>
+            <td>Name of the medicinal product. Names of different types (full name, short name, etc) and in different languages can be provided if relevant. If the  code represents the product <code>code.text</code> my convey this information.</td>
+          </tr>
+          <tr>
+            <td>marketingAuthorisationHolder</td>
+            <td>Marketing authorisation holder / manufacturer.</td>
+            <td>equivalent</td>
+            <td>Medication</td><td>manufacturer <span>[R4]</span></td>
+            <td>Manufacturer of the item.</td>
+            <td>Reference to <code>Organization</code>.
+            </td>
+          </tr>
+          <tr>
+            <td>marketingAuthorisationHolder</td>
+            <td>Marketing authorisation holder / manufacturer.</td>
+            <td>equivalent</td>
+            <td>Medication</td>
+            <td>marketingAuthorizationHolder <span>[R5]</span></td>
+            <td>Organization that has authorization to market medication.</td>
+            <td>Reference to <code>Organization</code>.
+            </td>
+          </tr>
+          <tr>
+            <td>marketingAuthorisationHolder.organisationName</td>
+            <td>Name of the MAH/manufacturing organisation.</td>
+            <td>equivalent</td>
+            <td>Organization</td><td>name</td>
+            <td>Name used for the organization.</td>
+            <td>Populate the referenced Organization's <code>name</code>.</td>
+          </tr>
+          <tr>
+            <td>marketingAuthorisationHolder.organisationIdentifier</td>
+            <td>Identifier of the MAH/manufacturing organisation.</td>
+            <td>equivalent</td>
+            <td>Organization</td><td>identifier</td>
+            <td>Identifies this organization across multiple systems</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>doseForm</td>
+            <td>Dose form(s) on a product level.</td>
             <td>equivalent</td>
             <td>Medication</td><td>form</td>
             <td>Dose form of the medication.</td>
-            <td>Usually a CodeableConcept.</td>
+            <td>Preferred EDQM Standard Terms.</td>
           </tr>
-          <tr>
-            <td>ingredient</td>
-            <td>Active (and possibly inactive) ingredients and strengths.</td>
-            <td>equivalent</td>
+          <tr class="highlight-yellow">
+            <td>packSize</td>
+            <td>Overall amount of product in one package.</td>
+            <td>relatedto</td>
+            <td>Medication</td><td>amount <span>[R4]</span></td>
+            <td>Amount of the medication in the package.</td>
+            <td>R4 <code>Medication.amount</code> is a Ratio; in R5 <code>totalVolume</code> or <code>packaging.containedItem.amount</code> may be more precise.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>packSize</td>
+            <td>Overall amount of product in one package.</td>
+            <td>relatedto</td>
+            <td>Medication</td>
+            <td>totalVolume <span>[R5]</span>
+            </td>
+            <td>When the specified product code does not infer a package size, this is the specific amount of drug in the product.</td>
+            <td>R4 <code>Medication.amount</code> is a Ratio; in R5 <code>totalVolume</code> or <code>packaging.containedItem.amount</code> may be more precise.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>item</td>
+            <td>A medication item (components in a combination pack).</td>
+            <td>no map</td>
+            <td>Medication</td>
+            <td></td>
+            <td></td>
+            <td>Medication lacks per-item structures</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>item.doseForm</td>
+            <td>Dose form of the manufactured item.</td>
+            <td>no map</td>
+            <td>Medication</td><td></td>
+            <td></td>
+            <td>No per-item dose form element</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>item.ingredient</td>
+            <td>Ingredients of the item.</td>
+            <td>relatedto</td>
             <td>Medication</td><td>ingredient</td>
             <td>Medication ingredients.</td>
-            <td>FHIR supports per-ingredient strength.</td>
+            <td>Replicate per-item ingredients into <code>Medication.ingredient</code>.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>item.ingredient.isActive</td>
+            <td>Marks if the ingredient is active.</td>
+            <td>relatedto</td>
+            <td>Medication</td><td>ingredient.isActive</td>
+            <td>Is this an active ingredient.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>item.ingredient.substance</td>
+            <td>Substance.</td>
+            <td>equivalent</td>
+            <td>Medication</td><td>ingredient.itemCodeableConcept</td>
+            <td>The substance of the ingredient.</td>
+            <td>Preferred vocabulary: EMA SPOR SMS.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>item.ingredient.strengthInfo.strength</td>
+            <td>Strength of the substance.</td>
+            <td>relatedto</td>
+            <td>Medication</td><td>ingredient.strength[x]</td>
+            <td>Quantity of ingredient present.</td>
+            <td>Ratio (e.g., 500mg/1 tablet). It refers to the Medication not to a single item in the medication.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>item.ingredient.strengthInfo.basisOfStrengthSubstance</td>
+            <td>Substance the strength refers to (if different).</td>
+            <td>no map</td>
+            <td>Medication</td><td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>item.unitOfPresentation</td>
+            <td>Unit of presentation for the manufactured item.</td>
+            <td>no map</td>
+            <td>Medication</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>item.containedQuantity</td>
+            <td>Quantity for liquids (e.g., 3ml / 1 vial).</td>
+            <td>relatedto</td>
+            <td>Medication</td><td>extension:sizeOfItem</td>
+            <td>Size of one item (for example, in a pack of 5 vials, this would represent the size of 1 vial).</td>
+            <td>It refers to the Medication not to a single item in the medication.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>item.amount</td>
+            <td>Number of such manufactured items in this product.</td>
+            <td>no map</td>
+            <td>Medication</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>item.packageType</td>
+            <td>Type of package of the medication item.</td>
+            <td>relatedto</td>
+            <td>Medication</td><td>extension:packageType</td>
+            <td>Type of packaging.</td>
+            <td>It refers to the Medication not to a single item in the medication.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>device</td>
+            <td>Administration device included in the product.</td>
+            <td>relatedto</td>
+            <td>Medication</td><td>extension:device</td>
+            <td></td>
+            <td>It refers to the Medication not to a single item in the medication.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>device.deviceQuantity</td>
+            <td>Number of such devices.</td>
+            <td>relatedto</td>
+            <td>Medication</td><td>extension:device.extension:quantity</td>
+            <td></td>
+            <td>It refers to the Medication not to a single item in the medication.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>device.device[x]</td>
+            <td>Device coded (codeable concept or reference).</td>
+            <td>relatedto</td>
+            <td>Medication</td><td>extension:device.extension:device.value[x]</td>
+            <td></td>
+            <td>It refers to the Medication not to a single item in the medication.</td>       
+          </tr>
+          <tr class="highlight-yellow">
+            <td>characteristic</td>
+            <td>Other features of the product.</td>
+            <td>equivalent</td>
+            <td>Medication</td><td>extension:characteristic</td>
+            <td>Characteristics of the medication.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>characteristic.type</td>
+            <td>Type of characteristic.</td>
+            <td>equivalent</td>
+            <td>Medication</td><td>extension:characteristic.extension:type</td>
+            <td>Type of characteristic.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>characteristic.value[x]</td>
+            <td>Value of the characteristic.</td>
+            <td>equivalent</td>
+            <td>Medication</td><td>extension:characteristic.extension:value</td>
+            <td>Value of the characteristic.</td>
+            <td>Supports boolean, CodeableConcept, string, Quantity, dateTime, integer, decimal, Ratio in R5</td>
           </tr>
           <tr>
             <td>batch.lotNumber</td>
-            <td>Batch / lot number (for manufactured products).</td>
+            <td>Batch identifier of the medicinal product.</td>
             <td>equivalent</td>
             <td>Medication</td><td>batch.lotNumber</td>
             <td>Lot number of a particular batch.</td>
-            <td>Often only known at dispense/admin time.</td>
+            <td>Traceability / pharmacovigilance.</td>
           </tr>
           <tr>
             <td>batch.expirationDate</td>
-            <td>Expiry date of this lot/batch.</td>
+            <td>Batch expiration date of the medicinal product.</td>
             <td>equivalent</td>
             <td>Medication</td><td>batch.expirationDate</td>
-            <td>When the lot expires.</td>
-            <td>Traceability / pharmacovigilance.</td>
+            <td>When the batch expires.</td>
+            <td></td>
           </tr>
         </tbody>
       </table>

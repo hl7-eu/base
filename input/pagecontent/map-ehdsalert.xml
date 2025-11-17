@@ -9,8 +9,8 @@
     <h3>EHDSAlert → Flag</h3>
     <a>  </a>
     <p>
-      This page describes the element-by-element mapping from the <strong>EHDSAlert</strong> logical model to the
-      FHIR <code>Flag</code> (or equivalent alert/clinical warning profile) used in this Implementation Guide.
+      This page describes the element-by-element mapping from the <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAlert.html" target="_blank"><strong>EHDSAlert</strong></a> logical model to the
+      FHIR <code>FlagEuCore</code> profile used in this Implementation Guide.
       Alerts convey critical safety or clinical information that should be surfaced whenever the patient record is accessed.
     </p>
     <div class="table-wrap">

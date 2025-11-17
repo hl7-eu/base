@@ -55,7 +55,7 @@
                     <td>
                         <a class="pill" href="map-ehdsaddress.html">EHDSAddress Mapping</a>
                     </td>
-                    <td>🟡 Ready for first review</td>
+                    <td>🔵 Ready for final review</td>
                 </tr>
                 <tr>
                     <td>
@@ -67,7 +67,7 @@
                     <td>
                         <a class="pill" href="map-ehdshumanname.html">EHDSHumanName Mapping</a>
                     </td>
-                    <td>🟡 Ready for first review</td>
+                    <td>🔵 Ready for final review</td>
                 </tr>
                 <tr>
                     <td>
@@ -79,7 +79,7 @@
                     <td>
                         <a class="pill" href="map-ehdstelecom.html">EHDSTelecom Mapping</a>
                     </td>
-                    <td>🟡 Ready for first review</td>
+                    <td>🔵 Ready for final review</td>
                 </tr>
                 <tr>
                     <td>
@@ -91,7 +91,7 @@
                     <td>
                         <a class="pill" href="map-ehdsbodystructure.html">EHDSBodyStructure Mapping</a>
                     </td>
-                    <td>🟡 Ready for first review</td>
+                    <td>🔵 Ready for final review</td>
                 </tr>
             </tbody>
         </table>
@@ -221,7 +221,7 @@
                     <td>
                         <a class="pill" href="map-ehdscondition.html">EHDSCondition Mapping</a>
                     </td>
-                    <td>🟡 Ready for first review</td>
+                    <td>🟠 Reviewed – updates required</td>
                 </tr>
                 <tr>
                     <td>
@@ -274,7 +274,7 @@
                     <td>
                         <a class="pill" href="map-ehdsmedication.html">EHDSMedication Mapping</a>
                     </td>
-                    <td>❌ Do not use</td>
+                    <td>🟡 Ready for first review</td>
                 </tr>
                 <tr>
                     <td>
@@ -286,7 +286,7 @@
                     <td>
                         <a class="pill" href="map-ehdsmedicationstatement.html">EHDSMedicationStatement Mapping</a>
                     </td>
-                    <td>❌ Do not use</td>
+                    <td>🟡 Ready for first review</td>
                 </tr>
             </tbody>
         </table>
