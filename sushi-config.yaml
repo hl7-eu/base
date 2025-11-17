@@ -116,7 +116,7 @@ pages:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
 #
 parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-#  produce-jekyll-data: true
+  produce-jekyll-data: true
   special-url:
     - http://terminology.hl7.eu/CodeSystem/v3-ActCode
 #    - http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition
