@@ -40,5 +40,7 @@ Description: "This profile represents the constraints applied to the Procedure r
 * bodySite from SNOMEDCTBodyStructures (preferred)
 * bodySite
   * ^definition = "Anatomical location which is the focus of the problem."
+  * extension contains $bodySite-reference named bodySite 0..1
+  * extension[bodySite].valueReference only Reference(BodyStructureEuCore)  
   //* extension contains LateralityQualifier named laterality 0..1
 * note ^short = "Additional information about the procedure."
