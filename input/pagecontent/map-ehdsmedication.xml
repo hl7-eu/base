@@ -70,7 +70,7 @@
             <td>marketingAuthorisationHolder</td>
             <td>Marketing authorisation holder / manufacturer.</td>
             <td>equivalent</td>
-            <td>Medication</td><td>manufacturer <span>[R4]</span></td>
+            <td>Medication</td><td>manufacturer <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Manufacturer of the item.</td>
             <td>Reference to <code>Organization</code>.
             </td>
@@ -80,7 +80,7 @@
             <td>Marketing authorisation holder / manufacturer.</td>
             <td>equivalent</td>
             <td>Medication</td>
-            <td>marketingAuthorizationHolder <span>[R5]</span></td>
+            <td>marketingAuthorizationHolder <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Organization that has authorization to market medication.</td>
             <td>Reference to <code>Organization</code>.
             </td>
@@ -113,7 +113,7 @@
             <td>packSize</td>
             <td>Overall amount of product in one package.</td>
             <td>relatedto</td>
-            <td>Medication</td><td>amount <span>[R4]</span></td>
+            <td>Medication</td><td>amount <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Amount of the medication in the package.</td>
             <td>R4 <code>Medication.amount</code> is a Ratio; in R5 <code>totalVolume</code> or <code>packaging.containedItem.amount</code> may be more precise.</td>
           </tr>
@@ -122,7 +122,7 @@
             <td>Overall amount of product in one package.</td>
             <td>relatedto</td>
             <td>Medication</td>
-            <td>totalVolume <span>[R5]</span>
+            <td>totalVolume <span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
             <td>When the specified product code does not infer a package size, this is the specific amount of drug in the product.</td>
             <td>R4 <code>Medication.amount</code> is a Ratio; in R5 <code>totalVolume</code> or <code>packaging.containedItem.amount</code> may be more precise.</td>
@@ -242,7 +242,7 @@
             <td></td>
             <td>It refers to the Medication not to a single item in the medication.</td>       
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>characteristic</td>
             <td>Other features of the product.</td>
             <td>equivalent</td>
@@ -250,7 +250,7 @@
             <td>Characteristics of the medication.</td>
             <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>characteristic.type</td>
             <td>Type of characteristic.</td>
             <td>equivalent</td>
@@ -258,7 +258,7 @@
             <td>Type of characteristic.</td>
             <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>characteristic.value[x]</td>
             <td>Value of the characteristic.</td>
             <td>equivalent</td>

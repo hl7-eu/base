@@ -20,10 +20,12 @@ This profile is adapted from the MPD work."""
 * extension[unitOfPresentation] ^short = "Unit of presentation of the product (e.g. tablet, vial, ampoule, etc)"
 * extension contains MedicationPackageType named packageType 0..1
 * extension[packageType] ^short = "Type of container. This information is more relevant in cases when the packaging has an impact on administration of the product (e.g. pre-filled syringe)"
+* batch
+  * lotNumber ^short = "Lot Number"
+  * expirationDate ^short = "Expiration Date"
 * extension contains $ihe-ext-medication-device named device 0..* // device
 * extension[device] ^short = "Device, typically an administration device, included in the product."
 * extension[device].extension[device].valueCodeableConcept from $eHDSIPackage (example)
-
 
 // Only R4 rules
 
@@ -42,4 +44,5 @@ This profile is adapted from the MPD work."""
   * strength // MS // item.ingredient.strengthInfo (does not map exactly)
     * extension contains $ihe-ext-medication-strengthsubstance named basisOfStrengthSubstance 0..1 
     * extension[basisOfStrengthSubstance] ^short = "Substance for which the strength is provided (this could be different from the precise active ingredient)."
-* form from $eHDSIDoseForm (example) 
+* form from $eHDSIDoseForm (example)
+* manufacturer ^short = "Manufacturer"

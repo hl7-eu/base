@@ -15,7 +15,7 @@
 <artifact deprecated="true" id="StructureDefinition/BodyStructure-eu" key="StructureDefinition-BodyStructure-eu" name="Body structure (EU base)"/>
 <artifact id="StructureDefinition/bodyStructure-eu-core" key="StructureDefinition-bodyStructure-eu-core" name="BodyStructure (EU core)"/>
 <artifact id="BodyStructure/example-body-structure-eu" key="BodyStructure-example-body-structure-eu" name="BodyStructure Example"/>
-<artifact id="StructureDefinition/condition-eu-core" key="StructureDefinition-condition-eu-core" name="Condition (EU core) [WIP]"/>
+<artifact id="StructureDefinition/condition-eu-core" key="StructureDefinition-condition-eu-core" name="Condition (EU core)"/>
 <artifact deprecated="true" id="StructureDefinition/Coverage-eu-ehic" key="StructureDefinition-Coverage-eu-ehic" name="Coverage: EHIC"/>
 <artifact deprecated="true" id="ValueSet/oid-ehicPersonalId" key="ValueSet-oid-ehicPersonalId" name="EHIC Personal ID (system IDs - oid)"/>
 <artifact deprecated="true" id="ValueSet/uri-ehicPersonalId" key="ValueSet-uri-ehicPersonalId" name="EHIC Personal ID (system IDs - uri)"/>
@@ -26,7 +26,6 @@
 <artifact deprecated="true" id="StructureDefinition/HumanName-eu" key="StructureDefinition-HumanName-eu" name="HumanName (Eu)"/>
 <artifact deprecated="true" id="ValueSet/iso-ehicCountryCode" key="ValueSet-iso-ehicCountryCode" name="ISO 3166 - EHIC Country Codes"/>
 <artifact id="StructureDefinition/immunization-eu-core" key="StructureDefinition-immunization-eu-core" name="Immunization (EU core) [WIP]"/>
-<artifact id="StructureDefinition/immunization-administeredProduct" key="StructureDefinition-immunization-administeredProduct" name="Immunization AdministeredProduct"/>
 <artifact deprecated="true" id="StructureDefinition/location-eu" key="StructureDefinition-location-eu" name="Location (EU base)"/>
 <artifact id="StructureDefinition/location-eu-core" key="StructureDefinition-location-eu-core" name="Location (EU core)"/>
 <artifact id="Location/example-location" key="Location-example-location" name="Location Example"/>

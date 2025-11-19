@@ -15,6 +15,9 @@ Alias: $allergy-reaction-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/allergy-re
 Alias: $v3-ActClassExposure = http://terminology.hl7.org/ValueSet/v3-ActClassExposure
 Alias: $procedures-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips
 Alias: $medicine-active-substances-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips
+Alias: $vaccines-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips
+Alias: $target-diseases-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/target-diseases-uv-ips
+Alias: $problems-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/problems-uv-ips
 // ---- MyHealth#EU MVC
 Alias: $eHDSIBodySite = http://terminology.ehdsi.eu/ValueSet/eHDSIBodySite
 Alias: $eHDSICountry = http://terminology.ehdsi.eu/ValueSet/eHDSICountry

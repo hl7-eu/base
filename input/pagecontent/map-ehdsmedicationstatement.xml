@@ -98,14 +98,14 @@
             <td>relatedto</td>
             <td>MedicationStatement</td><td>status</td>
             <td>Position in the medication use lifecycle.</td>
-            <td>What is the difference with medicationTreatmentStatus</td>
+            <td>What is the difference with medicationTreatmentStatus ?</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.statusReason[x]</td>
             <td>Reason for the current status.</td>
             <td>source-wider-than-target</td>
             <td>MedicationStatement</td>
-            <td>extension:statusReason <span>[R5]</span>
+            <td>extension:statusReason <span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
             <td>Reason for current status</td>
             <td>Not in R4, preadopt R5 element. The model allows for CodeableConcept and string. The target only CodeableConcept.</td>
@@ -114,7 +114,7 @@
             <td>header.statusReason[x]</td>
             <td>Reason for the current status.</td>
             <td>source-wider-than-target</td>
-            <td>MedicationStatement</td><td>statusReason <span>[R5]</span></td>
+            <td>MedicationStatement</td><td>statusReason <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Reason for current status</td>
             <td>The model allows for CodeableConcept and string. The target only CodeableConcept.</td>
           </tr>
@@ -139,7 +139,7 @@
             <td>medication</td>
             <td>Describes the medicinal product.</td>
             <td>source-narrower-than-target</td>
-            <td>MedicationStatement</td><td>medication[x] <span>[R4]</span></td>
+            <td>MedicationStatement</td><td>medication[x] <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Medication expressed as a reference.</td>
             <td>In the model only  the Reference to <code>Medication</code>.</td>
           </tr>
@@ -148,7 +148,7 @@
             <td>Describes the medicinal product.</td>
             <td>equivalent</td>
             <td>MedicationStatement</td>
-            <td>medication <span>[R5]</span></td>
+            <td>medication <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Medication expressed as a reference.</td>
             <td>In the model only  the Reference to <code>Medication</code>.
             </td>
@@ -157,16 +157,16 @@
             <td>medicationReason</td>
             <td>Coded reason for use (diagnosis/procedure).</td>
             <td>equivalent</td>
-            <td>MedicationStatement</td><td>reasonCode <span>[R4]</span></td>
+            <td>MedicationStatement</td><td>reasonCode <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Reason for why the medication is/was taken.</td>
             <td></td>
           </tr>
           <tr>
             <td>medicationReason</td>
             <td>Coded reason for use (diagnosis/procedure).</td>
-            <td>source-narrower-than-target</td>
+            <td>equivalent</td>
             <td>MedicationStatement</td>
-            <td>reason <span>[R5]</span></td>
+            <td>reason.concept<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Reason for why the medication is/was taken.</td>
             <td></td>
           </tr>
@@ -174,7 +174,7 @@
             <td>medicationReasonText</td>
             <td>Free-text reason for use.</td>
             <td>relatedto</td>
-            <td>MedicationStatement</td><td>reasonCode.text <span>[R4]</span></td>
+            <td>MedicationStatement</td><td>reasonCode.text <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Textual reason for medication use.</td>
             <td>Alternatively convey as <code>note</code> if preferred.</td>
           </tr>
@@ -183,7 +183,7 @@
             <td>Free-text reason for use.</td>
             <td>relatedto</td>
             <td>MedicationStatement</td>
-            <td>reason.concept.text<span>[R5]</span>
+            <td>reason.concept.text<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
             <td>Textual reason for medication use.</td>
             <td></td>
@@ -194,7 +194,7 @@
             <td>source-narrower-than-target</td>
             <td>MedicationStatement</td><td>category</td>
             <td>Classification of statement.</td>
-            <td>FHIR category often reflects care setting; consider an extension or note if semantics differ.</td>
+            <td></td>
           </tr>
           <tr>
             <td>dosageInstructions</td>

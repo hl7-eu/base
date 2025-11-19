@@ -102,23 +102,33 @@
             <td>Use <code>statusReason</code> in FHIR for "not done" reason when applicable.</td>
           </tr>
           <tr>
-            <td>header.statusReason[x]</td>
+            <td class = "highlight-yellow">header.statusReason[x]</td>
             <td>Reason for the current status of the resource.</td>
-            <td>equivalent</td>
+            <td>source-wider-than-target</td>
             <td>Immunization</td>
-            <td>statusReason[x]<span>[R4]</span></td>
-            <td>Reason for current status</td>
+            <td>statusReason</td>
             <td></td>
+            <td>The reason why a vaccine was not administered.</td>
           </tr>
-            <tr>
-              <td>header.statusReason[x]</td>
-              <td>Reason for the current status of the resource.</td>
-              <td>equivalent</td>
-              <td>Immunization</td>
-              <td>statusReason<span>[R5]</span></td>
-                <td>Reason for current status</td>
-                <td></td>
-              </tr>
+          <tr>
+            <td class = "highlight-yellow">header.statusReason[x]</td>
+            <td>Reason for the current status of the resource.</td>
+            <td>source-wider-than-target</td>
+            <td>Immunization</td>
+            <td>reasonCode<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td></td>
+            <td>The reason why a vaccine was administered.</td>
+          </tr>
+          <tr>
+            <td class = "highlight-yellow">header.statusReason[x]</td>
+            <td>Reason for the current status of the resource.</td>
+            <td>source-wider-than-target</td>
+            <td>Immunization</td>
+            <td>reason.concept<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            </td>
+            <td></td>
+            <td>The reason why a vaccine was administered.</td>
+          </tr>
           <tr>
             <td>header.language</td>
             <td>Language of the resource (IETF tag).</td>
@@ -148,7 +158,7 @@
             <td>administeredProduct</td>
             <td>Vaccine product administered.</td>
             <td>equivalent</td>
-            <td>Immunization</td><td>extension:administeredProduct <span>[R4]</span></td>
+            <td>Immunization</td><td>extension:administeredProduct <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Product that was administered.</td>
             <td>Use the standard extension in R4.</td>
           </tr>
@@ -156,7 +166,7 @@
             <td>administeredProduct</td>
             <td>Vaccine product administered.</td>
             <td>equivalent</td>
-            <td>Immunization</td><td>administeredProduct <span>[R5]</span></td>
+            <td>Immunization</td><td>administeredProduct <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Product that was administered.</td>
             <td>Reference to <code>Medication</code>.</td>
           </tr>
@@ -172,7 +182,7 @@
             <td>doseNumber</td>
             <td>Dose number within the series.</td>
             <td>equivalent</td>
-            <td>Immunization</td><td>protocolApplied.doseNumberString <span>[R4]</span></td>
+            <td>Immunization</td><td>protocolApplied.doseNumberString <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Dose number within the series.</td>
             <td class="highlight-yellow">Use <code>doseNumberString</code> to align with R5.<strong>integer in the model</strong></td>
           </tr>
@@ -181,7 +191,7 @@
             <td>Dose number within the series.</td>
             <td>equivalent</td>
             <td>Immunization</td>
-            <td>protocolApplied.doseNumber <span>[R5]</span></td>
+            <td>protocolApplied.doseNumber <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Dose number within the series.</td>
             <td class="highlight-yellow"><strong>integer in the model</strong></td>
           </tr>
@@ -189,9 +199,9 @@
             <td>vaccineAdministrator</td>
             <td>Who administered the vaccine.</td>
             <td>equivalent</td>
-            <td>Immunization</td><td>performer.actor</td>
+            <td>Immunization</td><td class="highlight-yellow">performer:administeringCentreOrHp.actor</td>
             <td>Who performed the immunization.</td>
-            <td>Usually PractitionerRole / Practitioner.</td>
+            <td class="highlight-yellow">Usually PractitionerRole / Practitioner. Should the  slice name be changed ?</td>
           </tr>
           <tr class="highlight-yellow">
             <td>administeringCentre</td>

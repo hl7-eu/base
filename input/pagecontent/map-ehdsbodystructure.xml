@@ -88,7 +88,7 @@
             <td>laterality</td>
             <td>Laterality (e.g. left, right).</td>
             <td>equivalent</td>
-            <td>BodyStructure</td><td>extension[laterality]<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>BodyStructure</td><td>extension:laterality<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Body structure laterality.</td>
             <td>R4 often uses an extension; R5 includes laterality directly.</td>
           </tr>
