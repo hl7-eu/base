@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>EHDSMedicationPrescription → MedicationRequest</title>
+    <link rel="stylesheet" type="text/css" href="map-pages.css" />
+  </head>
+  <body>
+    <h3>EHDSMedicationPrescription → MedicationRequest</h3>
+    <a> </a>
+    <p>
+      This page describes the element-by-element mapping from the
+      <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSMedicationPrescription" target="_blank">
+        <strong>EHDSMedicationPrescription</strong>
+      </a>
+      logical model to the FHIR
+      <a href="StructureDefinition-medicationrequest-eu-core.html"><code>MedicationRequest</code></a>
+      profile in this Implementation Guide.
+    </p>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Context</strong>
+          Xt-EHR currently has no dedicated common model for <code>MedicationRequest</code>. For that reason, this mapping is based on the prescription model realised by the HL7 Europe Medication Prescription and Dispense (MPD) FHIR Implementation Guide (<a href="https://hl7.eu/fhir/mpd" target="_blank">https://hl7.eu/fhir/mpd</a>).
+        </div>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table summary="EHDSMedicationPrescription → MedicationRequest">
+        <caption>EHDSMedicationPrescription → MedicationRequest</caption>
+        <thead>
+          <tr>
+            <th colspan="2" class="src-head">EHDSMedicationPrescription (Logical Model)</th>
+            <th class="relhead">Relationship</th>
+            <th colspan="4" class="tgt-head">MedicationRequest</th>
+          </tr>
+          <tr>
+            <th class="src-sub">Element</th>
+            <th class="src-sub">Description</th>
+            <th class="relsub">Relation</th>
+            <th class="tgt-sub">Resource</th>
+            <th class="tgt-sub">Element</th>
+            <th class="tgt-sub">Description</th>
+            <th class="tgt-sub">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- HEADER BLOCK -->
+          <tr>
+            <td>header</td>
+            <td>Common header for the prescription dataset.</td>
+            <td>relatedto</td>
+            <td>MedicationRequest</td>
+            <td>.</td>
+            <td>General metadata.</td>
+            <td>Dataset-level information; not directly represented on the MedicationRequest instance.</td>
+          </tr>
+          <tr>
+            <td>header.subject</td>
+            <td>Patient for whom the medication is prescribed.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>subject</td>
+            <td>Identifies the patient.</td>
+            <td>Reference to Patient.</td>
+          </tr>
+          <tr>
+            <td>header.identifier</td>
+            <td>Business identifier(s) for the prescription.</td>
+            <td>source-narrow-than-target</td>
+            <td>MedicationRequest</td>
+            <td>identifier</td>
+            <td>External identifiers for this request.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>header.identifier</td>
+            <td>Identifier for a single item on the prescription.</td>
+            <td>source-narrow-than-target</td>
+            <td>MedicationRequest</td>
+            <td>groupIdentifier</td>
+            <td>Identifiers for a group of prescribed items.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.authorship</td>
+            <td>Details about the prescriber (author).</td>
+            <td>relatedto</td>
+            <td>MedicationRequest</td>
+            <td>requester</td>
+            <td>Who is requesting/prescribing the medication.</td>
+            <td>FHIR separates requester, recorder, and authoredOn; see child elements for specifics.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.authorship.author[x]</td>
+            <td>The prescriber who made the prescription.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>requester</td>
+            <td>The authorizing practitioner or organization.</td>
+            <td>Reference to Practitioner / PractitionerRole / Organization depending on profile rules.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.authorship.datetime</td>
+            <td>Time of issuing/signing the prescription.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>authoredOn</td>
+            <td>When the request was authored.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>header.lastUpdate</td>
+            <td>Last technical correction/update timestamp.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>meta.lastUpdated</td>
+            <td>System-level modification time.</td>
+            <td>Populate only if this represents the technical update instant.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.status</td>
+            <td>Status of authorization to dispense.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>status</td>
+            <td>Active/on-hold/cancelled/etc.</td>
+            <td>Use statusReason when additional context is required.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.statusReason[x]</td>
+            <td>Reason for the current prescription status.</td>
+            <td>source-wider-than-target</td>
+            <td>MedicationRequest</td>
+            <td>statusReason</td>
+            <td>Explains the status.</td>
+            <td>The model allows for CodeableConcept and string. The target only CodeableConcept.</td>
+          </tr>
+          <tr>
+            <td>header.language</td>
+            <td>Language in which the resource is written.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>language</td>
+            <td>Language of the narrative.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>header.recorder</td>
+            <td>Recorder of the prescription/draft.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>recorder</td>
+            <td>Who recorded the request in the system.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.recordingDate</td>
+            <td>Time of authoring the prescription/draft in the system.</td>
+            <td>relatedto</td>
+            <td>MedicationRequest</td>
+            <td>eventhistory.recorded</td>
+            <td>Date recorded in the system.</td>
+            <td>what is the difference with authorship.datetime?  autoredOn ? </td>
+          </tr>
+          <tr>
+            <td>header.validFrom</td>
+            <td>Effective date of the prescription.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>dispenseRequest.validityPeriod.start</td>
+            <td>Start of dispensing validity.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>header.validUntil</td>
+            <td>Validity period end date.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>dispenseRequest.validityPeriod.end</td>
+            <td>End of dispensing validity.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>presentedForm</td>
+            <td>Entire prescription as issued (PDF, etc.).</td>
+            <td>no-map</td>
+            <td>MedicationRequest</td>
+            <td></td>
+            <td></td>
+            <td>Reference a DocumentReference containing the rendered prescription.</td>
+          </tr>
+          <tr>
+            <td>comment</td>
+            <td>Additional information or comments.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>note</td>
+            <td>Textual comments.</td>
+            <td></td>
+          </tr>
+          <!-- PRESCRIPTION ITEM -->
+          <tr>
+            <td>prescriptionItem</td>
+            <td>Prescription line for a medication.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>.</td>
+            <td>MedicationRequest instances represent single items.</td>
+            <td>Create one MedicationRequest per prescription item.</td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.identifier</td>
+            <td>Identifier for a single item on the prescription.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>identifier</td>
+            <td>Identifiers for that single prescribed item.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.category</td>
+            <td>Category or categories of the prescription.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>category</td>
+            <td>Type of prescription.</td>
+            <td>Use appropriate value set (reimbursement type, etc.).</td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.medication</td>
+            <td>Prescribed product (branded, generic, etc.).</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>medication[x]<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Medication as CodeableConcept or Reference.</td>
+            <td class="highlight-yellow">EHDS model constrains to a reference to EHDSMedication.</td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.medication</td>
+            <td>Prescribed product (branded, generic, etc.).</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>medication<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            </td>
+            <td>Medication as CodeableConcept or Reference.</td>
+            <td class="highlight-yellow">EHDS model constrains to a reference to EHDSMedication.</td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.indicationCodeableConcept</td>
+            <td>Coded reason for the prescription.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>reasonCode<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Why the medication is prescribed.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.indicationCodeableConcept</td>
+            <td>Coded reason for the prescription.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>reason.concept<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Why the medication is prescribed.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.indicationEHDSCondition</td>
+            <td>Diagnosis/reason referenced as a Condition.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>reasonReference<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Reference to the clinical reason.</td>
+            <td>Reference to Condition or other resource.</td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.indicationEHDSCondition</td>
+            <td>Diagnosis/reason referenced as a Condition.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>reason.reference<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Reference to the clinical reason.</td>
+            <td>Reference to Condition or other resource.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>prescriptionItem.indicationText</td>
+            <td>Free-text reason for the prescription.</td>
+            <td>relatedto</td>
+            <td>MedicationRequest</td>
+            <td>reasonCode.text</td>
+            <td>Textual reason.</td>
+            <td>Alternatively capture as <code>note</code> if preferred.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>prescriptionItem.intendedUseType</td>
+            <td>Intent of the prescription (prophylaxis, treatment, etc.).</td>
+            <td>source-is-narrower-than-target</td>
+            <td>MedicationRequest</td>
+            <td>category</td>
+            <td>Classification of the request.</td>
+            <td>Use dedicated category code or custom extension if additional granularity is required.</td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.periodOfUse</td>
+            <td>Overall period over which the medication is to be taken.</td>
+            <td>relatedto</td>
+            <td>MedicationRequest</td>
+            <td>extension:effectiveDosePeriod<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Period over which the medication should be taken.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.periodOfUse</td>
+            <td>Overall period over which the medication is to be taken.</td>
+            <td>relatedto</td>
+            <td>MedicationRequest</td>
+            <td>effectiveDosePeriod<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Period over which the medication should be taken.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.quantityPrescribed</td>
+            <td>Overall quantity of product prescribed.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>dispenseRequest.extension:prescribedQuantity</td>
+            <td>Overall amount of product prescribed, independent from the number of repeats.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.dosageInstructions</td>
+            <td>Dosage and administration instructions.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>dosageInstruction</td>
+            <td>Dosage instructions for administration.</td>
+            <td>Map each EHDSDosaging entry to a <code>dosageInstruction</code>.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>prescriptionItem.preparationInstructions</td>
+            <td>Additional instructions about preparation or dispense.</td>
+            <td>relatedto</td>
+            <td>MedicationRequest</td>
+            <td>dispenseRequest.extension:dispenserInstruction<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Additional information for the dispenser</td>
+            <td>FHIR R4 has no dedicated field; preadopt the R5 element or capture as note</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>prescriptionItem.preparationInstructions</td>
+            <td>Additional instructions about preparation or dispense.</td>
+            <td>relatedto</td>
+            <td>MedicationRequest</td>
+            <td>dispenseRequest.dispenserInstruction<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Additional information for the dispenser</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.substitution.allowedBoolean</td>
+            <td>Whether substitution is allowed.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>substitution.allowedBoolean</td>
+            <td>Indicates if substitution is permitted.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>prescriptionItem.substitution.allowedCodeableConcept</td>
+            <td>How/what substitution is allowed.</td>
+            <td>source-is-broader-than-target</td>
+            <td>MedicationRequest</td>
+            <td>substitution.allowedCodeableConcept <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>CodeableConcept describing substitution allowance.</td>
+            <td>In R4 only boolean exists; use pre-adopted R5 element/extension if needed.</td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.substitution.reason[x]</td>
+            <td>Reason for substitution requirements.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>substitution.reason</td>
+            <td>Why substitution is (not) allowed.</td>
+            <td>FHIR accepts CodeableConcept; textual reasons may need an additional note.</td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.status</td>
+            <td>Status of a single item of the prescription.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>status</td>
+            <td>Status at the line level.</td>
+            <td>For single-item prescriptions, same meaning as header.status.</td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.statusReason[x]</td>
+            <td>Reason for the line-item status.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>statusReason</td>
+            <td>Status explanation.</td>
+            <td>As above, textual-only reasons may require notes.</td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.repeatsAllowed</td>
+            <td>Number of refills authorized.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>dispenseRequest.numberOfRepeatsAllowed</td>
+            <td>Repeat count.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>prescriptionItem.minimumDispenseInterval</td>
+            <td>Minimum interval between dispenses.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>dispenseRequest.dispenseInterval</td>
+            <td>Minimum dispense interval.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>prescriptionItem.offLabel.isOffLabelUse</td>
+            <td>Indicates off-label use.</td>
+            <td>relatedto</td>
+            <td>MedicationRequest</td>
+            <td>extension:offLabelUse</td>
+            <td>Flag for off-label prescription.</td>
+            <td>Implementer-specific extension required.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>prescriptionItem.offLabel.reason[x]</td>
+            <td>Reason for off-label use.</td>
+            <td>relatedto</td>
+            <td>MedicationRequest</td>
+            <td>extension:offLabelUse.reason</td>
+            <td>Explanation of off-label decision.</td>
+            <td>Same extension as above; allow CodeableConcept or string.</td>
+          </tr>
+          <tr>
+            <td>prescriptionItem.comment</td>
+            <td>Additional information or comments (line-level).</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td>
+            <td>note.text</td>
+            <td>Line-level comments.</td>
+            <td>Use <code>note.author</code> / <code>note.time</code> if available.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:2rem;color:#555;">
+      Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
+    </p>
+  </body>
+</html>

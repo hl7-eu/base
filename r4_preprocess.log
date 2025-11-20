@@ -63,6 +63,7 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdshumanname.x
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsimmunisation.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsimmunisation.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdslocation.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdslocation.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsmedication.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsmedication.xml
+Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsmedicationprescription.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsmedicationprescription.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsmedicationstatement.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsmedicationstatement.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsorganisation.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsorganisation.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdspatient.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdspatient.xml

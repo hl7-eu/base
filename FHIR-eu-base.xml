@@ -69,6 +69,7 @@
 <page key="map-ehdslocation" name="EHDSLocation to FHIR Location Mapping"/>
 <page key="map-ehdsmedication" name="EHDSMedication to FHIR Medication Mapping"/>
 <page key="map-ehdsmedicationstatement" name="EHDSMedicationStatement to FHIR MedicationStatement Mapping"/>
+<page key="map-ehdsmedicationprescription" name="EHDSMedicationprescription to FHIR MedicationRequest Mapping"/>
 <page key="map-ehdsorganisation" name="EHDSOrganisation to FHIR Organization Mapping"/>
 <page key="map-ehdspatient" name="EHDSPatient to FHIR Patient Mapping"/>
 <page key="map-ehdspatientanimal" name="EHDSPatientAnimal to FHIR Patient (Animal) Mapping"/>

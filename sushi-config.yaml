@@ -104,6 +104,8 @@ pages:
      title: EHDSMedication to FHIR Medication Mapping
   map-ehdsmedicationstatement.html:
      title: EHDSMedicationStatement to FHIR MedicationStatement Mapping
+  map-ehdsmedicationprescription.html:
+     title: EHDSMedicationprescription to FHIR MedicationRequest Mapping
  #  recommendations.md:
 #    title: Recommendations
 #
