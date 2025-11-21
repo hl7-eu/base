@@ -72,9 +72,43 @@
             <td>Resource authoring details.</td>
             <td>relatedto</td>
             <td>Condition</td>
-            <td>recorder</td>
+            <td>recorder<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Who recorded the condition.</td>
-            <td class="highlight-yellow">Condition has no generic "author"; use<code>recorder</code><strong>This element is 1.. in the model 0.. in the profile</strong></td>
+            <td class="highlight-yellow">Condition has no generic "author"; use<code>recorder</code> in R4<strong>This element is 1.. in the model 0.. in the profile</strong></td>
+          </tr>
+          <tr>
+            <td>header.authorship</td>
+            <td>Resource authoring details.</td>
+            <td>relatedto</td>
+            <td>Condition</td>
+            <td>participant.actor<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Who recorded the condition.</td>
+            <td class="highlight-yellow">Condition has no generic "author"; use<code>participant.actor</code> in R5
+              <strong>This element is 1.. in the model 0.. in the profile</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>header.authorship.author[x]</td>
+            <td>Who created/issued the condition record.</td>
+            <td>equivalent</td>
+            <td>Condition</td>
+            <td>recorder<span style="color:#2e7d32;font-weight:600;">〔R4〕</span>
+            </td>
+            <td>Who recorded the condition.</td>
+            <td class="highlight-yellow">Condition has no generic "author"; use<code>recorder</code> in R4<strong>This element is 1.. in the model 0.. in the profile</strong>
+            </td>
+          </tr>
+           <tr>
+            <td>header.authorship.author[x]</td>
+            <td>Who created/issued the condition record.</td>
+            <td>equivalent</td>
+            <td>Condition</td>
+            <td>participant.actor<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            </td>
+            <td>Who recorded the condition.</td>
+            <td class="highlight-yellow">Condition has no generic "author"; use<code>participant.actor</code> in R5
+              <strong>This element is 1.. in the model 0.. in the profile</strong>
+            </td>
           </tr>
           <tr>
             <td>header.authorship.author[x]</td>
@@ -83,7 +117,8 @@
             <td>Condition</td>
             <td>recorder</td>
             <td>Who recorded the condition.</td>
-            <td class="highlight-yellow">Can reference Practitioner, PractitionerRole, Patient, RelatedPerson (per profile).<strong>This element is 1.. in the model 0.. in the profile</strong></td>
+            <td class="highlight-yellow">Can reference Practitioner, PractitionerRole, Patient, RelatedPerson (per profile).<strong>This element is 1.. in the model 0.. in the profile</strong>
+            </td>
           </tr>
           <tr>
             <td>header.authorship.datetime</td>

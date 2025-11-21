@@ -46,10 +46,6 @@ Description: """This profile sets minimum expectations for the Composition resou
 * attester[resultValidator].mode = http://hl7.org/fhir/composition-attestation-mode#professional
 * attester[resultValidator].time 1..1
 * attester[resultValidator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore)
-* event 0..*
-* event.code 0..*
-* event.period 0..1
-* event.detail 0..*
 * category ^short = "Document Category"
 * section.extension contains $note named section-note 0..*
 * section.extension[section-note] ^short = "Additional notes that apply to the section (but not to specific resource)."

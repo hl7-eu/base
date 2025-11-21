@@ -105,18 +105,18 @@
             <td>Reason for the current status.</td>
             <td>source-wider-than-target</td>
             <td>MedicationStatement</td>
-            <td>extension:statusReason <span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            <td>statusReason<span style="color:#2e7d32;font-weight:600;">〔R4〕</span>
             </td>
             <td>Reason for current status</td>
-            <td>Not in R4, preadopt R5 element. The model allows for CodeableConcept and string. The target only CodeableConcept.</td>
+            <td>Not in R5. The model allows for CodeableConcept and string. The target only CodeableConcept.</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.statusReason[x]</td>
             <td>Reason for the current status.</td>
-            <td>source-wider-than-target</td>
-            <td>MedicationStatement</td><td>statusReason <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Reason for current status</td>
-            <td>The model allows for CodeableConcept and string. The target only CodeableConcept.</td>
+            <td>no-map</td>
+            <td>MedicationStatement</td><td><span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td></td>
+            <td>Not in R5. Should be removed it ?</td>
           </tr>
           <tr>
             <td>header.language</td>
