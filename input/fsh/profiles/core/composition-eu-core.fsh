@@ -1,0 +1,60 @@
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  CompositionEuCore
+Parent:   Composition
+Id:       composition-eu-core
+Title:    "Composition (EU core) [WIP]"
+Description: """This profile sets minimum expectations for the Composition resource for commonly used EHDS documents."""
+//-------------------------------------------------------------------------------------------
+* ^experimental = false
+* ^purpose = "This profile constrains the Composition resource for the purpose of this guide."
+* extension contains $composition.version-r5 named version 0..1
+* extension[version].value[x] only string
+* extension contains
+    $composition-basedOn-order-or-requisition named basedOnOrder 0..* and
+    $information-recipient named informationRecipient 0..* and
+    $composition-diagnosticReportReference named diagnosticReport 0..1 and
+    $event-basedOn named basedOn 0..*
+// keep or remove them ?
+* extension[basedOnOrder].value[x] only Identifier or Reference(ServiceRequest)
+* extension[basedOnOrder].valueReference only Reference(ServiceRequest)
+* extension[basedOn]
+* extension[informationRecipient].value[x] only Reference(PractitionerEuCore or PractitionerRoleEuCore or OrganizationEuCore or Device or PatientEuCore or RelatedPerson)
+* extension[diagnosticReport].value[x] only Reference(DiagnosticReport)
+* identifier 1..1
+* identifier ^short = "Report identifier"
+* identifier ^definition = "Identifiers assigned to this report by the performer or other systems. Should remain stable across versions of the report."
+* status 1..1
+* type 1..1
+* type ^short = "Type of document/report (e.g. imaging report LOINC)"
+* subject 1..1
+* subject only Reference(PatientEuCore or Group or LocationEuCore or Device)
+* encounter 0..1
+* author 1..*
+* author only Reference(PractitionerEuCore or PractitionerRoleEuCore or OrganizationEuCore or Device or PatientEuCore or RelatedPerson)
+* date 1..1
+* title 1..1
+* custodian only Reference(OrganizationEuCore)
+* attester 0..*
+  * insert SliceElement( #value, mode )
+* attester.mode 1..1
+* attester.time 0..1
+* attester.party only Reference(PatientEuCore or RelatedPerson or PractitionerEuCore or PractitionerRoleEuCore or OrganizationEuCore)
+* attester contains legalAuthenticator 0..* and resultValidator 0..*
+* attester[legalAuthenticator].mode = http://hl7.org/fhir/composition-attestation-mode#legal
+* attester[legalAuthenticator].time 1..1
+* attester[legalAuthenticator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore)
+* attester[resultValidator].mode = http://hl7.org/fhir/composition-attestation-mode#professional
+* attester[resultValidator].time 1..1
+* attester[resultValidator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore)
+* event 0..*
+* event.code 0..*
+* event.period 0..1
+* event.detail 0..*
+* category ^short = "Document Category"
+* section.extension contains $note named section-note 0..*
+* section.extension[section-note] ^short = "Additional notes that apply to the section (but not to specific resource)."
+* section.extension[section-note] ^definition = "Additional notes that apply to the section (but not to specific resource)."
+* section.title 1..
+* section.code 1..
+* section.text 1..
+* section.emptyReason ^short = "Empty reason"

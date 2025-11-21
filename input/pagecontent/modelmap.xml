@@ -251,6 +251,35 @@
         </table>
     </div>
     <h4>
+        <span class="group-emoji">📄</span> Document Models
+    </h4><a>   </a>
+    <div class="table-wrapper">
+        <table class="model-index">
+            <thead>
+                <tr>
+                    <th>EHDS Logical Model</th>
+                    <th>FHIR Profile / Type in this IG</th>
+                    <th>Mapping Details</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSDocument.html" target="_blank">EHDSDocument</a>
+                    </td>
+                    <td>
+                        <a href="StructureDefinition-composition-eu-core.html"><code>CompositionEuCore</code></a>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdsdocument.html">EHDSDocument Mapping</a>
+                    </td>
+                    <td>🚧 Draft – new mapping</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h4>
         <span class="group-emoji">💊</span> Medication Models
     </h4><a>   </a>
     <div class="table-wrapper">

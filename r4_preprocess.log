@@ -21,6 +21,7 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\base\patient-eu.fs
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\base\practitioner-eu.fsh -> /workspace/hl7eu-base\input\fsh\profiles\base\practitioner-eu.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\allergy-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\allergy-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\bodyStructure-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\bodyStructure-eu-core.fsh
+Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\composition-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\composition-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\condition-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\condition-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\flag-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\flag-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\immunization-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\immunization-eu-core.fsh
@@ -58,6 +59,7 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsalert.xml -
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsallergyintolerance.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsallergyintolerance.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsbodystructure.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsbodystructure.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdscondition.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdscondition.xml
+Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsdocument.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsdocument.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdshealthprofessional.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdshealthprofessional.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdshumanname.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdshumanname.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsimmunisation.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsimmunisation.xml

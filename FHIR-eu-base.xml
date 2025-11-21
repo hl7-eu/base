@@ -15,6 +15,7 @@
 <artifact deprecated="true" id="StructureDefinition/BodyStructure-eu" key="StructureDefinition-BodyStructure-eu" name="Body structure (EU base)"/>
 <artifact id="StructureDefinition/bodyStructure-eu-core" key="StructureDefinition-bodyStructure-eu-core" name="BodyStructure (EU core)"/>
 <artifact id="BodyStructure/example-body-structure-eu" key="BodyStructure-example-body-structure-eu" name="BodyStructure Example"/>
+<artifact id="StructureDefinition/composition-eu-core" key="StructureDefinition-composition-eu-core" name="Composition (EU core) [WIP]"/>
 <artifact id="StructureDefinition/condition-eu-core" key="StructureDefinition-condition-eu-core" name="Condition (EU core)"/>
 <artifact deprecated="true" id="StructureDefinition/Coverage-eu-ehic" key="StructureDefinition-Coverage-eu-ehic" name="Coverage: EHIC"/>
 <artifact deprecated="true" id="ValueSet/oid-ehicPersonalId" key="ValueSet-oid-ehicPersonalId" name="EHIC Personal ID (system IDs - oid)"/>
@@ -63,6 +64,7 @@
 <page key="map-ehdsallergyintolerance" name="EHDSAllergyIntolerance to FHIR AllergyIntolerance Mapping"/>
 <page key="map-ehdsbodystructure" name="EHDSBodyStructure to FHIR BodyStructure Mapping"/>
 <page key="map-ehdscondition" name="EHDSCondition to FHIR Condition Mapping"/>
+<page key="map-ehdsdocument" name="EHDSDocument to FHIR Composition Mapping"/>
 <page key="map-ehdshealthprofessional" name="EHDSHealthProfessional to FHIR PractitionerRole, Practitioner Mapping"/>
 <page key="map-ehdshumanname" name="EHDSHumanName to FHIR HumanName Mapping"/>
 <page key="map-ehdsimmunisation" name="EHDSImmunisation to FHIR Immunization Mapping"/>

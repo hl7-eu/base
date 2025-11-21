@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>EHDSDocument ↔ Composition</title>
+    <link rel="stylesheet" type="text/css" href="map-pages.css" />
+  </head>
+  <body>
+    <h3>EHDSDocument ↔ Composition</h3>
+    <a> </a>
+    <p>
+      This page describes the element-by-element mapping from the
+      <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSDocument.html" target="_blank"><strong>EHDSDocument</strong></a>
+      logical model to the FHIR <a href="StructureDefinition-composition-eu-core.html"><code>CompositionEuCore</code></a> profile used in this Implementation Guide.
+    </p>
+    <div class="table-wrap">
+      <table summary="EHDSDocument ↔ Composition">
+        <caption>EHDSDocument ↔ Composition</caption>
+        <thead>
+          <tr>
+            <th colspan="2" class="src-head">EHDSDocument (Logical Model)</th>
+            <th class="relhead">Relationship</th>
+            <th colspan="4" class="tgt-head">Composition</th>
+          </tr>
+          <tr>
+            <th class="src-sub">Element</th>
+            <th class="src-sub">Description</th>
+            <th class="relsub">Relation</th>
+            <th class="tgt-sub">Resource</th>
+            <th class="tgt-sub">Element</th>
+            <th class="tgt-sub">Description</th>
+            <th class="tgt-sub">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- HEADER BLOCK -->
+          <tr>
+            <td>header</td>
+            <td>Document header elements.</td>
+            <td>relatedto</td>
+            <td>Composition</td>
+            <td>.</td>
+            <td>General metadata.</td>
+            <td>Dataset-level information across the Composition instance.</td>
+          </tr>
+          <tr>
+            <td>header.subject</td>
+            <td>Patient/subject information.</td>
+            <td>equivalent</td>
+            <td>Composition</td>
+            <td>subject</td>
+            <td>Who or what the composition is about.</td>
+            <td>Reference to Patient.</td>
+          </tr>
+          <tr>
+            <td>header.identifier</td>
+            <td>Unique identifier of the document.</td>
+            <td>equivalent</td>
+            <td>Composition</td>
+            <td>identifier</td>
+            <td>Document identifier.</td>
+            <td>Multiple identifiers allowed; Composition R4 allows 0..1, R5 0..*.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.authorship</td>
+            <td>Resource authoring details.</td>
+            <td>relatedto</td>
+            <td>Composition</td>
+            <td>author / date</td>
+            <td>Authors and composition creation time.</td>
+            <td>Composition.date is the time of composition; see child elements.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.authorship.author[x]</td>
+            <td>Author(s) who authored the resource.</td>
+            <td>equivalent</td>
+            <td>Composition</td>
+            <td>author</td>
+            <td>List of logical authors.</td>
+            <td>Reference to Practitioner / PractitionerRole / Organization / Device.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.authorship.datetime</td>
+            <td>Date and time of authoring/issuing.</td>
+            <td>equivalent</td>
+            <td>Composition</td>
+            <td>date</td>
+            <td>Composition creation time.</td>
+            <td>Consider meta.lastUpdated for technical update timestamp.</td>
+          </tr>
+          <tr>
+            <td>header.lastUpdate</td>
+            <td>Date/time of last technical update.</td>
+            <td>equivalent</td>
+            <td>Composition</td>
+            <td>meta.lastUpdated</td>
+            <td>System-level modification time.</td>
+            <td>Populate only for technical corrections.</td>
+          </tr>
+          <tr>
+            <td>header.status</td>
+            <td>Status of the resource or document.</td>
+            <td>equivalent</td>
+            <td>Composition</td>
+            <td>status</td>
+            <td>preliminary | final | amended | entered-in-error.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.statusReason[x]</td>
+            <td>Reason for the current status.</td>
+            <td>no-map</td>
+            <td>Composition</td>
+            <td></td>
+            <td></td>
+            <td>No native element; capture via extension or note if required.</td>
+          </tr>
+          <tr>
+            <td>header.language</td>
+            <td>Language of the resource (IETF BCP-47).</td>
+            <td>equivalent</td>
+            <td>Composition</td>
+            <td>language</td>
+            <td>Language of the narrative.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>header.documentType</td>
+            <td>Type of document (e.g., LOINC 60591-5).</td>
+            <td>equivalent</td>
+            <td>Composition</td>
+            <td>type</td>
+            <td>Kind of composition (LOINC preferred).</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>header.documentTitle</td>
+            <td>Human readable document title.</td>
+            <td>equivalent</td>
+            <td>Composition</td>
+            <td>title</td>
+            <td>Official human-readable label.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.period</td>
+            <td>Time of service being documented.</td>
+            <td>relatedto</td>
+            <td>Composition</td>
+            <td>event.period</td>
+            <td>Period covered by the composition content.</td>
+            <td>Map to the primary Composition.event entry.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.version</td>
+            <td>Business version of the document.</td>
+            <td>relatedto</td>
+            <td>Composition</td>
+            <td>extension:version</td>
+            <td>Document business version.</td>
+            <td>Use Composition.version extension (pre-adopt R5 extension).</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.attestation</td>
+            <td>Document attestation details.</td>
+            <td>relatedto</td>
+            <td>Composition</td>
+            <td>attester</td>
+            <td>Participants responsible for attesting the composition.</td>
+            <td>Use mode to distinguish assertions.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.attestation.attester</td>
+            <td>Attester who validated the document.</td>
+            <td>equivalent</td>
+            <td>Composition</td>
+            <td>attester.party</td>
+            <td>Who attested the composition.</td>
+            <td>Reference to Practitioner / PractitionerRole.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.attestation.datetime</td>
+            <td>Date/time of approval by attester.</td>
+            <td>equivalent</td>
+            <td>Composition</td>
+            <td>attester.time</td>
+            <td>When the composition was attested.</td>
+            <td>Set attester.mode as appropriate (e.g., professional).</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.legalAuthentication</td>
+            <td>Document legal authentication details.</td>
+            <td>relatedto</td>
+            <td>Composition</td>
+            <td>attester</td>
+            <td>Legal authenticator.</td>
+            <td>Use attester.mode = "legal" for the legal authenticator.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.legalAuthentication.legalAuthenticator</td>
+            <td>Person responsible for medical content.</td>
+            <td>relatedto</td>
+            <td>Composition</td>
+            <td>attester.party</td>
+            <td>Legal authenticator party.</td>
+            <td>Reference to Practitioner / PractitionerRole; set mode = legal.</td>
+          </tr>
+          <tr>
+            <td>header.legalAuthentication.datetime</td>
+            <td>Date/time when the document was authorised.</td>
+            <td>equivalent</td>
+            <td>Composition</td>
+            <td>attester.time</td>
+            <td>When the composition was attested.</td>
+            <td>Use with legal authenticator attester entry.</td>
+          </tr>
+          <tr>
+            <td>header.eventType</td>
+            <td>Categorisation of the event covered by the document.</td>
+            <td>equivalent</td>
+            <td>Composition</td>
+            <td>event.code</td>
+            <td>Codes describing the event(s) related to the composition.</td>
+            <td>Use appropriate vocabulary (e.g., LOINC, SNOMED CT).</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>header.serviceSpecialty</td>
+            <td>Details about where the content was created (clinical specialty).</td>
+            <td>relatedto</td>
+            <td>Composition</td>
+            <td>category</td>
+            <td>Categorizes the composition.</td>
+            <td>Use category to tag specialty if no dedicated extension/profile element exists.</td>
+          </tr>
+          <tr>
+            <td>header.custodian</td>
+            <td>Organisation maintaining the document/report.</td>
+            <td>equivalent</td>
+            <td>Composition</td>
+            <td>custodian</td>
+            <td>Organization responsible for maintenance.</td>
+            <td>Reference to Organization.</td>
+          </tr>
+          <tr>
+            <td>header.confidentiality</td>
+            <td>Level of confidentiality (implicit normal).</td>
+            <td>equivalent</td>
+            <td>Composition</td>
+            <td>confidentiality</td>
+            <td>As defined by confidentiality codes.</td>
+            <td>Use HL7 v3 Confidentiality vocabulary.</td>
+          </tr>
+          <!-- DOCUMENT BODY -->
+          <tr class="highlight-yellow">
+            <td>presentedForm</td>
+            <td>Narrative easy-to-read representation (e.g., PDF).</td>
+            <td>no-map</td>
+            <td>Composition</td>
+            <td></td>
+            <td></td>
+            <td>Use a related DocumentReference with <code>presentedForm</code> to carry rendered content.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:2rem;color:#555;">
+      Return to overview: <a href="modelmap.html">EHDS Logical Models ↔ FHIR Profiles</a>
+    </p>
+  </body>
+</html>

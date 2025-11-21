@@ -42,13 +42,20 @@ For the most recent and in-progress versions, please refer to the [**Xt-EHR EHDS
 
 #### 🩺 Clinical Information Models
 
-| **Model**                                                                                                   | **Description**                                                                                                                                                  |
-| ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Model**                                                                                                     | **Description**                                                                                                  |
+| ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | [EHDSAlert](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAlert.html)                           | EHDS refined base model for clinical alerts                                                                                                                      |
 | [EHDSAllergyIntolerance](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAllergyIntolerance.html) | EHDS refined base model for allergy or intolerance information                                                                                                   |
 | [EHDSCondition](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSCondition.html)                   | EHDS refined base model for a clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern |
 | [EHDSProcedure](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSProcedure.html)                   | EHDS refined base model for an action that is or was performed on or for a patient                                                                               |
-| [EHDSImmunisation](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSImmunisation.html)             | EHDS refined base model for Immunisation                                                                                                                         |
+| [EHDSImmunisation](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSImmunisation.html)             | EHDS refined base model for Immunisation |
+---
+
+#### 📄 Document Models
+
+| **Model**                                                                                                     | **Description**                                                                                                  |
+| ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| [EHDSDocument](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSDocument.html)                       | EHDS refined base model for clinical documents, including header, authorship, attestation, and legal metadata    |
 
 ---
 

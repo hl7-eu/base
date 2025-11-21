@@ -100,6 +100,8 @@ pages:
      title: EHDSProcedure to FHIR Procedure Mapping
   map-ehdsimmunisation.html:
      title: EHDSImmunisation to FHIR Immunization Mapping
+  map-ehdsdocument.html:
+     title: EHDSDocument to FHIR Composition Mapping
   map-ehdsmedication.html:
      title: EHDSMedication to FHIR Medication Mapping
   map-ehdsmedicationstatement.html:
