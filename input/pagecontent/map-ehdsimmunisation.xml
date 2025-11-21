@@ -148,11 +148,11 @@
           </tr>
           <tr>
             <td>vaccine</td>
-            <td class="highlight-yellow">Vaccine (antigen) administered.</td>
+            <td>Type of vaccine</td>
             <td>equivalent</td>
             <td>Immunization</td><td>vaccineCode</td>
             <td>Vaccine that was administered.</td>
-            <td>CodeableConcept bound to the relevant vaccine/antigen value set.</td>
+            <td>CodeableConcept bound to the relevant vaccine type value set.</td>
           </tr>
           <tr>
             <td>administeredProduct</td>
@@ -182,9 +182,9 @@
             <td>doseNumber</td>
             <td>Dose number within the series.</td>
             <td>equivalent</td>
-            <td>Immunization</td><td>protocolApplied.doseNumberString <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Immunization</td><td>protocolApplied.doseNumber[x] <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Dose number within the series.</td>
-            <td class="highlight-yellow">Use <code>doseNumberString</code> to align with R5.<strong>integer in the model</strong></td>
+            <td>Integer in the model, Only string in R5; CodeableConcept in R6</td>
           </tr>
           <tr>
             <td>doseNumber</td>
@@ -193,31 +193,23 @@
             <td>Immunization</td>
             <td>protocolApplied.doseNumber <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Dose number within the series.</td>
-            <td class="highlight-yellow"><strong>integer in the model</strong></td>
+            <td>Integer in the model, Only string in R5; CodeableConcept in R6</td>
           </tr>
           <tr>
             <td>vaccineAdministrator</td>
             <td>Who administered the vaccine.</td>
             <td>equivalent</td>
-            <td>Immunization</td><td class="highlight-yellow">performer:administeringCentreOrHp.actor</td>
+            <td>Immunization</td><td>performer:administeringCentreOrHp.actor</td>
             <td>Who performed the immunization.</td>
-            <td class="highlight-yellow">Usually PractitionerRole / Practitioner. Should the  slice name be changed ?</td>
+            <td>actor of type PractitionerRole or Practitioner.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>administeringCentre</td>
             <td>Centre/organisation administering the vaccine.</td>
             <td>source-broader-than-target</td>
-            <td>Immunization</td><td>performer.actor</td>
+            <td>Immunization</td><td>performer:administeringCentreOrHp.actor</td>
             <td>Organization involved in administering the vaccine.</td>
-            <td>Reference to Organization when the centre is an organisation.</td>
-          </tr>
-          <tr class="highlight-yellow">
-            <td>administeringCentre</td>
-            <td>Centre/organisation administering the vaccine.</td>
-            <td>source-broader-than-target</td>
-            <td>Immunization</td><td>location</td>
-            <td>Location where vaccine was administered.</td>
-            <td>Reference to Location when the centre refers to a place.</td>
+            <td>actor of type PractitionerRole or Practitioner.</td>
           </tr>
           <tr class="highlight-yellow">
             <td>nextVaccinationDate</td>

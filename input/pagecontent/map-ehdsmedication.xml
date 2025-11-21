@@ -40,7 +40,7 @@
             <td>equivalent</td>
             <td>Medication</td><td>code</td>
             <td>Code that identifies this medication.</td>
-            <td>Include ATC/other product codes as codings.</td>
+            <td></td>
           </tr>
           <tr>
             <td>identifyingCodeIdentifier</td>
@@ -56,7 +56,7 @@
             <td>equivalent</td>
             <td>Medication</td><td>extension:classification</td>
             <td>Classifications of the product, e.g ATC, narcotic/psychotropic, orphan drug, etc</td>
-            <td>No dedicated classification element in Medication.</td>
+            <td></td>
           </tr>
           <tr>
             <td>productName</td>
@@ -64,7 +64,7 @@
             <td>relatedto</td>
             <td>Medication</td><td>extension:productName</td>
             <td>Text representation of the medication name.</td>
-            <td>Name of the medicinal product. Names of different types (full name, short name, etc) and in different languages can be provided if relevant. If the  code represents the product <code>code.text</code> my convey this information.</td>
+            <td>Name of the medicinal product. Names of different types (full name, short name, etc) and in different languages can be provided if relevant.</td>
           </tr>
           <tr>
             <td>marketingAuthorisationHolder</td>
@@ -107,7 +107,7 @@
             <td>equivalent</td>
             <td>Medication</td><td>form</td>
             <td>Dose form of the medication.</td>
-            <td>Preferred EDQM Standard Terms.</td>
+            <td></td>
           </tr>
           <tr class="highlight-yellow">
             <td>packSize</td>
@@ -125,40 +125,40 @@
             <td>totalVolume <span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
             <td>When the specified product code does not infer a package size, this is the specific amount of drug in the product.</td>
-            <td>R4 <code>Medication.amount</code> is a Ratio; in R5 <code>totalVolume</code> or <code>packaging.containedItem.amount</code> may be more precise.</td>
+            <td>R4 <code>Medication.amount</code> is a Ratio; in R5 <code>totalVolume</code></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>item</td>
             <td>A medication item (components in a combination pack).</td>
-            <td>no map</td>
+            <td>equivalent</td>
             <td>Medication</td>
-            <td></td>
-            <td></td>
-            <td>Medication lacks per-item structures</td>
+            <td>ingredient.item</td>
+            <td>A particular constituent of interest in the product.</td>
+            <td>An item - included in a product - is represented by a Medication resource referenced by the <code>ingredient.item</code> (see the example at https://hl7.eu/fhir/mpd-r5/Medication-02A-ClotrimazoleCanifugCremolum.html). If the item is the product, the item is the Medication itself.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>item.doseForm</td>
             <td>Dose form of the manufactured item.</td>
-            <td>no map</td>
-            <td>Medication</td><td></td>
-            <td></td>
-            <td>No per-item dose form element</td>
+            <td>equivalent</td>
+            <td>Medication</td><td>doseForm</td>
+            <td>Dose Form</td>
+            <td>See note above about <i>item</i></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>item.ingredient</td>
             <td>Ingredients of the item.</td>
-            <td>relatedto</td>
+            <td>equivalent</td>
             <td>Medication</td><td>ingredient</td>
             <td>Medication ingredients.</td>
-            <td>Replicate per-item ingredients into <code>Medication.ingredient</code>.</td>
+            <td>Replicate per-item ingredients into <code>Medication.ingredient</code>.<br>See note above about <i>item</i></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>item.ingredient.isActive</td>
             <td>Marks if the ingredient is active.</td>
             <td>relatedto</td>
             <td>Medication</td><td>ingredient.isActive</td>
             <td>Is this an active ingredient.</td>
-            <td></td>
+            <td>Replicate per-item ingredients into<code>Medication.ingredient</code>.<br>See note above about <i>item</i></td>
           </tr>
           <tr>
             <td>item.ingredient.substance</td>
@@ -166,81 +166,98 @@
             <td>equivalent</td>
             <td>Medication</td><td>ingredient.itemCodeableConcept</td>
             <td>The substance of the ingredient.</td>
-            <td>Preferred vocabulary: EMA SPOR SMS.</td>
+            <td>Replicate per-item ingredients into<code>Medication.ingredient</code>.<br>See note above about <i>item</i></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>item.ingredient.strengthInfo.strength</td>
             <td>Strength of the substance.</td>
             <td>relatedto</td>
-            <td>Medication</td><td>ingredient.strength[x]</td>
+            <td>Medication</td><td>Medication.ingredient.strengthRatio</td>
             <td>Quantity of ingredient present.</td>
-            <td>Ratio (e.g., 500mg/1 tablet). It refers to the Medication not to a single item in the medication.</td>
+            <td>Replicate per-item ingredients into<code>Medication.ingredient</code>.<br>See note above about <i>item</i></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>item.ingredient.strengthInfo.basisOfStrengthSubstance</td>
             <td>Substance the strength refers to (if different).</td>
             <td>no map</td>
-            <td>Medication</td><td></td>
-            <td></td>
-            <td></td>
+            <td>Medication</td>
+            <td>Medication.ingredient.strength[x].extension:basisOfStrengthSubstance</td>
+            <td>Substance the strength refers to (if different).</td>
+            <td>Replicate per-item ingredients into<code>Medication.ingredient</code>.<br>See note above about <i>item</i>
+            </td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>item.unitOfPresentation</td>
             <td>Unit of presentation for the manufactured item.</td>
             <td>no map</td>
             <td>Medication</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Medication.extension:unitOfPresentation</td>
+            <td>Unit of presentation</td>
+            <td>See note above about <i>item</i>
+            </td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>item.containedQuantity</td>
             <td>Quantity for liquids (e.g., 3ml / 1 vial).</td>
             <td>relatedto</td>
             <td>Medication</td><td>extension:sizeOfItem</td>
             <td>Size of one item (for example, in a pack of 5 vials, this would represent the size of 1 vial).</td>
-            <td>It refers to the Medication not to a single item in the medication.</td>
-          </tr>
-          <tr class="highlight-yellow">
+            <td>See note above about <i>item</i>
+            </td>
+          </tr>        
+          <tr>
             <td>item.amount</td>
             <td>Number of such manufactured items in this product.</td>
-            <td>no map</td>
+            <td>relatedto</td>
             <td>Medication</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>amount <span style="color:#2e7d32;font-weight:600;">〔R4〕</span>
+            </td>
+            <td>Amount of the medication in the package.</td>
+            <td>See note above about <i>item</i>
+            </td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
+            <td>item.amount</td>
+            <td>Number of such manufactured items in this product.</td>
+            <td>relatedto</td>
+            <td>Medication</td>
+            <td>totalVolume <span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            </td>
+            <td>When the specified product code does not infer a package size, this is the specific amount of drug in the product.</td>
+            <td>See note above about <i>item</i></td>
+          </tr>
+          <tr>
             <td>item.packageType</td>
             <td>Type of package of the medication item.</td>
             <td>relatedto</td>
             <td>Medication</td><td>extension:packageType</td>
             <td>Type of packaging.</td>
-            <td>It refers to the Medication not to a single item in the medication.</td>
+            <td>See note above about <i>item</i>
+            </td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>device</td>
             <td>Administration device included in the product.</td>
             <td>relatedto</td>
             <td>Medication</td><td>extension:device</td>
+            <td>Device</td>
             <td></td>
-            <td>It refers to the Medication not to a single item in the medication.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>device.deviceQuantity</td>
             <td>Number of such devices.</td>
             <td>relatedto</td>
             <td>Medication</td><td>extension:device.extension:quantity</td>
             <td></td>
-            <td>It refers to the Medication not to a single item in the medication.</td>
+            <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>device.device[x]</td>
             <td>Device coded (codeable concept or reference).</td>
             <td>relatedto</td>
             <td>Medication</td><td>extension:device.extension:device.value[x]</td>
             <td></td>
-            <td>It refers to the Medication not to a single item in the medication.</td>       
+            <td></td>
           </tr>
           <tr>
             <td>characteristic</td>

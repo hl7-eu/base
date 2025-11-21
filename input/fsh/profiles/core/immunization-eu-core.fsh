@@ -60,10 +60,8 @@ Description: """This profile sets minimum expectations for the Immunization reso
   * ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
   * ^binding.description = "The type of vaccine for particular disease or diseases against which the patient has been immunised, or a code for absent/unknown immunization."
 * protocolApplied
-  * doseNumberPositiveInt ^short = "Deprecated"
-  * doseNumberString ^short = "Dose Number"
-  * seriesDosesPositiveInt ^short = "Deprecated"
-  * seriesDosesString ^short = "Number of doses"
+  * doseNumber[x] ^short = "Dose Number"
+  * seriesDoses[x] ^short = "Number of doses"
 /* 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ImmunizationRecommendationEuCore

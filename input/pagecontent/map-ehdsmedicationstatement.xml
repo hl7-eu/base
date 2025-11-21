@@ -133,24 +133,25 @@
             <td>equivalent</td>
             <td>MedicationStatement</td><td>status</td>
             <td>Active/completed/intended/not-taken, etc.</td>
-            <td>clarify the difference with header.status</td>
+            <td>clarify the difference with header.status.\n
+              Evaluate if adherence.code should be used</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>medication</td>
             <td>Describes the medicinal product.</td>
             <td>source-narrower-than-target</td>
             <td>MedicationStatement</td><td>medication[x] <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Medication expressed as a reference.</td>
-            <td>In the model only  the Reference to <code>Medication</code>.</td>
+            <td>In the model only the Reference to <code>Medication</code>.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>medication</td>
             <td>Describes the medicinal product.</td>
-            <td>equivalent</td>
+            <td>source-narrower-than-target</td>
             <td>MedicationStatement</td>
             <td>medication <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Medication expressed as a reference.</td>
-            <td>In the model only  the Reference to <code>Medication</code>.
+            <td>In the model only the Reference to <code>Medication</code>.
             </td>
           </tr>
           <tr>
@@ -188,7 +189,7 @@
             <td>Textual reason for medication use.</td>
             <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>intendedUseType</td>
             <td>Type of intended use (prophylactic, therapeutic, etc.).</td>
             <td>source-narrower-than-target</td>
