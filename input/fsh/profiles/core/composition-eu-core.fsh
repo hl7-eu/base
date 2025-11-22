@@ -26,6 +26,7 @@ Description: """This profile sets minimum expectations for the Composition resou
 * status 1..1
 * type 1..1
 * type ^short = "Type of document/report (e.g. imaging report LOINC)"
+* category ^short = "Document Category"
 * subject 1..1
 * subject only Reference(PatientEuCore or Group or LocationEuCore or Device)
 * encounter 0..1
@@ -42,11 +43,10 @@ Description: """This profile sets minimum expectations for the Composition resou
 * attester contains legalAuthenticator 0..* and resultValidator 0..*
 * attester[legalAuthenticator].mode = http://hl7.org/fhir/composition-attestation-mode#legal
 * attester[legalAuthenticator].time 1..1
-* attester[legalAuthenticator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore)
+* attester[legalAuthenticator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore) // Check references...
 * attester[resultValidator].mode = http://hl7.org/fhir/composition-attestation-mode#professional
 * attester[resultValidator].time 1..1
 * attester[resultValidator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore)
-* category ^short = "Document Category"
 * section.extension contains $note named section-note 0..*
 * section.extension[section-note] ^short = "Additional notes that apply to the section (but not to specific resource)."
 * section.extension[section-note] ^definition = "Additional notes that apply to the section (but not to specific resource)."

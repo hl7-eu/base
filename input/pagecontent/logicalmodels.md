@@ -1,10 +1,10 @@
 ### EHDS Logical Data Models
 
-Logical data models (or information models) for the **European Health Data Space (EHDS)** are developed by the [**Xt-EHR Joint Action**](https://www.xt-ehr.eu/).
+Logical data models (or information models) for the **European Health Data Space (EHDS)** are **currently being developed** by the [**Xt-EHR Joint Action**](https://www.xt-ehr.eu/). These models will form the **basis of the Joint Action’s proposal** for the future EHDS Implementing Act.
 
-These models are **refined and enhanced versions** of the data sets defined in the [**eHealth Network (eHN) Guidelines**](https://health.ec.europa.eu/ehealth-digital-health-and-care/digital-health-and-care/eu-cooperation/ehealth-network_en#ehealth-network-guidelines).
+They represent **evolving, refined interpretations** of the data sets described in the [**eHealth Network (eHN) Guidelines**](https://health.ec.europa.eu/ehealth-digital-health-and-care/digital-health-and-care/eu-cooperation/ehealth-network_en#ehealth-network-guidelines), and are expected to be further updated during the Joint Action process.
 
-This Implementation Guide (IG) aims to **align with the EHDS logical models** and to **provide HL7 FHIR profiles** derived from these models.
+This Implementation Guide (IG) aims to **align with the emerging EHDS logical models** and to **provide HL7 FHIR profiles** that **realise the requirements identified in these models*
 
 > **Note:**
 > The Xt-EHR logical models are **under active revision and continuous refinement**.
@@ -12,6 +12,7 @@ This Implementation Guide (IG) aims to **align with the EHDS logical models** an
 
 The EHDS logical models currently supported in this version of the guide are listed below.
 For the most recent and in-progress versions, please refer to the [**Xt-EHR EHDS Logical Information Models**](https://build.fhir.org/ig/Xt-EHR/xt-ehr-common) Implementation Guide.
+
 
 ---
 
@@ -42,14 +43,14 @@ For the most recent and in-progress versions, please refer to the [**Xt-EHR EHDS
 
 #### 🩺 Clinical Information Models
 
-| **Model**                                                                                                     | **Description**                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| [EHDSAlert](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAlert.html)                           | EHDS refined base model for clinical alerts                                                                                                                      |
-| [EHDSAllergyIntolerance](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAllergyIntolerance.html) | EHDS refined base model for allergy or intolerance information                                                                                                   |
-| [EHDSCondition](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSCondition.html)                   | EHDS refined base model for a clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern |
-| [EHDSProcedure](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSProcedure.html)                   | EHDS refined base model for an action that is or was performed on or for a patient                                                                               |
-| [EHDSImmunisation](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSImmunisation.html)             | EHDS refined base model for Immunisation |
----
+| **Model** | **Description** |
+| --- | --- |
+| [EHDSAlert](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAlert.html) | EHDS refined base model for clinical alerts |
+| [EHDSAllergyIntolerance](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAllergyIntolerance.html) | EHDS refined base model for allergy or intolerance information |
+| [EHDSCondition](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSCondition.html) | EHDS refined base model for a clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern |
+| [EHDSProcedure](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSProcedure.html) | EHDS refined base model for an action that is or was performed on or for a patient |
+| [EHDSImmunisation](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSImmunisation.html) | EHDS refined base model for immunisation |
+
 
 #### 📄 Document Models
 

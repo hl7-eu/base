@@ -34,14 +34,14 @@
         </thead>
         <tbody>
           <!-- HEADER BLOCK -->
-          <tr>
+          <tr class="">
             <td>header</td>
             <td>Document header elements.</td>
             <td>relatedto</td>
             <td>Composition</td>
             <td>.</td>
             <td>General metadata.</td>
-            <td>Dataset-level information across the Composition instance.</td>
+            <td>Dataset-level information across the Composition instance. <strong>Category (classCode) is missing ?</strong></td>
           </tr>
           <tr>
             <td>header.subject</td>
@@ -58,19 +58,28 @@
             <td>equivalent</td>
             <td>Composition</td>
             <td>identifier</td>
-            <td>Document identifier.</td>
-            <td>Multiple identifiers allowed; Composition R4 allows 0..1, R5 0..*.</td>
+            <td>Version-independent identifier for the Composition</td>
+            <td>Multiple identifiers allowed; Composition R4 allows 0..1, R5 0..*. <code>setId</code> in HL7 CDA</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
+            <td>header.identifier</td>
+            <td>Unique identifier of the document.</td>
+            <td>equivalent</td>
+            <td>Bundle</td>
+            <td>identifier</td>
+            <td>Persistent identifier for the bundle</td>
+            <td>Identifier of a specifc version of this document. <code>id</code> in HL7 CDA</td>
+          </tr>
+          <tr>
             <td>header.authorship</td>
             <td>Resource authoring details.</td>
             <td>relatedto</td>
             <td>Composition</td>
-            <td>author / date</td>
-            <td>Authors and composition creation time.</td>
+            <td>author</td>
+            <td>Authors</td>
             <td>Composition.date is the time of composition; see child elements.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.authorship.author[x]</td>
             <td>Author(s) who authored the resource.</td>
             <td>equivalent</td>
@@ -79,23 +88,23 @@
             <td>List of logical authors.</td>
             <td>Reference to Practitioner / PractitionerRole / Organization / Device.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.authorship.datetime</td>
             <td>Date and time of authoring/issuing.</td>
             <td>equivalent</td>
             <td>Composition</td>
             <td>date</td>
             <td>Composition creation time.</td>
-            <td>Consider meta.lastUpdated for technical update timestamp.</td>
+            <td></td>
           </tr>
           <tr>
-            <td>header.lastUpdate</td>
+            <td class="highlight-yellow">header.lastUpdate</td>
             <td>Date/time of last technical update.</td>
             <td>equivalent</td>
             <td>Composition</td>
             <td>meta.lastUpdated</td>
             <td>System-level modification time.</td>
-            <td>Populate only for technical corrections.</td>
+            <td>The map applies only in case it represents when the resource was last updated. It is an Instant (i.e. YYYY-MM-DDThh:mm:ss.sss+zz:zz )</td>
           </tr>
           <tr>
             <td>header.status</td>
@@ -103,7 +112,7 @@
             <td>equivalent</td>
             <td>Composition</td>
             <td>status</td>
-            <td>preliminary | final | amended | entered-in-error.</td>
+            <td>The workflow/clinical status of this composition</td>
             <td></td>
           </tr>
           <tr class="highlight-yellow">
@@ -113,7 +122,7 @@
             <td>Composition</td>
             <td></td>
             <td></td>
-            <td>No native element; capture via extension or note if required.</td>
+            <td>No native element</td>
           </tr>
           <tr>
             <td>header.language</td>
@@ -142,7 +151,7 @@
             <td>Official human-readable label.</td>
             <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.period</td>
             <td>Time of service being documented.</td>
             <td>relatedto</td>
@@ -151,16 +160,26 @@
             <td>Period covered by the composition content.</td>
             <td>Map to the primary Composition.event entry.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.version</td>
             <td>Business version of the document.</td>
             <td>relatedto</td>
             <td>Composition</td>
-            <td>extension:version</td>
+            <td>extension:version<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Document business version.</td>
             <td>Use Composition.version extension (pre-adopt R5 extension).</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
+            <td>header.version</td>
+            <td>Business version of the document.</td>
+            <td>relatedto</td>
+            <td>Composition</td>
+            <td>version<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            </td>
+            <td>Document business version.</td>
+            <td></td>
+          </tr>
+          <tr>
             <td>header.attestation</td>
             <td>Document attestation details.</td>
             <td>relatedto</td>
@@ -169,16 +188,16 @@
             <td>Participants responsible for attesting the composition.</td>
             <td>Use mode to distinguish assertions.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.attestation.attester</td>
             <td>Attester who validated the document.</td>
             <td>equivalent</td>
             <td>Composition</td>
             <td>attester.party</td>
             <td>Who attested the composition.</td>
-            <td>Reference to Practitioner / PractitionerRole.</td>
+            <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.attestation.datetime</td>
             <td>Date/time of approval by attester.</td>
             <td>equivalent</td>
@@ -187,7 +206,7 @@
             <td>When the composition was attested.</td>
             <td>Set attester.mode as appropriate (e.g., professional).</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.legalAuthentication</td>
             <td>Document legal authentication details.</td>
             <td>relatedto</td>
@@ -196,14 +215,14 @@
             <td>Legal authenticator.</td>
             <td>Use attester.mode = "legal" for the legal authenticator.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.legalAuthentication.legalAuthenticator</td>
             <td>Person responsible for medical content.</td>
             <td>relatedto</td>
             <td>Composition</td>
             <td>attester.party</td>
             <td>Legal authenticator party.</td>
-            <td>Reference to Practitioner / PractitionerRole; set mode = legal.</td>
+            <td>Use attester.mode = "legal" for the legal authenticator.</td>
           </tr>
           <tr>
             <td>header.legalAuthentication.datetime</td>
@@ -212,25 +231,25 @@
             <td>Composition</td>
             <td>attester.time</td>
             <td>When the composition was attested.</td>
-            <td>Use with legal authenticator attester entry.</td>
+            <td>Use attester.mode = "legal" for the legal authenticator.</td>
           </tr>
           <tr>
             <td>header.eventType</td>
-            <td>Categorisation of the event covered by the document.</td>
-            <td>equivalent</td>
+            <td class="highlight-yellow">Categorisation of the event covered by the document.</td>
+            <td>relatedTo</td>
             <td>Composition</td>
             <td>event.code</td>
             <td>Codes describing the event(s) related to the composition.</td>
-            <td>Use appropriate vocabulary (e.g., LOINC, SNOMED CT).</td>
+            <td class="highlight-yellow">Clarify the scope. If it is a classificaiton of the document it should be category</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.serviceSpecialty</td>
             <td>Details about where the content was created (clinical specialty).</td>
-            <td>relatedto</td>
+            <td>source-is-narrower-than-target</td>
             <td>Composition</td>
             <td>category</td>
             <td>Categorizes the composition.</td>
-            <td>Use category to tag specialty if no dedicated extension/profile element exists.</td>
+            <td>Use category to tag specialty if no dedicated extension/profile element exists. <strong>(1) Is this a metadata information or something that have to be captured in the document ? (2) is this only for diagnosti reports ? in thsi case we can use DiagnosticReport.category</strong> </td>
           </tr>
           <tr>
             <td>header.custodian</td>
@@ -248,7 +267,7 @@
             <td>Composition</td>
             <td>confidentiality</td>
             <td>As defined by confidentiality codes.</td>
-            <td>Use HL7 v3 Confidentiality vocabulary.</td>
+            <td></td>
           </tr>
           <!-- DOCUMENT BODY -->
           <tr class="highlight-yellow">
@@ -258,7 +277,7 @@
             <td>Composition</td>
             <td></td>
             <td></td>
-            <td>Use a related DocumentReference with <code>presentedForm</code> to carry rendered content.</td>
+            <td>To be determined</td>
           </tr>
         </tbody>
       </table>

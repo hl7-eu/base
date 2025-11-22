@@ -233,7 +233,7 @@
                     <td>
                         <a class="pill" href="map-ehdsprocedure.html">EHDSProcedure Mapping</a>
                     </td>
-                    <td>🟡 Ready for first review</td>
+                    <td>🟠 Reviewed – updates required</td>
                 </tr>
                 <tr>
                     <td>
@@ -245,7 +245,7 @@
                     <td>
                         <a class="pill" href="map-ehdsimmunisation.html">EHDSImmunisation Mapping</a>
                     </td>
-                    <td>🟡 Ready for first review</td>
+                    <td>🟠 Reviewed – updates required</td>
                 </tr>
             </tbody>
         </table>
@@ -274,7 +274,7 @@
                     <td>
                         <a class="pill" href="map-ehdsdocument.html">EHDSDocument Mapping</a>
                     </td>
-                    <td>🚧 Draft – new mapping</td>
+                    <td>🟡 Ready for first review</td>
                 </tr>
             </tbody>
         </table>

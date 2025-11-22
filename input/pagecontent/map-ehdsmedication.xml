@@ -64,7 +64,7 @@
             <td>relatedto</td>
             <td>Medication</td><td>extension:productName</td>
             <td>Text representation of the medication name.</td>
-            <td>Name of the medicinal product. Names of different types (full name, short name, etc) and in different languages can be provided if relevant.</td>
+            <td>Official name of branded medicinal product.</td>
           </tr>
           <tr>
             <td>marketingAuthorisationHolder</td>

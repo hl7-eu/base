@@ -88,7 +88,7 @@
             <td>header.lastUpdate</td>
             <td>Last technical correction/update.</td>
             <td>relatedto</td>
-            <td>AllergyIntolerance</td><td>lastUpdated</td>
+            <td>AllergyIntolerance</td><td>meta.lastUpdated</td>
             <td>When the resource version last changed</td>
             <td>The map applies only in case it represents when the resource was last updated. It is an Instant (i.e. YYYY-MM-DDThh:mm:ss.sss+zz:zz )</td>
           </tr>
