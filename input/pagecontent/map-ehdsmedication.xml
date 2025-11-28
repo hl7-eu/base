@@ -11,9 +11,8 @@
     <p>
       This page describes the element-by-element mapping from the
       <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedication.html" target="_blank"><strong>EHDSMedication</strong></a>
-      logical model to the FHIR <a href="StructureDefinition-medication-eu-core.html"><code>MedicationEuCore</code></a> profile used in this Implementation Guide.
-      The model supports prescribed/dispensed medication and can represent both generic (virtual) products and branded (real) products.
-    </p>
+      logical model to the FHIR <a href="StructureDefinition-medication-eu-core.html"><code>MedicationEuCore</code></a> and <a href="StructureDefinition-organization-eu-core.html"><code>OrganizationEuCore</code></a> profiles used in this Implementation Guide.</p>
+    <p>The model supports prescribed/dispensed medication and can represent both generic (virtual) products and branded (real) products.</p>
     <div class="table-wrap">
       <table summary="EHDSMedication → Medication">
         <caption>EHDSMedication → Medication</caption>
@@ -61,7 +60,7 @@
           <tr>
             <td>productName</td>
             <td>Name of the product (full/invented/other).</td>
-            <td>relatedto</td>
+            <td>equivalent</td>
             <td>Medication</td><td>extension:productName</td>
             <td>Text representation of the medication name.</td>
             <td>Official name of branded medicinal product.</td>
@@ -112,20 +111,20 @@
           <tr class="highlight-yellow">
             <td>packSize</td>
             <td>Overall amount of product in one package.</td>
-            <td>relatedto</td>
-            <td>Medication</td><td>amount <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>related-to</td>
+            <td>Medication</td><td>amount<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Amount of the medication in the package.</td>
-            <td>R4 <code>Medication.amount</code> is a Ratio; in R5 <code>totalVolume</code> or <code>packaging.containedItem.amount</code> may be more precise.</td>
+            <td>R4 <code>amount</code> is a Ratio; in R5 <code>totalVolume</code>.</td>
           </tr>
           <tr class="highlight-yellow">
             <td>packSize</td>
             <td>Overall amount of product in one package.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>Medication</td>
             <td>totalVolume <span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
             <td>When the specified product code does not infer a package size, this is the specific amount of drug in the product.</td>
-            <td>R4 <code>Medication.amount</code> is a Ratio; in R5 <code>totalVolume</code></td>
+            <td>R4 <code>amount</code> is a Ratio; in R5 <code>totalVolume</code></td>
           </tr>
           <tr>
             <td>item</td>
@@ -150,15 +149,15 @@
             <td>equivalent</td>
             <td>Medication</td><td>ingredient</td>
             <td>Medication ingredients.</td>
-            <td>Replicate per-item ingredients into <code>Medication.ingredient</code>.<br>See note above about <i>item</i></td>
+            <td>Replicate per-item ingredients into <code>ingredient</code>.<br>See note above about <i>item</i></td>
           </tr>
           <tr>
             <td>item.ingredient.isActive</td>
             <td>Marks if the ingredient is active.</td>
-            <td>relatedto</td>
+            <td>equivalent</td>
             <td>Medication</td><td>ingredient.isActive</td>
             <td>Is this an active ingredient.</td>
-            <td>Replicate per-item ingredients into<code>Medication.ingredient</code>.<br>See note above about <i>item</i></td>
+            <td>Replicate per-item ingredients into<code>ingredient</code>.<br>See note above about <i>item</i></td>
           </tr>
           <tr>
             <td>item.ingredient.substance</td>
@@ -166,32 +165,32 @@
             <td>equivalent</td>
             <td>Medication</td><td>ingredient.itemCodeableConcept</td>
             <td>The substance of the ingredient.</td>
-            <td>Replicate per-item ingredients into<code>Medication.ingredient</code>.<br>See note above about <i>item</i></td>
+            <td>Replicate per-item ingredients into<code>ingredient</code>.<br>See note above about <i>item</i></td>
           </tr>
           <tr>
             <td>item.ingredient.strengthInfo.strength</td>
             <td>Strength of the substance.</td>
-            <td>relatedto</td>
-            <td>Medication</td><td>Medication.ingredient.strengthRatio</td>
+            <td>equivalent</td>
+            <td>Medication</td><td>ingredient.strengthRatio</td>
             <td>Quantity of ingredient present.</td>
-            <td>Replicate per-item ingredients into<code>Medication.ingredient</code>.<br>See note above about <i>item</i></td>
+            <td>Replicate per-item ingredients into<code>ingredient</code>.<br>See note above about <i>item</i></td>
           </tr>
           <tr>
             <td>item.ingredient.strengthInfo.basisOfStrengthSubstance</td>
             <td>Substance the strength refers to (if different).</td>
-            <td>no map</td>
+            <td>equivalent</td>
             <td>Medication</td>
-            <td>Medication.ingredient.strength[x].extension:basisOfStrengthSubstance</td>
+            <td>ingredient.strength[x].extension:basisOfStrengthSubstance</td>
             <td>Substance the strength refers to (if different).</td>
-            <td>Replicate per-item ingredients into<code>Medication.ingredient</code>.<br>See note above about <i>item</i>
+            <td>Replicate per-item ingredients into<code>ingredient</code>.<br>See note above about <i>item</i>
             </td>
           </tr>
           <tr>
             <td>item.unitOfPresentation</td>
             <td>Unit of presentation for the manufactured item.</td>
-            <td>no map</td>
+            <td>equivalent</td>
             <td>Medication</td>
-            <td>Medication.extension:unitOfPresentation</td>
+            <td>extension:unitOfPresentation</td>
             <td>Unit of presentation</td>
             <td>See note above about <i>item</i>
             </td>
@@ -199,7 +198,7 @@
           <tr>
             <td>item.containedQuantity</td>
             <td>Quantity for liquids (e.g., 3ml / 1 vial).</td>
-            <td>relatedto</td>
+            <td>equivalent</td>
             <td>Medication</td><td>extension:sizeOfItem</td>
             <td>Size of one item (for example, in a pack of 5 vials, this would represent the size of 1 vial).</td>
             <td>See note above about <i>item</i>
@@ -208,7 +207,7 @@
           <tr>
             <td>item.amount</td>
             <td>Number of such manufactured items in this product.</td>
-            <td>relatedto</td>
+            <td>equivalent</td>
             <td>Medication</td>
             <td>amount <span style="color:#2e7d32;font-weight:600;">〔R4〕</span>
             </td>
@@ -219,7 +218,7 @@
           <tr>
             <td>item.amount</td>
             <td>Number of such manufactured items in this product.</td>
-            <td>relatedto</td>
+            <td>equivalent</td>
             <td>Medication</td>
             <td>totalVolume <span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
@@ -229,7 +228,7 @@
           <tr>
             <td>item.packageType</td>
             <td>Type of package of the medication item.</td>
-            <td>relatedto</td>
+            <td>equivalent</td>
             <td>Medication</td><td>extension:packageType</td>
             <td>Type of packaging.</td>
             <td>See note above about <i>item</i>
@@ -238,7 +237,7 @@
           <tr>
             <td>device</td>
             <td>Administration device included in the product.</td>
-            <td>relatedto</td>
+            <td>equivalent</td>
             <td>Medication</td><td>extension:device</td>
             <td>Device</td>
             <td></td>
@@ -246,7 +245,7 @@
           <tr>
             <td>device.deviceQuantity</td>
             <td>Number of such devices.</td>
-            <td>relatedto</td>
+            <td>equivalent</td>
             <td>Medication</td><td>extension:device.extension:quantity</td>
             <td></td>
             <td></td>
@@ -254,7 +253,7 @@
           <tr>
             <td>device.device[x]</td>
             <td>Device coded (codeable concept or reference).</td>
-            <td>relatedto</td>
+            <td>equivalent</td>
             <td>Medication</td><td>extension:device.extension:device.value[x]</td>
             <td></td>
             <td></td>

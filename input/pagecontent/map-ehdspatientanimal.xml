@@ -86,7 +86,7 @@
           <tr>
             <td>gender</td>
             <td>Recorded sex / gender property.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>Patient</td><td>gender</td>
             <td>A recorded sex or gender property for the individual.</td>
             <td>May differ from reproductive status.</td>

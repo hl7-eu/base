@@ -37,7 +37,7 @@
           <tr>
             <td>header</td>
             <td>Common header for all patient-related data.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>Flag</td><td>.</td>
             <td>General metadata.</td>
             <td>Dataset-level; not usually carried in Flag as-is.</td>
@@ -61,7 +61,7 @@
           <tr>
             <td>header.authorship</td>
             <td>Resource authoring details</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>Flag</td><td>author</td>
             <td>Creator of the flag.</td>
             <td class="highlight-yellow">Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.<strong>1.. in the model 0.. in the profile</strong>
@@ -86,7 +86,7 @@
           <tr class="highlight-yellow">
             <td>header.lastUpdate</td>
             <td>Last technical correction/update.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>Flag</td><td>meta.lastUpdated</td>
             <td>When the resource version last changed</td>
             <td>The map applies only in case it represents when the resource was last updated. It is an Instant (i.e. YYYY-MM-DDThh:mm:ss.sss+zz:zz )</td>

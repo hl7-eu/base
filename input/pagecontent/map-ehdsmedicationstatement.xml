@@ -37,7 +37,7 @@
           <tr>
             <td>header</td>
             <td>Common header for all patient-related data.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>MedicationStatement</td><td>.</td>
             <td>General metadata.</td>
             <td>Dataset-level; not usually carried in MedicationStatement as-is.</td>
@@ -87,7 +87,7 @@
           <tr class="highlight-yellow">
             <td>header.lastUpdate</td>
             <td>Last technical correction/update.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>MedicationStatement</td><td>meta.lastUpdated</td>
             <td>When the resource version last changed.</td>
             <td>The map applies only if it represents the technical update timestamp (Instant).</td>
@@ -95,7 +95,7 @@
           <tr class="highlight-yellow">
             <td>header.status</td>
             <td>Status of the resource/document.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>MedicationStatement</td><td>status</td>
             <td>Position in the medication use lifecycle.</td>
             <td>What is the difference with medicationTreatmentStatus ?</td>
@@ -103,7 +103,7 @@
           <tr class="highlight-yellow">
             <td>header.statusReason[x]</td>
             <td>Reason for the current status.</td>
-            <td>source-wider-than-target</td>
+            <td>source-is-broader-than-target</td>
             <td>MedicationStatement</td>
             <td>statusReason<span style="color:#2e7d32;font-weight:600;">〔R4〕</span>
             </td>
@@ -139,7 +139,7 @@
           <tr>
             <td>medication</td>
             <td>Describes the medicinal product.</td>
-            <td>source-narrower-than-target</td>
+            <td>source-is-narrower-than-target</td>
             <td>MedicationStatement</td><td>medication[x] <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Medication expressed as a reference.</td>
             <td>In the model only the Reference to <code>Medication</code>.</td>
@@ -147,9 +147,9 @@
           <tr>
             <td>medication</td>
             <td>Describes the medicinal product.</td>
-            <td>source-narrower-than-target</td>
+            <td>source-is-narrower-than-target</td>
             <td>MedicationStatement</td>
-            <td>medication <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>medication<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Medication expressed as a reference.</td>
             <td>In the model only the Reference to <code>Medication</code>.
             </td>
@@ -174,7 +174,7 @@
           <tr>
             <td>medicationReasonText</td>
             <td>Free-text reason for use.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>MedicationStatement</td><td>reasonCode.text <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Textual reason for medication use.</td>
             <td>Alternatively convey as <code>note</code> if preferred.</td>
@@ -182,7 +182,7 @@
           <tr>
             <td>medicationReasonText</td>
             <td>Free-text reason for use.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>MedicationStatement</td>
             <td>reason.concept.text<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
@@ -192,7 +192,7 @@
           <tr>
             <td>intendedUseType</td>
             <td>Type of intended use (prophylactic, therapeutic, etc.).</td>
-            <td>source-narrower-than-target</td>
+            <td>source-is-narrower-than-target</td>
             <td>MedicationStatement</td><td>category</td>
             <td>Classification of statement.</td>
             <td></td>

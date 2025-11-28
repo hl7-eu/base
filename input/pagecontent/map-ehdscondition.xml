@@ -43,7 +43,7 @@
           <tr>
             <td>header</td>
             <td>Common header for all patient-related data.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>Condition</td>
             <td>.</td>
             <td>General metadata.</td>
@@ -70,7 +70,7 @@
           <tr>
             <td>header.authorship</td>
             <td>Resource authoring details.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>Condition</td>
             <td>recorder<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Who recorded the condition.</td>
@@ -79,7 +79,7 @@
           <tr>
             <td>header.authorship</td>
             <td>Resource authoring details.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>Condition</td>
             <td>participant.actor<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Who recorded the condition.</td>

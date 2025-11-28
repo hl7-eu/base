@@ -53,7 +53,7 @@
           <tr>
             <td>name</td>
             <td>Name of the health professional responsible for the patient.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>PractitionerRole</td>
             <td>practitioner</td>
             <td>Practitioner that can provide the defined services for the organization.</td>
@@ -71,7 +71,7 @@
           <tr>
             <td>address</td>
             <td>Addresses (office / practice / service location).</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>PractitionerRole</td>
             <td>practitioner / location</td>
             <td>Practitioner info and the location(s) at which this practitioner provides care.</td>
@@ -89,7 +89,7 @@
           <tr>
             <td>telecom</td>
             <td>Telecommunication contact information (addresses) associated with a person, such as phone number, email, or messaging service. Multiple telecommunication addresses might be provided.</td>
-            <td>source-broader-than-target</td>
+            <td>source-is-broader-than-target</td>
             <td>PractitionerRole</td>
             <td>telecom <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Contact details specific to this role/location/service.</td>
@@ -98,7 +98,7 @@
           <tr>
             <td>telecom</td>
 <td>Telecommunication contact information (addresses) associated with a person, such as phone number, email, or messaging service. Multiple telecommunication addresses might be provided.</td>
-            <td>source-broader-than-target</td>
+            <td>source-is-broader-than-target</td>
             <td>PractitionerRole</td>
             <td>contact.telecom <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Contact details specific to this role/location/service.</td>
@@ -107,7 +107,7 @@
           <tr>
             <td>telecom</td>
 <td>Telecommunication contact information (addresses) associated with a person, such as phone number, email, or messaging service. Multiple telecommunication addresses might be provided.</td>
-            <td>source-broader-than-target</td>
+            <td>source-is-broader-than-target</td>
             <td>Practitioner</td>
             <td>telecom</td>
             <td>Contact detail for the practitioner (applies to all roles).</td>
@@ -116,7 +116,7 @@
           <tr>
             <td>professionalRole</td>
             <td>Role practiced at an organisation (generalised PractitionerRole).</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>PractitionerRole</td>
             <td>.</td>
             <td>Role context, including organisation and specialty.</td>

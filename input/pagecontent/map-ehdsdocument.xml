@@ -37,7 +37,7 @@
           <tr class="">
             <td>header</td>
             <td>Document header elements.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>Composition</td>
             <td>.</td>
             <td>General metadata.</td>
@@ -73,7 +73,7 @@
           <tr>
             <td>header.authorship</td>
             <td>Resource authoring details.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>Composition</td>
             <td>author</td>
             <td>Authors</td>
@@ -154,7 +154,7 @@
           <tr>
             <td>header.period</td>
             <td>Time of service being documented.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>Composition</td>
             <td>event.period</td>
             <td>Period covered by the composition content.</td>
@@ -163,7 +163,7 @@
           <tr>
             <td>header.version</td>
             <td>Business version of the document.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>Composition</td>
             <td>extension:version<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Document business version.</td>
@@ -172,7 +172,7 @@
           <tr>
             <td>header.version</td>
             <td>Business version of the document.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>Composition</td>
             <td>version<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
@@ -182,7 +182,7 @@
           <tr>
             <td>header.attestation</td>
             <td>Document attestation details.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>Composition</td>
             <td>attester</td>
             <td>Participants responsible for attesting the composition.</td>
@@ -209,7 +209,7 @@
           <tr>
             <td>header.legalAuthentication</td>
             <td>Document legal authentication details.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>Composition</td>
             <td>attester</td>
             <td>Legal authenticator.</td>
@@ -218,7 +218,7 @@
           <tr>
             <td>header.legalAuthentication.legalAuthenticator</td>
             <td>Person responsible for medical content.</td>
-            <td>relatedto</td>
+            <td>related-to</td>
             <td>Composition</td>
             <td>attester.party</td>
             <td>Legal authenticator party.</td>
