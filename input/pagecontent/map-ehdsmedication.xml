@@ -149,7 +149,7 @@
             <td>equivalent</td>
             <td>Medication</td><td>ingredient</td>
             <td>Medication ingredients.</td>
-            <td>Replicate per-item ingredients into <code>ingredient</code>.<br>See note above about <i>item</i></td>
+            <td>Replicate per-item ingredients into <code>ingredient</code>. See note above about <i>item</i></td>
           </tr>
           <tr>
             <td>item.ingredient.isActive</td>
@@ -157,7 +157,7 @@
             <td>equivalent</td>
             <td>Medication</td><td>ingredient.isActive</td>
             <td>Is this an active ingredient.</td>
-            <td>Replicate per-item ingredients into<code>ingredient</code>.<br>See note above about <i>item</i></td>
+            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i></td>
           </tr>
           <tr>
             <td>item.ingredient.substance</td>
@@ -165,7 +165,7 @@
             <td>equivalent</td>
             <td>Medication</td><td>ingredient.itemCodeableConcept</td>
             <td>The substance of the ingredient.</td>
-            <td>Replicate per-item ingredients into<code>ingredient</code>.<br>See note above about <i>item</i></td>
+            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i></td>
           </tr>
           <tr>
             <td>item.ingredient.strengthInfo.strength</td>
@@ -173,7 +173,7 @@
             <td>equivalent</td>
             <td>Medication</td><td>ingredient.strengthRatio</td>
             <td>Quantity of ingredient present.</td>
-            <td>Replicate per-item ingredients into<code>ingredient</code>.<br>See note above about <i>item</i></td>
+            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i></td>
           </tr>
           <tr>
             <td>item.ingredient.strengthInfo.basisOfStrengthSubstance</td>
@@ -182,7 +182,7 @@
             <td>Medication</td>
             <td>ingredient.strength[x].extension:basisOfStrengthSubstance</td>
             <td>Substance the strength refers to (if different).</td>
-            <td>Replicate per-item ingredients into<code>ingredient</code>.<br>See note above about <i>item</i>
+            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i>
             </td>
           </tr>
           <tr>
