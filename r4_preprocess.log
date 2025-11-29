@@ -37,6 +37,8 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\procedure-eu-
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\rulesSet\rulesSet-common.fsh -> /workspace/hl7eu-base\input\fsh\rulesSet\rulesSet-common.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\rulesSet\rulesSet-obligations.fsh -> /workspace/hl7eu-base\input\fsh\rulesSet\rulesSet-obligations.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\terminology\lab-species.fsh -> /workspace/hl7eu-base\input\fsh\terminology\lab-species.fsh
+Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\terminology\medicationIntendedUse.fsh -> /workspace/hl7eu-base\input\fsh\terminology\medicationIntendedUse.fsh
+Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\terminology\periodOfLife.fsh -> /workspace/hl7eu-base\input\fsh\terminology\periodOfLife.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\terminology\siteLaterality.fsh -> /workspace/hl7eu-base\input\fsh\terminology\siteLaterality.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\terminology\siteQualifier.fsh -> /workspace/hl7eu-base\input\fsh\terminology\siteQualifier.fsh
 Copied: /workspace/hl7eu-base/__r4-r5\input\images\home-1.png -> /workspace/hl7eu-base\input\images\home-1.png

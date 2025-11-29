@@ -10,29 +10,40 @@ Description: """This profile sets minimum expectations for the Immunization reso
 // * insert ImposeProfile($Immunization-uv-ips, 0)
 * status ^short = "Immunization status."
 * statusReason ^short = "Reason for not performing."
-* extension contains $immunization-basedOn-r5 named basedOn 0..1
-* extension[basedOn].valueReference only Reference ( ImmunizationRecommendation )
-
+/* * extension contains $immunization-basedOn-r5 named basedOn 0..1
+* extension[basedOn].valueReference only Reference ( ImmunizationRecommendation ) */
 * extension contains $immunization-administeredProduct-r5 named administeredProduct 0..1
 * extension[administeredProduct].extension[concept]
 * extension[administeredProduct].extension[reference].valueReference only Reference ( MedicationEuCore ) 
-
 * reasonCode ^short = "Reasons for the administration."
-
 * vaccineCode from $vaccines-uv-ips (preferred)
 // * vaccineCode.text ^short = "Name of the vaccine" // brandName
-* vaccineCode ^binding.extension[+].extension[0].url = "purpose"
-* vaccineCode ^binding.extension[=].extension[=].valueCode = #candidate
-* vaccineCode ^binding.extension[=].extension[+].url = "valueSet"
-* vaccineCode ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-whoatc-uv-ips"
-* vaccineCode ^binding.extension[=].extension[+].url = "documentation"
-* vaccineCode ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a vaccines value set from the WHO ATC code system for use in specific jurisdictional or other contexts where use of the ATC terminology is preferred."
-* vaccineCode ^binding.extension[=].extension[+].url = "shortDoco"
-* vaccineCode ^binding.extension[=].extension[=].valueString = "For when WHO ATC code system is preferred"
-* vaccineCode ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
-* vaccineCode ^binding.description = "The type of vaccine for particular disease or diseases against which the patient has been immunised, or a code for absent/unknown immunization."
+  * ^binding.extension[+].extension[0].url = "purpose"
+  * ^binding.extension[=].extension[=].valueCode = #candidate
+  * ^binding.extension[=].extension[+].url = "valueSet"
+  * ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-whoatc-uv-ips"
+  * ^binding.extension[=].extension[+].url = "documentation"
+  * ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a vaccines value set from the WHO ATC code system for use in specific jurisdictional or other contexts where use of the ATC terminology is preferred."
+  * ^binding.extension[=].extension[+].url = "shortDoco"
+  * ^binding.extension[=].extension[=].valueString = "For when WHO ATC code system is preferred"
+  * ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+  * ^binding.description = "The type of vaccine for particular disease or diseases against which the patient has been immunised, or a code for absent/unknown immunization."
+  * ^binding.extension[+].extension[0].url = "purpose"
+  * ^binding.extension[=].extension[=].valueCode = #candidate
+  * ^binding.extension[=].extension[+].url = "valueSet"
+  * ^binding.extension[=].extension[=].valueCanonical = "http://terminology.ehdsi.eu/ValueSet/eHDSIVaccine"
+  * ^binding.extension[=].extension[+].url = "documentation"
+  * ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to the cross-border vaccines value set."
+  * ^binding.extension[=].extension[+].url = "shortDoco"
+  * ^binding.extension[=].extension[=].valueString = "For EU cross-border use"
+  * ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+  * ^binding.description = "The type of vaccine for particular disease or diseases against which the patient has been immunised, or a code for absent/unknown immunization."
 * patient only Reference(PatientEuCore)
-* occurrence[x] only dateTime
+* occurrence[x] ^short = "Date of vaccination"
+// TO BE ACTIVATED WHEN EXTENSIONS WILL BE PUBLISHED
+// * occurrenceDateTime
+//  * extension contains PeriodsOfLife named periodOfLife 0..1
+//  * extension[periodOfLife].valueCodeableConcept from PeriodsOfLifeEuVs (preferred)
 * location only Reference(LocationEuCore)
 * manufacturer ^short = "Vaccine manufacturer/MAH"
 * lotNumber ^short = "Batch/lot number"

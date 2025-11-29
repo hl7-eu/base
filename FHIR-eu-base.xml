@@ -31,6 +31,7 @@
 <artifact id="StructureDefinition/location-eu-core" key="StructureDefinition-location-eu-core" name="Location (EU core)"/>
 <artifact id="Location/example-location" key="Location-example-location" name="Location Example"/>
 <artifact id="StructureDefinition/medication-eu-core" key="StructureDefinition-medication-eu-core" name="Medication (EU core) [WIP]"/>
+<artifact id="ValueSet/medicationIntendedUse-eu" key="ValueSet-medicationIntendedUse-eu" name="Medication Intended Use"/>
 <artifact id="StructureDefinition/medicationRequest-eu-core" key="StructureDefinition-medicationRequest-eu-core" name="MedicationRequest (EU core) [WIP]"/>
 <artifact id="StructureDefinition/medicationStatement-eu-core" key="StructureDefinition-medicationStatement-eu-core" name="MedicationStatement (EU core) [WIP]"/>
 <artifact id="StructureDefinition/organization-eu" key="StructureDefinition-organization-eu" name="Organization (EU base)"/>
@@ -42,6 +43,7 @@
 <artifact id="Patient/patient-eu-core-example" key="Patient-patient-eu-core-example" name="Patient Example"/>
 <artifact deprecated="true" id="StructureDefinition/Patient-animal-eu" key="StructureDefinition-Patient-animal-eu" name="Patient: Animal"/>
 <artifact id="StructureDefinition/patient-animal-eu-core" key="StructureDefinition-patient-animal-eu-core" name="Patient: Animal (EU core)"/>
+<artifact id="ValueSet/periodsOfLife-eu" key="ValueSet-periodsOfLife-eu" name="Periods of Life"/>
 <artifact id="StructureDefinition/practitioner-eu" key="StructureDefinition-practitioner-eu" name="Practitioner (EU base)"/>
 <artifact id="StructureDefinition/practitioner-eu-core" key="StructureDefinition-practitioner-eu-core" name="Practitioner (EU core)"/>
 <artifact id="Practitioner/practitioner-eu-core-example" key="Practitioner-practitioner-eu-core-example" name="Practitioner Example"/>

@@ -127,19 +127,28 @@
             <td></td>
           </tr>
           <!-- MEDICATION STATEMENT ELEMENTS -->
-          <tr class="highlight-yellow">
+          <tr>
             <td>medicationTreatmentStatus</td>
             <td>The current status of the taking of medicine.</td>
             <td>equivalent</td>
-            <td>MedicationStatement</td><td>status</td>
-            <td>Active/completed/intended/not-taken, etc.</td>
-            <td>clarify the difference with header.status.\n
-              Evaluate if adherence.code should be used</td>
+            <td>MedicationStatement</td><td>extension:adherence.code<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Type of adherence</td>
+            <td></td>
+          </tr>
+          <tr >
+            <td>medicationTreatmentStatus</td>
+            <td>The current status of the taking of medicine.</td>
+            <td>equivalent</td>
+            <td>MedicationStatement</td>
+            <td>adherence.code<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
+            </td>
+            <td>Type of adherence</td>
+            <td></td>
           </tr>
           <tr>
             <td>medication</td>
             <td>Describes the medicinal product.</td>
-            <td>source-is-narrower-than-target</td>
+            <td>equivalent</td>
             <td>MedicationStatement</td><td>medication[x] <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Medication expressed as a reference.</td>
             <td>In the model only the Reference to <code>Medication</code>.</td>
@@ -147,7 +156,7 @@
           <tr>
             <td>medication</td>
             <td>Describes the medicinal product.</td>
-            <td>source-is-narrower-than-target</td>
+            <td>equivalent</td>
             <td>MedicationStatement</td>
             <td>medication<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Medication expressed as a reference.</td>
