@@ -14,9 +14,30 @@
 </body>
   <body>
     <h3>EHDSTelecom → ContactPoint</h3><a>  </a>
+    <p></p>
     <p>
-      This page describes the element-by-element mapping from the <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSTelecom"><strong>EHDSTelecom</strong></a> logical model to the HL7 FHIR <a href="https://hl7.org/fhir/datatypes.html#ContactPoint"><strong>ContactPoint</strong></a> datatype.
+  This page explains how conceptual elements from the EHDS logical model are expressed
+  in the corresponding FHIR ContactPoint datatype used by this Implementation Guide.
     </p>
+    <p></p>
+    <div class="table-wrap">
+      <strong>Mapping Context</strong>
+      <ul>
+        <li>
+          <strong>Source logical model:</strong>
+          <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSTelecom" target="_blank">
+        EHDSTelecom
+          </a>
+        </li>
+        <li>
+          <strong>Target FHIR datatype:</strong>
+          <a href="https://hl7.org/fhir/datatypes.html#ContactPoint">
+        ContactPoint
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p></p>
     <div class="table-wrap">
       <table summary="EHDSTelecom → ContactPoint">
         <caption>EHDSTelecom → ContactPoint</caption>

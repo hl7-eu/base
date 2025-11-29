@@ -14,11 +14,30 @@
     </blockquote>
     <h3>EHDSProcedure → Procedure</h3>
     <a>  </a>
+    <p></p>
     <p>
-      This page describes the element-by-element mapping from the <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSProcedure.html" target="_blank"><strong>EHDSProcedure</strong></a> logical model to the FHIR 
-      <a href="StructureDefinition-procedure-eu-core.html">
-      <code>ProcedureEuCore</code></a> profile in this Implementation Guide.
+  This page explains how conceptual elements from the EHDS logical model are expressed
+  in the corresponding FHIR ProcedureEuCore profile used by this Implementation Guide.
     </p>
+    <p></p>
+    <div class="table-wrap">
+      <strong>Mapping Context</strong>
+      <ul>
+        <li>
+          <strong>Source logical model:</strong>
+          <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSProcedure.html" target="_blank">
+        EHDSProcedure
+          </a>
+        </li>
+        <li>
+          <strong>Target FHIR profile:</strong>
+          <a href="StructureDefinition-procedure-eu-core.html">
+        ProcedureEuCore
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p></p>
     <div class="table-wrap">
       <table summary="EHDSProcedure → Procedure">
         <caption>EHDSProcedure → Procedure</caption>
