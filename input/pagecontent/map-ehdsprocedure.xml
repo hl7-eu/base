@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<div xmlns="http://www.w3.org/1999/xhtml">
   <!--ReleaseHeader-->
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
@@ -281,4 +281,4 @@
       Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
     </p>
   </body>
-</html>
+</div>

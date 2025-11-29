@@ -86,7 +86,7 @@
                         <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSBodyStructure.html" target="_blank">EHDSBodyStructure</a>
                     </td>
                     <td>
-                        <a href="StructureDefinition-bodystructure-eu-core.html"><code>BodyStructureEuCore</code></a>
+                        <a href="StructureDefinition-bodyStructure-eu-core.html"><code>BodyStructureEuCore</code></a>
                     </td>
                     <td>
                         <a class="pill" href="map-ehdsbodystructure.html">EHDSBodyStructure Mapping</a>
@@ -139,7 +139,7 @@
                         <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSHealthProfessional.html" target="_blank">EHDSHealthProfessional</a>
                     </td>
                     <td>
-                        <a href="StructureDefinition-practitionerrole-eu-core.html"><code>PractitionerRoleEuCore</code></a>,                        <a href="StructureDefinition-practitioner-eu-core.html"><code>PractitionerEuCore</code></a>
+                        <a href="StructureDefinition-practitionerRole-eu-core.html"><code>PractitionerRoleEuCore</code></a>,                        <a href="StructureDefinition-practitioner-eu-core.html"><code>PractitionerEuCore</code></a>
                     </td>
                     <td>
                         <a class="pill" href="map-ehdshealthprofessional.html">EHDSHealthProfessional Mapping</a>
@@ -204,7 +204,7 @@
                         <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAllergyIntolerance.html" target="_blank">EHDSAllergyIntolerance</a>
                     </td>
                     <td>
-                        <a href="StructureDefinition-allergyintolerance-eu-core.html"><code>AllergyIntoleranceEuCore</code></a>
+                        <a href="StructureDefinition-allergyIntolerance-eu-core.html"><code>AllergyIntoleranceEuCore</code></a>
                     </td>
                     <td>
                         <a class="pill" href="map-ehdsallergyintolerance.html">EHDSAllergyIntolerance Mapping</a>
@@ -310,7 +310,7 @@
                         <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedicationStatement.html" target="_blank">EHDSMedicationStatement</a>
                     </td>
                     <td>
-                        <a href="StructureDefinition-medicationstatement-eu-core.html"><code>MedicationStatementEuCore</code></a>
+                        <a href="StructureDefinition-medicationStatement-eu-core.html"><code>MedicationStatementEuCore</code></a>
                     </td>
                     <td>
                         <a class="pill" href="map-ehdsmedicationstatement.html">EHDSMedicationStatement Mapping</a>
@@ -322,7 +322,7 @@
                         <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedicationPrescription.html" target="_blank">EHDSMedicationPrescription</a>
                     </td>
                     <td>
-                        <a href="StructureDefinition-medicationrequest-eu-core.html"><code>MedicationRequestEuCore</code></a>
+                        <a href="StructureDefinition-medicationRequest-eu-core.html"><code>MedicationRequestEuCore</code></a>
                     </td>
                     <td>
                         <a class="pill" href="map-ehdsmedicationprescription.html">EHDSMedicationPrescription Mapping</a>
