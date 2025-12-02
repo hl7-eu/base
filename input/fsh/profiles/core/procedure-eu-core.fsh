@@ -2,7 +2,7 @@ Profile: ProcedureEuCore
 Parent: Procedure
 // Parent: ProcedureUvIps
 Id: procedure-eu-core
-Title:    "Procedure (EU core) [WIP]"
+Title:    "Procedure (EU core)"
 Description: "This profile represents the constraints applied to the Procedure resource by this guide."
 // * insert ImposeProfile ( $Procedure-uv-ips, 0 )  // Check if this is appropriate (see  support)
 * extension contains $procedure-targetBodyStructure named bodySite 0..1

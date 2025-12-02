@@ -2,7 +2,7 @@
 Profile:  ImmunizationEuCore
 Parent:   Immunization
 Id:       immunization-eu-core
-Title:    "Immunization (EU core) [WIP]"
+Title:    "Immunization (EU core)"
 Description: """This profile sets minimum expectations for the Immunization resource common to most of the use cases."""
 //-------------------------------------------------------------------------------------------
 * ^experimental = false

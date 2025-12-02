@@ -272,9 +272,23 @@
                         <a href="StructureDefinition-composition-eu-core.html"><code>CompositionEuCore</code></a>
                     </td>
                     <td>
-                        <a class="pill" href="map-ehdsdocument.html">EHDSDocument Mapping</a>
+                        <a class="pill" href="map-ehdsdocument.html">EHDSDocument Mapping (Composition)</a>
                     </td>
                     <td>🟡 Ready for first review</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSDocument.html" target="_blank">EHDSDocument</a>
+                    </td>
+                    <td>
+                        <a href="StructureDefinition-diagnosticReport-eu-core.html">
+                            <code>DiagnosticReportEuCore</code>
+                        </a>
+                    </td>
+                    <td>
+                        <a class="pill" href="map-ehdsdocument.html">EHDSDocument Mapping (DiagnosticReport)</a>
+                    </td>
+                    <td>X WIP- under development</td>
                 </tr>
             </tbody>
         </table>

@@ -26,14 +26,14 @@
 <artifact deprecated="true" id="CodeSystem/v3-ActCode-EU" key="CodeSystem-v3-ActCode-EU" name="HL7 V3 ActCode - EU extensions"/>
 <artifact deprecated="true" id="StructureDefinition/HumanName-eu" key="StructureDefinition-HumanName-eu" name="HumanName (Eu)"/>
 <artifact deprecated="true" id="ValueSet/iso-ehicCountryCode" key="ValueSet-iso-ehicCountryCode" name="ISO 3166 - EHIC Country Codes"/>
-<artifact id="StructureDefinition/immunization-eu-core" key="StructureDefinition-immunization-eu-core" name="Immunization (EU core) [WIP]"/>
+<artifact id="StructureDefinition/immunization-eu-core" key="StructureDefinition-immunization-eu-core" name="Immunization (EU core)"/>
 <artifact deprecated="true" id="StructureDefinition/location-eu" key="StructureDefinition-location-eu" name="Location (EU base)"/>
 <artifact id="StructureDefinition/location-eu-core" key="StructureDefinition-location-eu-core" name="Location (EU core)"/>
 <artifact id="Location/example-location" key="Location-example-location" name="Location Example"/>
 <artifact id="StructureDefinition/medication-eu-core" key="StructureDefinition-medication-eu-core" name="Medication (EU core) [WIP]"/>
 <artifact id="ValueSet/medicationIntendedUse-eu" key="ValueSet-medicationIntendedUse-eu" name="Medication Intended Use"/>
 <artifact id="StructureDefinition/medicationRequest-eu-core" key="StructureDefinition-medicationRequest-eu-core" name="MedicationRequest (EU core) [WIP]"/>
-<artifact id="StructureDefinition/medicationStatement-eu-core" key="StructureDefinition-medicationStatement-eu-core" name="MedicationStatement (EU core) [WIP]"/>
+<artifact id="StructureDefinition/medicationStatement-eu-core" key="StructureDefinition-medicationStatement-eu-core" name="MedicationStatement (EU core)"/>
 <artifact id="StructureDefinition/organization-eu" key="StructureDefinition-organization-eu" name="Organization (EU base)"/>
 <artifact id="StructureDefinition/organization-eu-core" key="StructureDefinition-organization-eu-core" name="Organization (EU core)"/>
 <artifact id="Organization/organization-eu-core-example" key="Organization-organization-eu-core-example" name="Organization Example"/>
@@ -50,7 +50,7 @@
 <artifact id="StructureDefinition/practitionerRole-eu" key="StructureDefinition-practitionerRole-eu" name="PractitionerRole (EU base)"/>
 <artifact id="StructureDefinition/practitionerRole-eu-core" key="StructureDefinition-practitionerRole-eu-core" name="PractitionerRole (EU core)"/>
 <artifact id="PractitionerRole/practitionerRole-eu-core-example" key="PractitionerRole-practitionerRole-eu-core-example" name="PractitionerRole Example"/>
-<artifact id="StructureDefinition/procedure-eu-core" key="StructureDefinition-procedure-eu-core" name="Procedure (EU core) [WIP]"/>
+<artifact id="StructureDefinition/procedure-eu-core" key="StructureDefinition-procedure-eu-core" name="Procedure (EU core)"/>
 <artifact id="ValueSet/speciesType-eu" key="ValueSet-speciesType-eu" name="Types of species"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>

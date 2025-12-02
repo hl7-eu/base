@@ -23,6 +23,7 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\allergy-eu-co
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\bodyStructure-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\bodyStructure-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\composition-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\composition-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\condition-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\condition-eu-core.fsh
+Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\diagnosticReport-eu-core.fsh-tobefixed -> /workspace/hl7eu-base\input\fsh\profiles\core\diagnosticReport-eu-core.fsh-tobefixed
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\flag-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\flag-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\immunization-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\immunization-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\location-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\location-eu-core.fsh
@@ -61,6 +62,7 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsalert.xml -
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsallergyintolerance.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsallergyintolerance.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsbodystructure.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsbodystructure.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdscondition.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdscondition.xml
+Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsdocument-report.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsdocument-report.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsdocument.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsdocument.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdshealthprofessional.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdshealthprofessional.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdshumanname.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdshumanname.xml
@@ -84,6 +86,9 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\terminologies.md ->
 Transformed: /workspace/hl7eu-base/__r4-r5\scripts\config.json-example -> /workspace/hl7eu-base\scripts\config.json-example
 Copied: /workspace/hl7eu-base/__r4-r5\scripts\preProcessRxBuild.py -> /workspace/hl7eu-base\scripts\preProcessRxBuild.py
 Transformed: /workspace/hl7eu-base/__r4-r5\scripts\README.md -> /workspace/hl7eu-base\scripts\README.md
+Transformed: /workspace/hl7eu-base/__r4-r5\_sources\diagnosticReport-lab.fsh -> /workspace/hl7eu-base\_sources\diagnosticReport-lab.fsh
+Transformed: /workspace/hl7eu-base/__r4-r5\_sources\im-diagnosticreport.fsh -> /workspace/hl7eu-base\_sources\im-diagnosticreport.fsh
+Transformed: /workspace/hl7eu-base/__r4-r5\_sources\rulesSet-lab.fsh -> /workspace/hl7eu-base\_sources\rulesSet-lab.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\_sources\xtehr-model-map-r5.xlsx -> /workspace/hl7eu-base\_sources\xtehr-model-map-r5.xlsx
 Transformed: /workspace/hl7eu-base/__r4-r5\_sources\xtehr-model-map.xlsx -> /workspace/hl7eu-base\_sources\xtehr-model-map.xlsx
 Transformed: /workspace/hl7eu-base/__r4-r5\_sources\ehic\codeSystems.fsh -> /workspace/hl7eu-base\_sources\ehic\codeSystems.fsh
