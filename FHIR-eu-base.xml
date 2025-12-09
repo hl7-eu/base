@@ -18,6 +18,8 @@
 <artifact id="StructureDefinition/composition-eu-core" key="StructureDefinition-composition-eu-core" name="Composition (EU core) [WIP]"/>
 <artifact id="StructureDefinition/condition-eu-core" key="StructureDefinition-condition-eu-core" name="Condition (EU core)"/>
 <artifact deprecated="true" id="StructureDefinition/Coverage-eu-ehic" key="StructureDefinition-Coverage-eu-ehic" name="Coverage: EHIC"/>
+<artifact id="StructureDefinition/DiagnosticReport-eu-core" key="StructureDefinition-DiagnosticReport-eu-core" name="DiagnosticReport (EU core) [WIP]"/>
+<artifact id="ValueSet/ehdsCategories-eu" key="ValueSet-ehdsCategories-eu" name="EHDS Categories"/>
 <artifact deprecated="true" id="ValueSet/oid-ehicPersonalId" key="ValueSet-oid-ehicPersonalId" name="EHIC Personal ID (system IDs - oid)"/>
 <artifact deprecated="true" id="ValueSet/uri-ehicPersonalId" key="ValueSet-uri-ehicPersonalId" name="EHIC Personal ID (system IDs - uri)"/>
 <artifact deprecated="true" id="Coverage/EhicExampleIt" key="Coverage-EhicExampleIt" name="EhicExampleIt"/>
@@ -62,11 +64,12 @@
 <page key="dependencies" name="Dependencies"/>
 <page key="downloads" name="Downloads"/>
 <page key="map-ehdsaddress" name="EHDSAddress to FHIR Address Mapping"/>
-<page key="map-ehdsalert" name="EHDSAlert to FHIR Flag / Alert Mapping"/>
+<page key="map-ehdsalert" name="EHDSAlert to FHIR Flag Mapping"/>
 <page key="map-ehdsallergyintolerance" name="EHDSAllergyIntolerance to FHIR AllergyIntolerance Mapping"/>
 <page key="map-ehdsbodystructure" name="EHDSBodyStructure to FHIR BodyStructure Mapping"/>
 <page key="map-ehdscondition" name="EHDSCondition to FHIR Condition Mapping"/>
 <page key="map-ehdsdocument" name="EHDSDocument to FHIR Composition Mapping"/>
+<page key="map-ehdsdocument-report" name="EHDSDocument to FHIR DiagnosticReport Mapping"/>
 <page key="map-ehdshealthprofessional" name="EHDSHealthProfessional to FHIR PractitionerRole, Practitioner Mapping"/>
 <page key="map-ehdshumanname" name="EHDSHumanName to FHIR HumanName Mapping"/>
 <page key="map-ehdsimmunisation" name="EHDSImmunisation to FHIR Immunization Mapping"/>

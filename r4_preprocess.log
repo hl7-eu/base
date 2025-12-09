@@ -23,7 +23,7 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\allergy-eu-co
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\bodyStructure-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\bodyStructure-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\composition-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\composition-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\condition-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\condition-eu-core.fsh
-Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\diagnosticReport-eu-core.fsh-tobefixed -> /workspace/hl7eu-base\input\fsh\profiles\core\diagnosticReport-eu-core.fsh-tobefixed
+Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\diagnosticReport-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\diagnosticReport-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\flag-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\flag-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\immunization-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\immunization-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\location-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\location-eu-core.fsh
@@ -37,6 +37,7 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\practitioner-
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\procedure-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\procedure-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\rulesSet\rulesSet-common.fsh -> /workspace/hl7eu-base\input\fsh\rulesSet\rulesSet-common.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\rulesSet\rulesSet-obligations.fsh -> /workspace/hl7eu-base\input\fsh\rulesSet\rulesSet-obligations.fsh
+Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\terminology\ehdsCategories.fsh -> /workspace/hl7eu-base\input\fsh\terminology\ehdsCategories.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\terminology\lab-species.fsh -> /workspace/hl7eu-base\input\fsh\terminology\lab-species.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\terminology\medicationIntendedUse.fsh -> /workspace/hl7eu-base\input\fsh\terminology\medicationIntendedUse.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\terminology\periodOfLife.fsh -> /workspace/hl7eu-base\input\fsh\terminology\periodOfLife.fsh

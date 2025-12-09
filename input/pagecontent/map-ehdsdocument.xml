@@ -53,14 +53,14 @@
         </thead>
         <tbody>
           <!-- HEADER BLOCK -->
-          <tr class="">
+          <tr>
             <td>header</td>
             <td>Document header elements.</td>
             <td>related-to</td>
             <td>Composition</td>
             <td>.</td>
             <td>General metadata.</td>
-            <td>Dataset-level information across the Composition instance. <strong>Category (classCode) is missing ?</strong></td>
+            <td class="highlight-yellow">Dataset-level information across the Composition instance. <strong>Category (classCode) is missing ?</strong></td>
           </tr>
           <tr>
             <td>header.subject</td>

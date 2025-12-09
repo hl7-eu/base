@@ -20,22 +20,19 @@ Description: """This profile sets minimum expectations for the DiagnosticReport 
 * status
   * ^short = "Status of the Report"
   * ^comment = "DiagnosticReport.status and Composition.status shall be aligned"
-* insert ReportCategoryRule
 * extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note named note 0..*
 * extension[note].valueAnnotation.extension contains $annotation-type named annotation-type 0..*
-* extension[note].valueAnnotation.extension[annotation-type].valueCodeableConcept from Hl7EuImagingSectionValueSet (example)
+* extension[note].valueAnnotation.extension[annotation-type].valueCodeableConcept ^short = "Type of note"
 * category 1..*
   * insert SliceElement( #value, $this )
 * category contains diagnostic-service 1..1 
 // to be checked with the EU Core working group
 * category[diagnostic-service] from $diagnostic-service-sections (required)
-* category contains specialty 0..*
-* code from ImagingReportTypesEuVSEuImaging (example) 
+* code
   * ^short = "Type of Diagnostic Report"
   * ^definition = "Defines the document type, it is recommended to take this from the suggested LOINC set."
-* insert ReportSubjectRule
 * subject 1..
-* subject only Reference (PatientEuCore or PatientAnimalEu or Group or Location or Device)
+* subject only Reference (PatientEuCore or PatientAnimalEuCore or Group or Location or Device)
   * ^short = "Who and/or what this report is about"
   * ^definition = "Who or what this report is about. The report can be about a human patient, a living subject, a device (e.g. a machine), a location or even a group of subjects (such as a document about a herd of livestock, or a set of patients that share a common exposure)."
 * encounter only Reference (Encounter)

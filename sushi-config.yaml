@@ -91,7 +91,7 @@ pages:
   map-ehdstelecom.html:
      title: EHDSTelecom to FHIR ContactPoint Mapping
   map-ehdsalert.html:
-     title: EHDSAlert to FHIR Flag / Alert Mapping
+     title: EHDSAlert to FHIR Flag Mapping
   map-ehdsallergyintolerance.html:
      title: EHDSAllergyIntolerance to FHIR AllergyIntolerance Mapping
   map-ehdscondition.html:
@@ -102,6 +102,8 @@ pages:
      title: EHDSImmunisation to FHIR Immunization Mapping
   map-ehdsdocument.html:
      title: EHDSDocument to FHIR Composition Mapping
+  map-ehdsdocument-report.html:
+     title: EHDSDocument to FHIR DiagnosticReport Mapping
   map-ehdsmedication.html:
      title: EHDSMedication to FHIR Medication Mapping
   map-ehdsmedicationstatement.html:
