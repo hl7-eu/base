@@ -2,7 +2,7 @@
 Profile:  MedicationRequestEuCore
 Parent:   MedicationRequest
 Id:       medicationRequest-eu-core
-Title:    "MedicationRequest (EU core) [WIP]"
+Title:    "MedicationRequest (EU core)"
 Description: """This profile sets minimum expectations for the MedicationRequest resource common to most of the use cases.
 This profile is adapted from the MPD work."""
 //-------------------------------------------------------------------------------------------

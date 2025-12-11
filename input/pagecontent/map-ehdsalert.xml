@@ -3,9 +3,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
     <title>EHDSAlert → Flag</title>
-    <link rel="stylesheet" type="text/css" href="map-pages.css" />
   </head>
   <body>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Ongoing alignment:</strong>
+              The Xt-EHR logical models are under active revision and continuous refinement.
+              Updates from Xt-EHR will be progressively incorporated into this Implementation
+              Guide to maintain alignment with the evolving EHDS specifications.
+        </div>
+      </div>
+    </div>
     <h3>EHDSAlert → Flag</h3>
     <a>  </a>
     <p></p>
@@ -32,9 +41,6 @@
       </ul>
     </div>
     <p></p>
-    <p>
-      Alerts convey critical safety or clinical information that should be surfaced whenever the patient record is accessed.
-    </p>
     <div class="table-wrap">
       <table summary="EHDSAlert → Flag">
         <caption>EHDSAlert → Flag</caption>

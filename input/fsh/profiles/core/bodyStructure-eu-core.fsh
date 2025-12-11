@@ -3,7 +3,7 @@ Parent: BodyStructure
 Id: bodyStructure-eu-core
 Title: "BodyStructure (EU core)"
 Description: "This profile specifies how the HL7 FHIR BodyStructure resource should be used for conveying commonly used concepts in the European context."
-* insert SetFmmandStatusRule ( 2, trial-use)
+* insert SetFmmandStatusRule (2, trial-use)
 * identifier ^short = "Body structure identifier"
 * text ^short = "Textual description of the body structure"
 * extension contains $bodyStructure-laterality-r5 named laterality 0..1

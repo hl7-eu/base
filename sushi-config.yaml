@@ -60,7 +60,7 @@ pages:
   dependencies.md:
     title: Dependencies
   knownissues.md:
-    title: Known Issues
+    title: Known/Open Issues
   introduction.md:
     title: Introduction
   modelmap.html:
@@ -191,7 +191,7 @@ menu:
 #    Implementation Notes: implementationnotes.html  
   About:
     Authors and Contributors: authors.html
-    Known Issues: knownissues.html
+    Known/Open Issues: knownissues.html
     Download: downloads.html
     Dependencies: dependencies.html
     Change Log: changes.html
@@ -321,6 +321,7 @@ groups:
         - StructureDefinition/medicationRequest-eu-core
         - StructureDefinition/medicationStatement-eu-core
         - StructureDefinition/procedure-eu-core
+        - StructureDefinition/diagnosticReport-eu-core
 #
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and

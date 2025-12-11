@@ -2,10 +2,19 @@
 <div xmlns="http://www.w3.org/1999/xhtml" class="model-map-block">
     <head>
         <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-        <title>EHDS Logical Models to FHIR Profiles Mapping</title>    
-    <link rel="stylesheet" type="text/css" href="map-pages.css" />
+        <title>EHDS Logical Models to FHIR Profiles Mapping</title>   
 </head>
     <!-- <td>✅ Ready for review</td> -->
+<div class="model-map-block">
+    <div class="callout-wrapper">
+        <div class="callout-box">
+            <strong>Ongoing alignment:</strong>
+              The Xt-EHR logical models are under active revision and continuous refinement.
+              Updates from Xt-EHR will be progressively incorporated into this Implementation
+              Guide to maintain alignment with the evolving EHDS specifications.
+        </div>
+    </div>
+</div>
     <h3>EHDS Logical Models → FHIR Profiles</h3>
     <a>  </a>
     <p>
@@ -13,14 +22,6 @@
       administrative concepts. This Implementation Guide provides HL7 FHIR profiles
       that realise those models.
     </p>
-    <div class="callout-wrapper">
-        <div class="callout-box">
-            <strong>Ongoing alignment:</strong>
-            The Xt-EHR logical models are under active revision and continuous refinement.
-            Updates from Xt-EHR will be progressively incorporated into this Implementation
-            Guide to maintain alignment with the evolving EHDS specifications.
-        </div>
-    </div>
     <p>
       The sections below group the EHDS logical models into categories.
     </p>
@@ -40,8 +41,7 @@
                 <tr>
                     <th>EHDS Logical Model</th>
                     <th>FHIR Profile / Type in this IG</th>
-                    <th>Mapping Details</th>
-                    <th>Status</th>
+                    <th>Mapping Details</th>                    
                 </tr>
             </thead>
             <tbody>
@@ -55,7 +55,6 @@
                     <td>
                         <a class="pill" href="map-ehdsaddress.html">EHDSAddress Mapping</a>
                     </td>
-                    <td>🔵 Ready for final review</td>
                 </tr>
                 <tr>
                     <td>
@@ -67,7 +66,6 @@
                     <td>
                         <a class="pill" href="map-ehdshumanname.html">EHDSHumanName Mapping</a>
                     </td>
-                    <td>🔵 Ready for final review</td>
                 </tr>
                 <tr>
                     <td>
@@ -79,7 +77,6 @@
                     <td>
                         <a class="pill" href="map-ehdstelecom.html">EHDSTelecom Mapping</a>
                     </td>
-                    <td>🔵 Ready for final review</td>
                 </tr>
                 <tr>
                     <td>
@@ -91,7 +88,6 @@
                     <td>
                         <a class="pill" href="map-ehdsbodystructure.html">EHDSBodyStructure Mapping</a>
                     </td>
-                    <td>🔵 Ready for final review</td>
                 </tr>
             </tbody>
         </table>
@@ -106,7 +102,6 @@
                     <th>EHDS Logical Model</th>
                     <th>FHIR Profile / Type in this IG</th>
                     <th>Mapping Details</th>
-                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -120,7 +115,6 @@
                     <td>
                         <a class="pill" href="map-ehdspatient.html">EHDSPatient Mapping</a>
                     </td>
-                    <td>🔵 Ready for final review</td>
                 </tr>
                 <tr>
                     <td>
@@ -132,7 +126,6 @@
                     <td>
                         <a class="pill" href="map-ehdspatientanimal.html">EHDSPatientAnimal Mapping</a>
                     </td>
-                    <td>🔵 Ready for final review</td>
                 </tr>
                 <tr>
                     <td>
@@ -144,7 +137,6 @@
                     <td>
                         <a class="pill" href="map-ehdshealthprofessional.html">EHDSHealthProfessional Mapping</a>
                     </td>
-                    <td>🔵 Ready for final review</td>
                 </tr>
                 <tr>
                     <td>
@@ -156,7 +148,6 @@
                     <td>
                         <a class="pill" href="map-ehdsorganisation.html">EHDSOrganisation Mapping</a>
                     </td>
-                   <td>🔵 Ready for final review</td>
                 </tr>
                 <tr>
                     <td>
@@ -168,7 +159,6 @@
                     <td>
                         <a class="pill" href="map-ehdslocation.html">EHDSLocation Mapping</a>
                     </td>
-                    <td>🔵 Ready for final review</td>
                 </tr>
             </tbody>
         </table>
@@ -183,7 +173,6 @@
                     <th>EHDS Logical Model</th>
                     <th>FHIR Profile / Type in this IG</th>
                     <th>Mapping Details</th>
-                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -197,7 +186,6 @@
                     <td>
                         <a class="pill" href="map-ehdsalert.html">EHDSAlert Mapping</a>
                     </td>
-                    <td>🟠 Reviewed – updates required</td>
                 </tr>
                 <tr>
                     <td>
@@ -209,7 +197,6 @@
                     <td>
                         <a class="pill" href="map-ehdsallergyintolerance.html">EHDSAllergyIntolerance Mapping</a>
                     </td>
-                    <td>🟠 Reviewed – updates required</td>
                 </tr>
                 <tr>
                     <td>
@@ -221,7 +208,6 @@
                     <td>
                         <a class="pill" href="map-ehdscondition.html">EHDSCondition Mapping</a>
                     </td>
-                    <td>🟠 Reviewed – updates required</td>
                 </tr>
                 <tr>
                     <td>
@@ -233,7 +219,6 @@
                     <td>
                         <a class="pill" href="map-ehdsprocedure.html">EHDSProcedure Mapping</a>
                     </td>
-                    <td>🟠 Reviewed – updates required</td>
                 </tr>
                 <tr>
                     <td>
@@ -245,7 +230,6 @@
                     <td>
                         <a class="pill" href="map-ehdsimmunisation.html">EHDSImmunisation Mapping</a>
                     </td>
-                    <td>🟠 Reviewed – updates required</td>
                 </tr>
             </tbody>
         </table>
@@ -260,7 +244,6 @@
                     <th>EHDS Logical Model</th>
                     <th>FHIR Profile / Type in this IG</th>
                     <th>Mapping Details</th>
-                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -274,7 +257,6 @@
                     <td>
                         <a class="pill" href="map-ehdsdocument.html">EHDSDocument Mapping (Composition)</a>
                     </td>
-                    <td>🟡 Ready for first review</td>
                 </tr>
                 <tr>
                     <td>
@@ -288,7 +270,6 @@
                     <td>
                         <a class="pill" href="map-ehdsdocument-report.html">EHDSDocument Mapping (DiagnosticReport)</a>
                     </td>
-                    <td>X WIP- under development</td>
                 </tr>
             </tbody>
         </table>
@@ -303,7 +284,6 @@
                     <th>EHDS Logical Model</th>
                     <th>FHIR Profile / Type in this IG</th>
                     <th>Mapping Details</th>
-                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -317,7 +297,6 @@
                     <td>
                         <a class="pill" href="map-ehdsmedication.html">EHDSMedication Mapping</a>
                     </td>
-                    <td>🟡 Ready for first review</td>
                 </tr>
                 <tr>
                     <td>
@@ -329,7 +308,6 @@
                     <td>
                         <a class="pill" href="map-ehdsmedicationstatement.html">EHDSMedicationStatement Mapping</a>
                     </td>
-                    <td>🟠 Reviewed – updates required</td>
                 </tr>
                 <tr>
                     <td>
@@ -340,8 +318,7 @@
                     </td>
                     <td>
                         <a class="pill" href="map-ehdsmedicationprescription.html">EHDSMedicationPrescription Mapping</a>
-                    </td>
-                    <td>🟡 Ready for first review</td>
+                    </td>                    
                 </tr>
             </tbody>
         </table>

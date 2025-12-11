@@ -1,9 +1,9 @@
 Profile: DiagnosticReportEuCore
 Parent: DiagnosticReport
-Id: DiagnosticReport-eu-core
-Title:    "DiagnosticReport (EU core) [WIP]"
+Id: diagnosticReport-eu-core
+Title:    "DiagnosticReport (EU core)"
 Description: """This profile sets minimum expectations for the DiagnosticReport resource for commonly used EHDS documents."""
-* insert SetFmmandStatusRule ( 2, trial-use)
+* insert SetFmmandStatusRule (1, draft)
 * . ^short = "Diagnostic Report EU core"
 * . ^definition = "Diagnostic Report EU core"
 * extension contains $diagnostic-report-composition-r5 named DiagnosticReportCompositionR5 0..1
@@ -23,9 +23,8 @@ Description: """This profile sets minimum expectations for the DiagnosticReport 
 * extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note named note 0..*
 * extension[note].valueAnnotation.extension contains $annotation-type named annotation-type 0..*
 * extension[note].valueAnnotation.extension[annotation-type].valueCodeableConcept ^short = "Type of note"
-* category 1..*
-  * insert SliceElement( #value, $this )
-* category contains diagnostic-service 1..1 
+* category insert SliceElement( #value, $this )
+* category contains diagnostic-service 0..1 
 // to be checked with the EU Core working group
 * category[diagnostic-service] from $diagnostic-service-sections (required)
 * code
@@ -57,9 +56,8 @@ Description: """This profile sets minimum expectations for the DiagnosticReport 
   * ^short = "Specimens this report is based on."
 * result only Reference (Observation)
   * ^short = "results"
-* imagingStudy 0..0
-* imagingStudy ^short = "Study subject to this report"
-* imagingStudy ^definition = "Study subject to this report. Note: Any associated study (e.g. comparison studies) used during reporting should be tracked in the associatedStudy extension."
+* imagingStudy
+  * ^short = "Study subject to this report"
 * presentedForm ^short = "Entire report as issued (pdf recommended)"
 * media
   * ^short = "Additional data (like images, diagrams or documents) associated with this report"

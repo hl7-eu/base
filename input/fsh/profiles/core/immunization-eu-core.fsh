@@ -8,6 +8,7 @@ Description: """This profile sets minimum expectations for the Immunization reso
 * ^experimental = false
 * ^purpose = "This profile constrains the Immunization resource for the purpose of this guide."
 // * insert ImposeProfile($Immunization-uv-ips, 0)
+* insert SetFmmandStatusRule (1, draft)
 * status ^short = "Immunization status."
 * statusReason ^short = "Reason for not performing."
 /* * extension contains $immunization-basedOn-r5 named basedOn 0..1
@@ -17,7 +18,6 @@ Description: """This profile sets minimum expectations for the Immunization reso
 * extension[administeredProduct].extension[reference].valueReference only Reference ( MedicationEuCore ) 
 * reasonCode ^short = "Reasons for the administration."
 * vaccineCode from $vaccines-uv-ips (preferred)
-// * vaccineCode.text ^short = "Name of the vaccine" // brandName
   * ^binding.extension[+].extension[0].url = "purpose"
   * ^binding.extension[=].extension[=].valueCode = #candidate
   * ^binding.extension[=].extension[+].url = "valueSet"
@@ -28,6 +28,7 @@ Description: """This profile sets minimum expectations for the Immunization reso
   * ^binding.extension[=].extension[=].valueString = "For when WHO ATC code system is preferred"
   * ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
   * ^binding.description = "The type of vaccine for particular disease or diseases against which the patient has been immunised, or a code for absent/unknown immunization."
+
   * ^binding.extension[+].extension[0].url = "purpose"
   * ^binding.extension[=].extension[=].valueCode = #candidate
   * ^binding.extension[=].extension[+].url = "valueSet"
@@ -48,8 +49,6 @@ Description: """This profile sets minimum expectations for the Immunization reso
 * manufacturer ^short = "Vaccine manufacturer/MAH"
 * lotNumber ^short = "Batch/lot number"
 * performer 
-/*   * ^slicing.discriminator[+].type = #profile
-  * ^slicing.discriminator[=].path = "$this.actor.resolve()" */
   * ^slicing.discriminator[+].type = #value
   * ^slicing.discriminator[=].path = "$this.function"
   * ^slicing.ordered = false
@@ -65,11 +64,11 @@ Description: """This profile sets minimum expectations for the Immunization reso
   * ^binding.extension[=].extension[+].url = "valueSet"
   * ^binding.extension[=].extension[=].valueCanonical = "http://terminology.ehdsi.eu/ValueSet/eHDSIIllnessandDisorder"
   * ^binding.extension[=].extension[+].url = "documentation"
-  * ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a vaccines value set from the WHO ATC code system for use in specific jurisdictional or other contexts where use of the ATC terminology is preferred."
+  * ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a diseases value set for use in specific jurisdictional or for cross-border settings."
   * ^binding.extension[=].extension[+].url = "shortDoco"
   * ^binding.extension[=].extension[=].valueString = "For when WHO ATC code system is preferred"
   * ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
-  * ^binding.description = "The type of vaccine for particular disease or diseases against which the patient has been immunised, or a code for absent/unknown immunization."
+  * ^binding.description = "The diseases against which the patient has been immunised"
 * protocolApplied
   * doseNumber[x] ^short = "Dose Number"
   * seriesDoses[x] ^short = "Number of doses"
