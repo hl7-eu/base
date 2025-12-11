@@ -89,6 +89,7 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdslocation.xm
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsmedication.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsmedication.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsmedicationprescription.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsmedicationprescription.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsmedicationstatement.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsmedicationstatement.xml
+Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsobservation.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsobservation.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsorganisation.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdsorganisation.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdspatient.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdspatient.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdspatientanimal.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdspatientanimal.xml

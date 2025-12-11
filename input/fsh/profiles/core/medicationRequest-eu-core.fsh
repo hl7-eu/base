@@ -7,21 +7,14 @@ Description: """This profile sets minimum expectations for the MedicationRequest
 This profile is adapted from the MPD work."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (1, draft)
-// COMMON R4 R5
-/* CHECK IF IT SHOULD BE INCLUDED
-* extension contains $ihe-ext-medicationrequest-offlabeluse named offLabelUse 0..1 
-* extension[offLabelUse] ^short = "Indicates that the prescriber has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product." 
- */
 * identifier 
-  * ^short = "Prescription/prescribed item ID"
-  * ^comment = "It is the prescription ID if the presciption includes only one prescribed item"
-* status ^short = "Current state of the order"
-//* intent = $medicationrequest-intent#order 
-* subject only Reference( PatientEuCore )
-* authoredOn 1.. // 1.. also in the Core ?
-* requester 1.. // 1.. also in the Core ?
-* groupIdentifier 
-  * ^short = "Prescription this is part of. Not needed if a presciption includes only one prescribed item."
+  * ^short = "Business identifier for this request"
+* status ^short = "Current state of the order" 
+* intent ^short = "Order, proposal or plan"
+* subject only Reference( PatientEuCore or Group )
+* authoredOn ^short = "Date when the request was authored"
+* requester only Reference( PatientEuCore or PractitionerEuCore or PractitionerRoleEuCore or OrganizationEuCore or RelatedPerson )
+  * ^short = "The individual responsible for ordering the medication"
 * dosageInstruction ^short = "How the medication should be taken."
   * timing ^short = "Administration schedule"
     * repeat

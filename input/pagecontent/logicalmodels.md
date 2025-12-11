@@ -55,6 +55,7 @@ For the most recent and in-progress versions, please refer to the [**Xt-EHR EHDS
 | [EHDSAlert](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAlert.html) | EHDS refined base model for clinical alerts |
 | [EHDSAllergyIntolerance](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAllergyIntolerance.html) | EHDS refined base model for allergy or intolerance information |
 | [EHDSCondition](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSCondition.html) | EHDS refined base model for a clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern |
+| [EHDSObservation](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSObservation.html) | EHDS refined base model for medical test results and other clinical observations |
 | [EHDSProcedure](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSProcedure.html) | EHDS refined base model for an action that is or was performed on or for a patient |
 | [EHDSImmunisation](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSImmunisation.html) | EHDS refined base model for immunisation |
 

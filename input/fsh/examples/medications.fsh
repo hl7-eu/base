@@ -2,8 +2,9 @@
 Instance: 400C-prescription-cefuroxime-singleline
 InstanceOf: MedicationRequestEuCore
 Usage: #example
-Title: "MedicationRequest: 400C-prescription-cefuroxime-singleline"
-Description: "400C. A prescription/request with one medication and changing dosaging. Uses 'actionable' tag. Cefuroxime sodium."
+Title: "MedicationRequest Example"
+Description: """Example of a MedicationRequest conforming to the MedicationRequest (EU Core) profile. 
+It is a prescription/request with one medication and changing dosaging. Uses 'actionable' tag. Cefuroxime sodium."""
 * meta.tag = $common-tags#actionable
 * identifier.value = "10-123EP"  // prescription line identifier if exists
 * status = #active
@@ -35,8 +36,8 @@ Description: "400C. A prescription/request with one medication and changing dosa
 Instance: 01A-Cefuroxime1500GenericExplicit
 InstanceOf: MedicationEuCore
 Usage: #example
-Title: "Medication: 01A-Cefuroxime1500GenericExplicit"
-Description: "1A. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Generic product, defined by attributes."
+Title: "Medication Example"
+Description: """Example of a Medication conforming to the Medication (EU Core) profile. It represents  Cefuroxime 1500mg (1.5g) powder for solution in a vial."""
 * form = $edqm#50053000 "Powder for solution for injection or infusion"
 * ingredient.itemCodeableConcept = $sct#372833007 "Cefuroxime"
 * ingredient.strength.numerator = 1500 $ucum#mg "milligram"
@@ -45,8 +46,8 @@ Description: "1A. Cefuroxime 1500mg (1.5g) powder for solution in a vial. Generi
 * ingredient.isActive = true
 Instance: example-medicationstatement-eucore
 InstanceOf: MedicationStatementEuCore
-Title: "MedicationStatement: Enalapril"
-Description: "A sample MedicationStatement for a patient taking Enalapril, used in the context of the European Hospital Discharge Report."
+Title: "MedicationStatement Example"
+Description: """Example of a MedicationStatement conforming to the MedicationStatement (EU Core) profile. It describes a patient taking Enalapril."""
 * subject = Reference(PatientExample)
 * subject.display = "John Doe"
 * medicationCodeableConcept = $atc#C09AA02 "Enalapril"

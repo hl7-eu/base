@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/base/0.1.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/base" defaultVersion="0.1.0" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/base" url="http://hl7.eu/fhir/base">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/base/0.1.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/base" defaultVersion="2.0.0-ballot" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/base" url="http://hl7.eu/fhir/base">
 <version code="current" url="https://build.fhir.org/ig/hl7-eu/base"/>
+<version code="2.0.0-ballot" url="http://hl7.eu/fhir/base/2.0.0-ballot"/>
 <version code="0.1.0" url="http://hl7.eu/fhir/base/0.1.0"/>
 <version code="0.1.0-snapshot" deprecated="true" url="http://hl7.eu/fhir/base/0.1.0-snapshot"/>
 <version code="0.1.0-ballot" deprecated="true" url="http://hl7.eu/fhir/base/0.1.0-ballot"/>
@@ -37,12 +38,12 @@
 <artifact id="StructureDefinition/location-eu-core" key="StructureDefinition-location-eu-core" name="Location (EU core)"/>
 <artifact id="Location/example-location" key="Location-example-location" name="Location Example"/>
 <artifact id="StructureDefinition/medication-eu-core" key="StructureDefinition-medication-eu-core" name="Medication (EU core)"/>
+<artifact id="Medication/01A-Cefuroxime1500GenericExplicit" key="Medication-01A-Cefuroxime1500GenericExplicit" name="Medication Example"/>
 <artifact id="ValueSet/medicationIntendedUse-eu" key="ValueSet-medicationIntendedUse-eu" name="Medication Intended Use"/>
-<artifact id="Medication/01A-Cefuroxime1500GenericExplicit" key="Medication-01A-Cefuroxime1500GenericExplicit" name="Medication: 01A-Cefuroxime1500GenericExplicit"/>
 <artifact id="StructureDefinition/medicationRequest-eu-core" key="StructureDefinition-medicationRequest-eu-core" name="MedicationRequest (EU core)"/>
-<artifact id="MedicationRequest/400C-prescription-cefuroxime-singleline" key="MedicationRequest-400C-prescription-cefuroxime-singleline" name="MedicationRequest: 400C-prescription-cefuroxime-singleline"/>
+<artifact id="MedicationRequest/400C-prescription-cefuroxime-singleline" key="MedicationRequest-400C-prescription-cefuroxime-singleline" name="MedicationRequest Example"/>
 <artifact id="StructureDefinition/medicationStatement-eu-core" key="StructureDefinition-medicationStatement-eu-core" name="MedicationStatement (EU core)"/>
-<artifact id="MedicationStatement/example-medicationstatement-eucore" key="MedicationStatement-example-medicationstatement-eucore" name="MedicationStatement: Enalapril"/>
+<artifact id="MedicationStatement/example-medicationstatement-eucore" key="MedicationStatement-example-medicationstatement-eucore" name="MedicationStatement Example"/>
 <artifact id="Observation/763f7902-8103-4d10-8bd1-546a726d43ee" key="Observation-763f7902-8103-4d10-8bd1-546a726d43ee" name="Observation Example"/>
 <artifact id="StructureDefinition/organization-eu" key="StructureDefinition-organization-eu" name="Organization (EU base)"/>
 <artifact id="StructureDefinition/organization-eu-core" key="StructureDefinition-organization-eu-core" name="Organization (EU core)"/>
@@ -87,6 +88,7 @@
 <page key="map-ehdsmedication" name="EHDSMedication to FHIR Medication Mapping"/>
 <page key="map-ehdsmedicationstatement" name="EHDSMedicationStatement to FHIR MedicationStatement Mapping"/>
 <page key="map-ehdsmedicationprescription" name="EHDSMedicationprescription to FHIR MedicationRequest Mapping"/>
+<page key="map-ehdsobservation" name="EHDSObservation to FHIR Observation Mapping"/>
 <page key="map-ehdsorganisation" name="EHDSOrganisation to FHIR Organization Mapping"/>
 <page key="map-ehdspatient" name="EHDSPatient to FHIR Patient Mapping"/>
 <page key="map-ehdspatientanimal" name="EHDSPatientAnimal to FHIR Patient (Animal) Mapping"/>
