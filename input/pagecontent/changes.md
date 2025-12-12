@@ -1,5 +1,23 @@
 This page summarizes the main changes applied to this version of the guide.
 
+### 0.1.0 to 2.0.0-ballot
+
+
+* Added new profiles and model to profile maps
+  * DiagnosticReport (FHIR-53481)
+  * Composition (FHIR-53480)
+  * AllergyIntolerance; Condition; Procedure; Flag; Immunization; Medication; MedicationStatement; MedicationRequest (FHIR-53197)
+  * Medication/MedicationStatement/Immunization content (target profiles, revised mappings, removal of `basedOn` in Medication diff).
+* Updates the EHDS models links with the published version (FHIR-53124)
+* Changed dependency to the xver-r5 package for the for the cross-versions extensions 
+* Extended logical models and map: grouped/reorganized model map landing pages, refactored HTML/XML layout of the mapping pages, merged tables in the HCP model with resource column (FHIR-53197 + others).
+* Added examples for the profiles (FHIR-53197 + others).
+* bodySite extension moved to Condition.bodySite and Procedure.bodySite (FHIR-53124)
+* General maintenance:
+  * aligned the versioning with the new HL7 EU guidelines (version bumped to `2.0.0`) (FHIR-53618)
+  * Updated known issues and change log pages
+
+
 ### 0.1.0-ballot to 0.1.0
 
 
