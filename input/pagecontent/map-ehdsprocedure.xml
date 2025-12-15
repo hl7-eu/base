@@ -16,6 +16,14 @@
         </div>
       </div>
     </div>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Yellow row/cells:</strong>
+              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+        </div>
+      </div>
+    </div>
     <h3>EHDSProcedure → Procedure</h3>
     <a>  </a>
     <p></p>
@@ -93,7 +101,7 @@
             <td>related-to</td>
             <td>Procedure</td><td>recorder</td>
             <td>Who recorded the procedure.</td>
-            <td class="highlight-yellow">Procedure has <code>recorder</code> and <code>asserter</code>, not a generic "author".<strong>1.. in the model 0.. in the profile</strong></td>
+            <td class="highlight-yellow">Procedure has <code>recorder</code> and <code>asserter</code>, not a generic "author".1.. in the model 0.. in the profile</td>
           </tr>
           <tr>
             <td>header.authorship.author[x]</td>
@@ -101,7 +109,7 @@
             <td>equivalent</td>
             <td>Procedure</td><td>recorder</td>
             <td>Who recorded the procedure.</td>
-            <td class="highlight-yellow"><strong>1.. in the model 0.. in the profile</strong></td>
+            <td class="highlight-yellow">1.. in the model 0.. in the profile</td>
           </tr>
           <tr>
             <td>header.authorship.datetime</td>
@@ -109,7 +117,7 @@
             <td>equivalent</td>
             <td>Procedure</td><td>extension:recorded <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Date when the procedure was recorded</td>
-            <td class="highlight-yellow">FHIR R5 Procedure supports <code>recorded</code>; pre-adopted this element in R4.<strong>1.. in the model 0.. in the profile</strong>.</td>
+            <td class="highlight-yellow">FHIR R5 Procedure supports <code>recorded</code>; pre-adopted this element in R4.1.. in the model 0.. in the profile.</td>
           </tr>
        <tr>
           <td>header.authorship.datetime</td>
@@ -118,20 +126,20 @@
           <td>Procedure</td>
           <td>recorded <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
           <td>Date when the procedure was recorded</td>
-          <td class="highlight-yellow">FHIR R5 Procedure supports <code>recorded</code>; pre-adopted this element in R4.<strong>1.. in the model 0.. in the profile</strong>TO BE CHECKED</td>
+          <td class="highlight-yellow">FHIR R5 Procedure supports <code>recorded</code>; pre-adopted this element in R4.1.. in the model 0.. in the profileTO BE CHECKED</td>
         </tr>   
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.lastUpdate</td>
             <td>Last technical correction/update.</td>
             <td>source-is-broader-than-target</td>
             <td>Procedure</td><td>meta.lastUpdated</td>
             <td>Last system update timestamp.</td>
-            <td>Waiting for Xt-EHR feedback</td>
+            <td class="highlight-yellow">Waiting for Xt-EHR feedback</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.status</td>
             <td>Technical/administrative dataset status.</td>
-            <td>no-direct-equivalent</td>
+            <td>no map</td>
             <td>Procedure</td><td>-</td>
             <td>-</td>
             <td>Waiting for Xt-EHR feedback</td>
@@ -139,7 +147,7 @@
           <tr class="highlight-yellow">
             <td>header.statusReason[x]</td>
             <td>Reason for current dataset status.</td>
-            <td>no-direct-equivalent</td>
+            <td>no map</td>
             <td>Procedure</td><td>-</td>
             <td>-</td>
             <td>Waiting for Xt-EHR feedback</td>

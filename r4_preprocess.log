@@ -2,7 +2,6 @@ Transformed: /workspace/hl7eu-base/__r4-r5\ig.ini -> /workspace/hl7eu-base\ig.in
 Transformed: /workspace/hl7eu-base/__r4-r5\publication-request.json -> /workspace/hl7eu-base\publication-request.json
 Transformed: /workspace/hl7eu-base/__r4-r5\README.md -> /workspace/hl7eu-base\README.md
 Transformed: /workspace/hl7eu-base/__r4-r5\sushi-config.yaml -> /workspace/hl7eu-base\sushi-config.yaml
-Transformed: /workspace/hl7eu-base/__r4-r5\tmp-ehdsi-defs.html -> /workspace/hl7eu-base\tmp-ehdsi-defs.html
 Transformed: /workspace/hl7eu-base/__r4-r5\ig-template\package-list.json -> /workspace/hl7eu-base\ig-template\package-list.json
 Transformed: /workspace/hl7eu-base/__r4-r5\ig-template\README.md -> /workspace/hl7eu-base\ig-template\README.md
 Transformed: /workspace/hl7eu-base/__r4-r5\ig-template\content\assets\css\hl7eu-old.css -> /workspace/hl7eu-base\ig-template\content\assets\css\hl7eu-old.css

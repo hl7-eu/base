@@ -114,14 +114,14 @@
             <td></td>
             <td>Waiting for Xt-EHR feedback</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.lastUpdate</td>
             <td>Last technical correction/update.</td>
             <td>related-to</td>
             <td>MedicationStatement</td>
             <td>meta.lastUpdated</td>
             <td>When the resource version last changed.</td>
-            <td>The map applies only if it represents the technical update timestamp (Instant).</td>
+            <td class="highlight-yellow">The map applies only if it represents the technical update timestamp (Instant).</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.status</td>

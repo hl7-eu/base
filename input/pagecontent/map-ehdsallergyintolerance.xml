@@ -15,6 +15,14 @@
         </div>
       </div>
     </div>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Yellow row/cells:</strong>
+              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+        </div>
+      </div>
+    </div>
     <h3>EHDSAllergyIntolerance → AllergyIntolerance</h3>
     <a> </a>
     <p></p>
@@ -92,7 +100,7 @@
             <td>related-to</td>
             <td>AllergyIntolerance</td><td>recorder</td>
             <td>Author of the allergy/intolerance record.</td>
-            <td class="highlight-yellow">Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.<strong>1.. in the model 0.. in the profile</strong>
+            <td class="highlight-yellow">Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.1.. in the model 0.. in the profile
             </td>
           </tr>
           <tr>
@@ -101,7 +109,7 @@
             <td>equivalent</td>
             <td>AllergyIntolerance</td><td>recorder</td>
             <td>Who recorded the sensitivity.</td>
-            <td class="highlight-yellow">Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.<strong>1.. in the model 0.. in the profile</strong>
+            <td class="highlight-yellow">Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.1.. in the model 0.. in the profile
             </td>
           </tr>
           <tr>
@@ -110,15 +118,15 @@
             <td>equivalent</td>
             <td>AllergyIntolerance</td><td>recordedDate</td>
             <td>When the allergy/intolerance was recorded.</td>
-            <td class="highlight-yellow"><strong>1.. in the model 0.. in the profile</strong></td>
+            <td class="highlight-yellow">1.. in the model 0.. in the profile</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.lastUpdate</td>
             <td>Last technical correction/update.</td>
             <td>related-to</td>
             <td>AllergyIntolerance</td><td>meta.lastUpdated</td>
             <td>When the resource version last changed</td>
-            <td>The map applies only in case it represents when the resource was last updated. It is an Instant (i.e. YYYY-MM-DDThh:mm:ss.sss+zz:zz )</td>
+            <td class="highlight-yellow">The map applies only in case it represents when the resource was last updated. It is an Instant (i.e. YYYY-MM-DDThh:mm:ss.sss+zz:zz )</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.status</td>
@@ -126,7 +134,7 @@
             <td>no map</td>
             <td>AllergyIntolerance</td><td></td>
             <td></td>
-            <td>Not clear suggested to be removed see <a href="https://github.com/Xt-EHR/xt-ehr-common/issues/363">Review and Align Use of header.status and header.statusReason[x]</a>
+            <td>Suggested to be removed see <a href="https://github.com/Xt-EHR/xt-ehr-common/issues/363">Review and Align Use of header.status and header.statusReason[x]</a>
             </td>
           </tr>
           <tr class="highlight-yellow">
@@ -135,7 +143,7 @@
             <td>no map</td>
             <td>AllergyIntolerance</td><td></td>
             <td></td>
-            <td>Not clear suggested to be removed see <a href="https://github.com/Xt-EHR/xt-ehr-common/issues/363">Review and Align Use of header.status and header.statusReason[x]</a>
+            <td>Suggested to be removed see <a href="https://github.com/Xt-EHR/xt-ehr-common/issues/363">Review and Align Use of header.status and header.statusReason[x]</a>
             </td>
           </tr>
           <tr>
@@ -165,13 +173,13 @@
             <td>Maps to <code>AllergyIntolerance.type</code> (allergy | intolerance | ...). Value sets: eHDSIAdverseEventType / HL7.</td>
           </tr>
           <!-- description -->
-          <tr class="highlight-yellow">
+          <tr>
             <td>description</td>
             <td>Textual description of the allergy or intolerance.</td>
             <td>source-is-broader-than-target</td>
             <td>AllergyIntolerance</td><td>note.text</td>
             <td>Additional narrative about the allergy/intolerance.</td>
-            <td>The mapping applies if the text represents additional information collected about the allergy.FHIR doesn't have a single free-text "description" element; use <code>AllergyIntolerance.note</code> (0..*). Could also populate <code>text.div</code> if it refer to a textual description of the whole resource.</td>
+            <td class="highlight-yellow">The mapping applies if the text represents additional information collected about the allergy.FHIR doesn't have a single free-text "description" element; use <code>AllergyIntolerance.note</code> (0..*). Could also populate <code>text.div</code> if it refer to a textual description of the whole resource.</td>
           </tr>
           <!-- criticality -->
           <tr>

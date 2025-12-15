@@ -15,6 +15,14 @@
         </div>
       </div>
     </div>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Yellow row/cells:</strong>
+              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+        </div>
+      </div>
+    </div>
     <h3>EHDSImmunisation → Immunization</h3>
     <a> </a>
     <p></p>
@@ -90,8 +98,8 @@
             <td>header.authorship</td>
             <td>Resource authoring details.</td>
             <td>no-map</td>
-            <td>Immunization</td><td>XXXXXXX</td>
-            <td>XXXXXXXX</td>
+            <td>Immunization</td><td></td>
+            <td></td>
             <td>there is a performer and a source of information not the author...</td>
           </tr>
           <tr class="highlight-yellow">
@@ -99,8 +107,8 @@
             <td>Who authored/recorded this immunisation.</td>
             <td>no-map</td>
             <td>Immunization</td>
-            <td>XXXXXXX</td>
-            <td>XXXXXXXX</td>
+            <td></td>
+            <td></td>
             <td></td>
           </tr>
             <tr class="highlight-yellow">
@@ -108,17 +116,17 @@
       <td>Date/time the record was issued/recorded.</td>
   <td>no-map</td>
   <td>Immunization</td>
-  <td>XXXXXXX</td>
-  <td>XXXXXXXX</td>
+  <td></td>
+  <td></td>
   <td></td>
           </tr>
-           <tr class="highlight-yellow">
+           <tr>
             <td>header.lastUpdate</td>
             <td>Last technical correction/update.</td>
             <td>related-to</td>
             <td>Immunization</td><td>meta.lastUpdated</td>
             <td>When the resource version last changed.</td>
-            <td>The map applies only if it represents the technical update timestamp (Instant).</td>
+            <td class="highlight-yellow">The map applies only if it represents the technical update timestamp (Instant).</td>
           </tr>
           <tr>
             <td>header.status</td>

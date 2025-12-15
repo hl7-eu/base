@@ -15,6 +15,14 @@
         </div>
       </div>
     </div>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Yellow row/cells:</strong>
+              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+        </div>
+      </div>
+    </div>
     <h3>EHDSObservation → Observation</h3>
     <a> </a>
     <p></p>
@@ -109,15 +117,15 @@
             <td>equivalent</td>
             <td>Observation</td><td>issued</td>
             <td>When the observation result was issued.</td>
-            <td class="highlight-yellow"><strong>1.. in the model 0.. in the profile</strong>.</td>
+            <td class="highlight-yellow">1.. in the model 0.. in the profile.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.lastUpdate</td>
             <td>Last technical correction/update.</td>
             <td>source-is-broader-than-target</td>
             <td>Observation</td><td>meta.lastUpdated</td>
             <td>When the resource version last changed.</td>
-            <td>Use only when the timestamp reflects resource update (instant).</td>
+            <td class="highlight-yellow">Use only when the timestamp reflects resource update (instant).</td>
           </tr>
           <tr>
             <td>header.status</td>
@@ -143,31 +151,22 @@
             <td>Language of the resource.</td>
             <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>directSubject[x]</td>
             <td>The direct subject of the observation if different from the patient.</td>
-            <td>related-to</td>
-            <td>Observation</td>
-            <td>subject</td>
-            <td>Who and/or what the observation is about.</td>
-            <td>From the definiton it seems to be the focus, but in that case the subject is missing from the model.</td>
-          </tr>
-          <tr class="highlight-yellow">
-            <td>directSubject[x]</td>
-            <td>The direct subject of the observation if different from the patient.</td>
-            <td>related-to</td>
+            <td>equivalent</td>
             <td>Observation</td><td>focus</td>
             <td>Focus of the observation when not the primary subject.</td>
-            <td>Use when the observation is about a device/foetus/etc while subject remains the patient of care.</td>
+            <td></td>
           </tr>
           <!-- timing and identification -->
-          <tr class="highlight-yellow">
+          <tr>
             <td>observationDate[x]</td>
             <td>Clinically relevant time or period for the observation.</td>
             <td>equivalent</td>
             <td>Observation</td><td>effective[x]</td>
             <td>Clinically relevant time or time-period.</td>
-            <td><strong>1.. in the model 0.. in the profile</strong>. Map to <code>effectiveDateTime</code> or <code>effectivePeriod</code>.</td>
+            <td class="highlight-yellow">1.. in the model 0.. in the profile. Map to <code>effectiveDateTime</code> or <code>effectivePeriod</code>.</td>
           </tr>
           <tr>
             <td>code</td>
@@ -235,18 +234,18 @@
             <td></td>
             <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>result.value[x]</td>
             <td>Observation result value.</td>
             <td>equivalent</td>
             <td>Observation</td><td>value[x]</td>
             <td>Result value.</td>
-            <td><strong>1.. in the model 0.. in the profile</strong>. Use the matching datatype (string, Quantity, Range, CodeableConcept).</td>
+            <td class="highlight-yellow">1.. in the model 0.. in the profile. Use the matching datatype (string, Quantity, Range, CodeableConcept).</td>
           </tr>
           <tr>
             <td>result.uncertainty</td>
             <td>Measurement uncertainty type and interval.</td>
-            <td>no-direct-equivalent</td>
+            <td>no map</td>
             <td>Quantity</td><td>extension[uncertainty]</td>
             <td>-</td>
             <td>http://hl7.org/fhir/StructureDefinition/iso21090-uncertainty extension for the Quantity data type.</td>
@@ -319,7 +318,7 @@
           <tr class="highlight-yellow">
             <td>component.result.uncertainty</td>
             <td>Measurement uncertainty type and interval.</td>
-            <td>no-direct-equivalent</td>
+            <td>no map</td>
             <td>Quantity</td>
             <td>extension[uncertainty]</td>
             <td>-</td>

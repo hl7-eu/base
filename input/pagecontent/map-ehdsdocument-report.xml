@@ -15,6 +15,14 @@
         </div>
       </div>
     </div>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Yellow row/cells:</strong>
+              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+        </div>
+      </div>
+    </div>
     <h3>EHDSDocument ↔ DiagnosticReport</h3>
     <a> </a>
     <p></p>
@@ -101,7 +109,7 @@
           <tr class="highlight-yellow">
             <td>header.authorship</td>
             <td>Resource authoring details.</td>
-            <td>relayted-to</td>
+            <td>related-to</td>
             <td>DiagnosticReport</td>
             <td>.</td>
             <td></td>
@@ -126,13 +134,13 @@
             <td></td>
           </tr>
           <tr>
-            <td class="highlight-yellow">header.lastUpdate</td>
+            <td>header.lastUpdate</td>
             <td>Date/time of last technical update.</td>
             <td>equivalent</td>
             <td>DiagnosticReport</td>
             <td>meta.lastUpdated</td>
             <td>System-level modification time.</td>
-            <td>The map applies only in case it represents when the resource was last updated. It is an Instant (i.e. YYYY-MM-DDThh:mm:ss.sss+zz:zz )</td>
+            <td class="highlight-yellow">The map applies only in case it represents when the resource was last updated. It is an Instant (i.e. YYYY-MM-DDThh:mm:ss.sss+zz:zz )</td>
           </tr>
           <tr>
             <td>header.status</td>
