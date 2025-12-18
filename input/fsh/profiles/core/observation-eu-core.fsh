@@ -6,7 +6,8 @@ Title: "MedicalTestResult (EU core)"
 Description: """This profile sets minimum expectations for the Observation resource for Medical Test Results common to most of the use cases."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (1, draft)
-* extension contains $iso21090-uncertainty named uncertainty 0..1
+* extension contains 
+    $iso21090-uncertainty named uncertainty 0..1
 // TODO: is uncertainty a modifierExtension?
 * extension[uncertainty]
   * ^requirements = "EHDSObservation.result.uncertainty"
@@ -15,7 +16,7 @@ Description: """This profile sets minimum expectations for the Observation resou
     $observation-triggeredBy-r5 named triggeredBy 0..*
 * extension[bodyStructure]
   * ^requirements = "EHDSObservation.anatomicLocation"
-* extension[triggeredBy].valueReference only Reference(MedicalTestResultEuCore)
+* extension[triggeredBy].extension[observation].valueReference only Reference(MedicalTestResultEuCore)
   * ^requirements = "EHDSObservation.triggeredBy[x]"
 * identifier
   * ^requirements = "EHDSObservation.header.identifier"
