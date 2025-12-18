@@ -35,7 +35,6 @@ Description: "Example of a Laboratory Report Composition conforming to the Compo
 </tbody>
 </table></div>"
 * section[=].entry = Reference(ObservationLabResultExample)
-
 Instance: DiagnosticReportLabExample
 InstanceOf: DiagnosticReportEuCore
 Title: "DiagnosticReport Example"
@@ -51,7 +50,6 @@ Description: "Example of a Laboratory Report DiagnosticReport conforming to the 
 * subject = Reference(PatientExample)
 * specimen.display = "Urine specimen"
 * result[+] = Reference(ObservationLabResultExample)
-
 Instance: ServiceRequestExample
 InstanceOf: ServiceRequest
 Title: "ServiceRequest Example"
@@ -68,9 +66,8 @@ Description: "Laboratory Report ServiceRequest resource used by the DiagnosticRe
 * code = $loinc#14957-5 "Microalbumin [Mass/volume] in Urine"
 * code.text = "Microalbumin Massa/Volume in Urine"
 * subject = Reference(PatientExample)
-
 Instance: ObservationLabResultExample
-InstanceOf: MedicalTestResultEuCore
+InstanceOf: Observation
 Title: "Observation Example"
 Description: "Example of a Laboratory Result Observation conforming to the Medical Test Result (EU Core) profile."
 * id = "763f7902-8103-4d10-8bd1-546a726d43ee"
