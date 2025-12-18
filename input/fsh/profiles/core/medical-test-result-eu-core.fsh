@@ -1,0 +1,87 @@
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile: MedicalTestResultEuCore
+Parent: Observation
+Id: medicalTestResult-eu-core
+Title: "MedicalTestResult (EU core)"
+Description: """This profile sets minimum expectations for the Observation resource for Medical Test Results common to most of the use cases."""
+//-------------------------------------------------------------------------------------------
+* insert SetFmmandStatusRule (1, draft)
+* extension contains 
+    $iso21090-uncertainty named uncertainty 0..1
+// TODO: is uncertainty a modifierExtension?
+* extension[uncertainty]
+  * ^requirements = "EHDSObservation.result.uncertainty"
+* extension contains 
+    $observation-bodyStructure-r5 named bodyStructure 0..1 and
+    $observation-triggeredBy-r5 named triggeredBy 0..*
+* extension[bodyStructure]
+  * ^requirements = "EHDSObservation.anatomicLocation"
+* extension[triggeredBy].extension[observation].valueReference only Reference(MedicalTestResultEuCore)
+  * ^requirements = "EHDSObservation.triggeredBy[x]"
+* identifier
+  * ^requirements = "EHDSObservation.header.identifier"
+* basedOn
+  * ^requirements = "EHDSObservation.order"
+* status
+  * ^requirements = "EHDSObservation.header.status"
+* category 1..
+  * insert SliceElement( #pattern, $this )
+  * ^requirements = "EHDSObservation has no requirement"
+* category contains 
+    laboratory 0..1 and
+    vital-signs 0..1
+* category[laboratory] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* category[vital-signs] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code from LaboratoryResultStandardEuVs (preferred)
+  * ^requirements = "EHDSObservation.code"
+* subject 1.. 
+* subject only Reference(PatientEuCore)
+  * ^requirements = "EHDSObservation.header.subject"
+* focus only Reference(PatientEuCore or RelatedPerson or Group or Device or LocationEuCore)
+  * ^requirements = "EHDSObservation.directSubject[x]"
+* effective[x] 1..
+* effective[x] only dateTime or Period
+  * ^requirements = "EHDSObservation.observationDate[x]"
+* issued 1..
+  * ^requirements = "EHDSObservation.header.authorship.datetime"
+* performer only Reference(PractitionerEuCore or PractitionerRoleEuCore or OrganizationEuCore)
+  * ^requirements = "EHDSObservation.header.performer"
+//TODO: Cardinality in Model is 1..1, datatypes in xt-ehr model only valueString, valueQuantity, valueRange, valueCodeableConcept
+* value[x]
+  * ^requirements = "EHDSObservation.result.value[x]"
+* dataAbsentReason
+  * ^requirements = "EHDSObservation.dataAbsentReason"
+* interpretation
+  * ^requirements = "EHDSObservation.interpretation"
+* note
+  * ^requirements = "EHDSObservation.resultDescription"
+* bodySite
+  * ^requirements = "EHDSObservation.anatomicLocation"
+* method
+  * ^requirements = "EHDSObservation.method"
+//TODO: specimen is not part of the EHDSObservation model but needed for lab observations
+//TODO: device is not part of the EHDSObservation model but might be needed for lab observations
+* referenceRange
+  * ^requirements = "EHDSObservation.referenceRange"
+* hasMember only Reference(MedicalTestResultEuCore)
+  * ^requirements = "EHDSObservation.hasMember[x]"
+//TODO: found ImagingStudyEuImaging in the ig, but no definition  
+* derivedFrom only Reference(MedicalTestResultEuCore or ImagingStudy)
+  * ^requirements = "EHDSObservation.derivedFrom[x]"
+* component
+  * ^requirements = "EHDSObservation.component"
+  * extension contains 
+      $iso21090-uncertainty named uncertainty 0..1
+  * extension[uncertainty]
+    * ^requirements = "EHDSObservation.component.result.uncertainty"
+  * code from LaboratoryResultStandardEuVs (preferred)
+    * ^requirements = "EHDSObservation.component.code"
+//TODO: Cardinality in Model is 1..1, datatypes in xt-ehr model only valueString, valueQuantity, valueRange, valueCodeableConcept
+  * value[x]
+    * ^requirements = "EHDSObservation.component.result.value[x]"
+  * dataAbsentReason
+    * ^requirements = "EHDSObservation.component.dataAbsentReason"
+  * referenceRange
+    * ^requirements = "EHDSObservation.component.referenceRange"
+  * interpretation
+    * ^requirements = "EHDSObservation.component.interpretation"

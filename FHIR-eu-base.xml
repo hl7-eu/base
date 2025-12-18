@@ -20,6 +20,7 @@
 <artifact id="StructureDefinition/composition-eu-core" key="StructureDefinition-composition-eu-core" name="Composition (EU core)"/>
 <artifact id="Composition/26032a57-083a-4ddf-b019-e566ae02f740" key="Composition-26032a57-083a-4ddf-b019-e566ae02f740" name="Composition Example"/>
 <artifact id="StructureDefinition/condition-eu-core" key="StructureDefinition-condition-eu-core" name="Condition (EU core)"/>
+<artifact id="Condition/condition-eu-core-example" key="Condition-condition-eu-core-example" name="Condition Example"/>
 <artifact deprecated="true" id="StructureDefinition/Coverage-eu-ehic" key="StructureDefinition-Coverage-eu-ehic" name="Coverage: EHIC"/>
 <artifact id="StructureDefinition/diagnosticReport-eu-core" key="StructureDefinition-diagnosticReport-eu-core" name="DiagnosticReport (EU core)"/>
 <artifact id="DiagnosticReport/5679723c-4fae-4ba7-9f09-5438a827bfda" key="DiagnosticReport-5679723c-4fae-4ba7-9f09-5438a827bfda" name="DiagnosticReport Example"/>
@@ -34,9 +35,12 @@
 <artifact deprecated="true" id="StructureDefinition/HumanName-eu" key="StructureDefinition-HumanName-eu" name="HumanName (Eu)"/>
 <artifact deprecated="true" id="ValueSet/iso-ehicCountryCode" key="ValueSet-iso-ehicCountryCode" name="ISO 3166 - EHIC Country Codes"/>
 <artifact id="StructureDefinition/immunization-eu-core" key="StructureDefinition-immunization-eu-core" name="Immunization (EU core)"/>
+<artifact id="Immunization/immunization-eu-core-example" key="Immunization-immunization-eu-core-example" name="Immunization Example"/>
+<artifact id="ValueSet/lab-obsCode-eu-lab" key="ValueSet-lab-obsCode-eu-lab" name="Laboratory Code"/>
 <artifact deprecated="true" id="StructureDefinition/location-eu" key="StructureDefinition-location-eu" name="Location (EU base)"/>
 <artifact id="StructureDefinition/location-eu-core" key="StructureDefinition-location-eu-core" name="Location (EU core)"/>
 <artifact id="Location/example-location" key="Location-example-location" name="Location Example"/>
+<artifact id="StructureDefinition/medicalTestResult-eu-core" key="StructureDefinition-medicalTestResult-eu-core" name="MedicalTestResult (EU core)"/>
 <artifact id="StructureDefinition/medication-eu-core" key="StructureDefinition-medication-eu-core" name="Medication (EU core)"/>
 <artifact id="Medication/01A-Cefuroxime1500GenericExplicit" key="Medication-01A-Cefuroxime1500GenericExplicit" name="Medication Example"/>
 <artifact id="ValueSet/medicationIntendedUse-eu" key="ValueSet-medicationIntendedUse-eu" name="Medication Intended Use"/>
