@@ -25,7 +25,8 @@ Alias: $flag-priority-code = http://hl7.org/fhir/flag-priority-code
 Alias: $icd03 = http://terminology.hl7.org/CodeSystem/icd-o-3
 Alias: $icd10 = http://hl7.org/fhir/sid/icd-10
 Alias: $ISCO-08 = urn:oid:2.16.840.1.113883.2.9.6.2.7 // ===> to be checked <====
-Alias: $loinc =  http://loinc.org
+Alias: $loinc = http://loinc.org
+Alias: $npu = http://npu-terminology.org
 Alias: $list-empty-reason = http://terminology.hl7.org/CodeSystem/list-empty-reason
 Alias: $medicalDevice-cs = urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.44.6 // ===> to be checked <====
 Alias: $medication-statement-status-reason = http://terminology.hl7.org/CodeSystem/medication-statement-status-reason

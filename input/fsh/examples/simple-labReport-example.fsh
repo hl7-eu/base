@@ -7,10 +7,8 @@ Description: "Example of a Laboratory Report Composition conforming to the Compo
     * display = "Nuovo Ospedale S.Agostino (MO)"
 * extension[diagnosticReport].valueReference = Reference(DiagnosticReportLabExample)
 * id = "26032a57-083a-4ddf-b019-e566ae02f740"
-* language = #cs-CZ
 * identifier.system = "http://example.org/composition-ids"
 * identifier.value = "c030702.TSTSMN63A01F205H.20220325112426.TSS1Tkju"
-* identifier.assigner.display = "Regione Lazio"
 * status = #final
 * category = $loinc#18719-5 "Chemistry studies (set)"
 * type = http://loinc.org#11502-2 "Laboratory report"
@@ -44,7 +42,6 @@ Description: "Example of a Laboratory Report DiagnosticReport conforming to the 
 * id = "5679723c-4fae-4ba7-9f09-5438a827bfda"
 * identifier.system = "http://example.org/composition-ids"
 * identifier.value = "c030702.TSTSMN63A01F205H.20220325112426.TSS1Tkju"
-* identifier.assigner.display = "Regione Lazio"
 * extension[DiagnosticReportCompositionR5].valueReference = Reference(CompositionLabExample)
 * status = #registered
 * basedOn = Reference(ServiceRequestExample)
@@ -58,9 +55,8 @@ InstanceOf: ServiceRequest
 Title: "ServiceRequest Example"
 Description: "Laboratory Report ServiceRequest resource used by the DiagnosticReport example."
 * id = "1d4cbcd1-e0d3-49b6-92d8-1893da8d08e1"
-* identifier.system = "http://hospital.org/lis-order"
+* identifier.system = "http://example.org/lis-order"
 * identifier.value = "123456"
-* requisition.assigner.display = "Ministero delle Finanze"
 * requisition.system = "http://example.org/gp-order"
 * requisition.value = "0901001234567234"
 * status = #active
@@ -77,7 +73,6 @@ Description: "Example of a Laboratory Result Observation conforming to the Medic
 * id = "763f7902-8103-4d10-8bd1-546a726d43ee"
 * status = #final
 * code.coding[+] = http://loinc.org#22700-9 "Urea [Moles/volume] in Urine"
-* code.coding[+] = urn:oid:1.2.203.24341.11.2.2#03088 "Urea (U; látková konc. [mmol/l] Absorpční spektrofotometrie)"
 * code.text = "Urea (U) [Moles/Vol]"
 * method = $sct#70621000052105 "Spectrophotometric technique"
 * subject = Reference(PatientExample)

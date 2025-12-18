@@ -21,6 +21,12 @@
 %There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-citizenship%
 %There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-nationality%
 %There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-birthTime%
+%There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/bodySite%
+%There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/condition-assertedDate%
+%There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/flag-detail%
+%There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/flag-priority'%
+%There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure%
+%There are multiple different potential matches for the url 'http://terminology.hl7.org/CodeSystem/v3-NullFlavor%
 # SNOMED CT related warnings
 %This SNOMED-CT based include has some concepts with semantic tags (FSN terms) and some without (preferred terms)%
 %The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters%
@@ -66,3 +72,10 @@ The URL should refer directly to the ImplementationGuide resource (e.g. include 
 Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
 The definition for the element 'BodyStructure.includedStructure.bodyLandmarkOrientation.surfaceOrientation' binds to the value set 'http://hl7.org/fhir/ValueSet/bodystructure-relative-location|5.0.0' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'PractitionerRole.specialty' binds to the value set 'http://hl7.org/fhir/ValueSet/c80-practice-codes|5.0.0' which is experimental, but this structure is not labeled as experimental
+# Additional Bindings with no key
+%Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained.%
+# No matching slices
+%This element does not match any known slice defined in the profile http://hl7.eu/fhir/base/StructureDefinition/composition-eu-core%
+%This element does not match any known slice defined in the profile http://hl7.eu/fhir/base/StructureDefinition/diagnosticReport-eu-core%
+%This element does not match any known slice defined in the profile http://hl7.eu/fhir/base/StructureDefinition/medicationRequest-eu-core%
+%This element does not match any known slice defined in the profile http://hl7.eu/fhir/base/StructureDefinition/medicationStatement-eu-core%
