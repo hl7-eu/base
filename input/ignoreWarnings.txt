@@ -79,3 +79,5 @@ The definition for the element 'PractitionerRole.specialty' binds to the value s
 %This element does not match any known slice defined in the profile http://hl7.eu/fhir/base/StructureDefinition/diagnosticReport-eu-core%
 %This element does not match any known slice defined in the profile http://hl7.eu/fhir/base/StructureDefinition/medicationRequest-eu-core%
 %This element does not match any known slice defined in the profile http://hl7.eu/fhir/base/StructureDefinition/medicationStatement-eu-core%
+# Errors caused by missing terminology on tx.fhir.org
+%A definition for CodeSystem 'http://npu-terminology.org' could not be found, so the value set cannot be expanded%
