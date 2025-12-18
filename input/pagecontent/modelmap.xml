@@ -214,7 +214,7 @@
                         <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSObservation.html" target="_blank">EHDSObservation</a>
                     </td>
                     <td>
-                        <a href="https://hl7.org/fhir/observation.html"><code>MedicalTestResultEuCore</code></a>
+                        <a href="StructureDefinition-medicalTestResult-eu-core.html"><code>MedicalTestResultEuCore</code></a>
                     </td>
                     <td>
                         <a class="pill" href="map-ehdsobservation.html">EHDSObservation Mapping</a>
