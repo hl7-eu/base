@@ -45,7 +45,7 @@
         </li>
         <li>
           <strong>Target FHIR profile:</strong>
-          <a href="https://hl7.org/fhir/observation.html">
+          <a href="StructureDefinition-medicalTestResult-eu-core.html">
             Observation
           </a>
         </li>

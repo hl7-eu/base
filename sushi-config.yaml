@@ -311,6 +311,7 @@ groups:
        - StructureDefinition/flag-eu-core
        - StructureDefinition/immunization-eu-core
        - StructureDefinition/location-eu-core
+       - StructureDefinition/medicalTestResult-eu-core
        - StructureDefinition/medication-eu-core
        - StructureDefinition/medicationRequest-eu-core
        - StructureDefinition/medicationStatement-eu-core
