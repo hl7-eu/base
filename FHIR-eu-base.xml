@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/base/0.1.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/base" defaultVersion="0.1.0" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/base" url="http://hl7.eu/fhir/base">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/base/2.0.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/base" defaultVersion="0.1.0" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/base" url="http://hl7.eu/fhir/base">
 <version code="current" url="https://build.fhir.org/ig/hl7-eu/base"/>
+<version code="2.0.0-ballot" url="http://hl7.eu/fhir/base/2.0.0-ballot"/>
 <version code="0.1.0" url="http://hl7.eu/fhir/base/0.1.0"/>
 <version code="0.1.0-snapshot" deprecated="true" url="http://hl7.eu/fhir/base/0.1.0-snapshot"/>
 <version code="0.1.0-ballot" deprecated="true" url="http://hl7.eu/fhir/base/0.1.0-ballot"/>
@@ -9,20 +10,26 @@
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/Address-eu" key="StructureDefinition-Address-eu" name="Address (EU)"/>
 <artifact id="StructureDefinition/allergyIntolerance-eu-core" key="StructureDefinition-allergyIntolerance-eu-core" name="Allergy Intolerance (EU core)"/>
+<artifact id="AllergyIntolerance/allergyintolerance-eu-core-example" key="AllergyIntolerance-allergyintolerance-eu-core-example" name="AllergyIntolerance Example"/>
 <artifact id="Patient/Patient-animal-example" key="Patient-Patient-animal-example" name="Animal Patient Example"/>
 <artifact id="ValueSet/siteLaterality-eu" key="ValueSet-siteLaterality-eu" name="Body Structure Laterality"/>
 <artifact id="ValueSet/siteQualifier-eu" key="ValueSet-siteQualifier-eu" name="Body Structure Qualifier"/>
 <artifact deprecated="true" id="StructureDefinition/BodyStructure-eu" key="StructureDefinition-BodyStructure-eu" name="Body structure (EU base)"/>
 <artifact id="StructureDefinition/bodyStructure-eu-core" key="StructureDefinition-bodyStructure-eu-core" name="BodyStructure (EU core)"/>
 <artifact id="BodyStructure/example-body-structure-eu" key="BodyStructure-example-body-structure-eu" name="BodyStructure Example"/>
-<artifact id="StructureDefinition/composition-eu-core" key="StructureDefinition-composition-eu-core" name="Composition (EU core) [WIP]"/>
+<artifact id="StructureDefinition/composition-eu-core" key="StructureDefinition-composition-eu-core" name="Composition (EU core)"/>
+<artifact id="Composition/26032a57-083a-4ddf-b019-e566ae02f740" key="Composition-26032a57-083a-4ddf-b019-e566ae02f740" name="Composition Example"/>
 <artifact id="StructureDefinition/condition-eu-core" key="StructureDefinition-condition-eu-core" name="Condition (EU core)"/>
 <artifact deprecated="true" id="StructureDefinition/Coverage-eu-ehic" key="StructureDefinition-Coverage-eu-ehic" name="Coverage: EHIC"/>
+<artifact id="StructureDefinition/diagnosticReport-eu-core" key="StructureDefinition-diagnosticReport-eu-core" name="DiagnosticReport (EU core)"/>
+<artifact id="DiagnosticReport/5679723c-4fae-4ba7-9f09-5438a827bfda" key="DiagnosticReport-5679723c-4fae-4ba7-9f09-5438a827bfda" name="DiagnosticReport Example"/>
+<artifact id="ValueSet/ehdsCategories-eu" key="ValueSet-ehdsCategories-eu" name="EHDS Categories"/>
 <artifact deprecated="true" id="ValueSet/oid-ehicPersonalId" key="ValueSet-oid-ehicPersonalId" name="EHIC Personal ID (system IDs - oid)"/>
 <artifact deprecated="true" id="ValueSet/uri-ehicPersonalId" key="ValueSet-uri-ehicPersonalId" name="EHIC Personal ID (system IDs - uri)"/>
 <artifact deprecated="true" id="Coverage/EhicExampleIt" key="Coverage-EhicExampleIt" name="EhicExampleIt"/>
 <artifact deprecated="true" id="StructureDefinition/EHIC" key="StructureDefinition-EHIC" name="European Health Insurance Card"/>
 <artifact id="StructureDefinition/flag-eu-core" key="StructureDefinition-flag-eu-core" name="Flag (EU core)"/>
+<artifact id="Flag/flag-eu-core-example" key="Flag-flag-eu-core-example" name="Flag Example"/>
 <artifact deprecated="true" id="CodeSystem/v3-ActCode-EU" key="CodeSystem-v3-ActCode-EU" name="HL7 V3 ActCode - EU extensions"/>
 <artifact deprecated="true" id="StructureDefinition/HumanName-eu" key="StructureDefinition-HumanName-eu" name="HumanName (Eu)"/>
 <artifact deprecated="true" id="ValueSet/iso-ehicCountryCode" key="ValueSet-iso-ehicCountryCode" name="ISO 3166 - EHIC Country Codes"/>
@@ -30,10 +37,14 @@
 <artifact deprecated="true" id="StructureDefinition/location-eu" key="StructureDefinition-location-eu" name="Location (EU base)"/>
 <artifact id="StructureDefinition/location-eu-core" key="StructureDefinition-location-eu-core" name="Location (EU core)"/>
 <artifact id="Location/example-location" key="Location-example-location" name="Location Example"/>
-<artifact id="StructureDefinition/medication-eu-core" key="StructureDefinition-medication-eu-core" name="Medication (EU core) [WIP]"/>
+<artifact id="StructureDefinition/medication-eu-core" key="StructureDefinition-medication-eu-core" name="Medication (EU core)"/>
+<artifact id="Medication/01A-Cefuroxime1500GenericExplicit" key="Medication-01A-Cefuroxime1500GenericExplicit" name="Medication Example"/>
 <artifact id="ValueSet/medicationIntendedUse-eu" key="ValueSet-medicationIntendedUse-eu" name="Medication Intended Use"/>
-<artifact id="StructureDefinition/medicationRequest-eu-core" key="StructureDefinition-medicationRequest-eu-core" name="MedicationRequest (EU core) [WIP]"/>
+<artifact id="StructureDefinition/medicationRequest-eu-core" key="StructureDefinition-medicationRequest-eu-core" name="MedicationRequest (EU core)"/>
+<artifact id="MedicationRequest/400C-prescription-cefuroxime-singleline" key="MedicationRequest-400C-prescription-cefuroxime-singleline" name="MedicationRequest Example"/>
 <artifact id="StructureDefinition/medicationStatement-eu-core" key="StructureDefinition-medicationStatement-eu-core" name="MedicationStatement (EU core)"/>
+<artifact id="MedicationStatement/example-medicationstatement-eucore" key="MedicationStatement-example-medicationstatement-eucore" name="MedicationStatement Example"/>
+<artifact id="Observation/763f7902-8103-4d10-8bd1-546a726d43ee" key="Observation-763f7902-8103-4d10-8bd1-546a726d43ee" name="Observation Example"/>
 <artifact id="StructureDefinition/organization-eu" key="StructureDefinition-organization-eu" name="Organization (EU base)"/>
 <artifact id="StructureDefinition/organization-eu-core" key="StructureDefinition-organization-eu-core" name="Organization (EU core)"/>
 <artifact id="Organization/organization-eu-core-example" key="Organization-organization-eu-core-example" name="Organization Example"/>
@@ -51,6 +62,8 @@
 <artifact id="StructureDefinition/practitionerRole-eu-core" key="StructureDefinition-practitionerRole-eu-core" name="PractitionerRole (EU core)"/>
 <artifact id="PractitionerRole/practitionerRole-eu-core-example" key="PractitionerRole-practitionerRole-eu-core-example" name="PractitionerRole Example"/>
 <artifact id="StructureDefinition/procedure-eu-core" key="StructureDefinition-procedure-eu-core" name="Procedure (EU core)"/>
+<artifact id="Procedure/procedure-eu-core-example" key="Procedure-procedure-eu-core-example" name="Procedure Example"/>
+<artifact id="ServiceRequest/1d4cbcd1-e0d3-49b6-92d8-1893da8d08e1" key="ServiceRequest-1d4cbcd1-e0d3-49b6-92d8-1893da8d08e1" name="ServiceRequest Example"/>
 <artifact id="ValueSet/speciesType-eu" key="ValueSet-speciesType-eu" name="Types of species"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
@@ -62,11 +75,12 @@
 <page key="dependencies" name="Dependencies"/>
 <page key="downloads" name="Downloads"/>
 <page key="map-ehdsaddress" name="EHDSAddress to FHIR Address Mapping"/>
-<page key="map-ehdsalert" name="EHDSAlert to FHIR Flag / Alert Mapping"/>
+<page key="map-ehdsalert" name="EHDSAlert to FHIR Flag Mapping"/>
 <page key="map-ehdsallergyintolerance" name="EHDSAllergyIntolerance to FHIR AllergyIntolerance Mapping"/>
 <page key="map-ehdsbodystructure" name="EHDSBodyStructure to FHIR BodyStructure Mapping"/>
 <page key="map-ehdscondition" name="EHDSCondition to FHIR Condition Mapping"/>
 <page key="map-ehdsdocument" name="EHDSDocument to FHIR Composition Mapping"/>
+<page key="map-ehdsdocument-report" name="EHDSDocument to FHIR DiagnosticReport Mapping"/>
 <page key="map-ehdshealthprofessional" name="EHDSHealthProfessional to FHIR PractitionerRole, Practitioner Mapping"/>
 <page key="map-ehdshumanname" name="EHDSHumanName to FHIR HumanName Mapping"/>
 <page key="map-ehdsimmunisation" name="EHDSImmunisation to FHIR Immunization Mapping"/>
@@ -74,6 +88,7 @@
 <page key="map-ehdsmedication" name="EHDSMedication to FHIR Medication Mapping"/>
 <page key="map-ehdsmedicationstatement" name="EHDSMedicationStatement to FHIR MedicationStatement Mapping"/>
 <page key="map-ehdsmedicationprescription" name="EHDSMedicationprescription to FHIR MedicationRequest Mapping"/>
+<page key="map-ehdsobservation" name="EHDSObservation to FHIR Observation Mapping"/>
 <page key="map-ehdsorganisation" name="EHDSOrganisation to FHIR Organization Mapping"/>
 <page key="map-ehdspatient" name="EHDSPatient to FHIR Patient Mapping"/>
 <page key="map-ehdspatientanimal" name="EHDSPatientAnimal to FHIR Patient (Animal) Mapping"/>
@@ -82,7 +97,7 @@
 <page key="missing-data" name="Handling Missing Data"/>
 <page key="index" name="Home"/>
 <page key="introduction" name="Introduction"/>
-<page key="knownissues" name="Known Issues"/>
+<page key="knownissues" name="Known/Open Issues"/>
 <page key="logicalmodels" name="Logical Models"/>
 <page key="modelmap" name="Model Map"/>
 <page key="toc" name="Table of Contents"/>

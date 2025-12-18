@@ -26,12 +26,6 @@
 
 ### Scope
 
-  <blockquote class="dragon">
-    <p>Some artefacts of this Implementation Guide are at an early stage of development</p>.
-<p>The related content is incomplete and subject to significant change.</p>
-<p>Please use these materials with caution and avoid relying on them for implementation purposes.</p>
-  </blockquote>
-
 This Implementation Guide (IG) brings together **base** and **core** HL7® FHIR® artifacts designed specifically for the European context.
 
 It provides a foundation for interoperability, ensuring reusability across national projects, European initiatives, and derived HL7 Europe guides.

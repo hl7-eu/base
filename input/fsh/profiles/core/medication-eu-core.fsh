@@ -2,7 +2,7 @@
 Profile:  MedicationEuCore
 Parent:   Medication
 Id:       medication-eu-core
-Title:    "Medication (EU core) [WIP]"
+Title:    "Medication (EU core)"
 Description: """This profile sets minimum expectations for the Medication resource common to most of the use cases.
 This profile is adapted from the MPD work."""
 //-------------------------------------------------------------------------------------------

@@ -3,14 +3,26 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
     <title>EHDSCondition → Condition</title>
-    <link rel="stylesheet" type="text/css" href="map-pages.css" />
   </head>
   <body>
-  <blockquote class="dragon">
-    <p>
-      <strong>Note:</strong> The content of this page is <strong>work in progress</strong> and may change based on ongoing discussions within the working group.</p>
-    <p>The technical solutions listed are <strong>possible candidates</strong> under consideration and are <strong>not yet approved</strong> or ready for implementation.</p>
-  </blockquote>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Ongoing alignment:</strong>
+              The Xt-EHR logical models are under active revision and continuous refinement.
+              Updates from Xt-EHR will be progressively incorporated into this Implementation
+              Guide to maintain alignment with the evolving EHDS specifications.
+        </div>
+      </div>
+    </div>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Yellow row/cells:</strong>
+              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+        </div>
+      </div>
+    </div>
     <h3>EHDSCondition → Condition</h3>
     <a>  </a>
     <p></p>
@@ -147,19 +159,19 @@
             <td>When the condition was recorded.</td>
             <td class="highlight-yellow"><strong>This element is 1.. in the model 0.. in the profile</strong></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.lastUpdate</td>
             <td>Last technical correction/update.</td>
             <td>source-is-broader-than-target</td>
             <td>Condition</td>
             <td>meta.lastUpdated</td>
             <td>When the resource version was last changed.</td>
-            <td>FHIR <code>meta.lastUpdated</code> is system-level; EHDS header may carry richer audit info.</td>
+            <td class="highlight-yellow">FHIR <code>meta.lastUpdated</code> is system-level; EHDS header may carry richer audit info.</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.status</td>
             <td>Status of the dataset/resource (technical/administrative).</td>
-            <td>no-direct-equivalent</td>
+            <td>no map</td>
             <td>Condition</td>
             <td>-</td>
             <td>-</td>
@@ -168,7 +180,7 @@
           <tr class="highlight-yellow">
             <td>header.statusReason[x]</td>
             <td>Reason for current dataset status.</td>
-            <td>no-direct-equivalent</td>
+            <td>no map</td>
             <td>Condition</td>
             <td>-</td>
             <td>-</td>

@@ -6,7 +6,7 @@ title: HL7 Europe Base and Core FHIR IG
 name:  Hl7EuBaseIg
 description: This guide collects base and core profiles to be used in the European context. It also includes common artifacts, such as the profiles describing the European Health Insurance Card.
 status: draft # draft | active | retired | unknown
-version: 0.2.0-ci-build
+version: 2.0.0-ci-build
 copyrightYear: 2024+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
@@ -24,7 +24,7 @@ copyright: >-
 #
 dependencies:
   # hl7.fhir.uv.ips: current
-  hl7.fhir.uv.ips: current
+  hl7.fhir.uv.ips: 2.0.0
   hl7.fhir.extensions.r5: 4.0.1
   hl7.fhir.uv.xver-r5.r4: 0.0.1-snapshot-2
   hl7.fhir.eu.extensions.r4: 0.1.1
@@ -60,7 +60,7 @@ pages:
   dependencies.md:
     title: Dependencies
   knownissues.md:
-    title: Known Issues
+    title: Known/Open Issues
   introduction.md:
     title: Introduction
   modelmap.html:
@@ -91,17 +91,21 @@ pages:
   map-ehdstelecom.html:
      title: EHDSTelecom to FHIR ContactPoint Mapping
   map-ehdsalert.html:
-     title: EHDSAlert to FHIR Flag / Alert Mapping
+     title: EHDSAlert to FHIR Flag Mapping
   map-ehdsallergyintolerance.html:
      title: EHDSAllergyIntolerance to FHIR AllergyIntolerance Mapping
   map-ehdscondition.html:
      title: EHDSCondition to FHIR Condition Mapping
+  map-ehdsobservation.html:
+     title: EHDSObservation to FHIR Observation Mapping
   map-ehdsprocedure.html:
      title: EHDSProcedure to FHIR Procedure Mapping
   map-ehdsimmunisation.html:
      title: EHDSImmunisation to FHIR Immunization Mapping
   map-ehdsdocument.html:
      title: EHDSDocument to FHIR Composition Mapping
+  map-ehdsdocument-report.html:
+     title: EHDSDocument to FHIR DiagnosticReport Mapping
   map-ehdsmedication.html:
      title: EHDSMedication to FHIR Medication Mapping
   map-ehdsmedicationstatement.html:
@@ -189,7 +193,7 @@ menu:
 #    Implementation Notes: implementationnotes.html  
   About:
     Authors and Contributors: authors.html
-    Known Issues: knownissues.html
+    Known/Open Issues: knownissues.html
     Download: downloads.html
     Dependencies: dependencies.html
     Change Log: changes.html
@@ -296,29 +300,26 @@ groups:
        - StructureDefinition/practitionerRole-eu
        - StructureDefinition/organization-eu
    EuCoreProfilesSTU1:
-      name:  HL7 Europe Core Profiles
-      description: Core profiles for the European context.
-      resources:
-        - StructureDefinition/patient-eu-core
-        - StructureDefinition/practitioner-eu-core
-        - StructureDefinition/practitionerRole-eu-core
-        - StructureDefinition/organization-eu-core
-        - StructureDefinition/patient-animal-eu-core
-        - StructureDefinition/bodyStructure-eu-core
-        - StructureDefinition/location-eu-core
-   EuCoreProfilesSTU2:
-      name:  HL7 Europe Core Profiles (STU 2)
-      description: Core profiles for the European context.
-      resources:
-        - StructureDefinition/allergyIntolerance-eu-core
-        - StructureDefinition/composition-eu-core
-        - StructureDefinition/condition-eu-core
-        - StructureDefinition/flag-eu-core
-        - StructureDefinition/immunization-eu-core
-        - StructureDefinition/medication-eu-core
-        - StructureDefinition/medicationRequest-eu-core
-        - StructureDefinition/medicationStatement-eu-core
-        - StructureDefinition/procedure-eu-core
+     name: HL7 Europe Core Profiles
+     description: Core profiles for the European context.
+     resources:
+       - StructureDefinition/allergyIntolerance-eu-core
+       - StructureDefinition/bodyStructure-eu-core
+       - StructureDefinition/composition-eu-core
+       - StructureDefinition/condition-eu-core
+       - StructureDefinition/diagnosticReport-eu-core
+       - StructureDefinition/flag-eu-core
+       - StructureDefinition/immunization-eu-core
+       - StructureDefinition/location-eu-core
+       - StructureDefinition/medication-eu-core
+       - StructureDefinition/medicationRequest-eu-core
+       - StructureDefinition/medicationStatement-eu-core
+       - StructureDefinition/organization-eu-core
+       - StructureDefinition/patient-animal-eu-core
+       - StructureDefinition/patient-eu-core
+       - StructureDefinition/practitioner-eu-core
+       - StructureDefinition/practitionerRole-eu-core
+       - StructureDefinition/procedure-eu-core
 #
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and

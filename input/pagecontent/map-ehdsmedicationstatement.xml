@@ -3,9 +3,16 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
     <title>EHDSMedicationStatement → MedicationStatement</title>
-    <link rel="stylesheet" type="text/css" href="map-pages.css" />
   </head>
   <body>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Context</strong>
+          Xt-EHR currently has no dedicated common model for <code>MedicationRequest</code>. For that reason, this mapping is based on the prescription model realised by the HL7 Europe Medication Prescription and Dispense (MPD) FHIR Implementation Guide (<a href="https://hl7.eu/fhir/mpd" target="_blank">https://hl7.eu/fhir/mpd</a>).
+        </div>
+      </div>
+    </div>
     <h3>EHDSMedicationStatement → MedicationStatement</h3>
     <a>  </a>
     <p></p>
@@ -107,14 +114,14 @@
             <td></td>
             <td>Waiting for Xt-EHR feedback</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.lastUpdate</td>
             <td>Last technical correction/update.</td>
             <td>related-to</td>
             <td>MedicationStatement</td>
             <td>meta.lastUpdated</td>
             <td>When the resource version last changed.</td>
-            <td>The map applies only if it represents the technical update timestamp (Instant).</td>
+            <td class="highlight-yellow">The map applies only if it represents the technical update timestamp (Instant).</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.status</td>

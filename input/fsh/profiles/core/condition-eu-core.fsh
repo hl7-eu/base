@@ -5,6 +5,7 @@ Title: "Condition (EU core)"
 Description: """This profile sets minimum expectations for the Condition resource common to most of the use cases."""
 // * insert ImposeProfile ( $Condition-uv-ips, 0 )  // Check if this is appropriate (see MS support)
 // follow the same apporach of lab for collection or add laterality to the bodySite ?
+* insert SetFmmandStatusRule (1, draft)
 * extension contains $condition-assertedDate named assertedDate 0..1
 * extension[assertedDate].valueDateTime ^short = "Date and time of the diagnosis assertion"
 * extension contains $artifact-relatedArtifact named relatedArtifact 0..*
@@ -12,9 +13,10 @@ Description: """This profile sets minimum expectations for the Condition resourc
 * category ^short = "Category" // to be updated
 * severity from $condition-severity (preferred)
 * code 1..1 
-* code from $problems-uv-ips (preferred) // CHANGE value set 
+* code from $problems-uv-ips (preferred) 
   * ^definition = "The problem code specifies the problem. Depending on the setting, different code systems can be used. The ProblemCodelist provides an overview of the possible code systems."
   * ^binding.description = "Valueset to describe the actual problem experienced by the patient"
+
   * ^binding.extension[+].extension[0].url = "purpose"
   * ^binding.extension[=].extension[=].valueCode = #candidate
   * ^binding.extension[=].extension[+].url = "valueSet"

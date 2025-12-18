@@ -6,13 +6,20 @@ They represent **evolving, refined interpretations** of the data sets described 
 
 This Implementation Guide (IG) aims to **align with the emerging EHDS logical models** and to **provide HL7 FHIR profiles** that **realise the requirements identified in these models*
 
-> **Note:**
-> The Xt-EHR logical models are **under active revision and continuous refinement**.
-> Updates and improvements made by the Xt-EHR project will be **progressively incorporated** into this Implementation Guide to maintain alignment with the evolving EHDS specifications.
-
 The EHDS logical models currently supported in this version of the guide are listed below.
 For the most recent and in-progress versions, please refer to the [**Xt-EHR EHDS Logical Information Models**](https://build.fhir.org/ig/Xt-EHR/xt-ehr-common) Implementation Guide.
 
+
+<div class="model-map-block">
+      <div class="callout-wrapper">
+      <div class="callout-box">
+        <strong>Ongoing alignment:</strong>
+            The Xt-EHR logical models are under active revision and continuous refinement.
+            Updates from Xt-EHR will be progressively incorporated into this Implementation
+            Guide to maintain alignment with the evolving EHDS specifications.
+      </div>
+      </div>
+</div>
 
 ---
 
@@ -48,6 +55,7 @@ For the most recent and in-progress versions, please refer to the [**Xt-EHR EHDS
 | [EHDSAlert](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAlert.html) | EHDS refined base model for clinical alerts |
 | [EHDSAllergyIntolerance](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAllergyIntolerance.html) | EHDS refined base model for allergy or intolerance information |
 | [EHDSCondition](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSCondition.html) | EHDS refined base model for a clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern |
+| [EHDSObservation](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSObservation.html) | EHDS refined base model for medical test results and other clinical observations |
 | [EHDSProcedure](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSProcedure.html) | EHDS refined base model for an action that is or was performed on or for a patient |
 | [EHDSImmunisation](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSImmunisation.html) | EHDS refined base model for immunisation |
 
@@ -66,9 +74,3 @@ For the most recent and in-progress versions, please refer to the [**Xt-EHR EHDS
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [EHDSMedication](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedication.html)                   | Logical model for prescribed/dispensed medication. Shared by statements, requests, dispensations, and treatment lines. Supports both generic (virtual) and branded (real) products. |
 | [EHDSMedicationStatement](https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedicationStatement.html) | Statement about a single medication as part of a medication summary                                                                                                                 |
-
----
-
-**Future updates:**
-Additional EHDS logical models will be added as they become available through the [Xt-EHR project](https://www.xt-ehr.eu/).
-

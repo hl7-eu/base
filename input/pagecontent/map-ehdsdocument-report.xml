@@ -3,9 +3,26 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
     <title>EHDSDocument ↔ DiagnosticReport</title>
-    <link rel="stylesheet" type="text/css" href="map-pages.css" />
   </head>
   <body>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Ongoing alignment:</strong>
+              The Xt-EHR logical models are under active revision and continuous refinement.
+              Updates from Xt-EHR will be progressively incorporated into this Implementation
+              Guide to maintain alignment with the evolving EHDS specifications.
+        </div>
+      </div>
+    </div>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Yellow row/cells:</strong>
+              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+        </div>
+      </div>
+    </div>
     <h3>EHDSDocument ↔ DiagnosticReport</h3>
     <a> </a>
     <p></p>
@@ -68,7 +85,7 @@
             <td>equivalent</td>
             <td>DiagnosticReport</td>
             <td>subject</td>
-            <td>Who or what the composition is about.</td>
+            <td>Who or what the report is about.</td>
             <td>Reference to Patient.</td>
           </tr>
           <tr>
@@ -89,41 +106,41 @@
             <td>Persistent identifier for the bundle</td>
             <td>Identifier of a specifc version of this document. <code>id</code> in HL7 CDA</td>
           </tr>
-          <tr>
+          <tr class="highlight-yellow">
             <td>header.authorship</td>
             <td>Resource authoring details.</td>
             <td>related-to</td>
             <td>DiagnosticReport</td>
-            <td>author</td>
-            <td>Authors</td>
-            <td>DiagnosticReport.date is the time of composition; see child elements.</td>
+            <td>.</td>
+            <td></td>
+            <td>see sub elements</td>
           </tr>
-          <tr>
+          <tr class="highlight-yellow">
             <td>header.authorship.author[x]</td>
             <td>Author(s) who authored the resource.</td>
-            <td>equivalent</td>
+            <td>no-map</td>
             <td>DiagnosticReport</td>
-            <td>author</td>
-            <td>List of logical authors.</td>
-            <td>Reference to Practitioner / PractitionerRole / Organization / Device.</td>
+            <td></td>
+            <td></td>
+            <td>The report author is captured in the composition.</td>
           </tr>
           <tr>
             <td>header.authorship.datetime</td>
             <td>Date and time of authoring/issuing.</td>
             <td>equivalent</td>
             <td>DiagnosticReport</td>
-            <td>date</td>
-            <td>DiagnosticReport creation time.</td>
+            <td>issued</td>
+            <td>DateTime this version was made</td>
             <td></td>
           </tr>
           <tr>
-            <td class="highlight-yellow">header.lastUpdate</td>
+            <td>header.lastUpdate</td>
             <td>Date/time of last technical update.</td>
             <td>equivalent</td>
             <td>DiagnosticReport</td>
             <td>meta.lastUpdated</td>
             <td>System-level modification time.</td>
-            <td>The map applies only in case it represents when the resource was last updated. It is an Instant (i.e. YYYY-MM-DDThh:mm:ss.sss+zz:zz )</td>
+            <td class="highlight-yellow">The map applies only in case it represents when the resource was last updated. It is an Instant (i.e. YYYY-MM-DDThh:mm:ss.sss+zz:zz )</td>
           </tr>
           <tr>
             <td>header.status</td>
@@ -131,7 +148,7 @@
             <td>equivalent</td>
             <td>DiagnosticReport</td>
             <td>status</td>
-            <td>The workflow/clinical status of this composition</td>
+            <td>The workflow/clinical status of this report</td>
             <td></td>
           </tr>
           <tr class="highlight-yellow">
@@ -157,17 +174,17 @@
             <td>Type of document (e.g., LOINC 60591-5).</td>
             <td>equivalent</td>
             <td>DiagnosticReport</td>
-            <td>type</td>
-            <td>Kind of composition (LOINC preferred).</td>
+            <td>code</td>
+            <td>Kind of report (LOINC preferred).</td>
             <td></td>
           </tr>
           <tr>
             <td>header.documentTitle</td>
             <td>Human readable document title.</td>
-            <td>equivalent</td>
+            <td>no-map</td>
             <td>DiagnosticReport</td>
-            <td>title</td>
-            <td>Official human-readable label.</td>
+            <td></td>
+            <td></td>
             <td></td>
           </tr>
           <tr>
@@ -175,91 +192,45 @@
             <td>Time of service being documented.</td>
             <td>related-to</td>
             <td>DiagnosticReport</td>
-            <td>event.period</td>
-            <td>Period covered by the composition content.</td>
-            <td>Map to the primary DiagnosticReport.event entry.</td>
+            <td>effectivePeriod</td>
+            <td>Clinically relevant time/time-period for report</td>
+            <td></td>
           </tr>
           <tr>
             <td>header.version</td>
             <td>Business version of the document.</td>
-            <td>related-to</td>
+            <td>no-map</td>
             <td>DiagnosticReport</td>
-            <td>extension:version<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Document business version.</td>
-            <td>Use DiagnosticReport.version extension (pre-adopt R5 extension).</td>
-          </tr>
-          <tr>
-            <td>header.version</td>
-            <td>Business version of the document.</td>
-            <td>related-to</td>
-            <td>DiagnosticReport</td>
-            <td>version<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
-            </td>
-            <td>Document business version.</td>
+            <td></td>
+            <td></td>
             <td></td>
           </tr>
           <tr>
             <td>header.attestation</td>
             <td>Document attestation details.</td>
-            <td>related-to</td>
+            <td>no-map</td>
             <td>DiagnosticReport</td>
-            <td>attester</td>
-            <td>Participants responsible for attesting the composition.</td>
-            <td>Use mode to distinguish assertions.</td>
-          </tr>
-          <tr>
-            <td>header.attestation.attester</td>
-            <td>Attester who validated the document.</td>
-            <td>equivalent</td>
-            <td>DiagnosticReport</td>
-            <td>attester.party</td>
-            <td>Who attested the composition.</td>
             <td></td>
-          </tr>
-          <tr>
-            <td>header.attestation.datetime</td>
-            <td>Date/time of approval by attester.</td>
-            <td>equivalent</td>
-            <td>DiagnosticReport</td>
-            <td>attester.time</td>
-            <td>When the composition was attested.</td>
-            <td>Set attester.mode as appropriate (e.g., professional).</td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <td>header.legalAuthentication</td>
             <td>Document legal authentication details.</td>
-            <td>related-to</td>
+            <td>no-map</td>
             <td>DiagnosticReport</td>
-            <td>attester</td>
-            <td>Legal authenticator.</td>
-            <td>Use attester.mode = "legal" for the legal authenticator.</td>
-          </tr>
-          <tr>
-            <td>header.legalAuthentication.legalAuthenticator</td>
-            <td>Person responsible for medical content.</td>
-            <td>related-to</td>
-            <td>DiagnosticReport</td>
-            <td>attester.party</td>
-            <td>Legal authenticator party.</td>
-            <td>Use attester.mode = "legal" for the legal authenticator.</td>
-          </tr>
-          <tr>
-            <td>header.legalAuthentication.datetime</td>
-            <td>Date/time when the document was authorised.</td>
-            <td>equivalent</td>
-            <td>DiagnosticReport</td>
-            <td>attester.time</td>
-            <td>When the composition was attested.</td>
-            <td>Use attester.mode = "legal" for the legal authenticator.</td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <td>header.eventType</td>
             <td class="highlight-yellow">Categorisation of the event covered by the document.</td>
             <td>relatedTo</td>
             <td>DiagnosticReport</td>
-            <td>event.code</td>
-            <td>Codes describing the event(s) related to the composition.</td>
-            <td class="highlight-yellow">Clarify the scope. If it is a classificaiton of the document it should be category</td>
+            <td>category</td>
+            <td>Service category</td>
+            <td class="highlight-yellow">Clarify the scope. If it is a classification of the report it should be category</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.serviceSpecialty</td>
@@ -267,35 +238,35 @@
             <td>source-is-narrower-than-target</td>
             <td>DiagnosticReport</td>
             <td>category</td>
-            <td>Categorizes the composition.</td>
-            <td>Use category to tag specialty if no dedicated extension/profile element exists. <strong>(1) Is this a metadata information or something that have to be captured in the document ? (2) is this only for diagnosti reports ? in thsi case we can use DiagnosticReport.category</strong> </td>
+            <td>Categorizes the report.</td>
+            <td>Use category to tag specialty if no dedicated extension/profile element exists. <strong>Is this a metadata information or something that have to be captured in the document ? in this case we can use DiagnosticReport.category</strong> </td>
           </tr>
           <tr>
             <td>header.custodian</td>
             <td>Organisation maintaining the document/report.</td>
-            <td>equivalent</td>
-            <td>DiagnosticReport</td>
-            <td>custodian</td>
-            <td>Organization responsible for maintenance.</td>
-            <td>Reference to Organization.</td>
-          </tr>
-          <tr>
-            <td>header.confidentiality</td>
-            <td>Level of confidentiality (implicit normal).</td>
-            <td>equivalent</td>
-            <td>DiagnosticReport</td>
-            <td>confidentiality</td>
-            <td>As defined by confidentiality codes.</td>
-            <td></td>
-          </tr>
-          <!-- DOCUMENT BODY -->
-          <tr class="highlight-yellow">
-            <td>presentedForm</td>
-            <td>Narrative easy-to-read representation (e.g., PDF).</td>
             <td>no-map</td>
             <td>DiagnosticReport</td>
             <td></td>
             <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>header.confidentiality</td>
+            <td>Level of confidentiality (implicit normal).</td>
+            <td>no-map</td>
+            <td>DiagnosticReport</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <!-- DOCUMENT BODY -->
+          <tr>
+            <td>presentedForm</td>
+            <td>Narrative easy-to-read representation (e.g., PDF).</td>
+            <td>equivalent</td>
+            <td>DiagnosticReport</td>
+            <td>presentedForm</td>
+            <td>Entire report as issued</td>
             <td>To be determined</td>
           </tr>
         </tbody>

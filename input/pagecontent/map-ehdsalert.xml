@@ -3,9 +3,26 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
     <title>EHDSAlert → Flag</title>
-    <link rel="stylesheet" type="text/css" href="map-pages.css" />
   </head>
   <body>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Ongoing alignment:</strong>
+              The Xt-EHR logical models are under active revision and continuous refinement.
+              Updates from Xt-EHR will be progressively incorporated into this Implementation
+              Guide to maintain alignment with the evolving EHDS specifications.
+        </div>
+      </div>
+    </div>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Yellow row/cells:</strong>
+              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+        </div>
+      </div>
+    </div>
     <h3>EHDSAlert → Flag</h3>
     <a>  </a>
     <p></p>
@@ -32,9 +49,6 @@
       </ul>
     </div>
     <p></p>
-    <p>
-      Alerts convey critical safety or clinical information that should be surfaced whenever the patient record is accessed.
-    </p>
     <div class="table-wrap">
       <table summary="EHDSAlert → Flag">
         <caption>EHDSAlert → Flag</caption>
@@ -86,7 +100,7 @@
             <td>related-to</td>
             <td>Flag</td><td>author</td>
             <td>Creator of the flag.</td>
-            <td class="highlight-yellow">Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.<strong>1.. in the model 0.. in the profile</strong>
+            <td class="highlight-yellow">Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.1.. in the model 0.. in the profile
             </td>      
           </tr>
           <tr>
@@ -95,7 +109,7 @@
             <td>equivalent</td>
             <td>Flag</td><td>author</td>
             <td>Creator of the flag.</td>
-            <td class="highlight-yellow">Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.<strong>1.. in the model 0.. in the profile</strong></td>
+            <td class="highlight-yellow">Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.1.. in the model 0.. in the profile</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.authorship.datetime</td>
@@ -105,13 +119,13 @@
             <td></td>
             <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.lastUpdate</td>
             <td>Last technical correction/update.</td>
             <td>related-to</td>
             <td>Flag</td><td>meta.lastUpdated</td>
             <td>When the resource version last changed</td>
-            <td>The map applies only in case it represents when the resource was last updated. It is an Instant (i.e. YYYY-MM-DDThh:mm:ss.sss+zz:zz )</td>
+            <td class="highlight-yellow">The map applies only in case it represents when the resource was last updated. It is an Instant (i.e. YYYY-MM-DDThh:mm:ss.sss+zz:zz )</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.status</td>
@@ -119,7 +133,7 @@
             <td>no map</td>
             <td>Flag</td><td></td>
             <td></td>
-            <td>Not clear suggested to be removed see <a href="https://github.com/Xt-EHR/xt-ehr-common/issues/363">Review and Align Use of header.status and header.statusReason[x]</a></td>
+            <td>Suggested to be removed see <a href="https://github.com/Xt-EHR/xt-ehr-common/issues/363">Review and Align Use of header.status and header.statusReason[x]</a></td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.statusReason[x]</td>
@@ -127,7 +141,7 @@
             <td>no map</td>
             <td>Flag</td><td></td>
             <td></td>
-            <td>Not clear suggested to be removed see <a href="https://github.com/Xt-EHR/xt-ehr-common/issues/363">Review and Align Use of header.status and header.statusReason[x]</a>
+            <td>Suggested to be removed see <a href="https://github.com/Xt-EHR/xt-ehr-common/issues/363">Review and Align Use of header.status and header.statusReason[x]</a>
             </td>
           </tr>
           <tr>
@@ -139,13 +153,13 @@
             <td></td>
           </tr>
           <!-- ROOT EHDSAlert elements -->
-          <tr class="highlight-yellow">
+          <tr>
             <td>text</td>
             <td>Free text explanation of the alert.</td>
             <td>source-is-broader-than-target</td>
             <td>Flag</td><td>extensions:note.text</td>
             <td>Additional notes that apply to this resource or element.</td>
-            <td>The mapping applies if the text represents additional information collected about the alert. <code>code.text</code> can be used for a textual description of the coded alert.<code>text</code>for a textual description of the overall alert.</td>
+            <td class="highlight-yellow">The mapping applies if the text represents additional information collected about the alert. <code>code.text</code> can be used for a textual description of the coded alert.<code>text</code>for a textual description of the overall alert.</td>
           </tr>
           <tr>
             <td>priority</td>

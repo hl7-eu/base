@@ -5,7 +5,7 @@ Title: "DiagnosticReport: Laboratory Report"
 Description: "DiagnosticReport used to represent an entry of a Laboratory Report, including its context, for the scope of the HL7 Europe project."
 // * ^publisher = "HL7 Europe"
 // * ^copyright = "HL7 Europe"
-* insert SetFmmandStatusRule ( 2, trial-use)
+* insert SetFmmandStatusRule (2, trial-use)
 * . ^short = "Laboratory Report DiagnosticReport"
 * . ^definition = "Laboratory Report DiagnosticReport"
 * extension contains $diagnostic-report-composition-r5 named DiagnosticReportCompositionR5 1..1

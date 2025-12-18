@@ -10,7 +10,7 @@ This profile is adapted from the MPD work."""
 * identifier 
   * ^short = "Medication Statement Identifier"
 // * status ^short = "Current state of the dispensation"
-* subject only Reference( PatientEuCore )
+* subject only Reference( PatientEuCore or Group)
 * status ^short = "State of the medication"
 // should be removed ?
 * statusReason ^short = "Reason for the 'exception' statuses of the medication"
@@ -22,7 +22,7 @@ This profile is adapted from the MPD work."""
   * ^binding.extension[=].extension[=].valueCanonical =  Canonical(MedicationIntendedUseEuVs)
   * ^binding.extension[=].extension[+].url = "documentation"
   * ^binding.extension[=].extension[=].valueMarkdown = "When category is used for describing the intended use of the medication (e.g. Prophylactic use)."
-* dosage ^short = "	Details of how medication is/was taken or should be taken."
+* dosage ^short = "Details of how medication is/was taken or should be taken."
   * route //copy the additional bindign from the ips
 * effectivePeriod ^short = "Period when the medication is/was or should be used."
 * medication[x] only CodeableConcept or Reference(MedicationEuCore)
@@ -30,3 +30,4 @@ This profile is adapted from the MPD work."""
 * extension contains $medicationStatement-adherence-r5 named adherence 0..1
 * extension[adherence].extension[code] ^short = "Type of adherence."
 * reasonCode ^short = "Coded reason for use"
+* informationSource only Reference( PatientEuCore or PractitionerEuCore or PractitionerRoleEuCore or OrganizationEuCore or RelatedPerson )

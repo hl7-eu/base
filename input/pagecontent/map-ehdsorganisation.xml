@@ -3,13 +3,20 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
     <title>EHDSOrganisation → Organization</title>
-    <link rel="stylesheet" type="text/css" href="map-pages.css" />
   </head>
   <blockquote class="dragon">
     <p>The content of this page is automatically generated and doesn't document the actual mapping.</p>    
     <p>Please don't use this material for implementation purposes !</p>
   </blockquote>
   <body>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Context</strong>
+          Xt-EHR currently has no dedicated common model for <code>MedicationRequest</code>. For that reason, this mapping is based on the prescription model realised by the HL7 Europe Medication Prescription and Dispense (MPD) FHIR Implementation Guide (<a href="https://hl7.eu/fhir/mpd" target="_blank">https://hl7.eu/fhir/mpd</a>).
+        </div>
+      </div>
+    </div>
     <h3>EHDSOrganisation → Organization</h3><a>  </a>
     <p></p>
     <p>
