@@ -10,4 +10,4 @@ Description:   "EHDS Categories: it indicates the EHDS category that document be
 * $loinc#18842-5 "Discharge summary"
 * $loinc#57833-6 "Prescription for medication"
 * $loinc#60593-1 "Medication dispensed.extended Document"
-* $loinc#60591-5 "Patient summary"
+* $loinc#60591-5 "Patient summary Document"

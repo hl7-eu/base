@@ -3,12 +3,14 @@
 Alias: $pms = http://hl7europe.org/examples/pms
 Alias: $iccc3 = http://terminology.hl7.org/CodeSystem/iccc-3 // FAKE URL NOT YET ASSIGNED !!
 // --- Code Systems
+Alias: $allergy-intolerance-type = http://hl7.org/fhir/allergy-intolerance-type
 Alias: $absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
 Alias: $ajcc = http://cancerstaging.org
 Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 Alias: $atc = http://www.whocc.no/atc
 Alias: $common-tags = http://terminology.hl7.org/CodeSystem/common-tags // FHIR Common Tags
+Alias: $composition-attestation-mode = http://hl7.org/fhir/composition-attestation-mode
 Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
@@ -25,7 +27,8 @@ Alias: $flag-priority-code = http://hl7.org/fhir/flag-priority-code
 Alias: $icd03 = http://terminology.hl7.org/CodeSystem/icd-o-3
 Alias: $icd10 = http://hl7.org/fhir/sid/icd-10
 Alias: $ISCO-08 = urn:oid:2.16.840.1.113883.2.9.6.2.7 // ===> to be checked <====
-Alias: $loinc =  http://loinc.org
+Alias: $loinc = http://loinc.org
+Alias: $npu = http://npu-terminology.org
 Alias: $list-empty-reason = http://terminology.hl7.org/CodeSystem/list-empty-reason
 Alias: $medicalDevice-cs = urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.44.6 // ===> to be checked <====
 Alias: $medication-statement-status-reason = http://terminology.hl7.org/CodeSystem/medication-statement-status-reason

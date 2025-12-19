@@ -2,6 +2,7 @@ Transformed: /workspace/hl7eu-base/__r4-r5\ig.ini -> /workspace/hl7eu-base\ig.in
 Transformed: /workspace/hl7eu-base/__r4-r5\publication-request.json -> /workspace/hl7eu-base\publication-request.json
 Transformed: /workspace/hl7eu-base/__r4-r5\README.md -> /workspace/hl7eu-base\README.md
 Transformed: /workspace/hl7eu-base/__r4-r5\sushi-config.yaml -> /workspace/hl7eu-base\sushi-config.yaml
+Transformed: /workspace/hl7eu-base/__r4-r5\To do.txt -> /workspace/hl7eu-base\To do.txt
 Transformed: /workspace/hl7eu-base/__r4-r5\ig-template\package-list.json -> /workspace/hl7eu-base\ig-template\package-list.json
 Transformed: /workspace/hl7eu-base/__r4-r5\ig-template\README.md -> /workspace/hl7eu-base\ig-template\README.md
 Transformed: /workspace/hl7eu-base/__r4-r5\ig-template\content\assets\css\hl7eu-old.css -> /workspace/hl7eu-base\ig-template\content\assets\css\hl7eu-old.css
@@ -21,7 +22,9 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\alias-systems.fsh -> /works
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\alias-valuesets.fsh -> /workspace/hl7eu-base\input\fsh\alias-valuesets.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\examples\allergyintolerance-eu-core-example.fsh -> /workspace/hl7eu-base\input\fsh\examples\allergyintolerance-eu-core-example.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\examples\bodyStructure-example.fsh -> /workspace/hl7eu-base\input\fsh\examples\bodyStructure-example.fsh
+Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\examples\condition-eu-core-example.fsh -> /workspace/hl7eu-base\input\fsh\examples\condition-eu-core-example.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\examples\flag-eu-core-example.fsh -> /workspace/hl7eu-base\input\fsh\examples\flag-eu-core-example.fsh
+Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\examples\immunization-eu-core-example.fsh -> /workspace/hl7eu-base\input\fsh\examples\immunization-eu-core-example.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\examples\location-example.fsh -> /workspace/hl7eu-base\input\fsh\examples\location-example.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\examples\medications.fsh -> /workspace/hl7eu-base\input\fsh\examples\medications.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\examples\organization-example.fsh -> /workspace/hl7eu-base\input\fsh\examples\organization-example.fsh
@@ -43,6 +46,7 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\diagnosticRep
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\flag-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\flag-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\immunization-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\immunization-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\location-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\location-eu-core.fsh
+Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\medical-test-result-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\medical-test-result-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\medication-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\medication-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\medicationRequest-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\medicationRequest-eu-core.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\profiles\core\medicationStatement-eu-core.fsh -> /workspace/hl7eu-base\input\fsh\profiles\core\medicationStatement-eu-core.fsh
@@ -56,6 +60,7 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\rulesSet\rulesSet-obligatio
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\terminology\ehdsCategories.fsh -> /workspace/hl7eu-base\input\fsh\terminology\ehdsCategories.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\terminology\lab-species.fsh -> /workspace/hl7eu-base\input\fsh\terminology\lab-species.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\terminology\medicationIntendedUse.fsh -> /workspace/hl7eu-base\input\fsh\terminology\medicationIntendedUse.fsh
+Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\terminology\observationCodeVS.fsh -> /workspace/hl7eu-base\input\fsh\terminology\observationCodeVS.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\terminology\periodOfLife.fsh -> /workspace/hl7eu-base\input\fsh\terminology\periodOfLife.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\terminology\siteLaterality.fsh -> /workspace/hl7eu-base\input\fsh\terminology\siteLaterality.fsh
 Transformed: /workspace/hl7eu-base/__r4-r5\input\fsh\terminology\siteQualifier.fsh -> /workspace/hl7eu-base\input\fsh\terminology\siteQualifier.fsh

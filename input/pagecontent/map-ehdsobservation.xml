@@ -8,27 +8,29 @@
     <div class="model-map-block">
       <div class="callout-wrapper">
         <div class="callout-box">
-          <strong>Ongoing alignment:</strong>
-              The Xt-EHR logical models are under active revision and continuous refinement.
-              Updates from Xt-EHR will be progressively incorporated into this Implementation
-              Guide to maintain alignment with the evolving EHDS specifications.
-        </div>
+          <strong>Ongoing alignment:</strong> The Xt-EHR logical models are under active revision
+          and continuous refinement. Updates from Xt-EHR will be progressively incorporated into
+          this Implementation Guide to maintain alignment with the evolving EHDS specifications. </div>
       </div>
     </div>
     <div class="model-map-block">
       <div class="callout-wrapper">
         <div class="callout-box">
-          <strong>Yellow row/cells:</strong>
-              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
-        </div>
+          <strong>Yellow row/cells:</strong> In this ballot publication, some row/cells of the
+          mapping table have been left in yellow to indicate areas requiring further review or
+          refinement; including feedback from the Xt-EHR joint action (see note above). These
+          highlights will be addressed in subsequent updates to ensure accuracy and completeness of
+          the mappings. </div>
       </div>
     </div>
     <h3>EHDSObservation → Observation</h3>
     <a> </a>
     <p></p>
     <p>
-  This page explains how conceptual elements from the EHDS Observation logical model for medical test
-  results are expressed in the corresponding FHIR Observation profile used by this Implementation Guide.
+      This page explains how conceptual elements from the EHDS Observation logical model for medical
+      test
+      results are expressed in the corresponding FHIR Observation profile used by this
+      Implementation Guide.
     </p>
     <p></p>
     <div class="table-wrap">
@@ -36,14 +38,15 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSObservation.html" target="_blank">
-        EHDSObservation
+          <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSObservation.html"
+            target="_blank">
+            EHDSObservation
           </a>
         </li>
         <li>
           <strong>Target FHIR profile:</strong>
-          <a href="https://hl7.org/fhir/observation.html">
-        Observation
+          <a href="StructureDefinition-medicalTestResult-eu-core.html">
+            Observation
           </a>
         </li>
       </ul>
@@ -74,7 +77,8 @@
             <td>header</td>
             <td>Common header for all patient-related data.</td>
             <td>related-to</td>
-            <td>Observation</td><td>.</td>
+            <td>Observation</td>
+            <td>.</td>
             <td>General metadata.</td>
             <td>Dataset-level; not usually carried in Observation as-is.</td>
           </tr>
@@ -82,7 +86,8 @@
             <td>header.subject</td>
             <td>Patient who is receiving health care.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>subject</td>
+            <td>Observation</td>
+            <td>subject</td>
             <td>Who/what the observation is about.</td>
             <td>Reference to Patient (or other allowed subject types).</td>
           </tr>
@@ -90,17 +95,20 @@
             <td>header.identifier</td>
             <td>Business identifier for the object.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>identifier</td>
+            <td>Observation</td>
+            <td>identifier</td>
             <td>Business identifier for this observation.</td>
             <td>Copy over all identifiers if multiple.</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.authorship</td>
             <td>Resource authoring details.</td>
-            <td>related-to</td>
-            <td>Observation</td><td></td>
+            <td>no-map</td>
+            <td>Observation</td>
+            <td></td>
             <td>.</td>
-            <td>Observation lacks a dedicated recorder. Only when the observation result was issued can be represented.</td>
+            <td>Observation lacks a dedicated recorder. Only when the observation result was issued
+              can be represented.</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.authorship.author[x]</td>
@@ -115,7 +123,8 @@
             <td>header.authorship.datetime</td>
             <td>Date and time of authoring/issuing.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>issued</td>
+            <td>Observation</td>
+            <td>issued</td>
             <td>When the observation result was issued.</td>
             <td class="highlight-yellow">1.. in the model 0.. in the profile.</td>
           </tr>
@@ -123,23 +132,28 @@
             <td>header.lastUpdate</td>
             <td>Last technical correction/update.</td>
             <td>source-is-broader-than-target</td>
-            <td>Observation</td><td>meta.lastUpdated</td>
+            <td>Observation</td>
+            <td>meta.lastUpdated</td>
             <td>When the resource version last changed.</td>
-            <td class="highlight-yellow">Use only when the timestamp reflects resource update (instant).</td>
+            <td class="highlight-yellow">Use only when the timestamp reflects resource update
+              (instant).</td>
           </tr>
           <tr>
             <td>header.status</td>
             <td>Status of the resource.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>status</td>
+            <td>Observation</td>
+            <td>status</td>
             <td>Registered | preliminary | final | amended | ...</td>
-            <td>EHDS uses CodeableConcept; Observation.status is a required code. Align to HL7 ObservationStatus.</td>
+            <td>EHDS uses CodeableConcept; Observation.status is a required code. Align to HL7
+              ObservationStatus.</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.statusReason[x]</td>
             <td>Reason for the current status.</td>
             <td>no-map</td>
-            <td>Observation</td><td>-</td>
+            <td>Observation</td>
+            <td>-</td>
             <td></td>
             <td>No core element; use an extension if the status rationale is required.</td>
           </tr>
@@ -147,7 +161,8 @@
             <td>header.language</td>
             <td>Language in which the resource is written.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>language</td>
+            <td>Observation</td>
+            <td>language</td>
             <td>Language of the resource.</td>
             <td></td>
           </tr>
@@ -155,7 +170,8 @@
             <td>directSubject[x]</td>
             <td>The direct subject of the observation if different from the patient.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>focus</td>
+            <td>Observation</td>
+            <td>focus</td>
             <td>Focus of the observation when not the primary subject.</td>
             <td></td>
           </tr>
@@ -164,15 +180,18 @@
             <td>observationDate[x]</td>
             <td>Clinically relevant time or period for the observation.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>effective[x]</td>
+            <td>Observation</td>
+            <td>effective[x]</td>
             <td>Clinically relevant time or time-period.</td>
-            <td class="highlight-yellow">1.. in the model 0.. in the profile. Map to <code>effectiveDateTime</code> or <code>effectivePeriod</code>.</td>
+            <td class="highlight-yellow">1.. in the model 0.. in the profile. Map to <code>
+              effectiveDateTime</code> or <code>effectivePeriod</code>.</td>
           </tr>
           <tr>
             <td>code</td>
             <td>Observation code.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>code</td>
+            <td>Observation</td>
+            <td>code</td>
             <td>What is being observed.</td>
             <td></td>
           </tr>
@@ -180,7 +199,8 @@
             <td>originalName</td>
             <td>Original (conventional) name of the observation.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>code.text</td>
+            <td>Observation</td>
+            <td>code.text</td>
             <td>Text representation of the observation code.</td>
             <td></td>
           </tr>
@@ -188,7 +208,8 @@
             <td>method</td>
             <td>Observation method.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>method</td>
+            <td>Observation</td>
+            <td>method</td>
             <td>How it was done.</td>
             <td></td>
           </tr>
@@ -196,7 +217,8 @@
             <td>order</td>
             <td>Order this observation belongs to.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>basedOn</td>
+            <td>Observation</td>
+            <td>basedOn</td>
             <td>Plan or request fulfilled by this observation.</td>
             <td></td>
           </tr>
@@ -204,7 +226,8 @@
             <td>performer[x]</td>
             <td>Performer of the observation.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>performer</td>
+            <td>Observation</td>
+            <td>performer</td>
             <td>Who performed or produced the observation.</td>
             <td>Supports Practitioner, PractitionerRole, Patient, RelatedPerson.</td>
           </tr>
@@ -212,7 +235,8 @@
             <td>anatomicLocation</td>
             <td>Anatomic location and laterality.</td>
             <td>source-is-broader-than-target</td>
-            <td>Observation</td><td>bodySite</td>
+            <td>Observation</td>
+            <td>bodySite</td>
             <td>Observed body site.</td>
             <td></td>
           </tr>
@@ -221,7 +245,16 @@
             <td>Anatomic location and laterality.</td>
             <td>source-is-broader-than-target</td>
             <td>Observation</td>
-            <td>bodyStructure</td>
+            <td>extension[bodyStructure]<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Observed body structure</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>anatomicLocation</td>
+            <td>Anatomic location and laterality.</td>
+            <td>equivalent</td>
+            <td>Observation</td>
+            <td>bodyStructure<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Observed body structure</td>
             <td></td>
           </tr>
@@ -230,7 +263,8 @@
             <td>result</td>
             <td>Result of the observation.</td>
             <td>related-to</td>
-            <td>Observation</td><td>.</td>
+            <td>Observation</td>
+            <td>.</td>
             <td></td>
             <td></td>
           </tr>
@@ -238,23 +272,28 @@
             <td>result.value[x]</td>
             <td>Observation result value.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>value[x]</td>
+            <td>Observation</td>
+            <td>value[x]</td>
             <td>Result value.</td>
-            <td class="highlight-yellow">1.. in the model 0.. in the profile. Use the matching datatype (string, Quantity, Range, CodeableConcept).</td>
+            <td class="highlight-yellow">1.. in the model 0.. in the profile. Use the matching
+              datatype (string, Quantity, Range, CodeableConcept).</td>
           </tr>
           <tr>
             <td>result.uncertainty</td>
             <td>Measurement uncertainty type and interval.</td>
-            <td>no map</td>
-            <td>Quantity</td><td>extension[uncertainty]</td>
+            <td>equivalent</td>
+            <td>Quantity</td>
+            <td>extension[uncertainty]</td>
             <td>-</td>
-            <td>http://hl7.org/fhir/StructureDefinition/iso21090-uncertainty extension for the Quantity data type.</td>
+            <td>http://hl7.org/fhir/StructureDefinition/iso21090-uncertainty extension for the
+              Quantity data type.</td>
           </tr>
           <tr>
             <td>dataAbsentReason</td>
             <td>Why the expected value is missing.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>dataAbsentReason</td>
+            <td>Observation</td>
+            <td>dataAbsentReason</td>
             <td>Reason for missing result.</td>
             <td></td>
           </tr>
@@ -262,7 +301,8 @@
             <td>referenceRange</td>
             <td>Reference range(s) for interpretation.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>referenceRange</td>
+            <td>Observation</td>
+            <td>referenceRange</td>
             <td>Guidance for interpretation.</td>
             <td></td>
           </tr>
@@ -270,7 +310,8 @@
             <td>interpretation</td>
             <td>Reference interval and result interpretation.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>interpretation</td>
+            <td>Observation</td>
+            <td>interpretation</td>
             <td>High/low/abnormal, etc.</td>
             <td></td>
           </tr>
@@ -278,7 +319,8 @@
             <td>resultDescription</td>
             <td>Comments and narrative representation.</td>
             <td>source-is-broader-than-target</td>
-            <td>Observation</td><td>note</td>
+            <td>Observation</td>
+            <td>note</td>
             <td>Comment or annotation.</td>
             <td></td>
           </tr>
@@ -287,7 +329,8 @@
             <td>component</td>
             <td>Sub-observations (e.g. panel members).</td>
             <td>equivalent</td>
-            <td>Observation</td><td>component</td>
+            <td>Observation</td>
+            <td>component</td>
             <td>Observation component.</td>
             <td></td>
           </tr>
@@ -295,7 +338,8 @@
             <td>component.code</td>
             <td>Code representing the observation.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>component.code</td>
+            <td>Observation</td>
+            <td>component.code</td>
             <td>What is being observed.</td>
             <td></td>
           </tr>
@@ -303,7 +347,8 @@
             <td>component.result</td>
             <td>Result of the sub-observation.</td>
             <td>related-to</td>
-            <td>Observation</td><td>component</td>
+            <td>Observation</td>
+            <td>component</td>
             <td>Component result value.</td>
             <td></td>
           </tr>
@@ -311,24 +356,27 @@
             <td>component.result.value[x]</td>
             <td>Component result value.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>component.value[x]</td>
+            <td>Observation</td>
+            <td>component.value[x]</td>
             <td>Component result value.</td>
             <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>component.result.uncertainty</td>
             <td>Measurement uncertainty type and interval.</td>
-            <td>no map</td>
+            <td>equivalent</td>
             <td>Quantity</td>
             <td>extension[uncertainty]</td>
             <td>-</td>
-            <td>http://hl7.org/fhir/StructureDefinition/iso21090-uncertainty extension for the Quantity data type.</td>
+            <td>http://hl7.org/fhir/StructureDefinition/iso21090-uncertainty extension for the
+              Quantity data type.</td>
           </tr>
           <tr>
             <td>component.dataAbsentReason</td>
             <td>Why the component value is missing.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>component.dataAbsentReason</td>
+            <td>Observation</td>
+            <td>component.dataAbsentReason</td>
             <td>Reason for missing component result.</td>
             <td></td>
           </tr>
@@ -336,7 +384,8 @@
             <td>component.referenceRange</td>
             <td>Reference range for the component.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>component.referenceRange</td>
+            <td>Observation</td>
+            <td>component.referenceRange</td>
             <td>Guidance for interpreting the component value.</td>
             <td></td>
           </tr>
@@ -344,7 +393,8 @@
             <td>component.interpretation</td>
             <td>Component interpretation.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>component.interpretation</td>
+            <td>Observation</td>
+            <td>component.interpretation</td>
             <td>Interpretation of the component.</td>
             <td></td>
           </tr>
@@ -353,7 +403,8 @@
             <td>derivedFrom[x]</td>
             <td>Related resource from which this observation is derived.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>derivedFrom</td>
+            <td>Observation</td>
+            <td>derivedFrom</td>
             <td>What the observation is based on.</td>
             <td>Supports references to Observation, ImagingStudy, DiagnosticReport, etc.</td>
           </tr>
@@ -361,7 +412,8 @@
             <td>triggeredBy[x]</td>
             <td>Observations that triggered this observation.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>extension[triggeredBy]<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Observation</td>
+            <td>extension[triggeredBy]<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>What initiated this observation.</td>
             <td>Standard in R5; use the R5 element or the pre-adopted extension in R4.</td>
           </tr>
@@ -370,7 +422,7 @@
             <td>Observations that triggered this observation.</td>
             <td>equivalent</td>
             <td>Observation</td>
-            <td>triggeredBy<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>triggeredBy<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>What initiated this observation.</td>
             <td>Standard in R5; use the R5 element or the pre-adopted extension in R4.</td>
           </tr>
@@ -378,15 +430,16 @@
             <td>hasMember[x]</td>
             <td>Group observation that includes the target as a member.</td>
             <td>equivalent</td>
-            <td>Observation</td><td>hasMember</td>
+            <td>Observation</td>
+            <td>hasMember</td>
             <td>Related members of a panel or battery.</td>
             <td></td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p style="margin-top:2rem;color:#555;">
-      Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
+    <p style="margin-top:2rem;color:#555;"> Return to overview: <a href="modelmap.html">EHDS Logical
+      Models → FHIR Profiles</a>
     </p>
   </body>
 </div>
