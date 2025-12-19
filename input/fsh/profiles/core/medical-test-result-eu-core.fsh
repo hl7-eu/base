@@ -45,8 +45,7 @@ Description: """This profile sets minimum expectations for the Observation resou
   * ^requirements = "EHDSObservation.header.authorship.datetime"
 * performer only Reference(PractitionerEuCore or PractitionerRoleEuCore or OrganizationEuCore)
   * ^requirements = "EHDSObservation.header.performer"
-//TODO: Cardinality in Model is 1..1, datatypes in xt-ehr model only valueString, valueQuantity, valueRange, valueCodeableConcept
-// TODO: add valueAttachment in R4
+//TODO: datatypes in xt-ehr model only valueString, valueQuantity, valueRange, valueCodeableConcept
 * value[x]
   * ^requirements = "EHDSObservation.result.value[x]"
 // TODO: is uncertainty a modifierExtension? Also relevant for Ratio, Range, integer
