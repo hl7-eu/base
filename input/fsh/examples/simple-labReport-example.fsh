@@ -17,7 +17,7 @@ Description: "Example of a Laboratory Report Composition conforming to the Compo
 * date = "2022-03-30T11:24:26+01:00"
 * author[+] = Reference(PractitionerRoleEuCoreExample)
 * title = "Laboratorní zpráva"
-* attester[+].mode = #legal
+* attester[+].mode = $composition-attestation-mode#legal
 * attester[=].time = "2022-03-25T11:00:00+01:00"
 * attester[=].party = Reference(PractitionerRoleEuCoreExample)
 * custodian.display = "Example Health Organization"
@@ -67,13 +67,14 @@ Description: "Laboratory Report ServiceRequest resource used by the DiagnosticRe
 * code.text = "Microalbumin Massa/Volume in Urine"
 * subject = Reference(PatientExample)
 Instance: ObservationLabResultExample
-InstanceOf: Observation
+InstanceOf: MedicalTestResultEuCore
 Title: "Observation Example"
 Description: "Example of a Laboratory Result Observation conforming to the Medical Test Result (EU Core) profile."
 * id = "763f7902-8103-4d10-8bd1-546a726d43ee"
 * status = #final
 * code.coding[+] = http://loinc.org#22700-9 "Urea [Moles/volume] in Urine"
 * code.text = "Urea (U) [Moles/Vol]"
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
 * method = $sct#70621000052105 "Spectrophotometric technique"
 * subject = Reference(PatientExample)
 * effectiveDateTime = "2023-03-27T11:24:26+01:00"

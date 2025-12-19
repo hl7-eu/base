@@ -281,7 +281,7 @@
           <tr>
             <td>result.uncertainty</td>
             <td>Measurement uncertainty type and interval.</td>
-            <td>no map</td>
+            <td>equivalent</td>
             <td>Quantity</td>
             <td>extension[uncertainty]</td>
             <td>-</td>
@@ -361,10 +361,10 @@
             <td>Component result value.</td>
             <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>component.result.uncertainty</td>
             <td>Measurement uncertainty type and interval.</td>
-            <td>no map</td>
+            <td>equivalent</td>
             <td>Quantity</td>
             <td>extension[uncertainty]</td>
             <td>-</td>

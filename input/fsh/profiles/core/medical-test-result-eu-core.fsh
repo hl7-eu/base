@@ -20,7 +20,7 @@ Description: """This profile sets minimum expectations for the Observation resou
 * status
   * ^requirements = "EHDSObservation.header.status"
 * category 1..
-  * insert SliceElement( #pattern, $this )
+  * insert SliceElement( #value, $this )
   * ^requirements = "EHDSObservation has no requirement"
 * category contains 
     laboratory 0..1 and
@@ -37,7 +37,7 @@ Description: """This profile sets minimum expectations for the Observation resou
 * effective[x] 1..
 * effective[x] only dateTime or Period
   * ^requirements = "EHDSObservation.observationDate[x]"
-* issued 1..
+* issued
   * ^requirements = "EHDSObservation.header.authorship.datetime"
 * performer only Reference(PractitionerEuCore or PractitionerRoleEuCore or OrganizationEuCore)
   * ^requirements = "EHDSObservation.header.performer"

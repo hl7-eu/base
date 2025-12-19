@@ -5,7 +5,7 @@ Description: "Example of an AllergyIntolerance resource conforming to the Allerg
 * id = "allergyintolerance-eu-core-example"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
 * verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed "Confirmed"
-* type = #allergy
+* type = $allergy-intolerance-type#allergy
 * category = #food
 * criticality = #low
 * code = $sct#91935009 "Allergy to peanuts"
