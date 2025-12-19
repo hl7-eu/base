@@ -8,11 +8,15 @@ Description: """This profile sets minimum expectations for the Observation resou
 * insert SetFmmandStatusRule (1, draft)
 * extension contains 
     $observation-bodyStructure-r5 named bodyStructure 0..1 and
-    $observation-triggeredBy-r5 named triggeredBy 0..*
+    $observation-triggeredBy-r5 named triggeredBy 0..* and
+    $observation-value-r5 named value-r5 0..1
 * extension[bodyStructure]
   * ^requirements = "EHDSObservation.anatomicLocation"
 * extension[triggeredBy].extension[observation].valueReference only Reference(MedicalTestResultEuCore)
   * ^requirements = "EHDSObservation.triggeredBy[x]"
+* extension[value-r5]
+  * value[x] only Attachment
+  * ^short = "only for result of type Attachment"
 * identifier
   * ^requirements = "EHDSObservation.header.identifier"
 * basedOn
@@ -42,9 +46,11 @@ Description: """This profile sets minimum expectations for the Observation resou
 * performer only Reference(PractitionerEuCore or PractitionerRoleEuCore or OrganizationEuCore)
   * ^requirements = "EHDSObservation.header.performer"
 //TODO: Cardinality in Model is 1..1, datatypes in xt-ehr model only valueString, valueQuantity, valueRange, valueCodeableConcept
+// TODO: add valueAttachment in R4
 * value[x]
   * ^requirements = "EHDSObservation.result.value[x]"
-// TODO: is uncertainty a modifierExtension? Also relevant for Ratio, Range, integer 
+// TODO: is uncertainty a modifierExtension? Also relevant for Ratio, Range, integer
+// TODO: ask for scope change on extension
 * valueQuantity
   * extension contains 
     $iso21090-uncertainty named uncertainty 0..1
@@ -61,19 +67,19 @@ Description: """This profile sets minimum expectations for the Observation resou
 * method
   * ^requirements = "EHDSObservation.method"
 //TODO: specimen is not part of the EHDSObservation model but needed for lab observations
-//TODO: device is not part of the EHDSObservation model but might be needed for lab observations
+* device only Reference(Device or DeviceMetric)
+  * ^requirements = "Device information for laboratory observations"
 * referenceRange
   * ^requirements = "EHDSObservation.referenceRange"
 * hasMember only Reference(MedicalTestResultEuCore)
   * ^requirements = "EHDSObservation.hasMember[x]"
-//TODO: found ImagingStudyEuImaging in the ig, but no definition  
 * derivedFrom only Reference(MedicalTestResultEuCore or ImagingStudy)
   * ^requirements = "EHDSObservation.derivedFrom[x]"
 * component
   * ^requirements = "EHDSObservation.component"
   * code from LaboratoryResultStandardEuVs (preferred)
     * ^requirements = "EHDSObservation.component.code"
-//TODO: Cardinality in Model is 1..1, datatypes in xt-ehr model only valueString, valueQuantity, valueRange, valueCodeableConcept
+//TODO: datatypes in xt-ehr model only valueString, valueQuantity, valueRange, valueCodeableConcept
   * value[x]
     * ^requirements = "EHDSObservation.component.result.value[x]"
   * valueQuantity

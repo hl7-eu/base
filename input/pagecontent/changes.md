@@ -8,6 +8,7 @@ This page summarizes the main changes applied to this version of the guide.
   * Composition (FHIR-53480)
   * AllergyIntolerance; Condition; Procedure; Flag; Immunization; Medication; MedicationStatement; MedicationRequest (FHIR-53197)
   * Medication/MedicationStatement/Immunization content (target profiles, revised mappings, removal of `basedOn` in Medication diff).
+  * Medical Test Result observation profile (FHIR-53573)
 * Updates the EHDS models links with the published version (FHIR-53124)
 * Changed dependency to the xver-r5 package for the for the cross-versions extensions 
 * Extended logical models and map: grouped/reorganized model map landing pages, refactored HTML/XML layout of the mapping pages, merged tables in the HCP model with resource column (FHIR-53197 + others).

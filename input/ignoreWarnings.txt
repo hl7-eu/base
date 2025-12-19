@@ -75,6 +75,8 @@ The definition for the element 'Condition.bodySite' binds to the value set 'http
 The definition for the element 'Condition.subject.type' binds to the value set 'http://hl7.org/fhir/ValueSet/resource-types|5.0.0' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'AllergyIntolerance.patient.type' binds to the value set 'http://hl7.org/fhir/ValueSet/resource-types|5.0.0' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'AllergyIntolerance.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category|5.0.0' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Observation.referenceRange.type' binds to the value set 'http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0' which is experimental, but this structure is not labeled as experimental
 #   experimental CodeSystem
 %Reference to experimental CodeSystem http://terminology.hl7.eu/CodeSystem/v3-ActCode%
 %Reference to experimental CodeSystem http://hl7.org/fhir/event-status%
