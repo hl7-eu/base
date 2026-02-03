@@ -47,7 +47,7 @@ Together with **extensions** and **scoped HL7 EU IGs**, they form a consistent f
 
 ### Understanding the Relationships with Base and Core Profiles
 
-The HL7 Europe Base and Core profiles fit both the **European Health Data Space (EHDS)** and the wider international standards landscape.
+The HL7 Europe Base and Core profiles align with the **European Health Data Space (EHDS)** and the wider international standards landscape.
 
 * **EHDS logical models** are realized through Core profiles, ensuring alignment with the EHDS framework.
 * **International Patient Summary (IPS)** alignment is pursued within Core profiles to maintain global consistency.

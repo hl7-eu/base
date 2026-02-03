@@ -1,3 +1,3 @@
-### Intellectual property statements
+### Intellectual Property Statements
 
 {% include ip-statements.xhtml %}

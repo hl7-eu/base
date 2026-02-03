@@ -25,7 +25,7 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * name ^requirements = "Need to be able to track the patient by multiple names. Examples are your official name and a partner name.\r\nThe Alphabetic representation of the name SHALL be always provided"
 * name.text ^definition = "Text representation of the full name. Due to the cultural variance around the world a consuming system may not know how to present the name correctly; moreover not all the parts of the name go in given or family. Creators are therefore strongly encouraged to provide through this element a presented version of the name. Future versions of this guide may require this element."
 * name.family ^short = "Family name."  // MS according to IPS
-* name.family ^definition = """Family name. When more the family is composed by more than one names, this element documents the full composed family name with the proper * name.familyrder. The parts are recorded in the fhater and mother family names extensions."""
+* name.family ^definition = """Family name. When more the family is composed of more than one name, this element documents the full composed family name with the proper name order. The parts are recorded in the father and mother family names extensions."""
 * name.family ^example.label = "spanish"
 * name.family ^example.valueString = "Valero Iglesias"
 * name.given ^short = "Given names. Includes middle names" // MS according to IPS

@@ -2,7 +2,6 @@ Transformed: /workspace/hl7eu-base/__r4-r5\ig.ini -> /workspace/hl7eu-base\ig.in
 Transformed: /workspace/hl7eu-base/__r4-r5\publication-request.json -> /workspace/hl7eu-base\publication-request.json
 Transformed: /workspace/hl7eu-base/__r4-r5\README.md -> /workspace/hl7eu-base\README.md
 Transformed: /workspace/hl7eu-base/__r4-r5\sushi-config.yaml -> /workspace/hl7eu-base\sushi-config.yaml
-Transformed: /workspace/hl7eu-base/__r4-r5\To do.txt -> /workspace/hl7eu-base\To do.txt
 Transformed: /workspace/hl7eu-base/__r4-r5\ig-template\package-list.json -> /workspace/hl7eu-base\ig-template\package-list.json
 Transformed: /workspace/hl7eu-base/__r4-r5\ig-template\README.md -> /workspace/hl7eu-base\ig-template\README.md
 Transformed: /workspace/hl7eu-base/__r4-r5\ig-template\content\assets\css\hl7eu-old.css -> /workspace/hl7eu-base\ig-template\content\assets\css\hl7eu-old.css
@@ -101,7 +100,6 @@ Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdsprocedure.x
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\map-ehdstelecom.xml -> /workspace/hl7eu-base\input\pagecontent\map-ehdstelecom.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\missing-data.md -> /workspace/hl7eu-base\input\pagecontent\missing-data.md
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\modelmap.xml -> /workspace/hl7eu-base\input\pagecontent\modelmap.xml
-Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\profiles.md -> /workspace/hl7eu-base\input\pagecontent\profiles.md
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\StructureDefinition-Address-eu-intro.xml -> /workspace/hl7eu-base\input\pagecontent\StructureDefinition-Address-eu-intro.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\StructureDefinition-patient-eu-intro.xml -> /workspace/hl7eu-base\input\pagecontent\StructureDefinition-patient-eu-intro.xml
 Transformed: /workspace/hl7eu-base/__r4-r5\input\pagecontent\terminologies.md -> /workspace/hl7eu-base\input\pagecontent\terminologies.md

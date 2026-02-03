@@ -1,6 +1,6 @@
 This page summarizes the main changes applied to this version of the guide.
 
-### 0.1.0 to 2.0.0-ballot
+### From 0.1.0 to 2.0.0-ballot
 
 
 * Added new profiles and model to profile maps
@@ -8,17 +8,18 @@ This page summarizes the main changes applied to this version of the guide.
   * Composition (FHIR-53480)
   * AllergyIntolerance; Condition; Procedure; Flag; Immunization; Medication; MedicationStatement; MedicationRequest (FHIR-53197)
   * Medication/MedicationStatement/Immunization content (target profiles, revised mappings, removal of `basedOn` in Medication diff).
-* Updates the EHDS models links with the published version (FHIR-53124)
-* Changed dependency to the xver-r5 package for the for the cross-versions extensions 
-* Extended logical models and map: grouped/reorganized model map landing pages, refactored HTML/XML layout of the mapping pages, merged tables in the HCP model with resource column (FHIR-53197 + others).
+  * Medical Test Result observation profile (FHIR-53573)
+* Updated the EHDS model links to the published versions (FHIR-53124)
+* Changed dependency to the xver-r5 package for the cross-version extensions 
+* Extended logical models and maps: grouped/reorganized model map landing pages, refactored the HTML/XML layout of the mapping pages, merged tables in the HCP model with the resource column (FHIR-53197 + others).
 * Added examples for the profiles (FHIR-53197 + others).
-* bodySite extension moved to Condition.bodySite and Procedure.bodySite (FHIR-53124)
+* Moved the bodySite extension to Condition.bodySite and Procedure.bodySite (FHIR-53124)
 * General maintenance:
   * aligned the versioning with the new HL7 EU guidelines (version bumped to `2.0.0`) (FHIR-53618)
-  * Updated known issues and change log pages
+  * Updated Known Issues and Change Log pages
 
 
-### 0.1.0-ballot to 0.1.0
+### From 0.1.0-ballot to 0.1.0
 
 
 * Updated IPS dependency to version `2.0.0` (FHIR-51370).
@@ -35,13 +36,13 @@ This page summarizes the main changes applied to this version of the guide.
 * Defined *Patient Animal* as a core profile derived from *Patient Base* (FHIR-51402; FHIR-51569).
 * Removed unused value sets (FHIR-51989).
 * Added EHDS models and mappings to profiles (FHIR-51222).
-* Harmonized display names across artefacts (FHIR-51375).
+* Harmonized display names across artifacts (FHIR-51375).
 * Updated laterality value set to use *left/right/bilateral* (FHIR-51391).
 * Added *gender-identity* and *pronoun* extensions to *Patient* (FHIR-51270).
 * Moved *data-absent-reason* extensions to core profiles where elements are `1..` (FHIR-51374).
 * Fixed resource IDs to follow `lowerCamelCase` convention (FHIR-51663).
 * Grouped profiles in *Artifacts Summary* page (FHIR-51223).
-* Fixed typos in the artefacts page (FHIR-51262).
+* Fixed typos in the artifacts page (FHIR-51262).
 * Set `Patient.name.extension[name-absent-reason]` to `0..1` (FHIR-51261).
 * Added EHIC model to the R5 IG (FHIR-51369).
 * Created *Patient EHIC* profile derived from *EU Core* (FHIR-51394).

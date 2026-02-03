@@ -1,15 +1,15 @@
 ### Missing Data
 
-This page provides general rules to deal with missing data, not all these rules may apply to this version of this guide. 
+This page provides general rules for handling missing data. Not all of these rules apply to this version of the guide.
 
-The content of this page is adapted from the [HL7 International Patient Summary Implementation Guide (IPS)](https://hl7.org/fhir/uv/ips/)
+The content of this page is adapted from the [HL7 International Patient Summary Implementation Guide (IPS)](https://hl7.org/fhir/uv/ips/).
 
 
 #### Optional Data Elements (cardinality of 0..1 or 0..\*)
 
 If a content creator does not have data to be included in the resources, the data element is omitted.
 
-Note: a content creator  may have no data to be included in the resources, either because there are no data, data are not allowed to be shared, or because data available are not pertinent within the scope of the context of use.
+Note: a content creator may have no data to be included in the resources, either because there are no data, the data cannot be shared, or the available data are not pertinent within the scope of the context of use.
 
 #### Required Data Elements (cardinality of 1..1 or 1..\*)
 
@@ -34,7 +34,7 @@ If a content creator does not have data to be included in the resources, the rea
     }
     ```
 
-    Example: Procedure resource where the performed value is not known. The performed[x] is a choice of type, although any performed[x] choice element can be used to include the data absent reason extension, in this case performedDateTime is must support and hence a good choice (note that performedDateTime is a dateTime primitive datatype, in JSON the \_performedDateTime sibling property is used for the extension). Other required properties of Procedure resource are omitted (shown by ...) in the simplified example below.
+    Example: Procedure resource where the performed value is not known. The performed[x] is a choice type, although any performed[x] choice element can be used to include the data absent reason extension, in this case performedDateTime is Must Support and hence a good choice (note that performedDateTime is a dateTime primitive datatype, in JSON the \_performedDateTime sibling property is used for the extension). Other required properties of Procedure resource are omitted (shown by ...) in the simplified example below.
 
     ```
     {
@@ -54,14 +54,14 @@ If a content creator does not have data to be included in the resources, the rea
 
 1.  For _coded_ data elements:
     - _example_, _preferred_, or _extensible_ binding strengths (CodeableConcept datatypes):
-      - if the source systems has text but no coded data, only the text element is used.
-      - if there is neither text or a code representing actual (i.e non-exceptional) concepts:
+      - if the source system has text but no coded data, only the text element is used.
+      - if there is neither text nor a code representing actual (i.e., non-exceptional) concepts:
         - use the appropriate exceptional concept code from the element's binding value set, if available; or
         - use the appropriate concept code from the [Data Absent Reason Code System](http://hl7.org/fhir/R4/valueset-data-absent-reason.html).
     - _required_ binding strength (CodeableConcept or code datatypes):
       - use the appropriate exceptional concept code from the element's binding value set
 
-    Example: Observation Results - Laboratory/Pathology (resources) resource where the code is not allowed to be shared (e.g. suppressed), the code element contains the data-absent-reason extension. Other required properties of Observation resource are omitted (shown by ...) in the simplified example below.
+    Example: Observation Results - Laboratory/Pathology resource where the code is not allowed to be shared (e.g. suppressed), the code element contains the data-absent-reason extension. Other required properties of Observation resource are omitted (shown by ...) in the simplified example below.
 
     ```
     {

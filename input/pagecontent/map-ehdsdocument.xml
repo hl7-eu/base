@@ -104,7 +104,7 @@
             <td>Bundle</td>
             <td>identifier</td>
             <td>Persistent identifier for the bundle</td>
-            <td>Identifier of a specifc version of this document. <code>id</code> in HL7 CDA</td>
+            <td>Identifier of a specific version of this document. <code>id</code> in HL7 CDA</td>
           </tr>
           <tr>
             <td>header.authorship</td>

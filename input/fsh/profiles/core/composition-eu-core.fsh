@@ -18,7 +18,7 @@ Description: """This profile sets minimum expectations for the Composition resou
 * extension[diagnosticReport].value[x] only Reference(DiagnosticReport)
 * identifier 1..1
 * identifier ^short = "Report identifier"
-* identifier ^definition = "Identifiers assigned to this report by the performer or other systems. Should remain stable across versions of the report."
+* identifier ^definition = "Identifiers assigned to this document by the performer or other systems. Should remain stable across versions of the report."
 * status 1..1
 * type 1..1
 * type ^short = "Type of document/report (e.g. imaging report LOINC)"

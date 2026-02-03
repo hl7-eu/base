@@ -1,6 +1,6 @@
 ### Terminologies
 
-This page lists all the terminology assets that have been specificed for the purpose of this guide
+This page lists all the terminology assets that have been specified for the purpose of this guide.
 
 ### Code Systems
 
