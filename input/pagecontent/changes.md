@@ -12,6 +12,10 @@ This page summarizes the main changes applied to this version of the guide.
 * Updated the EHDS model links to the published versions (FHIR-53124)
 * Changed dependency to the xver-r5 package for the cross-version extensions 
 * Extended logical models and maps: grouped/reorganized model map landing pages, refactored the HTML/XML layout of the mapping pages, merged tables in the HCP model with the resource column (FHIR-53197 + others).
+  * Medical Test Result observation profile (FHIR-53573)
+* Updates the EHDS models links with the published version (FHIR-53124)
+* Changed dependency to the xver-r5 package for the for the cross-versions extensions 
+* Extended logical models and map: grouped/reorganized model map landing pages, refactored HTML/XML layout of the mapping pages, merged tables in the HCP model with resource column (FHIR-53197 + others).
 * Added examples for the profiles (FHIR-53197 + others).
 * Moved the bodySite extension to Condition.bodySite and Procedure.bodySite (FHIR-53124)
 * General maintenance:
