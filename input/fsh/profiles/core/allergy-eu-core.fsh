@@ -2,8 +2,7 @@ Profile: AllergyIntoleranceEuCore
 Parent: AllergyIntolerance
 Id: allergyIntolerance-eu-core
 Title:    "Allergy Intolerance (EU core)"
-Description: """This profile sets minimum expectations for the AllergyIntolerance resource common to most of the use cases."""
-* ^purpose = "This profile constrains the AllergyIntolerance resource for the purpose of project."
+Description: """This profile introduce essential constraints and extensions for the AllergyIntolerance resource that apply across multiple use cases."""
 * insert SetFmmandStatusRule (1, draft)
 // * insert ImposeProfile($AllergyIntolerance-uv-ips, 0)
 * extension contains $allergyintolerance-abatement named abatement 0..1

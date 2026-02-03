@@ -29,8 +29,9 @@
 <artifact deprecated="true" id="ValueSet/uri-ehicPersonalId" key="ValueSet-uri-ehicPersonalId" name="EHIC Personal ID (system IDs - uri)"/>
 <artifact deprecated="true" id="Coverage/EhicExampleIt" key="Coverage-EhicExampleIt" name="EhicExampleIt"/>
 <artifact deprecated="true" id="StructureDefinition/EHIC" key="StructureDefinition-EHIC" name="European Health Insurance Card"/>
-<artifact id="StructureDefinition/flag-eu-core" key="StructureDefinition-flag-eu-core" name="Flag (EU core)"/>
-<artifact id="Flag/flag-eu-core-example" key="Flag-flag-eu-core-example" name="Flag Example"/>
+<artifact deprecated="true" id="StructureDefinition/flag-eu-core" key="StructureDefinition-flag-eu-core" name="Flag (EU core)"/>
+<artifact id="Flag/flag-patient-eu-core-example" key="Flag-flag-eu-core-example" name="Flag Example"/>
+<artifact id="StructureDefinition/flag-patient-eu-core" key="StructureDefinition-flag-patient-eu-core" name="Flag:Patient (EU core)"/>
 <artifact deprecated="true" id="CodeSystem/v3-ActCode-EU" key="CodeSystem-v3-ActCode-EU" name="HL7 V3 ActCode - EU extensions"/>
 <artifact deprecated="true" id="StructureDefinition/HumanName-eu" key="StructureDefinition-HumanName-eu" name="HumanName (Eu)"/>
 <artifact deprecated="true" id="ValueSet/iso-ehicCountryCode" key="ValueSet-iso-ehicCountryCode" name="ISO 3166 - EHIC Country Codes"/>

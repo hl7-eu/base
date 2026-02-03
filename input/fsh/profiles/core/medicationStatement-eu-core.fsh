@@ -3,8 +3,7 @@ Profile:  MedicationStatementEuCore
 Parent:   MedicationStatement
 Id:       medicationStatement-eu-core
 Title:    "MedicationStatement (EU core)"
-Description: """This profile sets minimum expectations for the MedicationStatement resource common to most of the use cases.
-This profile is adapted from the MPD work."""
+Description: """This profile introduce essential constraints and extensions for the MedicationStatement resource that apply across multiple use cases."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (1, draft)
 * identifier 

@@ -181,7 +181,7 @@
                         <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAlert.html" target="_blank">EHDSAlert</a>
                     </td>
                     <td>
-                        <a href="StructureDefinition-flag-eu-core.html"><code>FlagEuCore</code></a>
+                        <a href="StructureDefinition-flag-patient-eu-core.html"><code>FlagPatientEuCore</code></a>
                     </td>
                     <td>
                         <a class="pill" href="map-ehdsalert.html">EHDSAlert Mapping</a>

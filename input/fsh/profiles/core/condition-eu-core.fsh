@@ -2,7 +2,7 @@ Profile: ConditionEuCore
 Parent: Condition
 Id: condition-eu-core
 Title: "Condition (EU core)"
-Description: """This profile sets minimum expectations for the Condition resource common to most of the use cases."""
+Description: """This profile introduce essential constraints and extensions for the Condition resource that apply across multiple use cases."""
 // * insert ImposeProfile ( $Condition-uv-ips, 0 )  // Check if this is appropriate (see MS support)
 // follow the same apporach of lab for collection or add laterality to the bodySite ?
 * insert SetFmmandStatusRule (1, draft)

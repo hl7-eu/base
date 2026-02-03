@@ -309,7 +309,7 @@ groups:
        - StructureDefinition/composition-eu-core
        - StructureDefinition/condition-eu-core
        - StructureDefinition/diagnosticReport-eu-core
-       - StructureDefinition/flag-eu-core
+       - StructureDefinition/flag-patient-eu-core
        - StructureDefinition/immunization-eu-core
        - StructureDefinition/location-eu-core
        - StructureDefinition/medicalTestResult-eu-core

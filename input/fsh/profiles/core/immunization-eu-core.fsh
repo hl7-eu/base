@@ -3,7 +3,7 @@ Profile:  ImmunizationEuCore
 Parent:   Immunization
 Id:       immunization-eu-core
 Title:    "Immunization (EU core)"
-Description: """This profile sets minimum expectations for the Immunization resource common to most of the use cases."""
+Description: """This profile introduce essential constraints and extensions for the Immunization resource that apply across multiple use cases."""
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
 * ^purpose = "This profile constrains the Immunization resource for the purpose of this guide."

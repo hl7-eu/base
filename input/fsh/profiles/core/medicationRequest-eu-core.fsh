@@ -3,8 +3,7 @@ Profile:  MedicationRequestEuCore
 Parent:   MedicationRequest
 Id:       medicationRequest-eu-core
 Title:    "MedicationRequest (EU core)"
-Description: """This profile sets minimum expectations for the MedicationRequest resource common to most of the use cases.
-This profile is adapted from the MPD work."""
+Description: """This profile introduce essential constraints and extensions for the MedicationRequest resource that apply across multiple use cases."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (1, draft)
 * identifier 

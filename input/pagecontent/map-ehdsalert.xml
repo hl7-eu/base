@@ -28,7 +28,7 @@
     <p></p>
     <p>
   This page explains how conceptual elements from the EHDS logical model are expressed
-  in the corresponding FHIR FlagEuCore profile used by this Implementation Guide.
+  in the corresponding FHIR FlagPatientEuCore profile used by this Implementation Guide.
     </p>
     <p></p>
     <div class="table-wrap">
@@ -42,8 +42,8 @@
         </li>
         <li>
           <strong>Target FHIR profile:</strong>
-          <a href="StructureDefinition-flag-eu-core.html">
-        FlagEuCore
+          <a href="StructureDefinition-flag-patient-eu-core.html">
+        FlagPatientEuCore
           </a>
         </li>
       </ul>
