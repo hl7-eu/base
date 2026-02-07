@@ -1,12 +1,18 @@
 This page summarizes the main changes applied to this version of the guide.
 
 ### From 2.0.0-ballot to 2.0.0
+
 * FHIR-55554: removed DiagnosticReportComposition extension from the R5 profile
 * FHIR-55553: typos fixing (partial)
 * FHIR-55461: Editorial changes (many pages)
 * FHIR-53895: Fixed Location mapping page header
-* FHIR-53894 : Fixed the EHDSOrganisation page header
-
+* FHIR-53894: Fixed the EHDSOrganisation page header
+* FHIR-55522: Relax constraint in DiagnosticReportEuCore to align with IPS
+* FHIR-55387: FlagEuCore renamed FlagPatientEuCore
+* FHIR-55548: Removed the procedure-targetBodyStructure extension
+* FHIR-55533: Update descriptions in core profiles
+* FHIR-53896, FHIR-55503 : removed constraint on subject.reference
+* FHIR-53897 : removed constraint on patient.reference
 
 ### From 0.1.0 to 2.0.0-ballot
 

@@ -34,7 +34,6 @@ Description: """This profile introduce essential constraints and extensions for 
   * ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
   * ^binding.description = "Type of the substance/product, allergy or intolerance condition or a code for absent/unknown allergy."
 * criticality ^short = "Criticality"
-* patient.reference 1..
 * patient only Reference(PatientEuCore)
 * onsetDateTime ^short = "Onset date"
 * reaction.substance from $eHDSIAllergenNoDrug (example)
