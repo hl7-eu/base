@@ -94,16 +94,8 @@
             <td>External identifier(s) for this Immunization event.</td>
             <td>Copy over all identifiers if multiple.</td>
           </tr>
-          <tr class="highlight-yellow">
-            <td>header.authorship</td>
-            <td>Resource authoring details.</td>
-            <td>no-map</td>
-            <td>Immunization</td><td></td>
-            <td></td>
-            <td>there is a performer and a source of information not the author...</td>
-          </tr>
-          <tr class="highlight-yellow">
-            <td>header.authorship.author[x]</td>
+<tr class="highlight-yellow">
+            <td>header.author[x]</td>
             <td>Who authored/recorded this immunisation.</td>
             <td>no-map</td>
             <td>Immunization</td>
@@ -112,7 +104,7 @@
             <td></td>
           </tr>
             <tr class="highlight-yellow">
-     <td>header.authorship.datetime</td>
+     <td>header.date</td>
       <td>Date/time the record was issued/recorded.</td>
   <td>no-map</td>
   <td>Immunization</td>
@@ -120,15 +112,7 @@
   <td></td>
   <td></td>
           </tr>
-           <tr>
-            <td>header.lastUpdate</td>
-            <td>Last technical correction/update.</td>
-            <td>related-to</td>
-            <td>Immunization</td><td>meta.lastUpdated</td>
-            <td>When the resource version last changed.</td>
-            <td class="highlight-yellow">The map applies only if it represents the technical update timestamp (Instant).</td>
-          </tr>
-          <tr>
+<tr>
             <td>header.status</td>
             <td>Indicates the current status of the immunisation event.</td>
             <td>equivalent</td>
@@ -136,35 +120,16 @@
             <td>Indicates if the vaccination was given (completed, not-done).</td>
             <td>Use <code>statusReason</code> in FHIR for "not done" reason when applicable.</td>
           </tr>
-          <tr>
-            <td class = "highlight-yellow">header.statusReason[x]</td>
-            <td>Reason for the current status of the resource.</td>
-            <td>source-is-broader-than-target</td>
+          <tr class="highlight-yellow">
+            <td>header.source</td>
+            <td>Source of the information (e.g. patient, proxy).</td>
+            <td>no map</td>
             <td>Immunization</td>
-            <td>statusReason</td>
             <td></td>
-            <td>The reason why a vaccine was not administered.</td>
-          </tr>
-          <tr>
-            <td class = "highlight-yellow">header.statusReason[x]</td>
-            <td>Reason for the current status of the resource.</td>
-            <td>source-is-broader-than-target</td>
-            <td>Immunization</td>
-            <td>reasonCode<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td></td>
-            <td>The reason why a vaccine was administered.</td>
+            <td>No direct native Immunization element; consider extension if needed.</td>
           </tr>
-          <tr>
-            <td class = "highlight-yellow">header.statusReason[x]</td>
-            <td>Reason for the current status of the resource.</td>
-            <td>source-is-broader-than-target</td>
-            <td>Immunization</td>
-            <td>reason.concept<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
-            </td>
-            <td></td>
-            <td>The reason why a vaccine was administered.</td>
-          </tr>
-          <tr>
+<tr>
             <td>header.language</td>
             <td>Language of the resource (IETF tag).</td>
             <td>equivalent</td>
@@ -174,7 +139,7 @@
           </tr>
           <!-- IMMUNISATION-SPECIFIC ELEMENTS -->
           <tr>
-            <td>dateTimeOfVaccination</td>
+            <td>administrationTime</td>
             <td>Date/time administered.</td>
             <td>equivalent</td>
             <td>Immunization</td><td>occurrence[x]</td>
@@ -213,25 +178,8 @@
             <td>Disease that the vaccination targets.</td>
             <td></td>
           </tr>
-          <tr>
-            <td>doseNumber</td>
-            <td>Dose number within the series.</td>
-            <td>equivalent</td>
-            <td>Immunization</td><td>protocolApplied.doseNumber[x] <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Dose number within the series.</td>
-            <td>Integer in the model, Only string in R5; CodeableConcept in R6</td>
-          </tr>
-          <tr>
-            <td>doseNumber</td>
-            <td>Dose number within the series.</td>
-            <td>equivalent</td>
-            <td>Immunization</td>
-            <td>protocolApplied.doseNumber <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Dose number within the series.</td>
-            <td>Integer in the model, Only string in R5; CodeableConcept in R6</td>
-          </tr>
-          <tr>
-            <td>vaccineAdministrator</td>
+<tr>
+            <td>administrator</td>
             <td>Who administered the vaccine.</td>
             <td>equivalent</td>
             <td>Immunization</td><td>performer:administeringCentreOrHp.actor</td>
@@ -247,15 +195,14 @@
             <td>actor of type PractitionerRole or Practitioner.</td>
           </tr>
           <tr class="highlight-yellow">
-            <td>nextVaccinationDate</td>
-            <td>Next scheduled vaccination date.</td>
-            <td>source-is-narrower-than-target</td>
-            <td>ImmunizationRecommendation</td>
-            <td>recommendation.dateCriterion.value</td>
-            <td>The date whose meaning is specified by dateCriterion.code.</td>
-            <td>No direct element in Immunization; use ImmunizationRecommendation for scheduling.</td>
+            <td>note</td>
+            <td>Additional information about immunization.</td>
+            <td>source-is-broader-than-target</td>
+            <td>Immunization</td><td>note.text</td>
+            <td>Additional notes or comments.</td>
+            <td>Map EHDS note to one or more Immunization notes where needed.</td>
           </tr>
-        </tbody>
+</tbody>
       </table>
     </div>
     <p style="margin-top:2rem;color:#555;">

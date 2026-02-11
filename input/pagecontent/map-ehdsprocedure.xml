@@ -96,15 +96,7 @@
             <td>Copy all identifiers if multiple exist.</td>
           </tr>
           <tr>
-            <td>header.authorship</td>
-            <td>Resource authoring / provenance details.</td>
-            <td>related-to</td>
-            <td>Procedure</td><td>recorder</td>
-            <td>Who recorded the procedure.</td>
-            <td class="highlight-yellow">Procedure has <code>recorder</code> and <code>asserter</code>, not a generic "author".1.. in the model 0.. in the profile</td>
-          </tr>
-          <tr>
-            <td>header.authorship.author[x]</td>
+            <td>header.author[x]</td>
             <td>Who created/issued the record.</td>
             <td>equivalent</td>
             <td>Procedure</td><td>recorder</td>
@@ -112,7 +104,7 @@
             <td class="highlight-yellow">1.. in the model 0.. in the profile</td>
           </tr>
           <tr>
-            <td>header.authorship.datetime</td>
+            <td>header.date</td>
             <td>Date/time the resource was issued.</td>
             <td>equivalent</td>
             <td>Procedure</td><td>extension:recorded <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
@@ -120,7 +112,7 @@
             <td class="highlight-yellow">FHIR R5 Procedure supports <code>recorded</code>; pre-adopted this element in R4.1.. in the model 0.. in the profile.</td>
           </tr>
        <tr>
-          <td>header.authorship.datetime</td>
+          <td>header.date</td>
           <td>Date/time the resource was issued.</td>
           <td>equivalent</td>
           <td>Procedure</td>
@@ -128,14 +120,6 @@
           <td>Date when the procedure was recorded</td>
           <td class="highlight-yellow">FHIR R5 Procedure supports <code>recorded</code>; pre-adopted this element in R4.1.. in the model 0.. in the profileTO BE CHECKED</td>
         </tr>   
-          <tr>
-            <td>header.lastUpdate</td>
-            <td>Last technical correction/update.</td>
-            <td>source-is-broader-than-target</td>
-            <td>Procedure</td><td>meta.lastUpdated</td>
-            <td>Last system update timestamp.</td>
-            <td class="highlight-yellow">Waiting for Xt-EHR feedback</td>
-          </tr>
           <tr class="highlight-yellow">
             <td>header.status</td>
             <td>Technical/administrative dataset status.</td>
@@ -145,12 +129,12 @@
             <td>Waiting for Xt-EHR feedback</td>
           </tr>
           <tr class="highlight-yellow">
-            <td>header.statusReason[x]</td>
-            <td>Reason for current dataset status.</td>
+            <td>header.source</td>
+            <td>Source of the information (e.g. patient, proxy).</td>
             <td>no map</td>
             <td>Procedure</td><td>-</td>
             <td>-</td>
-            <td>Waiting for Xt-EHR feedback</td>
+            <td>No direct native Procedure element; consider extension if needed.</td>
           </tr>
           <tr>
             <td>header.language</td>
@@ -169,18 +153,18 @@
             <td>Procedure code.</td>
             <td></td>
           </tr>
-          <!-- date[x] -->
+          <!-- procedureDate[x] -->
           <tr>
-            <td>date[x]</td>
+            <td>procedureDate[x]</td>
             <td>Date and time of the procedure or interval of its performance.</td>
             <td>equivalent</td>
             <td>Procedure</td><td>performed[x]<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>When the procedure was performed.</td>
             <td>Use <code>performedDateTime</code> or <code>performedPeriod</code> according to actual data type. <code>performed[x]</code> used in R4, <code>occurrence[x]</code> used in R5</td>
           </tr>
-          <!-- date[x] -->
+          <!-- procedureDate[x] -->
           <tr>
-            <td>date[x]</td>
+            <td>procedureDate[x]</td>
             <td>Date and time of the procedure or interval of its performance.</td>
             <td>equivalent</td>
             <td>Procedure</td><td>occurrence[x]<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>

@@ -69,7 +69,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>personalIdentifier</td>
+            <td>identifier</td>
             <td>An identifier of the patient that is unique within a defined scope.</td>
             <td>equivalent</td>
             <td>Patient</td><td>identifier</td>
@@ -114,22 +114,6 @@
             <td>equivalent</td>
             <td>Patient</td><td>telecom</td>
             <td>A contact detail for the patient.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>maritalStatus</td>
-            <td>Marital (civil) status of a patient.</td>
-            <td>equivalent</td>
-            <td>Patient</td><td>maritalStatus</td>
-            <td>Marital (civil) status of a patient.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>communicationLanguage</td>
-            <td>Language that can be used to communicate with the patient about their health.</td>
-            <td>equivalent</td>
-            <td>Patient</td><td>communication.language</td>
-            <td>Communication language.</td>
             <td></td>
           </tr>
         </tbody>

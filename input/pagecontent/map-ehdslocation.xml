@@ -96,23 +96,6 @@
             <td></td>
           </tr>
           <tr>
-            <td>telecom</td>
-            <td>Contact channels for the location (phone, fax, email, etc.).</td>
-            <td>equivalent</td>
-            <td>Location</td><td>telecom<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Location telecom / official contact details.</td>
-            <td>In R4 this is usually telecom; in R5, contact info may live under contact.telecom.</td>
-          </tr>
-          <tr>
-            <td>telecom</td>
-            <td>Contact channels for the location (phone, fax, email, etc.).</td>
-            <td>equivalent</td>
-            <td>Location</td><td>contact.telecom<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
-            </td>
-            <td>Location telecom / official contact details.</td>
-            <td>In R4 this is usually telecom; in R5, contact info may live under contact.telecom.</td>
-          </tr>
-          <tr>
             <td>type</td>
             <td>Type/category of the location (e.g. ward, lab, pharmacy counter).</td>
             <td>equivalent</td>

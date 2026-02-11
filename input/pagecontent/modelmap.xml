@@ -47,7 +47,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAddress.html" target="_blank">EHDSAddress</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSAddress.html" target="_blank">EHDSAddress</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-Address-eu.html"><code>AddressEu</code></a>
@@ -58,7 +58,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSHumanName.html" target="_blank">EHDSHumanName</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSHumanName.html" target="_blank">EHDSHumanName</a>
                     </td>
                     <td>
                         <a href="https://hl7.org/fhir/datatypes.html#HumanName"><code>HumanName</code></a>
@@ -69,7 +69,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSTelecom.html" target="_blank">EHDSTelecom</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSTelecom.html" target="_blank">EHDSTelecom</a>
                     </td>
                     <td>
                         <a href="https://hl7.org/fhir/datatypes.html#ContactPoint"><code>ContactPoint</code></a>
@@ -80,7 +80,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSBodyStructure.html" target="_blank">EHDSBodyStructure</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSBodyStructure.html" target="_blank">EHDSBodyStructure</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-bodyStructure-eu-core.html"><code>BodyStructureEuCore</code></a>
@@ -107,7 +107,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSPatient.html" target="_blank">EHDSPatient</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSPatient.html" target="_blank">EHDSPatient</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-patient-eu-core.html"><code>PatientEuCore</code></a>
@@ -118,18 +118,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSPatientAnimal.html" target="_blank">EHDSPatientAnimal</a>
-                    </td>
-                    <td>
-                        <a href="StructureDefinition-patient-animal-eu-core.html"><code>PatientAnimalEuCore</code></a>
-                    </td>
-                    <td>
-                        <a class="pill" href="map-ehdspatientanimal.html">EHDSPatientAnimal Mapping</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSHealthProfessional.html" target="_blank">EHDSHealthProfessional</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSHealthProfessional.html" target="_blank">EHDSHealthProfessional</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-practitionerRole-eu-core.html"><code>PractitionerRoleEuCore</code></a>,                        <a href="StructureDefinition-practitioner-eu-core.html"><code>PractitionerEuCore</code></a>
@@ -140,7 +129,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSOrganisation.html" target="_blank">EHDSOrganisation</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSOrganisation.html" target="_blank">EHDSOrganisation</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-organization-eu-core.html"><code>OrganizationEuCore</code></a>
@@ -151,7 +140,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSLocation.html" target="_blank">EHDSLocation</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSLocation.html" target="_blank">EHDSLocation</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-location-eu-core.html"><code>LocationEuCore</code></a>
@@ -178,7 +167,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAlert.html" target="_blank">EHDSAlert</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSAlert.html" target="_blank">EHDSAlert</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-flag-patient-eu-core.html"><code>FlagPatientEuCore</code></a>
@@ -189,7 +178,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSAllergyIntolerance.html" target="_blank">EHDSAllergyIntolerance</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSAllergyIntolerance.html" target="_blank">EHDSAllergyIntolerance</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-allergyIntolerance-eu-core.html"><code>AllergyIntoleranceEuCore</code></a>
@@ -200,7 +189,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSCondition.html" target="_blank">EHDSCondition</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSCondition.html" target="_blank">EHDSCondition</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-condition-eu-core.html"><code>ConditionEuCore</code></a>
@@ -211,7 +200,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSObservation.html" target="_blank">EHDSObservation</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSObservation.html" target="_blank">EHDSObservation</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-medicalTestResult-eu-core.html"><code>MedicalTestResultEuCore</code></a>
@@ -222,7 +211,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSProcedure.html" target="_blank">EHDSProcedure</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSProcedure.html" target="_blank">EHDSProcedure</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-procedure-eu-core.html"><code>ProcedureEuCore</code></a>
@@ -233,7 +222,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSImmunisation.html" target="_blank">EHDSImmunisation</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSImmunisation.html" target="_blank">EHDSImmunisation</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-immunization-eu-core.html"><code>ImmunizationEuCore</code></a>
@@ -260,7 +249,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSDocument.html" target="_blank">EHDSDocument</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSDocument.html" target="_blank">EHDSDocument</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-composition-eu-core.html"><code>CompositionEuCore</code></a>
@@ -271,7 +260,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSDocument.html" target="_blank">EHDSDocument</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSDocument.html" target="_blank">EHDSDocument</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-diagnosticReport-eu-core.html">
@@ -300,7 +289,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedication.html" target="_blank">EHDSMedication</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSMedication.html" target="_blank">EHDSMedication</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-medication-eu-core.html"><code>MedicationEuCore</code></a>
@@ -311,18 +300,18 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedicationStatement.html" target="_blank">EHDSMedicationStatement</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSMedicationUse.html" target="_blank">EHDSMedicationUse</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-medicationStatement-eu-core.html"><code>MedicationStatementEuCore</code></a>
                     </td>
                     <td>
-                        <a class="pill" href="map-ehdsmedicationstatement.html">EHDSMedicationStatement Mapping</a>
+                        <a class="pill" href="map-ehdsmedicationstatement.html">EHDSMedicationUse Mapping</a>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedicationPrescription.html" target="_blank">EHDSMedicationPrescription</a>
+                        <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSMedicationPrescription.html" target="_blank">EHDSMedicationPrescription</a>
                     </td>
                     <td>
                         <a href="StructureDefinition-medicationRequest-eu-core.html"><code>MedicationRequestEuCore</code></a>

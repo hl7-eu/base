@@ -100,18 +100,8 @@
             <td>Business identifier for this observation.</td>
             <td>Copy over all identifiers if multiple.</td>
           </tr>
-          <tr class="highlight-yellow">
-            <td>header.authorship</td>
-            <td>Resource authoring details.</td>
-            <td>no-map</td>
-            <td>Observation</td>
-            <td></td>
-            <td>.</td>
-            <td>Observation lacks a dedicated recorder. Only when the observation result was issued
-              can be represented.</td>
-          </tr>
-          <tr class="highlight-yellow">
-            <td>header.authorship.author[x]</td>
+<tr class="highlight-yellow">
+            <td>header.author[x]</td>
             <td>Author(s) who issued the resource.</td>
             <td>no-map</td>
             <td>Observation</td>
@@ -120,7 +110,7 @@
             <td>Observation lacks a dedicated recorder.</td>
           </tr>
           <tr>
-            <td>header.authorship.datetime</td>
+            <td>header.date</td>
             <td>Date and time of authoring/issuing.</td>
             <td>equivalent</td>
             <td>Observation</td>
@@ -128,17 +118,7 @@
             <td>When the observation result was issued.</td>
             <td class="highlight-yellow">1.. in the model 0.. in the profile.</td>
           </tr>
-          <tr>
-            <td>header.lastUpdate</td>
-            <td>Last technical correction/update.</td>
-            <td>source-is-broader-than-target</td>
-            <td>Observation</td>
-            <td>meta.lastUpdated</td>
-            <td>When the resource version last changed.</td>
-            <td class="highlight-yellow">Use only when the timestamp reflects resource update
-              (instant).</td>
-          </tr>
-          <tr>
+<tr>
             <td>header.status</td>
             <td>Status of the resource.</td>
             <td>equivalent</td>
@@ -149,13 +129,13 @@
               ObservationStatus.</td>
           </tr>
           <tr class="highlight-yellow">
-            <td>header.statusReason[x]</td>
-            <td>Reason for the current status.</td>
+            <td>header.source</td>
+            <td>Source of the information (e.g. patient, proxy).</td>
             <td>no-map</td>
             <td>Observation</td>
             <td>-</td>
             <td></td>
-            <td>No core element; use an extension if the status rationale is required.</td>
+            <td>No core element; use an extension if the source is required.</td>
           </tr>
           <tr>
             <td>header.language</td>
@@ -167,7 +147,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>directSubject[x]</td>
+            <td>header.directSubject[x]</td>
             <td>The direct subject of the observation if different from the patient.</td>
             <td>equivalent</td>
             <td>Observation</td>
@@ -187,8 +167,8 @@
               effectiveDateTime</code> or <code>effectivePeriod</code>.</td>
           </tr>
           <tr>
-            <td>code</td>
-            <td>Observation code.</td>
+            <td>type</td>
+            <td>Observation type.</td>
             <td>equivalent</td>
             <td>Observation</td>
             <td>code</td>
@@ -214,6 +194,15 @@
             <td></td>
           </tr>
           <tr>
+            <td>specimen</td>
+            <td>Specimen used for the observation.</td>
+            <td>equivalent</td>
+            <td>Observation</td>
+            <td>specimen</td>
+            <td>Specimen used for this observation.</td>
+            <td></td>
+          </tr>
+          <tr>
             <td>order</td>
             <td>Order this observation belongs to.</td>
             <td>equivalent</td>
@@ -232,7 +221,7 @@
             <td>Supports Practitioner, PractitionerRole, Patient, RelatedPerson.</td>
           </tr>
           <tr>
-            <td>anatomicLocation</td>
+            <td>bodySite</td>
             <td>Anatomic location and laterality.</td>
             <td>source-is-broader-than-target</td>
             <td>Observation</td>
@@ -241,7 +230,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>anatomicLocation</td>
+            <td>bodySite</td>
             <td>Anatomic location and laterality.</td>
             <td>source-is-broader-than-target</td>
             <td>Observation</td>
@@ -250,7 +239,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>anatomicLocation</td>
+            <td>bodySite</td>
             <td>Anatomic location and laterality.</td>
             <td>equivalent</td>
             <td>Observation</td>
@@ -288,12 +277,19 @@
             <td>http://hl7.org/fhir/StructureDefinition/iso21090-uncertainty extension for the
               Quantity data type.</td>
           </tr>
+          <tr class="highlight-yellow">
+            <td>result.uncertainty.type</td>
+            <td>Type of measurement uncertainty.</td>
+            <td>no-map</td>
+            <td>Observation</td><td></td><td></td>
+            <td>No direct core element; represented via uncertainty extension semantics.</td>
+          </tr>
           <tr>
-            <td>dataAbsentReason</td>
+            <td>result.dataAbsentReason</td>
             <td>Why the expected value is missing.</td>
             <td>equivalent</td>
             <td>Observation</td>
-            <td>dataAbsentReason</td>
+            <td>result.dataAbsentReason</td>
             <td>Reason for missing result.</td>
             <td></td>
           </tr>
@@ -306,6 +302,7 @@
             <td>Guidance for interpretation.</td>
             <td></td>
           </tr>
+          <tr class="highlight-yellow"><td>referenceRange.low</td><td>Lower bound of reference range.</td><td>equivalent</td><td>Observation</td><td>referenceRange.low</td><td>Low bound of reference range.</td><td></td></tr>
           <tr>
             <td>interpretation</td>
             <td>Reference interval and result interpretation.</td>
@@ -316,7 +313,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>resultDescription</td>
+            <td>note</td>
             <td>Comments and narrative representation.</td>
             <td>source-is-broader-than-target</td>
             <td>Observation</td>
@@ -343,6 +340,7 @@
             <td>What is being observed.</td>
             <td></td>
           </tr>
+          <tr class="highlight-yellow"><td>component.originalName</td><td>Original name of the component observation.</td><td>equivalent</td><td>Observation</td><td>component.code.text</td><td>Text representation of the component code.</td><td></td></tr>
           <tr>
             <td>component.result</td>
             <td>Result of the sub-observation.</td>
@@ -371,12 +369,13 @@
             <td>http://hl7.org/fhir/StructureDefinition/iso21090-uncertainty extension for the
               Quantity data type.</td>
           </tr>
+          <tr class="highlight-yellow"><td>component.result.uncertainty.type</td><td>Type of component uncertainty.</td><td>no-map</td><td>Observation</td><td></td><td></td><td>No direct core element; represented via uncertainty extension semantics.</td></tr>
           <tr>
-            <td>component.dataAbsentReason</td>
+            <td>component.result.dataAbsentReason</td>
             <td>Why the component value is missing.</td>
             <td>equivalent</td>
             <td>Observation</td>
-            <td>component.dataAbsentReason</td>
+            <td>component.result.dataAbsentReason</td>
             <td>Reason for missing component result.</td>
             <td></td>
           </tr>
@@ -389,6 +388,7 @@
             <td>Guidance for interpreting the component value.</td>
             <td></td>
           </tr>
+          <tr class="highlight-yellow"><td>component.referenceRange.low</td><td>Lower bound of component reference range.</td><td>equivalent</td><td>Observation</td><td>component.referenceRange.low</td><td>Low bound for component range.</td><td></td></tr>
           <tr>
             <td>component.interpretation</td>
             <td>Component interpretation.</td>
@@ -397,6 +397,132 @@
             <td>component.interpretation</td>
             <td>Interpretation of the component.</td>
             <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>result.uncertainty.value</td>
+            <td>Value/interval of uncertainty.</td>
+            <td>no-map</td>
+            <td>Observation</td>
+            <td></td>
+            <td></td>
+            <td>No direct core element; represented via uncertainty extension semantics.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>referenceRange.type</td>
+            <td>Type of reference range.</td>
+            <td>equivalent</td>
+            <td>Observation</td>
+            <td>referenceRange.type</td>
+            <td>Type of reference range.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>referenceRange.appliesTo</td>
+            <td>Population/context for this reference range.</td>
+            <td>equivalent</td>
+            <td>Observation</td>
+            <td>referenceRange.appliesTo</td>
+            <td>Applicable population/context.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>referenceRange.age</td>
+            <td>Applicable age range.</td>
+            <td>equivalent</td>
+            <td>Observation</td>
+            <td>referenceRange.age</td>
+            <td>Applicable age range.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>referenceRange.text</td>
+            <td>Textual representation of reference range.</td>
+            <td>equivalent</td>
+            <td>Observation</td>
+            <td>referenceRange.text</td>
+            <td>Text description of range.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>referenceRange.high</td>
+            <td>Upper bound of reference range.</td>
+            <td>equivalent</td>
+            <td>Observation</td>
+            <td>referenceRange.high</td>
+            <td>High bound of reference range.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>referenceRange.normalValue</td>
+            <td>Normal value representation.</td>
+            <td>no-map</td>
+            <td>Observation</td>
+            <td></td>
+            <td></td>
+            <td>No direct core equivalent; may require extension.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>component.result.uncertainty.value</td>
+            <td>Value/interval of component uncertainty.</td>
+            <td>no-map</td>
+            <td>Observation</td>
+            <td></td>
+            <td></td>
+            <td>No direct core element; represented via uncertainty extension semantics.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>component.referenceRange.type</td>
+            <td>Type of component reference range.</td>
+            <td>equivalent</td>
+            <td>Observation</td>
+            <td>component.referenceRange.type</td>
+            <td>Type of component reference range.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>component.referenceRange.appliesTo</td>
+            <td>Population/context for component reference range.</td>
+            <td>equivalent</td>
+            <td>Observation</td>
+            <td>component.referenceRange.appliesTo</td>
+            <td>Applicable population/context.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>component.referenceRange.age</td>
+            <td>Applicable age range for component reference range.</td>
+            <td>equivalent</td>
+            <td>Observation</td>
+            <td>component.referenceRange.age</td>
+            <td>Applicable age range.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>component.referenceRange.text</td>
+            <td>Textual representation of component reference range.</td>
+            <td>equivalent</td>
+            <td>Observation</td>
+            <td>component.referenceRange.text</td>
+            <td>Text description for component range.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>component.referenceRange.high</td>
+            <td>Upper bound of component reference range.</td>
+            <td>equivalent</td>
+            <td>Observation</td>
+            <td>component.referenceRange.high</td>
+            <td>High bound for component range.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>component.referenceRange.normalValue</td>
+            <td>Normal value representation for component.</td>
+            <td>no-map</td>
+            <td>Observation</td>
+            <td></td>
+            <td></td>
+            <td>No direct core equivalent; may require extension.</td>
           </tr>
           <!-- relationships -->
           <tr>
@@ -408,25 +534,7 @@
             <td>What the observation is based on.</td>
             <td>Supports references to Observation, ImagingStudy, DiagnosticReport, etc.</td>
           </tr>
-          <tr>
-            <td>triggeredBy[x]</td>
-            <td>Observations that triggered this observation.</td>
-            <td>equivalent</td>
-            <td>Observation</td>
-            <td>extension[triggeredBy]<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>What initiated this observation.</td>
-            <td>Standard in R5; use the R5 element or the pre-adopted extension in R4.</td>
-          </tr>
-          <tr>
-            <td>triggeredBy[x]</td>
-            <td>Observations that triggered this observation.</td>
-            <td>equivalent</td>
-            <td>Observation</td>
-            <td>triggeredBy<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>What initiated this observation.</td>
-            <td>Standard in R5; use the R5 element or the pre-adopted extension in R4.</td>
-          </tr>
-          <tr>
+<tr>
             <td>hasMember[x]</td>
             <td>Group observation that includes the target as a member.</td>
             <td>equivalent</td>

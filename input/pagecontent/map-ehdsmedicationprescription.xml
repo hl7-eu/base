@@ -97,16 +97,7 @@
             <td></td>
           </tr>
           <tr class="highlight-yellow">
-            <td>header.authorship</td>
-            <td>Details about the prescriber (author).</td>
-            <td>related-to</td>
-            <td>MedicationRequest</td>
-            <td>requester</td>
-            <td>Who is requesting/prescribing the medication.</td>
-            <td>FHIR separates requester, recorder, and authoredOn; see child elements for specifics.</td>
-          </tr>
-          <tr class="highlight-yellow">
-            <td>header.authorship.author[x]</td>
+            <td>header.author[x]</td>
             <td>The prescriber who made the prescription.</td>
             <td>equivalent</td>
             <td>MedicationRequest</td>
@@ -115,22 +106,13 @@
             <td>Reference to Practitioner / PractitionerRole / Organization depending on profile rules.</td>
           </tr>
           <tr class="highlight-yellow">
-            <td>header.authorship.datetime</td>
+            <td>header.date</td>
             <td>Time of issuing/signing the prescription.</td>
             <td>equivalent</td>
             <td>MedicationRequest</td>
             <td>authoredOn</td>
             <td>When the request was authored.</td>
             <td></td>
-          </tr>
-          <tr>
-            <td>header.lastUpdate</td>
-            <td>Last technical correction/update timestamp.</td>
-            <td>equivalent</td>
-            <td>MedicationRequest</td>
-            <td>meta.lastUpdated</td>
-            <td>System-level modification time.</td>
-            <td>Populate only if this represents the technical update instant.</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.status</td>
@@ -159,42 +141,6 @@
             <td>Language of the narrative.</td>
             <td></td>
           </tr>
-          <tr>
-            <td>header.recorder</td>
-            <td>Recorder of the prescription/draft.</td>
-            <td>equivalent</td>
-            <td>MedicationRequest</td>
-            <td>recorder</td>
-            <td>Who recorded the request in the system.</td>
-            <td></td>
-          </tr>
-          <tr class="highlight-yellow">
-            <td>header.recordingDate</td>
-            <td>Time of authoring the prescription/draft in the system.</td>
-            <td>related-to</td>
-            <td>MedicationRequest</td>
-            <td>eventhistory.recorded</td>
-            <td>Date recorded in the system.</td>
-            <td>what is the difference with authorship.datetime?  autoredOn ? </td>
-          </tr>
-          <tr>
-            <td>header.validFrom</td>
-            <td>Effective date of the prescription.</td>
-            <td>equivalent</td>
-            <td>MedicationRequest</td>
-            <td>dispenseRequest.validityPeriod.start</td>
-            <td>Start of dispensing validity.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>header.validUntil</td>
-            <td>Validity period end date.</td>
-            <td>equivalent</td>
-            <td>MedicationRequest</td>
-            <td>dispenseRequest.validityPeriod.end</td>
-            <td>End of dispensing validity.</td>
-            <td></td>
-          </tr>
           <tr class="highlight-yellow">
             <td>presentedForm</td>
             <td>Entire prescription as issued (PDF, etc.).</td>
@@ -203,15 +149,6 @@
             <td></td>
             <td></td>
             <td>Reference a DocumentReference containing the rendered prescription.</td>
-          </tr>
-          <tr>
-            <td>comment</td>
-            <td>Additional information or comments.</td>
-            <td>equivalent</td>
-            <td>MedicationRequest</td>
-            <td>note</td>
-            <td>Textual comments.</td>
-            <td></td>
           </tr>
           <!-- PRESCRIPTION ITEM -->
           <tr>
@@ -233,15 +170,6 @@
             <td></td>
           </tr>
           <tr>
-            <td>prescriptionItem.category</td>
-            <td>Category or categories of the prescription.</td>
-            <td>equivalent</td>
-            <td>MedicationRequest</td>
-            <td>category</td>
-            <td>Type of prescription.</td>
-            <td>Use appropriate value set (reimbursement type, etc.).</td>
-          </tr>
-          <tr>
             <td>prescriptionItem.medication</td>
             <td>Prescribed product (branded, generic, etc.).</td>
             <td>equivalent</td>
@@ -261,7 +189,7 @@
             <td class="highlight-yellow">EHDS model constrains to a reference to EHDSMedication.</td>
           </tr>
           <tr>
-            <td>prescriptionItem.indicationCodeableConcept</td>
+            <td>prescriptionItem.indication[x]</td>
             <td>Coded reason for the prescription.</td>
             <td>equivalent</td>
             <td>MedicationRequest</td>
@@ -270,7 +198,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>prescriptionItem.indicationCodeableConcept</td>
+            <td>prescriptionItem.indication[x]</td>
             <td>Coded reason for the prescription.</td>
             <td>equivalent</td>
             <td>MedicationRequest</td>
@@ -279,7 +207,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>prescriptionItem.indicationEHDSCondition</td>
+            <td>prescriptionItem.indication[x]</td>
             <td>Diagnosis/reason referenced as a Condition.</td>
             <td>equivalent</td>
             <td>MedicationRequest</td>
@@ -288,7 +216,7 @@
             <td>Reference to Condition or other resource.</td>
           </tr>
           <tr>
-            <td>prescriptionItem.indicationEHDSCondition</td>
+            <td>prescriptionItem.indication[x]</td>
             <td>Diagnosis/reason referenced as a Condition.</td>
             <td>equivalent</td>
             <td>MedicationRequest</td>
@@ -297,7 +225,7 @@
             <td>Reference to Condition or other resource.</td>
           </tr>
           <tr class="highlight-yellow">
-            <td>prescriptionItem.indicationText</td>
+            <td>prescriptionItem.indication[x]</td>
             <td>Free-text reason for the prescription.</td>
             <td>related-to</td>
             <td>MedicationRequest</td>
@@ -350,26 +278,8 @@
             <td>Dosage instructions for administration.</td>
             <td>Map each EHDSDosaging entry to a <code>dosageInstruction</code>.</td>
           </tr>
-          <tr class="highlight-yellow">
-            <td>prescriptionItem.preparationInstructions</td>
-            <td>Additional instructions about preparation or dispense.</td>
-            <td>related-to</td>
-            <td>MedicationRequest</td>
-            <td>dispenseRequest.extension:dispenserInstruction<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Additional information for the dispenser</td>
-            <td>FHIR R4 has no dedicated field; preadopt the R5 element or capture as note</td>
-          </tr>
-          <tr class="highlight-yellow">
-            <td>prescriptionItem.preparationInstructions</td>
-            <td>Additional instructions about preparation or dispense.</td>
-            <td>related-to</td>
-            <td>MedicationRequest</td>
-            <td>dispenseRequest.dispenserInstruction<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Additional information for the dispenser</td>
-            <td></td>
-          </tr>
           <tr>
-            <td>prescriptionItem.substitution.allowedBoolean</td>
+            <td>prescriptionItem.substitution.allowed[x]</td>
             <td>Whether substitution is allowed.</td>
             <td>equivalent</td>
             <td>MedicationRequest</td>
@@ -378,7 +288,7 @@
             <td></td>
           </tr>
           <tr class="highlight-yellow">
-            <td>prescriptionItem.substitution.allowedCodeableConcept</td>
+            <td>prescriptionItem.substitution.allowed[x]</td>
             <td>How/what substitution is allowed.</td>
             <td>source-is-broader-than-target</td>
             <td>MedicationRequest</td>
@@ -414,7 +324,7 @@
             <td>As above, textual-only reasons may require notes.</td>
           </tr>
           <tr>
-            <td>prescriptionItem.repeatsAllowed</td>
+            <td>prescriptionItem.numberOfRepeats</td>
             <td>Number of refills authorized.</td>
             <td>equivalent</td>
             <td>MedicationRequest</td>
@@ -450,7 +360,7 @@
             <td>Same extension as above; allow CodeableConcept or string.</td>
           </tr>
           <tr>
-            <td>prescriptionItem.comment</td>
+            <td>prescriptionItem.note</td>
             <td>Additional information or comments (line-level).</td>
             <td>equivalent</td>
             <td>MedicationRequest</td>
@@ -458,7 +368,38 @@
             <td>Line-level comments.</td>
             <td>Use <code>note.author</code> / <code>note.time</code> if available.</td>
           </tr>
-        </tbody>
+          <tr class="highlight-yellow">
+            <td>header.source</td>
+            <td>Source of the information (e.g. patient, proxy).</td>
+            <td>no-map</td>
+            <td>MedicationRequest</td><td></td><td></td>
+            <td>EHDS 0.3.0 keeps this path with max=0; keep unmapped for alignment tracking.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>prescriptionItem.validityPeriod</td>
+            <td>Period over which the prescription item is valid and dispensable.</td>
+            <td>equivalent</td>
+            <td>MedicationRequest</td><td>dispenseRequest.validityPeriod</td>
+            <td>Period of dispensing validity.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>prescriptionItem.substitution</td>
+            <td>Container for substitution rules.</td>
+            <td>related-to</td>
+            <td>MedicationRequest</td><td>substitution</td>
+            <td>Substitution settings container.</td>
+            <td>Container row; details mapped in child rows.</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>prescriptionItem.offLabel</td>
+            <td>Container indicating off-label usage context.</td>
+            <td>related-to</td>
+            <td>MedicationRequest</td><td>extension:offLabelUse</td>
+            <td>Off-label use marker and associated details.</td>
+            <td>Container row; child elements map to sub-extensions.</td>
+          </tr>
+</tbody>
       </table>
     </div>
     <p style="margin-top:2rem;color:#555;">

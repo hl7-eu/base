@@ -95,54 +95,36 @@
             <td>Copy over all identifiers if multiple.</td>
           </tr>
           <tr>
-            <td>header.authorship</td>
-            <td>Resource authoring details</td>
-            <td>related-to</td>
-            <td>Flag</td><td>author</td>
-            <td>Creator of the flag.</td>
-            <td class="highlight-yellow">Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.1.. in the model 0.. in the profile
-            </td>      
-          </tr>
-          <tr>
-            <td>header.authorship.author[x]</td>
+            <td>header.author[x]</td>
             <td>Who created/issued the alert.</td>
             <td>equivalent</td>
             <td>Flag</td><td>author</td>
             <td>Creator of the flag.</td>
-            <td class="highlight-yellow">Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.1.. in the model 0.. in the profile</td>
+            <td></td>
           </tr>
           <tr class="highlight-yellow">
-            <td>header.authorship.datetime</td>
-            <td>Date/time the resource was issued.</td>
+            <td>header.date</td>
+            <td>Date and optionally time of authoring/issuing.</td>
             <td>no map</td>
             <td>Flag</td><td></td>
             <td></td>
-            <td></td>
+            <td>No direct native Flag element for authoring timestamp.</td>
           </tr>
           <tr>
-            <td>header.lastUpdate</td>
-            <td>Last technical correction/update.</td>
-            <td>related-to</td>
-            <td>Flag</td><td>meta.lastUpdated</td>
-            <td>When the resource version last changed</td>
-            <td class="highlight-yellow">The map applies only in case it represents when the resource was last updated. It is an Instant (i.e. YYYY-MM-DDThh:mm:ss.sss+zz:zz )</td>
-          </tr>
-          <tr class="highlight-yellow">
             <td>header.status</td>
-            <td>Status of the dataset/resource.</td>
-            <td>no map</td>
-            <td>Flag</td><td></td>
-            <td></td>
-            <td>Suggested to be removed see <a href="https://github.com/Xt-EHR/xt-ehr-common/issues/363">Review and Align Use of header.status and header.statusReason[x]</a></td>
+            <td>Current status of the alert.</td>
+            <td>equivalent</td>
+            <td>Flag</td><td>status</td>
+            <td>Indicates if the flag is active, inactive, etc.</td>
+            <td>Map using the EHDS to HL7 Flag-status value set alignment.</td>
           </tr>
           <tr class="highlight-yellow">
-            <td>header.statusReason[x]</td>
-            <td>Reason for current dataset status.</td>
+            <td>header.source</td>
+            <td>Source of the information (e.g. patient, proxy).</td>
             <td>no map</td>
             <td>Flag</td><td></td>
             <td></td>
-            <td>Suggested to be removed see <a href="https://github.com/Xt-EHR/xt-ehr-common/issues/363">Review and Align Use of header.status and header.statusReason[x]</a>
-            </td>
+            <td>No direct native Flag element; consider extension if needed.</td>
           </tr>
           <tr>
             <td>header.language</td>
@@ -154,12 +136,20 @@
           </tr>
           <!-- ROOT EHDSAlert elements -->
           <tr>
-            <td>text</td>
-            <td>Free text explanation of the alert.</td>
+            <td>description</td>
+            <td>Narrative representation of the alert.</td>
             <td>source-is-broader-than-target</td>
             <td>Flag</td><td>extensions:note.text</td>
             <td>Additional notes that apply to this resource or element.</td>
-            <td class="highlight-yellow">The mapping applies if the text represents additional information collected about the alert. <code>code.text</code> can be used for a textual description of the coded alert.<code>text</code>for a textual description of the overall alert.</td>
+            <td class="highlight-yellow">The mapping applies if the description represents additional information collected about the alert.</td>
+          </tr>
+          <tr>
+            <td>description</td>
+            <td>Narrative representation of the alert.</td>
+            <td>source-is-broader-than-target</td>
+            <td>Flag</td><td>code.text</td>
+            <td>Additional notes that apply to this resource or element.</td>
+            <td class="highlight-yellow"><code>code.text</code> can also be used for textual rendering of coded content, or textual description of the alert.</td>
           </tr>
           <tr>
             <td>priority</td>
@@ -168,14 +158,6 @@
             <td>Flag</td><td>extension:flagPriorityExt	</td>
             <td>A code that identifies the priority of the alert</td>
             <td></td>
-          </tr>
-          <tr>
-            <td>status</td>
-            <td>Status of the alert (active, inactive, entered-in-error…).</td>
-            <td>equivalent</td>
-            <td>Flag</td><td>status</td>
-            <td>Indicates if the flag is active, inactive, etc.</td>
-            <td>Use the EHDS → HL7 Flag-status value set mapping.</td>
           </tr>
           <tr>
             <td>code</td>
@@ -192,6 +174,14 @@
             <td>Flag</td><td>period</td>
             <td>Time period when the flag is active.</td>
             <td>Map start/end 1:1.</td>
+          </tr>
+          <tr>
+            <td>sourceReference</td>
+            <td>A reference to the resource the alert is about.</td>
+            <td>equivalent</td>
+            <td>Flag</td><td></td>
+            <td>extension:flagDetailExt</td>
+            <td></td>
           </tr>
         </tbody>
       </table>

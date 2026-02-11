@@ -69,14 +69,6 @@
         </thead>
         <tbody>
           <tr>
-            <td>identifier</td>
-            <td>Identifier for this instance of the anatomical structure.</td>
-            <td>equivalent</td>
-            <td>BodyStructure</td><td>identifier</td>
-            <td>BodyStructure identifier.</td>
-            <td></td>
-          </tr>
-          <tr>
             <td>morphology</td>
             <td>Kind of structure represented (normal/abnormal morphology).</td>
             <td>equivalent</td>

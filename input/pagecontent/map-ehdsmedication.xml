@@ -74,7 +74,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>identifyingCodeCodeableConcept</td>
+            <td>identifyingCode[x]</td>
             <td>Identifier or code for the product (virtual/branded/package).</td>
             <td>equivalent</td>
             <td>Medication</td><td>code</td>
@@ -82,7 +82,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>identifyingCodeIdentifier</td>
+            <td>identifyingCode[x]</td>
             <td>Identifier for the product (virtual/branded/package).</td>
             <td>equivalent</td>
             <td>Medication</td><td>identifier</td>
@@ -149,22 +149,12 @@
             <td></td>
           </tr>
           <tr class="highlight-yellow">
-            <td>packSize</td>
-            <td>Overall amount of product in one package.</td>
-            <td>related-to</td>
-            <td>Medication</td><td>amount<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Amount of the medication in the package.</td>
-            <td>R4 <code>amount</code> is a Ratio; in R5 <code>totalVolume</code>.</td>
-          </tr>
-          <tr class="highlight-yellow">
-            <td>packSize</td>
-            <td>Overall amount of product in one package.</td>
-            <td>related-to</td>
-            <td>Medication</td>
-            <td>totalVolume <span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
-            </td>
-            <td>When the specified product code does not infer a package size, this is the specific amount of drug in the product.</td>
-            <td>R4 <code>amount</code> is a Ratio; in R5 <code>totalVolume</code></td>
+            <td>description</td>
+            <td>Narrative description of the medication.</td>
+            <td>source-is-broader-than-target</td>
+            <td>Medication</td><td>extension:description</td>
+            <td>Textual description of the medicinal product.</td>
+            <td>Use profile extension where available.</td>
           </tr>
           <tr>
             <td>item</td>
@@ -206,6 +196,14 @@
             <td>Medication</td><td>ingredient.itemCodeableConcept</td>
             <td>The substance of the ingredient.</td>
             <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>item.ingredient.strengthInfo</td>
+            <td>Strength information container.</td>
+            <td>related-to</td>
+            <td>Medication</td><td>ingredient.strength[x]</td>
+            <td>Strength information for ingredient.</td>
+            <td>Container element in model represented by strength subelements in FHIR.</td>
           </tr>
           <tr>
             <td>item.ingredient.strengthInfo.strength</td>
@@ -321,6 +319,14 @@
             <td>Medication</td><td>extension:characteristic.extension:value</td>
             <td>Value of the characteristic.</td>
             <td>Supports boolean, CodeableConcept, string, Quantity, dateTime, integer, decimal, Ratio in R5</td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>batch</td>
+            <td>Batch details container.</td>
+            <td>related-to</td>
+            <td>Medication</td><td>batch</td>
+            <td>Batch information for the medicinal product.</td>
+            <td>Container element represented through batch sub-elements in FHIR.</td>
           </tr>
           <tr>
             <td>batch.lotNumber</td>

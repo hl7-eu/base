@@ -98,93 +98,49 @@
             <td>Copy over all identifiers if multiple.</td>
           </tr>
           <tr>
-            <td>header.authorship</td>
-            <td>Resource authoring details.</td>
-            <td>related-to</td>
+            <td>header.author[x]</td>
+            <td>Who created/issued the condition record.</td>
+            <td>equivalent</td>
             <td>Condition</td>
             <td>recorder<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Who recorded the condition.</td>
-            <td class="highlight-yellow">Condition has no generic "author"; use<code>recorder</code> in R4<strong>This element is 1.. in the model 0.. in the profile</strong></td>
+            <td class="highlight-yellow">Condition has no generic "author"; use <code>recorder</code> in R4. This element is 1.. in the model and 0.. in the profile.</td>
           </tr>
           <tr>
-            <td>header.authorship</td>
-            <td>Resource authoring details.</td>
-            <td>related-to</td>
+            <td>header.author[x]</td>
+            <td>Who created/issued the condition record.</td>
+            <td>equivalent</td>
             <td>Condition</td>
             <td>participant.actor<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Who recorded the condition.</td>
-            <td class="highlight-yellow">Condition has no generic "author"; use<code>participant.actor</code> in R5
-              <strong>This element is 1.. in the model 0.. in the profile</strong>
-            </td>
+            <td class="highlight-yellow">Condition has no generic "author"; use <code>participant.actor</code> in R5. This element is 1.. in the model and 0.. in the profile.</td>
           </tr>
-          <tr>
-            <td>header.authorship.author[x]</td>
-            <td>Who created/issued the condition record.</td>
-            <td>equivalent</td>
-            <td>Condition</td>
-            <td>recorder<span style="color:#2e7d32;font-weight:600;">〔R4〕</span>
-            </td>
-            <td>Who recorded the condition.</td>
-            <td class="highlight-yellow">Condition has no generic "author"; use<code>recorder</code> in R4<strong>This element is 1.. in the model 0.. in the profile</strong>
-            </td>
-          </tr>
-           <tr>
-            <td>header.authorship.author[x]</td>
-            <td>Who created/issued the condition record.</td>
-            <td>equivalent</td>
-            <td>Condition</td>
-            <td>participant.actor<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
-            </td>
-            <td>Who recorded the condition.</td>
-            <td class="highlight-yellow">Condition has no generic "author"; use<code>participant.actor</code> in R5
-              <strong>This element is 1.. in the model 0.. in the profile</strong>
-            </td>
-          </tr>
-          <tr>
-            <td>header.authorship.author[x]</td>
-            <td>Who created/issued the condition record.</td>
-            <td>equivalent</td>
-            <td>Condition</td>
-            <td>recorder</td>
-            <td>Who recorded the condition.</td>
-            <td class="highlight-yellow">Can reference Practitioner, PractitionerRole, Patient, RelatedPerson (per profile).<strong>This element is 1.. in the model 0.. in the profile</strong>
-            </td>
-          </tr>
-          <tr>
-            <td>header.authorship.datetime</td>
-            <td>Date/time the resource was issued.</td>
+<tr>
+            <td>header.date</td>
+            <td>Date and optionally time of authoring/issuing.</td>
             <td>equivalent</td>
             <td>Condition</td>
             <td>recordedDate</td>
             <td>When the condition was recorded.</td>
             <td class="highlight-yellow"><strong>This element is 1.. in the model 0.. in the profile</strong></td>
           </tr>
-          <tr>
-            <td>header.lastUpdate</td>
-            <td>Last technical correction/update.</td>
-            <td>source-is-broader-than-target</td>
-            <td>Condition</td>
-            <td>meta.lastUpdated</td>
-            <td>When the resource version was last changed.</td>
-            <td class="highlight-yellow">FHIR <code>meta.lastUpdated</code> is system-level; EHDS header may carry richer audit info.</td>
-          </tr>
-          <tr class="highlight-yellow">
+<tr>
             <td>header.status</td>
-            <td>Status of the dataset/resource (technical/administrative).</td>
-            <td>no map</td>
+            <td>Status of the condition/problem (e.g. active, resolved, inactive, etc).</td>
+            <td>equivalent</td>
             <td>Condition</td>
-            <td>-</td>
-            <td>-</td>
-            <td>Do not confuse with <code>Condition.clinicalStatus</code> or <code>verificationStatus</code> below.</td>
+            <td>clinicalStatus</td>
+            <td>Current clinical status of the condition.</td>
+            <td>FHIR has a required value set for clinicalStatus; EHDS references HL7 Condition Clinical Status Codes.</td>
           </tr>
           <tr class="highlight-yellow">
-            <td>header.statusReason[x]</td>
-            <td>Reason for current dataset status.</td>
+            <td>header.source</td>
+            <td>Source of the information (e.g. patient, proxy).</td>
             <td>no map</td>
             <td>Condition</td>
             <td>-</td>
             <td>-</td>
-            <td></td>
+            <td>No direct native Condition element; consider extension if needed.</td>
           </tr>
           <tr>
             <td>header.language</td>
@@ -235,17 +191,7 @@
             <td>Problem category (e.g. problem-list-item, encounter-diagnosis).</td>
             <td>0..* in both models; EHDS may use additional national/organisational codes.</td>
           </tr>
-          <!-- problemStatus -->
-          <tr>
-            <td>problemStatus</td>
-            <td>Status of the condition/problem (active, resolved, inactive, ...).</td>
-            <td>equivalent</td>
-            <td>Condition</td>
-            <td>clinicalStatus</td>
-            <td>Current clinical status of the condition.</td>
-            <td>FHIR has a required VS for clinicalStatus; EHDS references HL7 Condition Clinical Status Codes.</td>
-          </tr>
-          <!-- resolutionCircumstances -->
+<!-- resolutionCircumstances -->
           <tr class="highlight-yellow">
             <td>resolutionCircumstances</td>
             <td>Reason for which the status changed from current to inactive (free text if not represented elsewhere).</td>
@@ -265,9 +211,9 @@
             <td>Clinical severity of the condition.</td>
             <td>CodeableConcept; HL7 / SNOMED CT value sets.</td>
           </tr>
-          <!-- anatomicLocation -->
+          <!-- bodySite -->
           <tr>
-            <td>anatomicLocation</td>
+            <td>bodySite</td>
             <td>The anatomical location including laterality where this condition manifests itself.</td>
             <td>source-is-broader-than-target</td>
             <td>Condition</td>
@@ -276,7 +222,7 @@
             <td>EHDS uses EHDSBodyStructure; map to one or more <code>Condition.bodySite</code>. Use referenced BodyStructure if profiling for more detail.</td>
           </tr>
           <tr>
-            <td>anatomicLocation</td>
+            <td>bodySite</td>
             <td>The anatomical location including laterality where this condition manifests itself.</td>
             <td>equivalent</td>
             <td>Condition</td>
@@ -304,27 +250,7 @@
             <td>Whether the condition is unconfirmed, provisional, confirmed, refuted, etc.</td>
             <td>Both EHDS and FHIR refer to HL7 Condition Verification Status.</td>
           </tr>
-          <!-- asserter -->
-          <tr>
-            <td>asserter</td>
-            <td>The asserter of the condition.</td>
-            <td>equivalent</td>
-            <td>Condition</td>
-            <td>asserter</td>
-            <td>Individual who asserted the condition.</td>
-            <td>Reference to Practitioner / PractitionerRole / Patient / RelatedPerson, depending on profile.</td>
-          </tr>
-          <!-- assertedDate -->
-          <tr>
-            <td>assertedDate</td>
-            <td>Date and time of the diagnosis assertion.</td>
-            <td>equivalent</td>
-            <td>Condition</td>
-            <td>extension:assertedDate</td>
-            <td>Date the condition record was first recorded.</td>
-            <td></td>
-          </tr>
-          <!-- specialistContact -->
+<!-- specialistContact -->
           <tr>
             <td>specialistContact</td>
             <td>Health Professional specifically related to the problem, as a preferred contact.</td>

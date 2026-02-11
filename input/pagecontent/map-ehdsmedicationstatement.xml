@@ -2,7 +2,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>EHDSMedicationStatement → MedicationStatement</title>
+    <title>EHDSMedicationUse → MedicationStatement</title>
   </head>
   <body>
     <div class="model-map-block">
@@ -13,7 +13,7 @@
         </div>
       </div>
     </div>
-    <h3>EHDSMedicationStatement → MedicationStatement</h3>
+    <h3>EHDSMedicationUse → MedicationStatement</h3>
     <a>  </a>
     <p></p>
     <p>
@@ -26,8 +26,8 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedicationStatement.html" target="_blank">
-        EHDSMedicationStatement
+          <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedicationUse.html" target="_blank">
+        EHDSMedicationUse
           </a>
         </li>
         <li>
@@ -40,11 +40,11 @@
     </div>
     <p></p>
     <div class="table-wrap">
-      <table summary="EHDSMedicationStatement → MedicationStatement">
-        <caption>EHDSMedicationStatement → MedicationStatement</caption>
+      <table summary="EHDSMedicationUse → MedicationStatement">
+        <caption>EHDSMedicationUse → MedicationStatement</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSMedicationStatement (Logical Model)</th>
+            <th colspan="2" class="src-head">EHDSMedicationUse (Logical Model)</th>
             <th class="relhead">Relationship</th>
             <th colspan="4" class="tgt-head">MedicationStatement</th>
           </tr>
@@ -88,16 +88,7 @@
             <td>Copy over all identifiers if multiple.</td>
           </tr>
           <tr class="highlight-yellow">
-            <td>header.authorship</td>
-            <td>Resource authoring details.</td>
-            <td>no map</td>
-            <td>MedicationStatement</td>
-            <td></td>
-            <td></td>
-            <td>Waiting for Xt-EHR feedback</td>
-          </tr>
-          <tr class="highlight-yellow">
-            <td>header.authorship.author[x]</td>
+            <td>header.author[x]</td>
             <td>Author(s) of the statement.</td>
             <td>no map</td>
             <td>MedicationStatement</td>
@@ -106,22 +97,13 @@
             <td>Waiting for Xt-EHR feedback</td>
           </tr>
           <tr class="highlight-yellow">
-            <td>header.authorship.datetime</td>
+            <td>header.date</td>
             <td>Date/time of authoring/issuing.</td>
             <td>no map</td>
             <td>MedicationStatement</td>
             <td></td>
             <td></td>
             <td>Waiting for Xt-EHR feedback</td>
-          </tr>
-          <tr>
-            <td>header.lastUpdate</td>
-            <td>Last technical correction/update.</td>
-            <td>related-to</td>
-            <td>MedicationStatement</td>
-            <td>meta.lastUpdated</td>
-            <td>When the resource version last changed.</td>
-            <td class="highlight-yellow">The map applies only if it represents the technical update timestamp (Instant).</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.status</td>
@@ -130,28 +112,14 @@
             <td>MedicationStatement</td>
             <td>status</td>
             <td>Position in the medication use lifecycle.</td>
-            <td>What is the difference with medicationTreatmentStatus ?</td>
+            <td>Clarify distinction from the medication use treatment status when both are present.</td>
           </tr>
           <tr class="highlight-yellow">
-            <td>header.statusReason[x]</td>
-            <td>Reason for the current status.</td>
-            <td>source-is-broader-than-target</td>
-            <td>MedicationStatement</td>
-            <td>statusReason<span style="color:#2e7d32;font-weight:600;">〔R4〕</span>
-            </td>
-            <td>Reason for current status</td>
-            <td>Not in R5. The model allows for CodeableConcept and string. The target only CodeableConcept.</td>
-          </tr>
-          <tr class="highlight-yellow">
-            <td>header.statusReason[x]</td>
-            <td>Reason for the current status.</td>
-            <td>no-map</td>
-            <td>MedicationStatement</td>
-            <td>
-              <span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
-            </td>
-            <td></td>
-            <td>Not in R5. Should be removed it ?</td>
+            <td>header.source</td>
+            <td>Source of the information (e.g. patient, proxy).</td>
+            <td>no map</td>
+            <td>MedicationStatement</td><td></td><td></td>
+            <td>No direct native MedicationStatement element; consider extension if needed.</td>
           </tr>
           <tr>
             <td>header.language</td>
@@ -164,7 +132,7 @@
           </tr>
           <!-- MEDICATION STATEMENT ELEMENTS -->
           <tr>
-            <td>medicationTreatmentStatus</td>
+            <td>treatmentStatus</td>
             <td>The current status of the taking of medicine.</td>
             <td>equivalent</td>
             <td>MedicationStatement</td>
@@ -174,7 +142,7 @@
             <td></td>
           </tr>
           <tr >
-            <td>medicationTreatmentStatus</td>
+            <td>treatmentStatus</td>
             <td>The current status of the taking of medicine.</td>
             <td>equivalent</td>
             <td>MedicationStatement</td>
@@ -206,7 +174,7 @@
             </td>
           </tr>
           <tr>
-            <td>medicationReason</td>
+            <td>reason[x]</td>
             <td>Coded reason for use (diagnosis/procedure).</td>
             <td>equivalent</td>
             <td>MedicationStatement</td>
@@ -216,7 +184,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>medicationReason</td>
+            <td>reason[x]</td>
             <td>Coded reason for use (diagnosis/procedure).</td>
             <td>equivalent</td>
             <td>MedicationStatement</td>
@@ -226,7 +194,7 @@
             <td></td>
           </tr>
           <tr>
-            <td>medicationReasonText</td>
+            <td>reason[x]</td>
             <td>Free-text reason for use.</td>
             <td>related-to</td>
             <td>MedicationStatement</td>
@@ -236,22 +204,13 @@
             <td>Alternatively convey as <code>note</code> if preferred.</td>
           </tr>
           <tr>
-            <td>medicationReasonText</td>
+            <td>reason[x]</td>
             <td>Free-text reason for use.</td>
             <td>related-to</td>
             <td>MedicationStatement</td>
             <td>reason.concept.text<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
             <td>Textual reason for medication use.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>intendedUseType</td>
-            <td>Type of intended use (prophylactic, therapeutic, etc.).</td>
-            <td>source-is-narrower-than-target</td>
-            <td>MedicationStatement</td>
-            <td>category</td>
-            <td>Classification of statement.</td>
             <td></td>
           </tr>
           <tr>
@@ -270,6 +229,22 @@
             <td>MedicationStatement</td>
             <td>effectivePeriod</td>
             <td>Time period the statement covers.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>derivedFrom[x]</td>
+            <td>Resource from which this medication use statement is derived.</td>
+            <td>equivalent</td>
+            <td>MedicationStatement</td><td>derivedFrom</td>
+            <td>Additional supporting/provenance references.</td>
+            <td></td>
+          </tr>
+          <tr class="highlight-yellow">
+            <td>note</td>
+            <td>Additional information about medication use.</td>
+            <td>source-is-broader-than-target</td>
+            <td>MedicationStatement</td><td>note.text</td>
+            <td>Additional notes/comments.</td>
             <td></td>
           </tr>
         </tbody>

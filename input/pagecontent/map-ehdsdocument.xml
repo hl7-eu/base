@@ -107,16 +107,7 @@
             <td>Identifier of a specific version of this document. <code>id</code> in HL7 CDA</td>
           </tr>
           <tr>
-            <td>header.authorship</td>
-            <td>Resource authoring details.</td>
-            <td>related-to</td>
-            <td>Composition</td>
-            <td>author</td>
-            <td>Authors</td>
-            <td>Composition.date is the time of composition; see child elements.</td>
-          </tr>
-          <tr>
-            <td>header.authorship.author[x]</td>
+            <td>header.author[x]</td>
             <td>Author(s) who authored the resource.</td>
             <td>equivalent</td>
             <td>Composition</td>
@@ -125,22 +116,13 @@
             <td>Reference to Practitioner / PractitionerRole / Organization / Device.</td>
           </tr>
           <tr>
-            <td>header.authorship.datetime</td>
+            <td>header.date</td>
             <td>Date and time of authoring/issuing.</td>
             <td>equivalent</td>
             <td>Composition</td>
             <td>date</td>
             <td>Composition creation time.</td>
             <td></td>
-          </tr>
-          <tr>
-            <td>header.lastUpdate</td>
-            <td>Date/time of last technical update.</td>
-            <td>equivalent</td>
-            <td>Composition</td>
-            <td>meta.lastUpdated</td>
-            <td>System-level modification time.</td>
-            <td class="highlight-yellow">The map applies only in case it represents when the resource was last updated. It is an Instant (i.e. YYYY-MM-DDThh:mm:ss.sss+zz:zz )</td>
           </tr>
           <tr>
             <td>header.status</td>
@@ -152,13 +134,13 @@
             <td></td>
           </tr>
           <tr class="highlight-yellow">
-            <td>header.statusReason[x]</td>
-            <td>Reason for the current status.</td>
+            <td>header.source</td>
+            <td>Source of the information (e.g. patient, proxy).</td>
             <td>no-map</td>
             <td>Composition</td>
             <td></td>
             <td></td>
-            <td>No native element</td>
+            <td>No native element.</td>
           </tr>
           <tr>
             <td>header.language</td>
@@ -225,7 +207,7 @@
             <td>Use mode to distinguish assertions.</td>
           </tr>
           <tr>
-            <td>header.attestation.attester</td>
+            <td>header.attestation.attester[x]</td>
             <td>Attester who validated the document.</td>
             <td>equivalent</td>
             <td>Composition</td>
@@ -252,7 +234,7 @@
             <td>Use attester.mode = "legal" for the legal authenticator.</td>
           </tr>
           <tr>
-            <td>header.legalAuthentication.legalAuthenticator</td>
+            <td>header.legalAuthentication.legalAuthenticator[x]</td>
             <td>Person responsible for medical content.</td>
             <td>related-to</td>
             <td>Composition</td>
@@ -296,16 +278,7 @@
             <td>Organization responsible for maintenance.</td>
             <td>Reference to Organization.</td>
           </tr>
-          <tr>
-            <td>header.confidentiality</td>
-            <td>Level of confidentiality (implicit normal).</td>
-            <td>equivalent</td>
-            <td>Composition</td>
-            <td>confidentiality</td>
-            <td>As defined by confidentiality codes.</td>
-            <td></td>
-          </tr>
-          <!-- DOCUMENT BODY -->
+<!-- DOCUMENT BODY -->
           <tr class="highlight-yellow">
             <td>presentedForm</td>
             <td>Narrative easy-to-read representation (e.g., PDF).</td>

@@ -94,17 +94,8 @@
             <td>Business identifier for this allergy.</td>
             <td>Copy over all identifiers if multiple.</td>
           </tr>
-          <tr>
-            <td>header.authorship</td>
-            <td>Resource authoring details</td>
-            <td>related-to</td>
-            <td>AllergyIntolerance</td><td>recorder</td>
-            <td>Author of the allergy/intolerance record.</td>
-            <td class="highlight-yellow">Can reference Device, Organization, Patient, Practitioner, or PractitionerRole.1.. in the model 0.. in the profile
-            </td>
-          </tr>
-          <tr>
-            <td>header.authorship.author[x]</td>
+<tr>
+            <td>header.author[x]</td>
             <td>Who created/issued the alert.</td>
             <td>equivalent</td>
             <td>AllergyIntolerance</td><td>recorder</td>
@@ -113,38 +104,28 @@
             </td>
           </tr>
           <tr>
-            <td>header.authorship.datetime</td>
-            <td>Date/time the resource was issued.</td>
+            <td>header.date</td>
+            <td>Date and optionally time of authoring/issuing.</td>
             <td>equivalent</td>
             <td>AllergyIntolerance</td><td>recordedDate</td>
             <td>When the allergy/intolerance was recorded.</td>
             <td class="highlight-yellow">1.. in the model 0.. in the profile</td>
           </tr>
-          <tr>
-            <td>header.lastUpdate</td>
-            <td>Last technical correction/update.</td>
-            <td>related-to</td>
-            <td>AllergyIntolerance</td><td>meta.lastUpdated</td>
-            <td>When the resource version last changed</td>
-            <td class="highlight-yellow">The map applies only in case it represents when the resource was last updated. It is an Instant (i.e. YYYY-MM-DDThh:mm:ss.sss+zz:zz )</td>
-          </tr>
-          <tr class="highlight-yellow">
+<tr>
             <td>header.status</td>
-            <td>Status of the dataset/resource.</td>
-            <td>no map</td>
-            <td>AllergyIntolerance</td><td></td>
-            <td></td>
-            <td>Suggested to be removed see <a href="https://github.com/Xt-EHR/xt-ehr-common/issues/363">Review and Align Use of header.status and header.statusReason[x]</a>
-            </td>
+            <td>Current status of the allergy or intolerance.</td>
+            <td>equivalent</td>
+            <td>AllergyIntolerance</td><td>clinicalStatus</td>
+            <td>Clinical status of the allergy/intolerance.</td>
+            <td>Map using the EHDS to HL7 allergy intolerance status value set alignment.</td>
           </tr>
           <tr class="highlight-yellow">
-            <td>header.statusReason[x]</td>
-            <td>Reason for current dataset status.</td>
+            <td>header.source</td>
+            <td>Source of the information (e.g. patient, proxy).</td>
             <td>no map</td>
             <td>AllergyIntolerance</td><td></td>
             <td></td>
-            <td>Suggested to be removed see <a href="https://github.com/Xt-EHR/xt-ehr-common/issues/363">Review and Align Use of header.status and header.statusReason[x]</a>
-            </td>
+            <td>No direct native AllergyIntolerance element; consider extension if needed.</td>
           </tr>
           <tr>
             <td>header.language</td>
@@ -163,23 +144,14 @@
             <td>Concept that identifies the substance, product, or agent responsible.</td>
             <td>CodeableConcept. Bound in EHDS to eHDSI value sets; in FHIR usually VS: AllergyIntolerance Substance/Product.</td>
           </tr>
-          <!-- typeOfPropensity -->
+<!-- note -->
           <tr>
-            <td>typeOfPropensity</td>
-            <td>Describes whether the condition refers to an allergy, intolerance, or unknown class.</td>
-            <td>equivalent</td>
-            <td>AllergyIntolerance</td><td>type</td>
-            <td>Allergy vs intolerance.</td>
-            <td>Maps to <code>AllergyIntolerance.type</code> (allergy | intolerance | ...). Value sets: eHDSIAdverseEventType / HL7.</td>
-          </tr>
-          <!-- description -->
-          <tr>
-            <td>description</td>
-            <td>Textual description of the allergy or intolerance.</td>
+            <td>note</td>
+            <td>Additional information about the allergy or intolerance.</td>
             <td>source-is-broader-than-target</td>
             <td>AllergyIntolerance</td><td>note.text</td>
             <td>Additional narrative about the allergy/intolerance.</td>
-            <td class="highlight-yellow">The mapping applies if the text represents additional information collected about the allergy.FHIR doesn't have a single free-text "description" element; use <code>AllergyIntolerance.note</code> (0..*). Could also populate <code>text.div</code> if it refer to a textual description of the whole resource.</td>
+            <td class="highlight-yellow">Map EHDS note to <code>AllergyIntolerance.note.text</code>. Could also populate <code>text.div</code> if it refers to a textual description of the whole resource.</td>
           </tr>
           <!-- criticality -->
           <tr>
@@ -199,16 +171,7 @@
             <td>Clinical verification status of the allergy/intolerance.</td>
             <td>EHDS name "certainty" ≈ FHIR "verificationStatus" (confirmed / refuted / unconfirmed).</td>
           </tr>
-          <!-- status -->
-          <tr>
-            <td>status</td>
-            <td>Current status of the allergy or intolerance (active, in remission, resolved, etc.).</td>
-            <td>equivalent</td>
-            <td>AllergyIntolerance</td><td>clinicalStatus</td>
-            <td>Clinical status of the allergy/intolerance.</td>
-            <td>EHDS "status" → FHIR "clinicalStatus". Both point to the clinical/temporal lifecycle.</td>
-          </tr>
-          <!-- onsetDate -->
+<!-- onsetDate -->
           <tr>
             <td>onsetDate</td>
             <td>When the allergy or intolerance was identified.</td>
@@ -236,6 +199,14 @@
             <td>Details about each adverse reaction event.</td>
             <td>0..* in both models.</td>
           </tr>
+          <tr>
+            <td>reaction.agentOrAllergen</td>
+            <td>Specific substance or pharmaceutical product considered to be responsible for the reaction event.</td>
+            <td>equivalent</td>
+            <td>AllergyIntolerance</td><td>reaction.substance</td>
+            <td>Specific substance or pharmaceutical product considered to be responsible for event.</td>
+            <td>Maps the reaction-level causative agent where provided.</td>
+          </tr>
           <!-- reaction.manifestation -->
           <tr>
             <td>reaction.manifestation</td>
@@ -245,16 +216,7 @@
             <td>Clinical symptoms and/or signs that are observed during the reaction.</td>
             <td>CodeableConcept; EHDS allows multiple; FHIR reaction.manifestation is 1..* CodeableConcept.</td>
           </tr>
-          <!-- reaction.date -->
-          <tr class="highlight-yellow">
-            <td>reaction.date</td>
-            <td>Date and time of allergy manifestation.</td>
-            <td>no-map</td>
-            <td>AllergyIntolerance</td><td></td>
-            <td></td>
-            <td>The difference between reaction.date and reaction.onsetDate is not clear no mapped for the time being</td>
-          </tr>
-          <!-- reaction.severity -->
+<!-- reaction.severity -->
           <tr>
             <td>reaction.severity</td>
             <td>Severity of the clinical manifestation.</td>
@@ -263,9 +225,9 @@
             <td>Mild / moderate / severe.</td>
             <td>FHIR has required VS; EHDS references eHDSISeverity.</td>
           </tr>
-          <!-- reaction.onsetDate (EHDS subelement) -->
+          <!-- reaction.onset (EHDS subelement) -->
           <tr class="highlight-yellow">
-            <td>reaction.onsetDate</td>
+            <td>reaction.onset</td>
             <td>Date of the observation of the reaction.</td>
             <td>equivalent</td>
             <td>AllergyIntolerance</td><td>reaction.onset</td>
