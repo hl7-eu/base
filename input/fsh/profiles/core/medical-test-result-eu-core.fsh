@@ -6,6 +6,8 @@ Title: "MedicalTestResult (EU core)"
 Description: """This profile introduces essential constraints and extensions for the Observation resource for Medical Test Results that apply across multiple use cases."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (1, draft)
+* language ^short = "Language of the observation"
+* specimen ^short = "Specimen used for the observation"
 * extension contains 
     $observation-bodyStructure-r5 named bodyStructure 0..1 and
     $observation-triggeredBy-r5 named triggeredBy 0..* and

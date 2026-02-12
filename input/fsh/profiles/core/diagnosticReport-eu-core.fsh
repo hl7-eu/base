@@ -6,6 +6,9 @@ Description: """This profile introduces essential constraints and extensions for
 * insert SetFmmandStatusRule (1, draft)
 * . ^short = "Diagnostic Report EU core"
 * . ^definition = "Diagnostic Report EU core"
+* effectivePeriod ^short = "Effective period of the report"
+* issued ^short = "Date and time this report was issued"
+* language ^short = "Language of the diagnostic report content"
 * extension contains $diagnostic-report-composition-r5 named DiagnosticReportCompositionR5 0..1
 // is 1.. in Lab and Imaging report
 * extension[DiagnosticReportCompositionR5]

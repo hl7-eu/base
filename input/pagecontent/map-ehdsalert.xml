@@ -139,7 +139,7 @@
             <td>description</td>
             <td>Narrative representation of the alert.</td>
             <td>source-is-broader-than-target</td>
-            <td>Flag</td><td>extensions:note.text</td>
+            <td>Flag</td><td>extensions:note.valueAnnotation.text</td>
             <td>Additional notes that apply to this resource or element.</td>
             <td class="highlight-yellow">The mapping applies if the description represents additional information collected about the alert.</td>
           </tr>

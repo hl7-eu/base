@@ -8,6 +8,9 @@ Description: """This profile introduces essential constraints and extensions for
 * insert SetFmmandStatusRule (1, draft)
 * ^experimental = false
 * ^purpose = "This profile constrains the Composition resource for the purpose of this guide."
+* event.code ^short = "Event code"
+* event.period ^short = "Event period"
+* language ^short = "Language of the composition content"
 * extension contains $composition.version-r5 named version 0..1
 * extension[version].value[x] only string
 * extension contains

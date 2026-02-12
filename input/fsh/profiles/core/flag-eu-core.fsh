@@ -8,12 +8,14 @@ Other specialized flag profiles may be specified in the future for other kind of
 //-------------------------------------------------------------------------------------------
 // * insert SetFmmandStatusRule (1, draft)
 * identifier ^short = "Alert bussiness Identifier"
+* language ^short = "Language of the alert content"
 * extension contains $flag-detail named flagDetailExt 0..*
 * extension contains $flag-priority named flagPriorityExt 0..1
 * extension contains $note named note 0..*
 * extension[flagDetailExt]
 * extension[flagPriorityExt]
-* extension[note]
+* extension[note].valueAnnotation.text ^short = "Additional information about the alert"
+* author ^short = "Author of the alert"
 * status ^short = "Alert status"
 * code ^short = "Coded or textual message to display to user."
 * subject only Reference(PatientEuCore)

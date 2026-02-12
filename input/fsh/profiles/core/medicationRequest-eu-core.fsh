@@ -6,9 +6,15 @@ Title:    "MedicationRequest (EU core)"
 Description: """This profile introduces essential constraints and extensions for the MedicationRequest resource that apply across multiple use cases."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (1, draft)
+* category ^short = "Category of the medication request"
+* groupIdentifier ^short = "Group identifier"
+* language ^short = "Language of the request"
+* note.text ^short = "Textual note about the request"
+* substitution ^short = "Whether substitution is allowed"
 * identifier 
   * ^short = "Business identifier for this request"
 * status ^short = "Current state of the order" 
+* statusReason ^short = "Reason for current status of the order"
 * intent ^short = "Order, proposal or plan"
 * subject only Reference( PatientEuCore or Group )
 * authoredOn ^short = "Date when the request was authored"
@@ -26,6 +32,9 @@ Description: """This profile introduces essential constraints and extensions for
   * text ^short = "Free text dosage instructions"
   * doseAndRate.doseQuantity ^short = "Amount of medication per dose"
 * dispenseRequest
+  * dispenseInterval ^short = "Interval between dispenses"
+  * numberOfRepeatsAllowed ^short = "Number of repeats allowed"
+  * validityPeriod ^short = "Validity period of the dispense request"
   * extension contains $ihe-ext-medicationrequest-prescribedquantity named prescribedQuantity 0..1
   * extension[prescribedQuantity] ^short = "Overall amount of product prescribed, independent from the number of repeats."
   * extension[prescribedQuantity] ^definition = "When Medication resource implies a pack size, prescribedQuantity should convey number of packages. When the Medication does not imply an amount, overall amount could be in tablets or millilitres."

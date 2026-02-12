@@ -7,6 +7,14 @@ Description: """This profile introduces essential constraints and extensions for
 // * insert ImposeProfile($AllergyIntolerance-uv-ips, 0)
 * extension contains $allergyintolerance-abatement named abatement 0..1
 * extension[abatement].valueDateTime ^short = "End date"
+* asserter ^short = "Who recorded the allergy or intolerance"
+* identifier ^short = "Business identifier for the allergy or intolerance"
+* language ^short = "Language of the allergy or intolerance content"
+* note.text ^short = "Additional information about the allergy or intolerance"
+* onset[x] ^short = "Date of onset of the allergy or intolerance"
+* recordedDate ^short = "Date when the allergy or intolerance was recorded"
+* recorder ^short = "Who recorded the allergy or intolerance"
+* patient ^short = "Who the allergy or intolerance concerns"
 * verificationStatus ^short = "Certainty"
 * clinicalStatus ^short = "Current allergy or Intolerance status"
 * type ^short = "Type of propensity"

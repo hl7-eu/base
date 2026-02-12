@@ -82,9 +82,9 @@
             <td>header.subject</td>
             <td>Patient/subject this alert is about.</td>
             <td>equivalent</td>
-            <td>AllergyIntolerance</td><td>subject</td>
+            <td>AllergyIntolerance</td><td>patient</td>
             <td>Reference to the patient or subject of the allergy/intolerance.</td>
-            <td>Reference to Patient (or other subject).</td>
+            <td></td>
           </tr>
           <tr>
             <td>header.identifier</td>

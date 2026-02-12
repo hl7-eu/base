@@ -6,6 +6,9 @@ Title:    "Medication (EU core)"
 Description: """This profile introduces essential constraints and extensions for the Medication resource that apply across multiple use cases."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (1, draft)
+* text ^short = "Human readable summary of the medication, for example, the name and form of the medication."
+* code ^short = "Code of the medication"
+* identifier ^short = "Identifier of the medication"
 // Common R4 R5
 * extension contains $ihe-ext-medication-productname named productName 0..1 // productName
 * extension[productName] ^short = "Name of the medicinal product. Names of different types (full name, short name, etc) and in different languages can be provided if relevant." 
@@ -27,6 +30,7 @@ Description: """This profile introduces essential constraints and extensions for
 * extension[device].extension[device].valueCodeableConcept from $eHDSIPackage (example)
 
 // Only R4 rules
+* amount ^short = "Amount of the medication (for example, in a package or a vial)"
 
 * ingredient
   * itemReference only Reference (MedicationEuCore)

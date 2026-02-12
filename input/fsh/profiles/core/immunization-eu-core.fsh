@@ -10,6 +10,9 @@ Description: """This profile introduces essential constraints and extensions for
 * insert SetFmmandStatusRule (1, draft)
 * status ^short = "Immunization status."
 * statusReason ^short = "Reason for not performing."
+* identifier ^short = "Identifier of the immunization"
+* language ^short = "Language of the immunization content"
+* note.text ^short = "Additional notes about the immunization"
 * extension contains $immunization-administeredProduct-r5 named administeredProduct 0..1
 * extension[administeredProduct].extension[concept]
 * extension[administeredProduct].extension[reference].valueReference only Reference ( MedicationEuCore ) 

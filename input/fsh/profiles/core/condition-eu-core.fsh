@@ -12,6 +12,8 @@ Description: """This profile introduces essential constraints and extensions for
 * extension[relatedArtifact] // reference to an external documet (e.g. a guideline for this condition)
 * category ^short = "Category" // to be updated
 * severity from $condition-severity (preferred)
+* asserter ^short = "Who asserted the condition"
+* language ^short = "Language of the condition content"
 * code 1..1 
 * code from $problems-uv-ips (preferred) 
   * ^definition = "The problem code specifies the problem. Depending on the setting, different code systems can be used. The ProblemCodelist provides an overview of the possible code systems."
