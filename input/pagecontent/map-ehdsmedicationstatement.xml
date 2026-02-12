@@ -93,7 +93,7 @@
           <tr class="highlight-yellow">
             <td>header.author[x]</td>
             <td>Author(s) of the statement.</td>
-            <td>no map</td>
+            <td>no-map</td>
             <td>MedicationStatement</td>
             <td></td>
             <td></td>
@@ -102,7 +102,7 @@
           <tr class="highlight-yellow">
             <td>header.date</td>
             <td>Date/time of authoring/issuing.</td>
-            <td>no map</td>
+            <td>no-map</td>
             <td>MedicationStatement</td>
             <td></td>
             <td></td>

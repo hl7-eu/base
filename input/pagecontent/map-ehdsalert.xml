@@ -105,7 +105,7 @@
           <tr class="highlight-yellow">
             <td>header.date</td>
             <td>Date and optionally time of authoring/issuing.</td>
-            <td>no map</td>
+            <td>no-map</td>
             <td>Flag</td><td></td>
             <td></td>
             <td>No direct native Flag element for authoring timestamp.</td>
@@ -121,7 +121,7 @@
           <tr class="highlight-yellow">
             <td>header.source</td>
             <td>Source of the information (e.g. patient, proxy).</td>
-            <td>no map</td>
+            <td>no-map</td>
             <td>Flag</td><td></td>
             <td></td>
             <td>No direct native Flag element; consider extension if needed.</td>

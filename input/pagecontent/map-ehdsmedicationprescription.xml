@@ -85,7 +85,7 @@
           <tr>
             <td>header.identifier</td>
             <td>Business identifier(s) for the prescription.</td>
-            <td>source-narrow-than-target</td>
+            <td>source-is-narrower-than-target</td>
             <td>MedicationRequest</td>
             <td>identifier</td>
             <td>External identifiers for this request.</td>
@@ -94,7 +94,7 @@
           <tr>
             <td>header.identifier</td>
             <td>Identifier for a single item on the prescription.</td>
-            <td>source-narrow-than-target</td>
+            <td>source-is-narrower-than-target</td>
             <td>MedicationRequest</td>
             <td>groupIdentifier</td>
             <td>Identifiers for a group of prescribed items.</td>

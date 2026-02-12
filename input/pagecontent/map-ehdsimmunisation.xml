@@ -129,7 +129,7 @@
           <tr>
             <td>header.source</td>
             <td>Source of the information (e.g. patient, proxy).</td>
-            <td>no map</td>
+            <td>no-map</td>
             <td>Immunization</td>
             <td>extension:informationSource <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Source of a reported record</td>
@@ -138,7 +138,7 @@
           <tr>
             <td>header.source</td>
             <td>Source of the information (e.g. patient, proxy).</td>
-            <td>no map</td>
+            <td>no-map</td>
             <td>Immunization</td>
             <td>informationSource <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Source of a reported record</td>

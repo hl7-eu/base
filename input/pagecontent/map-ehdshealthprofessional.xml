@@ -74,7 +74,7 @@
           <tr>
             <td>identifier</td>
             <td>Identifier of the health professional (e.g. national professional ID).</td>
-            <td>narrower</td>
+            <td>source-is-narrower-than-target</td>
             <td>PractitionerRole</td>
             <td>identifier</td>
             <td>Business identifier.</td>
@@ -83,7 +83,7 @@
           <tr>
             <td>identifier</td>
             <td>Identifier of the health professional (e.g. national professional ID).</td>
-            <td>narrower</td>
+            <td>source-is-narrower-than-target</td>
             <td>Practitioner</td>
             <td>identifier</td>
             <td>Practitioner identifier.</td>
@@ -119,7 +119,7 @@
           <tr>
             <td>address</td>
             <td>Addresses of the practitioner that are not role specific (often home).</td>
-            <td>narrower</td>
+            <td>source-is-narrower-than-target</td>
             <td>Practitioner</td>
             <td>address</td>
             <td>Address(es) of the practitioner that are not role-specific.</td>

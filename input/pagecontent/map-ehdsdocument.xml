@@ -254,7 +254,7 @@
           <tr>
             <td class="highlight-yellow">header.eventType</td>
             <td >Categorisation of the event covered by the document.</td>
-            <td>relatedTo</td>
+            <td>related-to</td>
             <td>Composition</td>
             <td>event.code <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Codes describing the event(s) related to the composition.</td>
@@ -263,7 +263,7 @@
           <tr>
             <td class="highlight-yellow">header.eventType</td>
             <td >Categorisation of the event covered by the document.</td>
-            <td>relatedTo</td>
+            <td>related-to</td>
             <td>Composition</td>
             <td>event.detail.concept<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Codes describing the event(s) related to the composition.</td>
