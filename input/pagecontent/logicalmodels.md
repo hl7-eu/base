@@ -32,7 +32,6 @@ For the most recent and in-progress versions, please refer to the [**Xt-EHR EHDS
 | [EHDSAddress](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSAddress.html)                   | EHDS refined base model for Address structure                      |
 | [EHDSHumanName](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSHumanName/)                   | EHDS refined base model for Human Name                             |
 | [EHDSTelecom](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSTelecom.html)                   | EHDS refined base model for telecommunications and contact details |
-| [EHDSBodyStructure](https://www.xt-ehr.eu/fhir/models/0.3.0/0.2.1/StructureDefinition-EHDSBodyStructure.html) | EHDS refined base model for Body structure                         |
 
 ---
 
@@ -45,6 +44,7 @@ For the most recent and in-progress versions, please refer to the [**Xt-EHR EHDS
 | [EHDSHealthProfessional](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSHealthProfessional.html) | EHDS refined base model for Health Professional                       |
 | [EHDSOrganisation](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSOrganisation/)                 | EHDS refined base model for healthcare organisations and providers    |
 | [EHDSLocation](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSLocation.html)                     | EHDS refined base model for location, site, or service delivery place |
+| [EHDSBodyStructure](https://www.xt-ehr.eu/fhir/models/0.3.0/0.2.1/StructureDefinition-EHDSBodyStructure.html) | EHDS refined base model for Body structure                         |
 
 ---
 

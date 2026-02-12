@@ -32,12 +32,8 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-EHDS alignment updates
-
-- Run R4 preprocessing
-- Sync shared R4/R5 content
-- Run R5 preprocessing
-- Regenerate IG with SUSHI
+FHIR-55454: Moved EHDSBodyStructure model and associate map under the Entity group
+FHIR-55741: Normalized relationships in model map tables
 "@
 }
 
