@@ -8,27 +8,27 @@
     <div class="model-map-block">
       <div class="callout-wrapper">
         <div class="callout-box">
-          <strong>Ongoing alignment:</strong>
-              The Xt-EHR logical models are under active revision and continuous refinement.
-              Updates from Xt-EHR will be progressively incorporated into this Implementation
-              Guide to maintain alignment with the evolving EHDS specifications.
-        </div>
+          <strong>Ongoing alignment:</strong> The Xt-EHR logical models are under active revision
+          and continuous refinement. Updates from Xt-EHR will be progressively incorporated into
+          this Implementation Guide to maintain alignment with the evolving EHDS specifications. </div>
       </div>
     </div>
     <div class="model-map-block">
       <div class="callout-wrapper">
         <div class="callout-box">
-          <strong>Yellow row/cells:</strong>
-              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
-        </div>
+          <strong>Yellow row/cells:</strong> In this ballot publication, some row/cells of the
+          mapping table have been left in yellow to indicate areas requiring further review or
+          refinement; including feedback from the Xt-EHR joint action (see note above). These
+          highlights will be addressed in subsequent updates to ensure accuracy and completeness of
+          the mappings. </div>
       </div>
     </div>
     <h3>EHDSCondition → Condition</h3>
-    <a>  </a>
+    <a> </a>
     <p></p>
     <p>
-  This page explains how conceptual elements from the EHDS logical model are expressed
-  in the corresponding FHIR ConditionEuCore profile used by this Implementation Guide.
+      This page explains how conceptual elements from the EHDS logical model are expressed
+      in the corresponding FHIR ConditionEuCore profile used by this Implementation Guide.
     </p>
     <p></p>
     <div class="table-wrap">
@@ -36,14 +36,15 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSCondition.html" target="_blank">
-        EHDSCondition
+          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSCondition.html"
+            target="_blank">
+            EHDSCondition
           </a>
         </li>
         <li>
           <strong>Target FHIR profile:</strong>
           <a href="StructureDefinition-condition-eu-core.html">
-        ConditionEuCore
+            ConditionEuCore
           </a>
         </li>
       </ul>
@@ -115,7 +116,7 @@
             <td>Who recorded the condition.</td>
             <td>Condition has no generic "author"; use <code>participant.actor</code> in R5.</td>
           </tr>
-<tr>
+          <tr>
             <td>header.date</td>
             <td>Date and optionally time of authoring/issuing.</td>
             <td>equivalent</td>
@@ -124,23 +125,34 @@
             <td>When the condition was recorded.</td>
             <td></td>
           </tr>
-<tr>
+          <tr>
             <td>header.status</td>
             <td>Status of the condition/problem (e.g. active, resolved, inactive, etc).</td>
             <td>equivalent</td>
             <td>Condition</td>
             <td>clinicalStatus</td>
             <td>Current clinical status of the condition.</td>
-            <td>FHIR has a required value set for clinicalStatus; EHDS references HL7 Condition Clinical Status Codes.</td>
+            <td>FHIR has a required value set for clinicalStatus; EHDS references HL7 Condition
+              Clinical Status Codes.</td>
           </tr>
           <tr>
             <td>header.source</td>
             <td>Source of the information (e.g. patient, proxy).</td>
             <td>equivalent</td>
             <td>Condition</td>
-            <td>asserter</td>
+            <td>asserter<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Source of the information about the condition.</td>
             <td></td>
+          </tr>
+          <tr>
+            <td>header.source</td>
+            <td>Source of the information (e.g. patient, proxy).</td>
+            <td>equivalent</td>
+            <td>Condition</td>
+            <td>participant.actor<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Source of the information about the condition.</td>
+            <td>With participant.function =
+              "http://terminology.hl7.org/CodeSystem/provenance-participant-type#informant"</td>
           </tr>
           <tr>
             <td>header.language</td>
@@ -179,7 +191,8 @@
             <td>Condition</td>
             <td>abatementDateTime</td>
             <td>When the condition abated or went into remission.</td>
-            <td>Use <code>abatementDateTime</code>; abatement may also be represented by clinicalStatus = resolved.</td>
+            <td>Use <code>abatementDateTime</code>; abatement may also be represented by
+              clinicalStatus = resolved.</td>
           </tr>
           <!-- category -->
           <tr>
@@ -191,10 +204,11 @@
             <td>Problem category (e.g. problem-list-item, encounter-diagnosis).</td>
             <td>0..* in both models; EHDS may use additional national/organisational codes.</td>
           </tr>
-<!-- resolutionCircumstances -->
+          <!-- resolutionCircumstances -->
           <tr>
             <td>resolutionCircumstances</td>
-            <td>Reason for which the status changed from current to inactive (free text if not represented elsewhere).</td>
+            <td>Reason for which the status changed from current to inactive (free text if not
+              represented elsewhere).</td>
             <td>source-is-broader-than-target</td>
             <td>Condition</td>
             <td>note.text</td>
@@ -219,7 +233,8 @@
             <td>Condition</td>
             <td>bodySite</td>
             <td>Anatomical location(s) affected by the condition.</td>
-            <td>EHDS uses EHDSBodyStructure; map to one or more <code>Condition.bodySite</code>. Use referenced BodyStructure if profiling for more detail.</td>
+            <td>EHDS uses EHDSBodyStructure; map to one or more <code>Condition.bodySite</code>. Use
+              referenced BodyStructure if profiling for more detail.</td>
           </tr>
           <tr>
             <td>bodySite</td>
@@ -228,17 +243,20 @@
             <td>Condition</td>
             <td>extension:bodySite</td>
             <td>Anatomical location(s) affected by the condition.</td>
-            <td>EHDS uses EHDSBodyStructure; map to one or more <code>Condition.bodySite</code>. Use referenced BodyStructure if profiling for more detail.</td>
+            <td>EHDS uses EHDSBodyStructure; map to one or more <code>Condition.bodySite</code>. Use
+              referenced BodyStructure if profiling for more detail.</td>
           </tr>
           <!-- stage -->
           <tr>
             <td>stage</td>
-            <td>Stage/grade usually assessed formally using a specific staging/grading system. Multiple assessment systems could be used.</td>
+            <td>Stage/grade usually assessed formally using a specific staging/grading system.
+              Multiple assessment systems could be used.</td>
             <td>equivalent</td>
             <td>Condition</td>
             <td>stage</td>
             <td>Simple summary of condition stage.</td>
-            <td>FHIR also has <code>stage.assessment</code> (Reference). For multiple staging systems, create multiple <code>Condition.stage</code> repetitions.</td>
+            <td>FHIR also has <code>stage.assessment</code> (Reference). For multiple staging
+              systems, create multiple <code>Condition.stage</code> repetitions.</td>
           </tr>
           <!-- diagnosisAssertionStatus -->
           <tr>
@@ -250,7 +268,7 @@
             <td>Whether the condition is unconfirmed, provisional, confirmed, refuted, etc.</td>
             <td>Both EHDS and FHIR refer to HL7 Condition Verification Status.</td>
           </tr>
-<!-- specialistContact -->
+          <!-- specialistContact -->
           <tr>
             <td>specialistContact</td>
             <td>Health Professional specifically related to the problem, as a preferred contact.</td>
@@ -258,7 +276,10 @@
             <td>CareTeam</td>
             <td>note.text</td>
             <td>Who is involved</td>
-            <td>FHIR Condition has no native participant element. Suggest to use <code>Condition.note</code> to record in a textual form who should be contacted. When used, this information can also be derived from the <code>CareTeam</code> involved for the care of this Condition (referred in <code>CareTeam.reason</code>).</td>
+            <td>FHIR Condition has no native participant element. Suggest to use <code>
+              Condition.note</code> to record in a textual form who should be contacted. When used,
+              this information can also be derived from the <code>CareTeam</code> involved for the
+              care of this Condition (referred in <code>CareTeam.reason</code>).</td>
           </tr>
           <!-- externalResource -->
           <tr>
@@ -267,14 +288,15 @@
             <td>source-is-narrower-than-target</td>
             <td>Condition</td>
             <td>extension:relatedArtifact</td>
-            <td>Related artifacts such as additional documentation, justification, dependencies, bibliographic references, and predecessor and successor artifacts.</td>
+            <td>Related artifacts such as additional documentation, justification, dependencies,
+              bibliographic references, and predecessor and successor artifacts.</td>
             <td></td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p style="margin-top:2rem;color:#555;">
-      Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
+    <p style="margin-top:2rem;color:#555;"> Return to overview: <a href="modelmap.html">EHDS Logical
+      Models → FHIR Profiles</a>
     </p>
   </body>
 </div>

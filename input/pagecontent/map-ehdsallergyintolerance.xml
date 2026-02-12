@@ -98,9 +98,17 @@
             <td>header.author[x]</td>
             <td>Who created/issued the alert.</td>
             <td>equivalent</td>
-            <td>AllergyIntolerance</td><td>recorder</td>
+            <td>AllergyIntolerance</td><td>recorder<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Who recorded the sensitivity.</td>
-            <td> </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>header.author[x]</td>
+            <td>Who created/issued the alert.</td>
+            <td>equivalent</td>
+            <td>AllergyIntolerance</td><td>participant.actor<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Who recorded the sensitivity.</td>
+            <td>With participant.function = "http://terminology.hl7.org/CodeSystem/provenance-participant-type#author"</td>
           </tr>
           <tr>
             <td>header.date</td>
@@ -122,9 +130,17 @@
             <td>header.source</td>
             <td>Source of the information (e.g. patient, proxy).</td>
             <td>equivalent</td>
-            <td>AllergyIntolerance</td><td>asserter</td>
+            <td>AllergyIntolerance</td><td>asserter<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Source of the information about the allergy</td>
             <td></td>
+          </tr>
+           <tr>
+            <td>header.source</td>
+            <td>Source of the information (e.g. patient, proxy).</td>
+            <td>equivalent</td>
+            <td>AllergyIntolerance</td><td>participant.actor<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Source of the information about the allergy</td>
+            <td>With participant.function = "http://terminology.hl7.org/CodeSystem/provenance-participant-type#informant"</td>
           </tr>
           <tr>
             <td>header.language</td>
