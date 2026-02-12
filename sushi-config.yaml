@@ -87,8 +87,6 @@ pages:
      title: EHDSHumanName to FHIR HumanName Mapping
   map-ehdspatient.html:
      title: EHDSPatient to FHIR Patient Mapping
-  map-ehdspatientanimal.html:
-     title: EHDSPatientAnimal to FHIR Patient (Animal) Mapping
   map-ehdstelecom.html:
      title: EHDSTelecom to FHIR ContactPoint Mapping
   map-ehdsalert.html:
