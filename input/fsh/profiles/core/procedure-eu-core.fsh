@@ -3,7 +3,7 @@ Parent: Procedure
 // Parent: ProcedureUvIps
 Id: procedure-eu-core
 Title:    "Procedure (EU core)"
-Description: """This profile introduce essential constraints and extensions for the Procedure resource that apply across multiple use cases."""
+Description: """This profile introduces essential constraints and extensions for the Procedure resource that apply across multiple use cases."""
 // * insert ImposeProfile ( $Procedure-uv-ips, 0 )  // Check if this is appropriate (see  support)
 * insert SetFmmandStatusRule (1, draft)
 /* * extension contains $procedure-targetBodyStructure named bodySite 0..1

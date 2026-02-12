@@ -36,7 +36,7 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSDocument.html" target="_blank">
+          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSDocument.html" target="_blank">
         EHDSDocument
           </a>
         </li>
@@ -109,11 +109,11 @@
           <tr class="highlight-yellow">
             <td>header.author[x]</td>
             <td>Author(s) who authored the resource.</td>
-            <td>no-map</td>
+            <td>releated-to</td>
             <td>DiagnosticReport</td>
+            <td>performer</td>
+            <td>The diagnostic service that is responsible for issuing the report.</td>
             <td></td>
-            <td></td>
-            <td>The report author is captured in the composition.</td>
           </tr>
           <tr>
             <td>header.date</td>
@@ -212,7 +212,7 @@
             <td>DiagnosticReport</td><td></td><td></td>
             <td>No native element in DiagnosticReport.</td>
           </tr>
-          <tr>
+          <tr class="highlight-yellow">
             <td>header.legalAuthentication</td>
             <td>Document legal authentication details.</td>
             <td>no-map</td>
@@ -237,14 +237,14 @@
             <td>DiagnosticReport</td><td></td><td></td>
             <td>No native element in DiagnosticReport.</td>
           </tr>
-          <tr>
+          <tr class="highlight-yellow">
             <td>header.eventType</td>
-            <td class="highlight-yellow">Categorisation of the event covered by the document.</td>
+            <td>Categorisation of the event covered by the document.</td>
             <td>relatedTo</td>
             <td>DiagnosticReport</td>
             <td>category</td>
             <td>Service category</td>
-            <td class="highlight-yellow">Clarify the scope. If it is a classification of the report it should be category</td>
+            <td>Clarify the scope. If it is a classification of the report it should be category</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.serviceSpecialty</td>
@@ -272,7 +272,7 @@
             <td>DiagnosticReport</td>
             <td>presentedForm</td>
             <td>Entire report as issued</td>
-            <td>To be determined</td>
+            <td></td>
           </tr>
         </tbody>
       </table>

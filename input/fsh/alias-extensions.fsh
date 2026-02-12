@@ -20,6 +20,7 @@ Alias: $flag-priority = http://hl7.org/fhir/StructureDefinition/flag-priority
 Alias: $humanname-fathers-family = http://hl7.org/fhir/StructureDefinition/humanname-fathers-family
 Alias: $humanname-mothers-family = http://hl7.org/fhir/StructureDefinition/humanname-mothers-family
 Alias: $immunization-administeredProduct-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.administeredProduct
+Alias: $immunization-informationSource-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.informationSource
 Alias: $immunization-basedOn-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.basedOn
 Alias: $individual-genderIdentity = http://hl7.org/fhir/StructureDefinition/individual-genderIdentity
 Alias: $individual-pronouns = http://hl7.org/fhir/StructureDefinition/individual-pronouns

@@ -37,7 +37,7 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSProcedure.html" target="_blank">
+          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSProcedure.html" target="_blank">
         EHDSProcedure
           </a>
         </li>
@@ -101,7 +101,7 @@
             <td>equivalent</td>
             <td>Procedure</td><td>recorder</td>
             <td>Who recorded the procedure.</td>
-            <td class="highlight-yellow">1.. in the model 0.. in the profile</td>
+            <td></td>
           </tr>
           <tr>
             <td>header.date</td>
@@ -109,7 +109,7 @@
             <td>equivalent</td>
             <td>Procedure</td><td>extension:recorded <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Date when the procedure was recorded</td>
-            <td class="highlight-yellow">FHIR R5 Procedure supports <code>recorded</code>; pre-adopted this element in R4.1.. in the model 0.. in the profile.</td>
+            <td></td>
           </tr>
        <tr>
           <td>header.date</td>
@@ -118,23 +118,23 @@
           <td>Procedure</td>
           <td>recorded <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
           <td>Date when the procedure was recorded</td>
-          <td class="highlight-yellow">FHIR R5 Procedure supports <code>recorded</code>; pre-adopted this element in R4.1.. in the model 0.. in the profileTO BE CHECKED</td>
+          <td></td>
         </tr>   
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.status</td>
             <td>Technical/administrative dataset status.</td>
             <td>no map</td>
-            <td>Procedure</td><td>-</td>
-            <td>-</td>
-            <td>Waiting for Xt-EHR feedback</td>
+            <td>Procedure</td><td>status</td>
+            <td>Procedure status</td>
+            <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.source</td>
             <td>Source of the information (e.g. patient, proxy).</td>
             <td>no map</td>
-            <td>Procedure</td><td>-</td>
-            <td>-</td>
-            <td>No direct native Procedure element; consider extension if needed.</td>
+            <td>Procedure</td><td>asserter</td>
+            <td>Person who asserts this procedure</td>
+            <td></td>
           </tr>
           <tr>
             <td>header.language</td>

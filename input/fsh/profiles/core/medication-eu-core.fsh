@@ -3,7 +3,7 @@ Profile:  MedicationEuCore
 Parent:   Medication
 Id:       medication-eu-core
 Title:    "Medication (EU core)"
-Description: """This profile introduce essential constraints and extensions for the Medication resource that apply across multiple use cases."""
+Description: """This profile introduces essential constraints and extensions for the Medication resource that apply across multiple use cases."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (1, draft)
 // Common R4 R5

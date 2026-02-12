@@ -8,27 +8,27 @@
     <div class="model-map-block">
       <div class="callout-wrapper">
         <div class="callout-box">
-          <strong>Ongoing alignment:</strong>
-              The Xt-EHR logical models are under active revision and continuous refinement.
-              Updates from Xt-EHR will be progressively incorporated into this Implementation
-              Guide to maintain alignment with the evolving EHDS specifications.
-        </div>
+          <strong>Ongoing alignment:</strong> The Xt-EHR logical models are under active revision
+          and continuous refinement. Updates from Xt-EHR will be progressively incorporated into
+          this Implementation Guide to maintain alignment with the evolving EHDS specifications. </div>
       </div>
     </div>
     <div class="model-map-block">
       <div class="callout-wrapper">
         <div class="callout-box">
-          <strong>Yellow row/cells:</strong>
-              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
-        </div>
+          <strong>Yellow row/cells:</strong> In this ballot publication, some row/cells of the
+          mapping table have been left in yellow to indicate areas requiring further review or
+          refinement; including feedback from the Xt-EHR joint action (see note above). These
+          highlights will be addressed in subsequent updates to ensure accuracy and completeness of
+          the mappings. </div>
       </div>
     </div>
     <h3>EHDSImmunisation → Immunization</h3>
     <a> </a>
     <p></p>
     <p>
-  This page explains how conceptual elements from the EHDS logical model are expressed
-  in the corresponding FHIR ImmunizationEuCore profile used by this Implementation Guide.
+      This page explains how conceptual elements from the EHDS logical model are expressed
+      in the corresponding FHIR ImmunizationEuCore profile used by this Implementation Guide.
     </p>
     <p></p>
     <div class="table-wrap">
@@ -36,14 +36,16 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSImmunisation.html" target="_blank">
-        EHDSImmunisation
+          <a
+            href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSImmunisation.html"
+            target="_blank">
+            EHDSImmunisation
           </a>
         </li>
         <li>
           <strong>Target FHIR profile:</strong>
           <a href="StructureDefinition-immunization-eu-core.html">
-        ImmunizationEuCore
+            ImmunizationEuCore
           </a>
         </li>
       </ul>
@@ -74,7 +76,8 @@
             <td>header</td>
             <td>Common header for all patient-related data.</td>
             <td>related-to</td>
-            <td>Immunization</td><td>.</td>
+            <td>Immunization</td>
+            <td>.</td>
             <td>General metadata.</td>
             <td>Dataset-level; not usually carried in Immunization as-is.</td>
           </tr>
@@ -82,7 +85,8 @@
             <td>header.subject</td>
             <td>Patient/subject this immunisation is about.</td>
             <td>equivalent</td>
-            <td>Immunization</td><td>patient</td>
+            <td>Immunization</td>
+            <td>patient</td>
             <td>Who received the vaccine.</td>
             <td>Reference to Patient.</td>
           </tr>
@@ -90,11 +94,12 @@
             <td>header.identifier</td>
             <td>Business identifier for the object.</td>
             <td>equivalent</td>
-            <td>Immunization</td><td>identifier</td>
+            <td>Immunization</td>
+            <td>identifier</td>
             <td>External identifier(s) for this Immunization event.</td>
             <td>Copy over all identifiers if multiple.</td>
           </tr>
-<tr class="highlight-yellow">
+          <tr class="highlight-yellow">
             <td>header.author[x]</td>
             <td>Who authored/recorded this immunisation.</td>
             <td>no-map</td>
@@ -103,37 +108,48 @@
             <td></td>
             <td></td>
           </tr>
-            <tr class="highlight-yellow">
-     <td>header.date</td>
-      <td>Date/time the record was issued/recorded.</td>
-  <td>no-map</td>
-  <td>Immunization</td>
-  <td></td>
-  <td></td>
-  <td></td>
+          <tr class="highlight-yellow">
+            <td>header.date</td>
+            <td>Date/time the record was issued/recorded.</td>
+            <td>no-map</td>
+            <td>Immunization</td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
-<tr>
+          <tr>
             <td>header.status</td>
             <td>Indicates the current status of the immunisation event.</td>
             <td>equivalent</td>
-            <td>Immunization</td><td>status</td>
+            <td>Immunization</td>
+            <td>status</td>
             <td>Indicates if the vaccination was given (completed, not-done).</td>
             <td>Use <code>statusReason</code> in FHIR for "not done" reason when applicable.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.source</td>
             <td>Source of the information (e.g. patient, proxy).</td>
             <td>no map</td>
             <td>Immunization</td>
+            <td>extension:informationSource <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Source of a reported record</td>
             <td></td>
-            <td></td>
-            <td>No direct native Immunization element; consider extension if needed.</td>
           </tr>
-<tr>
+          <tr>
+            <td>header.source</td>
+            <td>Source of the information (e.g. patient, proxy).</td>
+            <td>no map</td>
+            <td>Immunization</td>
+            <td>informationSource <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Source of a reported record</td>
+            <td></td>
+          </tr>
+          <tr>
             <td>header.language</td>
             <td>Language of the resource (IETF tag).</td>
             <td>equivalent</td>
-            <td>Immunization</td><td>language</td>
+            <td>Immunization</td>
+            <td>language</td>
             <td>Language used in the resource.</td>
             <td></td>
           </tr>
@@ -142,7 +158,8 @@
             <td>administrationTime</td>
             <td>Date/time administered.</td>
             <td>equivalent</td>
-            <td>Immunization</td><td>occurrence[x]</td>
+            <td>Immunization</td>
+            <td>occurrence[x]</td>
             <td>When the vaccine was administered.</td>
             <td>Usually <code>occurrenceDateTime</code>.</td>
           </tr>
@@ -150,7 +167,8 @@
             <td>vaccine</td>
             <td>Type of vaccine</td>
             <td>equivalent</td>
-            <td>Immunization</td><td>vaccineCode</td>
+            <td>Immunization</td>
+            <td>vaccineCode</td>
             <td>Vaccine that was administered.</td>
             <td>CodeableConcept bound to the relevant vaccine type value set.</td>
           </tr>
@@ -158,7 +176,8 @@
             <td>administeredProduct</td>
             <td>Vaccine product administered.</td>
             <td>equivalent</td>
-            <td>Immunization</td><td>extension:administeredProduct <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Immunization</td>
+            <td>extension:administeredProduct <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Product that was administered.</td>
             <td>Use the standard extension in R4.</td>
           </tr>
@@ -166,7 +185,8 @@
             <td>administeredProduct</td>
             <td>Vaccine product administered.</td>
             <td>equivalent</td>
-            <td>Immunization</td><td>administeredProduct <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Immunization</td>
+            <td>administeredProduct <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Product that was administered.</td>
             <td>Reference to <code>Medication</code>.</td>
           </tr>
@@ -174,15 +194,17 @@
             <td>diseaseOrAgentTargeted</td>
             <td>Disease or agent targeted by the vaccination.</td>
             <td>equivalent</td>
-            <td>Immunization</td><td>protocolApplied.targetDisease</td>
+            <td>Immunization</td>
+            <td>protocolApplied.targetDisease</td>
             <td>Disease that the vaccination targets.</td>
             <td></td>
           </tr>
-<tr>
+          <tr>
             <td>administrator</td>
             <td>Who administered the vaccine.</td>
             <td>equivalent</td>
-            <td>Immunization</td><td>performer:administeringCentreOrHp.actor</td>
+            <td>Immunization</td>
+            <td>performer:administeringCentreOrHp.actor</td>
             <td>Who performed the immunization.</td>
             <td>actor of type PractitionerRole or Practitioner.</td>
           </tr>
@@ -190,23 +212,25 @@
             <td>administeringCentre</td>
             <td>Centre/organisation administering the vaccine.</td>
             <td>source-is-broader-than-target</td>
-            <td>Immunization</td><td>performer:administeringCentreOrHp.actor</td>
+            <td>Immunization</td>
+            <td>performer:administeringCentreOrHp.actor</td>
             <td>Organization involved in administering the vaccine.</td>
             <td>actor of type PractitionerRole or Practitioner.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>note</td>
             <td>Additional information about immunization.</td>
             <td>source-is-broader-than-target</td>
-            <td>Immunization</td><td>note.text</td>
+            <td>Immunization</td>
+            <td>note.text</td>
             <td>Additional notes or comments.</td>
             <td>Map EHDS note to one or more Immunization notes where needed.</td>
           </tr>
-</tbody>
+        </tbody>
       </table>
     </div>
-    <p style="margin-top:2rem;color:#555;">
-      Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
+    <p style="margin-top:2rem;color:#555;"> Return to overview: <a href="modelmap.html">EHDS Logical
+      Models → FHIR Profiles</a>
     </p>
   </body>
 </div>

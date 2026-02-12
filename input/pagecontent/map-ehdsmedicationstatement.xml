@@ -8,17 +8,18 @@
     <div class="model-map-block">
       <div class="callout-wrapper">
         <div class="callout-box">
-          <strong>Context</strong>
-          Xt-EHR currently has no dedicated common model for <code>MedicationRequest</code>. For that reason, this mapping is based on the prescription model realised by the HL7 Europe Medication Prescription and Dispense (MPD) FHIR Implementation Guide (<a href="https://hl7.eu/fhir/mpd" target="_blank">https://hl7.eu/fhir/mpd</a>).
-        </div>
+          <strong>Context</strong> Xt-EHR currently has no dedicated common model for <code>
+          MedicationRequest</code>. For that reason, this mapping is based on the prescription model
+          realised by the HL7 Europe Medication Prescription and Dispense (MPD) FHIR Implementation
+          Guide (<a href="https://hl7.eu/fhir/mpd" target="_blank">https://hl7.eu/fhir/mpd</a>). </div>
       </div>
     </div>
     <h3>EHDSMedicationUse → MedicationStatement</h3>
-    <a>  </a>
+    <a> </a>
     <p></p>
     <p>
-  This page explains how conceptual elements from the EHDS logical model are expressed
-  in the corresponding FHIR MedicationStatement profile used by this Implementation Guide.
+      This page explains how conceptual elements from the EHDS logical model are expressed
+      in the corresponding FHIR MedicationStatement profile used by this Implementation Guide.
     </p>
     <p></p>
     <div class="table-wrap">
@@ -26,14 +27,16 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedicationUse.html" target="_blank">
-        EHDSMedicationUse
+          <a
+            href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSMedicationUse.html"
+            target="_blank">
+            EHDSMedicationUse
           </a>
         </li>
         <li>
           <strong>Target FHIR profile:</strong>
           <a href="StructureDefinition-medicationStatement-eu-core.html">
-        MedicationStatementEuCore
+            MedicationStatementEuCore
           </a>
         </li>
       </ul>
@@ -94,7 +97,7 @@
             <td>MedicationStatement</td>
             <td></td>
             <td></td>
-            <td>Waiting for Xt-EHR feedback</td>
+            <td></td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.date</td>
@@ -103,23 +106,25 @@
             <td>MedicationStatement</td>
             <td></td>
             <td></td>
-            <td>Waiting for Xt-EHR feedback</td>
+            <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.status</td>
             <td>Status of the resource/document.</td>
-            <td>related-to</td>
+            <td>equivalent</td>
             <td>MedicationStatement</td>
             <td>status</td>
             <td>Position in the medication use lifecycle.</td>
-            <td>Clarify distinction from the medication use treatment status when both are present.</td>
+            <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.source</td>
             <td>Source of the information (e.g. patient, proxy).</td>
-            <td>no map</td>
-            <td>MedicationStatement</td><td></td><td></td>
-            <td>No direct native MedicationStatement element; consider extension if needed.</td>
+            <td>equivalent</td>
+            <td>MedicationStatement</td>
+            <td>informationSource</td>
+            <td>Person or organization that provided the information about the taking of this medication.</td>
+            <td></td>
           </tr>
           <tr>
             <td>header.language</td>
@@ -141,7 +146,7 @@
             <td>Type of adherence</td>
             <td></td>
           </tr>
-          <tr >
+          <tr>
             <td>treatmentStatus</td>
             <td>The current status of the taking of medicine.</td>
             <td>equivalent</td>
@@ -159,8 +164,7 @@
             <td>medication[x] <span style="color:#2e7d32;font-weight:600;">〔R4〕</span>
             </td>
             <td>Medication expressed as a reference.</td>
-            <td>In the model only the Reference to <code>Medication</code>.
-            </td>
+            <td>In the model only the Reference to <code>Medication</code>. </td>
           </tr>
           <tr>
             <td>medication</td>
@@ -170,8 +174,7 @@
             <td>medication<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
             </td>
             <td>Medication expressed as a reference.</td>
-            <td>In the model only the Reference to <code>Medication</code>.
-            </td>
+            <td>In the model only the Reference to <code>Medication</code>. </td>
           </tr>
           <tr>
             <td>reason[x]</td>
@@ -194,26 +197,6 @@
             <td></td>
           </tr>
           <tr>
-            <td>reason[x]</td>
-            <td>Free-text reason for use.</td>
-            <td>related-to</td>
-            <td>MedicationStatement</td>
-            <td>reasonCode.text <span style="color:#2e7d32;font-weight:600;">〔R4〕</span>
-            </td>
-            <td>Textual reason for medication use.</td>
-            <td>Alternatively convey as <code>note</code> if preferred.</td>
-          </tr>
-          <tr>
-            <td>reason[x]</td>
-            <td>Free-text reason for use.</td>
-            <td>related-to</td>
-            <td>MedicationStatement</td>
-            <td>reason.concept.text<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
-            </td>
-            <td>Textual reason for medication use.</td>
-            <td></td>
-          </tr>
-          <tr>
             <td>dosageInstructions</td>
             <td>Details of how medication is/was taken.</td>
             <td>equivalent</td>
@@ -231,27 +214,29 @@
             <td>Time period the statement covers.</td>
             <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>derivedFrom[x]</td>
             <td>Resource from which this medication use statement is derived.</td>
             <td>equivalent</td>
-            <td>MedicationStatement</td><td>derivedFrom</td>
-            <td>Additional supporting/provenance references.</td>
+            <td>MedicationStatement</td>
+            <td>derivedFrom</td>
+            <td>Link to information used to derive the MedicationStatement</td>
             <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>note</td>
             <td>Additional information about medication use.</td>
             <td>source-is-broader-than-target</td>
-            <td>MedicationStatement</td><td>note.text</td>
+            <td>MedicationStatement</td>
+            <td>note.text</td>
             <td>Additional notes/comments.</td>
             <td></td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p style="margin-top:2rem;color:#555;">
-      Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
+    <p style="margin-top:2rem;color:#555;"> Return to overview: <a href="modelmap.html">EHDS Logical
+      Models → FHIR Profiles</a>
     </p>
   </body>
 </div>

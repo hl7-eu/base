@@ -3,20 +3,21 @@ Profile:  ImmunizationEuCore
 Parent:   Immunization
 Id:       immunization-eu-core
 Title:    "Immunization (EU core)"
-Description: """This profile introduce essential constraints and extensions for the Immunization resource that apply across multiple use cases."""
+Description: """This profile introduces essential constraints and extensions for the Immunization resource that apply across multiple use cases."""
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
 * ^purpose = "This profile constrains the Immunization resource for the purpose of this guide."
-// * insert ImposeProfile($Immunization-uv-ips, 0)
 * insert SetFmmandStatusRule (1, draft)
 * status ^short = "Immunization status."
 * statusReason ^short = "Reason for not performing."
-/* * extension contains $immunization-basedOn-r5 named basedOn 0..1
-* extension[basedOn].valueReference only Reference ( ImmunizationRecommendation ) */
 * extension contains $immunization-administeredProduct-r5 named administeredProduct 0..1
 * extension[administeredProduct].extension[concept]
 * extension[administeredProduct].extension[reference].valueReference only Reference ( MedicationEuCore ) 
 * reasonCode ^short = "Reasons for the administration."
+
+* extension contains $immunization-informationSource-r5 named informationSource 0..1
+* extension[informationSource].extension[concept]
+* extension[informationSource].extension[reference].valueReference only Reference ( PatientEuCore or PractitionerEuCore or PractitionerRoleEuCore or RelatedPerson or OrganizationEuCore )
 * vaccineCode from $vaccines-uv-ips (preferred)
   * ^binding.extension[+].extension[0].url = "purpose"
   * ^binding.extension[=].extension[=].valueCode = #candidate

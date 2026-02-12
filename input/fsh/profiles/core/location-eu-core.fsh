@@ -2,7 +2,7 @@ Profile: LocationEuCore
 Parent: Location
 Id: location-eu-core
 Title: "Location (EU core)"
-Description: """This profile introduce essential constraints and extensions for the Location resource that apply across multiple use cases."""
+Description: """This profile introduces essential constraints and extensions for the Location resource that apply across multiple use cases."""
 * insert SetFmmandStatusRule (2, trial-use)
 * managingOrganization	// only Reference(OrganizationEu) 
   * ^short = "Managing organization"

@@ -3,7 +3,7 @@ Profile:  MedicationRequestEuCore
 Parent:   MedicationRequest
 Id:       medicationRequest-eu-core
 Title:    "MedicationRequest (EU core)"
-Description: """This profile introduce essential constraints and extensions for the MedicationRequest resource that apply across multiple use cases."""
+Description: """This profile introduces essential constraints and extensions for the MedicationRequest resource that apply across multiple use cases."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (1, draft)
 * identifier 

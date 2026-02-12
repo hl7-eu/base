@@ -36,7 +36,7 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSMedication.html" target="_blank">
+          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSMedication.html" target="_blank">
         EHDSMedication
           </a>
         </li>
@@ -152,9 +152,9 @@
             <td>description</td>
             <td>Narrative description of the medication.</td>
             <td>source-is-broader-than-target</td>
-            <td>Medication</td><td>extension:description</td>
-            <td>Textual description of the medicinal product.</td>
-            <td>Use profile extension where available.</td>
+            <td>Medication</td><td>text</td>
+            <td>Textual description of the medication</td>
+            <td></td>
           </tr>
           <tr>
             <td>item</td>
@@ -197,13 +197,13 @@
             <td>The substance of the ingredient.</td>
             <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>item.ingredient.strengthInfo</td>
             <td>Strength information container.</td>
             <td>related-to</td>
             <td>Medication</td><td>ingredient.strength[x]</td>
             <td>Strength information for ingredient.</td>
-            <td>Container element in model represented by strength subelements in FHIR.</td>
+            <td>Backbone element see below for mapping details.</td>
           </tr>
           <tr>
             <td>item.ingredient.strengthInfo.strength</td>
@@ -320,13 +320,13 @@
             <td>Value of the characteristic.</td>
             <td>Supports boolean, CodeableConcept, string, Quantity, dateTime, integer, decimal, Ratio in R5</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>batch</td>
             <td>Batch details container.</td>
-            <td>related-to</td>
+            <td>equivalent</td>
             <td>Medication</td><td>batch</td>
             <td>Batch information for the medicinal product.</td>
-            <td>Container element represented through batch sub-elements in FHIR.</td>
+            <td></td>
           </tr>
           <tr>
             <td>batch.lotNumber</td>

@@ -36,7 +36,7 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/StructureDefinition-EHDSDocument.html" target="_blank">
+          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSDocument.html" target="_blank">
         EHDSDocument
           </a>
         </li>
@@ -77,7 +77,7 @@
             <td>Composition</td>
             <td>.</td>
             <td>General metadata.</td>
-            <td class="highlight-yellow">Dataset-level information across the Composition instance. <strong>Category (classCode) is missing ?</strong></td>
+            <td>Dataset-level information across the Composition instance.</td>
           </tr>
           <tr>
             <td>header.subject</td>
@@ -252,13 +252,13 @@
             <td>Use attester.mode = "legal" for the legal authenticator.</td>
           </tr>
           <tr>
-            <td>header.eventType</td>
-            <td class="highlight-yellow">Categorisation of the event covered by the document.</td>
+            <td class="highlight-yellow">header.eventType</td>
+            <td >Categorisation of the event covered by the document.</td>
             <td>relatedTo</td>
             <td>Composition</td>
             <td>event.code</td>
             <td>Codes describing the event(s) related to the composition.</td>
-            <td class="highlight-yellow">Clarify the scope. If it is a classificaiton of the document it should be category</td>
+            <td>Clarify the scope. If it is a classificaiton of the document it should be category</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.serviceSpecialty</td>
@@ -267,7 +267,7 @@
             <td>Composition</td>
             <td>category</td>
             <td>Categorizes the composition.</td>
-            <td>Use category to tag specialty if no dedicated extension/profile element exists. <strong>(1) Is this a metadata information or something that have to be captured in the document ? (2) is this only for diagnosti reports ? in thsi case we can use DiagnosticReport.category</strong> </td>
+            <td>Use category to tag specialty if no dedicated extension/profile element exists. (1) Is this a metadata information or something that have to be captured in the document ? (2) is this only for diagnosti reports ? in thsi case we can use DiagnosticReport.category</td>
           </tr>
           <tr>
             <td>header.custodian</td>
