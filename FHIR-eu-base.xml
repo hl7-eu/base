@@ -96,7 +96,7 @@
 <page key="map-ehdsobservation" name="EHDSObservation to FHIR Observation Mapping"/>
 <page key="map-ehdsorganisation" name="EHDSOrganisation to FHIR Organization Mapping"/>
 <page key="map-ehdspatient" name="EHDSPatient to FHIR Patient Mapping"/>
-<page key="map-ehdspatientanimal" name="EHDSPatientAnimal to FHIR Patient (Animal) Mapping"/>
+<page deprecated="true" key="map-ehdspatientanimal" name="EHDSPatientAnimal to FHIR Patient (Animal) Mapping"/>
 <page key="map-ehdsprocedure" name="EHDSProcedure to FHIR Procedure Mapping"/>
 <page key="map-ehdstelecom" name="EHDSTelecom to FHIR ContactPoint Mapping"/>
 <page key="missing-data" name="Handling Missing Data"/>

@@ -2,7 +2,7 @@
 Profile: MedicalTestResultEuCore
 Parent: Observation
 Id: medicalTestResult-eu-core
-Title: "MedicalTestResult (EU core)"
+Title: "Observation: Medical Test Result (EU core)"
 Description: """This profile introduces essential constraints and extensions for the Observation resource for Medical Test Results that apply across multiple use cases."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (1, draft)

@@ -26,10 +26,12 @@ Description: """This profile introduces essential constraints and extensions for
 * extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note named note 0..*
 * extension[note].valueAnnotation.extension contains $annotation-type named annotation-type 0..*
 * extension[note].valueAnnotation.extension[annotation-type].valueCodeableConcept ^short = "Type of note"
+/* See FHIR-55541
 * category insert SliceElement( #value, $this )
 * category contains diagnostic-service 0..1 
 // to be checked with the EU Core working group
-* category[diagnostic-service] from $diagnostic-service-sections (required)
+* category[diagnostic-service] from $diagnostic-service-sections (required) 
+*/
 * code
   * ^short = "Type of Diagnostic Report"
   * ^definition = "Defines the document type, it is recommended to take this from the suggested LOINC set."

@@ -44,13 +44,13 @@ Description: """This profile introduces essential constraints and extensions for
 * attester.mode 1..1
 * attester.time 0..1
 * attester.party only Reference(PatientEuCore or RelatedPerson or PractitionerEuCore or PractitionerRoleEuCore or OrganizationEuCore)
-* attester contains legalAuthenticator 0..* and resultValidator 0..*
+* attester contains legalAuthenticator 0..* and validator 0..*
 * attester[legalAuthenticator].mode = http://hl7.org/fhir/composition-attestation-mode#legal
 * attester[legalAuthenticator].time 1..1
 * attester[legalAuthenticator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore) // Check references...
-* attester[resultValidator].mode = http://hl7.org/fhir/composition-attestation-mode#professional
-* attester[resultValidator].time 1..1
-* attester[resultValidator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore)
+* attester[validator].mode = http://hl7.org/fhir/composition-attestation-mode#professional
+* attester[validator].time 1..1
+* attester[validator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore)
 * section.extension contains $note named section-note 0..*
 * section.extension[section-note] ^short = "Additional notes that apply to the section (but not to specific resource)."
 * section.extension[section-note] ^definition = "Additional notes that apply to the section (but not to specific resource)."
