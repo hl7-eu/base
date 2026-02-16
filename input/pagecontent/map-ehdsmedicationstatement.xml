@@ -5,15 +5,6 @@
     <title>EHDSMedicationUse → MedicationStatement</title>
   </head>
   <body>
-    <div class="model-map-block">
-      <div class="callout-wrapper">
-        <div class="callout-box">
-          <strong>Context</strong> Xt-EHR currently has no dedicated common model for <code>
-          MedicationRequest</code>. For that reason, this mapping is based on the prescription model
-          realised by the HL7 Europe Medication Prescription and Dispense (MPD) FHIR Implementation
-          Guide (<a href="https://hl7.eu/fhir/mpd" target="_blank">https://hl7.eu/fhir/mpd</a>). </div>
-      </div>
-    </div>
     <h3>EHDSMedicationUse → MedicationStatement</h3>
     <a> </a>
     <p></p>

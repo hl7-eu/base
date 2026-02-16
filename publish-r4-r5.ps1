@@ -32,9 +32,9 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-55541: Removed the category slice from the DiagnosticReportEuCore
-FHIR-55536: Harmonised profile titles
-FHIR-55458: Renamed attester slice resultValidator
+FHIR-55542: Add EU core profile in the performer and resultInterpreter References for DiagnosticReportEuCore
+FHIR-55526: Set Composition.attester.party for validator and legalAuthenticator set to 1..
+FHIR-55452: Clarified the role of base and core profiles in the introduction page
 "@
 }
 

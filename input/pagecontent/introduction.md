@@ -15,7 +15,7 @@
 
 The HL7 Europe Base and Core Implementation Guide uses a **layered approach to FHIR interoperability** in Europe.
 
-**Base profiles** define common concepts in a flexible way. Building on these, **Core profiles** add essential constraints that can be reused across many use cases and are directly referenced by most HL7 Europe IGs.
+**Base profiles** define common concepts in a flexible way; while **Core profiles** specify essential constraints and extensions that can be reused across many use cases and are directly referenced by most HL7 Europe IGs. When Base profiles are defined, Core profiles are derived from them.
 
 Together with **extensions** and **scoped HL7 EU IGs**, they form a consistent framework that supports the **European Health Data Space (EHDS)** while maintaining alignment with **international standards** such as the IPS.
 
@@ -36,7 +36,7 @@ Together with **extensions** and **scoped HL7 EU IGs**, they form a consistent f
   * **Loosely constrained**, offering flexibility.
   * **Rarely used as-is**, but serve as the foundation for Core and derived profiles.
 * **Core profiles**
-  * Introduce **essential constraints** that cut across many use cases.
+  * Introduce **essential constraints and extensions** that cut across many use cases.
   * Serve as the **first reference point** for most HL7 Europe FHIR Implementation Guides.
   * Can often be used **directly as-is**, without further refinement.
   * Realize the **common EHDS logical models** and pursue **alignment with IPS** where relevant.

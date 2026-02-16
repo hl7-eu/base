@@ -45,14 +45,14 @@ Description: """This profile introduces essential constraints and extensions for
   * ^comment = """This will typically be the encounter the event occurred within, but some events may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter (e.g. pre-admission laboratory tests)."""
 * effective[x] ^short = "Clinically relevant time/time-period for report."
 * performer ^short = "Responsible Diagnostic Service." // add reference to the used profiles
-* performer 
+* performer only Reference(PractitionerRoleEuCore or PractitionerEuCore or OrganizationEuCore or CareTeam)
   * insert SliceElementWithDescription( #profile, $this, [[Organization that delivered the report]] )
   * ^comment = "If a DiagnosticReport.resultsInterpreter exists this is expected to be a Composition.author; otherwise a DiagnosticReport.performer should be an author."
 * performer contains organization 0..*
 * performer[organization] only Reference(OrganizationEuCore)
 * performer[organization] ^short = "The organization producer of this report"
 * performer[organization] ^definition = "The organization responsible for producing this report. In case practitioners produce them in their private practices, they will be accounted as an organization for this purpose."
-* resultsInterpreter 0..*
+* resultsInterpreter only Reference(PractitionerRoleEuCore or PractitionerEuCore or OrganizationEuCore or CareTeam)
   * insert SliceElementWithDescription( #profile, [[resolve()]], [[Primary interpreter of results]] )
   * ^comment = "If a DiagnosticReport.resultsInterpreter exists this is expected to be a Composition.author; otherwise a DiagnosticReport.performer should be an author."
 * resultsInterpreter contains author 0..* 

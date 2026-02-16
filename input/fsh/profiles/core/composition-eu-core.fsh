@@ -47,10 +47,12 @@ Description: """This profile introduces essential constraints and extensions for
 * attester contains legalAuthenticator 0..* and validator 0..*
 * attester[legalAuthenticator].mode = http://hl7.org/fhir/composition-attestation-mode#legal
 * attester[legalAuthenticator].time 1..1
+* attester[legalAuthenticator].party 1..
 * attester[legalAuthenticator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore) // Check references...
 * attester[validator].mode = http://hl7.org/fhir/composition-attestation-mode#professional
 * attester[validator].time 1..1
 * attester[validator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore)
+* attester[validator].party 1..
 * section.extension contains $note named section-note 0..*
 * section.extension[section-note] ^short = "Additional notes that apply to the section (but not to specific resource)."
 * section.extension[section-note] ^definition = "Additional notes that apply to the section (but not to specific resource)."
