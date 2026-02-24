@@ -2,6 +2,7 @@
 
   Steps:
   0) Run _preprocess-r4.bat (hl7eu-base)
+  0.1) Run sushi . (hl7eu-base)
   A) Commit + push hl7eu-base
   B) git pull hl7eu-base-r5\__r4-r5
   C) Run _preprocess-r5.bat
@@ -32,9 +33,8 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-55542: Add EU core profile in the performer and resultInterpreter References for DiagnosticReportEuCore
-FHIR-55526: Set Composition.attester.party for validator and legalAuthenticator set to 1..
-FHIR-55452: Clarified the role of base and core profiles in the introduction page
+MedicalTestResultEuCore: Temporaly removed the R5 value[x] extension to fix extensions errors
+FHIR-55424: Removed category slice in MedicalTestResultEuCore
 "@
 }
 
@@ -85,6 +85,10 @@ try {
   Write-Host "--------------------------------" -ForegroundColor Yellow
   Write-Host $Message
   Write-Host "--------------------------------" -ForegroundColor Yellow
+  $confirmMessage = Read-Host "Is this commit message correct? Type Y to continue"
+  if ($confirmMessage -notmatch '^(?i:y|yes)$') {
+    throw "Aborted: commit message not confirmed."
+  }
 
   # ---- 0) Run _preprocess-r4.bat
   Run-Step "0) Run _preprocess-r4.bat" {
@@ -93,6 +97,12 @@ try {
       throw "Missing file: $preBatR4"
     }
     cmd /c "`"$preBatR4`""
+  }
+
+  # ---- 0.1) Run sushi . (hl7eu-base)
+  Run-Step "0.1) Run sushi . (hl7eu-base)" {
+    Set-Location $base
+    sushi .
   }
 
   # ---- A) Commit + push hl7eu-base

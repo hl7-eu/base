@@ -10,15 +10,20 @@ Description: """This profile introduces essential constraints and extensions for
 * specimen ^short = "Specimen used for the observation"
 * extension contains 
     $observation-bodyStructure-r5 named bodyStructure 0..1 and
-    $observation-triggeredBy-r5 named triggeredBy 0..* and
-    $observation-value-r5 named value-r5 0..1
+    $observation-triggeredBy-r5 named triggeredBy 0..* 
+    // and $observation-value-r5 named value-r5 0..1
+
 * extension[bodyStructure]
   * ^requirements = "EHDSObservation.anatomicLocation"
 * extension[triggeredBy].extension[observation].valueReference only Reference(MedicalTestResultEuCore)
   * ^requirements = "EHDSObservation.triggeredBy[x]"
+/* temporarly removed to fix extensions validation errors 
 * extension[value-r5]
   * value[x] only Attachment
   * ^short = "only for result of type Attachment"
+*/
+
+
 * identifier
   * ^requirements = "EHDSObservation.header.identifier"
 * basedOn
@@ -26,13 +31,14 @@ Description: """This profile introduces essential constraints and extensions for
 * status
   * ^requirements = "EHDSObservation.header.status"
 * category 1..
-  * insert SliceElement( #value, $this )
+/*  Removed for the time being based on https://jira.hl7.org/browse/FHIR-55424
+ * insert SliceElement( #value, $this )
   * ^requirements = "EHDSObservation has no requirement"
 * category contains 
     laboratory 0..1 and
     vital-signs 0..1
 * category[laboratory] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
-* category[vital-signs] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* category[vital-signs] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs */
 * code from LaboratoryResultStandardEuVs (preferred)
   * ^requirements = "EHDSObservation.code"
 * subject 1.. 

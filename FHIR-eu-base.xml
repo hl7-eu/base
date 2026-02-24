@@ -9,7 +9,7 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/Address-eu" key="StructureDefinition-Address-eu" name="Address (EU)"/>
-<artifact id="StructureDefinition/allergyIntolerance-eu-core" key="StructureDefinition-allergyIntolerance-eu-core" name="Allergy Intolerance (EU core)"/>
+<artifact id="StructureDefinition/allergyIntolerance-eu-core" key="StructureDefinition-allergyIntolerance-eu-core" name="AllergyIntolerance (EU core)"/>
 <artifact id="AllergyIntolerance/allergyintolerance-eu-core-example" key="AllergyIntolerance-allergyintolerance-eu-core-example" name="AllergyIntolerance Example"/>
 <artifact id="Patient/Patient-animal-example" key="Patient-Patient-animal-example" name="Animal Patient Example"/>
 <artifact id="ValueSet/siteLaterality-eu" key="ValueSet-siteLaterality-eu" name="Body Structure Laterality"/>
@@ -41,7 +41,6 @@
 <artifact deprecated="true" id="StructureDefinition/location-eu" key="StructureDefinition-location-eu" name="Location (EU base)"/>
 <artifact id="StructureDefinition/location-eu-core" key="StructureDefinition-location-eu-core" name="Location (EU core)"/>
 <artifact id="Location/example-location" key="Location-example-location" name="Location Example"/>
-<artifact id="StructureDefinition/medicalTestResult-eu-core" key="StructureDefinition-medicalTestResult-eu-core" name="MedicalTestResult (EU core)"/>
 <artifact id="StructureDefinition/medication-eu-core" key="StructureDefinition-medication-eu-core" name="Medication (EU core)"/>
 <artifact id="Medication/01A-Cefuroxime1500GenericExplicit" key="Medication-01A-Cefuroxime1500GenericExplicit" name="Medication Example"/>
 <artifact id="ValueSet/medicationIntendedUse-eu" key="ValueSet-medicationIntendedUse-eu" name="Medication Intended Use"/>
@@ -50,6 +49,7 @@
 <artifact id="StructureDefinition/medicationStatement-eu-core" key="StructureDefinition-medicationStatement-eu-core" name="MedicationStatement (EU core)"/>
 <artifact id="MedicationStatement/example-medicationstatement-eucore" key="MedicationStatement-example-medicationstatement-eucore" name="MedicationStatement Example"/>
 <artifact id="Observation/763f7902-8103-4d10-8bd1-546a726d43ee" key="Observation-763f7902-8103-4d10-8bd1-546a726d43ee" name="Observation Example"/>
+<artifact id="StructureDefinition/medicalTestResult-eu-core" key="StructureDefinition-medicalTestResult-eu-core" name="Observation: Medical Test Result (EU core)"/>
 <artifact id="StructureDefinition/organization-eu" key="StructureDefinition-organization-eu" name="Organization (EU base)"/>
 <artifact id="StructureDefinition/organization-eu-core" key="StructureDefinition-organization-eu-core" name="Organization (EU core)"/>
 <artifact id="Organization/organization-eu-core-example" key="Organization-organization-eu-core-example" name="Organization Example"/>
