@@ -2,17 +2,38 @@ This page summarizes the main changes applied to this version of the guide.
 
 ### From 2.0.0-ballot to 2.0.0
 
-* FHIR-55554: removed DiagnosticReportComposition extension from the R5 profile
-* FHIR-55553: typos fixing (partial)
-* FHIR-55461: Editorial changes (many pages)
-* FHIR-53895: Fixed Location mapping page header
-* FHIR-53894: Fixed the EHDSOrganisation page header
-* FHIR-55522: Relax constraint in DiagnosticReportEuCore to align with IPS
-* FHIR-55387: FlagEuCore renamed FlagPatientEuCore
-* FHIR-55548: Removed the procedure-targetBodyStructure extension
-* FHIR-55533: Update descriptions in core profiles
-* FHIR-53896, FHIR-55503 : removed constraint on subject.reference
-* FHIR-53897 : removed constraint on patient.reference
+* Profile and constraint updates
+  * FHIR-55554: Removed `DiagnosticReportComposition` extension from the R5 profile.
+  * FHIR-55522: Relaxed a constraint in `DiagnosticReportEuCore` to align with IPS.
+  * FHIR-55541: Removed the category slice from `DiagnosticReportEuCore`.
+  * FHIR-55542: Added EU core profile references for `performer` and `resultInterpreter` in `DiagnosticReportEuCore`.
+  * FHIR-55548: Removed the `procedure-targetBodyStructure` extension.
+  * FHIR-53896 / FHIR-55503: Removed constraint on `subject.reference`.
+  * FHIR-53897: Removed constraint on `patient.reference`.
+  * FHIR-55387: Renamed `FlagEuCore` to `FlagPatientEuCore`.
+  * Updated `Immunization` profile to align with model maps.
+  * FHIR-55458: Renamed attester slice `resultValidator`.
+  * FHIR-55526: Set `Composition.attester.party` cardinality to `1..` for validator and legalAuthenticator.
+  * MedicalTestResultEuCore: Temporarily removed the R5 `value[x]` extension to fix extension errors.
+  * FHIR-55424: Removed category slice in `MedicalTestResultEuCore`.
+  * FHIR-55639: Added missing target elements referenced by model maps and reviewed all profiles.
+
+* Editorial and documentation updates
+  * FHIR-55553: Partial typo fixes.
+  * FHIR-55461: Editorial updates across multiple pages.
+  * FHIR-53895: Fixed the Location mapping page header.
+  * FHIR-53894: Fixed the EHDSOrganisation page header.
+  * FHIR-55533: Updated descriptions in core profiles.
+  * FHIR-55536: Harmonized profile titles.
+  * FHIR-55452: Clarified the role of base and core profiles in the introduction page.
+  * FHIR-55454: Moved the EHDSBodyStructure model and related map under the Entity group.
+  * FHIR-55741: Normalized relationships in model map tables.
+
+* EHDS model and mapping alignment (Xt-EHR `0.3.0`) 
+  * Revised the Flag model map and fixed links to model version `0.3.0`.
+  * FHIR-55532: Aligned model map pages with the updated model version.
+  * Added the Xt-EHR `0.3.0` model and refactored EHDS-to-FHIR mappings based on the updated model.
+  
 
 ### From 0.1.0 to 2.0.0-ballot
 
