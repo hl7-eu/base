@@ -6,7 +6,6 @@ Title:    "Medication (EU core)"
 Description: """This profile introduces essential constraints and extensions for the Medication resource that apply across multiple use cases."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (1, draft)
-* text ^short = "Human readable summary of the medication, for example, the name and form of the medication."
 * batch
   * lotNumber ^short = "Lot Number"
   * expirationDate ^short = "Expiration Date"

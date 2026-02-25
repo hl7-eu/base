@@ -33,7 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-55459: aligned the Medication profile with the latest MPD version
+Aligned modelmap page with MPD; removed 'text' from the differential (no more used as target in the map)
 "@
 }
 
