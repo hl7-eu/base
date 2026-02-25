@@ -1,10 +1,10 @@
 {
   "package-id" : "hl7.fhir.eu.base",
-  "path" : "http://hl7.eu/fhir/base/2.0.0-ballot",
-  "version" : "2.0.0-ballot",
-  "desc" : "This publication is for ballot of a new STU release (2.0.0) which incorporates new profiles, reference to new logical models, new model to profile mapping tables, terminology updates, and publication cleanup. This version adopts the new HL7 Europe versioning rules for FHIR IGs (2.0.0 instead of 0.2.0).",
-  "descmd" : "This publication is for ballot of a new STU release (2.0.0) of the HL7 Europe Base and Core FHIR IG",
-  "status" : "ballot",
+  "path" : "http://hl7.eu/fhir/base/xtehr",
+  "version" : "2.0.0-gamma",
+  "desc" : "This publication is a quality assurance (QA) preview release provided in support of the Xt-EHR Projectathon.",
+  "descmd" : "This publication is a quality assurance (QA) preview release provided in support of the Xt-EHR Projectathon.",
+  "status" : "preview",
   "sequence" : "Release",
   "mode": "working",
   "changes" : "changes.html"
