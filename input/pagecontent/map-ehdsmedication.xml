@@ -144,7 +144,15 @@
             <td>doseForm</td>
             <td>Dose form(s) on a product level.</td>
             <td>equivalent</td>
-            <td>Medication</td><td>form</td>
+            <td>Medication</td><td>form <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Dose form of the medication.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>doseForm</td>
+            <td>Dose form(s) on a product level.</td>
+            <td>equivalent</td>
+            <td>Medication</td><td>doseForm <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Dose form of the medication.</td>
             <td></td>
           </tr>
@@ -152,7 +160,7 @@
             <td>description</td>
             <td>Narrative description of the medication.</td>
             <td>source-is-broader-than-target</td>
-            <td>Medication</td><td>text</td>
+            <td>Medication</td><td>extension:characteristic</td>
             <td>Textual description of the medication</td>
             <td></td>
           </tr>
@@ -161,17 +169,34 @@
             <td>A medication item (components in a combination pack).</td>
             <td>equivalent</td>
             <td>Medication</td>
-            <td>ingredient.item</td>
+            <td>ingredient.itemReference <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>A particular constituent of interest in the product.</td>
+            <td>An item - included in a product - is represented by a Medication resource referenced by the <code>ingredient.item</code> (see the example at https://hl7.eu/fhir/mpd-r5/Medication-02A-ClotrimazoleCanifugCremolum.html). If the item is the product, the item is the Medication itself.</td>
+          </tr>
+          <tr>
+            <td>item</td>
+            <td>A medication item (components in a combination pack).</td>
+            <td>equivalent</td>
+            <td>Medication</td>
+            <td>ingredient.item.reference <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>A particular constituent of interest in the product.</td>
             <td>An item - included in a product - is represented by a Medication resource referenced by the <code>ingredient.item</code> (see the example at https://hl7.eu/fhir/mpd-r5/Medication-02A-ClotrimazoleCanifugCremolum.html). If the item is the product, the item is the Medication itself.</td>
           </tr>
           <tr>
             <td>item.doseForm</td>
-            <td>Dose form of the manufactured item.</td>
+            <td>Dose form(s) on a product level.</td>
             <td>equivalent</td>
-            <td>Medication</td><td>doseForm</td>
-            <td>Dose Form</td>
-            <td>See note above about <i>item</i></td>
+            <td>Medication</td><td>form <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Dose form of the medication.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>item.doseForm</td>
+            <td>Dose form(s) on a product level.</td>
+            <td>equivalent</td>
+            <td>Medication</td><td>doseForm <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Dose form of the medication.</td>
+            <td></td>
           </tr>
           <tr>
             <td>item.ingredient</td>
@@ -193,7 +218,15 @@
             <td>item.ingredient.substance</td>
             <td>Substance.</td>
             <td>equivalent</td>
-            <td>Medication</td><td>ingredient.itemCodeableConcept</td>
+            <td>Medication</td><td>ingredient.itemCodeableConcept <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>The substance of the ingredient.</td>
+            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i></td>
+          </tr>
+          <tr>
+            <td>item.ingredient.substance</td>
+            <td>Substance.</td>
+            <td>equivalent</td>
+            <td>Medication</td><td>ingredient.item.concept <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>The substance of the ingredient.</td>
             <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i></td>
           </tr>
@@ -209,7 +242,15 @@
             <td>item.ingredient.strengthInfo.strength</td>
             <td>Strength of the substance.</td>
             <td>equivalent</td>
-            <td>Medication</td><td>ingredient.strengthRatio</td>
+            <td>Medication</td><td>ingredient.strength  <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Quantity of ingredient present.</td>
+            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i></td>
+          </tr>
+          <tr>
+            <td>item.ingredient.strengthInfo.strength</td>
+            <td>Strength of the substance.</td>
+            <td>equivalent</td>
+            <td>Medication</td><td>ingredient.strengthRatio  <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Quantity of ingredient present.</td>
             <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i></td>
           </tr>
@@ -218,7 +259,17 @@
             <td>Substance the strength refers to (if different).</td>
             <td>equivalent</td>
             <td>Medication</td>
-            <td>ingredient.strength[x].extension:basisOfStrengthSubstance</td>
+            <td>ingredient.strength.extension:basisOfStrengthSubstance <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>Substance the strength refers to (if different).</td>
+            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i>
+            </td>
+          </tr>
+          <tr>
+            <td>item.ingredient.strengthInfo.basisOfStrengthSubstance</td>
+            <td>Substance the strength refers to (if different).</td>
+            <td>equivalent</td>
+            <td>Medication</td>
+            <td>ingredient.strength[x].extension:basisOfStrengthSubstance <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Substance the strength refers to (if different).</td>
             <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i>
             </td>
@@ -291,10 +342,10 @@
           <tr>
             <td>device.device[x]</td>
             <td>Device coded (codeable concept or reference).</td>
-            <td>equivalent</td>
-            <td>Medication</td><td>extension:device.extension:device.value[x]</td>
+            <td>source-is-broader-than-target</td>
+            <td>Medication</td><td>extension:device.extension:device.valueCodeableConcept</td>
             <td></td>
-            <td></td>
+            <td>Only type of device (CodeableConcept) is expected. Reference not supported.</td>
           </tr>
           <tr>
             <td>characteristic</td>

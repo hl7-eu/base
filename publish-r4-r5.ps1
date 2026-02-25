@@ -33,8 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-MedicalTestResultEuCore: Temporaly removed the R5 value[x] extension to fix extensions errors
-FHIR-55424: Removed category slice in MedicalTestResultEuCore
+Aligned modelmap page with MPD; removed 'text' from the differential (no more used as target in the map)
 "@
 }
 
