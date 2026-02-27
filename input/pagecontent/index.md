@@ -36,7 +36,6 @@ The content is subject to change and is provided <b>as-is</b>, without warranty 
       </div>
     </div>
 
-
 ### Scope
 
 This Implementation Guide (IG) brings together **base** and **core** HL7® FHIR® artifacts designed specifically for the European context.
