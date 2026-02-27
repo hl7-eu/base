@@ -7,6 +7,7 @@ Description: "Example of an Immunization resource conforming to the Immunization
 * vaccineCode = $sct#1119349007 "SARS-CoV-2 mRNA vaccine"
 * patient = Reference(PatientExample)
 * occurrenceDateTime = "2024-10-05"
+* occurrenceDateTime.extension[periodOfLife].valueCodeableConcept = $sct#41847000 "Adulthood"
 * lotNumber = "CVD2024B04"
 * manufacturer
   * display = "Example Vaccine Manufacturer"

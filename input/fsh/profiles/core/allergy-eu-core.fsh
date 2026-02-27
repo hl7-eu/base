@@ -11,6 +11,9 @@ Description: """This profile introduces essential constraints and extensions for
 * language ^short = "Language of the allergy or intolerance content"
 * note.text ^short = "Additional information about the allergy or intolerance"
 * onset[x] ^short = "Date of onset of the allergy or intolerance"
+/* * onsetDateTime
+  * extension contains PeriodsOfLife named periodOfLife 0..1
+  * extension[periodOfLife].valueCodeableConcept from PeriodsOfLifeEuVs (preferred) */
 * recordedDate ^short = "Date when the allergy or intolerance was recorded"
 * patient ^short = "Who the allergy or intolerance concerns"
 * asserter ^short = "Who asserts the allergy or intolerance"

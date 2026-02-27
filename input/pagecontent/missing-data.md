@@ -78,3 +78,35 @@ If a content creator does not have data to be included in the resources, the rea
       ...
     }
     ```
+
+#### Indicative Date Information: Period of Life Extension
+
+When only indicative temporal information is known (e.g., "during adolescence"), the [**period of life extension**](https://hl7.eu/fhir/extensions/StructureDefinition-periods-of-life.html) can be used to convey this information.
+
+For elements with multiple datatype choices (`[x]`), `dateTime` SHOULD be used as the preferred datatype when representing date/time information.
+
+Example fragment (Immunization): exact occurrence date is unknown, but the period of life is known.
+
+```
+{
+  "resourceType": "Immunization",
+  ...
+  "_occurrenceDateTime": {
+    "extension": [
+      {
+        "url": "http://hl7.eu/fhir/base/StructureDefinition/periods-of-life",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "263659003",
+              "display": "Adolescence"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  ...
+}
+```

@@ -27,10 +27,10 @@ Description: """This profile introduces essential constraints and extensions for
 * type 1..1
 * type ^short = "Type of document/report (e.g. imaging report LOINC)"
 * category ^short = "Document Category"
-  * insert SliceElement( #value, $this )
+/*   * insert SliceElement( #value, $this )
 * category contains ehds-category 0..*
 * category[ehds-category] ^short = "EHDS Priority Category"
-* category[ehds-category] from EhdsCategoriesEuVs
+* category[ehds-category] from EhdsCategoriesEuVs */
 * subject 1..1
 * subject only Reference(PatientEuCore or Group or LocationEuCore or Device)
 * encounter 0..1

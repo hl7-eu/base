@@ -33,7 +33,8 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-Aligned modelmap page with MPD; removed 'text' from the differential (no more used as target in the map)
+FHIR-55545: Removed slice on category for the CompositionEuCore
+FHIR-55976: Added period of life extension examples and guidelines for indicative date information in missing data documentation
 "@
 }
 
