@@ -33,9 +33,8 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-55985: Added the PerformerFunction extension to the MedicalTestResult  profile
-Refactor mapping details for missing element in the Immunization, Observation and Alert models model
-Removed the qa preview warning in the index page
+FHIR-55456: changed additionalBinding purpose to preferred
+Sushi workaround for supporting subpackages
 "@
 }
 

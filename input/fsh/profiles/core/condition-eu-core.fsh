@@ -20,7 +20,7 @@ Description: """This profile introduces essential constraints and extensions for
   * ^binding.description = "Valueset to describe the actual problem experienced by the patient"
 
   * ^binding.extension[+].extension[0].url = "purpose"
-  * ^binding.extension[=].extension[=].valueCode = #candidate
+  * ^binding.extension[=].extension[=].valueCode = #preferred
   * ^binding.extension[=].extension[+].url = "valueSet"
   * ^binding.extension[=].extension[=].valueCanonical = "http://terminology.ehdsi.eu/ValueSet/eHDSIIllnessandDisorder"
   * ^binding.extension[=].extension[+].url = "documentation"

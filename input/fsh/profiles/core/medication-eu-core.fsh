@@ -42,7 +42,7 @@ Description: """This profile introduces essential constraints and extensions for
   * itemCodeableConcept from $medicine-active-substances-uv-ips (example)
     * ^binding.extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
     * ^binding.extension[=].extension[0].url = "purpose"
-    * ^binding.extension[=].extension[=].valueCode = #candidate
+    * ^binding.extension[=].extension[=].valueCode = #preferred
     * ^binding.extension[=].extension[+].url = "valueSet"
     * ^binding.extension[=].extension[=].valueCanonical = $eHDSISubstance
     * ^binding.extension[=].extension[+].url = "documentation"

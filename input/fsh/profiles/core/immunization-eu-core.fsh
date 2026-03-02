@@ -23,7 +23,7 @@ Description: """This profile introduces essential constraints and extensions for
 * extension[informationSource].extension[reference].valueReference only Reference ( PatientEuCore or PractitionerEuCore or PractitionerRoleEuCore or RelatedPerson or OrganizationEuCore )
 * vaccineCode from $vaccines-uv-ips (preferred)
   * ^binding.extension[+].extension[0].url = "purpose"
-  * ^binding.extension[=].extension[=].valueCode = #candidate
+  * ^binding.extension[=].extension[=].valueCode = #preferred
   * ^binding.extension[=].extension[+].url = "valueSet"
   * ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-whoatc-uv-ips"
   * ^binding.extension[=].extension[+].url = "documentation"
@@ -34,7 +34,7 @@ Description: """This profile introduces essential constraints and extensions for
   * ^binding.description = "The type of vaccine for particular disease or diseases against which the patient has been immunised, or a code for absent/unknown immunization."
 
   * ^binding.extension[+].extension[0].url = "purpose"
-  * ^binding.extension[=].extension[=].valueCode = #candidate
+  * ^binding.extension[=].extension[=].valueCode = #preferred
   * ^binding.extension[=].extension[+].url = "valueSet"
   * ^binding.extension[=].extension[=].valueCanonical = "http://terminology.ehdsi.eu/ValueSet/eHDSIVaccine"
   * ^binding.extension[=].extension[+].url = "documentation"
@@ -63,7 +63,7 @@ Description: """This profile introduces essential constraints and extensions for
 * protocolApplied.targetDisease from $target-diseases-uv-ips (preferred) // Check Value Set
 * protocolApplied.targetDisease
   * ^binding.extension[+].extension[0].url = "purpose"
-  * ^binding.extension[=].extension[=].valueCode = #candidate
+  * ^binding.extension[=].extension[=].valueCode = #preferred
   * ^binding.extension[=].extension[+].url = "valueSet"
   * ^binding.extension[=].extension[=].valueCanonical = "http://terminology.ehdsi.eu/ValueSet/eHDSIIllnessandDisorder"
   * ^binding.extension[=].extension[+].url = "documentation"
@@ -88,7 +88,7 @@ Description: """This profile defines how to represent Immunization Recommandatio
 * recommendation
   * vaccineCode from http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips (preferred)
   * vaccineCode ^binding.extension[+].extension[0].url = "purpose"
-  * vaccineCode ^binding.extension[=].extension[=].valueCode = #candidate
+  * vaccineCode ^binding.extension[=].extension[=].valueCode = #preferred
   * vaccineCode ^binding.extension[=].extension[+].url = "valueSet"
   * vaccineCode ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-whoatc-uv-ips"
   * vaccineCode ^binding.extension[=].extension[+].url = "documentation"

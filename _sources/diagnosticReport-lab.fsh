@@ -39,18 +39,6 @@ Commented based on the suggestion form the 2023-05-26 meeting see https://github
   * ^comment = "Usually assigned by the Information System of the diagnostic service provider for facilitating the Report search. The order id can be used as one of the Report identifier if only one report is produced for that order."
 * insert ReportIdentifierRule
 * insert ReportCategoryRule
-// add binding
-/* * code 1..
-* code only $CodeableConcept-uv-ips
-* code from LabReportTypesEuVs (preferred) // value set to be revised add alternative value sets
-* code ^binding.extension.extension[0].url = "purpose"
-* code ^binding.extension.extension[=].valueCode = #candidate
-* code ^binding.extension.extension[+].url = "valueSet"
-* code ^binding.extension.extension[=].valueCanonical = LabStudyTypesEuVs
-* code ^binding.extension.extension[+].url = "documentation"
-* code ^binding.extension.extension[=].valueMarkdown = """Laboratory Specialties."""
-* code ^binding.extension.url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
-* code ^binding.description = "Laboratory Specialties." */
 * insert ReportTypeRule ( code )
 * insert ReportSubjectRule
 * insert ReportEncounterRule
