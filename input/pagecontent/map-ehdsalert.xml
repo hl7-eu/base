@@ -102,7 +102,7 @@
             <td>Creator of the flag.</td>
             <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.date</td>
             <td>Date and optionally time of authoring/issuing.</td>
             <td>no-map</td>
@@ -118,7 +118,7 @@
             <td>Indicates if the flag is active, inactive, etc.</td>
             <td>Map using the EHDS to HL7 Flag-status value set alignment.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.source</td>
             <td>Source of the information (e.g. patient, proxy).</td>
             <td>no-map</td>

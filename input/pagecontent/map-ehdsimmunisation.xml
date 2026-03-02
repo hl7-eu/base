@@ -99,23 +99,23 @@
             <td>External identifier(s) for this Immunization event.</td>
             <td>Copy over all identifiers if multiple.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.author[x]</td>
             <td>Who authored/recorded this immunisation.</td>
             <td>no-map</td>
             <td>Immunization</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>performer</td>
+            <td>Who performed or produced the observation.</td>
+            <td>Immunization lacks a dedicated author participant. Usually, the performer is also the author; however in case the two participants shall be clearly distiguished, the performer.function element can be used for this purpose.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.date</td>
             <td>Date/time the record was issued/recorded.</td>
             <td>no-map</td>
             <td>Immunization</td>
             <td></td>
             <td></td>
-            <td></td>
+            <td>No direct native Flag element for authoring timestamp.</td>
           </tr>
           <tr>
             <td>header.status</td>

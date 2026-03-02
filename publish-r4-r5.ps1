@@ -33,8 +33,9 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-55545: Removed slice on category for the CompositionEuCore
-FHIR-55976: Added period of life extension examples and guidelines for indicative date information in missing data documentation
+FHIR-55985: Added the PerformerFunction extension to the MedicalTestResult  profile
+Refactor mapping details for missing element in the Immunization, Observation and Alert models model
+Removed the qa preview warning in the index page
 "@
 }
 

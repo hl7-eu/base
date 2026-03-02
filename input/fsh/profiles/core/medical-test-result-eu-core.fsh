@@ -53,6 +53,10 @@ Description: """This profile introduces essential constraints and extensions for
   * ^requirements = "EHDSObservation.header.authorship.datetime"
 * performer only Reference(PractitionerEuCore or PractitionerRoleEuCore or OrganizationEuCore)
   * ^requirements = "EHDSObservation.header.performer"
+* performer
+  * extension contains $event-performerFunction named performerFunction 0..1
+  * extension[performerFunction]
+    * ^requirements = "EHDSObservation.performer.function"
 //TODO: datatypes in xt-ehr model only valueString, valueQuantity, valueRange, valueCodeableConcept
 * value[x]
   * ^requirements = "EHDSObservation.result.value[x]"
