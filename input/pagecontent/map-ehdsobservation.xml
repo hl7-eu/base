@@ -264,7 +264,7 @@
             <td>Observation</td>
             <td>value[x]</td>
             <td>Result value.</td>
-            <td></td>
+            <td>When the result is a Diagram or Picture (Microbiology), then the Attachment data type should be used. In FHIR R4 this can be done by preadopting the R5 Observation.value[x] element using the cross-version extension.</td>
           </tr>
           <tr>
             <td>result.uncertainty</td>
@@ -375,7 +375,7 @@
             <td>Observation</td>
             <td>component.value[x]</td>
             <td>Component result value.</td>
-            <td></td>
+            <td>When the result is a Diagram or Picture (Microbiology), then the Attachment data type should be used. In FHIR R4 this can be done by preadopting the R5 Observation.value[x] element using the cross-version extension.</td>
           </tr>
              <tr>
             <td>component.result.uncertainty</td>
