@@ -33,8 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-55553: typos fixing
-removed dependency from IPS (no more used)
+FHIR-55400 and FHIR-55531: removed Patient Animal profile
 "@
 }
 
