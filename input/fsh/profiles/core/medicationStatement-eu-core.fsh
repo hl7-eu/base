@@ -25,7 +25,7 @@ Description: """This profile introduces essential constraints and extensions for
   * ^binding.extension[=].extension[+].url = "documentation"
   * ^binding.extension[=].extension[=].valueMarkdown = "When category is used for describing the intended use of the medication (e.g. Prophylactic use)."
 * dosage ^short = "Details of how medication is/was taken or should be taken."
-  * route //copy the additional bindign from the ips
+  * route //copy the additional binding from the ips
 * effectivePeriod ^short = "Period when the medication is/was or should be used."
 * medication[x] only CodeableConcept or Reference(MedicationEuCore)
 * medication[x] from $medication-uv-ips (example)

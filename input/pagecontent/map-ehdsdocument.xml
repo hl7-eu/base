@@ -258,7 +258,7 @@
             <td>Composition</td>
             <td>event.code <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
             <td>Codes describing the event(s) related to the composition.</td>
-            <td>Clarify the scope. If it is a classificaiton of the document it should be category</td>
+            <td>Clarify the scope. If it is a classification of the document it should be category</td>
           </tr>
           <tr>
             <td class="highlight-yellow">header.eventType</td>
@@ -267,7 +267,7 @@
             <td>Composition</td>
             <td>event.detail.concept<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Codes describing the event(s) related to the composition.</td>
-            <td>Clarify the scope. If it is a classificaiton of the document it should be category</td>
+            <td>Clarify the scope. If it is a classification of the document it should be category</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.serviceSpecialty</td>
@@ -276,7 +276,7 @@
             <td>Composition</td>
             <td>category</td>
             <td>Categorizes the composition.</td>
-            <td>Use category to tag specialty if no dedicated extension/profile element exists. (1) Is this a metadata information or something that have to be captured in the document ? (2) is this only for diagnosti reports ? in thsi case we can use DiagnosticReport.category</td>
+            <td>Use category to tag specialty if no dedicated extension/profile element exists. (1) Is this a metadata information or something that have to be captured in the document ? (2) is this only for diagnostic reports ? in this case we can use DiagnosticReport.category</td>
           </tr>
           <tr>
             <td>header.custodian</td>

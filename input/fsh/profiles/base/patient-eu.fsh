@@ -38,7 +38,7 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * maritalStatus ^short = "Marital status"
 * contact
   *  relationship ^short = "Contact relationship"
-  // include additonal value sets when they are defined
+  // include additional value sets when they are defined
   * address ^short = "Contact person address"
   * address only AddressEu
   * telecom ^short = "Contact details for the person"

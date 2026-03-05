@@ -2,12 +2,12 @@
 Profile:  FlagPatientEuCore
 Parent:   Flag
 Id:       flag-patient-eu-core
-Title:    "Flag:Patient  (EU core)"
+Title:    "Flag: Patient (EU core)"
 Description: """This profile introduces essential constraints and extensions for the Flag resource - for patient related alerts - that apply across multiple use cases.
-Other specialized flag profiles may be specified in the future for other kind of subjtects (e.g. related to practitioners, devices, etc.)."""
+Other specialized flag profiles may be specified in the future for other kind of subjects (e.g. related to practitioners, devices, etc.)."""
 //-------------------------------------------------------------------------------------------
 // * insert SetFmmandStatusRule (1, draft)
-* identifier ^short = "Alert bussiness Identifier"
+* identifier ^short = "Alert business Identifier"
 * language ^short = "Language of the alert content"
 * extension contains $flag-detail named flagDetailExt 0..*
 * extension contains $flag-priority named flagPriorityExt 0..1

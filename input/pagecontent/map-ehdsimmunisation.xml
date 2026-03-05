@@ -106,7 +106,7 @@
             <td>Immunization</td>
             <td>performer</td>
             <td>Who performed or produced the observation.</td>
-            <td>Immunization lacks a dedicated author participant. Usually, the performer is also the author; however in case the two participants shall be clearly distiguished, the performer.function element can be used for this purpose.</td>
+            <td>Immunization lacks a dedicated author participant. Usually, the performer is also the author; however in case the two participants shall be clearly distinguished, the performer.function element can be used for this purpose.</td>
           </tr>
           <tr>
             <td>header.date</td>

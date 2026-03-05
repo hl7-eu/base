@@ -33,8 +33,8 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-55429: Changed the binding for the MedicalTestResultEUCore code.
-FHIR-55428: Update MedicalTestResultEuCore profile and mapping documentation for value[x] to clarify usage of Attachment data type
+FHIR-55553: typos fixing
+removed dependency from IPS (no more used)
 "@
 }
 

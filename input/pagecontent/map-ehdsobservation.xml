@@ -107,7 +107,7 @@
             <td>Observation</td>
             <td>performer</td>
             <td>Who performed or produced the observation.</td>
-            <td>Observation lacks a dedicated author participant. Usually, the performer is also the author; however in case the two participants shall be clearly distiguished, the PerformerFunction extension can be used for this purpose.</td>
+            <td>Observation lacks a dedicated author participant. Usually, the performer is also the author; however in case the two participants shall be clearly distinguished, the PerformerFunction extension can be used for this purpose.</td>
           </tr>
           <tr>
             <td>header.date</td>
@@ -276,7 +276,7 @@
             <td>See included elements for mapping details</td>
           </tr>
           <tr>
-            <td>result.uncertaint.value</td>
+            <td>result.uncertainty.value</td>
             <td>Measurement uncertainty type and interval.</td>
             <td>equivalent</td>
             <td>Quantity</td>
@@ -387,7 +387,7 @@
             <td>See included elements for mapping details</td>
           </tr>
           <tr>
-            <td>component.result.uncertaint.value</td>
+            <td>component.result.uncertainty.value</td>
             <td>Measurement uncertainty type and interval.</td>
             <td>equivalent</td>
             <td>Quantity</td>

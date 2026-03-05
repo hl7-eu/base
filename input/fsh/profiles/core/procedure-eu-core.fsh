@@ -14,7 +14,7 @@ Description: """This profile introduces essential constraints and extensions for
 * extension contains $procedure-recorded-r5 named recorded 0..1
 * extension[recorded] ^short = "Date when the procedure was recorded"
 * identifier ^short = "Identifier for the procedure"
-* text ^short = "Textual representation of the procedur"
+* text ^short = "Textual representation of the procedure"
  // textual representation of the procedure should be provided according to the EHN data set
 * status
 * code 1.. 

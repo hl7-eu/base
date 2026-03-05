@@ -81,9 +81,9 @@ Profile:  ImmunizationRecommendationEuCore
 Parent:   ImmunizationRecommendation
 Id:       immunizationRecommendation-eu-core
 Title:    "ImmunizationRecommendation (EU core)"
-Description: """This profile defines how to represent Immunization Recommandations for the purpose of this guide."""
+Description: """This profile defines how to represent Immunization Recommendations for the purpose of this guide."""
 //-------------------------------------------------------------------------------------------
-* date ^short = "When recomendation was created"
+* date ^short = "When recommendation was created"
 * patient only Reference (PatientEuCore)
 * recommendation
   * vaccineCode from http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips (preferred)
