@@ -33,7 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-55400 and FHIR-55531: removed Patient Animal profile
+FHIR-55537: refactored EHDSHealthProfessional mapping table
 "@
 }
 
