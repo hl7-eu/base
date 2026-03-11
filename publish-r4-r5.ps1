@@ -33,7 +33,8 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-55537: refactored EHDSHealthProfessional mapping table
+update EHDSHealthProfessional mapping table: correct relationship descriptions and clarify telecom mappings
+FHIR-55538: merged R4 and R5 cells in mapping tables
 "@
 }
 

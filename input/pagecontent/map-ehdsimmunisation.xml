@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
@@ -36,9 +36,7 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a
-            href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSImmunisation.html"
-            target="_blank">
+          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSImmunisation.html" target="_blank">
             EHDSImmunisation
           </a>
         </li>
@@ -131,16 +129,7 @@
             <td>Source of the information (e.g. patient, proxy).</td>
             <td>no-map</td>
             <td>Immunization</td>
-            <td>extension:informationSource <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Source of a reported record</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>header.source</td>
-            <td>Source of the information (e.g. patient, proxy).</td>
-            <td>no-map</td>
-            <td>Immunization</td>
-            <td>informationSource <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>extension:informationSource <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>informationSource <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Source of a reported record</td>
             <td></td>
           </tr>
@@ -177,18 +166,9 @@
             <td>Vaccine product administered.</td>
             <td>equivalent</td>
             <td>Immunization</td>
-            <td>extension:administeredProduct <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>extension:administeredProduct <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>administeredProduct <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Product that was administered.</td>
-            <td>Use the standard extension in R4.</td>
-          </tr>
-          <tr>
-            <td>administeredProduct</td>
-            <td>Vaccine product administered.</td>
-            <td>equivalent</td>
-            <td>Immunization</td>
-            <td>administeredProduct <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Product that was administered.</td>
-            <td>Reference to <code>Medication</code>.</td>
+            <td>Use the standard extension in R4.<br></br>Reference to <code>Medication</code>.</td>
           </tr>
           <tr>
             <td>diseaseOrAgentTargeted</td>

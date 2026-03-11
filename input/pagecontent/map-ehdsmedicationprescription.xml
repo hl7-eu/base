@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
@@ -27,9 +27,7 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a
-            href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition/EHDSMedicationPrescription"
-            target="_blank">
+          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition/EHDSMedicationPrescription" target="_blank">
             EHDSMedicationPrescription
           </a>
         </li>
@@ -179,17 +177,7 @@
             <td>Prescribed product (branded, generic, etc.).</td>
             <td>equivalent</td>
             <td>MedicationRequest</td>
-            <td>medication[x]<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Medication as CodeableConcept or Reference.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>prescriptionItem.medication</td>
-            <td>Prescribed product (branded, generic, etc.).</td>
-            <td>equivalent</td>
-            <td>MedicationRequest</td>
-            <td>medication<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
-            </td>
+            <td>medication[x]<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>medication<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Medication as CodeableConcept or Reference.</td>
             <td></td>
           </tr>
@@ -198,16 +186,7 @@
             <td>Coded reason for the prescription.</td>
             <td>equivalent</td>
             <td>MedicationRequest</td>
-            <td>reasonCode<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Why the medication is prescribed.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>prescriptionItem.indication[x]</td>
-            <td>Coded reason for the prescription.</td>
-            <td>equivalent</td>
-            <td>MedicationRequest</td>
-            <td>reason.concept<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>reasonCode<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>reason.concept<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Why the medication is prescribed.</td>
             <td></td>
           </tr>
@@ -216,16 +195,7 @@
             <td>Diagnosis/reason referenced as a Condition.</td>
             <td>equivalent</td>
             <td>MedicationRequest</td>
-            <td>reasonReference<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Reference to the clinical reason.</td>
-            <td>Reference to Condition or other resource.</td>
-          </tr>
-          <tr>
-            <td>prescriptionItem.indication[x]</td>
-            <td>Diagnosis/reason referenced as a Condition.</td>
-            <td>equivalent</td>
-            <td>MedicationRequest</td>
-            <td>reason.reference<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>reasonReference<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>reason.reference<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Reference to the clinical reason.</td>
             <td>Reference to Condition or other resource.</td>
           </tr>
@@ -253,16 +223,7 @@
             <td>Overall period over which the medication is to be taken.</td>
             <td>related-to</td>
             <td>MedicationRequest</td>
-            <td>extension:effectiveDosePeriod<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Period over which the medication should be taken.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>prescriptionItem.periodOfUse</td>
-            <td>Overall period over which the medication is to be taken.</td>
-            <td>related-to</td>
-            <td>MedicationRequest</td>
-            <td>effectiveDosePeriod<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>extension:effectiveDosePeriod<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>effectiveDosePeriod<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Period over which the medication should be taken.</td>
             <td></td>
           </tr>

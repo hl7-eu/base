@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
@@ -80,15 +80,7 @@
             <td>location</td>
             <td>Body site.</td>
             <td>equivalent</td>
-            <td>BodyStructure</td><td>location <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Body site.</td>
-            <td>R4 commonly uses location; R5 often uses includedStructure.structure.</td>
-          </tr>
-          <tr>
-            <td>location</td>
-            <td>Body site.</td>
-            <td>equivalent</td>
-            <td>BodyStructure</td><td>includedStructure.structure<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>BodyStructure</td><td>location <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>includedStructure.structure<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Body site.</td>
             <td>R4 commonly uses location; R5 often uses includedStructure.structure.</td>
           </tr>
@@ -96,16 +88,7 @@
             <td>locationQualifier</td>
             <td>Qualifier for the body site (upper, lower, etc.).</td>
             <td>equivalent</td>
-            <td>BodyStructure</td><td>locationQualifier<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Body site modifier.</td>
-            <td>R4: locationQualifier; R5: includedStructure.qualifier.</td>
-          </tr>
-          <tr>
-            <td>locationQualifier</td>
-            <td>Qualifier for the body site (upper, lower, etc.).</td>
-            <td>equivalent</td>
-            <td>BodyStructure</td><td>includedStructure.qualifier<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
-            </td>
+            <td>BodyStructure</td><td>locationQualifier<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>includedStructure.qualifier<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Body site modifier.</td>
             <td>R4: locationQualifier; R5: includedStructure.qualifier.</td>
           </tr>
@@ -113,18 +96,10 @@
             <td>laterality</td>
             <td>Laterality (e.g. left, right).</td>
             <td>equivalent</td>
-            <td>BodyStructure</td><td>extension:laterality<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>BodyStructure</td><td>extension:laterality<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>includedStructure.laterality<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Body structure laterality.</td>
             <td>R4 often uses an extension; R5 includes laterality directly.</td>
           </tr>
-            <tr>
-              <td>laterality</td>
-              <td>Laterality (e.g. left, right).</td>
-              <td>equivalent</td>
-              <td>BodyStructure</td><td>includedStructure.laterality<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-                <td>Body structure laterality.</td>
-                <td>R4 often uses an extension; R5 includes laterality directly.</td>
-              </tr>
           <tr>
             <td>description</td>
             <td>Textual description of the body structure.</td>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
@@ -183,19 +183,9 @@
             <td>Business version of the document.</td>
             <td>related-to</td>
             <td>Composition</td>
-            <td>extension:version<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>extension:version<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>version<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Document business version.</td>
             <td>Use Composition.version extension (pre-adopt R5 extension).</td>
-          </tr>
-          <tr>
-            <td>header.version</td>
-            <td>Business version of the document.</td>
-            <td>related-to</td>
-            <td>Composition</td>
-            <td>version<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
-            </td>
-            <td>Document business version.</td>
-            <td></td>
           </tr>
           <tr>
             <td>header.attestation</td>
@@ -253,19 +243,10 @@
           </tr>
           <tr>
             <td class="highlight-yellow">header.eventType</td>
-            <td >Categorisation of the event covered by the document.</td>
+            <td>Categorisation of the event covered by the document.</td>
             <td>related-to</td>
             <td>Composition</td>
-            <td>event.code <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Codes describing the event(s) related to the composition.</td>
-            <td>Clarify the scope. If it is a classification of the document it should be category</td>
-          </tr>
-          <tr>
-            <td class="highlight-yellow">header.eventType</td>
-            <td >Categorisation of the event covered by the document.</td>
-            <td>related-to</td>
-            <td>Composition</td>
-            <td>event.detail.concept<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>event.code <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>event.detail.concept<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Codes describing the event(s) related to the composition.</td>
             <td>Clarify the scope. If it is a classification of the document it should be category</td>
           </tr>

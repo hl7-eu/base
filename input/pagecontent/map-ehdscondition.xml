@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
@@ -36,8 +36,7 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSCondition.html"
-            target="_blank">
+          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSCondition.html" target="_blank">
             EHDSCondition
           </a>
         </li>
@@ -103,18 +102,9 @@
             <td>Who created/issued the condition record.</td>
             <td>equivalent</td>
             <td>Condition</td>
-            <td>recorder<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
+            <td>recorder<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>participant.actor<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Who recorded the condition.</td>
-            <td>Condition has no generic "author"; use <code>recorder</code> in R4.</td>
-          </tr>
-          <tr>
-            <td>header.author[x]</td>
-            <td>Who created/issued the condition record.</td>
-            <td>equivalent</td>
-            <td>Condition</td>
-            <td>participant.actor<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Who recorded the condition.</td>
-            <td>Condition has no generic "author"; use <code>participant.actor</code> in R5.</td>
+            <td>Condition has no generic "author"; use <code>recorder</code> in R4.<br></br>Condition has no generic "author"; use <code>participant.actor</code> in R5.</td>
           </tr>
           <tr>
             <td>header.date</td>
@@ -140,16 +130,7 @@
             <td>Source of the information (e.g. patient, proxy).</td>
             <td>equivalent</td>
             <td>Condition</td>
-            <td>asserter<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Source of the information about the condition.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>header.source</td>
-            <td>Source of the information (e.g. patient, proxy).</td>
-            <td>equivalent</td>
-            <td>Condition</td>
-            <td>participant.actor<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>asserter<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>participant.actor<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Source of the information about the condition.</td>
             <td>With participant.function =
               "http://terminology.hl7.org/CodeSystem/provenance-participant-type#informant"</td>

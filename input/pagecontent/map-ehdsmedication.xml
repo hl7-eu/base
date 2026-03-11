@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
@@ -109,18 +109,8 @@
             <td>marketingAuthorisationHolder</td>
             <td>Marketing authorisation holder / manufacturer.</td>
             <td>equivalent</td>
-            <td>Medication</td><td>manufacturer <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Manufacturer of the item.</td>
-            <td>Reference to <code>Organization</code>.
-            </td>
-          </tr>
-          <tr>
-            <td>marketingAuthorisationHolder</td>
-            <td>Marketing authorisation holder / manufacturer.</td>
-            <td>equivalent</td>
-            <td>Medication</td>
-            <td>marketingAuthorizationHolder <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Organization that has authorization to market medication.</td>
+            <td>Medication</td><td>manufacturer <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>marketingAuthorizationHolder <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Manufacturer of the item.<br></br>Organization that has authorization to market medication.</td>
             <td>Reference to <code>Organization</code>.
             </td>
           </tr>
@@ -144,15 +134,7 @@
             <td>doseForm</td>
             <td>Dose form(s) on a product level.</td>
             <td>equivalent</td>
-            <td>Medication</td><td>form <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Dose form of the medication.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>doseForm</td>
-            <td>Dose form(s) on a product level.</td>
-            <td>equivalent</td>
-            <td>Medication</td><td>doseForm <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Medication</td><td>form <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>doseForm <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Dose form of the medication.</td>
             <td></td>
           </tr>
@@ -169,16 +151,7 @@
             <td>A medication item (components in a combination pack).</td>
             <td>equivalent</td>
             <td>Medication</td>
-            <td>ingredient.itemReference <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>A particular constituent of interest in the product.</td>
-            <td>An item - included in a product - is represented by a Medication resource referenced by the <code>ingredient.item</code> (see the example at https://hl7.eu/fhir/mpd-r5/Medication-02A-ClotrimazoleCanifugCremolum.html). If the item is the product, the item is the Medication itself.</td>
-          </tr>
-          <tr>
-            <td>item</td>
-            <td>A medication item (components in a combination pack).</td>
-            <td>equivalent</td>
-            <td>Medication</td>
-            <td>ingredient.item.reference <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>ingredient.itemReference <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>ingredient.item.reference <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>A particular constituent of interest in the product.</td>
             <td>An item - included in a product - is represented by a Medication resource referenced by the <code>ingredient.item</code> (see the example at https://hl7.eu/fhir/mpd-r5/Medication-02A-ClotrimazoleCanifugCremolum.html). If the item is the product, the item is the Medication itself.</td>
           </tr>
@@ -186,15 +159,7 @@
             <td>item.doseForm</td>
             <td>Dose form(s) on a product level.</td>
             <td>equivalent</td>
-            <td>Medication</td><td>form <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Dose form of the medication.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>item.doseForm</td>
-            <td>Dose form(s) on a product level.</td>
-            <td>equivalent</td>
-            <td>Medication</td><td>doseForm <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Medication</td><td>form <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>doseForm <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Dose form of the medication.</td>
             <td></td>
           </tr>
@@ -218,15 +183,7 @@
             <td>item.ingredient.substance</td>
             <td>Substance.</td>
             <td>equivalent</td>
-            <td>Medication</td><td>ingredient.itemCodeableConcept <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>The substance of the ingredient.</td>
-            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i></td>
-          </tr>
-          <tr>
-            <td>item.ingredient.substance</td>
-            <td>Substance.</td>
-            <td>equivalent</td>
-            <td>Medication</td><td>ingredient.item.concept <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Medication</td><td>ingredient.itemCodeableConcept <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>ingredient.item.concept <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>The substance of the ingredient.</td>
             <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i></td>
           </tr>
@@ -242,15 +199,7 @@
             <td>item.ingredient.strengthInfo.strength</td>
             <td>Strength of the substance.</td>
             <td>equivalent</td>
-            <td>Medication</td><td>ingredient.strength  <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Quantity of ingredient present.</td>
-            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i></td>
-          </tr>
-          <tr>
-            <td>item.ingredient.strengthInfo.strength</td>
-            <td>Strength of the substance.</td>
-            <td>equivalent</td>
-            <td>Medication</td><td>ingredient.strengthRatio  <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Medication</td><td>ingredient.strength  <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>ingredient.strengthRatio  <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Quantity of ingredient present.</td>
             <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i></td>
           </tr>
@@ -259,17 +208,7 @@
             <td>Substance the strength refers to (if different).</td>
             <td>equivalent</td>
             <td>Medication</td>
-            <td>ingredient.strength.extension:basisOfStrengthSubstance <span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Substance the strength refers to (if different).</td>
-            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i>
-            </td>
-          </tr>
-          <tr>
-            <td>item.ingredient.strengthInfo.basisOfStrengthSubstance</td>
-            <td>Substance the strength refers to (if different).</td>
-            <td>equivalent</td>
-            <td>Medication</td>
-            <td>ingredient.strength[x].extension:basisOfStrengthSubstance <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>ingredient.strength.extension:basisOfStrengthSubstance <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>ingredient.strength[x].extension:basisOfStrengthSubstance <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Substance the strength refers to (if different).</td>
             <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i>
             </td>
@@ -298,21 +237,10 @@
             <td>Number of such manufactured items in this product.</td>
             <td>equivalent</td>
             <td>Medication</td>
-            <td>amount <span style="color:#2e7d32;font-weight:600;">〔R4〕</span>
-            </td>
-            <td>Amount of the medication in the package.</td>
+            <td>amount <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>totalVolume <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Amount of the medication in the package.<br></br>When the specified product code does not infer a package size, this is the specific amount of drug in the product.</td>
             <td>See note above about <i>item</i>
             </td>
-          </tr>
-          <tr>
-            <td>item.amount</td>
-            <td>Number of such manufactured items in this product.</td>
-            <td>equivalent</td>
-            <td>Medication</td>
-            <td>totalVolume <span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
-            </td>
-            <td>When the specified product code does not infer a package size, this is the specific amount of drug in the product.</td>
-            <td>See note above about <i>item</i></td>
           </tr>
           <tr>
             <td>item.packageType</td>

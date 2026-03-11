@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
@@ -98,15 +98,7 @@
             <td>header.author[x]</td>
             <td>Who created/issued the alert.</td>
             <td>equivalent</td>
-            <td>AllergyIntolerance</td><td>recorder<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Who recorded the sensitivity.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>header.author[x]</td>
-            <td>Who created/issued the alert.</td>
-            <td>equivalent</td>
-            <td>AllergyIntolerance</td><td>participant.actor<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>AllergyIntolerance</td><td>recorder<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>participant.actor<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Who recorded the sensitivity.</td>
             <td>With participant.function = "http://terminology.hl7.org/CodeSystem/provenance-participant-type#author"</td>
           </tr>
@@ -130,15 +122,7 @@
             <td>header.source</td>
             <td>Source of the information (e.g. patient, proxy).</td>
             <td>equivalent</td>
-            <td>AllergyIntolerance</td><td>asserter<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Source of the information about the allergy</td>
-            <td></td>
-          </tr>
-           <tr>
-            <td>header.source</td>
-            <td>Source of the information (e.g. patient, proxy).</td>
-            <td>equivalent</td>
-            <td>AllergyIntolerance</td><td>participant.actor<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>AllergyIntolerance</td><td>asserter<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>participant.actor<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Source of the information about the allergy</td>
             <td>With participant.function = "http://terminology.hl7.org/CodeSystem/provenance-participant-type#informant"</td>
           </tr>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
@@ -99,16 +99,7 @@
             <td>type</td>
             <td>Type/category of the location (e.g. ward, lab, pharmacy counter).</td>
             <td>equivalent</td>
-            <td>Location</td><td>physicalType<span style="color:#2e7d32;font-weight:600;">〔R4〕</span></td>
-            <td>Type of location.</td>
-            <td>In R4, physicalType is common; R5 shifts emphasis to type.</td>
-          </tr>
-          <tr>
-            <td>type</td>
-            <td>Type/category of the location (e.g. ward, lab, pharmacy counter).</td>
-            <td>equivalent</td>
-            <td>Location</td><td>type<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>
-            </td>
+            <td>Location</td><td>physicalType<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>type<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>Type of location.</td>
             <td>In R4, physicalType is common; R5 shifts emphasis to type.</td>
           </tr>

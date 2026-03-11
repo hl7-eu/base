@@ -71,14 +71,14 @@
         <tbody>
           <tr>
             <td>identifier</td>
-            <td>source-is-narrower-than-target</td>
+            <td>source-is-broader-than-target</td>
             <td>PractitionerRole</td>
             <td>identifier</td>
             <td>Mapping depends on identifier type.</td>
           </tr>
           <tr>
             <td>identifier</td>
-            <td>source-is-narrower-than-target</td>
+            <td>source-is-broader-than-target</td>
             <td>Practitioner</td>
             <td>identifier</td>
             <td>Mapping depends on identifier type.</td>
@@ -116,21 +116,14 @@
             <td>source-is-broader-than-target</td>
             <td>PractitionerRole</td>
             <td>telecom <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>contact.telecom <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>R4 commonly telecom; R5 may surface contact.telecom.</td>
+            <td>If they are Contact details that are specific to the role/location/service.</td>
           </tr>
-<!--           <tr>
-            <td>telecom</td>
-            <td>source-is-broader-than-target</td>
-            <td>PractitionerRole</td>
-            <td>contact.telecom <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>R4 commonly telecom; R5 may surface contact.telecom.</td>
-          </tr> -->
           <tr>
             <td>telecom</td>
             <td>source-is-broader-than-target</td>
             <td>Practitioner</td>
             <td>telecom</td>
-            <td>Depends on telecom type.</td>
+            <td>If they are contact details for the practitioner (that apply to all roles).Practitioner is referenced in PractitionerRole.practitioner</td>
           </tr>
           <tr>
             <td>professionalRole</td>
@@ -144,7 +137,7 @@
             <td>equivalent</td>
             <td>PractitionerRole</td>
             <td>code</td>
-            <td>May repeat.</td>
+            <td></td>
           </tr>
           <tr>
             <td>professionalRole.organisation</td>
