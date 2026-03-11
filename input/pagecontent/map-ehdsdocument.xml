@@ -2,7 +2,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>EHDSDocument ↔ Composition</title>
+    <title>EHDSDocument ↔ CompositionEuCore</title>
   </head>
   <body>
     <div class="model-map-block">
@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-    <h3>EHDSDocument ↔ Composition</h3>
+    <h3>EHDSDocument ↔ CompositionEuCore</h3>
     <a> </a>
     <p></p>
     <p>
@@ -50,21 +50,19 @@
     </div>
     <p></p>
     <div class="table-wrap">
-      <table summary="EHDSDocument ↔ Composition">
-        <caption>EHDSDocument ↔ Composition</caption>
+      <table summary="EHDSDocument ↔ CompositionEuCore">
+        <caption>EHDSDocument ↔ CompositionEuCore</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSDocument (Logical Model)</th>
+            <th colspan="1" class="src-head">EHDSDocument (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="4" class="tgt-head">Composition</th>
+            <th colspan="3" class="tgt-head">CompositionEuCore</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
-            <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
             <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
-            <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
@@ -72,209 +70,163 @@
           <!-- HEADER BLOCK -->
           <tr>
             <td>header</td>
-            <td>Document header elements.</td>
             <td>related-to</td>
             <td>Composition</td>
             <td>.</td>
-            <td>General metadata.</td>
             <td>Dataset-level information across the Composition instance.</td>
           </tr>
           <tr>
             <td>header.subject</td>
-            <td>Patient/subject information.</td>
             <td>equivalent</td>
             <td>Composition</td>
             <td>subject</td>
-            <td>Who or what the composition is about.</td>
             <td>Reference to Patient.</td>
           </tr>
           <tr>
             <td>header.identifier</td>
-            <td>Unique identifier of the document.</td>
             <td>equivalent</td>
             <td>Composition</td>
             <td>identifier</td>
-            <td>Version-independent identifier for the Composition</td>
             <td>Multiple identifiers allowed; Composition R4 allows 0..1, R5 0..*. <code>setId</code> in HL7 CDA</td>
           </tr>
           <tr>
             <td>header.identifier</td>
-            <td>Unique identifier of the document.</td>
             <td>equivalent</td>
             <td>Bundle</td>
             <td>identifier</td>
-            <td>Persistent identifier for the bundle</td>
             <td>Identifier of a specific version of this document. <code>id</code> in HL7 CDA</td>
           </tr>
           <tr>
             <td>header.author[x]</td>
-            <td>Author(s) who authored the resource.</td>
             <td>equivalent</td>
             <td>Composition</td>
             <td>author</td>
-            <td>List of logical authors.</td>
             <td>Reference to Practitioner / PractitionerRole / Organization / Device.</td>
           </tr>
           <tr>
             <td>header.date</td>
-            <td>Date and time of authoring/issuing.</td>
             <td>equivalent</td>
             <td>Composition</td>
             <td>date</td>
-            <td>Composition creation time.</td>
             <td></td>
           </tr>
           <tr>
             <td>header.status</td>
-            <td>Status of the resource or document.</td>
             <td>equivalent</td>
             <td>Composition</td>
             <td>status</td>
-            <td>The workflow/clinical status of this composition</td>
             <td></td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.source</td>
-            <td>Source of the information (e.g. patient, proxy).</td>
             <td>no-map</td>
             <td>Composition</td>
-            <td></td>
             <td></td>
             <td>No native element.</td>
           </tr>
           <tr>
             <td>header.language</td>
-            <td>Language of the resource (IETF BCP-47).</td>
             <td>equivalent</td>
             <td>Composition</td>
             <td>language</td>
-            <td>Language of the narrative.</td>
             <td></td>
           </tr>
           <tr>
             <td>header.documentType</td>
-            <td>Type of document (e.g., LOINC 60591-5).</td>
             <td>equivalent</td>
             <td>Composition</td>
             <td>type</td>
-            <td>Kind of composition (LOINC preferred).</td>
             <td></td>
           </tr>
           <tr>
             <td>header.documentTitle</td>
-            <td>Human readable document title.</td>
             <td>equivalent</td>
             <td>Composition</td>
             <td>title</td>
-            <td>Official human-readable label.</td>
             <td></td>
           </tr>
           <tr>
             <td>header.period</td>
-            <td>Time of service being documented.</td>
             <td>related-to</td>
             <td>Composition</td>
             <td>event.period</td>
-            <td>Period covered by the composition content.</td>
             <td>Map to the primary Composition.event entry.</td>
           </tr>
           <tr>
             <td>header.version</td>
-            <td>Business version of the document.</td>
             <td>related-to</td>
             <td>Composition</td>
             <td>extension:version<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>version<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Document business version.</td>
             <td>Use Composition.version extension (pre-adopt R5 extension).</td>
           </tr>
           <tr>
             <td>header.attestation</td>
-            <td>Document attestation details.</td>
             <td>related-to</td>
             <td>Composition</td>
             <td>attester</td>
-            <td>Participants responsible for attesting the composition.</td>
             <td>Use mode to distinguish assertions.</td>
           </tr>
           <tr>
             <td>header.attestation.attester[x]</td>
-            <td>Attester who validated the document.</td>
             <td>equivalent</td>
             <td>Composition</td>
             <td>attester.party</td>
-            <td>Who attested the composition.</td>
             <td></td>
           </tr>
           <tr>
             <td>header.attestation.datetime</td>
-            <td>Date/time of approval by attester.</td>
             <td>equivalent</td>
             <td>Composition</td>
             <td>attester.time</td>
-            <td>When the composition was attested.</td>
             <td>Set attester.mode as appropriate (e.g., professional).</td>
           </tr>
           <tr>
             <td>header.legalAuthentication</td>
-            <td>Document legal authentication details.</td>
             <td>related-to</td>
             <td>Composition</td>
             <td>attester</td>
-            <td>Legal authenticator.</td>
             <td>Use attester.mode = "legal" for the legal authenticator.</td>
           </tr>
           <tr>
             <td>header.legalAuthentication.legalAuthenticator[x]</td>
-            <td>Person responsible for medical content.</td>
             <td>related-to</td>
             <td>Composition</td>
             <td>attester.party</td>
-            <td>Legal authenticator party.</td>
             <td>Use attester.mode = "legal" for the legal authenticator.</td>
           </tr>
           <tr>
             <td>header.legalAuthentication.datetime</td>
-            <td>Date/time when the document was authorised.</td>
             <td>equivalent</td>
             <td>Composition</td>
             <td>attester.time</td>
-            <td>When the composition was attested.</td>
             <td>Use attester.mode = "legal" for the legal authenticator.</td>
           </tr>
           <tr>
             <td class="highlight-yellow">header.eventType</td>
-            <td>Categorisation of the event covered by the document.</td>
             <td>related-to</td>
             <td>Composition</td>
             <td>event.code <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>event.detail.concept<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Codes describing the event(s) related to the composition.</td>
             <td>Clarify the scope. If it is a classification of the document it should be category</td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.serviceSpecialty</td>
-            <td>Details about where the content was created (clinical specialty).</td>
             <td>source-is-narrower-than-target</td>
             <td>Composition</td>
             <td>category</td>
-            <td>Categorizes the composition.</td>
             <td>Use category to tag specialty if no dedicated extension/profile element exists. (1) Is this a metadata information or something that have to be captured in the document ? (2) is this only for diagnostic reports ? in this case we can use DiagnosticReport.category</td>
           </tr>
           <tr>
             <td>header.custodian</td>
-            <td>Organisation maintaining the document/report.</td>
             <td>equivalent</td>
             <td>Composition</td>
             <td>custodian</td>
-            <td>Organization responsible for maintenance.</td>
             <td>Reference to Organization.</td>
           </tr>
 <!-- DOCUMENT BODY -->
           <tr class="highlight-yellow">
             <td>presentedForm</td>
-            <td>Narrative easy-to-read representation (e.g., PDF).</td>
             <td>no-map</td>
             <td>Composition</td>
-            <td></td>
             <td></td>
             <td>To be determined</td>
           </tr>

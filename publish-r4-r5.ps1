@@ -33,8 +33,9 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-update EHDSHealthProfessional mapping table: correct relationship descriptions and clarify telecom mappings
-FHIR-55538: merged R4 and R5 cells in mapping tables
+FHIR-55538: removed description columns from mpping tables
+FHIR-55538: removed multiple target profiles from mapping tables
+Update mapping tables to harmonize target profiles and table headers
 "@
 }
 

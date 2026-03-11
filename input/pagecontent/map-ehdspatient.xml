@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
@@ -53,67 +53,53 @@
         <caption>EHDSPatient → PatientEuCore</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSPatient (Logical Model)</th>
+            <th colspan="1" class="src-head">EHDSPatient (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="4" class="tgt-head">PatientEuCore</th>
+            <th colspan="3" class="tgt-head">PatientEuCore</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
-            <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
             <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
-            <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>identifier</td>
-            <td>An identifier of the patient that is unique within a defined scope.</td>
             <td>equivalent</td>
             <td>Patient</td><td>identifier</td>
-            <td>Patient identifiers.</td>
             <td></td>
           </tr>
           <tr>
             <td>name</td>
-            <td>Name associated with the patient/subject.</td>
             <td>equivalent</td>
             <td>Patient</td><td>name</td>
-            <td>A name associated with the patient.</td>
             <td></td>
           </tr>
           <tr>
             <td>dateOfBirth</td>
-            <td>Date of birth.</td>
             <td>equivalent</td>
             <td>Patient</td><td>birthDate</td>
-            <td>The date of birth for the patient.</td>
             <td></td>
           </tr>
           <tr>
             <td>administrativeGender</td>
-            <td>Administrative gender.</td>
             <td>equivalent</td>
             <td>Patient</td><td>gender</td>
-            <td>Administrative gender.</td>
             <td></td>
           </tr>
           <tr>
             <td>address</td>
-            <td>Mailing and home or office addresses.</td>
             <td>equivalent</td>
             <td>Patient</td><td>address</td>
-            <td>An address for the individual.</td>
             <td></td>
           </tr>
           <tr>
             <td>telecom</td>
-            <td>Telecommunication contact information.</td>
             <td>equivalent</td>
             <td>Patient</td><td>telecom</td>
-            <td>A contact detail for the patient.</td>
             <td></td>
           </tr>
         </tbody>

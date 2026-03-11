@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>EHDSAlert → Flag</title>
+    <title>EHDSAlert → FlagPatientEuCore</title>
   </head>
   <body>
     <div class="model-map-block">
@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-    <h3>EHDSAlert → Flag</h3>
+    <h3>EHDSAlert → FlagPatientEuCore</h3>
     <a>  </a>
     <p></p>
     <p>
@@ -50,21 +50,19 @@
     </div>
     <p></p>
     <div class="table-wrap">
-      <table summary="EHDSAlert → Flag">
-        <caption>EHDSAlert → Flag</caption>
+      <table summary="EHDSAlert → FlagPatientEuCore">
+        <caption>EHDSAlert → FlagPatientEuCore</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSAlert (Logical Model)</th>
+            <th colspan="1" class="src-head">EHDSAlert (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="4" class="tgt-head">Flag (Alert)</th>
+            <th colspan="3" class="tgt-head">FlagPatientEuCore</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
-            <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
             <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
-            <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
@@ -72,115 +70,87 @@
           <!-- HEADER BLOCK (common dataset header) -->
           <tr>
             <td>header</td>
-            <td>Common header for all patient-related data.</td>
             <td>related-to</td>
             <td>Flag</td><td>.</td>
-            <td>General metadata.</td>
             <td>Dataset-level; not usually carried in Flag as-is.</td>
           </tr>
           <tr>
             <td>header.subject</td>
-            <td>Patient/subject this alert is about.</td>
             <td>equivalent</td>
             <td>Flag</td><td>subject</td>
-            <td>Who/what the flag is about.</td>
             <td>Reference to Patient (or other subject).</td>
           </tr>
           <tr>
             <td>header.identifier</td>
-            <td>Business identifier for the alert object.</td>
             <td>equivalent</td>
             <td>Flag</td><td>identifier</td>
-            <td>Business identifier for the flag.</td>
             <td>Copy over all identifiers if multiple.</td>
           </tr>
           <tr>
             <td>header.author[x]</td>
-            <td>Who created/issued the alert.</td>
             <td>equivalent</td>
             <td>Flag</td><td>author</td>
-            <td>Creator of the flag.</td>
             <td></td>
           </tr>
           <tr>
             <td>header.date</td>
-            <td>Date and optionally time of authoring/issuing.</td>
             <td>no-map</td>
             <td>Flag</td><td></td>
-            <td></td>
             <td>No direct native Flag element for authoring timestamp.</td>
           </tr>
           <tr>
             <td>header.status</td>
-            <td>Current status of the alert.</td>
             <td>equivalent</td>
             <td>Flag</td><td>status</td>
-            <td>Indicates if the flag is active, inactive, etc.</td>
             <td>Map using the EHDS to HL7 Flag-status value set alignment.</td>
           </tr>
           <tr>
             <td>header.source</td>
-            <td>Source of the information (e.g. patient, proxy).</td>
             <td>no-map</td>
             <td>Flag</td><td></td>
-            <td></td>
             <td>No direct native Flag element; consider extension if needed.</td>
           </tr>
           <tr>
             <td>header.language</td>
-            <td>Language of the resource (IETF tag).</td>
             <td>equivalent</td>
             <td>Flag</td><td>language</td>
-            <td>Language used in the flag text.</td>
             <td></td>
           </tr>
           <!-- ROOT EHDSAlert elements -->
           <tr>
             <td>description</td>
-            <td>Narrative representation of the alert.</td>
             <td>source-is-broader-than-target</td>
             <td>Flag</td><td>extensions:note.valueAnnotation.text</td>
-            <td>Additional notes that apply to this resource or element.</td>
             <td class="highlight-yellow">The mapping applies if the description represents additional information collected about the alert.</td>
           </tr>
           <tr>
             <td>description</td>
-            <td>Narrative representation of the alert.</td>
             <td>source-is-broader-than-target</td>
             <td>Flag</td><td>code.text</td>
-            <td>Additional notes that apply to this resource or element.</td>
             <td class="highlight-yellow"><code>code.text</code> can also be used for textual rendering of coded content, or textual description of the alert.</td>
           </tr>
           <tr>
             <td>priority</td>
-            <td>Priority of the alert.</td>
             <td>equivalent</td>
             <td>Flag</td><td>extension:flagPriorityExt	</td>
-            <td>A code that identifies the priority of the alert</td>
             <td></td>
           </tr>
           <tr>
             <td>code</td>
-            <td>Coded alert/issue being highlighted.</td>
             <td>equivalent</td>
             <td>Flag</td><td>code</td>
-            <td>Issue being highlighted.</td>
             <td>Often SNOMED CT or local code. Should have display.</td>
           </tr>
           <tr>
             <td>period</td>
-            <td>Time period when the alert is relevant.</td>
             <td>equivalent</td>
             <td>Flag</td><td>period</td>
-            <td>Time period when the flag is active.</td>
             <td>Map start/end 1:1.</td>
           </tr>
           <tr>
             <td>sourceReference</td>
-            <td>A reference to the resource the alert is about.</td>
             <td>equivalent</td>
             <td>Flag</td><td></td>
-            <td>extension:flagDetailExt</td>
             <td></td>
           </tr>
         </tbody>

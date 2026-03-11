@@ -56,75 +56,59 @@
         <caption>EHDSLocation → LocationEuCore</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSLocation (Logical Model)</th>
+            <th colspan="1" class="src-head">EHDSLocation (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="4" class="tgt-head">LocationEuCore</th>
+            <th colspan="3" class="tgt-head">LocationEuCore</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
-            <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
             <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
-            <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>identifier</td>
-            <td>Identifier for the location.</td>
             <td>equivalent</td>
             <td>Location</td><td>identifier</td>
-            <td>Unique code or number identifying the location.</td>
             <td></td>
           </tr>
           <tr>
             <td>name</td>
-            <td>Human-readable name of the location.</td>
             <td>equivalent</td>
             <td>Location</td><td>name</td>
-            <td>Location name.</td>
             <td></td>
           </tr>
           <tr>
             <td>description</td>
-            <td>Textual description of the location and its purpose.</td>
             <td>equivalent</td>
             <td>Location</td><td>description</td>
-            <td>Description of the location.</td>
             <td></td>
           </tr>
           <tr>
             <td>type</td>
-            <td>Type/category of the location (e.g. ward, lab, pharmacy counter).</td>
             <td>equivalent</td>
             <td>Location</td><td>physicalType<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>type<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Type of location.</td>
             <td>In R4, physicalType is common; R5 shifts emphasis to type.</td>
           </tr>
           <tr>
             <td>address</td>
-            <td>Physical postal address of the location.</td>
             <td>equivalent</td>
             <td>Location</td><td>address</td>
-            <td>Address of the location.</td>
             <td>Uses Address/AddressEu.</td>
           </tr>
           <tr>
             <td>managingOrganisation</td>
-            <td>Organisation responsible for the services provided at this location.</td>
             <td>equivalent</td>
             <td>Location</td><td>managingOrganization</td>
-            <td>Managing organization.</td>
             <td>Reference to OrganizationEuCore.</td>
           </tr>
           <tr>
             <td>partOf</td>
-            <td>Parent/host location of which this one is a physical part.</td>
             <td>equivalent</td>
             <td>Location</td><td>partOf</td>
-            <td>Another Location that contains this one.</td>
             <td>Supports hierarchical location trees.</td>
           </tr>
         </tbody>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
@@ -54,109 +54,87 @@
         <caption>EHDSAddress → AddressEu</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSAddress (Logical Model)</th>
+            <th colspan="1" class="src-head">EHDSAddress (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="4" class="tgt-head">AddressEu</th>
+            <th colspan="3" class="tgt-head">AddressEu</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
-            <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
             <th class="tgt-sub">Datatype</th>
             <th class="tgt-sub">Element</th>
-            <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>use</td>
-            <td>Purpose of the address.</td>
             <td>equivalent</td>
             <td>Address</td>
             <td>use</td>
-            <td>Purpose of this address.</td>
             <td></td>
           </tr>
           <tr>
             <td>type</td>
-            <td>Type of address (physical / postal).</td>
             <td>equivalent</td>
             <td>Address</td>
             <td>type</td>
-            <td>The type of an address (physical / postal).</td>
             <td></td>
           </tr>
           <tr>
             <td>text</td>
-            <td>Text representation of the full address.</td>
             <td>equivalent</td>
             <td>Address</td>
             <td>text</td>
-            <td>Text representation of the address.</td>
             <td></td>
           </tr>
           <tr>
             <td>street</td>
-            <td>Name of the street.</td>
             <td>equivalent</td>
             <td>Address</td>
             <td>line.extension:streetName</td>
-            <td>Street name.</td>
             <td></td>
           </tr>
           <tr>
             <td>houseNumber</td>
-            <td>House number.</td>
             <td>equivalent</td>
             <td>Address</td>
             <td>line.extension:houseNumber</td>
-            <td>House number.</td>
             <td></td>
           </tr>
           <tr>
             <td>postBox</td>
-            <td>Post box.</td>
             <td>equivalent</td>
             <td>Address</td>
             <td>line.extension:postBox</td>
-            <td>Post box.</td>
             <td></td>
           </tr>
           <tr>
             <td>city</td>
-            <td>City / town name.</td>
             <td>equivalent</td>
             <td>Address</td>
             <td>city</td>
-            <td>Name of city, town, etc.</td>
             <td></td>
           </tr>
           <tr>
             <td>postalCode</td>
-            <td>Postal code.</td>
             <td>equivalent</td>
             <td>Address</td>
             <td>postalCode</td>
-            <td>Postal code for area.</td>
             <td></td>
           </tr>
           <tr>
             <td>country</td>
-            <td>Country name and country code</td>
             <td>equivalent</td>
             <td>Address</td>
             <td>country</td>
-            <td>Country</td>
             <td>for the country name</td>
           </tr>
           <tr>
             <td>""</td>
-            <td>Country name and country code</td>
             <td>equivalent</td>
             <td>Address</td>
             <td>extension:countryCode</td>
-            <td>code for string</td>
             <td>for the country name</td>
           </tr>
         </tbody>

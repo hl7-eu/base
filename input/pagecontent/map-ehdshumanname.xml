@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
@@ -54,67 +54,53 @@
         <caption>EHDSHumanName → HumanName</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSHumanName (Logical Model)</th>
+            <th colspan="1" class="src-head">EHDSHumanName (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="4" class="tgt-head">HumanName</th>
+            <th colspan="3" class="tgt-head">HumanName</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
-            <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
             <th class="tgt-sub">Datatype</th>
             <th class="tgt-sub">Element</th>
-            <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>use</td>
-            <td>Intended use of the name (official, alias, etc.).</td>
             <td>equivalent</td>
             <td>HumanName</td><td>use</td>
-            <td>Name use code.</td>
             <td>e.g. official, usual, nickname.</td>
           </tr>
           <tr>
             <td>text</td>
-            <td>Full name as rendered for display.</td>
             <td>equivalent</td>
             <td>HumanName</td><td>text</td>
-            <td>Text representation of the full name.</td>
             <td>Typically a single string.</td>
           </tr>
           <tr>
             <td>family</td>
-            <td>Family name / surname.</td>
             <td>equivalent</td>
             <td>HumanName</td><td>family</td>
-            <td>Family name (often called "surname").</td>
             <td></td>
           </tr>
           <tr>
             <td>given</td>
-            <td>Given (first / middle) names.</td>
             <td>equivalent</td>
             <td>HumanName</td><td>given</td>
-            <td>Given names (may include middle names).</td>
             <td>Array in FHIR.</td>
           </tr>
           <tr>
             <td>prefix</td>
-            <td>Honorifics or titles preceding the name.</td>
             <td>equivalent</td>
             <td>HumanName</td><td>prefix</td>
-            <td>Parts that come before the name.</td>
             <td>e.g. Dr, Prof, Sir.</td>
           </tr>
           <tr>
             <td>suffix</td>
-            <td>Post-nominal letters, generational markers, etc.</td>
             <td>equivalent</td>
             <td>HumanName</td><td>suffix</td>
-            <td>Parts that come after the name.</td>
             <td>e.g. Jr, MD, PhD.</td>
           </tr>
         </tbody>

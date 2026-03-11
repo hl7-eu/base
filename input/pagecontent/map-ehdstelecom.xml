@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
@@ -53,43 +53,35 @@
         <caption>EHDSTelecom → ContactPoint</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSTelecom (Logical Model)</th>
+            <th colspan="1" class="src-head">EHDSTelecom (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="4" class="tgt-head">ContactPoint</th>
+            <th colspan="3" class="tgt-head">ContactPoint</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
-            <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
             <th class="tgt-sub">Datatype</th>
             <th class="tgt-sub">Element</th>
-            <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>use</td>
-            <td>Intended use (home, work, temp, etc.).</td>
             <td>equivalent</td>
             <td>ContactPoint</td><td>use</td>
-            <td>Purpose of this contact point.</td>
             <td></td>
           </tr>
           <tr>
             <td>type</td>
-            <td>Type of channel (phone, email, etc.).</td>
             <td>equivalent</td>
             <td>ContactPoint</td><td>system</td>
-            <td>Telecommunications form for contact point.</td>
             <td></td>
           </tr>
           <tr>
             <td>value</td>
-            <td>Actual contact detail string.</td>
             <td>equivalent</td>
             <td>ContactPoint</td><td>value</td>
-            <td>The actual contact point details.</td>
             <td></td>
           </tr>
         </tbody>

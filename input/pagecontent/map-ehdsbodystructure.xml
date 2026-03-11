@@ -53,59 +53,47 @@
         <caption>EHDSBodyStructure → BodyStructureEuCore</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSBodyStructure (Logical Model)</th>
+            <th colspan="1" class="src-head">EHDSBodyStructure (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="4" class="tgt-head">BodyStructureEuCore</th>
+            <th colspan="3" class="tgt-head">BodyStructureEuCore</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
-            <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
             <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
-            <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>morphology</td>
-            <td>Kind of structure represented (normal/abnormal morphology).</td>
             <td>equivalent</td>
             <td>BodyStructure</td><td>morphology</td>
-            <td>Kind of structure.</td>
             <td></td>
           </tr>
           <tr>
             <td>location</td>
-            <td>Body site.</td>
             <td>equivalent</td>
             <td>BodyStructure</td><td>location <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>includedStructure.structure<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Body site.</td>
             <td>R4 commonly uses location; R5 often uses includedStructure.structure.</td>
           </tr>
           <tr>
             <td>locationQualifier</td>
-            <td>Qualifier for the body site (upper, lower, etc.).</td>
             <td>equivalent</td>
             <td>BodyStructure</td><td>locationQualifier<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>includedStructure.qualifier<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Body site modifier.</td>
             <td>R4: locationQualifier; R5: includedStructure.qualifier.</td>
           </tr>
           <tr>
             <td>laterality</td>
-            <td>Laterality (e.g. left, right).</td>
             <td>equivalent</td>
             <td>BodyStructure</td><td>extension:laterality<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>includedStructure.laterality<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Body structure laterality.</td>
             <td>R4 often uses an extension; R5 includes laterality directly.</td>
           </tr>
           <tr>
             <td>description</td>
-            <td>Textual description of the body structure.</td>
             <td>equivalent</td>
             <td>BodyStructure</td><td>text</td>
-            <td>Text summary of the resource, for human interpretation.</td>
             <td></td>
           </tr>
         </tbody>

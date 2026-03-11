@@ -2,7 +2,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>EHDSOrganisation → Organization</title>
+    <title>EHDSOrganisation → OrganizationEuCore</title>
   </head>
   <body>
    <div class="model-map-block">
@@ -15,7 +15,7 @@
         </div>
       </div>
     </div>
-    <h3>EHDSOrganisation → Organization</h3><a>  </a>
+    <h3>EHDSOrganisation → OrganizationEuCore</h3><a>  </a>
     <p></p>
     <p>
   This page explains how conceptual elements from the EHDS logical model are expressed
@@ -45,67 +45,53 @@
         <caption>EHDSOrganisation → OrganizationEuCore</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">EHDSOrganisation (Logical Model)</th>
+            <th colspan="1" class="src-head">EHDSOrganisation (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="4" class="tgt-head">OrganizationEuCore</th>
+            <th colspan="3" class="tgt-head">OrganizationEuCore</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
-            <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
             <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
-            <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>identifier</td>
-            <td>Identifier for the organisation.</td>
             <td>equivalent</td>
             <td>Organization</td><td>identifier</td>
-            <td>Identifies this organization across multiple systems.</td>
             <td></td>
           </tr>
           <tr>
             <td>type</td>
-            <td>Kind of organisation (e.g. hospital, lab, payer).</td>
             <td>equivalent</td>
             <td>Organization</td><td>type</td>
-            <td>Organization type.</td>
             <td></td>
           </tr>
           <tr>
             <td>name</td>
-            <td>Official or common name of the organisation.</td>
             <td>equivalent</td>
             <td>Organization</td><td>name</td>
-            <td>Name of the organization.</td>
             <td></td>
           </tr>
           <tr>
             <td>address</td>
-            <td>Postal / visit address for the organisation.</td>
             <td>equivalent</td>
             <td>Organization</td><td>address<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>contact.address<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>An address for the organization.</td>
             <td>In R4 typically address; in R5 often contact.address.</td>
           </tr>
           <tr>
             <td>telecom</td>
-            <td>General contact details (phone, fax, email).</td>
             <td>equivalent</td>
             <td>Organization</td><td>telecom<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>contact.telecom<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Organization telecom.</td>
             <td>In R4 telecom; in R5 contact.telecom.</td>
           </tr>
           <tr>
             <td>partOf</td>
-            <td>Owning / parent organisation.</td>
             <td>equivalent</td>
             <td>Organization</td><td>partOf</td>
-            <td>The organization of which this organization is part.</td>
             <td></td>
           </tr>
         </tbody>
