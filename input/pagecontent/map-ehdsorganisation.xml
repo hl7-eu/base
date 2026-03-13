@@ -80,13 +80,13 @@
             <td>address</td>
             <td>equivalent</td>
             <td>Organization</td><td>address<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>contact.address<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>In R4 typically address; in R5 often contact.address.</td>
+            <td></td>
           </tr>
           <tr>
             <td>telecom</td>
             <td>equivalent</td>
             <td>Organization</td><td>telecom<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>contact.telecom<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>In R4 telecom; in R5 contact.telecom.</td>
+            <td></td>
           </tr>
           <tr>
             <td>partOf</td>

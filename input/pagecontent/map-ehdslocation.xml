@@ -91,7 +91,7 @@
             <td>type</td>
             <td>equivalent</td>
             <td>Location</td><td>physicalType<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>type<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>In R4, physicalType is common; R5 shifts emphasis to type.</td>
+            <td></td>
           </tr>
           <tr>
             <td>address</td>

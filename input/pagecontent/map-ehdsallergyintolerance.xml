@@ -102,7 +102,7 @@
             <td>header.status</td>
             <td>equivalent</td>
             <td>AllergyIntolerance</td><td>clinicalStatus</td>
-            <td>Map using the EHDS to HL7 allergy intolerance status value set alignment.</td>
+            <td></td>
           </tr>
           <tr>
             <td>header.source</td>
@@ -121,7 +121,7 @@
             <td>agentOrAllergen</td>
             <td>equivalent</td>
             <td>AllergyIntolerance</td><td>code</td>
-            <td>CodeableConcept. Bound in EHDS to eHDSI value sets; in FHIR usually VS: AllergyIntolerance Substance/Product.</td>
+            <td></td>
           </tr>
 <!-- note -->
           <tr>
@@ -135,14 +135,14 @@
             <td>criticality</td>
             <td>equivalent</td>
             <td>AllergyIntolerance</td><td>criticality</td>
-            <td>ValueSets in EHDS reference eHDSICriticality; FHIR has its own required VS.</td>
+            <td></td>
           </tr>
           <!-- certainty -->
           <tr>
             <td>certainty</td>
             <td>equivalent</td>
             <td>AllergyIntolerance</td><td>verificationStatus</td>
-            <td>EHDS name "certainty" ≈ FHIR "verificationStatus" (confirmed / refuted / unconfirmed).</td>
+            <td></td>
           </tr>
 <!-- onsetDate -->
           <tr>
@@ -164,7 +164,7 @@
             <td>reaction</td>
             <td>equivalent</td>
             <td>AllergyIntolerance</td><td>reaction</td>
-            <td>0..* in both models.</td>
+            <td></td>
           </tr>
           <tr>
             <td>reaction.agentOrAllergen</td>
@@ -177,14 +177,14 @@
             <td>reaction.manifestation</td>
             <td>equivalent</td>
             <td>AllergyIntolerance</td><td>reaction.manifestation</td>
-            <td>CodeableConcept; EHDS allows multiple; FHIR reaction.manifestation is 1..* CodeableConcept.</td>
+            <td></td>
           </tr>
 <!-- reaction.severity -->
           <tr>
             <td>reaction.severity</td>
             <td>equivalent</td>
             <td>AllergyIntolerance</td><td>reaction.severity</td>
-            <td>FHIR has required VS; EHDS references eHDSISeverity.</td>
+            <td></td>
           </tr>
           <!-- reaction.onset (EHDS subelement) -->
           <tr>
