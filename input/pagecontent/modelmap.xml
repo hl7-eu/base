@@ -392,24 +392,6 @@
                             Mapping</a>
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                        <a
-                            href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSMedicationPrescription.html"
-                            target="_blank">EHDSMedicationPrescription</a>
-                        <span style="font-size:1.18em; line-height:1; vertical-align:0.08em;">
-                            &#8224;</span>
-                    </td>
-                    <td>
-                        <a href="StructureDefinition-medicationRequest-eu-core.html">
-                            <code>MedicationRequestEuCore</code>
-                        </a>
-                    </td>
-                    <td>
-                        <a class="pill" href="map-ehdsmedicationprescription.html">EHDSMedicationPrescription
-                            Mapping</a>
-                    </td>
-                </tr>
             </tbody>
         </table>
     </div>

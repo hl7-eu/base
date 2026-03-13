@@ -33,7 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-55538: removed not needed notes (e.g. voc binding)
+FHIR-55534: removed prescription mapping table and associated entry
 "@
 }
 
