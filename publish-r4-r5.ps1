@@ -33,7 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-55534: removed prescription mapping table and associated entry
+FHIR-55553: typos fixing
 "@
 }
 
