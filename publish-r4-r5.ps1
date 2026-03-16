@@ -33,9 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-55552: Add invariant to prevent simultaneous use of Observation.value[x] and Observation.extension:value-r5
-FHIR-53702: Add medicaltestresult guidance
-FHIR-55498: refactor BodyStructure extensions: update includedStructure alias and adjust example references
+Fixed HTA errors
 "@
 }
 
