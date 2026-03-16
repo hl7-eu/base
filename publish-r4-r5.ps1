@@ -33,7 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-55553: typos fixing
+FHIR-55518, FHIR-55510 : Clarified use of characteristic and Strength Modelling in Medication
 "@
 }
 
