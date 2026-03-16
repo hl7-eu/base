@@ -75,19 +75,19 @@
           <tr>
             <td>location</td>
             <td>equivalent</td>
-            <td>BodyStructure</td><td>location <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>includedStructure.structure<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>BodyStructure</td><td>extension[includedStructure].extension[structure] <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>includedStructure.structure <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td></td>
           </tr>
           <tr>
             <td>locationQualifier</td>
             <td>equivalent</td>
-            <td>BodyStructure</td><td>locationQualifier<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>includedStructure.qualifier<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>BodyStructure</td><td>extension[includedStructure].extension[qualifier] <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>includedStructure.qualifier <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td></td>
           </tr>
           <tr>
             <td>laterality</td>
             <td>equivalent</td>
-            <td>BodyStructure</td><td>extension:laterality<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>includedStructure.laterality<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>BodyStructure</td><td>extension[includedStructure].extension[laterality] <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>includedStructure.laterality <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td></td>
           </tr>
           <tr>

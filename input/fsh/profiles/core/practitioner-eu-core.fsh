@@ -7,7 +7,9 @@ Title:    "Practitioner (EU core)"
 Description: """This profile introduces essential constraints and extensions for the Practitioner resource that apply across multiple use cases."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (2, trial-use)
+/*
 * insert ImposeProfile($Practitioner-uv-ips, 0)
+*/
 * name 1..
 //-------------------------------------------------------------------------------------------
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -18,7 +20,9 @@ Title:    "PractitionerRole (EU core)"
 Description: """This profile introduces essential constraints and extensions for the PractitionerRole resource that apply across multiple use cases."""
 //-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (2, trial-use)
+/*
 * insert ImposeProfile($PractitionerRole-uv-ips, 0)
+*/
 * organization only Reference (OrganizationEuCore)
 * practitioner only Reference (PractitionerEuCore)
 //-------------------------------------------------------------------------------------------
