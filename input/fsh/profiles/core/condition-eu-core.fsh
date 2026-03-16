@@ -32,6 +32,7 @@ Description: """This profile introduces essential constraints and extensions for
 * bodySite from SNOMEDCTBodyStructures (preferred)
   * extension contains $bodySite-reference named bodySite 0..1
   * extension[bodySite].valueReference only Reference(BodyStructureEuCore)  
+* bodySite obeys eu-bodysite-1
 * identifier ^definition = "Globally unique identifier of this problem which remain constant as the resource is updated and propagates from server to server."
 * text ^definition = "Human readable specification of the problem. This is a general notes/comments entry for description of the problem, its diagnosis and prognosis."
 * clinicalStatus from ConditionClinicalStatusCodes (required)
