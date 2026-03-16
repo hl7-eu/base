@@ -80,7 +80,7 @@
             <td>equivalent</td>
             <td>DiagnosticReport</td>
             <td>subject</td>
-            <td>Reference to Patient.</td>
+            <td></td>
           </tr>
           <tr>
             <td>header.identifier</td>

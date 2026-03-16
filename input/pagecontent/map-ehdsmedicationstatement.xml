@@ -62,7 +62,7 @@
             <td>equivalent</td>
             <td>MedicationStatement</td>
             <td>subject</td>
-            <td>Reference to Patient.</td>
+            <td></td>
           </tr>
           <tr>
             <td>header.identifier</td>

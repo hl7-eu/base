@@ -25,15 +25,16 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * name ^requirements = "Need to be able to track the patient by multiple names. Examples are your official name and a partner name.\r\nThe Alphabetic representation of the name SHALL be always provided"
 * name.text ^definition = "Text representation of the full name. Due to the cultural variance around the world a consuming system may not know how to present the name correctly; moreover not all the parts of the name go in given or family. Creators are therefore strongly encouraged to provide through this element a presented version of the name. Future versions of this guide may require this element."
 * name.family ^short = "Family name."  // MS according to IPS
-* name.family ^definition = """Family name. When more the family is composed of more than one name, this element documents the full composed family name with the proper name order. The parts are recorded in the father and mother family names extensions."""
+// * name.family ^definition = """Family name. When more the family is composed of more than one name, this element documents the full composed family name with the proper name order. The parts are recorded in the father and mother family names extensions."""
 * name.family ^example.label = "spanish"
 * name.family ^example.valueString = "Valero Iglesias"
-* name.given ^short = "Given names. Includes middle names" // MS according to IPS
+* name.given 
+  * ^comment = "If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to practical limitations. This element is not called \"first name\" since given names do not always come first."
 * name.text ^short = "Text representation of the full name."
 * telecom ^short = "A contact detail for the patient" // MS according to IPS
 * gender ^short = "Administrative Gender" // MS according to IPS
 * birthDate 0.. // MS according to IPS
-  * ^short = "The date of birth for the patient"
+  * ^comment = "At least an estimated year should be provided as a guess if the real DOB is unknown. There is a standard extension \"patient-birthTime\" available that should be used where Time is required (such as in maternity/infant care systems)."
 * address only AddressEu // MS according to IPS
 * maritalStatus ^short = "Marital status"
 * contact

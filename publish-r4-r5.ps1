@@ -33,9 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-55538: removed description columns from mpping tables
-FHIR-55538: removed multiple target profiles from mapping tables
-Update mapping tables to harmonize target profiles and table headers
+Add anchor tags to section headers in medication notes
 "@
 }
 

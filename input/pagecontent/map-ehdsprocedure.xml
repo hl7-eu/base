@@ -79,7 +79,7 @@
             <td>header.subject</td>
             <td>equivalent</td>
             <td>Procedure</td><td>subject</td>
-            <td>Reference to Patient (or other subject) as in FHIR Procedure.subject.</td>
+            <td></td>
           </tr>
           <tr>
             <td>header.identifier</td>
@@ -129,7 +129,7 @@
             <td>procedureDate[x]</td>
             <td>equivalent</td>
             <td>Procedure</td><td>performed[x]<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>occurrence[x]<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Use <code>performedDateTime</code> or <code>performedPeriod</code> according to actual data type. <code>performed[x]</code> used in R4, <code>occurrence[x]</code> used in R5<br></br>Use <code>occurrenceDateTime</code> or <code>occurrencePeriod</code> according to actual data type. <code>performed[x]</code> used in R4, <code>occurrence[x]</code> used in R5</td>
+            <td></td>
           </tr>
           <!-- procedureDate[x] -->
           <!-- performer -->
@@ -137,56 +137,56 @@
             <td>performer</td>
             <td>equivalent</td>
             <td>Procedure</td><td>performer</td>
-            <td>FHIR Procedure.performer.actor → Practitioner / PractitionerRole / Organization; add role if available.</td>
+            <td></td>
           </tr>
           <!-- bodySite -->
           <tr>
             <td>bodySite</td>
             <td>equivalent</td>
             <td>Procedure</td><td>bodySite</td>
-            <td>Map EHDSBodyStructure → one or more <code>Procedure.bodySite</code>; laterality as qualifier.</td>
+            <td></td>
           </tr>
           <!-- reason[x] -->
           <tr>
             <td>reason[x]</td>
             <td>equivalent</td>
-            <td>Procedure</td><td>reasonCode / reasonReference<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>reason <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>In R4, codes go to <code>reasonCode</code>; references (Condition / Observation / Procedure) go to <code>reasonReference</code>.<br></br>In R5 use the CodeableReference <code>reason</code>.</td>
+            <td></td>
+            <td></td>
           </tr>
           <!-- outcome -->
           <tr>
             <td>outcome</td>
             <td>equivalent</td>
             <td>Procedure</td><td>outcome</td>
-            <td>CodeableConcept; EHDS prefers SNOMED CT.</td>
+            <td></td>
           </tr>
           <!-- complication -->
           <tr>
             <td>complication</td>
             <td>equivalent</td>
             <td>Procedure</td><td>complication / complicationDetail <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>complication<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>In R4 codes go to <code>complication</code>; reference (Condition) in <code>complicationDetail</code>.<br></br>In R5 use the CodeableReference <code>complication</code>.</td>
+            <td></td>
           </tr>
           <!-- deviceUsed -->
           <tr>
             <td>deviceUsed</td>
             <td>equivalent</td>
             <td>Procedure</td><td>usedCode / usedReference<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>used<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>In R4 <code>usedCode</code> only if you have no Device instance, <code>usedReference</code> if you refer a Device.<br></br>In R5 use the CodeableReference <code>used</code>.</td>
+            <td></td>
           </tr>
           <!-- focalDevice -->
           <tr>
             <td>focalDevice</td>
             <td>equivalent</td>
             <td>Procedure</td><td>focalDevice.manipulated</td>
-            <td>Matches FHIR Procedure.focalDevice exactly.</td>
+            <td></td>
           </tr>
           <!-- note -->
           <tr>
             <td>note</td>
             <td>equivalent</td>
             <td>Procedure</td><td>note</td>
-            <td>EHDS has 0..1 string; FHIR allows 0..* Annotation → map to one Annotation entry.</td>
+            <td></td>
           </tr>
         </tbody>
       </table>
