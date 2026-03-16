@@ -1,13 +1,12 @@
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile: MedicalTestResultEuCore
 Parent: Observation
 Id: medicalTestResult-eu-core
 Title: "Observation: Medical Test Result (EU core)"
 Description: """This profile introduces essential constraints and extensions for the Observation resource for Medical Test Results that apply across multiple use cases."""
-//-------------------------------------------------------------------------------------------
 * insert SetFmmandStatusRule (1, draft)
 * language ^short = "Language of the observation"
 * specimen ^short = "Specimen used for the observation"
+* obeys obs-value-1
 * extension contains 
     $observation-bodyStructure-r5 named bodyStructure 0..1 and
     $observation-triggeredBy-r5 named triggeredBy 0..* 
@@ -111,3 +110,7 @@ Description: """This profile introduces essential constraints and extensions for
     * ^requirements = "EHDSObservation.component.referenceRange"
   * interpretation
     * ^requirements = "EHDSObservation.component.interpretation"
+Invariant: obs-value-1
+Description: "The elements Observation.extension:value-r5 and Observation.value[x] SHALL not be used simultaneously."
+Severity: #error
+Expression: "value.empty() or extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.value[x]').empty()"
