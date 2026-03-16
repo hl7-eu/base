@@ -4,6 +4,12 @@ When expressing a body site with laterality, use `BodyStructure.includedStructur
 the body site code goes into `includedStructure.structure` and the laterality
 into `includedStructure.laterality`.
 
+#### Qualifier
+
+Additional positional qualifiers (e.g. "upper", "anterior", "superficial") can be
+expressed via `includedStructure.qualifier`. Multiple qualifiers may be provided within the same
+`includedStructure` entry.
+
 #### Laterality only (structure unknown or not provided)
 
 In some cases only the laterality is relevant or the specific body structure code is not known
