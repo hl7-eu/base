@@ -33,7 +33,8 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-55518, FHIR-55510: Added explanations to the Medication page
+updated xtehr logo
+updated model map pages
 "@
 }
 

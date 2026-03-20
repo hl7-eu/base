@@ -147,7 +147,7 @@
             <td>Flag</td><td>period</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="highlight-yellow">
             <td>sourceReference</td>
             <td>equivalent</td>
             <td>Flag</td><td></td>

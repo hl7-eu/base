@@ -97,10 +97,10 @@
             <td>Identifier of a specific version of this document. <code>id</code> in HL7 CDA</td>
           </tr>
           <tr>
-            <td>header.author[x]</td>
+            <td>header.author[x]</td>            
             <td>equivalent</td>
             <td>Composition</td>
-            <td>author</td>
+            <td>author</td>            
             <td></td>
           </tr>
           <tr>
@@ -116,13 +116,6 @@
             <td>Composition</td>
             <td>status</td>
             <td></td>
-          </tr>
-          <tr class="highlight-yellow">
-            <td>header.source</td>
-            <td>no-map</td>
-            <td>Composition</td>
-            <td></td>
-            <td>No native element.</td>
           </tr>
           <tr>
             <td>header.language</td>
@@ -202,11 +195,11 @@
             <td>Use attester.mode = "legal" for the legal authenticator.</td>
           </tr>
           <tr>
-            <td class="highlight-yellow">header.eventType</td>
+            <td>header.eventType</td>
             <td>related-to</td>
             <td>Composition</td>
-            <td>event.code <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>event.detail.concept<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Clarify the scope. If it is a classification of the document it should be category</td>
+            <td>category</td>
+            <td>If it is interpreted as a classification of the document. If instead it represents the type of event that occurred, event.code for <span style="color:#2e7d32;font-weight:600;">〔R4〕</span> and event.detail.concept for<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
           </tr>
           <tr class="highlight-yellow">
             <td>header.serviceSpecialty</td>

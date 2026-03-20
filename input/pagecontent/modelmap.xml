@@ -408,11 +408,11 @@
                         apply to every kind of Observation. Not all observations are medical test
                         results; for example, social history observations are Observation resources
                         but are outside the MedicalTestResult scope. </li>
-                    <li>
+<!--                     <li>
                         <code>EHDSMedicationPrescription</code> is defined in the HL7 Europe MPD
                         guide context. A prescription is not represented by simply the core <code>
                         MedicationRequest</code> alone; it requires the MPD modelling context and
-                        related constraints. </li>
+                        related constraints. </li> -->
                     <li>
                         <code>EHDSDocument</code> is represented as <code>CompositionEuCore</code>
                         when modelling the structured clinical document composition; it is

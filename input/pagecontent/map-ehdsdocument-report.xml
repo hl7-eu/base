@@ -117,13 +117,6 @@
             <td>status</td>
             <td></td>
           </tr>
-          <tr class="highlight-yellow">
-            <td>header.source</td>
-            <td>no-map</td>
-            <td>DiagnosticReport</td>
-            <td></td>
-            <td>No native element</td>
-          </tr>
           <tr>
             <td>header.language</td>
             <td>equivalent</td>
