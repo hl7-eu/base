@@ -150,7 +150,7 @@
           <tr class="highlight-yellow">
             <td>sourceReference</td>
             <td>equivalent</td>
-            <td>Flag</td><td></td>
+            <td>Flag</td><td>extension:flagDetailExt</td>
             <td></td>
           </tr>
         </tbody>

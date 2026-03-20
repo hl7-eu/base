@@ -33,8 +33,8 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-updated xtehr logo
-updated model map pages
+Fixed empty reason row in the Procedure model map
+Added extension detail to Flag mapping in EHDSAlert to FlagPatientEuCore
 "@
 }
 

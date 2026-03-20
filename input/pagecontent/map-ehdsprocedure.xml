@@ -150,7 +150,7 @@
           <tr>
             <td>reason[x]</td>
             <td>equivalent</td>
-            <td></td>
+            <td>reasonCode / reasonReference <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>reason <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td></td>
           </tr>
           <!-- outcome -->
