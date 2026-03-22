@@ -9,17 +9,7 @@
       <div class="callout-wrapper">
         <div class="callout-box">
           <strong>Ongoing alignment:</strong>
-              The Xt-EHR logical models are under active revision and continuous refinement.
-              Updates from Xt-EHR will be progressively incorporated into this Implementation
-              Guide to maintain alignment with the evolving EHDS specifications.
-        </div>
-      </div>
-    </div>
-    <div class="model-map-block">
-      <div class="callout-wrapper">
-        <div class="callout-box">
-          <strong>Yellow row/cells:</strong>
-              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+The models are expected to continue evolving, with updates incorporated into this Implementation Guide to maintain alignment with the EHDS Implementing Acts.
         </div>
       </div>
     </div>
@@ -121,14 +111,14 @@
             <td>description</td>
             <td>source-is-broader-than-target</td>
             <td>Flag</td><td>extensions:note.valueAnnotation.text</td>
-            <td class="highlight-yellow">The mapping applies if the description represents additional information collected about the alert.</td>
+            <td>The mapping applies if the description represents additional information collected about the alert.<br></br><code>code.text</code> should be used if it represents the textual rendering of coded content, or textual description of the alert.</td>
           </tr>
-          <tr>
+<!--           <tr>
             <td>description</td>
             <td>source-is-broader-than-target</td>
             <td>Flag</td><td>code.text</td>
-            <td class="highlight-yellow"><code>code.text</code> can also be used for textual rendering of coded content, or textual description of the alert.</td>
-          </tr>
+            <td><code>code.text</code> can also be used for textual rendering of coded content, or textual description of the alert.</td>
+          </tr> -->
           <tr>
             <td>priority</td>
             <td>equivalent</td>
@@ -147,7 +137,7 @@
             <td>Flag</td><td>period</td>
             <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>sourceReference</td>
             <td>equivalent</td>
             <td>Flag</td><td>extension:flagDetailExt</td>

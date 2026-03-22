@@ -71,18 +71,18 @@
             <td>identifier</td>
             <td>Copy over all identifiers if multiple.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.author[x]</td>
             <td>no-map</td>
             <td>MedicationStatement</td>
-            <td></td>
+            <td>If with author is intended the source of information, use the <code>informationSource</code> element.</td>
             <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.date</td>
-            <td>no-map</td>
+            <td>equivalent</td>
             <td>MedicationStatement</td>
-            <td></td>
+            <td>dateAsserted</td>
             <td></td>
           </tr>
           <tr>

@@ -8,27 +8,17 @@
     <div class="model-map-block">
       <div class="callout-wrapper">
         <div class="callout-box">
-          <strong>Ongoing alignment:</strong>
-              The Xt-EHR logical models are under active revision and continuous refinement.
-              Updates from Xt-EHR will be progressively incorporated into this Implementation
-              Guide to maintain alignment with the evolving EHDS specifications.
-        </div>
-      </div>
-    </div>
-    <div class="model-map-block">
-      <div class="callout-wrapper">
-        <div class="callout-box">
-          <strong>Yellow row/cells:</strong>
-              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
-        </div>
+          <strong>Ongoing alignment:</strong> The models are expected to continue evolving, with
+          updates incorporated into this Implementation Guide to maintain alignment with the EHDS
+          Implementing Acts. </div>
       </div>
     </div>
     <h3>EHDSAddress → AddressEu</h3>
-    <a>  </a>
+    <a> </a>
     <p></p>
     <p>
-  This page explains how conceptual elements from the EHDS logical model are expressed
-  in the corresponding FHIR AddressEu profile used by this Implementation Guide.
+      This page explains how conceptual elements from the EHDS logical model are expressed
+      in the corresponding FHIR AddressEu profile used by this Implementation Guide.
     </p>
     <p></p>
     <div class="table-wrap">
@@ -36,14 +26,15 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition/EHDSAddress" target="_blank">
-        EHDSAddress
+          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition/EHDSAddress"
+            target="_blank">
+            EHDSAddress
           </a>
         </li>
         <li>
           <strong>Target FHIR profile:</strong>
           <a href="StructureDefinition-Address-eu.html">
-        AddressEu
+            AddressEu
           </a>
         </li>
       </ul>
@@ -140,8 +131,8 @@
         </tbody>
       </table>
     </div>
-    <p style="margin-top:2rem; color:#555;">
-      Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
+    <p style="margin-top:2rem; color:#555;"> Return to overview: <a href="modelmap.html">EHDS
+      Logical Models → FHIR Profiles</a>
     </p>
   </body>
 </div>

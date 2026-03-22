@@ -34,7 +34,7 @@ dependencies:
   hl7.fhir.uv.xver-r5.r4: 0.0.1-snapshot-2
   hl7.fhir.eu.extensions.r4:
     uri: http://hl7.eu/fhir/extensions/ImplementationGuide/hl7.fhir.eu.extensions
-    version: 1.2.0
+    version: current
   ihe.pharm.mpd.r4: 1.0.0-comment-2
 #   hl7.fhir.us.mcode:
 #     id: mcode

@@ -8,10 +8,9 @@
     <div class="model-map-block">
         <div class="callout-wrapper">
             <div class="callout-box">
-                <strong>Ongoing alignment:</strong> The Xt-EHR logical models are under active
-                revision and continuous refinement. Updates from Xt-EHR will be progressively
-                incorporated into this Implementation Guide to maintain alignment with the evolving
-                EHDS specifications. </div>
+                <strong>Ongoing alignment:</strong>The models are expected to continue evolving,
+                with updates incorporated into this Implementation Guide to maintain alignment with
+                the EHDS Implementing Acts.</div>
         </div>
     </div>
     <h3>EHDS Logical Models → FHIR Profiles</h3>
@@ -408,7 +407,7 @@
                         apply to every kind of Observation. Not all observations are medical test
                         results; for example, social history observations are Observation resources
                         but are outside the MedicalTestResult scope. </li>
-<!--                     <li>
+                    <!--                     <li>
                         <code>EHDSMedicationPrescription</code> is defined in the HL7 Europe MPD
                         guide context. A prescription is not represented by simply the core <code>
                         MedicationRequest</code> alone; it requires the MPD modelling context and

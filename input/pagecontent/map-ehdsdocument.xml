@@ -9,17 +9,7 @@
       <div class="callout-wrapper">
         <div class="callout-box">
           <strong>Ongoing alignment:</strong>
-              The Xt-EHR logical models are under active revision and continuous refinement.
-              Updates from Xt-EHR will be progressively incorporated into this Implementation
-              Guide to maintain alignment with the evolving EHDS specifications.
-        </div>
-      </div>
-    </div>
-    <div class="model-map-block">
-      <div class="callout-wrapper">
-        <div class="callout-box">
-          <strong>Yellow row/cells:</strong>
-              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+The models are expected to continue evolving, with updates incorporated into this Implementation Guide to maintain alignment with the EHDS Implementing Acts.
         </div>
       </div>
     </div>
@@ -199,14 +189,14 @@
             <td>related-to</td>
             <td>Composition</td>
             <td>category</td>
-            <td>If it is interpreted as a classification of the document. If instead it represents the type of event that occurred, event.code for <span style="color:#2e7d32;font-weight:600;">〔R4〕</span> and event.detail.concept for<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>The mapping proposed reflects a possible interpretation of this element as classification of the document; DocumentReference.category should be used if used for filtering document searches. If instead it represents the type of event that occurred, event.code for <span style="color:#2e7d32;font-weight:600;">〔R4〕</span> and event.detail.concept for<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.serviceSpecialty</td>
             <td>source-is-narrower-than-target</td>
             <td>Composition</td>
             <td>category</td>
-            <td>Use category to tag specialty if no dedicated extension/profile element exists. (1) Is this a metadata information or something that have to be captured in the document ? (2) is this only for diagnostic reports ? in this case we can use DiagnosticReport.category</td>
+            <td>The mapping proposed reflects a possible classification of the document based on the service specialty. However it is more appropriated to be captured in the DiagnosticReport.category, or in the DocumentReference.category if used for filtering document searches.</td>
           </tr>
           <tr>
             <td>header.custodian</td>
@@ -216,12 +206,12 @@
             <td>Reference to Organization.</td>
           </tr>
 <!-- DOCUMENT BODY -->
-          <tr class="highlight-yellow">
+          <tr>
             <td>presentedForm</td>
             <td>no-map</td>
             <td>Composition</td>
+            <td></td>            
             <td></td>
-            <td>To be determined</td>
           </tr>
         </tbody>
       </table>

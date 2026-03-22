@@ -9,17 +9,7 @@
       <div class="callout-wrapper">
         <div class="callout-box">
           <strong>Ongoing alignment:</strong>
-              The Xt-EHR logical models are under active revision and continuous refinement.
-              Updates from Xt-EHR will be progressively incorporated into this Implementation
-              Guide to maintain alignment with the evolving EHDS specifications.
-        </div>
-      </div>
-    </div>
-    <div class="model-map-block">
-      <div class="callout-wrapper">
-        <div class="callout-box">
-          <strong>Yellow row/cells:</strong>
-              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+The models are expected to continue evolving, with updates incorporated into this Implementation Guide to maintain alignment with the EHDS Implementing Acts.
         </div>
       </div>
     </div>
@@ -96,12 +86,12 @@
             <td>identifier</td>
             <td>Identifier of a specific version of this document. <code>id</code> in HL7 CDA</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.author[x]</td>
             <td>related-to</td>
             <td>DiagnosticReport</td>
             <td>performer</td>
-            <td></td>
+            <td>The author of the report is captured in the Composition.author element; but usually the performer is also the author of the report, even if they are distict participants</td>
           </tr>
           <tr>
             <td>header.date</td>
@@ -157,54 +147,54 @@
             <td>no-map</td>
             <td>DiagnosticReport</td>
             <td></td>
-            <td></td>
+            <td>No native element in DiagnosticReport. Details about attestation are documented in the Compostion resource.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.attestation.attester[x]</td>
             <td>no-map</td>
             <td>DiagnosticReport</td>
             <td></td>
-            <td>No native element in DiagnosticReport.</td>
+            <td>No native element in DiagnosticReport. Details about attester are documented in the Compostion resource.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.attestation.datetime</td>
             <td>no-map</td>
             <td>DiagnosticReport</td><td></td>
-            <td>No native element in DiagnosticReport.</td>
+            <td>No native element in DiagnosticReport. Details about attestation date time are documented in the Compostion resource.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.legalAuthentication</td>
             <td>no-map</td>
             <td>DiagnosticReport</td>
             <td></td>
-            <td></td>
+            <td>No native element in DiagnosticReport. Details about legal authentication are documented in the Compostion resource.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.legalAuthentication.legalAuthenticator[x]</td>
             <td>no-map</td>
             <td>DiagnosticReport</td>
             <td></td>
-            <td>No native element in DiagnosticReport.</td>
+            <td>No native element in DiagnosticReport. Details about legal authenticator are documented in the Compostion resource.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.legalAuthentication.datetime</td>
             <td>no-map</td>
             <td>DiagnosticReport</td><td></td>
-            <td>No native element in DiagnosticReport.</td>
+            <td>No native element in DiagnosticReport. Details about legal authentication date time are documented in the Compostion resource.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.eventType</td>
             <td>related-to</td>
             <td>DiagnosticReport</td>
             <td>category</td>
-            <td>Clarify the scope. If it is a classification of the report it should be category</td>
+            <td>The mapping proposed reflects a possible interpretation of this element as classification of the report; DocumentReference.category should be used if used for filtering document searches. If instead it represents the type of event that occurred, Composition.event.code for <span style="color:#2e7d32;font-weight:600;">〔R4〕</span> and Composition.event.detail.concept for<span style="color:#2e7d32;font-weight:600;">〔R5〕</span>is more appropriate.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>header.serviceSpecialty</td>
             <td>source-is-narrower-than-target</td>
             <td>DiagnosticReport</td>
             <td>category</td>
-            <td>Use category to tag specialty if no dedicated extension/profile element exists. <strong>Is this a metadata information or something that have to be captured in the document ? in this case we can use DiagnosticReport.category</strong> </td>
+            <td></td>
           </tr>
           <tr>
             <td>header.custodian</td>
@@ -216,7 +206,7 @@
 <!-- DOCUMENT BODY -->
           <tr>
             <td>presentedForm</td>
-            <td>equivalent</td>
+            <td>related-to</td>
             <td>DiagnosticReport</td>
             <td>presentedForm</td>
             <td></td>

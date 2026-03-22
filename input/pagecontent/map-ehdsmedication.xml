@@ -8,27 +8,18 @@
     <div class="model-map-block">
       <div class="callout-wrapper">
         <div class="callout-box">
-          <strong>Ongoing alignment:</strong>
-              The Xt-EHR logical models are under active revision and continuous refinement.
-              Updates from Xt-EHR will be progressively incorporated into this Implementation
-              Guide to maintain alignment with the evolving EHDS specifications.
-        </div>
-      </div>
-    </div>
-    <div class="model-map-block">
-      <div class="callout-wrapper">
-        <div class="callout-box">
-          <strong>Yellow row/cells:</strong>
-              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
-        </div>
+          <strong>Ongoing alignment:</strong> The models are expected to continue evolving, with
+          updates incorporated into this Implementation Guide to maintain alignment with the EHDS
+          Implementing Acts. </div>
       </div>
     </div>
     <h3>EHDSMedication → MedicationEuCore</h3>
     <a> </a>
     <p></p>
     <p>
-  This page explains how conceptual elements from the EHDS logical model are expressed
-  in the corresponding FHIR MedicationEuCore and OrganizationEuCore profiles used by this Implementation Guide.
+      This page explains how conceptual elements from the EHDS logical model are expressed
+      in the corresponding FHIR MedicationEuCore and OrganizationEuCore profiles used by this
+      Implementation Guide.
     </p>
     <p></p>
     <div class="table-wrap">
@@ -36,14 +27,15 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSMedication.html" target="_blank">
-        EHDSMedication
+          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSMedication.html"
+            target="_blank">
+            EHDSMedication
           </a>
         </li>
         <li>
           <strong>Target FHIR profiles:</strong>
           <a href="StructureDefinition-medication-eu-core.html">
-        MedicationEuCore
+            MedicationEuCore
           </a><!-- ,
           <a href="StructureDefinition-organization-eu-core.html">
         OrganizationEuCore
@@ -52,7 +44,8 @@
       </ul>
     </div>
     <p></p>
-    <p>The model supports prescribed/dispensed medication and can represent both generic (virtual) products and branded (real) products.</p>
+    <p>The model supports prescribed/dispensed medication and can represent both generic (virtual)
+      products and branded (real) products.</p>
     <div class="table-wrap">
       <table summary="EHDSMedication → MedicationEuCore">
         <caption>EHDSMedication → MedicationEuCore</caption>
@@ -74,107 +67,145 @@
           <tr>
             <td>identifyingCode[x]</td>
             <td>equivalent</td>
-            <td>Medication</td><td>code</td>
+            <td>Medication</td>
+            <td>code</td>
             <td></td>
           </tr>
           <tr>
             <td>identifyingCode[x]</td>
             <td>equivalent</td>
-            <td>Medication</td><td>identifier</td>
+            <td>Medication</td>
+            <td>identifier</td>
             <td>Use multiple identifiers if needed; avoid conflicting meanings.</td>
           </tr>
           <tr>
             <td>classification</td>
             <td>equivalent</td>
-            <td>Medication</td><td>extension:classification</td>
+            <td>Medication</td>
+            <td>extension:classification</td>
             <td></td>
           </tr>
           <tr>
             <td>productName</td>
             <td>equivalent</td>
-            <td>Medication</td><td>extension:productName</td>
+            <td>Medication</td>
+            <td>extension:productName</td>
             <td>Official name of branded medicinal product.</td>
           </tr>
           <tr>
             <td>marketingAuthorisationHolder</td>
             <td>equivalent</td>
-            <td>Medication</td><td>manufacturer <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>marketingAuthorizationHolder <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Reference to <code>Organization</code>.
-            </td>
+            <td>Medication</td>
+            <td>manufacturer <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>
+              marketingAuthorizationHolder <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Reference to <code>Organization</code>. </td>
           </tr>
           <tr>
             <td>marketingAuthorisationHolder.organisationName</td>
             <td>equivalent</td>
-            <td>Organization</td><td>name</td>
+            <td>Organization</td>
+            <td>name</td>
             <td>Populate the referenced Organization's <code>name</code>.</td>
           </tr>
           <tr>
             <td>marketingAuthorisationHolder.organisationIdentifier</td>
             <td>equivalent</td>
-            <td>Organization</td><td>identifier</td>
+            <td>Organization</td>
+            <td>identifier</td>
             <td></td>
           </tr>
           <tr>
             <td>doseForm</td>
             <td>equivalent</td>
-            <td>Medication</td><td>form <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>doseForm <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Medication</td>
+            <td>form <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>doseForm <span
+                style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td></td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>description</td>
             <td>source-is-broader-than-target</td>
-            <td>Medication</td><td>extension:characteristic</td>
-            <td></td>
+            <td>Medication</td>
+            <td>extension:characteristic</td>
+            <td>When intended as additional detail about the medication (e.g. package description)</td>
+          </tr>
+          <tr>
+            <td>description</td>
+            <td>source-is-broader-than-target</td>
+            <td>Medication</td>
+            <td>code.text</td>
+            <td>When intended as description of the medication</td>
           </tr>
           <tr>
             <td>item</td>
             <td>equivalent</td>
             <td>Medication</td>
-            <td>ingredient.itemReference <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>ingredient.item.reference <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>An item - included in a product - is represented by a Medication resource referenced by the <code>ingredient.item</code> (see the example at https://hl7.eu/fhir/mpd-r5/Medication-02A-ClotrimazoleCanifugCremolum.html). If the item is the product, the item is the Medication itself.</td>
+            <td>ingredient.itemReference <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>
+              ingredient.item.reference <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>An item - included in a product - is represented by a Medication resource referenced
+              by the <code>ingredient.item</code> (see the example at
+              https://hl7.eu/fhir/mpd-r5/Medication-02A-ClotrimazoleCanifugCremolum.html). If the
+              item is the product, the item is the Medication itself.</td>
           </tr>
           <tr>
             <td>item.doseForm</td>
             <td>equivalent</td>
-            <td>Medication</td><td>form <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>doseForm <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Medication</td>
+            <td>form <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>doseForm <span
+                style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td></td>
           </tr>
           <tr>
             <td>item.ingredient</td>
             <td>equivalent</td>
-            <td>Medication</td><td>ingredient</td>
-            <td>Replicate per-item ingredients into <code>ingredient</code>. See note above about <i>item</i></td>
+            <td>Medication</td>
+            <td>ingredient</td>
+            <td>Replicate per-item ingredients into <code>ingredient</code>. See note above about <i>
+              item</i></td>
           </tr>
           <tr>
             <td>item.ingredient.isActive</td>
             <td>equivalent</td>
-            <td>Medication</td><td>ingredient.isActive</td>
-            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i></td>
+            <td>Medication</td>
+            <td>ingredient.isActive</td>
+            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>
+              item</i></td>
           </tr>
           <tr>
             <td>item.ingredient.substance</td>
             <td>equivalent</td>
-            <td>Medication</td><td>ingredient.itemCodeableConcept <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>ingredient.item.concept <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i></td>
+            <td>Medication</td>
+            <td>ingredient.itemCodeableConcept <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>
+              ingredient.item.concept <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>
+              item</i></td>
           </tr>
           <tr>
             <td>item.ingredient.strengthInfo</td>
             <td>related-to</td>
-            <td>Medication</td><td>ingredient.strength[x]</td>
+            <td>Medication</td>
+            <td>ingredient.strength[x]</td>
             <td>Backbone element see below for mapping details.</td>
           </tr>
           <tr>
             <td>item.ingredient.strengthInfo.strength</td>
             <td>equivalent</td>
-            <td>Medication</td><td>ingredient.strength  <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>ingredient.strengthRatio  <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i></td>
+            <td>Medication</td>
+            <td>ingredient.strength <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>
+              ingredient.strengthRatio  <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>
+              item</i></td>
           </tr>
           <tr>
             <td>item.ingredient.strengthInfo.basisOfStrengthSubstance</td>
             <td>equivalent</td>
             <td>Medication</td>
-            <td>ingredient.strength.extension:basisOfStrengthSubstance <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>ingredient.strength[x].extension:basisOfStrengthSubstance <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>item</i>
+            <td>ingredient.strength.extension:basisOfStrengthSubstance <span
+                style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>
+              ingredient.strength[x].extension:basisOfStrengthSubstance <span
+                style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>Replicate per-item ingredients into<code>ingredient</code>. See note above about <i>
+              item</i>
             </td>
           </tr>
           <tr>
@@ -188,84 +219,97 @@
           <tr>
             <td>item.containedQuantity</td>
             <td>equivalent</td>
-            <td>Medication</td><td>extension:sizeOfItem</td>
+            <td>Medication</td>
+            <td>extension:sizeOfItem</td>
             <td>See note above about <i>item</i>
             </td>
-          </tr>        
+          </tr>
           <tr>
             <td>item.amount</td>
             <td>equivalent</td>
             <td>Medication</td>
-            <td>amount <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>totalVolume <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            <td>amount <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>totalVolume <span
+                style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             <td>See note above about <i>item</i>
             </td>
           </tr>
           <tr>
             <td>item.packageType</td>
             <td>equivalent</td>
-            <td>Medication</td><td>extension:packageType</td>
+            <td>Medication</td>
+            <td>extension:packageType</td>
             <td>See note above about <i>item</i>
             </td>
           </tr>
           <tr>
             <td>device</td>
             <td>equivalent</td>
-            <td>Medication</td><td>extension:device</td>
+            <td>Medication</td>
+            <td>extension:device</td>
             <td></td>
           </tr>
           <tr>
             <td>device.deviceQuantity</td>
             <td>equivalent</td>
-            <td>Medication</td><td>extension:device.extension:quantity</td>
+            <td>Medication</td>
+            <td>extension:device.extension:quantity</td>
             <td></td>
           </tr>
           <tr>
             <td>device.device[x]</td>
             <td>source-is-broader-than-target</td>
-            <td>Medication</td><td>extension:device.extension:device.valueCodeableConcept</td>
+            <td>Medication</td>
+            <td>extension:device.extension:device.valueCodeableConcept</td>
             <td>Only type of device (CodeableConcept) is expected. Reference not supported.</td>
           </tr>
           <tr>
             <td>characteristic</td>
             <td>equivalent</td>
-            <td>Medication</td><td>extension:characteristic</td>
+            <td>Medication</td>
+            <td>extension:characteristic</td>
             <td></td>
           </tr>
           <tr>
             <td>characteristic.type</td>
             <td>equivalent</td>
-            <td>Medication</td><td>extension:characteristic.extension:type</td>
+            <td>Medication</td>
+            <td>extension:characteristic.extension:type</td>
             <td></td>
           </tr>
           <tr>
             <td>characteristic.value[x]</td>
             <td>equivalent</td>
-            <td>Medication</td><td>extension:characteristic.extension:value</td>
-            <td>Supports boolean, CodeableConcept, string, Quantity, dateTime, integer, decimal, Ratio in R5</td>
+            <td>Medication</td>
+            <td>extension:characteristic.extension:value</td>
+            <td>Supports boolean, CodeableConcept, string, Quantity, dateTime, integer, decimal,
+              Ratio in R5</td>
           </tr>
           <tr>
             <td>batch</td>
             <td>equivalent</td>
-            <td>Medication</td><td>batch</td>
+            <td>Medication</td>
+            <td>batch</td>
             <td></td>
           </tr>
           <tr>
             <td>batch.lotNumber</td>
             <td>equivalent</td>
-            <td>Medication</td><td>batch.lotNumber</td>
+            <td>Medication</td>
+            <td>batch.lotNumber</td>
             <td>Traceability / pharmacovigilance.</td>
           </tr>
           <tr>
             <td>batch.expirationDate</td>
             <td>equivalent</td>
-            <td>Medication</td><td>batch.expirationDate</td>
+            <td>Medication</td>
+            <td>batch.expirationDate</td>
             <td></td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p style="margin-top:2rem;color:#555;">
-      Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
+    <p style="margin-top:2rem;color:#555;"> Return to overview: <a href="modelmap.html">EHDS Logical
+      Models → FHIR Profiles</a>
     </p>
   </body>
 </div>
