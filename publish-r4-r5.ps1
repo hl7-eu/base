@@ -33,14 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-revised author page
-revised message about xtehr logical model alignment
-Updated EHDSAlert.description mapping details
-Refined mapping details for header.serviceSpecialty and presentedForm in EHDSDocument
-Refined mapping details for header elements in EHDSDocument
-Refined EHDSMedication.description
-FHIR-55455: resolved all not finalized mappings
-Changed version for hl7.fhir.eu.extensions.r4 to current in sushi-config.yaml
+Fix links for EHDSHumanName, EHDSPatient, and EHDSOrganisation models in logicalmodels.md
 "@
 }
 
