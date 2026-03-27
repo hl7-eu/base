@@ -33,7 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-Fix links for EHDSHumanName, EHDSPatient, and EHDSOrganisation models in logicalmodels.md
+Updated hl7.fhir.uv.xver-r5.r4 dependency to 0.1.0
 "@
 }
 
