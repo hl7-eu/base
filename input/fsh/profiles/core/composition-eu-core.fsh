@@ -5,7 +5,7 @@ Id:       composition-eu-core
 Title:    "Composition (EU core)"
 Description: """This profile introduces essential constraints and extensions for the Composition resource for commonly used EHDS documents."""
 //-------------------------------------------------------------------------------------------
-* insert SetFmmandStatusRule (1, draft)
+* insert SetFmmandStatusRule (2, trial-use)
 * ^experimental = false
 * ^purpose = "This profile constrains the Composition resource for the purpose of this guide."
 * event

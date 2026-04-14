@@ -3,7 +3,7 @@ Parent: AllergyIntolerance
 Id: allergyIntolerance-eu-core
 Title:    "AllergyIntolerance (EU core)"
 Description: """This profile introduces essential constraints and extensions for the AllergyIntolerance resource that apply across multiple use cases."""
-* insert SetFmmandStatusRule (1, draft)
+* insert SetFmmandStatusRule (2, trial-use)
 // * insert ImposeProfile($AllergyIntolerance-uv-ips, 0)
 * extension contains $allergyintolerance-abatement named abatement 0..1
 * extension[abatement].valueDateTime ^short = "End date"

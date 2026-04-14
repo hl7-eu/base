@@ -17,6 +17,9 @@
 %There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/flag-priority'%
 %There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure%
 %There are multiple different potential matches for the url 'http://terminology.hl7.org/CodeSystem/v3-NullFlavor%
+# Multiple code system versions
+Pinned the version of http://terminology.hl7.org/CodeSystem/v3-NullFlavor to 4.0.0 from choices of 2.1.0 (hl7.fhir.uv.xver-r5.r4#0.1.0), 3.0.0 (hl7.terminology.r4#6.3.0), 4.0.0 (hl7.terminology.r4#7.1.0)
+TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS
 # SNOMED CT related warnings
 %The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters%
 # Deprecated artefcats
@@ -68,3 +71,5 @@ The URL should refer directly to the ImplementationGuide resource (e.g. include 
 %A definition for CodeSystem 'http://npu-terminology.org' could not be found, so the value set cannot be expanded%
 # This ballot version includes a mix of draft and trial-use resources
 The resource status 'active' and the standards status 'draft' are not consistent
+# Known issue with hl7.fhir.uv.xver-r5.r4 version 0.1.0 (see https://chat.fhir.org/#narrow/channel/179166-implementers/topic/Which.20package.20to.20import.20for.20cross.20version.20extensions/with/584676154)
+The slice definition for BodyStructure.extension:includedStructure.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension has a minimum of 0 but the slices add up to a minimum of 1

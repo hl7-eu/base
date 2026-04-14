@@ -7,7 +7,7 @@ Description: """This profile introduces essential constraints and extensions for
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
 * ^purpose = "This profile constrains the Immunization resource for the purpose of this guide."
-* insert SetFmmandStatusRule (1, draft)
+* insert SetFmmandStatusRule (2, trial-use)
 * status ^short = "Immunization status."
 * statusReason ^short = "Reason for not performing."
 * identifier ^short = "Identifier of the immunization"

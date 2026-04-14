@@ -3,7 +3,7 @@ Parent: Observation
 Id: medicalTestResult-eu-core
 Title: "Observation: Medical Test Result (EU core)"
 Description: """This profile introduces essential constraints and extensions for the Observation resource for Medical Test Results that apply across multiple use cases."""
-* insert SetFmmandStatusRule (1, draft)
+* insert SetFmmandStatusRule (2, trial-use)
 * language ^short = "Language of the observation"
 * specimen ^short = "Specimen used for the observation"
 * obeys obs-value-1

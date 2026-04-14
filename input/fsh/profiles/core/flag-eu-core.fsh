@@ -6,7 +6,7 @@ Title:    "Flag: Patient (EU core)"
 Description: """This profile introduces essential constraints and extensions for the Flag resource - for patient related alerts - that apply across multiple use cases.
 Other specialized flag profiles may be specified in the future for other kind of subjects (e.g. related to practitioners, devices, etc.)."""
 //-------------------------------------------------------------------------------------------
-// * insert SetFmmandStatusRule (1, draft)
+// * insert SetFmmandStatusRule (2, trial-use)
 * identifier ^short = "Alert business Identifier"
 * language ^short = "Language of the alert content"
 * extension contains $flag-detail named flagDetailExt 0..*

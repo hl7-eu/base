@@ -33,7 +33,9 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-Updated hl7.fhir.uv.xver-r5.r4 dependency to 0.1.0
+Update publication-request.json and sushi-config.yaml for release preparation
+Update Fmm Status to trial-use across multiple EU core profiles
+set version to 2.0.0 in publication-request.json
 "@
 }
 

@@ -3,7 +3,7 @@ Parent: DiagnosticReport
 Id: diagnosticReport-eu-core
 Title:    "DiagnosticReport (EU core)"
 Description: """This profile introduces essential constraints and extensions for the DiagnosticReport resource that apply across multiple use cases."""
-* insert SetFmmandStatusRule (1, draft)
+* insert SetFmmandStatusRule (2, trial-use)
 * . ^short = "Diagnostic Report EU core"
 * . ^definition = "Diagnostic Report EU core"
 * effectivePeriod ^short = "Effective period of the report"
