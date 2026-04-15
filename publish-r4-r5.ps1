@@ -33,8 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-fixed version for hl7.fhir.eu.extensions.r5 dependency
-updated ignoreWarnings.txt for R5
+fixed publication-request.json
 "@
 }
 
