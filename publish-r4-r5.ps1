@@ -33,7 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-fixed publication-request.json
+Updated alias for observation-value-r5 and commented out hl7.fhir.extensions.r5 dependency in sushi-config.yaml
 "@
 }
 
