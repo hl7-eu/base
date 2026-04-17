@@ -33,7 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-56382: removed a r5 extension in the R5 IG (DiagnosticReport.note)
+Updated dependency for hl7.fhir.extensions.r5 to hl7.fhir.uv.xver-r5.r5 in sushi-config.yaml
 "@
 }
 
