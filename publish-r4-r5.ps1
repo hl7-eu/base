@@ -33,7 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-fixed dependency for R5
+Updated invariant expression for Observation.value-r5 to correct extension reference (Patrick's PR)
 "@
 }
 
