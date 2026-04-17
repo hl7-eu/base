@@ -33,7 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-Updated observation-value-r5 alias to correct the URL and modified dependency structure in sushi-config.yaml (for sushi 3.19)
+FHIR-56382: removed a r5 extension in the R5 IG (DiagnosticReport.note)
 "@
 }
 
