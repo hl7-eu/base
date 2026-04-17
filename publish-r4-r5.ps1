@@ -33,7 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-restored configuration for previous sushi version
+fixed dependency for R5
 "@
 }
 
