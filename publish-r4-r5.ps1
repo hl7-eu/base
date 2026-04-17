@@ -33,7 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-Updated dependency for hl7.fhir.extensions.r5 to hl7.fhir.uv.xver-r5.r5 in sushi-config.yaml
+fixed dependency for R5
 "@
 }
 
