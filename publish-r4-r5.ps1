@@ -33,7 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-Updated invariant expression for Observation.value-r5 to correct extension reference (Patrick's PR)
+FHIR-56415: fixed misalignemnt between MedicalTestResultEuCore and LaboratoryObservations
 "@
 }
 
