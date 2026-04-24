@@ -110,6 +110,7 @@ Description: """This profile introduces essential constraints and extensions for
     * ^requirements = "EHDSObservation.component.referenceRange"
   * interpretation
     * ^requirements = "EHDSObservation.component.interpretation"
+    
 Invariant: obs-value-1
 Description: "The elements Observation.extension:value-r5 and Observation.value[x] SHALL not be used simultaneously."
 Severity: #error
