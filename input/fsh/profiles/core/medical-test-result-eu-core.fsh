@@ -43,7 +43,7 @@ Description: """This profile introduces essential constraints and extensions for
 * code from MedicalTestResultCodeEuVs (example)
   * ^requirements = "EHDSObservation.code"
 * subject 1.. 
-* subject only Reference(PatientEuCore)
+* subject only Reference(PatientEuCore or Device or Group or Location)
   * ^requirements = "EHDSObservation.header.subject"
 * focus only Reference(PatientEuCore or RelatedPerson or Group or Device or LocationEuCore)
   * ^requirements = "EHDSObservation.directSubject[x]"
@@ -52,10 +52,10 @@ Description: """This profile introduces essential constraints and extensions for
   * ^requirements = "EHDSObservation.observationDate[x]"
 * issued
   * ^requirements = "EHDSObservation.header.authorship.datetime"
-* performer only Reference(PractitionerEuCore or PractitionerRoleEuCore or OrganizationEuCore)
+* performer only Reference(PractitionerEuCore or PractitionerRoleEuCore or OrganizationEuCore or PatientEuCore or RelatedPerson)
   * ^requirements = "EHDSObservation.header.performer"
 * performer
-  * extension contains $event-performerFunction named performerFunction 0..1
+  * extension contains $event-performerFunction named performerFunction 0..*
   * extension[performerFunction]
     * ^requirements = "EHDSObservation.performer.function"
 //TODO: datatypes in xt-ehr model only valueString, valueQuantity, valueRange, valueCodeableConcept

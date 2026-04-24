@@ -17,6 +17,7 @@ This page summarizes the main changes applied to this version of the guide.
   * MedicalTestResultEuCore: Temporarily removed the R5 `value[x]` extension to fix extension errors.
   * FHIR-55424: Removed category slice in `MedicalTestResultEuCore`.
   * FHIR-55639: Added missing target elements referenced by model maps and reviewed all profiles.
+  * FHIR-56415: fixed misalignemnt between MedicalTestResultEuCore and LaboratoryObservations.
 
 * Editorial and documentation updates
   * FHIR-55553: Partial typo fixes.
