@@ -33,7 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-56409: fixed link in logical model landing page
+sushi-config.yaml clean-up
 "@
 }
 
