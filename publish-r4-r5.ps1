@@ -33,8 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-Updated ignoreWarnings
-FHIR-55531:  updated diagnosticReport to take in account the removal of the Patient Animal Profile. Removed all remaining references to the Patient Animal Profile.
+FHIR-56409: fixed link in logical model landing page
 "@
 }
 
