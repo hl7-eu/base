@@ -269,10 +269,6 @@ resources:
 #  StructureDefinition/Subject:
 #    name: A.1.1, A.1.2 - Subject of care
 #    description: Patient or Subject of care. Sections A.1.1 and A.1.2 of the eHN guideline.
-#----------- Examples -------------
-#  Specimen/Specimen-animal-example:
-#    name: "Specimen: animal example"
-#    description: Example of Specimen collected from an animal.
 # -------------  Obligations
 # StructureDefinition/Patient-obl-eu-lab:
 #   name: Patient Obligations
@@ -318,7 +314,6 @@ groups:
        - StructureDefinition/medicationRequest-eu-core
        - StructureDefinition/medicationStatement-eu-core
        - StructureDefinition/organization-eu-core
-       - StructureDefinition/patient-animal-eu-core
        - StructureDefinition/patient-eu-core
        - StructureDefinition/practitioner-eu-core
        - StructureDefinition/practitionerRole-eu-core

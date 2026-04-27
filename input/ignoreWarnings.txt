@@ -74,3 +74,6 @@ The URL should refer directly to the ImplementationGuide resource (e.g. include 
 The resource status 'active' and the standards status 'draft' are not consistent
 # Known issue with hl7.fhir.uv.xver-r5.r4 version 0.1.0 (see https://chat.fhir.org/#narrow/channel/179166-implementers/topic/Which.20package.20to.20import.20for.20cross.20version.20extensions/with/584676154)
 The slice definition for BodyStructure.extension:includedStructure.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension has a minimum of 0 but the slices add up to a minimum of 1
+# Code used in the example not from the additional value Set
+None of the codings provided are in the value set 'WHO ATC - IPS' (http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips|2.0.0) specified in an additional binding, and a coding is recommended to come from this value set (codes = http://snomed.info/sct#91935009)
+Terminology_TX_NoValid_3_CC

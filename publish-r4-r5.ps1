@@ -33,7 +33,7 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-56415: fixed misalignemnt between MedicalTestResultEuCore and LaboratoryObservations
+FHIR-56409: fixed link in logical model landing page
 "@
 }
 

@@ -36,7 +36,8 @@ Description: """This profile introduces essential constraints and extensions for
   * ^short = "Type of Diagnostic Report"
   * ^definition = "Defines the document type, it is recommended to take this from the suggested LOINC set."
 * subject 1..
-* subject only Reference (PatientEuCore or PatientAnimalEuCore or Group or Location or Device)
+// Patient is left unconstrained to allow Laboratory Report to support non human patients,in absence of a Patient Animal profile.
+* subject only Reference (Patient or Group or Location or Device)
   * ^short = "Who and/or what this report is about"
   * ^definition = "Who or what this report is about. The report can be about a human patient, a living subject, a device (e.g. a machine), a location or even a group of subjects (such as a document about a herd of livestock, or a set of patients that share a common exposure)."
 * encounter only Reference (Encounter)
