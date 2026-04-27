@@ -33,7 +33,8 @@ $originalLocation = Get-Location
 # Default commit message if none provided
 if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = @"
-FHIR-56415: fixed misalignemnt between MedicalTestResultEuCore and LaboratoryObservations
+Updated ignoreWarnings
+FHIR-55531:  updated diagnosticReport to take in account the removal of the Patient Animal Profile. Removed all remaining references to the Patient Animal Profile.
 "@
 }
 
