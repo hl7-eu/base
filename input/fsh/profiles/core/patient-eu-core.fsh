@@ -4,10 +4,14 @@ Id: patient-eu-core
 Title:    "Patient (EU core)"
 Description: """This profile introduces essential constraints and extensions for the Patient resource that apply across multiple use cases.
 When the ips-pat-1 invariant is satisfied \(Patient.name.given, Patient.name.family or Patient.name.text SHALL be present\) then this profile complies with the IPS patient profile."""
+
 * insert SetFmmandStatusRule (2, trial-use)
+
 * name 1..*
 * name obeys eu-pat-1
+
 * birthDate 1.. // MS according to IPS
+
 // ==============================================================
 // Invariants
 // ips-pat-1 doesn't allow for data-absent-reason on name, 

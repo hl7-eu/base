@@ -1,8 +1,11 @@
 //============== ALIAS ===============
+
 // Temporary canonical
 Alias: $pms = http://hl7europe.org/examples/pms
 Alias: $iccc3 = http://terminology.hl7.org/CodeSystem/iccc-3 // FAKE URL NOT YET ASSIGNED !!
+
 // --- Code Systems
+
 Alias: $allergy-intolerance-type = http://hl7.org/fhir/allergy-intolerance-type
 Alias: $absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
 Alias: $ajcc = http://cancerstaging.org
@@ -39,6 +42,7 @@ Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation
 Alias: $orpha = https://www.orpha.net // Used urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.44.5 for the MyHealth@EU lab guide to be checked <====
 Alias: $pei = http://pei.de
 Alias: $procedure-outcome = http://terminology.hl7.org/CodeSystem/procedure-outcome
+
 Alias: $referencerange-meaning = http://terminology.hl7.org/CodeSystem/referencerange-meaning
 Alias: $sct = http://snomed.info/sct
 Alias: $sex-parameter-for-clinical-use = http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use
@@ -60,9 +64,13 @@ Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-Particip
 Alias: $v3-RoleClass = http://terminology.hl7.org/CodeSystem/v3-RoleClass
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $v3-TimingEvent = http://terminology.hl7.org/CodeSystem/v3-TimingEvent
+
+
+
 // --- SID
 Alias: $oid = urn:ietf:rfc:1155
 Alias: $uri = urn:ietf:rfc:3986
 Alias: $mime = urn:ietf:bcp:13
 Alias: $iso-3166 = urn:iso:std:iso:3166
+
 //=========================

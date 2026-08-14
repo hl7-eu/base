@@ -2,9 +2,11 @@ Instance: CompositionLabExample
 InstanceOf: CompositionEuCore
 Title: "Composition Example"
 Description: "Example of a Laboratory Report Composition conforming to the Composition (EU Core) profile."
+
 * extension[information-recipient]
   * valueReference = Reference(OrganizationExample)
     * display = "Nuovo Ospedale S.Agostino (MO)"
+
 * extension[diagnosticReport].valueReference = Reference(DiagnosticReportLabExample)
 * id = "26032a57-083a-4ddf-b019-e566ae02f740"
 * identifier.system = "http://example.org/composition-ids"
@@ -30,19 +32,27 @@ Description: "Example of a Laboratory Report Composition conforming to the Compo
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table id=\"nota1\">
 <thead><tr><th>Date</th><th>Test</th><th>Value</th><th>Unit(s)</th><th>Reference Range</th><th>Interpretation</th></tr></thead>
+
 <tbody>
 <tr><td>2023-03-27</td><td>Urea (U) [Moles/Vol]</td><td>310</td><td>mmol/L</td><td>67 - 580 mmol/L</td><td>Significantly low</td></tr>
 </tbody>
 </table></div>"
 * section[=].entry = Reference(ObservationLabResultExample)
+
+
 Instance: DiagnosticReportLabExample
 InstanceOf: DiagnosticReportEuCore
 Title: "DiagnosticReport Example"
 Description: "Example of a Laboratory Report DiagnosticReport conforming to the DiagnosticReport (EU Core) profile."
+
 * id = "5679723c-4fae-4ba7-9f09-5438a827bfda"
 * identifier.system = "http://example.org/composition-ids"
 * identifier.value = "c030702.TSTSMN63A01F205H.20220325112426.TSS1Tkju"
+
+
+
 * extension[DiagnosticReportCompositionR5].valueReference = Reference(CompositionLabExample)
+
 * status = #registered
 * basedOn = Reference(ServiceRequestExample)
 * category[+] = $loinc#18719-5 "Chemistry studies (set)"
@@ -50,6 +60,8 @@ Description: "Example of a Laboratory Report DiagnosticReport conforming to the 
 * subject = Reference(PatientExample)
 * specimen.display = "Urine specimen"
 * result[+] = Reference(ObservationLabResultExample)
+
+
 Instance: ServiceRequestExample
 InstanceOf: ServiceRequest
 Title: "ServiceRequest Example"
@@ -64,8 +76,13 @@ Description: "Laboratory Report ServiceRequest resource used by the DiagnosticRe
 * category = $sct#108252007 "Laboratory procedure"
 * priority = #asap
 * code = $loinc#14957-5 "Microalbumin [Mass/volume] in Urine"
+
 * code.text = "Microalbumin Massa/Volume in Urine"
+
+
+
 * subject = Reference(PatientExample)
+
 Instance: ObservationLabResultExample
 InstanceOf: MedicalTestResultEuCore
 Title: "Observation Example"

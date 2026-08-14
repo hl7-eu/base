@@ -3,8 +3,11 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
     <title>EHDSHealthProfessional → PractitionerRoleEuCore</title>
+
   </head>
+
   <body>
+    
     <div class="model-map-block">
       <div class="callout-wrapper">
         <div class="callout-box">
@@ -13,13 +16,19 @@ The models are expected to continue evolving, with updates incorporated into thi
         </div>
       </div>
     </div>
+
+
+    
     <h3>EHDSHealthProfessional → PractitionerRoleEuCore</h3><a>  </a>
+
     <p></p>
     <p>
   This page explains how conceptual elements from the EHDS logical model are expressed
   in the corresponding FHIR PractitionerRole and Practitioner profiles used by this Implementation Guide.
     </p>
     <p></p>
+
+
     <div class="table-wrap">
       <strong>Mapping Context</strong>
       <ul>
@@ -40,7 +49,9 @@ The models are expected to continue evolving, with updates incorporated into thi
         </li>
       </ul>
     </div>
+
     <p></p>
+
     <div class="table-wrap">
       <table summary="EHDSHealthProfessional → PractitionerRoleEuCore">
         <caption>EHDSHealthProfessional → PractitionerRoleEuCore</caption>
@@ -87,6 +98,7 @@ The models are expected to continue evolving, with updates incorporated into thi
             <td>name</td>
             <td>Practitioner is referenced in PractitionerRole.practitioner</td>
           </tr>
+
           <tr>
             <td>address</td>
             <td>source-is-broader-than-target</td>
@@ -101,6 +113,7 @@ The models are expected to continue evolving, with updates incorporated into thi
             <td>address</td>
             <td>If they are not role specifc addresses. Practitioner is referenced in PractitionerRole.practitioner.</td>
           </tr>
+
           <tr>
             <td>telecom</td>
             <td>source-is-broader-than-target</td>
@@ -115,6 +128,7 @@ The models are expected to continue evolving, with updates incorporated into thi
             <td>telecom</td>
             <td>If they are contact details for the practitioner (that apply to all roles).Practitioner is referenced in PractitionerRole.practitioner</td>
           </tr>
+
           <tr>
             <td>professionalRole</td>
             <td>related-to</td>
@@ -146,6 +160,7 @@ The models are expected to continue evolving, with updates incorporated into thi
         </tbody>
       </table>
     </div>
+
     <p style="margin-top:2rem;color:#555;">
       Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
     </p>

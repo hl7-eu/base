@@ -5,12 +5,16 @@ Id:       medicationRequest-eu-core
 Title:    "MedicationRequest (EU core)"
 Description: """This profile introduces essential constraints and extensions for the MedicationRequest resource that apply across multiple use cases."""
 //-------------------------------------------------------------------------------------------
+
 * insert SetFmmandStatusRule (2, trial-use)
+
 * category ^short = "Category of the medication request"
 * groupIdentifier ^short = "Group identifier"
 * language ^short = "Language of the request"
 * note.text ^short = "Textual note about the request"
 * substitution ^short = "Whether substitution is allowed"
+
+
 * identifier 
   * ^short = "Business identifier for this request"
 * status ^short = "Current state of the order" 
@@ -38,6 +42,9 @@ Description: """This profile introduces essential constraints and extensions for
   * extension contains $ihe-ext-medicationrequest-prescribedquantity named prescribedQuantity 0..1
   * extension[prescribedQuantity] ^short = "Overall amount of product prescribed, independent from the number of repeats."
   * extension[prescribedQuantity] ^definition = "When Medication resource implies a pack size, prescribedQuantity should convey number of packages. When the Medication does not imply an amount, overall amount could be in tablets or millilitres."
+
+
+
 * medication[x] only CodeableConcept or Reference(MedicationEuCore)
 * reasonCode ^short = "Reason or indication for this prescription"
   * ^binding.extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"

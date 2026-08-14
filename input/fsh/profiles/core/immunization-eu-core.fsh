@@ -4,15 +4,21 @@ Parent:   Immunization
 Id:       immunization-eu-core
 Title:    "Immunization (EU core)"
 Description: """This profile introduces essential constraints and extensions for the Immunization resource that apply across multiple use cases."""
+
 //-------------------------------------------------------------------------------------------
+
 * ^experimental = false
 * ^purpose = "This profile constrains the Immunization resource for the purpose of this guide."
+
 * insert SetFmmandStatusRule (2, trial-use)
 * status ^short = "Immunization status."
 * statusReason ^short = "Reason for not performing."
+
 * identifier ^short = "Identifier of the immunization"
 * language ^short = "Language of the immunization content"
 * note.text ^short = "Additional notes about the immunization"
+
+
 * extension contains $immunization-administeredProduct-r5 named administeredProduct 0..1
 * extension[administeredProduct].extension[concept]
 * extension[administeredProduct].extension[reference].valueReference only Reference ( MedicationEuCore ) 
@@ -21,7 +27,13 @@ Description: """This profile introduces essential constraints and extensions for
 * extension contains $immunization-informationSource-r5 named informationSource 0..1
 * extension[informationSource].extension[concept]
 * extension[informationSource].extension[reference].valueReference only Reference ( PatientEuCore or PractitionerEuCore or PractitionerRoleEuCore or RelatedPerson or OrganizationEuCore )
+
+
+
+
+
 * vaccineCode from $vaccines-uv-ips (preferred)
+
   * ^binding.extension[+].extension[0].url = "purpose"
   * ^binding.extension[=].extension[=].valueCode = #preferred
   * ^binding.extension[=].extension[+].url = "valueSet"
@@ -43,25 +55,39 @@ Description: """This profile introduces essential constraints and extensions for
   * ^binding.extension[=].extension[=].valueString = "For EU cross-border use"
   * ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
   * ^binding.description = "The type of vaccine for particular disease or diseases against which the patient has been immunised, or a code for absent/unknown immunization."
+
+
+
+
+
+
+
 * patient only Reference(PatientEuCore)
 * occurrence[x] ^short = "Date of vaccination"
+
 * occurrenceDateTime
   * extension contains PeriodsOfLife named periodOfLife 0..1
   * extension[periodOfLife].valueCodeableConcept from PeriodsOfLifeEuVs (preferred)
+
 * location only Reference(LocationEuCore)
 * manufacturer ^short = "Vaccine manufacturer/MAH"
 * lotNumber ^short = "Batch/lot number"
+
 * performer 
   * ^slicing.discriminator[+].type = #value
   * ^slicing.discriminator[=].path = "$this.function"
   * ^slicing.ordered = false
   * ^slicing.rules = #open
+
 * performer contains administeringCentreOrHp 0..*
 * performer[administeringCentreOrHp] ^short = "Administering centre"
 * performer[administeringCentreOrHp].function = $v2-0443#AP	// "Administering Provider" code to be checked
 * performer[administeringCentreOrHp].actor only Reference( OrganizationEuCore or PractitionerRoleEuCore or PractitionerEuCore )
+
+
 * protocolApplied.targetDisease from $target-diseases-uv-ips (preferred) // Check Value Set
 * protocolApplied.targetDisease
+
   * ^binding.extension[+].extension[0].url = "purpose"
   * ^binding.extension[=].extension[=].valueCode = #preferred
   * ^binding.extension[=].extension[+].url = "valueSet"
@@ -75,6 +101,9 @@ Description: """This profile introduces essential constraints and extensions for
 * protocolApplied
   * doseNumber[x] ^short = "Dose Number"
   * seriesDoses[x] ^short = "Number of doses"
+
+
+
 /* 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ImmunizationRecommendationEuCore
@@ -83,6 +112,7 @@ Id:       immunizationRecommendation-eu-core
 Title:    "ImmunizationRecommendation (EU core)"
 Description: """This profile defines how to represent Immunization Recommendations for the purpose of this guide."""
 //-------------------------------------------------------------------------------------------
+
 * date ^short = "When recommendation was created"
 * patient only Reference (PatientEuCore)
 * recommendation
@@ -97,6 +127,8 @@ Description: """This profile defines how to represent Immunization Recommendatio
   * vaccineCode ^binding.extension[=].extension[=].valueString = "For when WHO ATC code system is preferred"
   * vaccineCode ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
   * vaccineCode ^binding.description = "The type of vaccine for particular disease or diseases against which the patient has been immunised, or a code for absent/unknown immunization."
+
+
   * ^short = "Generic description of the vaccine/prophylaxis or its component(s)"
 * recommendation.targetDisease from $eHDSIIllnessandDisorder (preferred) // Check Value Set
   * ^short = "Disease or agent that the vaccination provides protection against"

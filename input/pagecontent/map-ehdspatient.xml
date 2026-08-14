@@ -3,7 +3,9 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
     <title>EHDSPatient → PatientEuCore</title>
+
   </head>
+  
  <body>
         <div class="model-map-block">
       <div class="callout-wrapper">
@@ -13,13 +15,20 @@ The models are expected to continue evolving, with updates incorporated into thi
         </div>
       </div>
     </div>
+
+
+
+
     <h3>EHDSPatient → PatientEuCore</h3><a>  </a>
+
     <p></p>
     <p>
   This page explains how conceptual elements from the EHDS logical model are expressed
   in the corresponding FHIR PatientEuCore profile used by this Implementation Guide.
     </p>
     <p></p>
+
+
     <div class="table-wrap">
       <strong>Mapping Context</strong>
       <ul>
@@ -37,7 +46,12 @@ The models are expected to continue evolving, with updates incorporated into thi
         </li>
       </ul>
     </div>
+
     <p></p>
+
+
+
+
     <div class="table-wrap">
       <table summary="EHDSPatient → PatientEuCore">
         <caption>EHDSPatient → PatientEuCore</caption>
@@ -49,52 +63,67 @@ The models are expected to continue evolving, with updates incorporated into thi
           </tr>
           <tr>
             <th class="src-sub">Element</th>
+            
             <th class="relsub">Relation</th>
             <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
+            
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>identifier</td>
+            
             <td>equivalent</td>
             <td>Patient</td><td>identifier</td>
+            
             <td></td>
           </tr>
           <tr>
             <td>name</td>
+            
             <td>equivalent</td>
             <td>Patient</td><td>name</td>
+            
             <td></td>
           </tr>
           <tr>
             <td>dateOfBirth</td>
+            
             <td>equivalent</td>
             <td>Patient</td><td>birthDate</td>
+            
             <td></td>
           </tr>
           <tr>
             <td>administrativeGender</td>
+            
             <td>equivalent</td>
             <td>Patient</td><td>gender</td>
+            
             <td></td>
           </tr>
           <tr>
             <td>address</td>
+            
             <td>equivalent</td>
             <td>Patient</td><td>address</td>
+            
             <td></td>
           </tr>
           <tr>
             <td>telecom</td>
+            
             <td>equivalent</td>
             <td>Patient</td><td>telecom</td>
+            
             <td></td>
           </tr>
         </tbody>
       </table>
     </div>
+
     <p style="margin-top:2rem;color:#555;">
       Return to overview: <a href="modelmap.html">EHDS Logical Models → FHIR Profiles</a>
     </p>

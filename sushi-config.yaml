@@ -1,8 +1,12 @@
 # Check the link to the r4 and r5 versions
+
 id: hl7.fhir.eu.base
 url: http://hl7.eu/fhir/base/ImplementationGuide/base
 canonical: http://hl7.eu/fhir/base
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
+
+
+
 title: HL7 Europe Base and Core FHIR IG
 name:  Hl7EuBaseIg
 description: This guide collects base and core profiles to be used in the European context. It also includes common artifacts, such as the profiles describing the European Health Insurance Card.
@@ -19,12 +23,15 @@ publisher:
   # email: test@example.org
 copyright: >-
   Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0).
+
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
   # hl7.fhir.uv.ips: current
+  
+  
   hl7.fhir.uv.extensions.r4: 5.2.0
   hl7.fhir.uv.xver-r5.r4: 0.1.0
   hl7.fhir.eu.extensions.r4:
@@ -33,6 +40,10 @@ dependencies:
   ihe.pharm.mpd.r4: 
     uri: https://profiles.ihe.net/PHARM/MPD/ImplementationGuide/ihe.pharm.mpd
     version: 1.0.0-comment-2
+  
+  
+ 
+
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
@@ -50,6 +61,8 @@ dependencies:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
+
+
 pages:
   index.md:
     title: Home
@@ -75,6 +88,8 @@ pages:
     title: Handling Missing Data
   changes.md:
     title: Change Log
+
+
   # Model Mapping
   map-ehdsaddress.html:
      title: EHDSAddress to FHIR Address Mapping
@@ -114,6 +129,8 @@ pages:
      title: EHDSMedicationStatement to FHIR MedicationStatement Mapping
   #  map-ehdsmedicationprescription.html:
   #   title: EHDSMedicationprescription to FHIR MedicationRequest Mapping
+
+
  #  recommendations.md:
 #    title: Recommendations
 #
@@ -131,6 +148,8 @@ parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Pa
     - http://terminology.hl7.eu/CodeSystem/v3-ActCode
 #    - http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition
 #    - http://example.org/lab-codes
+
+
 # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
 # path-resource:
 #    - input/resources
@@ -165,6 +184,7 @@ parameters: #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Pa
  # version-comparison:
  #    - 5.0.1
  #    - 4.0.0
+
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
@@ -202,7 +222,16 @@ menu:
     Copyright: copyright.html
     Cross-version Analysis: crossversionanalysis.html
   Artifacts: artifacts.html
+  
+  
+  
+
+  
   R5 IG: https://hl7.eu/fhir/base-r5
+  
+  
+
+
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │
@@ -252,12 +281,17 @@ menu:
 #     better option (see below).
 # The following are simple examples to demonstrate what this might
 # look like:
+
 resources:
+
 #------------ Concept Maps  -------------
 #  ConceptMap/ConceptMap-eu-diagRptStatus2CompStatus:
 #    name: DiagnosticReport to Composition status
 #    description: Proposed relationship between the statuses used in the DiagnosticReport resource and that used for the Composition.
+
+
 #------------ Logical Models -------------
+  
   Patient/patient-eu-core-example:
     exampleCanonical: http://hl7.eu/fhir/base/StructureDefinition/patient-eu
   Practitioner/practitioner-eu-core-example:
@@ -266,18 +300,29 @@ resources:
     exampleCanonical: http://hl7.eu/fhir/base/StructureDefinition/practitionerRole-eu
   Organization/organization-eu-core-example :
     exampleCanonical: http://hl7.eu/fhir/base/StructureDefinition/organization-eu
+  
+
+  
+
 #  StructureDefinition/Subject:
 #    name: A.1.1, A.1.2 - Subject of care
 #    description: Patient or Subject of care. Sections A.1.1 and A.1.2 of the eHN guideline.
+
+
+
 # -------------  Obligations
 # StructureDefinition/Patient-obl-eu-lab:
 #   name: Patient Obligations
 #   description: Specify the functional capabilities that the defined actors may, should or shall applied to the Patient EU Lab profile elements.
+
+
 #  Patient/my-example-patient:
 #    name: My Example Patient
 #    description: An example Patient
 #    exampleBoolean: true
 #  Patient/bad-example: omit
+
+
 #
 # Groups can control certain aspects of the IG generation.  The IG
 # documentation recommends that authors use the default groups that
@@ -288,6 +333,8 @@ resources:
 # is specified by id or name, SUSHI will replace it with the correct
 # URL when generating the IG JSON.
 #
+
+
 groups:
    EuBaseProfiles:
      name:  HL7 Europe Base Profiles
@@ -297,6 +344,7 @@ groups:
        - StructureDefinition/practitioner-eu
        - StructureDefinition/practitionerRole-eu
        - StructureDefinition/organization-eu
+
    EuCoreProfilesSTU1:
      name: HL7 Europe Core Profiles
      description: Core profiles for the European context.
@@ -318,6 +366,7 @@ groups:
        - StructureDefinition/practitioner-eu-core
        - StructureDefinition/practitionerRole-eu-core
        - StructureDefinition/procedure-eu-core
+
 #
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
@@ -354,6 +403,7 @@ groups:
 #
 # The instanceOptions property is used to configure certain aspects of how SUSHI processes instances.
 # See the individual option definitions below for more detail.
+
 instanceOptions:
   manualSliceOrdering: true
 #

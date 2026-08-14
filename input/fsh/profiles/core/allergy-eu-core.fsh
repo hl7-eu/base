@@ -3,10 +3,17 @@ Parent: AllergyIntolerance
 Id: allergyIntolerance-eu-core
 Title:    "AllergyIntolerance (EU core)"
 Description: """This profile introduces essential constraints and extensions for the AllergyIntolerance resource that apply across multiple use cases."""
+
+
 * insert SetFmmandStatusRule (2, trial-use)
 // * insert ImposeProfile($AllergyIntolerance-uv-ips, 0)
+
 * extension contains $allergyintolerance-abatement named abatement 0..1
 * extension[abatement].valueDateTime ^short = "End date"
+
+
+
+
 * identifier ^short = "Business identifier for the allergy or intolerance"
 * language ^short = "Language of the allergy or intolerance content"
 * note.text ^short = "Additional information about the allergy or intolerance"
@@ -16,13 +23,20 @@ Description: """This profile introduces essential constraints and extensions for
   * extension[periodOfLife].valueCodeableConcept from PeriodsOfLifeEuVs (preferred) */
 * recordedDate ^short = "Date when the allergy or intolerance was recorded"
 * patient ^short = "Who the allergy or intolerance concerns"
+
+
+
 * asserter ^short = "Who asserts the allergy or intolerance"
 * recorder ^short = "Who recorded the allergy or intolerance"
+
+
+
 * verificationStatus ^short = "Certainty"
 * clinicalStatus ^short = "Current allergy or Intolerance status"
 * type ^short = "Type of propensity"
 * code 1..1
 * code from $allergy-intolerance-uv-ips (preferred)
+
   * ^binding.extension[+].extension[+].url = "purpose"
   * ^binding.extension[=].extension[=].valueCode = #preferred
 //   * ^binding.extension[+].extension[+].url = "key"
@@ -44,11 +58,20 @@ Description: """This profile introduces essential constraints and extensions for
   * ^binding.extension[=].extension[=].valueMarkdown = "Type of the substance/product, allergy or intolerance condition."
   * ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
   * ^binding.description = "Type of the substance/product, allergy or intolerance condition or a code for absent/unknown allergy."
+
+
+
 * criticality ^short = "Criticality"
+
 * patient only Reference(PatientEuCore)
+
 * onsetDateTime ^short = "Onset date"
+
 * reaction.substance from $eHDSIAllergenNoDrug (example)
+
 * reaction.manifestation from $allergy-reaction-uv-ips (preferred)
+
+
   * ^binding.extension[+].extension[+].url = "purpose"
   * ^binding.extension[=].extension[=].valueCode = #preferred
 //   * ^binding.extension[+].extension[+].url = "key"
@@ -59,5 +82,8 @@ Description: """This profile introduces essential constraints and extensions for
   * ^binding.extension[=].extension[=].valueMarkdown = "Type of reaction (MyHealth@EU)"
   * ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
   * ^binding.description = "Type of allergy or intolerance reaction expected to be used in MyHealth@EU"
+
+
+
 * reaction.severity ^short = "Reaction severity"
 * reaction.onset ^short = "Reaction onset"

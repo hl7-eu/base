@@ -2,6 +2,7 @@ Instance: AllergyIntoleranceEuCoreExample
 InstanceOf: AllergyIntoleranceEuCore
 Title: "AllergyIntolerance Example"
 Description: "Example of an AllergyIntolerance resource conforming to the AllergyIntolerance (EU Core) profile."
+
 * id = "allergyintolerance-eu-core-example"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
 * verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed "Confirmed"

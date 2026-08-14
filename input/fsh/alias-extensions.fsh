@@ -1,5 +1,8 @@
 //============== ALIAS ===============
+
 // ---- Extensions
+
+
 Alias: $allergyintolerance-abatement = http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement
 Alias: $annotation-type = http://hl7.org/fhir/StructureDefinition/annotationType
 Alias: $artifact-relatedArtifact = http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact
@@ -59,6 +62,8 @@ Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workfl
 Alias: $medicationRequest-effectiveDosePeriod-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.effectiveDosePeriod
 Alias: $medicationrequest-rendereddosageinstruction-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.renderedDosageInstruction
 Alias: $observation-bodyStructure-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure
+
+
 Alias: $ihe-ext-medication-device = https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-device
 Alias: $ihe-ext-medication-strengthsubstance = https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-strengthsubstance
 Alias: $ihe-ext-medication-strengthtype = https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-strengthtype
@@ -69,3 +74,4 @@ Alias: $ihe-ext-medication-characteristic = https://profiles.ihe.net/PHARM/MPD/S
 Alias: $ihe-ext-medication-unitofpresentation = https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-unitofpresentation
 Alias: $ihe-ext-medicationrequest-prescribedquantity = https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medicationrequest-prescribedQuantity
 Alias: $ihe-ext-medicationrequest-offlabeluse = https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medicationrequest-offLabelUse
+

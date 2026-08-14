@@ -1,4 +1,5 @@
 //============== ALIAS ===============
+
 // --- Value Sets
 Alias: $absent-or-unknown-allergies-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips
 Alias: $absent-or-unknown-devices-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-devices-uv-ips
@@ -21,7 +22,9 @@ Alias: $target-diseases-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/target-dise
 Alias: $problems-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/problems-uv-ips
 Alias: $medication-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/medication-uv-ips
 Alias: $substance-codes = http://hl7.org/fhir/ValueSet/substance-codes // Used in R5
+
 // ---- MyHealth#EU MVC
+
 Alias: $eHDSIBodySite = http://terminology.ehdsi.eu/ValueSet/eHDSIBodySite
 Alias: $eHDSICountry = http://terminology.ehdsi.eu/ValueSet/eHDSICountry
 Alias: $eHDSILanguage = http://terminology.ehdsi.eu/ValueSet/eHDSILanguage
@@ -56,4 +59,6 @@ Alias: $eHDSISubstance = http://terminology.ehdsi.eu/ValueSet/eHDSISubstance
 Alias: $eHDSIAllergenNoDrug = http://terminology.ehdsi.eu/ValueSet/eHDSIAllergenNoDrug
 Alias: $eHDSIActiveIngredient = http://terminology.ehdsi.eu/ValueSet/eHDSIActiveIngredient
 Alias: $eHDSIVaccine = http://terminology.ehdsi.eu/ValueSet/eHDSIVaccine
+
+
 //=========================

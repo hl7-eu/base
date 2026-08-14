@@ -5,15 +5,20 @@ Usage: #example
 Title: "MedicationRequest Example"
 Description: """Example of a MedicationRequest conforming to the MedicationRequest (EU Core) profile. 
 It is a prescription/request with one medication and changing dosaging. Uses 'actionable' tag. Cefuroxime sodium."""
+
 * meta.tag = $common-tags#actionable
 * identifier.value = "10-123EP"  // prescription line identifier if exists
 * status = #active
 * intent = #order
 * authoredOn = "2024-12-06"
 * requester.display = "The Best Doctor"
+
 * medicationReference = Reference(01A-Cefuroxime1500GenericExplicit)
 * reasonCode = $sct#10625071000119104 "Bronchopneumonia caused by bacteria (disorder)"
+
+
 * subject = Reference(PatientExample)
+
 * dosageInstruction[0]
   * sequence = 1
   * doseAndRate.doseQuantity = 1500 $ucum#mg "milligram(s)"
@@ -33,30 +38,49 @@ It is a prescription/request with one medication and changing dosaging. Uses 'ac
     * repeat.period = 8
     * repeat.periodUnit = $ucum#h "hour(s)"
     * repeat.boundsDuration = 4 $ucum#d "day"
+
+
 Instance: 01A-Cefuroxime1500GenericExplicit
 InstanceOf: MedicationEuCore
 Usage: #example
 Title: "Medication Example"
 Description: """Example of a Medication conforming to the Medication (EU Core) profile. It represents  Cefuroxime 1500mg (1.5g) powder for solution in a vial."""
+
+
 * form = $edqm#50053000 "Powder for solution for injection or infusion"
 * ingredient.itemCodeableConcept = $sct#372833007 "Cefuroxime"
 * ingredient.strength.numerator = 1500 $ucum#mg "milligram"
 * ingredient.strength.denominator = 1 $edqm#15060000 "Vial"
+
+
 * extension[classification].valueCodeableConcept = $atc#J01DC02 "cefuroxime"
 * ingredient.isActive = true
+
+
+
+
+
 Instance: example-medicationstatement-eucore
 InstanceOf: MedicationStatementEuCore
 Title: "MedicationStatement Example"
 Description: """Example of a MedicationStatement conforming to the MedicationStatement (EU Core) profile. It describes a patient taking Enalapril."""
+
+
 * subject = Reference(PatientExample)
 * subject.display = "John Doe"
+
 * medicationCodeableConcept = $atc#C09AA02 "Enalapril"
 * medicationCodeableConcept.text = "Enalapril 20mg tablets"
 * status = #active
+
+
+
 * effectiveDateTime = "2024-12-01"
 * dateAsserted = "2024-12-01"
+
 * informationSource = Reference(PatientExample)
 * informationSource.display = "Luigi De Luca"
+
 * dosage[0].text = "Take one tablet daily in the morning"
 * dosage[0].timing.repeat.frequency = 1
 * dosage[0].timing.repeat.period = 1
@@ -68,6 +92,7 @@ Description: """Example of a MedicationStatement conforming to the MedicationSta
 * dosage[0].doseAndRate[0].doseQuantity.unit = "mg"
 * dosage[0].doseAndRate[0].doseQuantity.system = "http://unitsofmeasure.org"
 * dosage[0].doseAndRate[0].doseQuantity.code = #mg
+
 * text.status = #generated
 * text.div = """
 <div xmlns="http://www.w3.org/1999/xhtml">

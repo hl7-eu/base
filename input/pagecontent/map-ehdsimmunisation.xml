@@ -3,22 +3,31 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
     <title>EHDSImmunisation → ImmunizationEuCore</title>
+
   </head>
+
   <body>
+
     <div class="model-map-block">
       <div class="callout-wrapper">
         <div class="callout-box">
           <strong>Ongoing alignment:</strong> The models are expected to continue evolving, with updates incorporated into this Implementation Guide to maintain alignment with the EHDS Implementing Acts. </div>
       </div>
     </div>
+
+
+
     <h3>EHDSImmunisation → ImmunizationEuCore</h3>
     <a> </a>
+
     <p></p>
     <p>
       This page explains how conceptual elements from the EHDS logical model are expressed
       in the corresponding FHIR ImmunizationEuCore profile used by this Implementation Guide.
     </p>
     <p></p>
+
+
     <div class="table-wrap">
       <strong>Mapping Context</strong>
       <ul>
@@ -36,7 +45,9 @@
         </li>
       </ul>
     </div>
+
     <p></p>
+
     <div class="table-wrap">
       <table summary="EHDSImmunisation → ImmunizationEuCore">
         <caption>EHDSImmunisation → ImmunizationEuCore</caption>
@@ -48,9 +59,11 @@
           </tr>
           <tr>
             <th class="src-sub">Element</th>
+            
             <th class="relsub">Relation</th>
             <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
+            
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
@@ -58,113 +71,151 @@
           <!-- HEADER BLOCK (common dataset header) -->
           <tr>
             <td>header</td>
+            
             <td>related-to</td>
             <td>Immunization</td>
             <td>.</td>
+            
             <td>Dataset-level; not usually carried in Immunization as-is.</td>
           </tr>
           <tr>
             <td>header.subject</td>
+            
             <td>equivalent</td>
             <td>Immunization</td>
             <td>patient</td>
+            
             <td></td>
           </tr>
           <tr>
             <td>header.identifier</td>
+            
             <td>equivalent</td>
             <td>Immunization</td>
             <td>identifier</td>
+            
             <td>Copy over all identifiers if multiple.</td>
           </tr>
           <tr>
             <td>header.author[x]</td>
+            
             <td>no-map</td>
             <td>Immunization</td>
             <td>performer</td>
+            
             <td>Immunization lacks a dedicated author participant. Usually, the performer is also the author; however in case the two participants shall be clearly distinguished, the performer.function element can be used for this purpose.</td>
+     
+
           </tr>
           <tr>
             <td>header.date</td>
+            
             <td>no-map</td>
             <td>Immunization</td>
             <td></td>
+            
             <td></td>
           </tr>
           <tr>
             <td>header.status</td>
+            
             <td>equivalent</td>
             <td>Immunization</td>
             <td>status</td>
+            
             <td>Use <code>statusReason</code> in FHIR for "not done" reason when applicable.</td>
           </tr>
           <tr>
             <td>header.source</td>
+            
             <td>no-map</td>
             <td>Immunization</td>
             <td>extension:informationSource <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>informationSource <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            
             <td></td>
           </tr>
+          
+
           <tr>
             <td>header.language</td>
+            
             <td>equivalent</td>
             <td>Immunization</td>
             <td>language</td>
+            
             <td></td>
           </tr>
+
           <!-- IMMUNISATION-SPECIFIC ELEMENTS -->
           <tr>
             <td>administrationTime</td>
+            
             <td>equivalent</td>
             <td>Immunization</td>
             <td>occurrence[x]</td>
+            
             <td>Usually <code>occurrenceDateTime</code>.</td>
           </tr>
           <tr>
             <td>vaccine</td>
+            
             <td>equivalent</td>
             <td>Immunization</td>
             <td>vaccineCode</td>
+            
             <td></td>
           </tr>
           <tr>
             <td>administeredProduct</td>
+            
             <td>equivalent</td>
             <td>Immunization</td>
             <td>extension:administeredProduct <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>administeredProduct <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+            
             <td></td>
           </tr>
+          
           <tr>
             <td>diseaseOrAgentTargeted</td>
+            
             <td>equivalent</td>
             <td>Immunization</td>
             <td>protocolApplied.targetDisease</td>
+            
             <td></td>
           </tr>
+
           <tr>
             <td>administrator</td>
+            
             <td>equivalent</td>
             <td>Immunization</td>
             <td>performer:administeringCentreOrHp.actor</td>
+            
             <td></td>
           </tr>
           <tr>
             <td>administeringCentre</td>
+            
             <td>source-is-broader-than-target</td>
             <td>Immunization</td>
             <td>performer:administeringCentreOrHp.actor</td>
+            
             <td></td>
           </tr>
           <tr>
             <td>note</td>
+            
             <td>source-is-broader-than-target</td>
             <td>Immunization</td>
             <td>note.text</td>
+            
             <td>Map EHDS note to one or more Immunization notes where needed.</td>
           </tr>
         </tbody>
       </table>
     </div>
+
     <p style="margin-top:2rem;color:#555;"> Return to overview: <a href="modelmap.html">EHDS Logical
       Models → FHIR Profiles</a>
     </p>

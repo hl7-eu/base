@@ -2,6 +2,7 @@ Instance: ConditionEuCoreExample
 InstanceOf: ConditionEuCore
 Title: "Condition Example"
 Description: "Example of a Condition resource conforming to the Condition (EU Core) profile."
+
 * id = "condition-eu-core-example"
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
@@ -14,4 +15,5 @@ Description: "Example of a Condition resource conforming to the Condition (EU Co
 * extension[assertedDate].valueDateTime = "2024-12-01"
 * bodySite = $sct#41224006 "Lower lobe of left lung"
 * note.text = "Productive cough with fever; antibiotics started during admission."
+
 * recorder = Reference(PractitionerRoleEuCoreExample)
