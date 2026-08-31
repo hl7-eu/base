@@ -14,7 +14,7 @@ In addition, there are format-specific definition files:
 - [JSON](definitions.json.zip)
 - [TTL](definitions.ttl.zip)
 
-These files should be the preferred source when generating implementation artifacts since they contain all of the rules about what makes these profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation.  See the overview on [validating FHIR profiles and resources](validation.html).
+These files should be the preferred source when generating implementation artifacts since they contain all of the rules about what makes these profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation.  See the overview on [validating FHIR profiles and resources]({{ site.data.fhir.path }}validation.html).
 
 
 There are also specific packages for the R4 and R4B FHIR releases:
