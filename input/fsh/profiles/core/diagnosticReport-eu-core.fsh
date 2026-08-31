@@ -69,7 +69,7 @@ Description: """This profile introduces essential constraints and extensions for
 * performer ^short = "Responsible Diagnostic Service." // add reference to the used profiles
 
 * performer only Reference(PractitionerRoleEuCore or PractitionerEuCore or OrganizationEuCore or CareTeam)
-  * insert SliceElementWithDescription( #profile, $this, [[Organization that delivered the report]] )
+  * insert SliceElementWithDescription( #profile, [[resolve()]], [[Organization that delivered the report]] )
   * ^comment = "If a DiagnosticReport.resultsInterpreter exists this is expected to be a Composition.author; otherwise a DiagnosticReport.performer should be an author."
 * performer contains organization 0..*
 * performer[organization] only Reference(OrganizationEuCore)

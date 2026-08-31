@@ -11,7 +11,8 @@ Description: """This profile introduces essential constraints and extensions for
 
 
 * obeys obs-value-1
-* extension contains 
+* component obeys obs-value-2
+* extension contains
     $observation-bodyStructure-r5 named bodyStructure 0..1 and
     $observation-triggeredBy-r5 named triggeredBy 0..* 
     and $observation-value-r5 named value-r5 0..1
@@ -102,11 +103,11 @@ Description: """This profile introduces essential constraints and extensions for
 * component
   * ^requirements = "EHDSObservation.component"
   
-  * extension contains $observation-value-r5 named value-r5 0..1
+  * extension contains $observation-component-value-r5 named value-r5 0..1
   * extension[value-r5]
     * value[x] only Attachment
     * ^short = "only for Diagrams or Pictures"
-    * ^definition = "When the result is a Diagram or Picture (Microbiology), then the Attachment data type should be used. In FHIR R4 this can be done by preadopting the R5 Observation.value[x] element using the cross-version extension."
+    * ^definition = "When the result is a Diagram or Picture (Microbiology), then the Attachment data type should be used. In FHIR R4 this can be done by preadopting the R5 Observation.component.value[x] element using the cross-version extension."
   
   * code from MedicalTestResultCodeEuVs (example)
     * ^requirements = "EHDSObservation.component.code"
@@ -129,3 +130,8 @@ Invariant: obs-value-1
 Description: "The elements Observation.extension:value-r5 and Observation.value[x] SHALL not be used simultaneously."
 Severity: #error
 Expression: "value.empty() or extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.value').empty()"
+
+Invariant: obs-value-2
+Description: "The elements Observation.component.extension:value-r5 and Observation.component.value[x] SHALL not be used simultaneously."
+Severity: #error
+Expression: "value.empty() or extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.component.value').empty()"

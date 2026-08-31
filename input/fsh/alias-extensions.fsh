@@ -39,6 +39,7 @@ Alias: $medicationStatement-adherence-r5 = http://hl7.org/fhir/5.0/StructureDefi
 Alias: $note = http://hl7.org/fhir/StructureDefinition/note
 Alias: $obligation = http://hl7.org/fhir/StructureDefinition/obligation
 Alias: $observation-analysis-time = http://hl7.org/fhir/StructureDefinition/observation-analysis-date-time
+Alias: $observation-component-value-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.component.value
 Alias: $observation-triggeredBy-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy
 Alias: $observation-value-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.value
 Alias: $patient-animal = http://hl7.org/fhir/StructureDefinition/patient-animal
