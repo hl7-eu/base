@@ -19,6 +19,7 @@ This page summarizes the main changes applied to this version of the guide.
   * FHIR-55639: Added missing target elements referenced by model maps and reviewed all profiles.
   * FHIR-56415: fixed misalignemnt between MedicalTestResultEuCore and LaboratoryObservations.
   * FHIR-56849: technical correction in `MedicalTestResultEuCore`. The slice `component.extension:value-r5` used the cross-version extension `Observation.value`, whose context is limited to `Observation` and therefore does not allow `Observation.component`. It now uses `Observation.component.value`, which has the matching context. Added the constraint `obs-value-2` on `Observation.component`, mirroring `obs-value-1`, so that `component.value[x]` and `component.extension:value-r5` cannot be used simultaneously.
+  * FHIR-56515: Set `Observation.performer.extension:performerFunction` to `0..1` in `MedicalTestResultEuCore`, matching the cardinality the `event-performerFunction` extension itself allows, and added a comment that a Practitioner(Role) acting in multiple roles has to be listed as `performer` multiple times.
 
 * Editorial and documentation updates
   * FHIR-55553: Partial typo fixes.
