@@ -65,9 +65,10 @@ Description: """This profile introduces essential constraints and extensions for
 * performer only Reference(PractitionerEuCore or PractitionerRoleEuCore or OrganizationEuCore or PatientEuCore or RelatedPerson)
   * ^requirements = "EHDSObservation.header.performer"
 * performer
-  * extension contains $event-performerFunction named performerFunction 0..*
+  * extension contains $event-performerFunction named performerFunction 0..1
   * extension[performerFunction]
     * ^requirements = "EHDSObservation.performer.function"
+    * ^comment = "If a Practitioner(Role) is involved in multiple roles, the Practitioner(Role) has to be added multiple times."
 
 //TODO: datatypes in xt-ehr model only valueString, valueQuantity, valueRange, valueCodeableConcept
 * value[x]
