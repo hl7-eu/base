@@ -1,5 +1,13 @@
 This page summarizes the main changes applied to this version of the guide.
 
+### From 2.0.0 to 2.0.1
+
+* Profile and constraint updates
+  * FHIR-58774: Set the cardinality of `BodyStructure.extension:includedStructure` to `1..*` in the R4 profile, aligning it with the cross-version extension definition and with the R5 `BodyStructure.includedStructure` element.
+
+* Examples
+  * FHIR-58774: Added a `BodyStructure` example covering more than one included structure, multiple site qualifiers and a business identifier.
+
 ### From 2.0.0-ballot to 2.0.0
 
 * Profile and constraint updates
