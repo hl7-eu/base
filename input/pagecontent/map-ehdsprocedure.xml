@@ -36,7 +36,7 @@ The models are expected to continue evolving, with updates incorporated into thi
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSProcedure.html" target="_blank">
+          <a href="https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSProcedure.html" target="_blank">
         EHDSProcedure
           </a>
         </li>
@@ -117,18 +117,18 @@ The models are expected to continue evolving, with updates incorporated into thi
           
           <tr>
             <td>header.status</td>
-            
-            <td>no-map</td>
+
+            <td>equivalent</td>
             <td>Procedure</td><td>status</td>
-            
+
             <td></td>
           </tr>
           <tr>
             <td>header.source</td>
-            
-            <td>no-map</td>
+
+            <td>equivalent</td>
             <td>Procedure</td><td>asserter<span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>reportedReference<span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            
+
             <td></td>
           </tr>
 
@@ -191,10 +191,10 @@ The models are expected to continue evolving, with updates incorporated into thi
           <!-- reason[x] -->
           <tr>
             <td>reason[x]</td>
-            
+
             <td>equivalent</td>
-            <td>reasonCode / reasonReference <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>reason <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
-            
+            <td>Procedure</td><td>reasonCode / reasonReference <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>reason <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
+
             <td></td>
           </tr>
           

@@ -34,7 +34,7 @@ The models are expected to continue evolving, with updates incorporated into thi
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition/EHDSHealthProfessional" target="_blank">
+          <a href="https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSHealthProfessional.html" target="_blank">
         EHDSHealthProfessional
           </a>
         </li>

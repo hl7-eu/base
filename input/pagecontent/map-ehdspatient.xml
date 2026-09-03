@@ -34,7 +34,7 @@ The models are expected to continue evolving, with updates incorporated into thi
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition/EHDSPatient" target="_blank">
+          <a href="https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSPatient.html" target="_blank">
         EHDSPatient
           </a>
         </li>
@@ -90,10 +90,18 @@ The models are expected to continue evolving, with updates incorporated into thi
           </tr>
           <tr>
             <td>dateOfBirth</td>
-            
+
             <td>equivalent</td>
             <td>Patient</td><td>birthDate</td>
-            
+
+            <td></td>
+          </tr>
+          <tr>
+            <td>deceased[x]</td>
+
+            <td>equivalent</td>
+            <td>Patient</td><td>deceased[x]</td>
+
             <td></td>
           </tr>
           <tr>

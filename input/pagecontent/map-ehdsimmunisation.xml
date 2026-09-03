@@ -33,7 +33,7 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSImmunisation.html" target="_blank">
+          <a href="https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSImmunisation.html" target="_blank">
             EHDSImmunisation
           </a>
         </li>
@@ -98,8 +98,8 @@
           </tr>
           <tr>
             <td>header.author[x]</td>
-            
-            <td>no-map</td>
+
+            <td>related-to</td>
             <td>Immunization</td>
             <td>performer</td>
             
@@ -127,8 +127,8 @@
           </tr>
           <tr>
             <td>header.source</td>
-            
-            <td>no-map</td>
+
+            <td>equivalent</td>
             <td>Immunization</td>
             <td>extension:informationSource <span style="color:#2e7d32;font-weight:600;">〔R4〕</span><br></br>informationSource <span style="color:#2e7d32;font-weight:600;">〔R5〕</span></td>
             

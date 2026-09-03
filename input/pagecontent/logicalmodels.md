@@ -27,9 +27,9 @@ For the most recent and in-progress versions, please refer to the [**Xt-EHR EHDS
 
 | **Model**                                                                                               | **Description**                                                    |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [EHDSAddress](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSAddress.html)                   | EHDS refined base model for Address structure                      |
-| [EHDSHumanName](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSHumanName.html)                   | EHDS refined base model for Human Name                             |
-| [EHDSTelecom](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSTelecom.html)                   | EHDS refined base model for telecommunications and contact details |
+| [EHDSAddress](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSAddress.html)                   | EHDS refined base model for Address structure                      |
+| [EHDSHumanName](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSHumanName.html)                   | EHDS refined base model for Human Name                             |
+| [EHDSTelecom](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSTelecom.html)                   | EHDS refined base model for telecommunications and contact details |
 
 ---
 
@@ -37,11 +37,11 @@ For the most recent and in-progress versions, please refer to the [**Xt-EHR EHDS
 
 | **Model**                                                                                                   | **Description**                                                       |
 | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| [EHDSPatient](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSPatient.html)                           | EHDS refined base model for Patient (subject of care)                 |
-| [EHDSHealthProfessional](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSHealthProfessional.html) | EHDS refined base model for Health Professional                       |
-| [EHDSOrganisation](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSOrganisation.html)                 | EHDS refined base model for healthcare organisations and providers    |
-| [EHDSLocation](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSLocation.html)                     | EHDS refined base model for location, site, or service delivery place |
-| [EHDSBodyStructure](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSBodyStructure.html) | EHDS refined base model for Body structure                         |
+| [EHDSPatient](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSPatient.html)                           | EHDS refined base model for Patient (subject of care)                 |
+| [EHDSHealthProfessional](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSHealthProfessional.html) | EHDS refined base model for Health Professional                       |
+| [EHDSOrganisation](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSOrganisation.html)                 | EHDS refined base model for healthcare organisations and providers    |
+| [EHDSLocation](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSLocation.html)                     | EHDS refined base model for location, site, or service delivery place |
+| [EHDSBodyStructure](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSBodyStructure.html) | EHDS refined base model for Body structure                         |
 
 ---
 
@@ -49,19 +49,19 @@ For the most recent and in-progress versions, please refer to the [**Xt-EHR EHDS
 
 | **Model** | **Description** |
 | --- | --- |
-| [EHDSAlert](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSAlert.html) | EHDS refined base model for clinical alerts |
-| [EHDSAllergyIntolerance](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSAllergyIntolerance.html) | EHDS refined base model for allergy or intolerance information |
-| [EHDSCondition](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSCondition.html) | EHDS refined base model for a clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern |
-| [EHDSObservation](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSObservation.html) | EHDS refined base model for medical test results and other clinical observations |
-| [EHDSProcedure](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSProcedure.html) | EHDS refined base model for an action that is or was performed on or for a patient |
-| [EHDSImmunisation](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSImmunisation.html) | EHDS refined base model for immunisation |
+| [EHDSAlert](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSAlert.html) | EHDS refined base model for clinical alerts |
+| [EHDSAllergyIntolerance](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSAllergyIntolerance.html) | EHDS refined base model for allergy or intolerance information |
+| [EHDSCondition](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSCondition.html) | EHDS refined base model for a clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern |
+| [EHDSObservation](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html) | EHDS refined base model for medical test results and other clinical observations |
+| [EHDSProcedure](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSProcedure.html) | EHDS refined base model for an action that is or was performed on or for a patient |
+| [EHDSImmunisation](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSImmunisation.html) | EHDS refined base model for immunisation |
 
 
 #### 📄 Document Models
 
 | **Model**                                                                                                     | **Description**                                                                                                  |
 | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| [EHDSDocument](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSDocument.html)                       | EHDS refined base model for clinical documents, including header, authorship, attestation, and legal metadata    |
+| [EHDSDocument](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDocument.html)                       | EHDS refined base model for clinical documents, including header, authorship, attestation, and legal metadata    |
 
 ---
 
@@ -69,5 +69,5 @@ For the most recent and in-progress versions, please refer to the [**Xt-EHR EHDS
 
 | **Model**                                                                                                     | **Description**                                                                                                                                                                     |
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [EHDSMedication](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSMedication.html)                   | Logical model for prescribed/dispensed medication. Shared by statements, requests, dispensations, and treatment lines. Supports both generic (virtual) and branded (real) products. |
-| [EHDSMedicationStatement](https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition-EHDSMedicationStatement.html) | Statement about a single medication as part of a medication summary                                                                                                                 |
+| [EHDSMedication](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSMedication.html)                   | Logical model for prescribed/dispensed medication. Shared by statements, requests, dispensations, and treatment lines. Supports both generic (virtual) and branded (real) products. |
+| [EHDSMedicationUse](https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSMedicationUse.html) | Statement about a single medication as part of a medication summary                                                                                                                 |

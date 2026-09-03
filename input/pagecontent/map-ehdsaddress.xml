@@ -36,7 +36,7 @@
       <ul>
         <li>
           <strong>Source logical model:</strong>
-          <a href="https://www.xt-ehr.eu/fhir/models/0.3.0/StructureDefinition/EHDSAddress"
+          <a href="https://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSAddress.html"
             target="_blank">
             EHDSAddress
           </a>
@@ -155,13 +155,13 @@
             <td>for the country name</td>
           </tr>
           <tr>
-            <td>""</td>
+            <td>country</td>
 
             <td>equivalent</td>
             <td>Address</td>
             <td>extension:countryCode</td>
 
-            <td>for the country name</td>
+            <td>for the country code</td>
           </tr>
         </tbody>
       </table>

@@ -78,7 +78,7 @@ The models are expected to continue evolving, with updates incorporated into thi
             <td>DiagnosticReport</td>
             <td>.</td>
             
-            <td>Dataset-level information across the DiagnosticReport instance. <strong>Category (classCode) is missing ?</strong></td>
+            <td>Dataset-level information across the DiagnosticReport instance.</td>
           </tr>
           <tr>
             <td>header.subject</td>
