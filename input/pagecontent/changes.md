@@ -8,9 +8,17 @@ This page summarizes the main changes applied to this version of the guide.
   * FHIR-56556: Added `Substance` and `BiologicallyDerivedProduct` to the reference targets of `MedicalTestResultEuCore.focus`.
   * FHIR-55515: Made the `periodOfLife` extension available beyond `Immunization`, so that a life stage can be recorded where an exact date is not known: on `Condition.onset[x]` and `Condition.abatement[x]`, on `Procedure.performed[x]` (`occurrence[x]` in R5), and on `AllergyIntolerance.onset[x]` and its `abatement` extension. The slice sits on the `dateTime` choice, following the resolution that names `dateTime` as the preferred datatype where an element offers several; as the extension is bound by datatype rather than by element, `Age`, `Period` and `Range` remain available without a slice of their own.
 
+* Technical corrections
+  * FHIR-57342: Corrected the slicing of `DiagnosticReportEuCore.performer`. It used a `profile` discriminator on the path `$this`; on a `Reference` element that expression yields the reference itself and not the referenced resource, so the slices could not be discriminated and strict validators rejected the profile and everything derived from it. The discriminator path is now `resolve()`, as it already was on the `resultsInterpreter` slicing in the same profile. The defect was introduced with the profile (FHIR-53481) and is present in 2.0.0.
+  * FHIR-56849: Corrected the `component.extension:value-r5` slice in `MedicalTestResultEuCore`. It used the cross-version extension `Observation.value`, whose context is limited to `Observation` and therefore does not allow `Observation.component`. It now uses `Observation.component.value`, which has the matching context. Added the constraint `obs-value-2` on `Observation.component`, mirroring `obs-value-1`, so that `component.value[x]` and `component.extension:value-r5` cannot be used simultaneously.
+  * FHIR-56515: Set `Observation.performer.extension:performerFunction` to `0..1` in `MedicalTestResultEuCore`. The slice allowed `0..*` although the `event-performerFunction` extension is itself defined as `0..1`, so a second occurrence was never valid. Added a comment that a Practitioner(Role) acting in multiple roles has to be listed as `performer` multiple times.
+
 * Terminology
   * FHIR-56527: Bound `BodyStructure.morphology` to the new `MorphologyEuVs` instead of the FHIR value set `SNOMEDCTMorphologicAbnormalities`. The latter is based on `< 49755003 |Abnormal tissue appearance|`, whereas SNOMED CT recommended the wider `< 118956008 |Body structure, altered from its original anatomical structure|` in its feedback on Xt-EHR D7.1. The new hierarchy subsumes the previous one, so no code that was valid before falls outside the value set.
   * FHIR-56526: Added the SNOMED CT codes `Left` and `Right` to `SiteQualifierEuVs`, as they can be used both as a laterality and as a site qualifier. This reverses the removal made for FHIR-51391, following the discussion with the Orders & Observations WG. Added `Apical`, `Central` and `Peripheral` as well, completing pairs the value set already builds on: `Basal` was present without its counterpart, and `Central` / `Peripheral` follows the same pattern as `Superficial` / `Deep`.
+
+* Editorial and documentation updates
+  * FHIR-58742: Aligned the guide with version `1.0.0` of the Xt-EHR EHDS logical models. Updated the model links from `0.3.0` to `1.0.0`, renamed the mapping page of the medication summary model to *EHDSMedicationUse to FHIR MedicationStatement Mapping*, and reviewed the model map pages against the new model version: corrected relationship labels, added the missing `EHDSPatient.deceased[x]` and `changeType` rows, renamed `EHDSObservation.component.code` to `component.type` and mapped `EHDSAddress.country` to the country code.
 
 * Examples
   * FHIR-58774: Added a `BodyStructure` example covering more than one included structure, multiple site qualifiers and a business identifier.
@@ -33,8 +41,6 @@ This page summarizes the main changes applied to this version of the guide.
   * FHIR-55424: Removed category slice in `MedicalTestResultEuCore`.
   * FHIR-55639: Added missing target elements referenced by model maps and reviewed all profiles.
   * FHIR-56415: fixed misalignemnt between MedicalTestResultEuCore and LaboratoryObservations.
-  * FHIR-56849: technical correction in `MedicalTestResultEuCore`. The slice `component.extension:value-r5` used the cross-version extension `Observation.value`, whose context is limited to `Observation` and therefore does not allow `Observation.component`. It now uses `Observation.component.value`, which has the matching context. Added the constraint `obs-value-2` on `Observation.component`, mirroring `obs-value-1`, so that `component.value[x]` and `component.extension:value-r5` cannot be used simultaneously.
-  * FHIR-56515: Set `Observation.performer.extension:performerFunction` to `0..1` in `MedicalTestResultEuCore`, matching the cardinality the `event-performerFunction` extension itself allows, and added a comment that a Practitioner(Role) acting in multiple roles has to be listed as `performer` multiple times.
 
 * Editorial and documentation updates
   * FHIR-55553: Partial typo fixes.
