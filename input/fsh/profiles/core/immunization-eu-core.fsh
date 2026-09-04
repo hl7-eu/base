@@ -66,8 +66,7 @@ Description: """This profile introduces essential constraints and extensions for
 * occurrence[x] ^short = "Date of vaccination"
 
 * occurrenceDateTime
-  * extension contains PeriodsOfLife named periodOfLife 0..1
-  * extension[periodOfLife].valueCodeableConcept from PeriodsOfLifeEuVs (preferred)
+  * insert PeriodOfLifeExtension
 
 * location only Reference(LocationEuCore)
 * manufacturer ^short = "Vaccine manufacturer/MAH"

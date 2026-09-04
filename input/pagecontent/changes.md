@@ -4,6 +4,7 @@ This page summarizes the main changes applied to this version of the guide.
 
 * Profile and constraint updates
   * FHIR-58774: Set the cardinality of `BodyStructure.extension:includedStructure` to `1..*` in the R4 profile, aligning it with the cross-version extension definition and with the R5 `BodyStructure.includedStructure` element.
+  * FHIR-55515: Made the `periodOfLife` extension available beyond `Immunization`, so that a life stage can be recorded where an exact date is not known: on `Condition.onset[x]` and `Condition.abatement[x]`, on `Procedure.performed[x]` (`occurrence[x]` in R5), and on `AllergyIntolerance.onset[x]` and its `abatement` extension. The slice sits on the `dateTime` choice, following the resolution that names `dateTime` as the preferred datatype where an element offers several; as the extension is bound by datatype rather than by element, `Age`, `Period` and `Range` remain available without a slice of their own.
 
 * Terminology
   * FHIR-56526: Added the SNOMED CT codes `Left` and `Right` to `SiteQualifierEuVs`, as they can be used both as a laterality and as a site qualifier. This reverses the removal made for FHIR-51391, following the discussion with the Orders & Observations WG. Added `Apical`, `Central` and `Peripheral` as well, completing pairs the value set already builds on: `Basal` was present without its counterpart, and `Central` / `Peripheral` follows the same pattern as `Superficial` / `Deep`.
