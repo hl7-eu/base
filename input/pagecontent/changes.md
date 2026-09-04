@@ -4,6 +4,8 @@ This page summarizes the main changes applied to this version of the guide.
 
 * Profile and constraint updates
   * FHIR-58774: Set the cardinality of `BodyStructure.extension:includedStructure` to `1..*` in the R4 profile, aligning it with the cross-version extension definition and with the R5 `BodyStructure.includedStructure` element.
+  * FHIR-57206: Added `OrganizationEuCore` to the reference targets of `CompositionEuCore.attester:legalAuthenticator.party`.
+  * FHIR-56556: Added `Substance` and `BiologicallyDerivedProduct` to the reference targets of `MedicalTestResultEuCore.focus`.
   * FHIR-55515: Made the `periodOfLife` extension available beyond `Immunization`, so that a life stage can be recorded where an exact date is not known: on `Condition.onset[x]` and `Condition.abatement[x]`, on `Procedure.performed[x]` (`occurrence[x]` in R5), and on `AllergyIntolerance.onset[x]` and its `abatement` extension. The slice sits on the `dateTime` choice, following the resolution that names `dateTime` as the preferred datatype where an element offers several; as the extension is bound by datatype rather than by element, `Age`, `Period` and `Range` remain available without a slice of their own.
 
 * Terminology
