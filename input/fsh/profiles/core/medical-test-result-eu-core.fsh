@@ -55,7 +55,7 @@ Description: """This profile introduces essential constraints and extensions for
 * subject 1.. 
 * subject only Reference(PatientEuCore or Device or Group or Location)
   * ^requirements = "EHDSObservation.header.subject"
-* focus only Reference(PatientEuCore or RelatedPerson or Group or Device or LocationEuCore)
+* focus only Reference(PatientEuCore or RelatedPerson or Group or Device or LocationEuCore or Substance or BiologicallyDerivedProduct)
   * ^requirements = "EHDSObservation.directSubject[x]"
 * effective[x] 1..
 * effective[x] only dateTime or Period
