@@ -5,6 +5,9 @@ This page summarizes the main changes applied to this version of the guide.
 * Profile and constraint updates
   * FHIR-58774: Set the cardinality of `BodyStructure.extension:includedStructure` to `1..*` in the R4 profile, aligning it with the cross-version extension definition and with the R5 `BodyStructure.includedStructure` element.
 
+* Terminology
+  * FHIR-56526: Added the SNOMED CT codes `Left` and `Right` to `SiteQualifierEuVs`, as they can be used both as a laterality and as a site qualifier. This reverses the removal made for FHIR-51391, following the discussion with the Orders & Observations WG. Added `Apical`, `Central` and `Peripheral` as well, completing pairs the value set already builds on: `Basal` was present without its counterpart, and `Central` / `Peripheral` follows the same pattern as `Superficial` / `Deep`.
+
 * Examples
   * FHIR-58774: Added a `BodyStructure` example covering more than one included structure, multiple site qualifiers and a business identifier.
 
