@@ -26,9 +26,13 @@ TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS
 # SNOMED CT related warnings
 %The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters%
 
-# Deprecated artefcats
-%The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated%
-%The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated%
+# Deprecated artefacts, matched without a version so they keep matching when a newer extensions package is resolved
+%The extension http://hl7.org/fhir/StructureDefinition/regex%
+
+%The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet%
+
+# EDQM Standard Terms is licensed, so no FHIR CodeSystem for it is published anywhere, and IPS uses the same canonical
+%No definition could be found for URL value 'http://standardterms.edqm.eu'%
 
 # Context will be fixed
 The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality from FHIR version 5.0 is not allowed to be used at this point (this element is [BodyStructure]; allowed for this version = e:BodyStructure.includedStructure; this is a warning since contexts may be renamed between FHIR versions)
@@ -93,8 +97,7 @@ The URL should refer directly to the ImplementationGuide resource (e.g. include 
 The resource status 'active' and the standards status 'draft' are not consistent
 
 
-# Known issue with hl7.fhir.uv.xver-r5.r4 version 0.1.0 (see https://chat.fhir.org/#narrow/channel/179166-implementers/topic/Which.20package.20to.20import.20for.20cross.20version.20extensions/with/584676154)
-The slice definition for BodyStructure.extension:includedStructure.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension has a minimum of 0 but the slices add up to a minimum of 1
+# The cross-version slicing minimum on bodyStructure-eu-core is an error and cannot be suppressed here, this file only takes effect on warnings and information: https://chat.fhir.org/#narrow/channel/179166-implementers/topic/Which.20package.20to.20import.20for.20cross.20version.20extensions/with/584676154
 
 # Code used in the example not from the additional value Set
 None of the codings provided are in the value set 'WHO ATC - IPS' (http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips|2.0.0) specified in an additional binding, and a coding is recommended to come from this value set (codes = http://snomed.info/sct#91935009)
