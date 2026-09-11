@@ -2,12 +2,12 @@
 {
   
   "package-id" : "hl7.fhir.eu.base",
-  "path" : "http://hl7.eu/fhir/base/2.0.0",
+  "path" : "http://hl7.eu/fhir/base/2.0.1",
   
   
-  "version" : "2.0.0",
-  "desc" : "This publication represents a new STU release (version 2.0.0). It incorporates new profiles, references to new logical models, updated model-to-profile mapping tables, terminology updates, and general publication cleanup.",
-  "descmd" : "This publication represents a new STU release (version 2.0.0) of the HL7 Europe Base and Core FHIR IG",
+  "version" : "2.0.1",
+  "desc" : "This publication is a technical correction of the STU release 2.0.0. It corrects defects in the DiagnosticReport, Medical Test Result and BodyStructure profiles, adds the SNOMED CT concepts that were missing from the site qualifier value set, and aligns the model maps with version 1.0.0 of the Xt-EHR EHDS logical models. It also extends the reference targets of MedicalTestResultEuCore.focus, which the HL7 Europe Laboratory Report IG needs in order to apply its own resolution of FHIR-57055.",
+  "descmd" : "This publication is a technical correction (version 2.0.1) of the HL7 Europe Base and Core FHIR IG",
   "status" : "trial-use",
   "sequence" : "STU 2",
   "mode": "milestone",
