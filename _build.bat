@@ -31,6 +31,14 @@ IF EXIST "%input_cache_path%%publisher_jar%" (
 )
 
 
+:: Custom, not in the upstream script: -y answers every prompt, so an unattended run
+:: updates the publisher instead of stopping at the confirmation. Keep this when
+:: pulling a newer _build.bat from HL7/ig-publisher-scripts.
+IF /I NOT "%~1"=="-y" GOTO :noYesFlag
+SET "skipPrompts=true"
+SHIFT
+:noYesFlag
+
 :: Handle command-line argument to bypass the menu
 :: Known first arguments select a menu option; anything else is passed through to the publisher
 SET "extraArgs="
@@ -275,8 +283,12 @@ GOTO done
 
 ECHO.
 ECHO Updating scripts
+:: Custom, not in the upstream script: with -y the script must not update itself, as
+:: pulling the scripts from HL7/ig-publisher-scripts would discard the -y flag added
+:: at the top. Keeping the scripts current stays a deliberate, interactive act.
 IF "%skipPrompts%"=="true" (
-	SET updateScripts=Y
+	ECHO Skipped updating scripts: -y covers the publisher only
+	SET updateScripts=N
 ) ELSE (
 	SET /p updateScripts="Update scripts? (Y/N) "
 )
