@@ -1,5 +1,14 @@
 This page summarizes the main changes applied to this version of the guide.
 
+### From 2.0.1 to 2.1.0
+
+* Profile and constraint updates
+  * FHIR-57206: Added `OrganizationEuCore` to the reference targets of `CompositionEuCore.attester:legalAuthenticator.party`.
+  * FHIR-55515: Made the `periodOfLife` extension available beyond `Immunization`, so that a life stage can be recorded where an exact date is not known: on `Condition.onset[x]` and `Condition.abatement[x]`, on `Procedure.performed[x]` (`occurrence[x]` in R5), and on `AllergyIntolerance.onset[x]` and its `abatement` extension. The slice sits on the `dateTime` choice, following the resolution that names `dateTime` as the preferred datatype where an element offers several; as the extension is bound by datatype rather than by element, `Age`, `Period` and `Range` remain available without a slice of their own.
+
+* Terminology
+  * FHIR-56527: Bound `BodyStructure.morphology` to the new `MorphologyEuVs` instead of the FHIR value set `SNOMEDCTMorphologicAbnormalities`. The latter is based on `< 49755003 |Abnormal tissue appearance|`, whereas SNOMED CT recommended the wider `< 118956008 |Body structure, altered from its original anatomical structure|` in its feedback on Xt-EHR D7.1. The new hierarchy subsumes the previous one, so no code that was valid before falls outside the value set.
+
 ### From 2.0.0 to 2.0.1
 
 Version 2.0.1 is a technical correction of the 2.0.0 release. It carries the resolutions of tickets recorded as technical corrections, corrections and clarifications, with one exception named below.

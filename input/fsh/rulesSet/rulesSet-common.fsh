@@ -112,6 +112,17 @@ RuleSet: ObligationElement(element)
 * ^extension[$obligation][=].extension[elementId].valueString = {element}
 
 
+RuleSet: PeriodOfLifeExtension
+// Insert on the dateTime choice of an onset, abatement or performed element, to
+// record a life stage where an exact date is not available.
+// The slice is declared on dateTime alone, following the resolution of the
+// 27 February meeting: dateTime is the preferred datatype where an element offers
+// several. The extension is bound by datatype rather than by element, so Age,
+// Period and Range stay available without a slice of their own.
+* extension contains PeriodsOfLife named periodOfLife 0..1
+* extension[periodOfLife].valueCodeableConcept from PeriodsOfLifeEuVs (preferred)
+
+
 RuleSet: SliceElement( type, path )
 * ^slicing.discriminator.type = {type}
 * ^slicing.discriminator.path = "{path}"

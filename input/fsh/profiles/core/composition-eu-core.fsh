@@ -72,7 +72,7 @@ Description: """This profile introduces essential constraints and extensions for
 * attester[legalAuthenticator].mode = http://hl7.org/fhir/composition-attestation-mode#legal
 * attester[legalAuthenticator].time 1..1
 * attester[legalAuthenticator].party 1..
-* attester[legalAuthenticator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore) // Check references...
+* attester[legalAuthenticator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore or OrganizationEuCore) // Check references...
 * attester[validator].mode = http://hl7.org/fhir/composition-attestation-mode#professional
 * attester[validator].time 1..1
 * attester[validator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore)
