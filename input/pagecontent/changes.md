@@ -14,6 +14,7 @@ Version 2.0.1 is a technical correction of the 2.0.0 release. It carries the res
   * FHIR-56515: Set `Observation.performer.extension:performerFunction` to `0..1` in `MedicalTestResultEuCore`. The slice allowed `0..*` although the `event-performerFunction` extension is itself defined as `0..1`, so a second occurrence was never valid. Added a comment that a Practitioner(Role) acting in multiple roles has to be listed as `performer` multiple times.
 
 * Terminology
+  * FHIR-59068: Removed the value sets `LaboratoryResultStandardEuVs` and `SpeciesTypesEuVs`, both left over from laboratory content that has since moved to the HL7 Europe Laboratory Report IG. Nothing in this guide bound either of them, and no other HL7 Europe guide refers to them. `lab-obsCode-eu-lab` shared its id and its title with a value set the Laboratory Report IG publishes under its own canonical with different content, which is a trap for anyone resolving it by id; `speciesType-eu` belonged to the animal patient, which this guide no longer carries.
   * FHIR-56526: Added the SNOMED CT codes `Left` and `Right` to `SiteQualifierEuVs`, as they can be used both as a laterality and as a site qualifier. This reverses the removal made for FHIR-51391, following the discussion with the Orders & Observations WG. Added `Apical`, `Central` and `Peripheral` as well, completing pairs the value set already builds on: `Basal` was present without its counterpart, and `Central` / `Peripheral` follows the same pattern as `Superficial` / `Deep`.
 
 * Editorial and documentation updates
