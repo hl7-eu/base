@@ -20,6 +20,7 @@ Version 2.0.1 is a technical correction of the 2.0.0 release. It carries the res
 
 * Editorial and documentation updates
   * FHIR-58742: Aligned the guide with version `1.0.0` of the Xt-EHR EHDS logical models. Updated the model links from `0.3.0` to `1.0.0`, renamed the mapping page of the medication summary model to *EHDSMedicationUse to FHIR MedicationStatement Mapping*, and reviewed the model map pages against the new model version: corrected relationship labels, added the missing `EHDSPatient.deceased[x]` and `changeType` rows, renamed `EHDSObservation.component.code` to `component.type` and mapped `EHDSAddress.country` to the country code.
+  * FHIR-59069: Corrected the extension URL in the example fragment of the *Missing Data* page, from `http://hl7.eu/fhir/base/StructureDefinition/periods-of-life` to `http://hl7.eu/fhir/extensions/StructureDefinition/periods-of-life`. The canonical shown did not exist: the extension is published by the HL7 Europe Extensions IG, and this guide has never defined one under that id, while the sentence above the fragment already linked to the extensions guide. The core profiles slice the `periodOfLife` extension on the extensions canonical, so an instance built from the fragment did not match the slice and carried an unresolvable extension instead of the intended life stage.
 
 * Examples
   * FHIR-58774: Added a `BodyStructure` example covering more than one included structure, multiple site qualifiers and a business identifier.
