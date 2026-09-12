@@ -16,5 +16,5 @@ Description: """This profile introduces essential constraints and extensions for
 * locationQualifier 0..0
 
 
-* morphology from MorphologyEuVs (preferred)
+* morphology from http://hl7.org/fhir/ValueSet/bodystructure-code (preferred)
 // * image 0..0

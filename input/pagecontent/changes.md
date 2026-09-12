@@ -1,14 +1,5 @@
 This page summarizes the main changes applied to this version of the guide.
 
-### From 2.0.1 to 2.1.0
-
-* Profile and constraint updates
-  * FHIR-57206: Added `OrganizationEuCore` to the reference targets of `CompositionEuCore.attester:legalAuthenticator.party`.
-  * FHIR-55515: Made the `periodOfLife` extension available beyond `Immunization`, so that a life stage can be recorded where an exact date is not known: on `Condition.onset[x]` and `Condition.abatement[x]`, on `Procedure.performed[x]` (`occurrence[x]` in R5), and on `AllergyIntolerance.onset[x]` and its `abatement` extension. The slice sits on the `dateTime` choice, following the resolution that names `dateTime` as the preferred datatype where an element offers several; as the extension is bound by datatype rather than by element, `Age`, `Period` and `Range` remain available without a slice of their own.
-
-* Terminology
-  * FHIR-56527: Bound `BodyStructure.morphology` to the new `MorphologyEuVs` instead of the FHIR value set `SNOMEDCTMorphologicAbnormalities`. The latter is based on `< 49755003 |Abnormal tissue appearance|`, whereas SNOMED CT recommended the wider `< 118956008 |Body structure, altered from its original anatomical structure|` in its feedback on Xt-EHR D7.1. The new hierarchy subsumes the previous one, so no code that was valid before falls outside the value set.
-
 ### From 2.0.0 to 2.0.1
 
 Version 2.0.1 is a technical correction of the 2.0.0 release. It carries the resolutions of tickets recorded as technical corrections, corrections and clarifications, with one exception named below.
@@ -23,10 +14,13 @@ Version 2.0.1 is a technical correction of the 2.0.0 release. It carries the res
   * FHIR-56515: Set `Observation.performer.extension:performerFunction` to `0..1` in `MedicalTestResultEuCore`. The slice allowed `0..*` although the `event-performerFunction` extension is itself defined as `0..1`, so a second occurrence was never valid. Added a comment that a Practitioner(Role) acting in multiple roles has to be listed as `performer` multiple times.
 
 * Terminology
+  * FHIR-59065: Removed the value set `EhdsCategoriesEuVs`. Nothing bound it: its only reference sat in the commented out `category` slice of `CompositionEuCore`, which went out of use with FHIR-55424, and no other HL7 Europe guide refers to it. Its presence suggested a settled position on document categories that the discussion has not reached. The commented out slice went with it, since holding the binding to this value set was all it did.
+  * FHIR-59068: Removed the value sets `LaboratoryResultStandardEuVs` and `SpeciesTypesEuVs`, both left over from laboratory content that has since moved to the HL7 Europe Laboratory Report IG. Nothing in this guide bound either of them, and no other HL7 Europe guide refers to them. `lab-obsCode-eu-lab` shared its id and its title with a value set the Laboratory Report IG publishes under its own canonical with different content, which is a trap for anyone resolving it by id; `speciesType-eu` belonged to the animal patient, which this guide no longer carries.
   * FHIR-56526: Added the SNOMED CT codes `Left` and `Right` to `SiteQualifierEuVs`, as they can be used both as a laterality and as a site qualifier. This reverses the removal made for FHIR-51391, following the discussion with the Orders & Observations WG. Added `Apical`, `Central` and `Peripheral` as well, completing pairs the value set already builds on: `Basal` was present without its counterpart, and `Central` / `Peripheral` follows the same pattern as `Superficial` / `Deep`.
 
 * Editorial and documentation updates
   * FHIR-58742: Aligned the guide with version `1.0.0` of the Xt-EHR EHDS logical models. Updated the model links from `0.3.0` to `1.0.0`, renamed the mapping page of the medication summary model to *EHDSMedicationUse to FHIR MedicationStatement Mapping*, and reviewed the model map pages against the new model version: corrected relationship labels, added the missing `EHDSPatient.deceased[x]` and `changeType` rows, renamed `EHDSObservation.component.code` to `component.type` and mapped `EHDSAddress.country` to the country code.
+  * FHIR-59069: Corrected the extension URL in the example fragment of the *Missing Data* page, from `http://hl7.eu/fhir/base/StructureDefinition/periods-of-life` to `http://hl7.eu/fhir/extensions/StructureDefinition/periods-of-life`. The canonical shown did not exist: the extension is published by the HL7 Europe Extensions IG, and this guide has never defined one under that id, while the sentence above the fragment already linked to the extensions guide. The core profiles slice the `periodOfLife` extension on the extensions canonical, so an instance built from the fragment did not match the slice and carried an unresolvable extension instead of the intended life stage.
 
 * Examples
   * FHIR-58774: Added a `BodyStructure` example covering more than one included structure, multiple site qualifiers and a business identifier.

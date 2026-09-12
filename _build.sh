@@ -7,6 +7,14 @@ dlurl="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publish
 publisher_jar="publisher.jar"
 input_cache_path="$(pwd)/input-cache/"
 skipPrompts=false
+# Custom, not in the upstream script: -y answers every prompt, so an unattended run
+# updates the publisher instead of stopping at the confirmation. It has to be
+# consumed here, as an unrecognised argument is passed through to the publisher.
+# Keep this when pulling a newer _build.sh from HL7/ig-publisher-scripts.
+if [ "$1" = "-y" ] || [ "$1" = "--yes" ]; then
+  skipPrompts=true
+  shift
+fi
 upper_path="../"
 scriptdlroot="https://raw.githubusercontent.com/HL7/ig-publisher-scripts/main"
 build_bat_url="${scriptdlroot}/_build.bat"
@@ -72,7 +80,15 @@ function update_publisher() {
     echo "Skipped downloading publisher.jar"
   fi
 
-  update_scripts_prompt
+  # Custom, not in the upstream script: with -y the script must not update itself.
+  # update_scripts_prompt pulls _build.sh and _build.bat from HL7/ig-publisher-scripts,
+  # which would discard the -y flag added at the top. Keeping the scripts current stays
+  # a deliberate, interactive act.
+  if [ "$skipPrompts" = "true" ]; then
+    echo "Skipped updating scripts: -y covers the publisher only"
+  else
+    update_scripts_prompt
+  fi
 }
 
 
