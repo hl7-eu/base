@@ -102,3 +102,10 @@ The resource status 'active' and the standards status 'draft' are not consistent
 # Code used in the example not from the additional value Set
 None of the codings provided are in the value set 'WHO ATC - IPS' (http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips|2.0.0) specified in an additional binding, and a coding is recommended to come from this value set (codes = http://snomed.info/sct#91935009)
 Terminology_TX_NoValid_3_CC
+
+# OID not assigned
+%could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)%
+%OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)%
+
+# Issue inherited from the x-version package: this guide doesn't profile the bodyLandmarkOrientation element
+The slice definition for BodyStructure.extension:includedStructure.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension has a minimum of 0 but the slices add up to a minimum of 1
