@@ -4,6 +4,11 @@ setlocal enabledelayedexpansion
 SET "dlurl=https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar"
 SET "publisher_jar=publisher.jar"
 SET "input_cache_path=%CD%\input-cache\"
+IF DEFINED FHIR_PUBLISHER_HOME (
+    SET "publisher_home=%FHIR_PUBLISHER_HOME%"
+) ELSE (
+    SET "publisher_home=%USERPROFILE%\.fhir\tools\publisher"
+)
 SET "skipPrompts=false"
 SET "upper_path=..\"
 SET "scriptdlroot=https://raw.githubusercontent.com/HL7/ig-publisher-scripts/main"
@@ -23,21 +28,19 @@ IF EXIST "%input_cache_path%%publisher_jar%" (
         SET "jar_location=%upper_path%%publisher_jar%"
         ECHO Found publisher.jar in parent folder
     ) ELSE (
-        SET "jar_location=not_found"
-        SET "default_choice=1"
-        SET "default_reason=publisher not found"
-        ECHO publisher.jar not found in input-cache or parent folder
+        ECHO Checking for publisher.jar in %publisher_home%
+        IF EXIST "%publisher_home%\%publisher_jar%" (
+            SET "jar_location=%publisher_home%\%publisher_jar%"
+            ECHO Found publisher.jar in FHIR publisher home
+        ) ELSE (
+            SET "jar_location=not_found"
+            SET "default_choice=1"
+            SET "default_reason=publisher not found"
+            ECHO publisher.jar not found in input-cache, parent folder, or FHIR publisher home
+        )
     )
 )
 
-
-:: Custom, not in the upstream script: -y answers every prompt, so an unattended run
-:: updates the publisher instead of stopping at the confirmation. Keep this when
-:: pulling a newer _build.bat from HL7/ig-publisher-scripts.
-IF /I NOT "%~1"=="-y" GOTO :noYesFlag
-SET "skipPrompts=true"
-SHIFT
-:noYesFlag
 
 :: Handle command-line argument to bypass the menu
 :: Known first arguments select a menu option; anything else is passed through to the publisher
@@ -187,32 +190,25 @@ IF DEFINED ARG (
 	GOTO processflags
 )
 
-FOR %%x IN ("%CD%") DO SET upper_path=%%~dpx
-
 ECHO.
-IF NOT EXIST "%input_cache_path%%publisher_jar%" (
-	IF NOT EXIST "%upper_path%%publisher_jar%" (
-		SET jarlocation="%input_cache_path%%publisher_jar%"
-		SET jarlocationname=Input Cache
-		ECHO IG Publisher is not yet in input-cache or parent folder.
-		REM we don't use jarlocation below because it will be empty because we're in a bracketed if statement
-		GOTO create
-	) ELSE (
-		ECHO IG Publisher FOUND in parent folder
-		SET jarlocation="%upper_path%%publisher_jar%"
-		SET jarlocationname=Parent folder
-		GOTO upgrade
-	)
-) ELSE (
+IF EXIST "%input_cache_path%%publisher_jar%" (
 	ECHO IG Publisher FOUND in input-cache
-	SET jarlocation="%input_cache_path%%publisher_jar%"
-	SET jarlocationname=Input Cache
+	SET "jarlocation=%input_cache_path%%publisher_jar%"
+	SET "jarlocationname=Input Cache"
 	GOTO upgrade
 )
+SET "jarlocation=%publisher_home%\%publisher_jar%"
+SET "jarlocationname=FHIR Publisher Home"
+IF EXIST "%publisher_home%\%publisher_jar%" (
+	ECHO IG Publisher FOUND in FHIR publisher home
+	GOTO upgrade
+)
+ECHO IG Publisher is not yet in input-cache or FHIR publisher home.
+GOTO create
 
 :create
 IF DEFINED FORCE (
-	MKDIR "%input_cache_path%" 2> NUL
+	MKDIR "%publisher_home%" 2> NUL
 	GOTO download
 )
 
@@ -222,8 +218,8 @@ IF "%skipPrompts%"=="true" (
 	SET /p create="Download? (Y/N) "
 )
 IF /I "%create%"=="Y" (
-	ECHO Will place publisher jar here: %input_cache_path%%publisher_jar%
-	MKDIR "%input_cache_path%" 2> NUL
+	ECHO Will place publisher jar here: %jarlocation%
+	MKDIR "%publisher_home%" 2> NUL
 	GOTO download
 )
 GOTO done
@@ -283,12 +279,8 @@ GOTO done
 
 ECHO.
 ECHO Updating scripts
-:: Custom, not in the upstream script: with -y the script must not update itself, as
-:: pulling the scripts from HL7/ig-publisher-scripts would discard the -y flag added
-:: at the top. Keeping the scripts current stays a deliberate, interactive act.
 IF "%skipPrompts%"=="true" (
-	ECHO Skipped updating scripts: -y covers the publisher only
-	SET updateScripts=N
+	SET updateScripts=Y
 ) ELSE (
 	SET /p updateScripts="Update scripts? (Y/N) "
 )
@@ -339,7 +331,7 @@ IF NOT "%jar_location%"=="not_found" (
 	ECHO IG Publisher FOUND, Publishing...
 	java %JAVA_OPTS% -jar "%jar_location%" -ig . %txoption% %extraArgs%
 ) ELSE (
-	ECHO IG Publisher NOT FOUND in input-cache or parent folder.  Please run the script and update the publisher.  Aborting...
+	ECHO IG Publisher NOT FOUND in input-cache, parent folder, or FHIR publisher home.  Please run the script and update the publisher.  Aborting...
 )
 
 GOTO endscript
@@ -355,7 +347,7 @@ ECHO jar_location is: %jar_location%
 IF NOT "%jar_location%"=="not_found" (
 	java %JAVA_OPTS% -jar "%jar_location%" -ig . %txoption% -no-sushi %extraArgs%
 ) ELSE (
-	ECHO IG Publisher NOT FOUND in input-cache or parent folder. Please run the script and update the publisher.  Aborting...
+	ECHO IG Publisher NOT FOUND in input-cache, parent folder, or FHIR publisher home. Please run the script and update the publisher.  Aborting...
 )
 
 GOTO endscript
@@ -371,7 +363,7 @@ ECHO jar_location is: %jar_location%
 IF NOT "%jar_location%"=="not_found" (
 	java %JAVA_OPTS% -jar "%jar_location%" -ig . %txoption% %extraArgs%
 ) ELSE (
-	ECHO IG Publisher NOT FOUND in input-cache or parent folder.  Please run the script and update the publisher.  Aborting...
+	ECHO IG Publisher NOT FOUND in input-cache, parent folder, or FHIR publisher home.  Please run the script and update the publisher.  Aborting...
 )
 
 GOTO endscript
@@ -385,7 +377,7 @@ ECHO jar_location is: %jar_location%
 IF NOT "%jar_location%"=="not_found" (
 	java %JAVA_OPTS% -jar "%jar_location%" -ig . %txoption% -watch %extraArgs%
 ) ELSE (
-	ECHO IG Publisher NOT FOUND in input-cache or parent folder.  Please run the script and update the publisher.  Aborting...
+	ECHO IG Publisher NOT FOUND in input-cache, parent folder, or FHIR publisher home.  Please run the script and update the publisher.  Aborting...
 )
 
 GOTO endscript

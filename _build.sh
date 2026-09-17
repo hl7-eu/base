@@ -6,15 +6,8 @@ set -e
 dlurl="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar"
 publisher_jar="publisher.jar"
 input_cache_path="$(pwd)/input-cache/"
+publisher_home="${FHIR_PUBLISHER_HOME:-$HOME/.fhir/tools/publisher}"
 skipPrompts=false
-# Custom, not in the upstream script: -y answers every prompt, so an unattended run
-# updates the publisher instead of stopping at the confirmation. It has to be
-# consumed here, as an unrecognised argument is passed through to the publisher.
-# Keep this when pulling a newer _build.sh from HL7/ig-publisher-scripts.
-if [ "$1" = "-y" ] || [ "$1" = "--yes" ]; then
-  skipPrompts=true
-  shift
-fi
 upper_path="../"
 scriptdlroot="https://raw.githubusercontent.com/HL7/ig-publisher-scripts/main"
 build_bat_url="${scriptdlroot}/_build.bat"
@@ -27,9 +20,12 @@ function check_jar_location() {
   elif [ -f "${upper_path}${publisher_jar}" ]; then
     jar_location="${upper_path}${publisher_jar}"
     echo "Found publisher.jar in parent folder"
+  elif [ -f "${publisher_home}/${publisher_jar}" ]; then
+    jar_location="${publisher_home}/${publisher_jar}"
+    echo "Found publisher.jar in FHIR publisher home"
   else
     jar_location="not_found"
-    echo "publisher.jar not found in input-cache or parent folder"
+    echo "publisher.jar not found in input-cache, parent folder, or FHIR publisher home"
   fi
 }
 
@@ -66,7 +62,14 @@ function check_internet_connection() {
 
 
 function update_publisher() {
-  echo "Publisher jar location: ${input_cache_path}${publisher_jar}"
+  if [ -f "${input_cache_path}${publisher_jar}" ]; then
+    update_location="${input_cache_path}${publisher_jar}"
+    update_location_name="input-cache"
+  else
+    update_location="${publisher_home}/${publisher_jar}"
+    update_location_name="FHIR publisher home"
+  fi
+  echo "Publisher jar location: ${update_location}"
   if [ "$skipPrompts" = "true" ]; then
     confirm="Y"
   else
@@ -74,21 +77,14 @@ function update_publisher() {
   fi
   if [[ "$confirm" =~ ^[Yy]$ ]]; then
     echo "Downloading latest publisher.jar (~200 MB)..."
-    mkdir -p "$input_cache_path"
-    curl -L "$dlurl" -o "${input_cache_path}${publisher_jar}"
+    mkdir -p "$(dirname "$update_location")"
+    curl -L "$dlurl" -o "$update_location"
+    echo "Publisher updated in ${update_location_name}"
   else
     echo "Skipped downloading publisher.jar"
   fi
 
-  # Custom, not in the upstream script: with -y the script must not update itself.
-  # update_scripts_prompt pulls _build.sh and _build.bat from HL7/ig-publisher-scripts,
-  # which would discard the -y flag added at the top. Keeping the scripts current stays
-  # a deliberate, interactive act.
-  if [ "$skipPrompts" = "true" ]; then
-    echo "Skipped updating scripts: -y covers the publisher only"
-  else
-    update_scripts_prompt
-  fi
+  update_scripts_prompt
 }
 
 
@@ -119,7 +115,7 @@ function run_publisher() {
     fi
     java $JAVA_OPTS -jar "$jar_location" -ig . "${extra_flags[@]}"
   else
-    echo "IG Publisher NOT FOUND in input-cache or parent folder. Please run update. Aborting..."
+    echo "IG Publisher NOT FOUND in input-cache, parent folder, or FHIR publisher home. Please run update. Aborting..."
   fi
 }
 
