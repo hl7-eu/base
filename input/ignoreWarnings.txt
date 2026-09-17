@@ -55,7 +55,6 @@ The html source has duplicate anchor Ids: 1
 # The cross-version slicing minimum on bodyStructure-eu-core is an error and cannot be suppressed here, this file only takes effect on warnings and information: https://chat.fhir.org/#narrow/channel/179166-implementers/topic/Which.20package.20to.20import.20for.20cross.20version.20extensions/with/584676154
 
 # Code used in the example not from the additional value Set
-None of the codings provided are in the value set 'WHO ATC - IPS' (http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips|2.0.0) specified in an additional binding, and a coding is recommended to come from this value set (codes = http://snomed.info/sct#91935009)
 Terminology_TX_NoValid_3_CC
 
 # OID not assigned
