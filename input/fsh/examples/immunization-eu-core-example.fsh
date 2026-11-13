@@ -31,27 +31,3 @@ Description: "Example of an Immunization resource conforming to the Immunization
 
 * protocolApplied[0].doseNumberPositiveInt = 2
 * protocolApplied[0].seriesDosesPositiveInt = 2
-
-
-
-Instance: ImmunizationEuCoreDateTimeExample
-InstanceOf: ImmunizationEuCore
-Title: "Immunization Example - Date Only"
-Description: "Example of an Immunization with an occurrenceDateTime value and no periodOfLife extension."
-
-* id = "immunization-eu-core-date-time-example"
-* status = #completed
-* vaccineCode = $sct#1119349007 "SARS-CoV-2 mRNA vaccine"
-* patient = Reference(PatientExample)
-* occurrenceDateTime = "2024-10-05"
-
-Instance: ImmunizationEuCorePeriodOfLifeExample
-InstanceOf: ImmunizationEuCore
-Title: "Immunization Example - Period of Life Only"
-Description: "Example of an Immunization with a periodOfLife extension on occurrenceDateTime and no occurrenceDateTime value, recording the life stage when the vaccination date is unknown."
-
-* id = "immunization-eu-core-period-of-life-example"
-* status = #completed
-* vaccineCode = $sct#1119349007 "SARS-CoV-2 mRNA vaccine"
-* patient = Reference(PatientExample)
-* occurrenceDateTime.extension[periodOfLife].valueCodeableConcept = $sct#41847000 "Adulthood"

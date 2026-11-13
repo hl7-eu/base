@@ -2,6 +2,7 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+# Entries that apply to one FHIR version only are wrapped in a liquid conditional, so that neither generated IG carries a suppression it never uses and every entry shows a use count above zero in its qa.html.
 
 # Multiple extension versions
 %There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090%
@@ -51,9 +52,15 @@ The html source has duplicate anchor Ids: 1
 
 
 
-
-
 # The cross-version slicing minimum on bodyStructure-eu-core is an error and cannot be suppressed here, this file only takes effect on warnings and information: https://chat.fhir.org/#narrow/channel/179166-implementers/topic/Which.20package.20to.20import.20for.20cross.20version.20extensions/with/584676154
 
 # Code used in the example not from the additional value Set
 Terminology_TX_NoValid_3_CC
+
+# OID not assigned
+%could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)%
+%OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)%
+
+
+# Issue inherited from the x-version package: this guide doesn't profile the bodyLandmarkOrientation element
+The slice definition for BodyStructure.extension:includedStructure.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension has a minimum of 0 but the slices add up to a minimum of 1

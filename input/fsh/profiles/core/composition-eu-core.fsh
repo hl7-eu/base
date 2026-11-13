@@ -49,11 +49,6 @@ Description: """This profile introduces essential constraints and extensions for
 * type ^short = "Type of document/report (e.g. imaging report LOINC)"
 * category ^short = "Document Category"
 
-/*   * insert SliceElement( #value, $this )
-* category contains ehds-category 0..*
-* category[ehds-category] ^short = "EHDS Priority Category"
-* category[ehds-category] from EhdsCategoriesEuVs */
-
 * subject 1..1
 * subject only Reference(PatientEuCore or Group or LocationEuCore or Device)
 * encounter 0..1
@@ -72,7 +67,7 @@ Description: """This profile introduces essential constraints and extensions for
 * attester[legalAuthenticator].mode = http://hl7.org/fhir/composition-attestation-mode#legal
 * attester[legalAuthenticator].time 1..1
 * attester[legalAuthenticator].party 1..
-* attester[legalAuthenticator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore or OrganizationEuCore) // Check references...
+* attester[legalAuthenticator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore) // Check references...
 * attester[validator].mode = http://hl7.org/fhir/composition-attestation-mode#professional
 * attester[validator].time 1..1
 * attester[validator].party only Reference(PractitionerRoleEuCore or PractitionerEuCore)
