@@ -1,5 +1,15 @@
 This page summarizes the main changes applied to this version of the guide.
 
+### From 2.0.1 to 2.0.2
+
+Version 2.0.2 is a technical correction of the 2.0.1 release.
+
+* Technical corrections
+  * [FHIR-59799](https://jira.hl7.org/browse/FHIR-59799): Moved the `birthTime` slice of `PatientEu` from `Patient.extension` to `Patient.birthDate.extension`. The `patient-birthTime` extension defines `Patient.birthDate` as its only context, so the slice defined in 2.0.1 on `Patient.extension` placed the extension where it is not allowed. `PatientEuCore` inherits the corrected slice.
+
+* Examples
+  * Added the birth time to the `PatientExample` instance, on `Patient.birthDate`.
+
 ### From 2.0.0 to 2.0.1
 
 Version 2.0.1 is a technical correction of the 2.0.0 release. It carries the resolutions of tickets recorded as technical corrections, corrections and clarifications, with one exception named below.

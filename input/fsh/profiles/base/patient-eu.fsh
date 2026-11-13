@@ -12,11 +12,9 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
     $individual-genderIdentity named gender-identity 0..* and
     $individual-pronouns named pronouns 0..* and
     $patient-citizenship named patient-citizenship 0..* and
-    $patient-nationality named patient-nationality 0..* and
-    $patient-birthTime named birthTime 0..1
+    $patient-nationality named patient-nationality 0..*
     
 * extension[birthPlace].valueAddress only AddressEu
-* extension[birthTime] ^short = "Birth time"
 * extension[sex-for-clinical-use] ^short = "Sex for clinical use"
 * extension[gender-identity] ^short = "Gender identity"
 * extension[pronouns] ^short = "Pronouns"
@@ -42,6 +40,8 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * gender ^short = "Administrative Gender" // MS according to IPS
 * birthDate 0.. // MS according to IPS
   * ^comment = "At least an estimated year should be provided as a guess if the real DOB is unknown. There is a standard extension \"patient-birthTime\" available that should be used where Time is required (such as in maternity/infant care systems)."
+  * extension contains $patient-birthTime named birthTime 0..1
+  * extension[birthTime] ^short = "Birth time"
 * address only AddressEu // MS according to IPS
 * maritalStatus ^short = "Marital status"
 * contact
