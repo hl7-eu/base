@@ -8,6 +8,7 @@ Description: "Example of a Patient resource conforming to the Patient (EU Core) 
 * name.given = "John"
 * gender = #male
 * birthDate = "1980-01-01"
+* birthDate.extension[birthTime].valueDateTime = "1980-01-01T08:30:00+01:00"
 * address.line = "123 Example Street"
 * address.city = "Example City"
 * address.state = "EX"
